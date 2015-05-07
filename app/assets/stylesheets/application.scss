@@ -1,0 +1,103 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+	*= require_tree
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// Comments that remain in the SASS only 
+// And are removed once it compiles into CSS.
+
+$itemSpace: 20px 10px 20px 10px;
+
+html, body {
+	font-family: 'Open Sans';
+}
+
+.catalogue {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.navbar {
+	margin-bottom: 0px; 
+	ul {
+		padding: $itemSpace;
+		margin: 0px;
+		border: 0px dashed red;
+		li { 
+			display: inline; 
+			text-align: center;
+			border: 0px solid red;
+			margin-left: 10px;
+			margin-right: 10px; 
+			a {
+				&:hover {
+					color: red;
+					text-decoration: none;
+					-webkit-transition: 0.5s;
+				}
+			}
+		}
+	}
+}
+
+.products-container {
+	.product {
+		border: 1px solid none;
+		font-family: 'Open Sans';
+		padding-top: 1em;
+		padding-bottom: 1em;
+		&:hover {
+			background-color: #FFFFE0;
+			-webkit-transition: 1s;
+		}
+		ul {
+		border-radius: 40px;			
+		li {
+			color: black;
+			list-style-type: none;
+				a {
+					&:hover {
+						color: red;
+						text-decoration: none;
+						-webkit-transition: 0.3s;
+					}
+				}
+			}			
+		}
+	}
+}
+
+
+.itemDescription {
+	padding: $itemSpace;
+}
+
+.itemPurchaseOptions {
+	ul {
+		padding: 0px;
+		li {
+			display: inline;
+			list-style-type: none;
+			padding: $itemSpace;
+			border: 1px solid red;
+		}
+	}
+}
+
+
+
+

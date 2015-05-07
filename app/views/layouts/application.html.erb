@@ -5,19 +5,50 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel();
+    </script>
 </head>
 <body>
-<% if current_order %>
-<p style="border:1px solid black;padding:10px;">
-  You have <%= pluralize current_order.total_items, 'item'%> in your basket which cost
-  <%= number_to_currency current_order.total_before_tax %>.
-  <%= link_to "View basket", basket_path %>
-  <%= link_to "Checkout", checkout_path %>
-	<%= flash[:notice] %>
-</p>
-<% end %>
 
-<%= yield %>
+  <div class="navbar navbar-default">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand" style="font-size: 25px;"><br>AP Uniforms</a>
+      <ul>
+        <li><a href="/" class="btn btn-default">Home</a></li>
+        <li><a href="" class="btn btn-default">Chef Wear</a></li>
+        <li><a href="" class="btn btn-default">Medical Wear</a></li>
+        <li><a href="" class="btn btn-default">Work Wear</a></li>
+
+        <% if current_order %>
+          <li class="pull-right">
+            <%= pluralize current_order.total_items, 'item'%> - 
+            <%= number_to_currency current_order.total_before_tax %>.
+            <div class="btn btn-default"><%= link_to "View basket", basket_path %></div>
+            <div class="btn btn-default"><%= link_to "Checkout", checkout_path %></div>
+            <%= flash[:notice] %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <!-- Empty Left Column -->
+    <div class="col-lg-2">
+    </div>
+
+    <div class="col-lg-8 col-md-12 col-xs-12-col-sm-12 yield">
+  	<%= yield %>
+    </div>
+
+    <!-- Empty Right Column -->
+    <div class="col-lg-2">
+    </div>
+  </div>
 
 </body>
 </html>

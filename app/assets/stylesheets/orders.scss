@@ -1,3 +1,22 @@
 // Place all the styles related to the orders controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$checkoutPageContainerPading: 15px;
+
+.checkout {
+	.productsTable {
+		padding: 0px;
+		margin: 0px;
+		#titles { 
+			background-color: beige;
+		}
+		#productRow {
+			background-color: red;
+		}
+	}
+	.checkoutForm {
+		background-color: beige;
+		padding: $checkoutPageContainerPading;
+	}
+}
