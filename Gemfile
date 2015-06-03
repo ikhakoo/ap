@@ -30,6 +30,8 @@ gem "shoppe-stripe", require: "shoppe/stripe"
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'sass-rails', '>= 3.2'
 
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -47,7 +49,11 @@ group :development, :test do
   gem 'better_errors'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  gem 'spring', '~> 1.3.5'
+
+  gem 'pry-rails'
+
+  gem 'binding_of_caller'
 end
 
 gem 'shoppe', '~> 1.0'
