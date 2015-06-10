@@ -1,3 +1,4 @@
+<br><br><br>
 <div>
 <h2><%= @product.name %></h2>
 
@@ -10,11 +11,9 @@
 	<p><%= @product.short_description %></p>
 </div>
 
-<div class="itemPurchaseOptions">
-	<ul>
-	  <li><b><%= number_to_currency @product.price %></b></li>
-	  <li><a><%= link_to "Add to basket", product_path(@product.permalink), :method => :post %></a></li>
-	</ul>
+<div>
+	<%= number_to_currency @product.price %></li>
+	<%= link_to "Add to basket", product_path(@product.permalink), :method => :post, class: "ui button" %>
 </div>
 
 
@@ -22,5 +21,5 @@
 <%= simple_format @product.description %>
 <hr>
 
-<p><%= link_to "Back to list", root_path %></p>
+<p><%= link_to "Back to list", root_path, class: "ui button primary" %></p>
 </div>
