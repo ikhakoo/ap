@@ -29,7 +29,7 @@ gem "shoppe-stripe", require: "shoppe/stripe"
 
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'sass-rails', '>= 3.2'
-
+gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 
 
 # Use ActiveModel has_secure_password
