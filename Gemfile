@@ -32,6 +32,10 @@ gem 'sass-rails', '>= 3.2'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 
 
+gem 'devise'
+
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
