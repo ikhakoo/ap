@@ -15,9 +15,20 @@ class ProductsController < ApplicationController
       current_order.order_items.add_item(@product, 1)
       redirect_to product_path(@product.permalink), :notice => "Product has been added successfuly!"
     else  
-      binding.pry
       redirect_to product_path(@product.permalink), :notice => "Sorry we are out of stock!"
     end
 	end
+
+  def medical
+    @products = Shoppe::Product.where(product_category_id: 1)
+  end
+
+  def chef
+    @products = Shoppe::Product.where(product_category_id: 2)
+  end
+
+  def work
+    @products = Shoppe::Product.where(product_category_id: 3)
+  end
 
 end

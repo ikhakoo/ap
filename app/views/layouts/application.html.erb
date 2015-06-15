@@ -15,18 +15,21 @@
 <body>
 
     <div class="ui medium menu">
-  <a class="active item">
-    <i class="home icon"></i> Home
-  </a>
-  <a class="item">
-    <i class="shop icon"></i> Shop
-  </a>
-  <a class="item">
-    <i class="mail icon"></i> Contact
-  </a>
-  <div class="item">
-    <%= flash[:notice] %>
-  </div>
+  <%= link_to root_path, class: "active item" do %>
+  <i class="shop icon"></i> Shop 
+<% end %>
+  <%= link_to medical_path, class: "item" do %>
+  <i class="hospital icon"></i> Medical
+<% end %>
+<%= link_to chef_path, class: "item" do %>
+  <i class="food icon"></i> Chef
+<% end %>
+<%= link_to work_path, class: "item" do %>
+  <i class="legal icon"></i> Work 
+<% end %>
+  <%= link_to root_path, class: "item" do %>
+  <i class="mail icon"></i> Contact 
+<% end %>
   <div class="right menu">
     <div class="item">
       <div class="ui icon input">
@@ -60,6 +63,15 @@
     </div>
 
     <div class="col-lg-8 col-md-12 col-xs-12-col-sm-12 yield">
+    <% if flash[:notice] %>
+    <div class="ui negative message">
+  <i class="close icon"></i>
+  <div class="header">
+    <%= flash[:notice] %>
+  </div>
+</div>
+<% end %>
+    
   	<%= yield %>
     </div>
 
