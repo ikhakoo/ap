@@ -14,22 +14,25 @@
 </head>
 <body>
 
-    <div class="ui small menu">
+    <div class="ui medium menu">
   <a class="active item">
     <i class="home icon"></i> Home
   </a>
   <a class="item">
     <i class="shop icon"></i> Shop
   </a>
+  <a class="item">
+    <i class="mail icon"></i> Contact
+  </a>
+  <div class="item">
+    <%= flash[:notice] %>
+  </div>
   <div class="right menu">
     <div class="item">
       <div class="ui icon input">
         <input type="text" placeholder="Search...">
         <i class="search link icon"></i>
       </div>
-    </div>
-    <div class="item">
-    <%= flash[:notice] %>
     </div>
     <div class="ui simple dropdown item">
       Language <i class="dropdown icon"></i>
