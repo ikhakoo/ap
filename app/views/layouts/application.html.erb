@@ -13,23 +13,41 @@
     </script>
 </head>
 <body>
+<div class="ui stacked segment" align="right">
+      <div class="ui icon input">
+        <input type="text" placeholder="Search...">
+        <i class="search link icon"></i>
+      </div>
+</div>
 
     <div class="ui medium menu">
   <%= link_to root_path, class: "active item" do %>
   <i class="shop icon"></i> Shop 
 <% end %>
-  <%= link_to medical_path, class: "item" do %>
-  <i class="hospital icon"></i> Medical
-<% end %>
-<%= link_to chef_path, class: "item" do %>
-  <i class="food icon"></i> Chef
-<% end %>
-<%= link_to work_path, class: "item" do %>
-  <i class="legal icon"></i> Work 
-<% end %>
-  <%= link_to root_path, class: "item" do %>
-  <i class="mail icon"></i> Contact 
-<% end %>
+  <div class="ui simple dropdown item">
+      Medical Wear <i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item">English</a>
+        <a class="item">French</a>
+        <a class="item">Russian</a>
+      </div>
+    </div>
+<div class="ui simple dropdown item">
+      Work Wear <i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item">English</a>
+        <a class="item">French</a>
+        <a class="item">Russian</a>
+      </div>
+    </div>
+<div class="ui simple dropdown item">
+      Chef Wear <i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item">English</a>
+        <a class="item">French</a>
+        <a class="item">Russian</a>
+      </div>
+    </div>
   <div class="right menu">
     <div class="item">
       <div class="ui icon input">
@@ -37,14 +55,9 @@
         <i class="search link icon"></i>
       </div>
     </div>
-    <div class="ui simple dropdown item">
-      Language <i class="dropdown icon"></i>
-      <div class="menu">
-        <a class="item">English</a>
-        <a class="item">French</a>
-        <a class="item">Russian</a>
-      </div>
-    </div>
+    <%= link_to root_path, class: "item" do %>
+  <i class="mail icon"></i> Contact 
+<% end %>
    <div class="ui buttons">
   <% if current_order %>
     
