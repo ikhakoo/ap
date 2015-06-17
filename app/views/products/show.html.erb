@@ -8,7 +8,7 @@
     <div class="content">
       <div class="header"><%= @product.name %></div>
       <div class="meta">
-        <a><%= @product.product_category.name %></a>
+        <%= @product.product_category.name %>
       </div>
       <div class="description">
         <%= simple_format @product.description %>
