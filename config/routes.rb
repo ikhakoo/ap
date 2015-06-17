@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
 
   match "nurse", to: "products#nurse", as: "nurse", via: [:get]
+  match "stethoscopes", to: "products#stethoscopes", as: "stethoscopes", via: [:get]
   match "chef", to: "products#chef", as: "chef", via: [:get]
   match "work", to: "products#work", as: "work", via: [:get]
+  match "clearance", to: "products#clearance", as: "clearance", via: [:get]
 
   get "product/:permalink", to: "products#show", as: "product"
   post "product/:permalink", to: "products#buy", as: "buy"
