@@ -32,4 +32,5 @@ class OrdersController < ApplicationController
 	    redirect_to root_path, :notice => "Order has been placed successfully!"
 	  end
 	end
+
 end

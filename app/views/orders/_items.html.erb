@@ -2,8 +2,8 @@
     <table width='100%' border='0'>
       <thead>
         <tr id="titles">
-          <td>Quantity</td>
           <td>Product</td>
+          <td>Quantity</td>
           <td>Sub-Total</td>
           <td>Tax</td>
           <td>Total</td>
@@ -12,8 +12,10 @@
       <tbody>
         <% order.order_items.each do |item| %>
         <tr>
+          <td><% if item.ordered_item.default_image %>
+  <%= image_tag item.ordered_item.default_image.path, :width => '50px' %>
+<% end %><%= item.ordered_item.full_name %></td>
           <td><%= item.quantity %></td>
-          <td><%= item.ordered_item.full_name %></td>
           <td><%= number_to_currency item.sub_total %></td>
           <td><%= number_to_currency item.tax_amount %></td>
           <td><%= number_to_currency item.total %></td>
