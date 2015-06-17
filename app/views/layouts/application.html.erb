@@ -12,14 +12,12 @@
   <body>
 
     <!-- Navigation -->
-    <div class="ui segment" style="height: 90px;">
+    <div class="ui segment" style="height: 170px;">
       <div class="col-lg-5">
+      <img class="slide-image" src="http://placehold.it/600x140" alt="">
+      </div>
 
-      </div>
-      <div class="col-lg-5">
-        
-      </div>
-      <div class="col-lg-3" style="float:right;">
+      <div class="col-lg-4" style="float:right;">
         <form role="search">
           <div class="form-group">
             <div class="ui icon input">
@@ -31,6 +29,7 @@
         </form>
       </div>
     </div>
+    
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,12 +41,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<%= root_path %>" style="font-size: 20px;padding-top:30px;">HomePage</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="<%= root_path %>">Home</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chef Wear <span class="caret"></span></a>
               <ul class="dropdown-menu">
