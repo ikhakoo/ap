@@ -1,52 +1,29 @@
-<br><br><br>
-<div>
-<h2></h2>
-
-<% if @product.default_image %>
-  <%= image_tag @product.default_image.path, :width => '200px', :style => "float:right" %>
-<% end %>
-
-
-<div class="itemDescription">
-	<p><%= @product.short_description %></p>
-</div>
-
-<div>
-	<strong>Price: </strong><%= number_to_currency @product.price %>
-	<%= link_to "Add to basket", product_path(@product.permalink), :method => :post, class: "ui button primary" %>
-</div>
-
-
-<hr>
-<%= simple_format @product.description %>
-<hr>
-
-<p><%= link_to "Back to list", root_path, class: "ui button primary" %></p>
-</div>
-
-
 <div class="ui link cards">
   <div class="card">
+  <% if @product.default_image %>
     <div class="image">
-      <img class="slide-image" src="http://placehold.it/290x290" alt="" style="max-width:100%;">
+      <%= image_tag @product.default_image.path, :width => '290px', :height => '290px', :style => "max-width:100%", class: "image slide-image" %>
     </div>
+    <% end %>
     <div class="content">
       <div class="header"><%= @product.name %></div>
       <div class="meta">
-        <a>Friends</a>
+        <a><%= @product.product_category.name %></a>
       </div>
       <div class="description">
-        Veronika Ossi is a set designer living in New York who enjoys kittens, music, and partying.
+        <%= simple_format @product.description %>
       </div>
     </div>
     <div class="extra content">
       <span class="right floated">
-        Joined in 2013
+        <strong>Price: </strong><%= number_to_currency @product.price %>
       </span>
       <span>
-        <i class="user icon"></i>
-        75 Friends
+        <i class="shop icon"></i>
+        <%= link_to "Add to basket", product_path(@product.permalink), :method => :post, class: "ui button primary" %>
       </span>
     </div>
   </div>
 </div>
+
+<p><%= link_to "Back to list", root_path, class: "ui button primary" %></p>
