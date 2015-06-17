@@ -12,8 +12,8 @@
 </div>
 
 <div>
-	<%= number_to_currency @product.price %></li>
-	<%= link_to "Add to basket", product_path(@product.permalink), :method => :post, class: "ui button" %>
+	<strong>Price: </strong><%= number_to_currency @product.price %>
+	<%= link_to "Add to basket", product_path(@product.permalink), :method => :post, class: "ui button primary" %>
 </div>
 
 
