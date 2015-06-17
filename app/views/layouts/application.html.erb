@@ -12,21 +12,13 @@
   <body>
 
     <!-- Navigation -->
-    <div class="ui segment" style="height: 170px;">
-      <div class="col-lg-5">
-      <img class="slide-image" src="http://placehold.it/600x140" alt="">
+    <div class="ui segment" style="height: 200px;">
+      <div class="col-lg-6 col-md-6">
+        <img class="slide-image" src="http://placehold.it/600x150" alt="" style="max-width:100%;">
       </div>
 
-      <div class="col-lg-4" style="float:right;">
-        <form role="search">
-          <div class="form-group">
-            <div class="ui icon input">
-              <input type="text" placeholder="Search...">
-              <i class="search link icon"></i>
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </div>
-        </form>
+      <div class="col-lg-6 col-md-6" style="float:right;">
+        <img class="slide-image" src="http://placehold.it/600x150" alt="" style="max-width:100%;">
       </div>
     </div>
     
@@ -45,7 +37,7 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav">
             <li><a href="<%= root_path %>">Home</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chef Wear <span class="caret"></span></a>
@@ -74,6 +66,19 @@
                 <li><a href="#">Specfic</a></li>
               </ul>
             </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <form role="search">
+                <div class="form-group">
+                  <div class="ui icon input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+              </form>
+            </li>
             <li>
               <div class="ui buttons">
                 <% if current_order %>    
@@ -87,7 +92,7 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <br><br><br><br><br>
+    <br>
     <%= yield %>
     
     <div class="container">
