@@ -11,14 +11,8 @@ class ProductsController < ApplicationController
 
   def buy
 	  @product = Shoppe::Product.find_by_permalink!(params[:permalink])
-<<<<<<< HEAD
-    if @product.stock_control = 'true'
-      current_order.order_items.add_item(@product, 1)
-      redirect_to product_path(@product.permalink), :notice => "Product has been added successfuly!"
-=======
     if @product.stock_control == 'false'
       redirect_to product_path(@product.permalink), :notice => "Sorry we are out of stock!"
->>>>>>> 577f519e442fa46232df8cf3d3f89b680f70f7f4
     else  
       redirect_to product_path(@product.permalink), :alert => "Sorry we are out of stock!"
     end

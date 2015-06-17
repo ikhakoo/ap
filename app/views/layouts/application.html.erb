@@ -19,8 +19,6 @@
         <i class="search link icon"></i>
       </div>
 </div>
-
-<<<<<<< HEAD
     <div class="ui medium menu">
   <%= link_to root_path, class: "active item" do %>
   <i class="shop icon"></i> Shop 
@@ -56,21 +54,6 @@
         <a class="item">French</a>
         <a class="item">Russian</a>
       </div>
-=======
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="<%= root_path %>" style="font-size:28px;color:teal;margin-top:20px;">
-        AP Uniforms
-      </a>
->>>>>>> 577f519e442fa46232df8cf3d3f89b680f70f7f4
     </div>
     <div class="ui simple dropdown item" style="text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87">
       ON SALE! <i class="dropdown icon"></i>
@@ -90,34 +73,7 @@
       <%= link_to "View Basket (#{current_order.total_items})", basket_path, class: "ui button" %>
       <div class="or"></div>
       <%= link_to "Checkout $#{current_order.total_before_tax}", checkout_path, class: "ui primary button" %>
-
-<<<<<<< HEAD
-=======
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="<%= root_path %>">Home<span class="sr-only">(current)</span></a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">All Products <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Chef Wear</a></li>
-            <li><a href="#">Medical Wear</a></li>
-          </ul>
-        </li>
-        <% if current_order %>
-          <li style="margin-top:10px;">        
-            <%= pluralize current_order.total_items, 'Item'%> - 
-            <%= number_to_currency current_order.total_before_tax %>.
-          </li>
-          <li>
-            <%= link_to "View basket", basket_path, class: "ui button teal" %>
-            <%= link_to "Checkout", checkout_path, class: "ui button green" %>
-          </li>
-          <li>
-            <%= flash[:notice] %>
-          </li>
->>>>>>> 577f519e442fa46232df8cf3d3f89b680f70f7f4
-        <% end %>
+  <% end %>
 </div>
   </div>
 </div>
