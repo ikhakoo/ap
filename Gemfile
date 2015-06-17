@@ -30,8 +30,6 @@ gem "shoppe-stripe", require: "shoppe/stripe"
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'sass-rails', '>= 3.2'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
-gem 'will_paginate'
-gem 'will_paginate-bootstrap'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

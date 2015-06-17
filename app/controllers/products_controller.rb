@@ -20,23 +20,23 @@ class ProductsController < ApplicationController
 	end
 
   def nurse
-    @products = Shoppe::Product.where(product_category_id: 1).paginate(page: params[:page], :per_page => 15)
+    @products = Shoppe::Product.where(product_category_id: 1)
   end
 
   def stethoscopes
-    @products = Shoppe::Product.where(product_category_id: 2).paginate(page: params[:page], :per_page => 15)
+    @products = Shoppe::Product.where(product_category_id: 2)
   end
 
   def chef
-    @products = Shoppe::Product.where(product_category_id: 3).paginate(page: params[:page], :per_page => 15)
+    @products = Shoppe::Product.where(product_category_id: 3)
   end
 
   def work
-    @products = Shoppe::Product.where(product_category_id: 4).paginate(page: params[:page], :per_page => 15)
+    @products = Shoppe::Product.where(product_category_id: 4)
   end
 
   def clearance
-    @products = Shoppe::Product.where(product_category_id: 5).paginate(page: params[:page], :per_page => 15)
+    @products = Shoppe::Product.where(product_category_id: 5)
   end
 
 end
