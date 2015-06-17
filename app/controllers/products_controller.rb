@@ -19,16 +19,24 @@ class ProductsController < ApplicationController
     end
 	end
 
-  def medical
-    @products = Shoppe::Product.where(product_category_id: 1)
+  def nurse
+    @products = Shoppe::Product.where(product_category_id: 1).paginate(page: params[:page], :per_page => 15)
+  end
+
+  def stethoscopes
+    @products = Shoppe::Product.where(product_category_id: 2).paginate(page: params[:page], :per_page => 15)
   end
 
   def chef
-    @products = Shoppe::Product.where(product_category_id: 2)
+    @products = Shoppe::Product.where(product_category_id: 3).paginate(page: params[:page], :per_page => 15)
   end
 
   def work
-    @products = Shoppe::Product.where(product_category_id: 3)
+    @products = Shoppe::Product.where(product_category_id: 4).paginate(page: params[:page], :per_page => 15)
+  end
+
+  def clearance
+    @products = Shoppe::Product.where(product_category_id: 5).paginate(page: params[:page], :per_page => 15)
   end
 
 end

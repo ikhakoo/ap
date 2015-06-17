@@ -1,0 +1,17 @@
+<% @products.each do |category, products| %>
+ <div class="col-lg-12">
+  <h3><%= category.name %></h3>
+  <div class="col-lg-12">
+  <% products.each do |product| %>
+    <div class="product col-lg-6">    
+      <ul>
+        <li>
+          <h4><%= link_to product.name, product_path(product.permalink) %></h4>
+          <p><%= product.short_description %></p>
+          <p><b>Price:</b> <%= number_to_currency product.price %></p>
+        </li>
+      </ul>
+    </div>
+  <% end %></div>
+<% end %>
+</div>
