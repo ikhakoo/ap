@@ -1,21 +1,29 @@
-<h2> Warehouse </h2>
-<div class="row catalogue">
-  <!-- Middle Column -->
-  <div class="products-container">
-    <% @products.each do |product| %>
-      <div class="col-lg-12">
-      <h3><%= product.product_category.name %></h3>
-      <div class="col-lg-12">
-        <div class="product col-lg-6">    
-          <ul>
-            <li>
-              <h4><%= link_to product.name, product_path(product.permalink) %></h4>
-              <p><%= product.short_description %></p>
-              <p><b>Price:</b> <%= number_to_currency product.price %></p>
-            </li>
-          </ul>
+<div class="ui segment">
+  <div class="row catalogue">
+    <div class="ui link cards">
+      <% @products.each do |product| %>
+        <div class="card">
+          <div class="image">
+            <img class="slide-image" src="http://placehold.it/290x290" alt="" style="max-width:100%;">
+          </div>
+          <div class="content">
+            <div class="header"><%= product.product_category.name %></div>
+            <div class="meta"></div>
+            <div class="description">
+              <%= product.short_description %>
+            </div>
+          </div>
+          <div class="extra content">
+            <span style="float:right;">
+            <%= link_to "View Details", product_path(product.permalink) %>
+            </span>
+            <span>  
+              <i class="money icon"></i>
+              <b>Price:</b> <%= number_to_currency product.price %>
+            </span>
+          </div>
         </div>
-      <% end %></div>
+      <% end %>
     </div>
   </div>
 </div>
