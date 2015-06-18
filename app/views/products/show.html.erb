@@ -4,6 +4,10 @@
     <div class="image">
       <%= image_tag @product.default_image.path, :width => '290px', :height => '290px', :style => "max-width:100%", class: "image slide-image" %>
     </div>
+    <% else %>
+	    <div class="image">
+	      <img class="slide-image" src="http://placehold.it/290x290" alt="" style="max-width:100%;">
+	    </div>
     <% end %>
     <div class="content">
       <div class="header"><%= @product.name %></div>
