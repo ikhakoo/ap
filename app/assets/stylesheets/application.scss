@@ -21,10 +21,14 @@
 // Comments that remain in the SASS only 
 // And are removed once it compiles into CSS.
 
+.navbar-default .navbar-nav > li > a {
+  color: black;
+}
 $itemSpace: 20px 10px 20px 10px;
 
 html, body {
 	font-family: 'Open Sans';
+	background-color: paleturquoise;
 }
 
 .catalogue {

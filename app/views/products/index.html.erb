@@ -43,18 +43,29 @@
       </div>
 
       <hr>
-      
-      <h2> Warehouse </h2>
-      <div class="row catalogue">
-        <!-- Middle Column -->
-        <div class="products-container">
-          <%= render 'products' %>
-        </div>
-      </div>
+
       <div class="row">
-        <!-- Empty Left Column -->
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-1">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <a href="<%= nurse_path %>">
+            <img src="<%= image_path("carousel/image-1.jpeg") %>" width="360px" height="200px" alt="image 1">
+          </a>
         </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <a href="<%= chef_path %>">
+            <img src="<%= image_path("carousel/image-2.jpeg") %>" width="360px" height="200px" alt="image 1">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <a href="<%= stethoscopes_path %>">
+            <img src="<%= image_path("carousel/image-3.jpeg") %>" width="360px" height="200px" alt="image 1">
+          </a>
+        </div><br>
+      </div>
+      
+      <h1>Best Sellers</h1>
+      <hr>
+      <div class="row">
+        <%= render 'products' %>
       </div>
     </div>
   </div>
