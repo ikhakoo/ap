@@ -1,38 +1,39 @@
-<div class="ui link cards">
-  <div class="card">
-  <% if @product.default_image %>
-    <div class="image">
-      <%= image_tag @product.default_image.path, :width => '290px', :height => '290px', :style => "max-width:100%", class: "image slide-image" %>
-    </div>
-    <% else %>
-	    <div class="image">
-	      <img class="slide-image" src="http://placehold.it/290x290" alt="" style="max-width:100%;">
-	    </div>
-    <% end %>
-    <div class="content">
-      <div class="header"><%= @product.name %></div>
-      <div class="meta">
-        <%= @product.product_category.name %>
-      </div>
-      <div class="description">
-        <%= simple_format @product.description %>
-      </div>
-    </div>
-    <div class="extra content">
-      <span class="right floated">
-        <strong>Price: </strong><%= number_to_currency @product.price %>
-      </span>
-      <span>
-        <i class="shop icon"></i>
-        <%= link_to "Add to basket", product_path(@product.permalink), :method => :post, class: "ui button primary" %>
-      </span>
-    </div>
-  </div>
+<div class="row">
+	
+	<!-- PCITURE COLUMN -->
+	<div class="col-lg-6">
+		<% if @product.default_image %>
+  		<div class="image">
+    		<%= image_tag @product.default_image.path, :width => '290px', :height => '290px', :style => "max-width:100%;float:right;", class: "image slide-image" %>
+  		</div>
+  	<% else %>
+    	<div class="image">
+      	<img class="slide-image" src="http://placehold.it/290x290" alt="" style="max-width:100%;float:right;">
+    	</div>
+  	<% end %>
+	</div>
+	
+	<!-- DETAILS COLUMN -->
+	<div class="col-lg-6">
+
+    		<h1><%= @product.name %></h1>
+
+      	<p style="font-size:10px;"><%= @product.product_category.name %></p>
+
+      	<%= simple_format @product.description %>
+
+    	<span class="right floated">
+      	<strong>Price: </strong><%= number_to_currency @product.price %>
+    	</span>
+    	<span>
+      	<i class="shop icon"></i>
+      	<%= link_to "Add to basket", product_path(@product.permalink), :method => :post, class: "ui button primary" %>
+    	</span>
+    	<p><%= link_to "Back to list", root_path, class: "ui button primary" %></p>
+
 </div>
 
-<p><%= link_to "Back to list", root_path, class: "ui button primary" %></p>
-<br>
-<hr>
+<br><br><hr>
 
 <div class="container">
   <div class="row">
