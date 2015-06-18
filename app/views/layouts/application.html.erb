@@ -15,7 +15,9 @@
     <!-- Navigation -->
     <div class="ui segment" style="height: 200px;">
       <div class="col-lg-6 col-md-6 col-sm-6">
-        <img class="slide-image" src="http://placehold.it/600x160" alt="" style="max-width:100%;">
+        <a href="<%= root_path %>">
+          <img class="slide-image" src="http://placehold.it/600x160" alt="" style="max-width:100%;">
+        </a>
       </div>
 
       <div class="col-lg-6 col-md-6 col-sm-6" style="float:right;">
@@ -39,7 +41,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="<%= root_path %>">Home</a></li>
+            <!-- <li><a href="<%= root_path %>">Home</a></li> -->
             <li class="dropdown" style="color:black;">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nurse Wear <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -67,6 +69,7 @@
                 <li><a href="#">Specfic</a></li>
               </ul>
             </li>
+            <li><a href="<%= clearance_path %>">Clearance</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
@@ -117,7 +120,7 @@
         <!-- Footer -->
         <footer>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
               <div class="col-md-12">
                 <ul class="social-network social-circle">
                   <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
@@ -128,8 +131,17 @@
                 </ul>       
               </div>
             </div>
-            <div class="col-lg-6">
-              <p style="float:right;">Copyright &copy; AP Uniforms 2015</p>
+            <br>
+            <div class="col-lg-4">
+              <p>
+                <a href="#">Terms & Service</a> |
+                <a href="#">Customer Service</a> |
+                <a href="#">Contact Us</a>
+              </p>
+            </div>
+            
+            <div class="col-lg-4">
+              <h3>Copyright &copy; AP Uniforms 2015</h3>
             </div>
           </div>
         </footer>
