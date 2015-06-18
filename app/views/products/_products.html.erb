@@ -1,10 +1,11 @@
 <% @products.each do |category, products| %>
   <% if category.name == 'test' %>
-    <h3>Category: <%= category.name %></h3><hr>
     <% products.each do |product| %>
       <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-        <img class="slide-image" src="http://placehold.it/170x250" alt="" style="max-width:100%;">
-        <h4>Name: <%= link_to product.name, product_path(product.permalink) %></h4>
+        <a href="<%= product_path(product.permalink)%>">
+          <img class="slide-image" src="http://placehold.it/170x250" alt="" style="max-width:100%;">
+        </a>
+        <h4>Name: <%= link_to product.name %></h4>
         <p>Description: <%= product.short_description %></p>
         <p><b>Price:</b> <%= number_to_currency product.price %></p>
       </div>

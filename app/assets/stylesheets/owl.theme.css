@@ -8,6 +8,13 @@
 	text-align: center;
 }
 
+img {
+	border-radius: 4px;
+}
+
+.carousel {
+	border-radius: 5px;
+}
 /* Styling Next and Prev buttons */
 
 .owl-theme .owl-controls .owl-buttons div{
