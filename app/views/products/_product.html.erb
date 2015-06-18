@@ -2,29 +2,36 @@
   <div class="row catalogue">
     <div class="ui link cards">
       <% @products.each do |product| %>
-        <div class="card">
-          <a href="<%= product_path(product.permalink) %>">
-          <div class="image">
-            <img class="slide-image" src="http://placehold.it/290x290" alt="" style="max-width:100%;">
-          </div>
-          </a>
-          <div class="content">
-            <div class="header"><%= product.product_category.name %></div>
-            <div class="meta"></div>
-            <div class="description">
-              <%= product.short_description %>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="card" style="padding:4px; margin:4px;">
+            <div class="image">
+              <img class="slide-image" src="http://placehold.it/290x290" alt="" style="max-width:100%;">
+            </div>
+            <div class="content">
+              <div class="header">
+                <p><strong>Name:</strong> <%= product.product_category.name %></p>
+              </div>
+              <div class="meta"></div>
+              <div class="description">
+                <%= product.short_description %>
+              </div>
+            </div>
+            <div class="extra content">
+              <span>  
+                <i class="money icon"></i>
+                <b>Price:</b> <%= number_to_currency product.price %>
+              </span>
+            </div>
+
+            <a href="<%= product_path(product.permalink) %>">
+            <div class="ui bottom attached button">
+              <i class="info icon"></i>
+              View Details
             </div>
           </div>
-          <div class="extra content">
-            <span style="float:right;">
-            <%= link_to "View Details", product_path(product.permalink) %>
-            </span>
-            <span>  
-              <i class="money icon"></i>
-              <b>Price:</b> <%= number_to_currency product.price %>
-            </span>
-          </div>
-        </div>
+          </a>
+
+          </div><br>
       <% end %>
     </div>
   </div>
