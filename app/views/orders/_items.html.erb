@@ -32,12 +32,12 @@
           </td>
           <td data-th="Price"><%= number_to_currency item.sub_total %></td>
           <td data-th="Quantity">
-            <input type="number" class="form-control text-center" value="1">
+            <input type="number" class="form-control text-center" value="<%= item.quantity %>">
           </td>
           <td data-th="Subtotal" class="text-center"><%= number_to_currency item.tax_amount %></td>
           <td class="actions" data-th="">
-            <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-            <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>                
+            <%= link_to "Update", "", class: "btn btn-info btn-sm" %>
+            <%= link_to "Remove", "", class: "btn btn-danger btn-sm" %>
           </td>
         </tr>
         <% end %>
@@ -57,65 +57,12 @@
         </td>
         <td colspan="2" class="hidden-xs"></td>
         <td class="hidden-xs text-center"><strong>Total: <%= number_to_currency order.total %></strong></td>
-        <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+        <td>
+          <%= link_to 'Checkout', checkout_path, class: "btn btn-success btn-lg" %>
+        </td>
       </tr>
     </tfoot>
 
 
   </table>
 </div>
-
-
-
-
-<br><br><br><hr>
-    <table width='100%' border='0'>
-      <thead>
-        <tr id="titles">
-          <td>Product</td>
-          <td>Quantity</td>
-          <td>Sub-Total</td>
-          <td>Tax</td>
-          <td>Total</td>
-        </tr>
-      </thead>
-      <tbody>
-        <% order.order_items.each do |item| %>
-        <tr>
-          <td><% if item.ordered_item.default_image %>
-  <%= image_tag item.ordered_item.default_image.path, :width => '50px' %>
-<% end %><%= item.ordered_item.full_name %></td>
-          <td><%= item.quantity %></td>
-          <td><%= number_to_currency item.sub_total %></td>
-          <td><%= number_to_currency item.tax_amount %></td>
-          <td><%= number_to_currency item.total %></td>
-        </tr>
-
-        <% end %>
-
-    
-        <% if order.delivery_service %>
-        <tr>
-          <td></td>
-          <td><%= order.delivery_service.name %></td>
-          <td><%= number_to_currency order.delivery_price %></td>
-          <td><%= number_to_currency order.delivery_tax_amount %></td>
-          <td><%= number_to_currency order.delivery_price + order.delivery_tax_amount %></td>
-        </tr>
-        <% end %>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan='4'>Sub-Total</td>
-          <td><%= number_to_currency order.total_before_tax %></td>
-        </tr>
-        <tr>
-          <td colspan='4'>Tax</td>
-          <td><%= number_to_currency order.tax %></td>
-        </tr>
-        <tr>
-          <td colspan='4'>Total</td>
-          <td><%= number_to_currency order.total %></td>
-        </tr>
-      </tfoot>
-    </table>
