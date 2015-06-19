@@ -8,7 +8,7 @@
 	            <% if @product.default_image %>
 	             	<%= image_tag @product.default_image.path, :style => "max-width:100%;z-index:999999;" %>
 	            <% else %>
-	              <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
+	              <%= image_tag "http://placehold.it/400x400" %>
 	            <% end %>
 	            <span class="card-title"><%= @product.name %></span>
 	          </div>

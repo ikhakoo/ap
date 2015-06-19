@@ -1,4 +1,68 @@
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+  <table id="cart" class="table table-hover table-condensed">
+            
+    <thead>
+      <tr>
+        <th style="width:50%">Product</th>
+        <th style="width:8%">Sub-Total</th>
+        <th style="width:10%">Quantity</th>
+        <th style="width:22%" class="text-center">Tax</th>
+        <th style="width:10%"></th>
+      </tr>
+    </thead>
 
+
+    <tbody>
+      <% order.order_items.each do |item| %>
+      <tr>
+        <td data-th="Product">
+          <% if item.ordered_item.default_image %>
+          <div class="row">
+            <div class="col-sm-2 hidden-xs">
+              <%= image_tag item.ordered_item.default_image.path, :width => '50px' %>
+            </div>
+            <% end %>
+            <div class="col-sm-10">
+              <h4 class="nomargin"><%= item.ordered_item.full_name %></h4>
+              <p><%= item.ordered_item.description %></p>
+            </div>
+          </div>
+        </td>
+        <td data-th="Price"><%= number_to_currency item.sub_total %></td>
+        <td data-th="Quantity">
+          <input type="number" class="form-control text-center" value="1">
+        </td>
+        <td data-th="Subtotal" class="text-center"><%= number_to_currency item.tax_amount %></td>
+        <td class="actions" data-th="">
+          <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+          <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>                
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+
+
+    <tfoot>
+      <tr class="visible-xs">
+        <td class="text-center"><strong>Total: <%= number_to_currency order.total %></strong></td>
+      </tr>
+      <tr>
+        <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+        <td colspan="2" class="hidden-xs"></td>
+        <td class="hidden-xs text-center"><strong>Total: <%= number_to_currency order.total %></strong></td>
+        <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+      </tr>
+    </tfoot>
+
+
+  </table>
+</div>
+
+
+
+
+<br><br><br><hr>
     <table width='100%' border='0'>
       <thead>
         <tr id="titles">
