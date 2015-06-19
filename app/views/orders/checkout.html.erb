@@ -1,37 +1,41 @@
 <div class="ui segment">
-    <h1 style="text-align:center;">Checkout Area</h1>
-    <div class="col-lg-6 productsTable">
-        <%= render 'items', :order => @order %>
+  <h1 style="text-align:center;">Checkout Area</h1>
+  <div class="col-lg-6 productsTable"></div>
+
+  <div class="row">
+    <div class="col-lg-6 itemsCheckout">
+      <%= render 'checkout_items', :order => @order %>
     </div>
 
-    <%= form_for @order, :url => checkout_path do |f| %>
     <div class="col-lg-6 checkoutForm">
-      <dl>
-        <dt><%= f.label :first_name, 'Name' %></dt>
-        <dd>
-            <%= f.text_field :first_name, placeholder: "First" %> 
-            <%= f.text_field :last_name, placeholder: "Last" %>
-        </dd>
+      <%= form_for @order, :url => checkout_path do |f| %>
+        <dl>
+          <dt><%= f.label :first_name, 'Name' %></dt>
+          <dd>
+              <%= f.text_field :first_name, placeholder: "First" %> 
+              <%= f.text_field :last_name, placeholder: "Last" %>
+          </dd>
 
-        <dt><%= f.label :billing_address1, 'Address' %></dt>
-        <dd><%= f.text_field :billing_address1, placeholder: "Street Name"%></dd>
-        <dd><%= f.text_field :billing_address2, placeholder: "Suite # (optional)" %></dd>
-        <dd><%= f.text_field :billing_address3, placeholder: "City" %></dd>
-        <dd><%= f.select(:billing_address4, options_for_select(['ON','BC'])) %></dd>
-        <dd><%= f.text_field :billing_postcode, placeholder: "Postal Code" %></dd>
-        <dt><%= f.label :country %></dt>
-        <dd>
-            <%= f.collection_select :billing_country_id, Shoppe::Country.ordered, :id, :name, :include_blank => true %>
-        </dd>
+          <dt><%= f.label :billing_address1, 'Address' %></dt>
+          <dd><%= f.text_field :billing_address1, placeholder: "Street Name"%></dd>
+          <dd><%= f.text_field :billing_address2, placeholder: "Suite # (optional)" %></dd>
+          <dd><%= f.text_field :billing_address3, placeholder: "City" %></dd>
+          <dd><%= f.select(:billing_address4, options_for_select(['ON','BC'])) %></dd>
+          <dd><%= f.text_field :billing_postcode, placeholder: "Postal Code" %></dd>
+          <dt><%= f.label :country %></dt>
+          <dd>
+              <%= f.collection_select :billing_country_id, Shoppe::Country.ordered, :id, :name, :include_blank => true %>
+          </dd>
 
-        <dt><%= f.label :email_address %></dt>
-        <dd><%= f.text_field :email_address %></dd>
+          <dt><%= f.label :email_address %></dt>
+          <dd><%= f.text_field :email_address %></dd>
 
-        <dt><%= f.label :phone_number %></dt>
-        <dd><%= f.text_field :phone_number %></dd>
+          <dt><%= f.label :phone_number %></dt>
+          <dd><%= f.text_field :phone_number %></dd>
 
-        <dd><%= f.submit 'Continue' %></dd>
-      </dl>
+          <dd><%= f.submit 'Continue' %></dd>
+        </dl>
+      <% end %>   
     </div>
-    <% end %>   
+  </div>
 </div>

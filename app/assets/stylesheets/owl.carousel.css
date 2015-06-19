@@ -365,3 +365,8 @@ a {
 	table#cart tfoot td .btn{display:block;}
 	
 }
+
+.itemsCheckout {
+	width: 100px;
+	float:left;
+}
