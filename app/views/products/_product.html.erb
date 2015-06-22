@@ -5,7 +5,11 @@
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="card" style="padding:4px; margin:4px;">
             <div class="image">
-              <img class="slide-image" src="http://placehold.it/290x290" alt="" style="max-width:100%;">
+            <% if product.default_image %>
+                <%= image_tag product.default_image.path, :style => "max-width:100%;z-index:999999;" %>
+              <% else %>
+                <%= image_tag "http://placehold.it/290x290" %>
+              <% end %>
             </div>
             <div class="content">
               <div class="header">
