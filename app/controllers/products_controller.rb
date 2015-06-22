@@ -21,23 +21,33 @@ class ProductsController < ApplicationController
 	end
 
   def nurse
-    @products = Shoppe::Product.where(product_category_id: 1)
+    @p1  = Shoppe::Product.where(product_category_id: 1)
+    @p2  = Shoppe::Product.where(product_category_id: 2)
+    @p3  = Shoppe::Product.where(product_category_id: 3)
+    @p4  = Shoppe::Product.where(product_category_id: 4)
+    @p5  = Shoppe::Product.where(product_category_id: 5)
+    @p6  = Shoppe::Product.where(product_category_id: 6)
+    @p7  = Shoppe::Product.where(product_category_id: 7)
+    @p8  = Shoppe::Product.where(product_category_id: 8)
+    @p9  = Shoppe::Product.where(product_category_id: 9)
+    @p10 = Shoppe::Product.where(product_category_id: 10)
+    @products = @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10 
   end
 
   def stethoscopes
-    @products = Shoppe::Product.where(product_category_id: 2)
+    @products = Shoppe::Product.where(product_category_id: 11)
   end
 
   def chef
-    @products = Shoppe::Product.where(product_category_id: 3)
+    @products = Shoppe::Product.where(product_category_id: 12)
   end
 
   def work
-    @products = Shoppe::Product.where(product_category_id: 4)
+    @products = Shoppe::Product.where(product_category_id: 13)
   end
 
   def clearance
-    @products = Shoppe::Product.where(product_category_id: 5)
+    @products = Shoppe::Product.where(product_category_id: 14)
   end
 
 end
