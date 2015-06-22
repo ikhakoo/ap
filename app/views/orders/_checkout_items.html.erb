@@ -1,10 +1,10 @@
 <table>            
   <thead>
     <tr>
-      <th style="width:5%">Product</th>
-      <th style="width:5%">Sub-Total</th>
-      <th style="width:5%">Quantity</th>
-      <th style="width:5%" class="text-center">Tax</th>
+      <th style="width:35%">Product</th>
+      <th style="width:15%">Sub-Total</th>
+      <th style="width:15%">Quantity</th>
+      <th style="width:15%" class="text-center">Tax</th>
     </tr>
   </thead>
   <tbody>
@@ -14,11 +14,11 @@
           <td data-th="Product">
             <% if item.ordered_item.default_image %>
             <div class="row">
-              <div class="col-sm-2 hidden-xs">
+              <div class="col-sm-4 hidden-xs">
                 <%= image_tag item.ordered_item.default_image.path, :width => '50px' %>
               </div>
               <% end %>
-              <div class="col-sm-10">
+              <div class="col-sm-8">
                 <h4 class="nomargin"><%= item.ordered_item.full_name %></h4>
                 <p><%= item.ordered_item.description %></p>
               </div>
