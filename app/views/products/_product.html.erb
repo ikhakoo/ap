@@ -8,7 +8,7 @@
             <% if product.default_image %>
                 <%= image_tag product.default_image.path, :style => "max-width:100%;z-index:999999;" %>
               <% else %>
-                <%= image_tag "http://placehold.it/290x290" %>
+                <%= image_tag "http://placehold.it/290x290", :style => "max-width:100%; z-index:9999;" %>
               <% end %>
             </div>
             <div class="content">
@@ -17,7 +17,7 @@
               </div>
               <div class="meta"></div>
               <div class="description">
-                <%= product.short_description %>
+                <p><strong>Description: </strong><%= product.short_description %></p>
               </div>
             </div>
             <div class="extra content">
