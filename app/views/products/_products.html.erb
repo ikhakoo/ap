@@ -4,10 +4,10 @@
       <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
         <a href="<%= product_path(product.permalink)%>">
           <% if product.default_image %>
-                <%= image_tag product.default_image.path, :style => "max-width:100%;z-index:999999;" %>
-              <% else %>
-                <%= image_tag "http://placehold.it/290x290", :style => "max-width:100%; z-index:9999;" %>
-              <% end %>
+            <%= image_tag product.default_image.path, :style => "max-width:100%;z-index:999999;" %>
+          <% else %>
+            <%= image_tag "http://placehold.it/290x290", :style => "max-width:100%; z-index:9999;" %>
+          <% end %>
         </a>
         <h4>Name: <%= link_to product.name %></h4>
         <p>Description: <%= product.short_description %></p>
