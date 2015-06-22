@@ -36,20 +36,20 @@ class ProductsController < ApplicationController
     @products = Shoppe::Product.where(product_category_id: 2)
   end
 
-  # def stethoscopes
-  #   @products = Shoppe::Product.where(product_category_id: 4)
-  # end
+  def stethoscopes
+    @products = Shoppe::Product.where(product_category_id: 4)
+  end
 
-  # def chef
-  #   @products = Shoppe::Product.where(product_category_id: 5)
-  # end
+  def chef
+    @products = Shoppe::Product.where(product_category_id: 5)
+  end
 
-  # def work
-  #   @products = Shoppe::Product.where(product_category_id: 6)
-  # end
+  def work
+    @products = Shoppe::Product.where(product_category_id: 6)
+  end
 
-  # def clearance
-  #   @products = Shoppe::Product.where(product_category_id: 7)
-  # end
+  def clearance
+    @products = Shoppe::Product.where(product_category_id: 7)
+  end
 
 end
