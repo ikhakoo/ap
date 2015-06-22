@@ -2,32 +2,33 @@
   <div class="row catalogue">
     <div class="ui link cards">
       <% @products.each do |product| %>
+      <% product.each do |prod| %>
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="card" style="padding:4px; margin:4px;">
             <div class="image">
-            <% if product.default_image %>
-                <%= image_tag product.default_image.path, :style => "width:290px;height:290px;max-width:100%;" %>
+            <% if prod.default_image %>
+                <%= image_tag prod.default_image.path, :style => "width:290px;height:290px;max-width:100%;" %>
               <% else %>
                 <%= image_tag "http://placehold.it/290x290", :style => "width:290px;height:290px;max-width:100%;" %>
               <% end %>
             </div>
             <div class="content">
               <div class="header">
-                <p><strong>Name:</strong> <%= product.product_category.name %></p>
+                <p><strong>Name:</strong> <%= prod.product_category.name %></p>
               </div>
               <div class="meta"></div>
               <div class="description">
-                <p><strong>Description: </strong><%= product.short_description %></p>
+                <p><strong>Description: </strong><%= prod.short_description %></p>
               </div>
             </div>
             <div class="extra content">
               <span>  
                 <i class="money icon"></i>
-                <b>Price:</b> <%= number_to_currency product.price %>
+                <b>Price:</b> <%= number_to_currency prod.price %>
               </span>
             </div>
 
-            <a href="<%= product_path(product.permalink) %>">
+            <a href="<%= product_path(prod.permalink) %>">
             <div class="ui bottom attached button">
               <i class="info icon"></i>
               View Details
@@ -36,6 +37,7 @@
           </a>
 
           </div><br>
+      <% end %>
       <% end %>
     </div>
   </div>
