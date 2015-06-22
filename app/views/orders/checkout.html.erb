@@ -1,41 +1,131 @@
 <div class="ui segment">
   <h1 style="text-align:center;">Checkout Area</h1>
-  <div class="col-lg-6 productsTable"></div>
-
-  <div class="row">
     <div class="col-lg-6 itemsCheckout">
       <%= render 'checkout_items', :order => @order %>
     </div>
 
     <div class="col-lg-6 checkoutForm">
-      <%= form_for @order, :url => checkout_path do |f| %>
-        <dl>
-          <dt><%= f.label :first_name, 'Name' %></dt>
-          <dd>
-              <%= f.text_field :first_name, placeholder: "First" %> 
-              <%= f.text_field :last_name, placeholder: "Last" %>
-          </dd>
 
-          <dt><%= f.label :billing_address1, 'Address' %></dt>
-          <dd><%= f.text_field :billing_address1, placeholder: "Street Name"%></dd>
-          <dd><%= f.text_field :billing_address2, placeholder: "Suite # (optional)" %></dd>
-          <dd><%= f.text_field :billing_address3, placeholder: "City" %></dd>
-          <dd><%= f.select(:billing_address4, options_for_select(['ON','BC'])) %></dd>
-          <dd><%= f.text_field :billing_postcode, placeholder: "Postal Code" %></dd>
-          <dt><%= f.label :country %></dt>
-          <dd>
-              <%= f.collection_select :billing_country_id, Shoppe::Country.ordered, :id, :name, :include_blank => true %>
-          </dd>
+      <div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-sm-6">
 
-          <dt><%= f.label :email_address %></dt>
-          <dd><%= f.text_field :email_address %></dd>
+                <h4 class="page-header">Delivery & Address Information</h4>
+                <%= form_for @order, :url => checkout_path, :role => 'form' do |f| %> 
+                    <div class="form-group float-label-control">
+                      <%= f.label :first_name, 'Full Name' %>
+                      <%= f.text_field :first_name, class: 'form-control' %> 
+                      <%= f.text_field :last_name, placeholder: "Last Name", class: 'form-control' %>
+                    </div>
+                    <div class="form-group float-label-control">
+                      <%= f.label :billing_address1, 'Address' %>
+                      <%= f.text_field :billing_address1, placeholder: "Street Name", class: 'form-control'%>
+                      <%= f.text_field :billing_address2, placeholder: "Suite # (optional)", class: 'form-control' %>
+                      <%= f.text_field :billing_address3, placeholder: "City", class: 'form-control' %>        
+                      
+                      <%= f.select(:billing_address4, options_for_select(['ON','BC']), class: 'form-control') %>
 
-          <dt><%= f.label :phone_number %></dt>
-          <dd><%= f.text_field :phone_number %></dd>
+                      <%= f.text_field :billing_postcode, placeholder: "Postal Code", class: 'form-control' %>
+                    </div>
+                    <div class="form-group float-label-control">
+                      <%= f.label :country, 'Country' %>
 
-          <dd><%= f.submit 'Continue' %></dd>
-        </dl>
-      <% end %>   
+                      <%= f.collection_select :billing_country_id, Shoppe::Country.ordered, :id, :name, :include_blank => true, class: 'form-control' %>
+                    </div>
+                    <div class="form-group float-label-control">
+                      <%= f.label :email_address %>
+                      <%= f.text_field :email_address, placeholder: "Email Address", class: 'form-control'  %>
+                    </div>
+                    <div class="form-group float-label-control">
+                      <%= f.label :phone_number %>
+                      <%= f.text_field :phone_number, placeholder: "Phone Number", class: 'form-control'  %>
+                    </div>
+                      <%= f.submit 'Continue', class: 'form-control'  %>
+                    </div>
+                <% end %>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
+
+<script>
+  /* Float Label Pattern Plugin for Bootstrap 3.1.0 by Travis Wilson
+**************************************************/
+
+(function ($) {
+    $.fn.floatLabels = function (options) {
+
+        // Settings
+        var self = this;
+        var settings = $.extend({}, options);
+
+
+        // Event Handlers
+        function registerEventHandlers() {
+            self.on('input keyup change', 'input, textarea', function () {
+                actions.swapLabels(this);
+            });
+        }
+
+
+        // Actions
+        var actions = {
+            initialize: function() {
+                self.each(function () {
+                    var $this = $(this);
+                    var $label = $this.children('label');
+                    var $field = $this.find('input,textarea').first();
+
+                    if ($this.children().first().is('label')) {
+                        $this.children().first().remove();
+                        $this.append($label);
+                    }
+
+                    var placeholderText = ($field.attr('placeholder') && $field.attr('placeholder') != $label.text()) ? $field.attr('placeholder') : $label.text();
+
+                    $label.data('placeholder-text', placeholderText);
+                    $label.data('original-text', $label.text());
+
+                    if ($field.val() == '') {
+                        $field.addClass('empty')
+                    }
+                });
+            },
+            swapLabels: function (field) {
+                var $field = $(field);
+                var $label = $(field).siblings('label').first();
+                var isEmpty = Boolean($field.val());
+
+                if (isEmpty) {
+                    $field.removeClass('empty');
+                    $label.text($label.data('original-text'));
+                }
+                else {
+                    $field.addClass('empty');
+                    $label.text($label.data('placeholder-text'));
+                }
+            }
+        }
+
+
+        // Initialization
+        function init() {
+            registerEventHandlers();
+
+            actions.initialize();
+            self.each(function () {
+                actions.swapLabels($(this).find('input,textarea').first());
+            });
+        }
+        init();
+
+
+        return this;
+    };
+
+    $(function () {
+        $('.float-label-control').floatLabels();
+    });
+})(jQuery);
+</script>

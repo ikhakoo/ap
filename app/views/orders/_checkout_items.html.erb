@@ -1,21 +1,15 @@
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<div class="container">
-  <table id="cart" class="table table-hover table-condensed" style="width:100px;">
-            
-    <thead>
-      <tr>
-        <th style="width:5%">Product</th>
-        <th style="width:5%">Sub-Total</th>
-        <th style="width:5%">Quantity</th>
-        <th style="width:5%" class="text-center">Tax</th>
-        <!-- <th style="width:0%"></th> -->
-      </tr>
-    </thead>
-
-
-    <tbody>
-      <% if order.order_items.count > 0 %>
-        <% order.order_items.each do |item| %>
+<table>            
+  <thead>
+    <tr>
+      <th style="width:5%">Product</th>
+      <th style="width:5%">Sub-Total</th>
+      <th style="width:5%">Quantity</th>
+      <th style="width:5%" class="text-center">Tax</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% if order.order_items.count > 0 %>
+      <% order.order_items.each do |item| %>
         <tr>
           <td data-th="Product">
             <% if item.ordered_item.default_image %>
@@ -57,12 +51,8 @@
         </td>
         <td colspan="2" class="hidden-xs"></td>
         <td class="hidden-xs text-center"><strong>Total: <%= number_to_currency order.total %></strong></td>
-        <td>
-          <%= link_to 'Checkout', checkout_path, class: "btn btn-success btn-lg" %>
-        </td>
       </tr>
     </tfoot>
 
 
   </table>
-</div>
