@@ -25,8 +25,15 @@ class ProductsController < ApplicationController
   def nurse
     @p1  = Shoppe::Product.where(product_category_id: 1)
     @p2  = Shoppe::Product.where(product_category_id: 2)
-    @p3  = Shoppe::Product.where(product_category_id: 3)
-    @products = @p1, @p2, @p3
+    @products = @p1, @p2
+  end
+
+  def nurse_tops
+    @products = Shoppe::Product.where(product_category_id: 1)
+  end
+
+  def nurse_sets
+    @products = Shoppe::Product.where(product_category_id: 2)
   end
 
   def stethoscopes
