@@ -34,8 +34,4 @@ class OrdersController < ApplicationController
 	  end
 	end
 
-	def update_quantity(amount)
-		current_order.order_items.add_item(@product, amount)
-	end
-
 end
