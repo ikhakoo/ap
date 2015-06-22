@@ -9,10 +9,10 @@ Rails.application.routes.draw do
   match "nurse", to: "products#nurse", as: "nurse", via: [:get]
   match "nurse_tops", to: "products#nurse_tops", as: "nurse_tops", via: [:get]
   match "nurse_sets", to: "products#nurse_sets", as: "nurse_sets", via: [:get]
-  match "stethoscopes", to: "products#stethoscopes", as: "stethoscopes", via: [:get]
-  match "chef", to: "products#chef", as: "chef", via: [:get]
-  match "work", to: "products#work", as: "work", via: [:get]
-  match "clearance", to: "products#clearance", as: "clearance", via: [:get]
+  # match "stethoscopes", to: "products#stethoscopes", as: "stethoscopes", via: [:get]
+  # match "chef", to: "products#chef", as: "chef", via: [:get]
+  # match "work", to: "products#work", as: "work", via: [:get]
+  # match "clearance", to: "products#clearance", as: "clearance", via: [:get]
 
   get "product/:permalink", to: "products#show", as: "product"
   post "product/:permalink", to: "products#buy", as: "buy"
