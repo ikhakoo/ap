@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   match "chef", to: "products#chef", as: "chef", via: [:get]
   match "work", to: "products#work", as: "work", via: [:get]
   match "clearance", to: "products#clearance", as: "clearance", via: [:get]
+  match "update", to: "products#buy", as: "update", via: [:get]
 
   get "product/:permalink", to: "products#show", as: "product"
   post "product/:permalink", to: "products#buy", as: "buy"
