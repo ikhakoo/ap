@@ -3,11 +3,11 @@
   <div class="col-lg-12 itemsCheckout">
     <%= render 'items', :order => @order %>
   </div>
-  <br><br><br><br><br><hr>
+  <br><br><br><br><br>
   <div class="col-lg-12 checkoutForm">
     <%= form_for @order, :url => checkout_path, :role => 'form' do |f| %> 
         <div class="form-group float-label-control">
-          <%= f.label :first_name, 'Full Name' %>
+          
           <%= f.text_field :first_name, placeholder: "First Name", class: 'form-control' %> 
           <%= f.text_field :last_name, placeholder: "Last Name", class: 'form-control' %>
         </div>
