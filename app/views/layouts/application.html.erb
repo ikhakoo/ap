@@ -99,21 +99,21 @@
     </nav>
     <br>
     <% if flash[:alert] %>
-     <div class="ui negative message">
-   <i class="close icon"></i>
-   <div class="header">
-    <%= flash[:alert] %>
-  </div>
-</div>
-<% end %>
-<% if flash[:notice] %>
-    <div class="ui positive message">
-  <i class="close icon"></i>
-  <div class="header">
-     <%= flash[:notice] %>
-   </div>
- </div>
- <% end %>
+      <div class="ui negative message">
+        <div class="header">
+          <%= flash[:alert] %>
+        </div>
+      </div>
+    <% end %>
+    
+    <% if flash[:notice] %>
+      <div class="ui positive message">
+        <div class="header">
+          <%= flash[:notice] %>
+        </div>
+      </div>
+    <% end %>
+    
     <%= yield %>
     
     <div class="container">
