@@ -10,8 +10,6 @@ class OrdersController < ApplicationController
   @order = Shoppe::Order.find(current_order.id)
 	  if request.patch?
 	      redirect_to checkout_payment_path
-	  else
-	    	redirect_to basket_path
 	  end
 	end
 
