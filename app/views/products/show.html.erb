@@ -1,38 +1,82 @@
-<div class="container">
-	<div class="row">
-		<div class="col-lg-12">
-			<div class="container">
-		    <div class="row">
-		      <div class="col-md-6 col-md-offset-3">
-		        <div class="card" style="width: 480px;max-width:100%;">
-		          <div class="card-image">
-		            <% if @product.default_image %>
-		             	<%= image_tag @product.default_image.path, :style => "max-width:100%;z-index:999999;" %>
-		            <% else %>
-		              <%= image_tag "http://placehold.it/400x400" %>
-		            <% end %>
-		            <span class="card-title"><%= @product.name %></span>
-		          </div>
-		               
-		          <div class="card-content">
-		           	<p style="font-size:10px;"><%= @product.product_category.name %></p>
-		            <hr>
-		            <p>
-		              <%= simple_format @product.description %>
-		              <strong style="float:right;">Price: <%= number_to_currency @product.price %></strong>
-		            </p>
-		          </div>
-		                
-		          <div class="card-action">
-		            
-		      				<%= link_to "Add to basket", product_path(@product.permalink), :method => :post, class: "ui button primary" %>
-		         			<%= link_to "Back to list", root_path, class: "ui button primary" %>         
-		          </div>
-		        </div>
-		      </div>
-		   	</div>
+<div class="container-fluid">
+  <div class="content-wrapper">	
+		<div class="item-container">	
+			<div class="container">	
+			<hr>
+				<div class="col-md-12">
+					<div class="product col-md-3 service-image-left">          
+						<center>
+							<!-- <img id="item-display" src="http://www.corsair.com/Media/catalog/product/g/s/gs600_psu_sideview_blue_2.png" alt=""></img> -->
+							<% if @product.default_image %>
+	             	<%= image_tag @product.default_image.path, :style => "max-width:100%;z-index:999999;" %>
+	            <% else %>
+	              <%= image_tag "http://placehold.it/400x400" %>
+	            <% end %>
+						</center>
+					</div>
+					
+					<div class="container service1-items col-sm-2 col-md-2 pull-left">
+						<center>
+							<a id="item-1" class="service1-item">
+								<%= image_tag "http://placehold.it/110x71" %>
+							</a>
+							<a id="item-2" class="service1-item">
+								<%= image_tag "http://placehold.it/110x71" %>
+							</a>
+							<a id="item-3" class="service1-item">
+								<%= image_tag "http://placehold.it/110x71" %>
+							</a>
+						</center>
+					</div>
+
+					<div class="col-md-7">
+						<div class="product-title"><%= @product.name %></div>
+						<div class="product-desc"><%= @product.description %></div>
+						<!-- <div class="product-rating"><i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star-o"></i> </div> -->
+					<hr>
+						<div class="product-price"><%= number_to_currency @product.price %></div>
+						<div class="product-stock">
+							<% if @product.stock_control? %>
+								In Stock
+							<% else %>
+								No Stock
+							<% end %>
+						</div>
+					<hr>
+						<div class="btn-group cart">
+							<%= link_to "Add to Cart", product_path(@product.permalink), :method => :post, class: "ui button green" %>
+						</div>
+						<div class="btn-group wishlist">
+							<%= link_to "Back to list", root_path, class: "ui button red", :style => 'float:right' %>
+						</div>
+					</div>
+				</div> 
 			</div>
-		</div>	
+			<div class="container-fluid">		
+				<div class="col-md-12 product-info">
+					<ul id="myTab" class="nav nav-tabs nav_tabs">		
+						<li class="active"><a href="#service-one" data-toggle="tab">DESCRIPTION</a></li>
+						<li><a href="#service-two" data-toggle="tab">PRODUCT INFO</a></li>
+						<li><a href="#service-three" data-toggle="tab">REVIEWS</a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade in active" id="service-one">
+							<section class="container product-info">
+							</section>
+						</div>
+						<div class="tab-pane fade" id="service-two">
+							<section class="container">
+								
+							</section>
+						</div>
+						<div class="tab-pane fade" id="service-three">
+	
+						</div>
+					</div>
+				<hr>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<br><br><hr>
