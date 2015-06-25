@@ -32,7 +32,6 @@
 					<div class="col-md-7">
 						<div class="product-title"><%= @product.name %></div>
 						<div class="product-desc"><%= @product.short_description %></div>
-						<!-- <div class="product-rating"><i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star-o"></i> </div> -->
 					<hr>
 						<div class="product-title">
 							<h3>Color and Size Selection</h3>
@@ -90,7 +89,75 @@
         						</div>
     							</div>
 								</div>
+							</div>
+							<select class="selectpicker" data-show-subtext="true">
+        <option data-subtext="French's">Mustard</option>
+        <option data-subtext="Heinz">Ketchup</option>
+        <option data-subtext="Sweet">Relish</option>
+        <option data-subtext="Miracle Whip">Mayonnaise</option>
+        <option data-divider="true"></option>
+        <option data-subtext="Honey">Barbecue Sauce</option>
+        <option data-subtext="Ranch">Salad Dressing</option>
+        <option data-subtext="Sweet & Spicy">Tabasco</option>
+        <option data-subtext="Chunky">Salsa</option>
+    </select>
+							<h3>View Size Chart</h3>
+							<div class="row">
+    						<div class="col-lg-12">
+   
+   			         	<div class="col-lg-3 col-md-4 col-xs-6">
+        				   	<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+        				   	data-title="This is my title" data-caption="Some lovely red flowers" 
+        				   	data-image="http://onelive.us/wp-content/uploads/2014/08/flower-delivery-online.jpg" 
+        				   	data-target="#image-gallery">
+                			<div style="width:20px; height:20px; background-color:black;"></div>
+            				</a>
+        					</div>
+								</div>
+
+								<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    							<div class="modal-dialog">
+        						<div class="modal-content">
+            					<div class="modal-header">
+                				<button type="button" class="close" data-dismiss="modal">
+                					<span aria-hidden="true">×</span>
+                					<span class="sr-only">Close</span>
+                				</button>
+                				<h4 class="modal-title" id="image-gallery-title"></h4>
+            					</div>
+            					<div class="modal-body">
+                				<img id="image-gallery-image" class="img-responsive" src="">
+            					</div>
+            					<div class="modal-footer">
+                				<div class="col-md-2">
+                    			<button type="button" class="btn btn-primary" id="show-previous-image">
+                    				Previous
+                    			</button>
+                				</div>
+
+                				<div class="col-md-8 text-justify" id="image-gallery-caption">
+                    			This text will be overwritten by jQuery
+                				</div>
+
+                				<div class="col-md-2">
+                    			<button type="button" id="show-next-image" class="btn btn-default">Next</button>
+                				</div>
+            					</div>
+        						</div>
+    							</div>
+								</div>
 						</div>
+						<select class="selectpicker" data-show-subtext="true">
+        <option data-subtext="French's">Mustard</option>
+        <option data-subtext="Heinz">Ketchup</option>
+        <option data-subtext="Sweet">Relish</option>
+        <option data-subtext="Miracle Whip">Mayonnaise</option>
+        <option data-divider="true"></option>
+        <option data-subtext="Honey">Barbecue Sauce</option>
+        <option data-subtext="Ranch">Salad Dressing</option>
+        <option data-subtext="Sweet & Spicy">Tabasco</option>
+        <option data-subtext="Chunky">Salsa</option>
+    </select>
 					<hr>
 						<div class="product-price"><%= number_to_currency @product.price %></div>
 						<div class="product-stock">
@@ -201,4 +268,36 @@
         });
     }
 });
+
+
+
+      window.onload=function(){
+      $('.selectpicker').selectpicker();
+      $('.rm-mustard').click(function() {
+        $('.remove-example').find('[value=Mustard]').remove();
+        $('.remove-example').selectpicker('refresh');
+      });
+      $('.rm-ketchup').click(function() {
+        $('.remove-example').find('[value=Ketchup]').remove();
+        $('.remove-example').selectpicker('refresh');
+      });
+      $('.rm-relish').click(function() {
+        $('.remove-example').find('[value=Relish]').remove();
+        $('.remove-example').selectpicker('refresh');
+      });
+      $('.ex-disable').click(function() {
+          $('.disable-example').prop('disabled',true);
+          $('.disable-example').selectpicker('refresh');
+      });
+      $('.ex-enable').click(function() {
+          $('.disable-example').prop('disabled',false);
+          $('.disable-example').selectpicker('refresh');
+      });
+
+      // scrollYou
+      $('.scrollMe .dropdown-menu').scrollyou();
+
+      prettyPrint();
+      };
+   
 </script>
