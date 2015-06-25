@@ -43,7 +43,10 @@
           </td>
           <td data-th="Price"><%= number_to_currency item.sub_total %></td>
           <td data-th="Quantity">
-            <input type="number" class="form-control text-center"  value="<%= item.quantity %>" id="<%= "input_quantity_#{item_id}" %>">
+          <%= form_for item, :url => basket_path, :role => 'form' do |f| %>
+            <%= f.text_field :quantity, class: 'form-control text-center' %>
+            <%= f.submit "Update", class: "btn btn-info btn-sm", method: "POST" %>
+          <% end %>
           </td>
           <td data-th="Subtotal" class="text-center"><%= number_to_currency item.tax_amount %></td>
           <td class="actions" data-th="">
