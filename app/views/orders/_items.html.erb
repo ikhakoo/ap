@@ -16,6 +16,17 @@
     <tbody>
       <% if order.order_items.count > 0 %>
         <% order.order_items.each do |item| %>
+        <script>
+          <% item_id = item.ordered_item.id %> 
+          $(function() {
+            var button = document.getElementsByClassName('update_button')
+            var id_selector = '#' + <%= item_id %>
+            $(id_selector).on('click', function() {
+              //take the info in the current this.
+              var value = document.getElementById('input_quantity_' + <%= item_id %> ).value
+            })
+          })
+        </script>
         <tr>
           <td data-th="Product">
             <% if item.ordered_item.default_image %>
@@ -32,12 +43,12 @@
           </td>
           <td data-th="Price"><%= number_to_currency item.sub_total %></td>
           <td data-th="Quantity">
-            <input type="number" class="form-control text-center" value="<%= item.quantity %>">
+            <input type="number" class="form-control text-center"  value="<%= item.quantity %>" id="<%= "input_quantity_#{item_id}" %>">
           </td>
           <td data-th="Subtotal" class="text-center"><%= number_to_currency item.tax_amount %></td>
           <td class="actions" data-th="">
             <!-- Still not working -->
-            <%= link_to "Update", "", class: "btn btn-info btn-sm" %>
+            <%= link_to "Update", "", class: "btn btn-info btn-sm", id: item.ordered_item.id %>
             <%= link_to "X", "", class: "btn btn-danger btn-sm" %>
 
           </td>
