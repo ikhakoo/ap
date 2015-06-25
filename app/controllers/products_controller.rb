@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
     @product = Shoppe::Product.find_by_permalink(params[:permalink])
     @products = Shoppe::Product.root.ordered.includes(:product_category, :variants)
     @products = @products.group_by(&:product_category)
+    
   end
 
   def buy
