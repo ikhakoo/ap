@@ -2,12 +2,12 @@ class ProductsController < ApplicationController
 
   def index
     @product_image = Shoppe::Product.find_by_permalink(params[:permalink])
-    @products = Shoppe::Product.root.ordered.includes(:product_category, :variants)
-    @products = @products.group_by(&:product_category)
+    @products      = Shoppe::Product.root.ordered.includes(:product_category, :variants)
+    @products      = @products.group_by(&:product_category)
   end
 
   def show
-    @product = Shoppe::Product.find_by_permalink(params[:permalink])
+    @product  = Shoppe::Product.find_by_permalink(params[:permalink])
     @products = Shoppe::Product.root.ordered.includes(:product_category, :variants)
     @products = @products.group_by(&:product_category)
     
@@ -17,6 +17,7 @@ class ProductsController < ApplicationController
 	  @product = Shoppe::Product.find_by_permalink!(params[:permalink])
     if @product.stock_control = 'true'
       current_order.order_items.add_item(@product, 1)
+      binding.pry
       redirect_to product_path(@product.permalink), :notice => "Product has been added successfuly!"
     else  
       redirect_to product_path(@product.permalink), :alert => "Sorry we are out of stock!"
@@ -24,8 +25,8 @@ class ProductsController < ApplicationController
 	end
 
   def nurse
-    @p1  = Shoppe::Product.where(product_category_id: 1)
-    @p2  = Shoppe::Product.where(product_category_id: 2)
+    @p1 = Shoppe::Product.where(product_category_id: 1)
+    @p2 = Shoppe::Product.where(product_category_id: 2)
     @products = @p1, @p2
   end
 
