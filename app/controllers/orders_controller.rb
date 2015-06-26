@@ -9,7 +9,10 @@ class OrdersController < ApplicationController
 	def checkout
   @order = Shoppe::Order.find(current_order.id)
 	  if request.patch?
+	  	binding.pry
+	    if @order.proceed_to_confirm(checkout_params)
 	      redirect_to checkout_payment_path
+	    end
 	  end
 	end
 
@@ -31,5 +34,10 @@ class OrdersController < ApplicationController
 	    redirect_to root_path, :notice => "Order has been placed successfully!"
 	  end
 	end
+
+ private
+	def checkout_params
+    params.require(:order).permit(:first_name)
+  end
 
 end
