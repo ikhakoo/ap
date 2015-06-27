@@ -21,19 +21,11 @@
   <body>
 
     <!-- Navigation -->
-    <div class="ui segment" style="height: 200px;">
-      <div class="col-lg-6 col-md-6 col-sm-6">
-        <a href="<%= root_path %>">
-          <img class="slide-image" src="http://placehold.it/600x160" alt="" style="max-width:100%;">
-        </a>
-      </div>
-
-      <div class="col-lg-6 col-md-6 col-sm-6" style="float:right;">
-        <img class="slide-image" src="http://placehold.it/600x160" alt="" style="max-width:100%;">
-      </div>
+    <div class="ui segment" id='application_layout_banner'>      
+        <%= image_tag('AP_square.png', height: '200px', id: 'AP_Banner_Logo') %>
     </div>
     
-    <nav class="navbar navbar-default" style="background-color: teal;">
+    <nav class="navbar navbar-default" style="background-color: teal;" id="navbar_container">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -43,6 +35,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
+
           </button>
         </div>
 
@@ -79,7 +72,7 @@
             </li>
             <li><a href="<%= clearance_path %>">Clearance</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right" id="navbar_options">
             <!-- <li>
               <form role="search">
                 <div class="form-group">
