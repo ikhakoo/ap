@@ -22,13 +22,9 @@
 // And are removed once it compiles into CSS.
 $itemSpace: 20px 10px 20px 10px;
 $pink:	rgb(200, 67, 152);
-$yellow: rgb(249, 237, 56);
 $pink_opaque: rgba(200, 67, 152, 0.4);
+$yellow: rgb(249, 237, 56);
 $purple: rgb(84, 82, 162);
-
-.navbar-default .navbar-nav > li > a {
-  color: black;
-}
 
 html, body {
 	font-family: 'Open Sans';
@@ -65,8 +61,10 @@ body { background-color: $pink_opaque; }
 			border: 0px solid red;
 			margin-left: 10px;
 			margin-right: 10px; 
-			a {
+			.dropdown-toggle {
 				color: white;
+			}
+			a {
 				&:hover {
 					color: red;
 					text-decoration: none;
