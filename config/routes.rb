@@ -6,6 +6,10 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
+  match "checkout", to: "orders#checkout", as: "checkout", via: [:get, :patch]
+  match "checkout/pay", to: "orders#payment", as: "checkout_payment", via: [:get, :post]
+  match "checkout/confirm", to: "orders#confirmation", as: "checkout_confirmation", via: [:get, :post]
+
   match "nurse", to: "products#nurse", as: "nurse", via: [:get]
   match "nurse_tops", to: "products#nurse_tops", as: "nurse_tops", via: [:get]
   match "nurse_sets", to: "products#nurse_sets", as: "nurse_sets", via: [:get]
@@ -27,10 +31,6 @@ Rails.application.routes.draw do
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  match "checkout", to: "orders#checkout", as: "checkout", via: [:get, :patch]
-  match "checkout/pay", to: "orders#payment", as: "checkout_payment", via: [:get, :post]
-  match "checkout/confirm", to: "orders#confirmation", as: "checkout_confirmation", via: [:get, :post]
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   # resources :products
