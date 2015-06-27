@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem "shoppe-stripe", require: "shoppe/stripe"
+gem 'stripe_event'
 
 # gem "shoppe-paypal"
 
