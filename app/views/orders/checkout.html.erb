@@ -4,9 +4,7 @@
   <div class="col-lg-6 itemsCheckout">
     <%= render 'items', :order => @order %>
   </div>
-
-
-  
+ 
   <div class="col-lg-6 checkoutForm" style="float:right;">
     <% if @order.order_items.count > 0 %>
       <%= form_for @order, :url => checkout_path do |f| %> 
