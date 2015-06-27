@@ -1,3 +1,37 @@
+<script>
+        var old_selection = document.body
+        $(function() {            
+            $('.color_picker_primary').on('click', function() {
+                console.log(old_selection)
+
+                //set the selector the name of this color square
+                $('#color_selector')[0].value = this.attributes[2].value
+
+                //give a border to emulate selection
+                $(this).css('border', '2px solid yellow')
+
+                // reset the former square
+                old_selection.style.border = 'none',       
+                old_selection = this
+            })
+
+            $('#color_selector').on('change', function() { 
+                // cycle through all the possible colors_array
+                console.log(this)
+                console.log(this.value)
+                colors_box = $('.color_picker_primary')
+                for (var i = 0; i < colors_box.length; i++) {
+                     name = colors_box[i].attributes[2].value 
+                     selector_value = $('#color_selector')[0].value
+                     name == this.value? colors_box[i].style.border = '2px solid yellow' : null 
+
+                    // old_selection.style.border = 'none',       
+                    // old_selection = colors_box[i]
+                 }; 
+            })
+        })
+</script>
+
 <div class="container-fluid">
   <div class="content-wrapper">	
 		<div class="item-container">	
@@ -8,147 +42,54 @@
 						<center>
 							<!-- <img id="item-display" src="http://www.corsair.com/Media/catalog/product/g/s/gs600_psu_sideview_blue_2.png" alt=""></img> -->
 							<% if @product.default_image %>
-	             	<%= image_tag @product.default_image.path, :style => "max-width:100%;z-index:999999;" %>
-	            <% else %>
-	              <%= image_tag "http://placehold.it/400x400" %>
-	            <% end %>
+            	             	<%= image_tag @product.default_image.path, :style => "max-width:100%;z-index:999999;" %>
+            	            <% else %>
+            	              <%= image_tag "http://placehold.it/400x400" %>
+            	            <% end %>
 						</center>
 					</div>
 					
-					<div class="container service1-items col-sm-2 col-md-2 pull-left">
-						<center>
-							<a id="item-1" class="service1-item">
-								<%= image_tag "http://placehold.it/110x71" %>
-							</a>
-							<a id="item-2" class="service1-item">
-								<%= image_tag "http://placehold.it/110x71" %>
-							</a>
-							<a id="item-3" class="service1-item">
-								<%= image_tag "http://placehold.it/110x71" %>
-							</a>
-						</center>
+					<div class="container service1-items col-md-4 col-sm-6 col-xs-12 pull-left color_picker_container">
+                        
+                        <% for i in 0..@background_details.length-1 %> 
+                                <% background = @background_details[i] %>
+                                <% background_name = @colors_array[i] %>
+                                <% html = select_background_type(background[0], background[1]) %>
+                                <% %>
+                                <div style='<%= html[0] %>' class="color_picker_primary" name="<%= @product_colors[i] %>">
+                                    <div style='<%= html[1] %>' class="color_picker_optional" name="<%= @product_colors[i] %>">
+                                    </div> 
+                                </div>
+                        <% end %> 
 					</div>
 
-					<div class="col-md-7">
+                    <!-- MAIN SETTINGS AND ATTRIBUTES -->
+					<div class="col-md-5 col-sm-6">
+
+                        <!-- TITLE -->
 						<div class="product-title"><%= @product.name %></div>
-						<div class="product-desc"><%= @product.short_description %></div>
-					<hr>
-						<div class="product-title">
-							<h3>Color and Size Selection</h3>
-							<div class="row">
-    						<div class="col-lg-12">
-           			         	<div class="col-lg-3 col-md-4 col-xs-6">
-                				   	<div class="uniform_color" id=<%  %>></div>
-                				</div>
-                    			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    				
-                    			</div>
-                    			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    				
-        					   </div>
-							</div>
+						<div class="product-desc"><%= @product.description %></div>
+					   
+                        <hr>
 
-								<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    							<div class="modal-dialog">
-        						<div class="modal-content">
-            					<div class="modal-header">
-                				<button type="button" class="close" data-dismiss="modal">
-                					<span aria-hidden="true">×</span>
-                					<span class="sr-only">Close</span>
-                				</button>
-                				<h4 class="modal-title" id="image-gallery-title"></h4>
-            					</div>
-            					<div class="modal-body">
-                				<img id="image-gallery-image" class="img-responsive" src="">
-            					</div>
-            					<div class="modal-footer">
-                				<div class="col-md-2">
-                    			<button type="button" class="btn btn-primary" id="show-previous-image">
-                    				Previous
-                    			</button>
-                				</div>
-
-                				<div class="col-md-8 text-justify" id="image-gallery-caption">
-                    			This text will be overwritten by jQuery
-                				</div>
-
-                				<div class="col-md-2">
-                    			<button type="button" id="show-next-image" class="btn btn-default">Next</button>
-                				</div>
-            					</div>
-        						</div>
-    							</div>
-								</div>
-							</div>
-							<select class="selectpicker" data-show-subtext="true">
-                                <option data-subtext="French's">Mustard</option>
-                                <option data-subtext="Heinz">Ketchup</option>
-                                <option data-subtext="Sweet">Relish</option>
-                                <option data-subtext="Miracle Whip">Mayonnaise</option>
-                                <option data-divider="true"></option>
-                                <option data-subtext="Honey">Barbecue Sauce</option>
-                                <option data-subtext="Ranch">Salad Dressing</option>
-                                <option data-subtext="Sweet & Spicy">Tabasco</option>
-                                <option data-subtext="Chunky">Salsa</option>
-                            </select>
-							<h3>View Size Chart</h3>
-							<div class="row">
-    						<div class="col-lg-12">
-   
-   			         	<div class="col-lg-3 col-md-4 col-xs-6">
-        				   	<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
-        				   	data-title="This is my title" data-caption="Some lovely red flowers" 
-        				   	data-image="http://onelive.us/wp-content/uploads/2014/08/flower-delivery-online.jpg" 
-        				   	data-target="#image-gallery">
-                			<div style="width:20px; height:20px; background-color:black;"></div>
-            				</a>
-        					</div>
-								</div>
-
-								<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    							<div class="modal-dialog">
-        						<div class="modal-content">
-            					<div class="modal-header">
-                				<button type="button" class="close" data-dismiss="modal">
-                					<span aria-hidden="true">×</span>
-                					<span class="sr-only">Close</span>
-                				</button>
-                				<h4 class="modal-title" id="image-gallery-title"></h4>
-            					</div>
-            					<div class="modal-body">
-                				<img id="image-gallery-image" class="img-responsive" src="">
-            					</div>
-            					<div class="modal-footer">
-                				<div class="col-md-2">
-                    			<button type="button" class="btn btn-primary" id="show-previous-image">
-                    				Previous
-                    			</button>
-                				</div>
-
-                				<div class="col-md-8 text-justify" id="image-gallery-caption">
-                    			This text will be overwritten by jQuery
-                				</div>
-
-                				<div class="col-md-2">
-                    			<button type="button" id="show-next-image" class="btn btn-default">Next</button>
-                				</div>
-            					</div>
-        						</div>
-    							</div>
-								</div>
-						</div>
-						<select class="selectpicker" data-show-subtext="true">
-                            <option data-subtext="French's">Mustard</option>
-                            <option data-subtext="Heinz">Ketchup</option>
-                            <option data-subtext="Sweet">Relish</option>
-                            <option data-subtext="Miracle Whip">Mayonnaise</option>
-                            <option data-divider="true"></option>
-                            <option data-subtext="Honey">Barbecue Sauce</option>
-                            <option data-subtext="Ranch">Salad Dressing</option>
-                            <option data-subtext="Sweet & Spicy">Tabasco</option>
-                            <option data-subtext="Chunky">Salsa</option>
+                       <!-- COLORS -->
+                        <h3>Select Color:</h3>
+						<select class="selectpicker" data-show-subtext="true" id="color_selector">
+                            <% @product_colors.each do |a| %>
+                                <option class="color_option"> <%= a %></option>
+                            <% end %>
                         </select>
-					<hr>
+
+                        <!-- SIZE -->
+						<h3>Select Size: </h3>
+						<select class="selectpicker " data-show-subtext="true" id="size_selector">
+                        <% @sizes.each do |size| %>
+                            <option> <%= size %> </option>
+                        <% end %>
+                        </select>
+
+    					<hr>
+
 						<div class="product-price"><%= number_to_currency @product.price %></div>
 						<div class="product-stock">
 							<% if @product.stock_control? %>
@@ -157,7 +98,9 @@
 								No Stock
 							<% end %>
 						</div>
-					<hr>
+
+    					<hr>
+
 						<div class="btn-group cart">
 							<%= link_to "Add to Cart", product_path(@product.permalink), :method => :post, class: "ui button green" %>
 						</div>

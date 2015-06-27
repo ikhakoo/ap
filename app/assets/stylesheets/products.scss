@@ -5,3 +5,41 @@
 h2 {
 	color: red;
 }
+
+$color_radius: '10%';
+
+.product_color {
+	width: 40px; 
+	height: 40px; 
+	border-radius: 0%; 
+	border: 2px solid black;
+	display: inline-block;
+}
+
+.color_picker_container {
+	padding: 1em;
+	.color_picker_primary {
+		width: 60px; 
+		height: 60px; 
+		border-radius: $color_radius; 
+		border: 1px solid white;
+		display: inline-block;
+		-webkit-transition: 'border 2s';
+		.color_picker_optional {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			border-top-left-radius: $color_radius;
+			border-bottom-right-radius: 80%;
+		}
+	}
+}
+
+#color_selector {
+	background-color: transparent;
+	.color_option {  }
+}
+
+#size_selector {
+	background-color: transparent;
+}

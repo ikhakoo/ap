@@ -20,15 +20,31 @@
 
 // Comments that remain in the SASS only 
 // And are removed once it compiles into CSS.
+$itemSpace: 20px 10px 20px 10px;
+$pink:	rgb(200, 67, 152);
+$yellow: rgb(249, 237, 56);
+$pink_opaque: rgba(200, 67, 152, 0.4);
+$purple: rgb(84, 82, 162);
 
 .navbar-default .navbar-nav > li > a {
   color: black;
 }
-$itemSpace: 20px 10px 20px 10px;
 
 html, body {
 	font-family: 'Open Sans';
-	background-color: paleturquoise;
+}
+
+body { background-color: $pink_opaque; }
+
+#application_layout_banner {
+	background-color: rgb(248, 240, 0);
+	height: 200px;
+	padding: 0px;
+	margin: 0;
+	#AP_Banner_Logo {
+		display: block;
+		margin: auto;
+	}
 }
 
 .catalogue {
@@ -38,6 +54,7 @@ html, body {
 
 .navbar {
 	margin-bottom: 0px; 
+	background-color: $purple !important;
 	ul {
 		padding: $itemSpace;
 		margin: 0px;
@@ -49,6 +66,7 @@ html, body {
 			margin-left: 10px;
 			margin-right: 10px; 
 			a {
+				color: white;
 				&:hover {
 					color: red;
 					text-decoration: none;
@@ -58,6 +76,14 @@ html, body {
 		}
 	}
 }
+
+#navbar_container {
+	#navbar_options {
+		vertical-align: middle;
+		display: table-cell; 
+	} 	
+}
+
 
 .products-container {
 	.product {
