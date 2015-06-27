@@ -28,13 +28,9 @@ class OrdersController < ApplicationController
 
 	def confirmation
 	  if request.post?
-	    current_order.confirm!
-	    session[:order_id] = nil
-	    redirect_to root_path, :notice => "Order has been placed successfully!"
-	  else
-	  	current_order.confirm!
-	    session[:order_id] = nil
-	    redirect_to root_path, :notice => "Order has been placed successfully!"
+		    current_order.confirm!
+		    session[:order_id] = nil
+		    redirect_to root_path, :notice => "Order has been placed successfully!"
 	  end
 	end
 
