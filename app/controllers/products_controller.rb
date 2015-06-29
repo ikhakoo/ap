@@ -107,10 +107,14 @@ class ProductsController < ApplicationController
     @colors_array.each do |combination|
         temp_array = []
         combination.each do |color| 
-          temp_array << COLORS[color.to_sym]
+          temp_array << COLORS[color]
         end
+
+    binding.pry
         @background_details << temp_array
     end 
+
+    
   end
 
   def buy
