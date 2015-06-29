@@ -98,7 +98,9 @@ class ProductsController < ApplicationController
     @product  = Shoppe::Product.find_by_permalink(params[:permalink])
     @products = Shoppe::Product.root.ordered.includes(:product_category, :variants)
     @products = @products.group_by(&:product_category)
-    
+
+    @attributes = @product.product_attributes.public.to_a
+
     @product_colors = @product[:short_description].split("\n")
     @colors_array = []
     @product_colors.each do |a| @colors_array << a.split("/")  end  
@@ -110,7 +112,6 @@ class ProductsController < ApplicationController
           temp_array << COLORS[color]
         end
 
-    binding.pry
         @background_details << temp_array
     end 
 
