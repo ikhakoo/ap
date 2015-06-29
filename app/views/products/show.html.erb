@@ -8,23 +8,25 @@
 						<center>
 							<!-- <img id="item-display" src="http://www.corsair.com/Media/catalog/product/g/s/gs600_psu_sideview_blue_2.png" alt=""></img> -->
 							<% if @product.default_image %>
-            	  <%= image_tag @product.default_image.path, :style => "max-width:100%;z-index:999999;" %>
-            	<% else %>
-            	  <%= image_tag "http://placehold.it/400x400" %>
-            	<% end %>
+	             	<%= image_tag @product.default_image.path, :style => "max-width:100%;z-index:999999;" %>
+	            <% else %>
+	              <%= image_tag "http://placehold.it/400x400" %>
+	            <% end %>
 						</center>
 					</div>
 					
-					<div class="container service1-items col-md-4 col-sm-6 col-xs-12 pull-left color_picker_container">  <% for i in 0..@background_details.length-1 %> 
-              <% background = @background_details[i] %>
-              <% background_name = @colors_array[i] %>
-              <% html = select_background_type(background[0], background[1]) %>
-              <% %>
-             	<div style='<%= html[0] %>' class="color_picker_primary" name="<%= @product_colors[i] %>">
-               	<div style='<%= html[1] %>' class="color_picker_optional" name="<%= @product_colors[i] %>">
-                </div> 
-             	</div>
-           	<% end %> 
+					<div class="container service1-items col-md-4 col-sm-6 col-xs-12 pull-left color_picker_container">         
+              <% for i in 0..@background_details.length-1 %> 
+                      <% background = @background_details[i] %>
+                      <% background_name = @colors_array[i] %>
+                      <% html = select_background_type(background[0], background[1]) %>
+                      
+                      <% %>
+                      <div style='<%= html[0] %>' class="color_picker_primary" name="<%= @product_colors[i] %>">
+                          <div style='<%= html[1] %>' class="color_picker_optional" name="<%= @product_colors[i] %>">
+                          </div> 
+                      </div>
+              <% end %> 
 					</div>
 
 					<!-- MAIN SETTINGS AND ATTRIBUTES -->
@@ -195,35 +197,33 @@
     }
 });
 
+      // window.onload=function(){
+      // $('.selectpicker').selectpicker();
+      // $('.rm-mustard').click(function() {
+      //   $('.remove-example').find('[value=Mustard]').remove();
+      //   $('.remove-example').selectpicker('refresh');
+      // });
+      // $('.rm-ketchup').click(function() {
+      //   $('.remove-example').find('[value=Ketchup]').remove();
+      //   $('.remove-example').selectpicker('refresh');
+      // });
+      // $('.rm-relish').click(function() {
+      //   $('.remove-example').find('[value=Relish]').remove();
+      //   $('.remove-example').selectpicker('refresh');
+      // });
+      // $('.ex-disable').click(function() {
+      //     $('.disable-example').prop('disabled',true);
+      //     $('.disable-example').selectpicker('refresh');
+      // });
+      // $('.ex-enable').click(function() {
+      //     $('.disable-example').prop('disabled',false);
+      //     $('.disable-example').selectpicker('refresh');
+      // });
 
+      // // scrollYou
+      // $('.scrollMe .dropdown-menu').scrollyou();
 
-      window.onload=function(){
-      $('.selectpicker').selectpicker();
-      $('.rm-mustard').click(function() {
-        $('.remove-example').find('[value=Mustard]').remove();
-        $('.remove-example').selectpicker('refresh');
-      });
-      $('.rm-ketchup').click(function() {
-        $('.remove-example').find('[value=Ketchup]').remove();
-        $('.remove-example').selectpicker('refresh');
-      });
-      $('.rm-relish').click(function() {
-        $('.remove-example').find('[value=Relish]').remove();
-        $('.remove-example').selectpicker('refresh');
-      });
-      $('.ex-disable').click(function() {
-          $('.disable-example').prop('disabled',true);
-          $('.disable-example').selectpicker('refresh');
-      });
-      $('.ex-enable').click(function() {
-          $('.disable-example').prop('disabled',false);
-          $('.disable-example').selectpicker('refresh');
-      });
-
-      // scrollYou
-      $('.scrollMe .dropdown-menu').scrollyou();
-
-      prettyPrint();
-      };
+      // prettyPrint();
+      // };
    
 </script>
