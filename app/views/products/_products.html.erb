@@ -9,8 +9,8 @@
             <%= image_tag "http://placehold.it/290x290", :style => "max-width:100%; z-index:9999;" %>
           <% end %>
         </a>
-        <h4>Name: <%= product.name %></h4>
-        <p>Description: <%= product.short_description %></p>
+        <p><strong>Name:</strong> <%= product.name %></p>
+        <p><strong>Details:</strong> <%= product.short_description.truncate(20) %></p>
         <p><b>Price:</b> <%= number_to_currency product.price %></p>
       </div>
     <% end %>
