@@ -8,54 +8,47 @@
 						<center>
 							<!-- <img id="item-display" src="http://www.corsair.com/Media/catalog/product/g/s/gs600_psu_sideview_blue_2.png" alt=""></img> -->
 							<% if @product.default_image %>
-            	             	<%= image_tag @product.default_image.path, :style => "max-width:100%;z-index:999999;" %>
-            	            <% else %>
-            	              <%= image_tag "http://placehold.it/400x400" %>
-            	            <% end %>
+            	  <%= image_tag @product.default_image.path, :style => "max-width:100%;z-index:999999;" %>
+            	<% else %>
+            	  <%= image_tag "http://placehold.it/400x400" %>
+            	<% end %>
 						</center>
 					</div>
 					
-					<div class="container service1-items col-md-4 col-sm-6 col-xs-12 pull-left color_picker_container">
-                        
-                        <% for i in 0..@background_details.length-1 %> 
-                                <% background = @background_details[i] %>
-                                <% background_name = @colors_array[i] %>
-                                <% html = select_background_type(background[0], background[1]) %>
-                                <% %>
-                                <div style='<%= html[0] %>' class="color_picker_primary" name="<%= @product_colors[i] %>">
-                                    <div style='<%= html[1] %>' class="color_picker_optional" name="<%= @product_colors[i] %>">
-                                    </div> 
-                                </div>
-                        <% end %> 
+					<div class="container service1-items col-md-4 col-sm-6 col-xs-12 pull-left color_picker_container">  <% for i in 0..@background_details.length-1 %> 
+              <% background = @background_details[i] %>
+              <% background_name = @colors_array[i] %>
+              <% html = select_background_type(background[0], background[1]) %>
+              <% %>
+             	<div style='<%= html[0] %>' class="color_picker_primary" name="<%= @product_colors[i] %>">
+               	<div style='<%= html[1] %>' class="color_picker_optional" name="<%= @product_colors[i] %>">
+                </div> 
+             	</div>
+           	<% end %> 
 					</div>
 
-                    <!-- MAIN SETTINGS AND ATTRIBUTES -->
+					<!-- MAIN SETTINGS AND ATTRIBUTES -->
 					<div class="col-md-5 col-sm-6">
-
-                        <!-- TITLE -->
+           	<!-- TITLE -->
 						<div class="product-title"><%= @product.name %></div>
-						<div class="product-desc"><%= @product.description %></div>
-					   
-                        <hr>
-
-                       <!-- COLORS -->
-                        <h3>Select Color:</h3>
+						<div class="product-desc"><%= @product.description %></div>					   
+          <hr>
+            <!-- COLORS -->
+            <h3>Select Color:</h3>
 						<select class="selectpicker" data-show-subtext="true" id="color_selector">
-                            <% @product_colors.each do |a| %>
-                                <option class="color_option"> <%= a %></option>
-                            <% end %>
-                        </select>
+              <% @product_colors.each do |a| %>
+                <option class="color_option"> <%= a %></option>
+              <% end %>
+            </select>
 
-                        <!-- SIZE -->
+            <!-- SIZE -->
 						<h3>Select Size: </h3>
 						<select class="selectpicker " data-show-subtext="true" id="size_selector">
-                        <% @sizes.each do |size| %>
-                            <option> <%= size %> </option>
-                        <% end %>
-                        </select>
-
-    					<hr>
-
+              <% @sizes.each do |size| %>
+                <option> <%= size %> </option>
+              <% end %>
+            </select>
+    			<hr>
 						<div class="product-price"><%= number_to_currency @product.price %></div>
 						<div class="product-stock">
 							<% if @product.stock_control? %>
