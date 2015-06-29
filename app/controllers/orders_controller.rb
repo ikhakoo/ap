@@ -29,7 +29,7 @@ class OrdersController < ApplicationController
 	def confirmation
 	  if request.post?
 		    current_order.confirm!
-		    # session[:order_id] = nil
+		    session[:order_id] = nil
 		    # redirect_to root_path, :notice => "Order has been placed successfully!"
 	  end
 	end
