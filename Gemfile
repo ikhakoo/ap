@@ -30,7 +30,7 @@ gem 'stripe_event'
 
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'sass-rails', '>= 3.2'
-gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
+gem 'semantic-ui-sass'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
