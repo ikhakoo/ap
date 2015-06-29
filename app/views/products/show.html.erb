@@ -29,33 +29,28 @@
               <% end %> 
 					</div>
 
-                    <!-- MAIN SETTINGS AND ATTRIBUTES -->
+					<!-- MAIN SETTINGS AND ATTRIBUTES -->
 					<div class="col-md-5 col-sm-6">
-
-                        <!-- TITLE -->
+           	<!-- TITLE -->
 						<div class="product-title"><%= @product.name %></div>
-						<div class="product-desc"><%= @product.description %></div>
-					   
-                        <hr>
-
-                       <!-- COLORS -->
-                        <h3>Select Color:</h3>
+						<div class="product-desc"><%= @product.description %></div>					   
+          <hr>
+            <!-- COLORS -->
+            <h3>Select Color:</h3>
 						<select class="selectpicker" data-show-subtext="true" id="color_selector">
-                            <% @product_colors.each do |a| %>
-                                <option class="color_option"> <%= a %></option>
-                            <% end %>
-                        </select>
+              <% @product_colors.each do |a| %>
+                <option class="color_option"> <%= a %></option>
+              <% end %>
+            </select>
 
-                        <!-- SIZE -->
+            <!-- SIZE -->
 						<h3>Select Size: </h3>
 						<select class="selectpicker " data-show-subtext="true" id="size_selector">
-                        <% @sizes.each do |size| %>
-                            <option> <%= size %> </option>
-                        <% end %>
-                        </select>
-
-    					<hr>
-
+              <% @sizes.each do |size| %>
+                <option> <%= size %> </option>
+              <% end %>
+            </select>
+    			<hr>
 						<div class="product-price"><%= number_to_currency @product.price %></div>
 						<div class="product-stock">
 							<% if @product.stock_control? %>
@@ -71,7 +66,7 @@
 							<%= link_to "Add to Cart", product_path(@product.permalink), :method => :post, class: "ui button green" %>
 						</div>
 						<div class="btn-group wishlist">
-							<%= link_to "Back to list", root_path, class: "ui button red", :style => 'float:right' %>
+							<%= link_to "Back to List", root_path, class: "ui button red", :style => 'float:right' %>
 						</div>
 					</div>
 				</div> 
