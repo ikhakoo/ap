@@ -25,7 +25,7 @@ Rails.application.routes.draw do
 
   get "basket", to: "orders#show"
   delete "basket", to: "orders#destroy"
-
+  
   # Example of regular route:
   get 'products/:id' => 'catalog#view' 
 
