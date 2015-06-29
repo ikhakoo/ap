@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "shoppe-stripe", require: "shoppe/stripe"
 gem 'stripe_event'
 
+gem 'unicorn'
+
 # gem "shoppe-paypal"
 
 gem 'bootstrap-sass', '~> 3.3.4'
