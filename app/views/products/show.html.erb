@@ -1,37 +1,3 @@
-<script>
-        var old_selection = document.body
-        $(function() {            
-            $('.color_picker_primary').on('click', function() {
-                console.log(old_selection)
-
-                //set the selector the name of this color square
-                $('#color_selector')[0].value = this.attributes[2].value
-
-                //give a border to emulate selection
-                $(this).css('border', '2px solid yellow')
-
-                // reset the former square
-                old_selection.style.border = 'none',       
-                old_selection = this
-            })
-
-            $('#color_selector').on('change', function() { 
-                // cycle through all the possible colors_array
-                console.log(this)
-                console.log(this.value)
-                colors_box = $('.color_picker_primary')
-                for (var i = 0; i < colors_box.length; i++) {
-                     name = colors_box[i].attributes[2].value 
-                     selector_value = $('#color_selector')[0].value
-                     name == this.value? colors_box[i].style.border = '2px solid yellow' : null 
-
-                    // old_selection.style.border = 'none',       
-                    // old_selection = colors_box[i]
-                 }; 
-            })
-        })
-</script>
-
 <div class="container-fluid">
   <div class="content-wrapper">	
 		<div class="item-container">	
@@ -143,6 +109,40 @@
     <%= render 'products' %>
   </div>
 </div>
+
+<script>
+        var old_selection = document.body
+        $(function() {            
+            $('.color_picker_primary').on('click', function() {
+                console.log(old_selection)
+
+                //set the selector the name of this color square
+                $('#color_selector')[0].value = this.attributes[2].value
+
+                //give a border to emulate selection
+                $(this).css('border', '2px solid yellow')
+
+                // reset the former square
+                old_selection.style.border = 'none',       
+                old_selection = this
+            })
+
+            $('#color_selector').on('change', function() { 
+                // cycle through all the possible colors_array
+                console.log(this)
+                console.log(this.value)
+                colors_box = $('.color_picker_primary')
+                for (var i = 0; i < colors_box.length; i++) {
+                     name = colors_box[i].attributes[2].value 
+                     selector_value = $('#color_selector')[0].value
+                     name == this.value? colors_box[i].style.border = '2px solid yellow' : null 
+
+                    // old_selection.style.border = 'none',       
+                    // old_selection = colors_box[i]
+                 }; 
+            })
+        })
+</script>
 
 <script>
 	$(document).ready(function(){
