@@ -74,7 +74,7 @@
         <td colspan="2" class="hidden-xs"></td>
         <td class="hidden-xs text-center"><strong>Total: <%= number_to_currency order.total %></strong></td>
         <td>
-          <% if !current_page?(action: 'checkout') %>
+          <% if !current_page?(action: 'checkout') && !current_page?(action: 'confirmation') %>
             <%= link_to 'Checkout', checkout_path, class: "btn btn-success btn-lg" %>
           <% end %>
         </td>
