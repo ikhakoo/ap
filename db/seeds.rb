@@ -58,7 +58,6 @@ def seed_shit
 
 	file_paths.each do |fp|
 
-<<<<<<< HEAD
 		filename = File.basename(fp)
 		name = File.basename(filename, File.extname(filename))
 		# fp.split("/").last.gsub(".jpeg", "").titleize
