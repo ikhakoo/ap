@@ -43,8 +43,8 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav" style="font-size: 23px;">
-            <!-- <li><a href="<%= root_path %>">Home</a></li> -->
+          <ul class="nav navbar-nav" style="font-size: 18px;">
+
             <li class="dropdown" style="color:black;">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nurse Wear <span class="caret"></span></a>
               <ul class="dropdown-menu" style="background-color:#5452a2;">
@@ -53,6 +53,7 @@
                 <li><a href="<%= nurse_sets_path %>">Sets</a></li>
               </ul>
             </li>
+            
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stethoscopes<span class="caret"></span></a>
               <ul class="dropdown-menu" style="background-color:#5452a2;">
@@ -60,6 +61,7 @@
                 <li><a href="#">Under Construction</a></li>
               </ul>
             </li>
+            
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chef Wear<span class="caret"></span></a>
               <ul class="dropdown-menu" style="background-color:#5452a2;">
@@ -67,7 +69,11 @@
                 <li><a href="#">Under Construction</a></li>
               </ul>
             </li>
+            
             <li><a href="<%= clearance_path %>" style="background-color:red; color:white;">Clearance</a></li>
+            
+            
+
           </ul>
           <ul class="nav navbar-nav navbar-right" id="navbar_options">
             <!-- <li>
@@ -87,6 +93,8 @@
                   <%= link_to "View Basket (#{current_order.total_items})", basket_path, class: "ui button" %>
                   <div class="or"></div>
                   <%= link_to "Checkout $#{current_order.total_before_tax}", checkout_path, class: "ui primary button" %>
+                  <br>
+                  <a class="btn btn-primary" href="<%= contact_path%>">Contact Us</a>
                 <% end %>
               </div>
             </li>
@@ -122,8 +130,7 @@
               <div class="col-md-12">
                 <ul class="social-network social-circle">
                   <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-instagram"></i></a></li>
                   <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
                 </ul>       
               </div>
@@ -133,7 +140,7 @@
               <p>
                 <a href="#">Terms & Service</a> |
                 <a href="#">Customer Service</a> |
-                <a href="#">Contact Us</a>
+                <a href="<%= contact_path %>">Contact Us</a>
               </p>
             </div>
             
