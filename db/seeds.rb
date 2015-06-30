@@ -44,7 +44,7 @@ def seed_shit
 		elsif name == 'The Pearl'
 			colors = ["Black", "Royal Blue", "Charcoal", "White"]
 			sku = 'T3020'
-		elsif name == 'Basic V-Neck Scrub Top'
+		elsif name == 'Basic V Neck Scrub Top'
 			colors = ["Black", "Cappuccino", "Ceil", "Lagoon", "Postman Blue", "Sky Blue", "Burgundy", "Caribbean", "Charcoal", "Navy Blue", "Royal Blue", "White"]
 			sku = '606T'
 
