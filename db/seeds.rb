@@ -41,62 +41,62 @@ def seed_shit
 		if name == 'The Rosey'
 			sku = 'T3030'
 			colors = ["Black", "Royal Blue", "Charcoal", "White"]
-		elsif name = 'The Pearl'
+		elsif name == 'The Pearl'
 			colors = ["Black", "Royal Blue", "Charcoal", "White"]
 			sku = 'T3020'
-		elsif name = 'Basic V-Neck Scrub Top'
+		elsif name == 'Basic V-Neck Scrub Top'
 			colors = ["Black", "Cappuccino", "Ceil", "Lagoon", "Postman Blue", "Sky Blue", "Burgundy", "Caribbean", "Charcoal", "Navy Blue", "Royal Blue", "White"]
 			sku = '606T'
 
-		elsif name = "Zipper Front Ladies Work Top"
+		elsif name == "Zipper Front Ladies Work Top"
 			colors = []
 			sku = ''
-		elsif name = "Flexi V Neck Scrub Top"
+		elsif name == "Flexi V Neck Scrub Top"
 			colors = []
 			sku = ''
-		elsif name = "Ultra Flexi Scrub Top"
+		elsif name == "Ultra Flexi Scrub Top"
 			colors = []
 			sku = ''
-		elsif name = "3 Pocket V Neck Scrub Top"
+		elsif name == "3 Pocket V Neck Scrub Top"
 			colors = []
 			sku = ''
-		elsif name = "Unisex V Neck Scrub Top"
+		elsif name == "Unisex V Neck Scrub Top"
 			colors = []
 			sku = ''
-		elsif name = "Ladies Sculpted Scrub Top"
+		elsif name == "Ladies Sculpted Scrub Top"
 			colors = []
 			sku = ''
-		elsif name = "Active Flexi V Neck Scrub Top"
+		elsif name == "Active Flexi V Neck Scrub Top"
 			colors = []
 			sku = ''
-		elsif name = "Men’s Two Tone Scrub Top"
+		elsif name == "Men’s Two Tone Scrub Top"
 			colors = []
 			sku = ''
-		elsif name = "Empire Tie Back Scrub Top"
+		elsif name == "Empire Tie Back Scrub Top"
 			colors = []
 			sku = ''
-		elsif name = "The Coco"
+		elsif name == "The Coco"
 			colors = []
 			sku = ''
-		elsif name = "The Mandy"
+		elsif name == "The Mandy"
 			colors = []
 			sku = ''
-		elsif name = "The Roxy"
+		elsif name == "The Roxy"
 			colors = []
 			sku = ''
-		elsif name = "Ladies Zipper Detail Scrub Top"
+		elsif name == "Ladies Zipper Detail Scrub Top"
 			colors = []
 			sku = ''
-		elsif name = "V Neck Print Scrub Top"
+		elsif name == "V Neck Print Scrub Top"
 			colors = []
 			sku = ''
-		elsif name = "Criss Cross Scrub Top"
+		elsif name == "Criss Cross Scrub Top"
 			colors = []
 			sku = ''
-		elsif name = "Button Front Ladies Work Top"
+		elsif name == "Button Front Ladies Work Top"
 			colors = []
 			sku = ''
-		elsif name = "Ladies Long Sleeve Tee"
+		elsif name == "Ladies Long Sleeve Tee"
 			colors = []
 			sku = ''
 		end
