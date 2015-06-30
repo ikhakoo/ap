@@ -43,29 +43,130 @@ def seed_shit
 	images = {
 		"The Rosey.jpeg" => {
 			sku: "T3030",
-			colors: ["Black", "Royal Blue", "Charcoal", "White"]
+			colors: ["Black", "Royal Blue", "Charcoal", "White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
 		"The Pearl" => {
 			sku: "T3020",
-		  colors: ["Black", "Royal Blue", "Charcoal", "White"]
+		  colors: ["Black", "Royal Blue", "Charcoal", "White"],
+		  sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
 		"Basic V Neck Scrub Top" => {
 			sku: "606T",
-			colors: ["Black", "Cappuccino", "Ceil", "Lagoon", "Postman Blue", "Sky Blue", "Burgundy", "Caribbean", "Charcoal", "Navy Blue", "Royal Blue", "White"]
+			colors: ["Black", "Cappuccino", "Ceil", 
+								"Lagoon", "Postman Blue", "Sky Blue", 
+								"Burgundy", "Caribbean", "Charcoal", 
+								"Navy Blue", "Royal Blue", "White"
+							],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
 		"Zipper Front Ladies Work Top" => {
 			sku: "202T",
-			colors: ["Black", "White", "Navy Blue"]
+			colors: ["Black", "White", "Navy Blue"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
-		"T Flexi V Neck Scrub Top" => {
-			sku: "",
+		"Flexi V Neck Scrub Top" => {
+			sku: "324T",
 			colors: ["2tone White/White", "Black", "Brown", "Charcoal", "Deja Vu", "Eggplant", "Heart Ties", "Khaki",
 							 "Lime Green", "Olive Green", "Papillon", "Postman Blue", "Raspberry", "Royal Blue", "String Along",
 							 "Zen Stem", "Aqua", "Blue Cheerios", "Cappuccino", "Deep Orchid", "Dusty Rose", "Fire Works", "Indigo",
 							 "Lagoon", "Navy Blue", "Paisley Pink", "Pink Sorbet", "Pretty in Petals", "Red", "Sea Green",
-							 "Techno"]
+							 "Techno"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
-		
+		"Ultra Flexi Scrub Top" => {
+			sku: "524T",
+			colors: ["Aqua", "Charcoal", "Navy Blue", "Black", "Deep Orchid", "Sky Blue"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"3 Pocket V Neck Scrub Top" => {
+			sku: "308T",
+			colors: ["Aqua", "Burgundy", "Ceil", "Eggplant", "Lagoon", "Postman Blue", 
+								"Royal Blue", "Spruce", "Black", "Caribbean", "Charcoal", "Khaki", 
+								"Navy Blue", "Rasberry", "Sky Blue", "White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Unisex V Neck Scrub Top" => {
+			sku: "310T",
+			colors: ["Aqua", "Burgundy", "Caribbean", "Charcoal", "Khaki", "Navy Blue", "Postman Blue", "Royal Blue", 
+								"Sky Blue", "Teal", "Black", "Cappuccino", "Ceil", "Eggplant", "Lagoon", "Olive Green", "Red",
+								"Sea Green", "Spruce", "White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Ladies Sculpted Scrub Top" => {
+			sku: "410T",
+			colors: ["Aqua/Black", "Charcoal/Postman Blue", "Eggplant/Black", "White/White", 
+								"Black/White", "Deep Orchid/White", "Navy Blue/Sky Blue"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Active Flexi V Neck Scrub Top" => {
+			sku: "424T",
+			colors: ["Indigo/Black", "Eggplant/Black", "Rasberry/Black", "Aqua/Black", "Charcoal/Black", "Navy Blue/Black",
+								"White/White", "Postman Blue/Black"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Men's Two Tone Scrub Top" => {
+			sku: "409T",
+			colors: ["Burgundy/Navy", "Khaki/Black", "Charcoal/Black", "Postman Blue/Navy"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Empire Tie Back Scrub Top" => {
+			sku: "420T",
+			colors: ["Navy", "White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"The Coco" => {
+			sku: "T1018",
+			colors: ["Aubergine", "White", "Soft Mint"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"The Mandy" => {
+			sku: "T1010",
+			colors: ["Aubergine", "White", "Soft Mint"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"The Roxy" => {
+			sku: "T1016",
+			colors: ["Aubergine", "White", "Soft Mint"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Ladies Zipper Detail Scrub Top" => {
+			sku: "530T",
+			colors: ["Navy Blue"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"V Neck Print Scrub Top" => {
+			sku: "320T",
+			colors: ["Blue Cheerios", "Fire Works", "Flower Power", "Heart Ties", "Pinned Heart", "Spring Blooming", 
+								"Techno", "Dizzy Vines", "Florescent Butterfly", "Groovy Hoops", "Papillon", "Pretty in Petals",
+								"String Along"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Criss Cross Scrub Top" => {
+			sku: "323T",
+			colors: ["Aqua/Black", "Blue Cheerios/Navy Blue", "Charcoal/Postman Blue", "Eggplant/Black", "Floresent Butterfly/Charcoal",
+								"Lagoon/Lagoon", "Postman Blue/Navy", "Sea Green/Navy", "Spring Blooming/Black" , "Techno/Aqua", 
+								"Black/Aqua", "Charcoal/Lilac", "Deep Orchid/Black", "Fireworks/Sea Green", "Flower Power/Royal Blue", 
+								"Indigo/Charcoal", "Navy Blue/Sky Blue", "Pretty in Petals/Charcoal", "Sky Blue/Navy", 
+								"String Along/Eggplant", "White/White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Button Front Ladies Work Top" => {
+			sku: "201T",
+			colors: ["Black", "White", "Navy Blue"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		}
+		"Ladies Long Sleeve Tee" => {
+			sku: "LT101",
+			colors: ["Black", "White", "Navy Blue"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		}
+		"" => {
+
+		}
+		"" => {
+
+		}
 	}
 
 	default_params = {
@@ -110,77 +211,7 @@ def seed_shit
 			end
 			print params[:sku] 
 		end
-
-		# 	== 'The Rosey'
-		# 	sku = 'T3030'
-		# 	colors = ["Black", "Royal Blue", "Charcoal", "White"]
-		# elsif name == 
-		# 	colors = ["Black", "Royal Blue", "Charcoal", "White"]
-		# 	sku = 'T3020'
-		# elsif name == 'Basic V Neck Scrub Top'
-		# 	colors = ["Black", "Cappuccino", "Ceil", "Lagoon", "Postman Blue", "Sky Blue", "Burgundy", "Caribbean", "Charcoal", "Navy Blue", "Royal Blue", "White"]
-		# 	sku = '606T'
-
-
-
-
-		# elsif name == "Zipper Front Ladies Work Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Flexi V Neck Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Ultra Flexi Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "3 Pocket V Neck Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Unisex V Neck Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Ladies Sculpted Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Active Flexi V Neck Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Men’s Two Tone Scrub Top"
-		# 	colors = []
-		# 	skureturn
-		# elsif name == "Empire Tie Back Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "The Coco"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "The Mandy"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "The Roxy"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Ladies Zipper Detail Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "V Neck Print Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Criss Cross Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Button Front Ladies Work Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Ladies Long Sleeve Tee"
-		# 	colors = []
-		# 	sku = ''
-		# end
-
-
   end
-
 end
-
 
 seed_shit
