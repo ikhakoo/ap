@@ -100,7 +100,7 @@ class ProductsController < ApplicationController
     @products = @products.group_by(&:product_category)
 
 
-    binding.pry
+    
     @attributes = @product.product_attributes.public.to_a
 
     @product_colors = @product[:short_description].split("\n")
