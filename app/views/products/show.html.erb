@@ -85,9 +85,9 @@
             <p>
               <%= number_to_currency variant.price %>
             </p>
-            <%= form_tag product_path(@product.permalink, @product.permalink, :variant => variant.id) do %>
+            <%= form_tag product_path(@product.permalink, :product => @product.id, :variant => variant.id) do %>
               <p>
-                <%= submit_tag 'Add to basket', :disabled => !variant.in_stock? %>
+                <%= submit_tag 'Add to basket' %>
               </p>
             <% end %>
           </td>

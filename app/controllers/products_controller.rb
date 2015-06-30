@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+
   SIZES = [ 'Small', 'Medium', 'Large', 'XL', 'XXL']
 
   COLORS = {
@@ -118,29 +119,35 @@ class ProductsController < ApplicationController
     
   end
 
-  def buy
-    @product = Shoppe::Product.find_by_permalink!(params[:permalink])
-    if @product.stock_control # do we have any stock left?
-      current_order.order_items.add_item(@product, 1)
-      redirect_to product_path(@product.permalink), :notice => "Product has been added successfuly!"
-    else  
-      redirect_to product_path(@product.permalink), :alert => "Sorry we are out of stock!"
-    end
-  end
-
   # def buy
-  #   product_to_order = params[:variant] ? @product.variants.find(params[:variant].to_i) : @product
-  #   current_order.order_items.add_item(product_to_order, 1)
-  #   respond_to do |wants|
-  #     wants.html { redirect_to request.referer }
-  #     wants.json { render :json => {:added => true} }
-  #   end
-  # rescue Shoppe::Errors::NotEnoughStock => e
-  #   respond_to do |wants|
-  #     wants.html { redirect_to request.referer, :alert => "We're sorry but we don't have enough stock to add that many products. We currently have #{e.available_stock} item(s) in stock. Please try again."}
-  #     wants.json { render :json => {:error => 'NotEnoughStock', :available_stock => e.available_stock}}
+  #   @product = Shoppe::Product.find_by_permalink!(params[:permalink])
+  #   if @product.stock_control # do we have any stock left?
+  #     current_order.order_items.add_item(@product, 1)
+  #     redirect_to product_path(@product.permalink), :notice => "Product has been added successfuly!"
+  #   else  
+  #     redirect_to product_path(@product.permalink), :alert => "Sorry we are out of stock!"
   #   end
   # end
+
+  def buy
+    @product = Shoppe::Product.find(params[:product].to_i)
+    if params[:variant]
+      order_product = @product.variants.find(params[:variant].to_i)
+      current_order.order_items.add_item(order_product, 1)
+      redirect_to product_path(@product.permalink), 
+      :notice => "Product has been added successfuly!"
+    else
+      order_product = @product
+        if @product.stock_control
+          current_order.order_items.add_item(order_product, 1)
+          redirect_to product_path(@product.permalink), 
+          :notice => "Product has been added successfuly!"
+        else
+          redirect_to product_path(@product.permalink), 
+          :alert => "Sorry we are out of stock!"
+        end
+    end
+  end
 
   def remove
 	@product = Shoppe::Product.find_by_permalink!(params[:permalink])
