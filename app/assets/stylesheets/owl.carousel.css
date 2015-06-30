@@ -558,7 +558,7 @@ a {
 }
 
 .service-image-left {
-	padding-right: 50px;
+	padding-right: 0px;
 }
 
 .service-image-right {
@@ -566,7 +566,7 @@ a {
 }
 
 .service-image-left > center > img,.service-image-right > center > img{
-	max-height: 155px;
+	max-height: 319px;
 }
 
 /* Padding - just for asthetics on Bootsnipp.com */
