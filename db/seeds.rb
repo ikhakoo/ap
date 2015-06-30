@@ -155,17 +155,51 @@ def seed_shit
 			sku: "201T",
 			colors: ["Black", "White", "Navy Blue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
-		}
+		},
 		"Ladies Long Sleeve Tee" => {
 			sku: "LT101",
 			colors: ["Black", "White", "Navy Blue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
-		}
-		"" => {
-
-		}
-		"" => {
-
+		},
+		"Men's Two Tone Scrub Set with 6 Pocket Scrub Pants" => {
+			sku: "409/409",
+			color: ["Burgundy/Navy", "Khaki/Black", "Charcoal/Black", "Postman Blue/Navy"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Criss Cross Flip Flap" => {
+			sku: "323/312",
+			colors: ["Aqua/Black", "Charcoal/PostmanBlue", "Eggplant/Black", "Lagoon/Lagoon", "Postman Blue/Navy",
+								"Sky Blue/Navy", "Black/Aqua", "Deep Orchird/Black", "Indigo/Charcoal", "Navy Blue/Sky Blue",
+								"Sea Green/Navy", "White/White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"3 Pocket V Neck Scrub Top, with Flip Flap Scrub Pants" => {
+			sku: "308/312",
+			colors: ["Aqua", "Burgundy", "Ceil", "Eggplant", "Lagoon", "Postman Blue", "Royal Blue", "Spruce", "Black", 
+								"Caribbean", "Charcoal", "Khaki", "Navy Blue", "Raspberry", "Sky Blue", "White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Unisex 8 Pocket Drawstring/Elastic Scrub Set" => {
+			sku: "310/307",
+			colors: ["Aqua","Burgundy","Caribbean","Charcoal","Khaki","Lime Green","Olive Green","Royal Blue","Spruce",
+								"White","Black","Cappuccino","Ceil","Eggplant","Lagoon","Navy Blue","Postman Blue","Sky Blue","Teal"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Unisex 5 Pocket Drawstring Scrub Set" => {
+			sku: "606/608",
+			colors: ["Black","Cappuccino","Ceil","Lagoon","Postman Blue","Sky Blue","Burgundy","Caribbean","Charcoal",
+								"Navy Blue","Royal Blue","White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Reversible O.R. Drawstring Scrub Set" => {
+			sku: "306TA/306PA",
+			color: ["Lagoon"],
+			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
+		},
+		"Scrub Set" => {
+			sku: "CH400",
+			color: ["Lagoon"],
+			sizes: ["2Y","4Y","6Y","8Y"]
 		}
 	}
 
