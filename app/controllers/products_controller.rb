@@ -101,6 +101,7 @@ class ProductsController < ApplicationController
     
     @product_colors = @product[:short_description].split("\n")
     @colors_array = []
+    binding.pry
     @product_colors.each do |a| @colors_array << a.split("/")  end  
     @sizes = SIZES
     @background_details = []
@@ -110,7 +111,7 @@ class ProductsController < ApplicationController
           temp_array << COLORS[color]
         end
 
-    binding.pry
+    # binding.pry
         @background_details << temp_array
     end 
 
@@ -118,13 +119,15 @@ class ProductsController < ApplicationController
   end
 
   def buy
-	@product = Shoppe::Product.find_by_permalink!(params[:permalink])
+    @product = Shoppe::Product.find_by_permalink!(params[:permalink])
+    binding.pry
     if @product.stock_control = 'true'
       current_order.order_items.add_item(@product, 1)
       redirect_to product_path(@product.permalink), :notice => "Product has been added successfuly!"
     else  
       redirect_to product_path(@product.permalink), :alert => "Sorry we are out of stock!"
     end
+
   end
 
   def nurse
