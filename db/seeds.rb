@@ -43,28 +43,29 @@ def seed_shit
 	images = {
 		"The Rosey.jpeg" => {
 			sku: "T3030",
-			colors: ["Black", "Royal Blue", "Charcoal", "White"]
-		},
-		"The Pearl" => {
-			sku: "T3020",
-		  colors: ["Black", "Royal Blue", "Charcoal", "White"]
-		},
-		"Basic V Neck Scrub Top" => {
-			sku: "606T",
-			colors: ["Black", "Cappuccino", "Ceil", "Lagoon", "Postman Blue", "Sky Blue", "Burgundy", "Caribbean", "Charcoal", "Navy Blue", "Royal Blue", "White"]
-		},
-		"Zipper Front Ladies Work Top" => {
-			sku: "202T",
-			colors: ["Black", "White", "Navy Blue"]
-		},
-		"T Flexi V Neck Scrub Top" => {
-			sku: "",
-			colors: ["2tone White/White", "Black", "Brown", "Charcoal", "Deja Vu", "Eggplant", "Heart Ties", "Khaki",
-							 "Lime Green", "Olive Green", "Papillon", "Postman Blue", "Raspberry", "Royal Blue", "String Along",
-							 "Zen Stem", "Aqua", "Blue Cheerios", "Cappuccino", "Deep Orchid", "Dusty Rose", "Fire Works", "Indigo",
-							 "Lagoon", "Navy Blue", "Paisley Pink", "Pink Sorbet", "Pretty in Petals", "Red", "Sea Green",
-							 "Techno"]
-		},
+			colors: ["Black", "Royal Blue", "Charcoal", "White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		 }#,
+		# "The Pearl" => {
+		# 	sku: "T3020",
+		#   colors: ["Black", "Royal Blue", "Charcoal", "White"]
+		# },
+		# "Basic V Neck Scrub Top" => {
+		# 	sku: "606T",
+		# 	colors: ["Black", "Cappuccino", "Ceil", "Lagoon", "Postman Blue", "Sky Blue", "Burgundy", "Caribbean", "Charcoal", "Navy Blue", "Royal Blue", "White"]
+		# },
+		# "Zipper Front Ladies Work Top" => {
+		# 	sku: "202T",
+		# 	colors: ["Black", "White", "Navy Blue"]
+		# },
+		# "T Flexi V Neck Scrub Top" => {
+		# 	sku: "",
+		# 	colors: ["2tone White/White", "Black", "Brown", "Charcoal", "Deja Vu", "Eggplant", "Heart Ties", "Khaki",
+		# 					 "Lime Green", "Olive Green", "Papillon", "Postman Blue", "Raspberry", "Royal Blue", "String Along",
+		# 					 "Zen Stem", "Aqua", "Blue Cheerios", "Cappuccino", "Deep Orchid", "Dusty Rose", "Fire Works", "Indigo",
+		# 					 "Lagoon", "Navy Blue", "Paisley Pink", "Pink Sorbet", "Pretty in Petals", "Red", "Sea Green",
+		# 					 "Techno"]
+		# },
 		
 	}
 
@@ -85,19 +86,21 @@ def seed_shit
 
 		if params = images[filename] 
 
+			params[:colors].each do |color|
+
 			# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-			pro = Shoppe::Product.new(default_params.merge(sku: params[:sku], name: name))
+			pro = Shoppe::Product.new(default_params.merge(sku: params[:sku] + "-#{color}", name: "#{name}-#{color}"))
 			pro.product_category = cat1
 			pro.default_image_file = get_file(filename)
 			pro.save!
-			# pro.product_attributes.create!(:key => 'Color', :value => 'Test', :position => 1)
+			pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
 			p pro
 
-			params[:colors].each do |color|
+			params[:sizes].each do |size|
 				v = pro.variants.create(
-					:name => "#{pro.name}-#{color}", 
-					:sku => "#{params[:sku]}-#{color}", 
+					:name => "#{pro.name}-#{size}", 
+					:sku => "#{params[:sku]}-#{size}", 
 					:price => pro.price, 
 					:cost_price => pro.cost_price, 
 					:tax_rate => tax_rate, 
@@ -110,77 +113,8 @@ def seed_shit
 			end
 			print params[:sku] 
 		end
-
-		# 	== 'The Rosey'
-		# 	sku = 'T3030'
-		# 	colors = ["Black", "Royal Blue", "Charcoal", "White"]
-		# elsif name == 
-		# 	colors = ["Black", "Royal Blue", "Charcoal", "White"]
-		# 	sku = 'T3020'
-		# elsif name == 'Basic V Neck Scrub Top'
-		# 	colors = ["Black", "Cappuccino", "Ceil", "Lagoon", "Postman Blue", "Sky Blue", "Burgundy", "Caribbean", "Charcoal", "Navy Blue", "Royal Blue", "White"]
-		# 	sku = '606T'
-
-
-
-
-		# elsif name == "Zipper Front Ladies Work Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Flexi V Neck Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Ultra Flexi Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "3 Pocket V Neck Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Unisex V Neck Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Ladies Sculpted Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Active Flexi V Neck Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Men’s Two Tone Scrub Top"
-		# 	colors = []
-		# 	skureturn
-		# elsif name == "Empire Tie Back Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "The Coco"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "The Mandy"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "The Roxy"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Ladies Zipper Detail Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "V Neck Print Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Criss Cross Scrub Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Button Front Ladies Work Top"
-		# 	colors = []
-		# 	sku = ''
-		# elsif name == "Ladies Long Sleeve Tee"
-		# 	colors = []
-		# 	sku = ''
-		# end
-
-
+	end
   end
-
 end
-
 
 seed_shit
