@@ -155,18 +155,18 @@ def seed_shit
 			sku: "201T",
 			colors: ["Black", "White", "Navy Blue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
-		}
+		},
 		"Ladies Long Sleeve Tee" => {
 			sku: "LT101",
 			colors: ["Black", "White", "Navy Blue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		}
-		"" => {
+		# "" => {
 
-		}
-		"" => {
+		# }
+		# "" => {
 
-		}
+		# }
 	}
 
 	default_params = {
