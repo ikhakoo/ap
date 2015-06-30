@@ -33,10 +33,11 @@ def seed_shit
 
 
 	file_paths = Dir.glob("db/seeds_data/*.jpeg")
-	sku = 1000
 	colors = ["red", "green", "yellow"]
 
 	file_paths.each do |fp|
+
+		sku = 1000
 
 		name = fp.split("/").last.gsub(".jpeg", "").titleize
 
@@ -51,7 +52,7 @@ def seed_shit
 			colors.each do |color|
 				color_sku = sku.to_s + "-" + color
 
-				v = pro.variants.create(:name => color, :sku => color_sku, :price => pro.price, :cost_price => pro.cost_price, :tax_rate => tax_rate, :weight => pro.weight, :default => true)
+				v = pro.variants.create(:name => name + color, :sku => color_sku, :price => pro.price, :cost_price => pro.cost_price, :tax_rate => tax_rate, :weight => pro.weight, :default => true)
 				v.default_image_file = get_file(name + ".jpeg")
 				v.save!
 				v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
@@ -59,9 +60,9 @@ def seed_shit
 			end
 		end
 		
-  end
+		sku = sku + 1
 
-  sku = sku + 1
+  end
 
   print sku 
 
