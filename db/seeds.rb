@@ -44,7 +44,28 @@ def seed_shit
 		"The Rosey.jpeg" => {
 			sku: "T3030",
 			colors: ["Black", "Royal Blue", "Charcoal", "White"]
-		}
+		},
+		"The Pearl" => {
+			sku: "T3020",
+		  colors: ["Black", "Royal Blue", "Charcoal", "White"]
+		},
+		"Basic V Neck Scrub Top" => {
+			sku: "606T",
+			colors: ["Black", "Cappuccino", "Ceil", "Lagoon", "Postman Blue", "Sky Blue", "Burgundy", "Caribbean", "Charcoal", "Navy Blue", "Royal Blue", "White"]
+		},
+		"Zipper Front Ladies Work Top" => {
+			sku: "202T",
+			colors: ["Black", "White", "Navy Blue"]
+		},
+		"T Flexi V Neck Scrub Top" => {
+			sku: "",
+			colors: ["2tone White/White", "Black", "Brown", "Charcoal", "Deja Vu", "Eggplant", "Heart Ties", "Khaki",
+							 "Lime Green", "Olive Green", "Papillon", "Postman Blue", "Raspberry", "Royal Blue", "String Along",
+							 "Zen Stem", "Aqua", "Blue Cheerios", "Cappuccino", "Deep Orchid", "Dusty Rose", "Fire Works", "Indigo",
+							 "Lagoon", "Navy Blue", "Paisley Pink", "Pink Sorbet", "Pretty in Petals", "Red", "Sea Green",
+							 "Techno"]
+		},
+		
 	}
 
 	default_params = {
@@ -93,7 +114,7 @@ def seed_shit
 		# 	== 'The Rosey'
 		# 	sku = 'T3030'
 		# 	colors = ["Black", "Royal Blue", "Charcoal", "White"]
-		# elsif name == 'The Pearl'
+		# elsif name == 
 		# 	colors = ["Black", "Royal Blue", "Charcoal", "White"]
 		# 	sku = 'T3020'
 		# elsif name == 'Basic V Neck Scrub Top'
