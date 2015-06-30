@@ -92,7 +92,7 @@
                 <% if current_order %>    
                   <%= link_to "View Basket (#{current_order.total_items})", basket_path, class: "ui button" %>
                   <div class="or"></div>
-                  <%= link_to "Checkout $#{current_order.total_before_tax}", checkout_path, class: "ui primary button" %>
+                  <%= link_to "Checkout $#{current_order.total_before_tax}", checkout_path, class: "ui green button" %>
                   <br>
                   <a class="btn btn-primary" href="<%= contact_path%>">Contact Us</a>
                 <% end %>
