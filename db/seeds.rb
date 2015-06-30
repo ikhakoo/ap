@@ -51,20 +51,19 @@ def seed_shit
 
 			colors.each do |color|
 				color_sku = sku.to_s + "-" + color
+				color_name = pro.name + "-" + color
 
-				v = pro.variants.create(:name => name + color, :sku => color_sku, :price => pro.price, :cost_price => pro.cost_price, :tax_rate => tax_rate, :weight => pro.weight, :default => true)
-				v.default_image_file = get_file(name + ".jpeg")
+				v = pro.variants.create(:name => color_name, :sku => color_sku, :price => pro.price, :cost_price => pro.cost_price, :tax_rate => tax_rate, :weight => pro.weight, :default => true)
+				v.default_image_file = get_file(pro.name + ".jpeg")
 				v.save!
 				v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
 
 			end
 		end
-		
+		print sku 
 		sku = sku + 1
 
   end
-
-  print sku 
 
 end
 
