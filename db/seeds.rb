@@ -33,13 +33,73 @@ def seed_shit
 
 
 	file_paths = Dir.glob("db/seeds_data/*.jpeg")
-	colors = ["red", "green", "yellow"]
 
 	file_paths.each do |fp|
 
-		sku = 1000
-
 		name = fp.split("/").last.gsub(".jpeg", "").titleize
+
+		if name == 'The Rosey'
+			sku = 'T3030'
+			colors = ["Black", "Royal Blue", "Charcoal", "White"]
+		elsif name = 'The Pearl'
+			colors = ["Black", "Royal Blue", "Charcoal", "White"]
+			sku = 'T3020'
+		elsif name = 'Basic V-Neck Scrub Top'
+			colors = ["Black", "Cappuccino", "Ceil", "Lagoon", "Postman Blue", "Sky Blue", "Burgundy", "Caribbean", "Charcoal", "Navy Blue", "Royal Blue", "White"]
+			sku = '606T'
+
+		elsif name = "Zipper Front Ladies Work Top"
+			colors = []
+			sku = ''
+		elsif name = "Flexi V Neck Scrub Top"
+			colors = []
+			sku = ''
+		elsif name = "Ultra Flexi Scrub Top"
+			colors = []
+			sku = ''
+		elsif name = "3 Pocket V Neck Scrub Top"
+			colors = []
+			sku = ''
+		elsif name = "Unisex V Neck Scrub Top"
+			colors = []
+			sku = ''
+		elsif name = "Ladies Sculpted Scrub Top"
+			colors = []
+			sku = ''
+		elsif name = "Active Flexi V Neck Scrub Top"
+			colors = []
+			sku = ''
+		elsif name = "Men’s Two Tone Scrub Top"
+			colors = []
+			sku = ''
+		elsif name = "Empire Tie Back Scrub Top"
+			colors = []
+			sku = ''
+		elsif name = "The Coco"
+			colors = []
+			sku = ''
+		elsif name = "The Mandy"
+			colors = []
+			sku = ''
+		elsif name = "The Roxy"
+			colors = []
+			sku = ''
+		elsif name = "Ladies Zipper Detail Scrub Top"
+			colors = []
+			sku = ''
+		elsif name = "V Neck Print Scrub Top"
+			colors = []
+			sku = ''
+		elsif name = "Criss Cross Scrub Top"
+			colors = []
+			sku = ''
+		elsif name = "Button Front Ladies Work Top"
+			colors = []
+			sku = ''
+		elsif name = "Ladies Long Sleeve Tee"
+			colors = []
+			sku = ''
+		end
 
 		pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
 		pro.product_category_id = cat1.id
@@ -47,21 +107,16 @@ def seed_shit
 		pro.save!
 		pro.product_attributes.create!(:key => 'Color', :value => 'Black', :position => 1)
 
-		if colors.nil? == false
+		colors.each do |color|
+			color_sku = sku + "-" + color
+			color_name = pro.name + "-" + color
 
-			colors.each do |color|
-				color_sku = sku.to_s + "-" + color
-				color_name = pro.name + "-" + color
-
-				v = pro.variants.create(:name => color_name, :sku => color_sku, :price => pro.price, :cost_price => pro.cost_price, :tax_rate => tax_rate, :weight => pro.weight, :default => true)
-				v.default_image_file = get_file(pro.name + ".jpeg")
-				v.save!
-				v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
-
-			end
+			v = pro.variants.create(:name => color_name, :sku => color_sku, :price => pro.price, :cost_price => pro.cost_price, :tax_rate => tax_rate, :weight => pro.weight, :default => true)
+			v.default_image_file = get_file(name + ".jpeg")
+			v.save!
+			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
 		end
 		print sku 
-		sku = sku + 1
 
   end
 
