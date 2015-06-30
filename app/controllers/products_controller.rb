@@ -99,8 +99,6 @@ class ProductsController < ApplicationController
     @products = Shoppe::Product.root.ordered.includes(:product_category, :variants)
     @products = @products.group_by(&:product_category)
 
-
-    binding.pry
     @attributes = @product.product_attributes.public.to_a
 
     @product_colors = @product[:short_description].split("\n")
