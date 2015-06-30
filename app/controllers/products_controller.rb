@@ -99,6 +99,8 @@ class ProductsController < ApplicationController
     @products = Shoppe::Product.root.ordered.includes(:product_category, :variants)
     @products = @products.group_by(&:product_category)
 
+
+    binding.pry
     @attributes = @product.product_attributes.public.to_a
 
     @product_colors = @product[:short_description].split("\n")
@@ -119,13 +121,18 @@ class ProductsController < ApplicationController
   end
 
   def buy
-	@product = Shoppe::Product.find_by_permalink!(params[:permalink])
-    if @product.stock_control = 'true'
+    @product = Shoppe::Product.find_by_permalink!(params[:permalink])
+    if @product.stock_control # do we have any stock left?
       current_order.order_items.add_item(@product, 1)
       redirect_to product_path(@product.permalink), :notice => "Product has been added successfuly!"
     else  
       redirect_to product_path(@product.permalink), :alert => "Sorry we are out of stock!"
     end
+  end
+
+  def remove
+	@product = Shoppe::Product.find_by_permalink!(params[:permalink])
+    item = current_order.order_items.find(@product)
   end
 
   def nurse

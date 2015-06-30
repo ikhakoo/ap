@@ -2,7 +2,7 @@ class OrdersController < ApplicationController
 
 	def destroy
 	  current_order.destroy
-	  session[:order_id] = nil
+	  session.delete :order_id
 	  redirect_to root_path, :notice => "Basket emptied successfully."
 	end
 

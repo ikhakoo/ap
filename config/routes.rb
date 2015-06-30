@@ -21,6 +21,7 @@ Rails.application.routes.draw do
 
   get "product/:permalink", to: "products#show", as: "product"
   post "product/:permalink", to: "products#buy", as: "buy"
+  delete "product/:permalink", to: "products#remove", as: "remove"
   root to: "products#index"
 
   match "contact", to: "products#contact", as: "contact", via: [:get]
