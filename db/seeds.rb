@@ -9,6 +9,14 @@
 
 # encoding: UTF-8
 
+def get_file(name, content_type = 'image/jpeg')
+  file = ActionDispatch::Http::UploadedFile.new(:tempfile => File.open(File.join(Rails.root, 'db', 'seeds_data', name), 'rb'))
+  file.original_filename = File.basename(name, File.extname(name))
+  file.content_type = content_type
+  file
+end
+
+
 def seed_shit
 
 	tax_rate = Shoppe::TaxRate.create!(:name => "HST", :rate => 13.0)
@@ -30,103 +38,127 @@ def seed_shit
 	cat2 = Shoppe::ProductCategory.create!(:name => 'Sets')
 
 
+	file_paths = Dir["db/seeds_data/*.jpeg"]
 
+	images = {
+		"The Rosey.jpeg" => {
+			sku: "T3030",
+			colors: ["Black", "Royal Blue", "Charcoal", "White"]
+		}
+	}
 
-	file_paths = Dir.glob("db/seeds_data/*.jpeg")
+	default_params = {
+		:description => 'test', 
+		:short_description => 'test', 
+		:weight => 1.119, 
+		:price => 24.99, 
+		:cost_price => 8.99, 
+		:tax_rate => tax_rate
+	}
 
 	file_paths.each do |fp|
 
-		name = fp.split("/").last.gsub(".jpeg", "").titleize
+		filename = File.basename(fp)
+		name = File.basename(filename, File.extname(filename))
+		# fp.split("/").last.gsub(".jpeg", "").titleize
 
-		if name == 'The Rosey'
-			sku = 'T3030'
-			colors = ["Black", "Royal Blue", "Charcoal", "White"]
-		elsif name == 'The Pearl'
-			colors = ["Black", "Royal Blue", "Charcoal", "White"]
-			sku = 'T3020'
-		elsif name == 'Basic V Neck Scrub Top'
-			colors = ["Black", "Cappuccino", "Ceil", "Lagoon", "Postman Blue", "Sky Blue", "Burgundy", "Caribbean", "Charcoal", "Navy Blue", "Royal Blue", "White"]
-			sku = '606T'
+		if params = images[filename] 
 
-		elsif name == "Zipper Front Ladies Work Top"
-			colors = []
-			sku = ''
-		elsif name == "Flexi V Neck Scrub Top"
-			colors = []
-			sku = ''
-		elsif name == "Ultra Flexi Scrub Top"
-			colors = []
-			sku = ''
-		elsif name == "3 Pocket V Neck Scrub Top"
-			colors = []
-			sku = ''
-		elsif name == "Unisex V Neck Scrub Top"
-			colors = []
-			sku = ''
-		elsif name == "Ladies Sculpted Scrub Top"
-			colors = []
-			sku = ''
-		elsif name == "Active Flexi V Neck Scrub Top"
-			colors = []
-			sku = ''
-		elsif name == "Men’s Two Tone Scrub Top"
-			colors = []
-			sku = ''
-		elsif name == "Empire Tie Back Scrub Top"
-			colors = []
-			sku = ''
-		elsif name == "The Coco"
-			colors = []
-			sku = ''
-		elsif name == "The Mandy"
-			colors = []
-			sku = ''
-		elsif name == "The Roxy"
-			colors = []
-			sku = ''
-		elsif name == "Ladies Zipper Detail Scrub Top"
-			colors = []
-			sku = ''
-		elsif name == "V Neck Print Scrub Top"
-			colors = []
-			sku = ''
-		elsif name == "Criss Cross Scrub Top"
-			colors = []
-			sku = ''
-		elsif name == "Button Front Ladies Work Top"
-			colors = []
-			sku = ''
-		elsif name == "Ladies Long Sleeve Tee"
-			colors = []
-			sku = ''
+			# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+			pro = Shoppe::Product.new(default_params.merge(sku: params[:sku], name: name))
+			pro.product_category = cat1
+			pro.default_image_file = get_file(filename)
+			pro.save!
+			# pro.product_attributes.create!(:key => 'Color', :value => 'Test', :position => 1)
+
+			p pro
+
+			params[:colors].each do |color|
+				v = pro.variants.create(
+					:name => "#{pro.name}-#{color}", 
+					:sku => "#{params[:sku]}-#{color}", 
+					:price => pro.price, 
+					:cost_price => pro.cost_price, 
+					:tax_rate => tax_rate, 
+					:weight => pro.weight, 
+					:default => true
+				)
+				v.default_image_file = get_file(filename)
+				v.save!
+				v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+			end
+			print params[:sku] 
 		end
 
-		pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-		pro.product_category_id = cat1.id
-		pro.default_image_file = get_file(name + '.jpeg')
-		pro.save!
-		pro.product_attributes.create!(:key => 'Color', :value => 'Black', :position => 1)
+		# 	== 'The Rosey'
+		# 	sku = 'T3030'
+		# 	colors = ["Black", "Royal Blue", "Charcoal", "White"]
+		# elsif name == 'The Pearl'
+		# 	colors = ["Black", "Royal Blue", "Charcoal", "White"]
+		# 	sku = 'T3020'
+		# elsif name == 'Basic V Neck Scrub Top'
+		# 	colors = ["Black", "Cappuccino", "Ceil", "Lagoon", "Postman Blue", "Sky Blue", "Burgundy", "Caribbean", "Charcoal", "Navy Blue", "Royal Blue", "White"]
+		# 	sku = '606T'
 
-		colors.each do |color|
-			color_sku = sku + "-" + color
-			color_name = pro.name + "-" + color
 
-			v = pro.variants.create(:name => color_name, :sku => color_sku, :price => pro.price, :cost_price => pro.cost_price, :tax_rate => tax_rate, :weight => pro.weight, :default => true)
-			v.default_image_file = get_file(name + ".jpeg")
-			v.save!
-			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
-		end
-		print sku 
+
+
+		# elsif name == "Zipper Front Ladies Work Top"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "Flexi V Neck Scrub Top"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "Ultra Flexi Scrub Top"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "3 Pocket V Neck Scrub Top"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "Unisex V Neck Scrub Top"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "Ladies Sculpted Scrub Top"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "Active Flexi V Neck Scrub Top"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "Men’s Two Tone Scrub Top"
+		# 	colors = []
+		# 	skureturn
+		# elsif name == "Empire Tie Back Scrub Top"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "The Coco"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "The Mandy"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "The Roxy"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "Ladies Zipper Detail Scrub Top"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "V Neck Print Scrub Top"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "Criss Cross Scrub Top"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "Button Front Ladies Work Top"
+		# 	colors = []
+		# 	sku = ''
+		# elsif name == "Ladies Long Sleeve Tee"
+		# 	colors = []
+		# 	sku = ''
+		# end
 
   end
 
 end
 
-def get_file(name, content_type = 'image/jpeg')
-  file = ActionDispatch::Http::UploadedFile.new(:tempfile => File.open(File.join(Rails.root, 'db', 'seeds_data', name), 'rb'))
-  file.original_filename = name
-  file.content_type = content_type
-  file
-end
 
 seed_shit
