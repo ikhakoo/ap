@@ -153,7 +153,7 @@ class ProductsController < ApplicationController
   end
 
   def remove
-	@product = Shoppe::Product.find_by_permalink!(params[:permalink])
+  @product = Shoppe::Product.find_by_permalink!(params[:permalink])
     item = current_order.order_items.find(@product)
   end
 

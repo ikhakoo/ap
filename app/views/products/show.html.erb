@@ -19,7 +19,6 @@
                 <% background = @background_details[i] %>
                 <% html = select_background_type(background[0], background[1]) %>
                 
-                
                 <div style='<%= html[0] %>' class="color_picker_primary" name="<%= @colors_array.uniq[i] %>">
                     <div style='<%= html[1] %>' class="color_picker_optional" name="<%= @colors_array.uniq[i] %>">
                     </div> 
