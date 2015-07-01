@@ -100,11 +100,14 @@ class ProductsController < ApplicationController
     @products = Shoppe::Product.root.ordered.includes(:product_category, :variants)
     @products = @products.group_by(&:product_category)
 
+    @matchprod = @product.name.split("-").first
+    @sameprods = Shoppe::Product.where("name like ?", "#{@matchprod}")
+
     @attributes = @product.product_attributes.public.to_a
 
-    @product_colors = @product[:short_description].split("\n")
+    @product_colors = @product.variants
     @colors_array = []
-    @product_colors.each do |a| @colors_array << a.split("/")  end  
+    @product_colors.each do |a| @colors_array << a.name.split end  
     @sizes = SIZES
     @background_details = []
     @colors_array.each do |combination|
