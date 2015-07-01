@@ -16,15 +16,15 @@
 					
 					<div class="container service1-items col-md-4 col-sm-6 col-xs-12 pull-left color_picker_container">         
               <% for i in 0..@background_details.length-1 %> 
-                      <% background = @background_details[i] %>
-                      <% background_name = @colors_array[i] %>
-                      <% html = select_background_type(background[0], background[1]) %>
-                      
-                      <% %>
-                      <div style='<%= html[0] %>' class="color_picker_primary" name="<%= @product_colors[i] %>">
-                          <div style='<%= html[1] %>' class="color_picker_optional" name="<%= @product_colors[i] %>">
-                          </div> 
-                      </div>
+                <% background = @background_details[i] %>
+                <% background_name = @colors_array[i] %>
+                <% html = select_background_type(background[0], background[1]) %>
+                
+                <% %>
+                <div style='<%= html[0] %>' class="color_picker_primary" name="<%= @product_colors[i] %>">
+                    <div style='<%= html[1] %>' class="color_picker_optional" name="<%= @product_colors[i] %>">
+                    </div> 
+                </div>
               <% end %> 
 					</div>
 
