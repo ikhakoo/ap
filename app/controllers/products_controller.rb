@@ -113,14 +113,21 @@ class ProductsController < ApplicationController
     @colorprods.each do |a| @colors_array << a.name.split("-").second end  
 
     @background_details = []
-    # @colors_array.each do |combination|
-    #     temp_array = []
-    #     combination.each do |color| 
-    #       temp_array << COLORS[color]
-    #     end
 
-    #     @background_details << temp_array
-    # end 
+    @split_colors = []
+    @colors_array.each do |color| @split_colors << color.split('/') end
+    @split_colors = @split_colors.uniq
+
+        @split_colors.each do |combination|
+        temp_array = []
+        combination.each do |color| 
+          temp_array << COLORS[color]
+        end
+
+        @background_details << temp_array
+    end 
+
+    # binding.pry
 
     
   end
