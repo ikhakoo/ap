@@ -101,31 +101,10 @@
       <% end %>
     </table>
   <% else %>
-        <p>
-          <%= number_to_currency @product.price %>
-        </p>
-        <%= form_tag buy_product_path(@product.product_category.permalink, @product.permalink), :class => (@product.in_stock? ? 'in-stock' : 'no-stock') do %>
-          <p>
-            <%= select_tag 'quantity', options_for_select([1,2,3,4,5,6,7,8,9]), :disabled => !@product.in_stock? %>
-            <%= submit_tag 'Add to basket', :disabled => !@product.in_stock? %>
-          </p>
-        <% end %>
-          <% if @product.in_stock? %>
-            <p>In stock</p>
-            <p>Order in the next <b>#{time_until_next_delivery_cut_off}</b> for delivery #{next_delivery_day}.</p>
-          <% else %>
-            <p>Out of stock</p>
-            <p>Sorry - we don't have any stock of this product at the moment. #{link_to "Let me know when you do"}.</p>
-          <% end %>
-          <ul>
-            <li>
-              <%= mail_to Shoppe.settings.email_address, "Ask us a question about this", :subject => "Question about the #{@product.name}" %>
-            </li>
-          </ul>
-    <hr/>
+
   <% end %>
 
-	<br><br><hr>
+
 
 
 
