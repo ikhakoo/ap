@@ -46,12 +46,12 @@ def seed_shit
 			colors: ["Black", "Royal Blue", "Charcoal", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
-		"The Pearl" => {
+		"The Pearl.jpeg" => {
 			sku: "T3020",
 		  colors: ["Black", "Royal Blue", "Charcoal", "White"],
 		  sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
-		"Basic V Neck Scrub Top" => {
+		"Basic V Neck Scrub Top.jpeg" => {
 			sku: "606T",
 			colors: ["Black", "Cappuccino", "Ceil", 
 								"Lagoon", "Postman Blue", "Sky Blue", 
@@ -60,12 +60,12 @@ def seed_shit
 							],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
 		},
-		"Zipper Front Ladies Work Top" => {
+		"Zipper Front Ladies Work Top.jpeg" => {
 			sku: "202T",
 			colors: ["Black", "White", "Navy Blue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
-		"Flexi V Neck Scrub Top" => {
+		"Flexi V Neck Scrub Top.jpeg" => {
 			sku: "324T",
 			colors: ["2tone White/White", "Black", "Brown", "Charcoal", "Deja Vu", "Eggplant", "Heart Ties", "Khaki",
 							 "Lime Green", "Olive Green", "Papillon", "Postman Blue", "Raspberry", "Royal Blue", "String Along",
@@ -74,75 +74,75 @@ def seed_shit
 							 "Techno"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
-		"Ultra Flexi Scrub Top" => {
+		"Ultra Flexi Scrub Top.jpeg" => {
 			sku: "524T",
 			colors: ["Aqua", "Charcoal", "Navy Blue", "Black", "Deep Orchid", "Sky Blue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
-		"3 Pocket V Neck Scrub Top" => {
+		"3 Pocket V Neck Scrub Top.jpeg" => {
 			sku: "308T",
 			colors: ["Aqua", "Burgundy", "Ceil", "Eggplant", "Lagoon", "Postman Blue", 
 								"Royal Blue", "Spruce", "Black", "Caribbean", "Charcoal", "Khaki", 
 								"Navy Blue", "Rasberry", "Sky Blue", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL"]
 		},
-		"Unisex V Neck Scrub Top" => {
+		"Unisex V Neck Scrub Top.jpeg" => {
 			sku: "310T",
 			colors: ["Aqua", "Burgundy", "Caribbean", "Charcoal", "Khaki", "Navy Blue", "Postman Blue", "Royal Blue", 
 								"Sky Blue", "Teal", "Black", "Cappuccino", "Ceil", "Eggplant", "Lagoon", "Olive Green", "Red",
 								"Sea Green", "Spruce", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
-		"Ladies Sculpted Scrub Top" => {
+		"Ladies Sculpted Scrub Top.jpeg" => {
 			sku: "410T",
 			colors: ["Aqua/Black", "Charcoal/Postman Blue", "Eggplant/Black", "White/White", 
 								"Black/White", "Deep Orchid/White", "Navy Blue/Sky Blue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
-		"Active Flexi V Neck Scrub Top" => {
+		"Active Flexi V Neck Scrub Top.jpeg" => {
 			sku: "424T",
 			colors: ["Indigo/Black", "Eggplant/Black", "Rasberry/Black", "Aqua/Black", "Charcoal/Black", "Navy Blue/Black",
 								"White/White", "Postman Blue/Black"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
-		"Men's Two Tone Scrub Top" => {
+		"Men's Two Tone Scrub Top.jpeg" => {
 			sku: "409T",
 			colors: ["Burgundy/Navy", "Khaki/Black", "Charcoal/Black", "Postman Blue/Navy"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
-		"Empire Tie Back Scrub Top" => {
+		"Empire Tie Back Scrub Top.jpeg" => {
 			sku: "420T",
 			colors: ["Navy", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
-		"The Coco" => {
+		"The Coco.jpeg" => {
 			sku: "T1018",
 			colors: ["Aubergine", "White", "Soft Mint"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
-		"The Mandy" => {
+		"The Mandy.jpeg" => {
 			sku: "T1010",
 			colors: ["Aubergine", "White", "Soft Mint"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
-		"The Roxy" => {
+		"The Roxy.jpeg" => {
 			sku: "T1016",
 			colors: ["Aubergine", "White", "Soft Mint"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
-		"Ladies Zipper Detail Scrub Top" => {
+		"Ladies Zipper Detail Scrub Top.jpeg" => {
 			sku: "530T",
 			colors: ["Navy Blue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
-		"V Neck Print Scrub Top" => {
+		"V Neck Print Scrub Top.jpeg" => {
 			sku: "320T",
 			colors: ["Blue Cheerios", "Fire Works", "Flower Power", "Heart Ties", "Pinned Heart", "Spring Blooming", 
 								"Techno", "Dizzy Vines", "Florescent Butterfly", "Groovy Hoops", "Papillon", "Pretty in Petals",
 								"String Along"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
-		"Criss Cross Scrub Top" => {
+		"Criss Cross Scrub Top.jpeg" => {
 			sku: "323T",
 			colors: ["Aqua/Black", "Blue Cheerios/Navy Blue", "Charcoal/Postman Blue", "Eggplant/Black", "Floresent Butterfly/Charcoal",
 								"Lagoon/Lagoon", "Postman Blue/Navy", "Sea Green/Navy", "Spring Blooming/Black" , "Techno/Aqua", 
@@ -151,51 +151,51 @@ def seed_shit
 								"String Along/Eggplant", "White/White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
-		"Button Front Ladies Work Top" => {
+		"Button Front Ladies Work Top.jpeg" => {
 			sku: "201T",
 			colors: ["Black", "White", "Navy Blue"],
 		},
-		"Ladies Long Sleeve Tee" => {
+		"Ladies Long Sleeve Tee.jpeg" => {
 			sku: "LT101",
 			colors: ["Black", "White", "Navy Blue"],
 			sizes: ["S", "M", "L", "XL", "2XL"]
 		},
-		"Men's Two Tone Scrub Set with 6 Pocket Scrub Pants" => {
+		"Men's Two Tone Scrub Set with 6 Pocket Scrub Pants.jpeg" => {
 			sku: "409/409",
 			color: ["Burgundy/Navy", "Khaki/Black", "Charcoal/Black", "Postman Blue/Navy"],
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
-		"Criss Cross Flip Flap" => {
+		"Criss Cross Flip Flap.jpeg" => {
 			sku: "323/312",
 			colors: ["Aqua/Black", "Charcoal/PostmanBlue", "Eggplant/Black", "Lagoon/Lagoon", "Postman Blue/Navy",
 								"Sky Blue/Navy", "Black/Aqua", "Deep Orchird/Black", "Indigo/Charcoal", "Navy Blue/Sky Blue",
 								"Sea Green/Navy", "White/White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
-		"3 Pocket V Neck Scrub Top, with Flip Flap Scrub Pants" => {
+		"3 Pocket V Neck Scrub Top, with Flip Flap Scrub Pants.jpeg" => {
 			sku: "308/312",
 			colors: ["Aqua", "Burgundy", "Ceil", "Eggplant", "Lagoon", "Postman Blue", "Royal Blue", "Spruce", "Black", 
 								"Caribbean", "Charcoal", "Khaki", "Navy Blue", "Raspberry", "Sky Blue", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL"]
 		},
-		"Unisex 8 Pocket Drawstring/Elastic Scrub Set" => {
+		"Unisex 8 Pocket Drawstring/Elastic Scrub Set.jpeg" => {
 			sku: "310/307",
 			colors: ["Aqua","Burgundy","Caribbean","Charcoal","Khaki","Lime Green","Olive Green","Royal Blue","Spruce",
 								"White","Black","Cappuccino","Ceil","Eggplant","Lagoon","Navy Blue","Postman Blue","Sky Blue","Teal"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
 		},
-		"Unisex 5 Pocket Drawstring Scrub Set" => {
+		"Unisex 5 Pocket Drawstring Scrub Set.jpeg" => {
 			sku: "606/608",
 			colors: ["Black","Cappuccino","Ceil","Lagoon","Postman Blue","Sky Blue","Burgundy","Caribbean","Charcoal",
 								"Navy Blue","Royal Blue","White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
-		"Reversible O.R. Drawstring Scrub Set" => {
+		"Reversible O.R. Drawstring Scrub Set.jpeg" => {
 			sku: "306TA/306PA",
 			color: ["Lagoon"],
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
 		},
-		"Scrub Set" => {
+		"Scrub Set.jpeg" => {
 			sku: "CH400",
 			color: ["Lagoon"],
 			sizes: ["2Y","4Y","6Y","8Y"]
@@ -220,35 +220,37 @@ def seed_shit
 
 		if params = images[filename] 
 
-			params[:colors].each do |color|
+				params[:colors].each do |color|
 
-			# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-			pro = Shoppe::Product.new(default_params.merge(sku: params[:sku] + "-#{color}", name: "#{name}-#{color}"))
-			pro.product_category = cat1
-			pro.default_image_file = get_file(filename)
-			pro.save!
-			pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(sku: params[:sku] + "-#{color}", name: "#{name}-#{color}"))
+				pro.product_category = cat1
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
-			p pro
+				p pro
 
-			params[:sizes].each do |size|
-				v = pro.variants.create(
-					:name => "#{pro.name}-#{size}", 
-					:sku => "#{params[:sku]}-#{size}", 
-					:price => pro.price, 
-					:cost_price => pro.cost_price, 
-					:tax_rate => tax_rate, 
-					:weight => pro.weight, 
-					:default => true
-				)
-				v.default_image_file = get_file(filename)
-				v.save!
-				v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
 			end
-			print params[:sku] 
+				print params[:sku] 
+			end
 		end
-
-	end
   end
 end
 
