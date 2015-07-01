@@ -1,7 +1,5 @@
 class ProductsController < ApplicationController
 
-  SIZES = [ 'Small', 'Medium', 'Large', 'XL', 'XXL']
-
   COLORS = {
     "2 tone Aqua/Black" => "rgb()",
     "2 tone Burgundy/Navy" => "rgb()",
@@ -100,15 +98,18 @@ class ProductsController < ApplicationController
     @products = Shoppe::Product.root.ordered.includes(:product_category, :variants)
     @products = @products.group_by(&:product_category)
 
-    @matchprod = @product.name.split("-").first
-    @sameprods = Shoppe::Product.where("name like ?", "#{@matchprod}")
+    @sameprods = Shoppe::Product.where("name like ?", "#{@product.name}%")
+    @sizes = []
+    @sameprods.each do |a| @sizes << a.name.split("-").last end 
+
+    binding.pry
 
     @attributes = @product.product_attributes.public.to_a
 
     @product_colors = @product.variants
     @colors_array = []
     @product_colors.each do |a| @colors_array << a.name.split end  
-    @sizes = SIZES
+
     @background_details = []
     @colors_array.each do |combination|
         temp_array = []
