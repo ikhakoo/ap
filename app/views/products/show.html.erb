@@ -75,8 +75,8 @@
 				</div> 
 			</div>
 			<div class="container-fluid">		
-				  <% if @product.has_variants? %>
-      <% for variant in @product.variants %>
+				<% if @product.has_variants? %>
+          <% for variant in @product.variants %>
             <h4>
               <%= variant.name %>
             </h4>
@@ -124,24 +124,6 @@
           </ul>
     <hr/>
   <% end %>
-  <% unless @attributes.empty? %>
-    <table>
-      <% for attribute in @attributes %>
-        <tr>
-          <th>
-            <%= attribute.key %>
-          </th>
-          <td>
-            <%= link_to attribute.value %>
-          </td>
-        </tr>
-      <% end %>
-    </table>
-  <% end %>
-			</div>
-		</div>
-	</div>
-</div>
 
 	<br><br><hr>
 
