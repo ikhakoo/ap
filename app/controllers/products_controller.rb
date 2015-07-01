@@ -102,23 +102,21 @@ class ProductsController < ApplicationController
     @sizes = []
     @sameprods.each do |a| @sizes << a.name.split("-").last end 
 
-    binding.pry
-
     @attributes = @product.product_attributes.public.to_a
 
     @product_colors = @product.variants
     @colors_array = []
-    @product_colors.each do |a| @colors_array << a.name.split end  
+    @product_colors.each do |a| @colors_array << a.name.split("-").second end  
 
     @background_details = []
-    @colors_array.each do |combination|
-        temp_array = []
-        combination.each do |color| 
-          temp_array << COLORS[color]
-        end
+    # @colors_array.each do |combination|
+    #     temp_array = []
+    #     combination.each do |color| 
+    #       temp_array << COLORS[color]
+    #     end
 
-        @background_details << temp_array
-    end 
+    #     @background_details << temp_array
+    # end 
 
     
   end

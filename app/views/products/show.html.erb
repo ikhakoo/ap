@@ -46,7 +46,11 @@
 						<h3>Select Size: </h3>
 						<select class="selectpicker " data-show-subtext="true" id="size_selector">
               <% @sizes.each do |size| %>
+               <% @size_chart = ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"] %>
+               <% if @size_chart.include?(size) %>
                 <option> <%= size %> </option>
+                <% else %>
+                <% end %>
               <% end %>
             </select>
     			<hr>
