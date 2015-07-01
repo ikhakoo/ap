@@ -31,7 +31,7 @@
 					<!-- MAIN SETTINGS AND ATTRIBUTES -->
 					<div class="col-md-5 col-sm-6">
            	<!-- TITLE -->
-						<div class="product-title"><%= @product.name %></div>
+						<div class="product-title"><%= @product.name.split("-").first %></div>
 						<div class="product-desc"><%= @product.description %></div>					   
           <hr>
             <!-- COLORS -->
@@ -73,21 +73,24 @@
 			<div class="container-fluid">		
 				  <% if @product.has_variants? %>
       <% for variant in @product.variants %>
-            <% if variant.in_stock? %>
-              <p>In stock</p>
-            <% else %>
-              <p>Out of stock</p>
-            <% end %>
             <h4>
               <%= variant.name %>
             </h4>
             <p>
               <%= number_to_currency variant.price %>
             </p>
+            <% if variant.in_stock? %>
+            <div class="product-stock">
+              <p>In stock</p>
+            <% else %>
+              <p>Out of stock</p>
+            <% end %>
+            </div>
             <%= form_tag product_path(@product.permalink, :product => @product.id, :variant => variant.id) do %>
               <p>
-                <%= submit_tag 'Add to basket' %>
+                <%= submit_tag 'Add to basket', class: "ui button green" %>
               </p>
+              <hr>
             <% end %>
           </td>
         </tr>
