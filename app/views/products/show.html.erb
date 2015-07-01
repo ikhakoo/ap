@@ -37,7 +37,7 @@
             <!-- COLORS -->
             <h3>Select Color:</h3>
 						<select class="selectpicker" data-show-subtext="true" id="color_selector">
-              <% @product_colors.each do |a| %>
+              <% @colors_array.uniq.each do |a| %>
                 <option class="color_option"> <%= a %></option>
               <% end %>
             </select>

@@ -104,9 +104,13 @@ class ProductsController < ApplicationController
 
     @attributes = @product.product_attributes.public.to_a
 
-    @product_colors = @product.variants
+    @color_products = Shoppe::Product.root.ordered.includes(:product_category, :variants)
+    @color_products = @color_products.group_by(&:product_category)
+
+    @colorprods = Shoppe::Product.where("name like ?", "#{@product.name.split("-").first}%")
+
     @colors_array = []
-    @product_colors.each do |a| @colors_array << a.name.split("-").second end  
+    @colorprods.each do |a| @colors_array << a.name.split("-").second end  
 
     @background_details = []
     # @colors_array.each do |combination|
