@@ -26,7 +26,7 @@
                 </div>
               <% end %> 
 					</div>
-
+<%= form_tag product_path(@product.permalink, :size => @size, :color => @color), :method => :post do %>
 					<!-- MAIN SETTINGS AND ATTRIBUTES -->
 					<div class="col-md-5 col-sm-6">
            	<!-- TITLE -->
@@ -37,13 +37,13 @@
             <h3>Select Color:</h3>
 						<div class="selectpicker" data-show-subtext="true" id="color_selector">
 
-            <%= select_tag :colors, options_for_select(@colors_array.uniq, params[:color]) %>
+            <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]) %>
             </div>
 
             <!-- SIZE -->
 						<h3>Select Size: </h3>
 						<div class="selectpicker " data-show-subtext="true" id="size_selector">
-               <%= select_tag :sizes, options_for_select(@sizes, params[:size]) %>
+               <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]) %>
             </div>
     			<hr>
 						<div class="product-price"><%= number_to_currency @product.price %></div>
@@ -53,7 +53,6 @@
 
     					<hr>
 
-						<%= form_tag product_path(@product.permalink, :size => @size, :color => @color) do %>
               <p>
                 <%= submit_tag 'Add to basket', class: "ui button green" %>
               </p>

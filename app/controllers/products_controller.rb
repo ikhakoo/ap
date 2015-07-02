@@ -132,6 +132,23 @@ class ProductsController < ApplicationController
     
   end
 
+  # def buy
+  #   @permalink = params[:permalink]
+  #   @permalink = @permalink.split("-")
+  #   @permalink = @permalink.first @permalink.size - 1
+  #   @permalink = @permalink.join("-")
+  #   @permalink = @permalink + "-" + params[:color] + "-" + params[:size]
+  #   order_product = Shoppe::Product.where(permalink: @permalink.downcase) 
+  #   if order_product.stock_control
+  #     current_order.order_items.add_item(order_product, 1)
+  #     redirect_to product_path(params[:permalink]), 
+  #     :notice => "Product has been added successfuly!"
+  #   else
+  #     redirect_to product_path(params[:permalink]), 
+  #     :alert => "Sorry we are out of stock!"
+  #   end
+  # end
+
   def buy
     @product = Shoppe::Product.find(params[:product].to_i)
     if params[:variant]
