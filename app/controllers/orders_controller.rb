@@ -31,14 +31,15 @@ class OrdersController < ApplicationController
 	  if request.post?
 		    current_order.confirm!
 		    Purchase.create!(order_id: current_order.id, client_id: current_client.id)
-		    binding.pry
 		    session[:order_id] = nil
 		    redirect_to root_path, :notice => "Order has been placed successfully!"
 	  end
 	end
 
 	def my_orders
-		@my_orders = Purchase.where(client_id: current_user)
+		@my_orders = Purchase.where(client_id: current_client.id)
+		@my_orders = @my_orders.map(&:order_id)
+		@orders 	 = Shoppe::Order.where(id: @my_orders)
 	end
 
 end
