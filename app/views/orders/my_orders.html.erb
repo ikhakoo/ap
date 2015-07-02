@@ -1,4 +1,6 @@
 <% @orders.each do |order| %>
+<!-- Put order info here (date, status, etc) -->
+<!-- Pry it out for more info on what is in @orders -->
 	<% order.order_items.each do |item| %>
 		<% if item.ordered_item.default_image %>
     		<%= image_tag item.ordered_item.default_image.path, 
