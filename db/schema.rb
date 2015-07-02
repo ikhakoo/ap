@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150702025851) do
+ActiveRecord::Schema.define(version: 20150702042907) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,14 @@ ActiveRecord::Schema.define(version: 20150702025851) do
   add_index "clients", ["email"], name: "index_clients_on_email", unique: true, using: :btree
   add_index "clients", ["reset_password_token"], name: "index_clients_on_reset_password_token", unique: true, using: :btree
 
+  create_table "clients_shoppe_orders", id: false, force: :cascade do |t|
+    t.integer "client_id",       null: false
+    t.integer "shoppe_order_id", null: false
+  end
+
+  add_index "clients_shoppe_orders", ["client_id", "shoppe_order_id"], name: "index_clients_shoppe_orders_on_client_id_and_shoppe_order_id", using: :btree
+  add_index "clients_shoppe_orders", ["shoppe_order_id", "client_id"], name: "index_clients_shoppe_orders_on_shoppe_order_id_and_client_id", using: :btree
+
   create_table "nifty_attachments", force: :cascade do |t|
     t.integer  "parent_id"
     t.string   "parent_type"
@@ -53,6 +61,13 @@ ActiveRecord::Schema.define(version: 20150702025851) do
     t.string  "group"
     t.string  "name"
     t.string  "value"
+  end
+
+  create_table "purchases", force: :cascade do |t|
+    t.integer  "order_id"
+    t.integer  "client_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "shoppe_countries", force: :cascade do |t|
