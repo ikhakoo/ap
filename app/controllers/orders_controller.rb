@@ -16,8 +16,6 @@ class OrdersController < ApplicationController
 	  end
 	end
 
-	
-
 	def payment
   @order = current_order
 	  if request.post?
