@@ -29,6 +29,8 @@ gem 'stripe_event'
 gem 'unicorn'
 gem 'rack-timeout'
 
+gem 'devise'
+
 # gem "shoppe-paypal"
 
 gem 'bootstrap-sass', '~> 3.3.4'
