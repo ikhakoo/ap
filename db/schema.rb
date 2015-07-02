@@ -34,14 +34,6 @@ ActiveRecord::Schema.define(version: 20150702042907) do
   add_index "clients", ["email"], name: "index_clients_on_email", unique: true, using: :btree
   add_index "clients", ["reset_password_token"], name: "index_clients_on_reset_password_token", unique: true, using: :btree
 
-  create_table "clients_shoppe_orders", id: false, force: :cascade do |t|
-    t.integer "client_id",       null: false
-    t.integer "shoppe_order_id", null: false
-  end
-
-  add_index "clients_shoppe_orders", ["client_id", "shoppe_order_id"], name: "index_clients_shoppe_orders_on_client_id_and_shoppe_order_id", using: :btree
-  add_index "clients_shoppe_orders", ["shoppe_order_id", "client_id"], name: "index_clients_shoppe_orders_on_shoppe_order_id_and_client_id", using: :btree
-
   create_table "nifty_attachments", force: :cascade do |t|
     t.integer  "parent_id"
     t.string   "parent_type"
