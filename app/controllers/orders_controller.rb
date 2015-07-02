@@ -37,9 +37,13 @@ class OrdersController < ApplicationController
 	end
 
 	def my_orders
-		@my_orders = Purchase.where(client_id: current_client.id)
-		@my_orders = @my_orders.map(&:order_id)
-		@orders 	 = Shoppe::Order.where(id: @my_orders)
+		if current_client
+			@my_orders = Purchase.where(client_id: current_client.id)
+			@my_orders = @my_orders.map(&:order_id)
+			@orders 	 = Shoppe::Order.where(id: @my_orders)
+		else
+			redirect_to root_path, :alert => "You must be logged in to view your orders"
+		end
 	end
 
 end

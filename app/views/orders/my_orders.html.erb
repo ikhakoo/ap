@@ -1,3 +1,28 @@
 <% @orders.each do |order| %>
-<%= order %>
-<% end %>
+
+
+	<% order.order_items.each do |item| %>
+	
+	<td data-th="Product">
+            <% if item.ordered_item.default_image %>
+            <div class="row">
+              <div class="col-sm-4 hidden-xs">
+                <%= image_tag item.ordered_item.default_image.path, :width => '150px', :height => '150px' %>
+              </div>
+              <% end %>
+              <div class="col-sm-8">
+                <h4 class="nomargin"><%= item.ordered_item.full_name %></h4>
+                <p><%= item.ordered_item.description %></p>
+              </div>
+            </div>
+          </td>
+          <td data-th="Price"><%= number_to_currency item.sub_total %></td>
+          <td data-th="Quantity">
+            <%= item.quantity %>
+          </td>
+          <td data-th="Subtotal" class="text-center"><%= number_to_currency item.tax_amount %></td>
+        </tr>
+        <% end %>
+
+	<% end %>
+
