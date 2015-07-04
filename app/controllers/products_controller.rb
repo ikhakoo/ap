@@ -140,7 +140,8 @@ class ProductsController < ApplicationController
     @permalink = @permalink.join("-")
     @permalink = @permalink + "-" + params[:color] + "-" + params[:size].downcase
     @permalink = @permalink.downcase
-    @product = Shoppe::Product.where(permalink: @permalink)
+    @product = Shoppe::Product.all
+    @product = @product.find_by!(permalink: @permalink)
 
     current_order.order_items.add_item(@product, 1)
     redirect_to product_path(params[:permalink]), 
