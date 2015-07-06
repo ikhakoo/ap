@@ -128,8 +128,6 @@ class ProductsController < ApplicationController
     end 
 
     # binding.pry
-
-    
   end
 
   def buy
@@ -178,6 +176,33 @@ class ProductsController < ApplicationController
     @p1 = Shoppe::Product.where(product_category_id: 1)
     @p2 = Shoppe::Product.where(product_category_id: 2)
     @products = @p1, @p2
+
+    # get a list of all unique products to be listed
+    @unique_products = []
+    @products[0].each do |product| 
+      # set the first element of the injected array to the name, 
+      # so that the second element could hold a unique product
+      @unique_products << [product.name.split('-')[0]]  
+    end
+    @unique_products = @unique_products.uniq
+
+    # cycle through all product categories
+    @products.each do |category|
+      # .. and each product within those categories. 
+      category.each do |product|
+        # First, go through all the unique products so you can check against them
+        @unique_products.each do |uniq|
+          # if you're on the correct product
+          if product.name.split('-')[0] == uniq[0]
+            # .. and the there is no Product to represent that name
+            if uniq[1] == nil
+              # assign it this product
+              uniq[1] = product
+            end
+          end
+        end
+      end
+    end
   end
 
   def nurse_tops

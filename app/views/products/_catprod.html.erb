@@ -1,9 +1,9 @@
 <div class="ui segment">
   <div class="row catalogue">
     <div class="ui link cards">
-      <% @products.each do |product| %>
-      <% product.each do |prod| %>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <% @unique_products.each do |prod| %>
+        <% prod = prod[1] %>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
           <div class="card" style="padding:4px; margin:4px;">
             <div class="image">
             <% if prod.default_image %>
@@ -38,7 +38,7 @@
 
           </div><br>
       <% end %>
-      <% end %>
+
     </div>
   </div>
 </div>
