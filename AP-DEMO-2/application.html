@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>eElectronics - HTML eCommerce Template</title>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
     
-  <!-- Google Fonts -->
+    <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
@@ -21,8 +21,9 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="stylesheets/owl.carousel.css">
-    <link rel="stylesheet" href="stylesheets/responsive.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,13 +37,38 @@
     <div class="header-area">
         <div class="container">
             <div class="row">
-                <div class="col-md-16" style="text-align:right;">
+                <div class="col-md-8">
                     <div class="user-menu">
                         <ul>
                             <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
+                            <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
                             <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
                             <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
                             <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="header-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">currency :</span><span class="value">USD </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">USD</a></li>
+                                    <li><a href="#">INR</a></li>
+                                    <li><a href="#">GBP</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">language :</span><span class="value">English </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">French</a></li>
+                                    <li><a href="#">German</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -82,44 +108,34 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">TOPS</a></li>
-                        <li><a href="single-product.html">SCRUBS</a></li>
-                        <li><a href="cart.html">CLEARANCE</a></li>
-                        <li><a href="checkout.html">CART</a></li>
-                        <li><a href="#">CHECKOUT</a></li>
+                        <li><a href="shop.html">Shop page</a></li>
+                        <li><a href="single-product.html">Single product</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Others</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>  
             </div>
         </div>
     </div> <!-- End mainmenu area -->
-    
 
-    <% if flash[:alert] %>
-      <div class="ui negative message">
-        <div class="header">
-          <%= flash[:alert] %>
-        </div>
-      </div>
-    <% end %>
-    
-    <% if flash[:notice] %>
-      <div class="ui positive message">
-        <div class="header">
-          <%= flash[:notice] %>
-        </div>
-      </div>
-    <% end %>
-    
-    <%= yield %>
-    
-    
+
+
+
+
+
+
+
+
     <div class="footer-top-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-about-us">
-                        <h2>AP<span>Uniforms</span></h2>
+                        <h2>e<span>Electronics</span></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
                         <div class="footer-social">
                             <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -148,10 +164,11 @@
                     <div class="footer-menu">
                         <h2 class="footer-wid-title">Categories</h2>
                         <ul>
-                            <li><a href="#">Medical Wear</a></li>
-                            <li><a href="#">Chef Wear (Coming Soon)</a></li>
-                            <li><a href="#">Work Wear (Coming Soon)</a></li>
-                            <li><a href="#">Clearance</a></li>
+                            <li><a href="#">Mobile Phone</a></li>
+                            <li><a href="#">Home accesseries</a></li>
+                            <li><a href="#">LED TV</a></li>
+                            <li><a href="#">Computer</a></li>
+                            <li><a href="#">Gadets</a></li>
                         </ul>                        
                     </div>
                 </div>
@@ -177,7 +194,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="copyright">
-                        <p>&copy; 2015 APUniforms. All Rights Reserved. Coded with <i class="fa fa-heart"></i> by <a href="http://wpexpand.com" target="_blank">WP Expand</a></p>
+                        <p>&copy; 2015 eElectronics. All Rights Reserved. Coded with <i class="fa fa-heart"></i> by <a href="http://wpexpand.com" target="_blank">WP Expand</a></p>
                     </div>
                 </div>
                 
@@ -185,7 +202,7 @@
                     <div class="footer-card-icon">
                         <i class="fa fa-cc-discover"></i>
                         <i class="fa fa-cc-mastercard"></i>
-                        <i class="fa fa-cc-stripe"></i>
+                        <i class="fa fa-cc-paypal"></i>
                         <i class="fa fa-cc-visa"></i>
                     </div>
                 </div>
@@ -200,17 +217,13 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     
     <!-- jQuery sticky menu -->
-    <script src="javascripts/owl.carousel.min.js"></script>
-    <script src="javascripts/jquery.sticky.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
     
     <!-- jQuery easing -->
-    <script src="javascripts/jquery.easing.1.3.min.js"></script>
+    <script src="js/jquery.easing.1.3.min.js"></script>
     
     <!-- Main Script -->
-    <script src="javascripts/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
-
-  
-   
-
