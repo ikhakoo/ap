@@ -16,8 +16,6 @@ class OrdersController < ApplicationController
 	  end
 	end
 
-	
-
 	def payment
   @order = current_order
 	  if request.post?
@@ -32,9 +30,20 @@ class OrdersController < ApplicationController
 	def confirmation
 	  if request.post?
 		    current_order.confirm!
+		    Purchase.create!(order_id: current_order.id, client_id: current_client.id)
 		    session[:order_id] = nil
 		    redirect_to root_path, :notice => "Order has been placed successfully!"
 	  end
+	end
+
+	def my_orders
+		if current_client
+			@my_orders = Purchase.where(client_id: current_client.id)
+			@my_orders = @my_orders.map(&:order_id)
+			@orders 	 = Shoppe::Order.where(id: @my_orders)
+		else
+			redirect_to root_path, :alert => "You must be logged in to view your orders"
+		end
 	end
 
 end

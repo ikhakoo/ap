@@ -172,7 +172,7 @@ def seed_shit
 								"Sea Green/Navy", "White/White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
-		"3 Pocket V Neck Scrub Top, with Flip Flap Scrub Pants.jpeg" => {
+		"3 Pocket V Neck Scrub Top with Flip Flap Scrub Pants.jpeg" => {
 			sku: "308/312",
 			colors: ["Aqua", "Burgundy", "Ceil", "Eggplant", "Lagoon", "Postman Blue", "Royal Blue", "Spruce", "Black", 
 								"Caribbean", "Charcoal", "Khaki", "Navy Blue", "Raspberry", "Sky Blue", "White"],

@@ -25,7 +25,7 @@
                 </div>
               <% end %> 
 					</div>
-
+<%= form_tag product_path(@product.permalink, :size => @size, :color => @color), :method => :post do %>
 					<!-- MAIN SETTINGS AND ATTRIBUTES -->
 					<div class="col-md-5 col-sm-6">
            	<!-- TITLE -->
@@ -34,78 +34,35 @@
           <hr>
             <!-- COLORS -->
             <h3>Select Color:</h3>
-						<select class="selectpicker" data-show-subtext="true" id="color_selector">
-              <% @colors_array.uniq.each do |a| %>
-                <option class="color_option"> <%= a %></option>
-              <% end %>
-            </select>
+						<div class="selectpicker" data-show-subtext="true" id="color_selector">
+
+            <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]) %>
+            </div>
 
             <!-- SIZE -->
 						<h3>Select Size: </h3>
-						<select class="selectpicker " data-show-subtext="true" id="size_selector">
-              <% @sizes.each do |size| %>
-               <% @size_chart = ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"] %>
-               <% if @size_chart.include?(size) %>
-                <option> <%= size %> </option>
-                <% else %>
-                <% end %>
-              <% end %>
-            </select>
+						<div class="selectpicker " data-show-subtext="true" id="size_selector">
+               <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]) %>
+            </div>
     			<hr>
 						<div class="product-price"><%= number_to_currency @product.price %></div>
 						<div class="product-stock">
-							<% if @product.stock_control? %>
 								In Stock
-							<% else %>
-								No Stock
-							<% end %>
 						</div>
 
     					<hr>
 
-						<div class="btn-group cart">
-							<%= link_to "Add to Cart", product_path(@product.permalink), :method => :post, class: "ui button green" %>
-						</div>
+              <p>
+                <%= submit_tag 'Add to basket', class: "ui button green" %>
+              </p>
+              <hr>
+            <% end %>
 						<div class="btn-group wishlist">
 							<%= link_to "Back to List", root_path, class: "ui button red", :style => 'float:right' %>
 						</div>
 					</div>
 				</div> 
 			</div>
-			<div class="container-fluid">		
-				<% if @product.has_variants? %>
-          <% for variant in @product.variants %>
-            <h4>
-              <%= variant.name %>
-            </h4>
-            <p>
-              <%= number_to_currency variant.price %>
-            </p>
-            <% if variant.in_stock? %>
-            <div class="product-stock">
-              <p>In stock</p>
-            <% else %>
-              <p>Out of stock</p>
-            <% end %>
-            </div>
-            <%= form_tag product_path(@product.permalink, :product => @product.id, :variant => variant.id) do %>
-              <p>
-                <%= submit_tag 'Add to basket', class: "ui button green" %>
-              </p>
-              <hr>
-            <% end %>
-          </td>
-        </tr>
-      <% end %>
-    </table>
-  <% else %>
-
-  <% end %>
-
-
-
-
-
 	<div class="row">
     <%= render 'products' %>
   </div>
