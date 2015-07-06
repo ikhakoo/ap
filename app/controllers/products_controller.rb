@@ -106,16 +106,14 @@ class ProductsController < ApplicationController
     @sizes = SIZES
     @background_details = []
     @colors_array.each do |combination|
-        temp_array = []
-        combination.each do |color| 
-          temp_array << COLORS[color]
-        end
-
-    # binding.pry
-        @background_details << temp_array
+      temp_array = []
+      combination.each do |color| 
+        temp_array << COLORS[color]
+      end
+      @background_details << temp_array
     end 
 
-    
+    binding.pry
   end
 
   def buy
