@@ -92,6 +92,15 @@ class ProductsController < ApplicationController
     @product_image = Shoppe::Product.find_by_permalink(params[:permalink])
     @products      = Shoppe::Product.root.ordered.includes(:product_category, :variants)
     @products      = @products.group_by(&:product_category)
+
+    @array = []
+    @products.each do |category, product| 
+      if category.name.downcase == 'tops'
+        product.each do |p| 
+          @array << p.name
+        end
+      end
+    end
   end
 
   def show
@@ -101,7 +110,6 @@ class ProductsController < ApplicationController
     
     @product_colors = @product[:short_description].split("\n")
     @colors_array = []
-    binding.pry
     @product_colors.each do |a| @colors_array << a.split("/")  end  
     @sizes = SIZES
     @background_details = []
@@ -111,9 +119,7 @@ class ProductsController < ApplicationController
         temp_array << COLORS[color]
       end
       @background_details << temp_array
-    end 
-
-    binding.pry
+    end
   end
 
   def buy
@@ -125,6 +131,7 @@ class ProductsController < ApplicationController
     else  
       redirect_to product_path(@product.permalink), :alert => "Sorry we are out of stock!"
     end
+
 
   end
 
@@ -159,6 +166,8 @@ class ProductsController < ApplicationController
         end
       end
     end
+
+
   end
 
   def nurse_tops

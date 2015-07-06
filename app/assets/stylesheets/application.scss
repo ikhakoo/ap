@@ -31,7 +31,7 @@ html, body {
 	font-family: 'Open Sans';
 }
 
-body { background-color: $purple_opaque; }
+body { background-image: url('/assets/tweed.png') }
 
 #application_layout_banner {
 	background-color: rgb(248, 240, 0);
@@ -54,7 +54,7 @@ body { background-color: $purple_opaque; }
 	background-color: $pink_opaque !important;
 	border: none;
 	ul {
-		padding: $itemSpace;
+		padding: 0px;
 		margin: 0px;
 		border: 0px dashed red;
 		li { 
@@ -63,12 +63,16 @@ body { background-color: $purple_opaque; }
 			border: 0px solid red;
 			margin-left: 10px;
 			margin-right: 10px; 
+			&:hover {
+				background-color: white;
+				color: black;
+			}
 			.dropdown-toggle {
 				color: white;
 			}
 			a {
 				&:hover {
-					color: red;
+					color: green;
 					text-decoration: none;
 					-webkit-transition: 0.5s;
 				}

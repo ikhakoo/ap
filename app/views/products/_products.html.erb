@@ -1,6 +1,7 @@
 <% @products.each do |category, products| %>
   <% if category.name.downcase == 'tops' %>
     <% products.each do |product| %>
+
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
         <a href="<%= product_path(product.permalink)%>">
           <% if product.default_image %>
