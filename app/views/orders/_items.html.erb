@@ -1,86 +1,29 @@
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<div class="container">
-  <table id="cart" class="table table-hover table-condensed">
-            
-    <thead>
-      <tr>
-        <th style="width:50%">Product</th>
-        <th style="width:8%">Sub-Total</th>
-        <th style="width:10%">Quantity</th>
-        <th style="width:22%" class="text-center">Tax</th>
-        <th style="width:10%"></th>
-      </tr>
-    </thead>
 
-
-    <tbody>
       <% if order.order_items.count > 0 %>
         <% order.order_items.each do |item| %>
-        <script>
-          <% item_id = item.ordered_item.id %> 
-          $(function() {
-            var button = document.getElementsByClassName('update_button')
-            var id_selector = '#' + <%= item_id %>
-            $(id_selector).on('click', function() {
-              //take the info in the current this.
-              var value = document.getElementById('input_quantity_' + <%= item_id %> ).value
-            })
-          })
-        </script>
-        <tr>
-          <td data-th="Product">
+        
             <% if item.ordered_item.default_image %>
-            <div class="row">
-              <div class="col-sm-4 hidden-xs">
+            
                 <%= image_tag item.ordered_item.default_image.path, :width => '150px', :height => '150px' %>
-              </div>
+             
               <% end %>
-              <div class="col-sm-8">
-                <h4 class="nomargin"><%= item.ordered_item.full_name %></h4>
-                <p><%= item.ordered_item.description %></p>
-              </div>
-            </div>
-          </td>
-          <td data-th="Price"><%= number_to_currency item.sub_total %></td>
-          <td data-th="Quantity">
+<%= item.ordered_item.full_name %>
+      <%= item.ordered_item.description %>
+      <%= number_to_currency item.sub_total %>
           <%= form_for item, :url => basket_path, :role => 'form' do |f| %>
             <%= f.text_field :quantity, class: 'form-control text-center' %>
             <%= f.submit "Update", class: "btn btn-info btn-sm", method: "POST" %>
           <% end %>
-          </td>
-          <td data-th="Subtotal" class="text-center"><%= number_to_currency item.tax_amount %></td>
-          <td class="actions" data-th="">
-            <!-- Still not working -->
-            <%= link_to "Update", "", class: "btn btn-info btn-sm", id: item.ordered_item.id %>
-            
-
-          </td>
-        </tr>
+         <%= number_to_currency item.tax_amount %>
         <% end %>
       <% else %>
-        <h1 class="well">Basket is EMPTY</h1>
+        Basket is EMPTY
       <% end %>
-    </tbody>
-
-
-    <tfoot>
-      <tr class="visible-xs">
-        <td class="text-center"><strong>Total:</strong><%= number_to_currency order.total %></td>
-      </tr>
-      <tr>
-        <td>
+   <strong>Total:</strong><%= number_to_currency order.total %>
           <%= link_to 'Empty basket', basket_path, :method => :delete, class: "ui button red" %>
-        </td>
-        <td colspan="2" class="hidden-xs"></td>
-        <td class="hidden-xs text-center"><strong>Total: <%= number_to_currency order.total %></strong></td>
-        <td>
+        <strong>Total: <%= number_to_currency order.total %></strong>
+
           <% if !current_page?(action: 'checkout') && !current_page?(action: 'confirmation') %>
             <%= link_to 'Checkout', checkout_path, class: "btn btn-success btn-lg" %>
           <% end %>
-        </td>
-      </tr>
-    </tfoot>
-
-
-  </table>
-</div>
+        
