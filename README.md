@@ -34,4 +34,4 @@
 				v.save!
 				v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
 			end
-			print params[:sku]
+			print params[:sku]# ap-nostyle
