@@ -154,6 +154,7 @@ def seed_shit
 		"Button Front Ladies Work Top.jpeg" => {
 			sku: "201T",
 			colors: ["Black", "White", "Navy Blue"],
+			sizes: ["S", "M", "L", "XL", "2XL"]
 		},
 		"Ladies Long Sleeve Tee.jpeg" => {
 			sku: "LT101",

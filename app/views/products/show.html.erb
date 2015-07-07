@@ -1,20 +1,65 @@
-<div class="container-fluid">
-  <div class="content-wrapper">	
-		<div class="item-container">	
-			<div class="container">	
-			<hr>
-				<div class="col-md-12">
-					<div class="product col-md-3 service-image-left">  
-          <center>        
-						<% if @product.default_image %>
-  	          <%= image_tag @product.default_image.path, :style => "max-width:100%;height:100%;" %>
-	          <% else %>
-	            <%= image_tag "http://placehold.it/400x400" %>
-	          <% end %>
-          </center>
-					</div>
-					
-					<div class="container service1-items col-md-4 col-sm-6 col-xs-12 pull-left color_picker_container">         
+<div class="product-big-title-area">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="product-bit-title text-center">
+                  <h2>Shop</h2>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+    
+    
+<div class="single-product-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="single-sidebar">
+                    <h2 class="sidebar-title">Search Products</h2>
+                    <form action="">
+                        <input type="text" placeholder="Search products...">
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+                
+                <div class="single-sidebar">
+                    <h2 class="sidebar-title">Products</h2>
+                    <% @products.each do |category, products| %>
+                    <% if category.name.downcase == 'tops' || 'sets' %>
+                    <% products.sample(4).each do |product| %>
+                    <div class="thubmnail-recent">
+                        <img src="<%= product.default_image.path %>" class="recent-thumb" alt="">
+                        <h2><a href=""><%= product.name.split("-").first %></a></h2>
+                        <div class="product-sidebar-price">
+                            <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                        </div>                             
+                    </div>
+                    <% end %>
+                    <% end %>
+                    <% end %>
+                </div>
+                
+               
+            </div>
+            
+            <div class="col-md-8">
+                <div class="product-content-right">
+                    <div class="product-breadcroumb">
+                        <%= link_to 'Home', root_path %>
+                        <a href="">Category Name</a>
+                        <%= link_to @product.name.split("-").first, product_path(@product.permalink) %>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="product-images">
+                                <div class="product-main-img">
+                                    <img src="<%= @product.default_image.path %>" alt="">
+                                </div>
+                                
+                                <div class="container service1-items col-md-4 col-sm-6 col-xs-12 pull-left color_picker_container">         
               <% for i in 0..@background_details.length-1 %> 
                 <% background = @background_details[i] %>
                 <% html = select_background_type(background[0], background[1]) %>
@@ -22,89 +67,109 @@
                 
                 <div style='<%= html[0] %>' class="color_picker_primary" name="<%= @colors_array.uniq[i] %>">
                     <div style='<%= html[1] %>' class="color_picker_optional" name="<%= @colors_array.uniq[i] %>">
-                    </div> 
-                </div>
-              <% end %> 
-					</div>
-<%= form_tag product_path(@product.permalink, :size => @size, :color => @color), :method => :post do %>
-					<!-- MAIN SETTINGS AND ATTRIBUTES -->
-					<div class="col-md-5 col-sm-6">
-           	<!-- TITLE -->
-						<div class="product-title"><%= @product.name.split("-").first %></div>
-						<div class="product-desc"><%= @product.description %></div>					   
-          <hr>
-            <!-- COLORS -->
-            <h3>Select Color:</h3>
-						<div class="selectpicker" data-show-subtext="true" id="color_selector">
+                              </div> 
+                          </div>
+                        <% end %> 
+                    </div>
+                    </div>
+                  </div>
+                        <%= form_tag product_path(@product.permalink, :size => @size, :color => @color), :method => :post do %>
+                        <div class="col-sm-6">
+                            <div class="product-inner">
+                                <h2 class="product-name"><%= @product.name.split("-").first %></h2>
+                                <div class="product-inner-price">
+                                    <ins><%= number_to_currency @product.price %></ins> <del><%= number_to_currency (@product.price*1.13).to_f %></del>
+                                </div> 
 
-            <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]) %>
+                                 <div class="product-inner-category">
+                                    <p>Color: <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]) %> Size: <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]) %> </p>
+                                </div>
+
+                                <form action="" class="cart">
+                                    <div class="quantity">
+                                        <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
+                                    </div>
+                                    <%= submit_tag 'Add to basket', class: "ui button green" %>
+                                </form>  
+                                <br>
+                                <br> 
+                                
+                                
+                                <% end %>
+                                <div role="tabpanel">
+                                    <ul class="product-tab" role="tablist">
+                                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
+                                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Reviews</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                            <h2>Product Description</h2>  
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.</p>
+
+                                            <p>Mauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade" id="profile">
+                                            <h2>Reviews</h2>
+                                            <div class="submit-review">
+                                                <p><label for="name">Name</label> <input name="name" type="text"></p>
+                                                <p><label for="email">Email</label> <input name="email" type="email"></p>
+                                                <div class="rating-chooser">
+                                                    <p>Your rating</p>
+
+                                                    <div class="rating-wrap-post">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <p><label for="review">Your review</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
+                                                <p><input type="submit" value="Submit"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="related-products-wrapper">
+                        <h2 class="related-products-title">Related Products</h2>
+                        <div class="related-products-carousel">
+                        <% @products.each do |category, products| %>
+                    <% if category.name.downcase == 'tops' || 'sets' %>
+                    <% products.sample(12).each do |product| %>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="<%= product.default_image.path %>" alt="">
+                                    <div class="product-hover">
+                                        <a href="<%= product_path(product.permalink) %>" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                    </div>
+                                </div>
+
+                                <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+
+                                <div class="product-carousel-price">
+                                   <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                                </div> 
+                            </div>  
+                            <% end %>
+                            <% end %>
+                            <% end %>                                  
+                        </div>
+                    </div>
+                </div>                    
             </div>
-
-            <!-- SIZE -->
-						<h3>Select Size: </h3>
-						<div class="selectpicker " data-show-subtext="true" id="size_selector">
-               <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]) %>
-            </div>
-    			<hr>
-						<div class="product-price"><%= number_to_currency @product.price %></div>
-						<div class="product-stock">
-								In Stock
-						</div>
-
-    					<hr>
-
-              <p>
-                <%= submit_tag 'Add to basket', class: "ui button green" %>
-              </p>
-              <hr>
-            <% end %>
-						<div class="btn-group wishlist">
-							<%= link_to "Back to List", root_path, class: "ui button red", :style => 'float:right' %>
-						</div>
-					</div>
-				</div> 
-			</div>
-	<div class="row">
-    <%= render 'products' %>
-  </div>
+        </div>
+    </div>
 </div>
 
-<script>
-        var old_selection = document.body
-        $(function() {            
-            $('.color_picker_primary').on('click', function() {
-                console.log(old_selection)
-
-                //set the selector the name of this color square
-                $('#color_selector')[0].value = this.attributes[2].value
-
-                //give a border to emulate selection
-                $(this).css('border', '2px solid yellow')
-
-                // reset the former square
-                old_selection.style.border = 'none',       
-                old_selection = this
-            })
-
-            $('#color_selector').on('change', function() { 
-                // cycle through all the possible colors_array
-                console.log(this)
-                console.log(this.value)
-                colors_box = $('.color_picker_primary')
-                for (var i = 0; i < colors_box.length; i++) {
-                     name = colors_box[i].attributes[2].value 
-                     selector_value = $('#color_selector')[0].value
-                     name == this.value? colors_box[i].style.border = '2px solid yellow' : null 
-
-                    // old_selection.style.border = 'none',       
-                    // old_selection = colors_box[i]
-                 }; 
-            })
-        })
-</script>
 
 <script>
-	$(document).ready(function(){
+  $(document).ready(function(){
 
     loadGallery(true, 'a.thumbnail');
 
@@ -161,4 +226,4 @@
     }
 });
    
-</script>
+</script>    

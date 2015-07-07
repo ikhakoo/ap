@@ -100,7 +100,7 @@ class ProductsController < ApplicationController
 
     @sameprods = Shoppe::Product.where("name like ?", "#{@product.name}%")
     @sizes = []
-    @sameprods.each do |a| @sizes << a.name.split("-").last end 
+    @sameprods.each do |a| @sizes << a.name.split("-").last end
 
     @attributes = @product.product_attributes.public.to_a
 
