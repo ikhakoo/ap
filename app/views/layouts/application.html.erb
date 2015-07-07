@@ -88,7 +88,7 @@
             </div>
         </div>
     </div> <!-- End mainmenu area -->
-    
+    <%= yield %>
 
     <% if flash[:alert] %>
       <div class="ui negative message">
@@ -106,7 +106,7 @@
       </div>
     <% end %>
     
-    <%= yield %>
+    
     
     
     <div class="footer-top-area">

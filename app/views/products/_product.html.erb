@@ -1,43 +1,24 @@
-<div class="ui segment">
-  <div class="row catalogue">
-    <div class="ui link cards">
-      <% @products = @products.uniq! { |product| product.sku } %>
-      <% @products.each do |product| %>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="card" style="padding:4px; margin:4px;">
-            <div class="image">
-            <% if product.default_image %>
-                <%= image_tag product.default_image.path, :style => "width:250px;height:350px;max-width:100%;" %>
-              <% else %>
-                <%= image_tag "http://placehold.it/290x290", :style => "width:290px;height:290px;max-width:100%;" %>
-              <% end %>
+<div class="single-product-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        
+            <% @products = @products.uniq! { |product| product.sku } %>
+            <% @products.each_slice(3) do |row| %>
+            <div class="row">
+            <div class="col-md-3 col-sm-6">
+            <% row.each do |product| %>
+                <div class="single-shop-product">
+                    <div class="product-upper">
+                        <img src="<%= product.default_image.path %>" alt="">
+                    </div>
+                    <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+                    <div class="product-carousel-price">
+                          <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                    </div>                        
+                </div>
+                <% end %>
             </div>
-            <div class="content">
-              <div class="header">
-                <p><strong>Name:</strong> <%= product.name.split("-").first %></p>
-              </div>
-              <div class="meta"></div>
-              <div class="description">
-                <p><strong>Description: </strong><%= product.short_description.truncate(20) %></p>
-              </div>
-            </div>
-            <div class="extra content">
-              <span>  
-                <i class="money icon"></i>
-                <b>Price:</b> <%= number_to_currency product.price %>
-              </span>
-            </div>
-
-            <a href="<%= product_path(product.permalink) %>">
-            <div class="ui bottom attached button">
-              <i class="info icon"></i>
-              View Details
-            </div>
-          </div>
-          </a>
-
-          </div><br>
-      <% end %>
+            <% end %>
+        </div>
     </div>
-  </div>
 </div>
