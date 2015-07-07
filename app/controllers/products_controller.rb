@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  SIZES = [ 'Small', 'Medium', 'Large', 'XL', 'XXL']
 
   COLORS = {
     "2 tone Aqua/Black" => "rgb()",
@@ -91,6 +92,16 @@ class ProductsController < ApplicationController
     @product_image = Shoppe::Product.find_by_permalink(params[:permalink])
     @products      = Shoppe::Product.root.ordered.includes(:product_category, :variants)
     @products      = @products.group_by(&:product_category)
+
+    @array = []
+    @products.each do |category, product| 
+      if category.name.downcase == 'tops'
+        product.each do |p| 
+          @array << p.name
+        end
+      end
+    end
+
   end
 
   def show
@@ -126,58 +137,54 @@ class ProductsController < ApplicationController
 
         @background_details << temp_array
     end 
-
-    # binding.pry
-
-    
   end
 
   def buy
-    @product = Shoppe::Product.find_by_permalink(params[:permalink])
-    @permalink = params[:permalink]
-    @permalink = @permalink.split("-")
-    @permalink = @permalink.first @permalink.size - 1
-    @permalink = @permalink.join("-")
-    @permalink = @permalink + "-" + params[:color] + "-" + params[:size].downcase
-    @permalink = @permalink.downcase
-    @product = Shoppe::Product.all
-    @product = @product.find_by!(permalink: @permalink)
+    @product = Shoppe::Product.find_by_permalink!(params[:permalink])
+    binding.pry
+    if @product.stock_control = 'true'
+      current_order.order_items.add_item(@product, 1)
+      redirect_to product_path(@product.permalink), :notice => "Product has been added successfuly!"
+    else  
+      redirect_to product_path(@product.permalink), :alert => "Sorry we are out of stock!"
+    end
 
-    current_order.order_items.add_item(@product, 1)
-    redirect_to product_path(params[:permalink]), 
-    :notice => "Product has been added successfuly!"
 
-  end
-
-  # def buy
-  #   @product = Shoppe::Product.find(params[:product].to_i)
-  #   if params[:variant]
-  #     order_product = @product.variants.find(params[:variant].to_i)
-  #     current_order.order_items.add_item(order_product, 1)
-  #     redirect_to product_path(@product.permalink), 
-  #     :notice => "Product has been added successfuly!"
-  #   else
-  #     order_product = @product
-  #       if @product.stock_control
-  #         current_order.order_items.add_item(order_product, 1)
-  #         redirect_to product_path(@product.permalink), 
-  #         :notice => "Product has been added successfuly!"
-  #       else
-  #         redirect_to product_path(@product.permalink), 
-  #         :alert => "Sorry we are out of stock!"
-  #       end
-  #   end
-  # end
-
-  def remove
-	@product = Shoppe::Product.find_by_permalink!(params[:permalink])
-    item = current_order.order_items.find(@product)
   end
 
   def nurse
     @p1 = Shoppe::Product.where(product_category_id: 1)
     @p2 = Shoppe::Product.where(product_category_id: 2)
     @products = @p1, @p2
+
+    # get a list of all unique products to be listed
+    @unique_products = []
+    @products[0].each do |product| 
+      # set the first element of the injected array to the name, 
+      # so that the second element could hold a unique product
+      @unique_products << [product.name.split('-')[0]]  
+    end
+    @unique_products = @unique_products.uniq
+
+    # cycle through all product categories
+    @products.each do |category|
+      # .. and each product within those categories. 
+      category.each do |product|
+        # First, go through all the unique products so you can check against them
+        @unique_products.each do |uniq|
+          # if you're on the correct product
+          if product.name.split('-')[0] == uniq[0]
+            # .. and the there is no Product to represent that name
+            if uniq[1] == nil
+              # assign it this product
+              uniq[1] = product
+            end
+          end
+        end
+      end
+    end
+
+
   end
 
   def nurse_tops
