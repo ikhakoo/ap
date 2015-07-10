@@ -127,6 +127,7 @@
                         <% @products.each do |category, products| %>
                         <% if category.name.downcase == 'tops' || 'sets' %>
                         <% products.sample(12).each do |product| %>
+                        <% if product.name.include?("black" || "Black") %>
                             <div class="single-product">
                                 <div class="product-f-image">
                                     <img src="<%= product.default_image.path %>" alt="">
@@ -141,6 +142,8 @@
                                     <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
                                 </div> 
                             </div>
+                            <% else %>
+                            <% end %>
                             <% end %>
                             <% end %>
                             <% end %>
