@@ -30,162 +30,162 @@
   <body>
    
     <div class="header-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-16" style="text-align:right;">
-                    <div class="user-menu">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
-                            <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
-                            <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
-                            <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-16" style="text-align:right;">
+            <div class="user-menu">
+              <ul>
+                <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
+                <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
+                <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
+                <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </div> <!-- End header area -->
     
     <div class="site-branding-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="logo">
-                        <h1><a href="index.html">AP<span>Uniforms</span></a></h1>
-                    
-                    <% if flash[:alert] %>
-                      <div class="ui negative message">
-                        <div class="header">
-                          <%= flash[:alert] %>
-                        </div>
-                      </div>
-                    <% end %>
-                    
-                    <% if flash[:notice] %>
-                      <div class="ui positive message">
-                        <div class="header">
-                          <%= flash[:notice] %>
-                        </div>
-                      </div>
-                    <% end %>
-                    </div>
-                </div>
-                 <% if current_order %> 
-                <div class="col-sm-6">
-                    <div class="shopping-item">
-                        <a href="<%= basket_path %>">Cart - <span class="cart-amunt"><%= "#{current_order.total_before_tax}" %></span> <i class="fa fa-shopping-cart"></i> <span class="product-count"><%= "#{current_order.total_items}" %></span></a>
-                    </div>
-                </div>
-                <% end %>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="logo">
+              <h1><a href="index.html">AP<span>Uniforms</span></a></h1>
+            
+	            <% if flash[:alert] %>
+	              <div class="ui negative message">
+	                <div class="header">
+	                  <%= flash[:alert] %>
+	                </div>
+	              </div>
+	            <% end %>
+	            
+	            <% if flash[:notice] %>
+		            <div class="ui positive message">
+		              <div class="header">
+		                <%= flash[:notice] %>
+		              </div>
+		            </div>
+	            <% end %>
+	            </div>
+	          </div>
+           <% if current_order %> 
+          <div class="col-sm-6">
+            <div class="shopping-item">
+                <a href="<%= basket_path %>">Cart - <span class="cart-amunt"><%= "#{current_order.total_before_tax}" %></span> <i class="fa fa-shopping-cart"></i> <span class="product-count"><%= "#{current_order.total_items}" %></span></a>
             </div>
+          </div>
+          <% end %>
         </div>
+      </div>
     </div> <!-- End site branding area -->
     
     <div class="mainmenu-area">
-        <div class="container">
-            <div class="row">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div> 
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="<%= root_path %>">Home</a></li>
-                        <li><a href="<%= nurse_tops_path %>">TOPS</a></li>
-                        <li><a href="<%= nurse_sets_path %>">SETS</a></li>
-                        <li><a href="<%= clearance_path %>">CLEARANCE</a></li>
-                        <li><a href="<%= basket_path %>">CART</a></li>
-                        <li><a href="<%= checkout_path %>">CHECKOUT</a></li>
-                    </ul>
-                </div>  
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div> 
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="<%= root_path %>">Home</a></li>
+              <li><a href="<%= nurse_tops_path %>">TOPS</a></li>
+              <li><a href="<%= nurse_sets_path %>">SETS</a></li>
+              <li><a href="<%= clearance_path %>">CLEARANCE</a></li>
+              <li><a href="<%= basket_path %>">CART</a></li>
+              <li><a href="<%= checkout_path %>">CHECKOUT</a></li>
+            </ul>
+          </div>  
         </div>
+      </div>
     </div> <!-- End mainmenu area -->
         
     <%= yield %>
     
     <div class="footer-top-area">
-        <div class="zigzag-bottom"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-about-us">
-                        <h2>AP<span>Uniforms</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
-                        <div class="footer-social">
-                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-menu">
-                        <h2 class="footer-wid-title">User Navigation </h2>
-                        <ul>
-                            <li><a href="#">My account</a></li>
-                            <li><a href="#">Order history</a></li>
-                            <li><a href="#">Wishlist</a></li>
-                            <li><a href="#">Vendor contact</a></li>
-                            <li><a href="#">Front page</a></li>
-                        </ul>                        
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-menu">
-                        <h2 class="footer-wid-title">Categories</h2>
-                        <ul>
-                            <li><a href="#">Medical Wear</a></li>
-                            <li><a href="#">Chef Wear (Coming Soon)</a></li>
-                            <li><a href="#">Work Wear (Coming Soon)</a></li>
-                            <li><a href="#">Clearance</a></li>
-                        </ul>                        
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-newsletter">
-                        <h2 class="footer-wid-title">Newsletter</h2>
-                        <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
-                        <div class="newsletter-form">
-                            <form action="#">
-                                <input type="email" placeholder="Type your email">
-                                <input type="submit" value="Subscribe">
-                            </form>
-                        </div>
-                    </div>
-                </div>
+      <div class="zigzag-bottom"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="footer-about-us">
+              <h2>AP<span>Uniforms</span></h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
+              <div class="footer-social">
+                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+              </div>
+          	</div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6">
+            <div class="footer-menu">
+              <h2 class="footer-wid-title">User Navigation </h2>
+              <ul>
+                <li><a href="#">My account</a></li>
+                <li><a href="#">Order history</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Vendor contact</a></li>
+                <li><a href="#">Front page</a></li>
+              </ul>                        
             </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6">
+            <div class="footer-menu">
+              <h2 class="footer-wid-title">Categories</h2>
+              <ul>
+                <li><a href="#">Medical Wear</a></li>
+                <li><a href="#">Chef Wear (Coming Soon)</a></li>
+                <li><a href="#">Work Wear (Coming Soon)</a></li>
+                <li><a href="#">Clearance</a></li>
+              </ul>                        
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6">
+            <div class="footer-newsletter">
+              <h2 class="footer-wid-title">Newsletter</h2>
+              <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+              <div class="newsletter-form">
+                <form action="#">
+                  <input type="email" placeholder="Type your email">
+                  <input type="submit" value="Subscribe">
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div> <!-- End footer top area -->
     
     <div class="footer-bottom-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="copyright">
-                        <p>&copy; 2015 APUniforms. All Rights Reserved. Coded with <i class="fa fa-heart"></i> by <a href="http://wpexpand.com" target="_blank">WP Expand</a></p>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="footer-card-icon">
-                        <i class="fa fa-cc-discover"></i>
-                        <i class="fa fa-cc-mastercard"></i>
-                        <i class="fa fa-cc-stripe"></i>
-                        <i class="fa fa-cc-visa"></i>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="copyright">
+              <p>&copy; 2015 APUniforms. All Rights Reserved. Coded with <i class="fa fa-heart"></i> by <a href="http://wpexpand.com" target="_blank">WP Expand</a></p>
             </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="footer-card-icon">
+              <i class="fa fa-cc-discover"></i>
+              <i class="fa fa-cc-mastercard"></i>
+              <i class="fa fa-cc-stripe"></i>
+              <i class="fa fa-cc-visa"></i>
+            </div>
+          </div>
         </div>
+      </div>
     </div> <!-- End footer bottom area -->
    
     <!-- Latest jQuery form server -->
