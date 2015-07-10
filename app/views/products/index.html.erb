@@ -178,7 +178,7 @@
                 <div class="col-md-4">
                 <div class="single-product-widget">
                     <h2 class="product-wid-title">Scrub Tops</h2>
-                      <a href="" class="wid-view-more">View All</a>
+                      <a href="<%= nurse_tops_path %>" class="wid-view-more">View All</a>
                         <% @products.each do |category, products| %>
                           <% if category.name.downcase == 'tops' %>
                             <% products.sample(3).each do |product| %>
@@ -200,7 +200,7 @@
                 <div class="col-md-4">
                 <div class="single-product-widget">
                     <h2 class="product-wid-title">Scrub Sets</h2>
-                      <a href="" class="wid-view-more">View All</a>
+                      <a href="<%= nurse_sets_path %>" class="wid-view-more">View All</a>
                         <% @products.each do |category, products| %>
                           <% if category.name.downcase == 'sets' %>
                             <% products.sample(3).each do |product| %>
@@ -221,8 +221,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="single-product-widget">
-                    <h2 class="product-wid-title">Scrub Sets</h2>
-                      <a href="" class="wid-view-more">View All</a>
+                    <h2 class="product-wid-title">Medical Wear</h2>
+                      <a href="<%= nurse_path %>" class="wid-view-more">View All</a>
                         <% @products.each do |category, products| %>
                           <% if category.name.downcase == 'sets' || 'tops' %>
                             <% products.sample(3).each do |product| %>
