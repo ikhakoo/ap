@@ -35,10 +35,14 @@
           <div class="col-md-16" style="text-align:right;">
             <div class="user-menu">
               <ul>
-                <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
-                <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
-                <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
-                <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                <li><a href="<%= my_orders_path %>"><i class="fa fa-user"></i> My Account</a></li>
+                <li><a href="<%= basket_path %>"><i class="fa fa-user"></i> My Cart</a></li>
+                <li><a href="<%= checkout_path %>"><i class="fa fa-user"></i> Checkout</a></li>
+                <% if !current_client %>
+                  <li><a href="<%= new_client_session_path %>"><i class="fa fa-user"></i> Login</a></li>
+                <% else %>
+                  <li><a href="<%= new_client_session_path %>"><i class="fa fa-user"></i> Logout</a></li>
+                <% end %>
               </ul>
             </div>
           </div>
