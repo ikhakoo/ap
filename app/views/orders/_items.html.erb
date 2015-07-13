@@ -1,28 +1,29 @@
-<% if order.order_items.count > 0 %>
-<% order.order_items.each do |item| %>
 
-<% if item.ordered_item.default_image %>
-
-<%= image_tag item.ordered_item.default_image.path, :width => '150px', :height => '150px' %>
-
-<% end %>
+      <% if order.order_items.count > 0 %>
+        <% order.order_items.each do |item| %>
+        
+            <% if item.ordered_item.default_image %>
+            
+                <%= image_tag item.ordered_item.default_image.path, :width => '150px', :height => '150px' %>
+             
+              <% end %>
 <%= item.ordered_item.full_name %>
-<%= item.ordered_item.description %>
-<%= number_to_currency item.sub_total %>
-<%= form_for item, :url => basket_path, :role => 'form' do |f| %>
-<%= f.text_field :quantity, class: 'form-control text-center' %>
-<%= f.submit "Update", class: "btn btn-info btn-sm", method: "POST" %>
-<% end %>
-<%= number_to_currency item.tax_amount %>
-<% end %>
-<% else %>
-Basket is EMPTY
-<% end %>
-<strong>Total:</strong><%= number_to_currency order.total %>
-<%= link_to 'Empty basket', basket_path, :method => :delete, class: "ui button red" %>
-<strong>Total: <%= number_to_currency order.total %></strong>
+      <%= item.ordered_item.description %>
+      <%= number_to_currency item.sub_total %>
+          <%= form_for item, :url => basket_path, :role => 'form' do |f| %>
+            <%= f.text_field :quantity, class: 'form-control text-center' %>
+            <%= f.submit "Update", class: "btn btn-info btn-sm", method: "POST" %>
+          <% end %>
+         <%= number_to_currency item.tax_amount %>
+        <% end %>
+      <% else %>
+        Basket is EMPTY
+      <% end %>
+   <strong>Total:</strong><%= number_to_currency order.total %>
+          <%= link_to 'Empty basket', basket_path, :method => :delete, class: "ui button red" %>
+        <strong>Total: <%= number_to_currency order.total %></strong>
 
-<% if !current_page?(action: 'checkout') && !current_page?(action: 'confirmation') %>
-<%= link_to 'Checkout', checkout_path, class: "btn btn-success btn-lg" %>
-<% end %>
+          <% if !current_page?(action: 'checkout') && !current_page?(action: 'confirmation') %>
+            <%= link_to 'Checkout', checkout_path, class: "btn btn-success btn-lg" %>
+          <% end %>
         
