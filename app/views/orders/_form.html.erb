@@ -1,0 +1,31 @@
+<% if @order.order_items.count > 0 %>
+<div class="col-md-4">
+  <%= form_for @order, :url => checkout_path do |f| %> 
+      
+      <%= f.text_field :first_name, placeholder: "First Name", class: 'form-control' %> 
+      <%= f.text_field :last_name, placeholder: "Last Name", class: 'form-control' %>
+      <%= f.label :billing_address1, 'Address' %>
+      <%= f.text_field :billing_address1, placeholder: "Street Name", class: 'form-control'%>
+      <%= f.text_field :billing_address2, placeholder: "Suite # (optional)", class: 'form-control' %>
+      <%= f.text_field :billing_address3, placeholder: "City", class: 'form-control' %>        
+      
+      <%= f.select(:billing_address4, options_for_select(['ON','BC']), class: 'form-control') %>
+
+      <%= f.text_field :billing_postcode, placeholder: "Postal Code", class: 'form-control' %>
+</div>
+<div class="col-md-4">
+			<%= f.label :country, 'Country' %>
+      <%= f.collection_select :billing_country_id, Shoppe::Country.ordered, :id, :name, :include_blank => false, class: 'form-control' %>
+      <%= f.label :email_address %>
+      <%= f.text_field :email_address, placeholder: "Email Address", class: 'form-control'  %>
+      <%= f.label :phone_number %>
+      <%= f.text_field :phone_number, placeholder: "Phone Number", class: 'form-control'  %>
+      <%= f.label :delivery_name %>
+      <%= f.select :delivery_name, options_for_select(['UPS']), class: 'form-control' %>
+      <%= f.submit 'Continue', class: 'form-control'  %>
+  <% end %>
+  </div>
+ 
+<% else %>
+
+<% end %>
