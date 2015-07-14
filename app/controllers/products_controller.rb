@@ -146,7 +146,6 @@ class ProductsController < ApplicationController
     current_order.order_items.add_item(@product, 1)
     redirect_to product_path(params[:permalink]), 
     :notice => "Product has been added successfuly!"
-
   end
 
   # def buy

@@ -56,24 +56,23 @@
           <div class="col-sm-6">
             <div class="logo">
               <h1><a href="index.html">AP<span>Uniforms</span></a></h1>
-            
-	            <% if flash[:alert] %>
-	              <div class="ui negative message">
-	                <div class="header">
-	                  <%= flash[:alert] %>
-	                </div>
-	              </div>
-	            <% end %>
-	            
-	            <% if flash[:notice] %>
-		            <div class="ui positive message">
-		              <div class="header">
-		                <%= flash[:notice] %>
-		              </div>
-		            </div>
-	            <% end %>
-	            </div>
-	          </div>
+	           </div>
+             <% if flash[:alert] %>
+                <div class="ui negative message">
+                  <div class="header">
+                    <%= flash[:alert] %>
+                  </div>
+                </div>
+              <% end %>
+              
+              <% if flash[:notice] %>
+                <div class="ui positive message">
+                  <div class="header">
+                    <%= flash[:notice] %>
+                  </div>
+                </div>
+              <% end %>
+	         </div>
            <% if current_order %> 
           <div class="col-sm-6">
             <div class="shopping-item">
