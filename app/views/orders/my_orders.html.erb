@@ -11,20 +11,20 @@
 </div> <!-- End Page title area -->
 <br>
 <div class="col-md-16">
-                <% @orders.each do |order| %>
-                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title">
-                          
-                          <a data-toggle="collapse" data-parent="#accordion" href="#<%= order.id %>" aria-expanded="true" aria-controls="collapseOne">
-                            <p style="text-align:center;">Order #:<%= order.id %></p>
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="<%= order.id %>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body">
-                        <table cellspacing="0" class="shop_table cart">
+  <% @orders.each do |order| %>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            
+            <a data-toggle="collapse" data-parent="#accordion" href="#<%= order.id %>" aria-expanded="true" aria-controls="collapseOne">
+              <p style="text-align:center;">Order #:<%= order.id %></p>
+            </a>
+          </h4>
+        </div>
+        <div id="<%= order.id %>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+          <table cellspacing="0" class="shop_table cart">
           <thead>
             <tr>
               <th class="product-remove">&nbsp;</th>
