@@ -121,9 +121,7 @@
               <div class="footer-social">
                 <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                 <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
                 <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
               </div>
           	</div>
           </div>
@@ -132,11 +130,9 @@
             <div class="footer-menu">
               <h2 class="footer-wid-title">User Navigation </h2>
               <ul>
-                <li><a href="#">My account</a></li>
-                <li><a href="#">Order history</a></li>
-                <li><a href="#">Wishlist</a></li>
-                <li><a href="#">Vendor contact</a></li>
-                <li><a href="#">Front page</a></li>
+                <li><a href="<%= edit_client_registration_path %>">Account Settings</a></li>
+                <li><a href="<%= my_orders_path %>">Order History</a></li>
+                <li><a href="<%= root_path %>">Home</a></li>
               </ul>                        
             </div>
           </div>
@@ -145,10 +141,10 @@
             <div class="footer-menu">
               <h2 class="footer-wid-title">Categories</h2>
               <ul>
-                <li><a href="#">Medical Wear</a></li>
-                <li><a href="#">Chef Wear (Coming Soon)</a></li>
-                <li><a href="#">Work Wear (Coming Soon)</a></li>
-                <li><a href="#">Clearance</a></li>
+                <li><a href="<%= nurse_path %>">Medical Wear</a></li>
+                <li><a href="<%= chef_path %>">Chef Wear (Coming Soon)</a></li>
+                <li><a href="<%= work_path %>">Work Wear (Coming Soon)</a></li>
+                <li><a href="<%= clerance_path %>">Clearance</a></li>
               </ul>                        
             </div>
           </div>
