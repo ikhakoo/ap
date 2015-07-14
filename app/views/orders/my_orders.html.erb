@@ -1,16 +1,119 @@
-<% @orders.each do |order| %>
-<!-- Put order info here (date, status, etc) -->
-<!-- Pry it out for more info on what is in @orders -->
-	<% order.order_items.each do |item| %>
-		<% if item.ordered_item.default_image %>
-    		<%= image_tag item.ordered_item.default_image.path, 
-    				:width => '150px', :height => '150px' %>
-    <% end %>
-			<%= item.ordered_item.full_name %>
-			<%= item.ordered_item.description %>
-			<%= number_to_currency item.sub_total %>
-      <%= item.quantity %>
-			<%= number_to_currency item.tax_amount %>
-  <% end %>
-<% end %>
+<div class="product-big-title-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="product-bit-title text-center">
+          <h2>My Orders</h2>
+        </div>
+    	</div>
+  	</div>
+  </div>
+</div> <!-- End Page title area -->
+<br>
+<div class="col-md-16">
+                <% @orders.each do |order| %>
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                          
+                          <a data-toggle="collapse" data-parent="#accordion" href="#<%= order.id %>" aria-expanded="true" aria-controls="collapseOne">
+                            <p style="text-align:center;">Order #:<%= order.id %></p>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="<%= order.id %>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                        <table cellspacing="0" class="shop_table cart">
+          <thead>
+            <tr>
+              <th class="product-remove">&nbsp;</th>
+              <th class="product-thumbnail">&nbsp;</th>
+              <th class="product-name">Product</th>
+              <th class="product-price">Price</th>
+              <th class="product-quantity">Quantity</th>
+              <th class="product-subtotal">Total (w/Tax)</th>
+            </tr>
+          </thead>
+                
+                <tbody>
+
+              <% order.order_items.each do |item| %>
+
+                <tr class="cart_item">
+                  <td class="product-remove">
+                    <a title="Remove this item" class="remove" href="#">×</a> 
+                  </td>
+
+                  <td class="product-thumbnail">
+                    <a href="<%= product_path(item.ordered_item.permalink) %>"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="<%= item.ordered_item.default_image.path %>"></a>
+                  </td>
+
+                  <td class="product-name">
+                    <a href="<%= product_path(item.ordered_item.permalink) %>"><%= item.ordered_item.full_name %></a> 
+                  </td>
+
+                  <td class="product-price">
+                    <span class="amount"><%= number_to_currency (item.sub_total/item.quantity) %></span> 
+                  </td>
+
+                  <td class="product-quantity">
+                    <div class="quantity buttons_added">
+                      <input type="number" size="4" class="input-text qty text" title="Qty" value="<%= item.quantity.to_i %>" min="0" step="1" style="text-align:center;">
+                    </div>
+                  </td>
+
+                  <td class="product-subtotal">
+                    <span class="amount"><%= number_to_currency (item.sub_total+item.tax_amount) %></span> 
+                  </td>
+                </tr>
+
+              <% end %>
+ 
+              </tbody>
+            </table>
+
+												<div class="cart_totals ">
+              <h2>Cart Totals</h2>
+
+              <table cellspacing="0">
+              <tbody>
+                <tr class="cart-subtotal">
+                  <th>Cart Subtotal</th>
+                  <td><span class="amount"><%= number_to_currency (order.total/1.13) %></span></td>
+                </tr>
+
+                <tr class="shipping">
+                  <th>Shipping and Handling</th>
+                  <td>Free Shipping</td>
+                </tr>
+
+                <tr class="order-total">
+                  <th>Order Total</th>
+                  <td><strong><span class="amount"><%= number_to_currency order.total %></span></strong> </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+                             
+              </div>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<script>
+  $('#myTab a').click(function(e){
+    e.preventDefault();
+    $(this).tab('show');
+  });
+  $(document).ready(function(){
+    $('#accordion').collapse();
+  });
+</script> 
 
