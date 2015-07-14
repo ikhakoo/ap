@@ -7,6 +7,7 @@
             <div class="row">
             <div class="col-md-3 col-sm-6">
             <% row.each do |product| %>
+                <% if product.name.include?('Black') %>
                 <div class="single-shop-product">
                     <div class="product-upper">
                         <img src="<%= product.default_image.path %>" alt="">
@@ -16,6 +17,8 @@
                           <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
                     </div>                        
                 </div>
+                <% else %>
+                <% end %>
                 <% end %>
             </div>
             <% end %>
