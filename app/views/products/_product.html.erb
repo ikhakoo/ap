@@ -10,7 +10,7 @@
                 <% if product.name.include?('Black') %>
                 <div class="single-shop-product">
                     <div class="product-upper">
-                        <img src="<%= product.default_image.path %>" alt="">
+                        <img src="<%= product.default_image.path %>" alt="" style="height:335px;width:212px;">
                     </div>
                     <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
                     <div class="product-carousel-price">
