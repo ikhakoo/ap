@@ -133,19 +133,24 @@ class ProductsController < ApplicationController
   end
 
   def buy
-    @product = Shoppe::Product.find_by_permalink(params[:permalink])
-    @permalink = params[:permalink]
-    @permalink = @permalink.split("-")
-    @permalink = @permalink.first @permalink.size - 1
-    @permalink = @permalink.join("-")
-    @permalink = @permalink + "-" + params[:color] + "-" + params[:size].downcase
-    @permalink = @permalink.downcase
-    @product = Shoppe::Product.all
-    @product = @product.find_by!(permalink: @permalink)
+    if !current_client.nil?
+      @product = Shoppe::Product.find_by_permalink(params[:permalink])
+      @permalink = params[:permalink]
+      @permalink = @permalink.split("-")
+      @permalink = @permalink.first @permalink.size - 1
+      @permalink = @permalink.join("-")
+      @permalink = @permalink + "-" + params[:color] + "-" + params[:size].downcase
+      @permalink = @permalink.downcase
+      @product = Shoppe::Product.all
+      @product = @product.find_by!(permalink: @permalink)
 
-    current_order.order_items.add_item(@product, 1)
-    redirect_to product_path(params[:permalink]), 
-    :notice => "Product has been added successfuly!"
+      current_order.order_items.add_item(@product, 1)
+      redirect_to product_path(params[:permalink]), 
+      :notice => "Product has been added successfuly!"
+    else
+      redirect_to new_client_session_path,
+      :alert => "You must be logged in to add products!"
+    end
   end
 
   # def buy
