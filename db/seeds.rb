@@ -199,7 +199,7 @@ def seed_shit
 			color: ["Lagoon"],
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
 		},
-		"Scrub Set.jpeg" => {
+		"Childrens Scrub Set.jpeg" => {
 			sku: "CH400",
 			color: ["Lagoon"],
 			sizes: ["2Y","4Y","6Y","8Y"]
@@ -255,39 +255,39 @@ def seed_shit
 			end
 		end
 
-		if params = images2[filename] 
+		# if params = images2[filename] 
 
-				params[:colors].each do |color|
+		# 		params[:colors].each do |color|
 
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat2
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat2
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
-				p pro
+		# 		p pro
 
-				if params[:sizes]
+		# 		if params[:sizes]
 
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
-				end
-			end
-				print params[:sku] 
-			end
-		end
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+		# end
   end
 end
 
