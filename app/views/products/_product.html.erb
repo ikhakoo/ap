@@ -4,7 +4,6 @@
       <div class="row">
         <% @products.each_slice(4) do |row| %>
           <% row.each do |product| %>
-            <% if product.name.include?('Black') %>
               <div class="col-md-3 col-sm-6">
                 <div class="single-shop-product">
                   <div class="product-upper">
@@ -17,7 +16,6 @@
                   </div>  
                 <!-- end prod -->
               </div>
-            <% end %>
           <% end %>
         <% end %>
 <!-- end col -->
