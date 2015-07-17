@@ -1,27 +1,34 @@
 <div class="single-product-area">
-    <div class="zigzag-bottom"></div>
-    <div class="container">
-        
-            <% @products = @products.uniq! { |product| product.sku } %>
-            <% @products.each_slice(3) do |row| %>
-            <div class="row">
-            <div class="col-md-4 col-sm-6">
-            <% row.each do |product| %>
-                <% if product.name.include?('Black') %>
-                <div class="single-shop-product">
-                    <div class="product-upper">
-                        <img src="<%= product.default_image.path %>" alt="" style="height:335px;/*width:212px;*/">
-                    </div>
-                    <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
-                    <div class="product-carousel-price">
-                          <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
-                    </div>                        
-                </div>
-                <% else %>
-                <% end %>
-                <% end %>
-            </div>
-            <% end %>
-        </div>
-    </div>
+<div class="zigzag-bottom"></div>
+<div class="container">
+<div class="row">
+<% @products.each_slice(4) do |row| %>
+<% row.each do |product| %>
+<% if product.name.include?('Black') %>
+<div class="col-md-3 col-sm-6">
+<div class="single-shop-product">
+<div class="product-upper">
+<img src="<%= product.default_image.path %>" alt="" style="height:335px;/*width:212px;*/">
+</div>
+</div>
+<h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+<div class="product-carousel-price">
+<ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
+</div>  
+
+
+<!-- end prod -->
+</div>
+<% end %>
+<% end %>
+<% end %>
+<!-- end col -->
+</div>
+
+<!-- end row -->
+
+</div>
+
+
+</div>
 </div>
