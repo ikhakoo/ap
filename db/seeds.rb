@@ -36,11 +36,10 @@ def seed_shit
 	# categories
 	cat1 = Shoppe::ProductCategory.create!(:name => 'Tops')
 	cat2 = Shoppe::ProductCategory.create!(:name => 'Sets')
-	cat3 = Shoppe::ProductCategory.create!(:name => 'Sets')
-	cat4 = Shoppe::ProductCategory.create!(:name => 'Stethoscopes')
-	cat5 = Shoppe::ProductCategory.create!(:name => 'Chef')
-	cat6 = Shoppe::ProductCategory.create!(:name => 'Work')
-	cat7 = Shoppe::ProductCategory.create!(:name => 'Clearance')
+	cat3 = Shoppe::ProductCategory.create!(:name => 'Stethoscopes')
+	cat4 = Shoppe::ProductCategory.create!(:name => 'Chef')
+	cat5 = Shoppe::ProductCategory.create!(:name => 'Work')
+	cat6 = Shoppe::ProductCategory.create!(:name => 'Clearance')
 
 	file_paths = Dir["db/seeds_data/*.jpeg"]
 
@@ -312,7 +311,7 @@ def seed_shit
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat2
 				pro.default_image_file = get_file(filename)
 				pro.save!

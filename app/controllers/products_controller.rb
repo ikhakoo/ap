@@ -193,19 +193,19 @@ class ProductsController < ApplicationController
   end
 
   def stethoscopes
-    @products = Shoppe::Product.where(product_category_id: 4)
+    @products = Shoppe::Product.where(product_category_id: 3)
   end
 
   def chef
-    @products = Shoppe::Product.where(product_category_id: 5)
+    @products = Shoppe::Product.where(product_category_id: 4)
   end
 
   def work
-    @products = Shoppe::Product.where(product_category_id: 6)
+    @products = Shoppe::Product.where(product_category_id: 5)
   end
 
   def clearance
-    @products = Shoppe::Product.where(product_category_id: 7)
+    @products = Shoppe::Product.where(product_category_id: 6)
   end
 
 end
