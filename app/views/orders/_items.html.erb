@@ -75,7 +75,7 @@
           <div class="cart-collaterals">
             <div class="cross-sells">
               <% if order.order_items.count == 0 %>
-                <h2>Basket is empty</h2>
+                <h2 style="text-align:center; font-size:3em;">Basket is empty</h2>
               <% elsif current_page?(action: 'checkout') && order.order_items.count > 0 %>
                 <h2>Checkout Form</h2>
                   <%= render 'form' %>
