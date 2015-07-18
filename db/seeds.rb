@@ -249,8 +249,8 @@ def seed_shit
 		"3 Pocket V Neck Scrub Top with Flip Flap Scrub Pants.jpeg" => {
 			sku: "308/312",
 			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
-			colors: ["Aqua", "Burgundy", "Ceil", "Eggplant", "Lagoon", "Postman Blue", "Royal Blue", "Spruce", "Black", 
-								"Caribbean", "Charcoal", "Khaki", "Navy Blue", "Raspberry", "Sky Blue", "White"],
+			colors: ["Aqua", "Burgundy", "Ceil", "Eggplant", "Lagoon", "PostmanBlue", "RoyalBlue", "Spruce", "Black", 
+								"Caribbean", "Charcoal", "Khaki", "Navy Blue", "Raspberry", "SkyBlue", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL"]
 		}
 	}
