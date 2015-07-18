@@ -185,7 +185,7 @@ class ProductsController < ApplicationController
   end
 
   def nurse_tops
-    @products = Shoppe::Product.where(product_category_id: 1)
+    @products = Shoppe::Product.where(product_category_id: 1).page params[:page]
   end
 
   def nurse_sets

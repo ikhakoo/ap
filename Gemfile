@@ -33,6 +33,8 @@ gem 'social-share-button'
 
 gem 'devise'
 
+gem 'kaminari'
+
 # gem "shoppe-paypal"
 
 gem 'bootstrap-sass', '~> 3.3.4'
