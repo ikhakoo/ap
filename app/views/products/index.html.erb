@@ -169,7 +169,7 @@
               <a href="<%= nurse_tops_path %>" class="wid-view-more">View All</a>
                 <% @products.each do |category, products| %>
                   <% if category.name.downcase == 'tops' %>
-                    <% products.sample(3).each do |product| %>
+                    <% products.sample(4).each do |product| %>
                   
                 <div class="single-wid-product">
                     <a href="<% product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" class="product-thumb"></a>
@@ -189,7 +189,7 @@
              	<a href="<%= nurse_sets_path %>" class="wid-view-more">View All</a>
               <% @products.each do |category, products| %>
                 <% if category.name.downcase == 'sets' %>
-                  <% products.sample(3).each do |product| %>
+                  <% products.sample(4).each do |product| %>
                 	<div class="single-wid-product">
                     <a href="<% product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" class="product-thumb"></a>
                    	<h2><a href="<% product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
@@ -203,24 +203,23 @@
            </div>
           </div>
           <div class="col-md-4">
-            <div class="single-product-widget">
-             <h2 class="product-wid-title">Medical Wear</h2>
-              <a href="<%= nurse_path %>" class="wid-view-more">View All</a>
-                <% @products.each do |category, products| %>
-                  <% if category.name.downcase == 'sets' || 'tops' %>
-                    <% products.sample(3).each do |product| %>
-                  
-                	<div class="single-wid-product">
+          <div class="single-product-widget">
+            <h2 class="product-wid-title">Medical Wear</h2>
+              <a href="<%= nurse_sets_path %>" class="wid-view-more">View All</a>
+              <% @products.each do |category, products| %>
+                <% if category.name.downcase == 'sets' || 'tops' %>
+                  <% products.sample(2).each do |product| %>
+                  <div class="single-wid-product">
                     <a href="<% product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" class="product-thumb"></a>
                     <h2><a href="<% product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
-                    <div class="product-wid-price">
-                        <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
-                    </div>                            
-                	</div>
-                  <% end %>
-                <% end %>
-              <% end %>    
-            </div>
+                  <div class="product-wid-price">
+                      <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                   </div>                            
+                 </div>
+              <% end %>
+             <% end %>
+            <% end %>  
+           </div>
           </div>         
          </div>
        </div>
