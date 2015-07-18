@@ -22,8 +22,8 @@
         <div class="single-sidebar">
           <h2 class="sidebar-title">Products</h2>
           <% @products.each do |category, products| %>
-            <% if category.name.downcase == 'tops' || 'sets' %>
-              <% products.sample(4).each do |product| %>
+            <% if category.name.downcase == 'tops' || 'sets' || 'clearance' %>
+              <% products.sample(2).each do |product| %>
                 <div class="thubmnail-recent">
                   <img src="<%= product.default_image.path %>" class="recent-thumb" alt="">
                   <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
