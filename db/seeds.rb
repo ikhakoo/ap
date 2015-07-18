@@ -131,7 +131,7 @@ def seed_shit
 								"White/White", "Postman Blue/Black"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
-		"Men's Two Tone Scrub Top.jpeg" => {
+		"Mens Two Tone Scrub Top.jpeg" => {
 			sku: "409T",
 			description: "<p>Available in four color-ways this scrub top is becoming a favorite among men in the medical field. 
 			This two-tone scrub top has one chest pocket and one shoulder pen pocket. Also available as a set with the 409P</p>",
@@ -226,7 +226,7 @@ def seed_shit
 			colors: ["Lagoon"],
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
 		},
-		"Men's Two Tone Scrub Set with 6 Pocket Scrub Pants.jpeg" => {
+		"Mens Two Tone Scrub Set with 6 Pocket Scrub Pants.jpeg" => {
 			sku: "409/409",
 			description: "<p>Becoming one of MOBB's best sellers. This Men's two tone v-neck has one chest pocket and one shoulder pen pocket and is available in four color-ways. The six pocket cargo scrub pant has a built in belt buckle and is available in black and navy.</p>",
 			colors: ["Burgundy/Navy", "Khaki/Black", "Charcoal/Black", "Postman Blue/Navy"],
