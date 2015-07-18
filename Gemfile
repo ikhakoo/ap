@@ -29,6 +29,8 @@ gem 'stripe_event'
 gem 'unicorn'
 gem 'rack-timeout'
 
+gem 'social-share-button'
+
 gem 'devise'
 
 # gem "shoppe-paypal"
