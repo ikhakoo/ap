@@ -185,27 +185,27 @@ class ProductsController < ApplicationController
   end
 
   def nurse_tops
-    @products = Shoppe::Product.where(product_category_id: 1).paginate(page: params[:page], per_page: 16)
+    @products = Shoppe::Product.where(product_category_id: 1).paginate(page: params[:page], per_page: 8)
   end
 
   def nurse_sets
-    @products = Shoppe::Product.where(product_category_id: 2).paginate(page: params[:page], per_page: 16)
+    @products = Shoppe::Product.where(product_category_id: 2).paginate(page: params[:page], per_page: 8)
   end
 
   def stethoscopes
-    @products = Shoppe::Product.where(product_category_id: 3).paginate(page: params[:page], per_page: 16)
+    @products = Shoppe::Product.where(product_category_id: 3).paginate(page: params[:page], per_page: 8)
   end
 
   def chef
-    @products = Shoppe::Product.where(product_category_id: 4).paginate(page: params[:page], per_page: 16)
+    @products = Shoppe::Product.where(product_category_id: 4).paginate(page: params[:page], per_page: 8)
   end
 
   def work
-    @products = Shoppe::Product.where(product_category_id: 5).paginate(page: params[:page], per_page: 16)
+    @products = Shoppe::Product.where(product_category_id: 5).paginate(page: params[:page], per_page: 8)
   end
 
   def clearance
-    @products = Shoppe::Product.where(product_category_id: 6).paginate(page: params[:page], per_page: 16)
+    @products = Shoppe::Product.where(product_category_id: 6).paginate(page: params[:page], per_page: 8)
   end
 
 end

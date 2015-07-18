@@ -1,3 +1,6 @@
+<div style="text-align:center;">
+  <%= will_paginate @products, :renderer => BootstrapPagination::Rails %>
+</div>
 <div class="single-product-area">
   <div class="zigzag-bottom"></div>
     <div class="container">
@@ -19,9 +22,7 @@
           <% end %>
         <% end %>
 <!-- end col -->
-      </div>
-<!-- end row -->
     </div>
+<!-- end row -->
   </div>
 </div>
-<%= will_paginate @products, :renderer => BootstrapPagination::Rails %>
