@@ -36,23 +36,38 @@ def seed_shit
 	# categories
 	cat1 = Shoppe::ProductCategory.create!(:name => 'Tops')
 	cat2 = Shoppe::ProductCategory.create!(:name => 'Sets')
-
+	cat3 = Shoppe::ProductCategory.create!(:name => 'Sets')
+	cat4 = Shoppe::ProductCategory.create!(:name => 'Stethoscopes')
+	cat5 = Shoppe::ProductCategory.create!(:name => 'Chef')
+	cat6 = Shoppe::ProductCategory.create!(:name => 'Work')
+	cat7 = Shoppe::ProductCategory.create!(:name => 'Clearance')
 
 	file_paths = Dir["db/seeds_data/*.jpeg"]
 
-	images = {
+	tops = {
 		"The Rosey.jpeg" => {
 			sku: "T3030",
+			description: "<p>Simplicity at its best, this classic v-neck top is designed with a double stitched 
+			detail line across the chest and two tailored lines down the back. Two lower patch pockets,
+			the right side is enclosed with inner sectional pockets.The top is finished off with two small side 
+			slits and a convenient shoulder pen pocket.</p><p>Stretch-Flex Blend: 65% Poly/32% Rayon/3% Spandex</p>",
 			colors: ["Black", "Royal Blue", "Charcoal", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
 		"The Pearl.jpeg" => {
 			sku: "T3020",
+			description: "<p>Tailored for fit, this v-neck top features two flex side panels, one shoulder pen 
+			pocket and two lower patch pockets. One of the patch pockets includes detailed stitching on the 
+			outside with a utility D-ring and an inner smart phone pocket.</p><p>*Stretch-Flex Blend: 
+			65% Poly/32% Rayon/3% Spandex</p>",
 		  colors: ["Black", "Royal Blue", "Charcoal", "White"],
 		  sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
 		"Basic V Neck Scrub Top.jpeg" => {
 			sku: "606T",
+			description: "<p>The newest addition to the MOBB line, this unisex scrub top is all about classic 
+			simplicity. Featuring a standard v-neck with one chest pocket and one shoulder pen pocket. This top 
+			mates perfectly with 608P and is a favorite among school programs.</p>",
 			colors: ["Black", "Cappuccino", "Ceil", 
 								"Lagoon", "Postman Blue", "Sky Blue", 
 								"Burgundy", "Caribbean", "Charcoal", 
@@ -62,11 +77,13 @@ def seed_shit
 		},
 		"Zipper Front Ladies Work Top.jpeg" => {
 			sku: "202T",
+			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
 			colors: ["Black", "White", "Navy Blue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
 		"Flexi V Neck Scrub Top.jpeg" => {
 			sku: "324T",
+			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
 			colors: ["2tone White/White", "Black", "Brown", "Charcoal", "Deja Vu", "Eggplant", "Heart Ties", "Khaki",
 							 "Lime Green", "Olive Green", "Papillon", "Postman Blue", "Raspberry", "Royal Blue", "String Along",
 							 "Zen Stem", "Aqua", "Blue Cheerios", "Cappuccino", "Deep Orchid", "Dusty Rose", "Fire Works", "Indigo",
@@ -76,11 +93,14 @@ def seed_shit
 		},
 		"Ultra Flexi Scrub Top.jpeg" => {
 			sku: "524T",
+			description: "<p>The Ultra Flexi scrub top has multiple black stretch panels for the most superb fit 
+			and ultimate movement.The Ultra Flexi v-neck top also has two lower pockets and one shoulder pen pocket.</p>",
 			colors: ["Aqua", "Charcoal", "Navy Blue", "Black", "Deep Orchid", "Sky Blue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
 		"3 Pocket V Neck Scrub Top.jpeg" => {
 			sku: "308T",
+			description: "<p>A bold, basic 3 pocket v-neck scrub top featuring dolman sleeves. This scrub top is also available as a set</p>",
 			colors: ["Aqua", "Burgundy", "Ceil", "Eggplant", "Lagoon", "Postman Blue", 
 								"Royal Blue", "Spruce", "Black", "Caribbean", "Charcoal", "Khaki", 
 								"Navy Blue", "Rasberry", "Sky Blue", "White"],
@@ -88,6 +108,9 @@ def seed_shit
 		},
 		"Unisex V Neck Scrub Top.jpeg" => {
 			sku: "310T",
+			description: "<p>A classic v-neck scrub top popular among men and women. This top has a slightly longer hem 
+			line making it an excellent choice for anyone with a taller stature. This top has three front pockets, one shoulder 
+			pen pocket and is available in every MOBB color</p>",
 			colors: ["Aqua", "Burgundy", "Caribbean", "Charcoal", "Khaki", "Navy Blue", "Postman Blue", "Royal Blue", 
 								"Sky Blue", "Teal", "Black", "Cappuccino", "Ceil", "Eggplant", "Lagoon", "Olive Green", "Red",
 								"Sea Green", "Spruce", "White"],
@@ -95,43 +118,57 @@ def seed_shit
 		},
 		"Ladies Sculpted Scrub Top.jpeg" => {
 			sku: "410T",
+			description: "<p>A simple twist on our classic neckline. This scrub top features a beautifully sculpted wave neckline 
+			with contrasting color. The top also has two lower pockets, one chest pocket and one shoulder pen pocket.</p>",
 			colors: ["Aqua/Black", "Charcoal/Postman Blue", "Eggplant/Black", "White/White", 
 								"Black/White", "Deep Orchid/White", "Navy Blue/Sky Blue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
 		"Active Flexi V Neck Scrub Top.jpeg" => {
 			sku: "424T",
+			description: "<p>Comfortable and stylish this scrub top feels and looks amazing. The stretch panels create a fantastic fit 
+			and allow for great movement. The flexi v-neck has two lower pockets and one shoulder pen pocket</p>",
 			colors: ["Indigo/Black", "Eggplant/Black", "Rasberry/Black", "Aqua/Black", "Charcoal/Black", "Navy Blue/Black",
 								"White/White", "Postman Blue/Black"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
 		"Men's Two Tone Scrub Top.jpeg" => {
 			sku: "409T",
+			description: "<p>Available in four color-ways this scrub top is becoming a favorite among men in the medical field. 
+			This two-tone scrub top has one chest pocket and one shoulder pen pocket. Also available as a set with the 409P</p>",
 			colors: ["Burgundy/Navy", "Khaki/Black", "Charcoal/Black", "Postman Blue/Navy"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
 		"Empire Tie Back Scrub Top.jpeg" => {
 			sku: "420T",
+			description: "<p>This ultra feminine scrub top features an empire waist and ties at the back. Keeping with tradition this top has a v-neck collar and two front pockets</p>",
 			colors: ["Navy", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
 		"The Coco.jpeg" => {
 			sku: "T1018",
+			description: "<p>A stunning v-neck top with an hourglass silhouette. Featuring flex sleeves and side panels with a gathered cap sleeve detail, 
+			two hidden pockets and custom tailoring for an exceptional fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex<p>",
 			colors: ["Aubergine", "White", "Soft Mint"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
 		"The Mandy.jpeg" => {
 			sku: "T1010",
+			description: "<p>A unique style and ultra chic fit, this deep cut mandarin neckline features two lower pockets, flex side panels and has 
+			beautiful tailoring through the back for a custom fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
 			colors: ["Aubergine", "White", "Soft Mint"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
 		"The Roxy.jpeg" => {
 			sku: "T1016",
+			description: "<p>A fit for fashion and function, this top features flex sleeves and side panels, a gathered cap sleeve detail, 
+			chest darts and two hidden pockets.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
 			colors: ["Aubergine", "White", "Soft Mint"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
 		"Ladies Zipper Detail Scrub Top.jpeg" => {
 			sku: "530T",
+			description: "<p>Fun, funky and fitted. This sporty scrub top features reflective trim, asymmetrical zipper detail, two lower pockets, one chest pocket and one shoulder pen pocket</p>",
 			colors: ["Navy Blue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
@@ -181,7 +218,32 @@ def seed_shit
 		}
 	}
 
-	images2 = {
+	sets = {
+		"Unisex 8 Pocket Drawstring/Elastic Scrub Set.jpeg" => {
+			sku: "310/307",
+			colors: ["Aqua","Burgundy","Caribbean","Charcoal","Khaki","Lime Green","Olive Green","Royal Blue","Spruce",
+								"White","Black","Cappuccino","Ceil","Eggplant","Lagoon","Navy Blue","Postman Blue","Sky Blue","Teal"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
+		},
+		"Unisex 5 Pocket Drawstring Scrub Set.jpeg" => {
+			sku: "606/608",
+			colors: ["Black","Cappuccino","Ceil","Lagoon","Postman Blue","Sky Blue","Burgundy","Caribbean","Charcoal",
+								"Navy Blue","Royal Blue","White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Reversible O.R. Drawstring Scrub Set.jpeg" => {
+			sku: "306TA/306PA",
+			colors: ["Lagoon"],
+			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
+		},
+		"Childrens Scrub Set.jpeg" => {
+			sku: "CH400",
+			colors: ["Lagoon"],
+			sizes: ["2Y","4Y","6Y","8Y"]
+		}
+	}
+
+	clearance = {
 		"Unisex 8 Pocket Drawstring/Elastic Scrub Set.jpeg" => {
 			sku: "310/307",
 			colors: ["Aqua","Burgundy","Caribbean","Charcoal","Khaki","Lime Green","Olive Green","Royal Blue","Spruce",
@@ -221,7 +283,7 @@ def seed_shit
 		name = File.basename(filename, File.extname(filename))
 		# fp.split("/").last.gsub(".jpeg", "").titleize
 
-		if params = images[filename] 
+		if params = tops[filename] 
 
 				params[:colors].each do |color|
 
@@ -254,13 +316,46 @@ def seed_shit
 				print params[:sku] 
 			end
 
-		elsif params = images2[filename] 
+		elsif params = sets[filename] 
 
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
 				pro = Shoppe::Product.new(default_params.merge(sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat2
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+		elsif params = clearance[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat3
 				pro.default_image_file = get_file(filename)
 				pro.save!
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
