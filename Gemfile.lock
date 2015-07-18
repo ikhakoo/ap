@@ -254,6 +254,7 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.0)
   jquery-rails
+  kaminari
   pg
   pry-rails
   rack-timeout
