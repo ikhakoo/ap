@@ -204,7 +204,7 @@ def seed_shit
 	}
 
 	sets = {
-		"Unisex 8 Pocket Drawstring/Elastic Scrub Set.jpeg" => {
+		"Unisex 8 Pocket Drawstring Elastic Scrub Set.jpeg" => {
 			sku: "310/307",
 			description: "<p>Amazing fit in every MOBB color imaginable. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>
 <p><strong>Size 5XL only available in Colors: Black, Charcoal, Burgundy, Caribbean, Lagoon, Navy, Postman Blue, Royal Blue</p></strong>
@@ -216,7 +216,7 @@ def seed_shit
 		"Unisex 5 Pocket Drawstring Scrub Set.jpeg" => {
 			sku: "606/608",
 			description: "<p>MOBB's newest style, this scrub set replaces the 306/306. A classic v-neck scrub top with one chest pocket and one shoulder pen pocket and a simple five pocket drawstring pant. This set is ideal for school programs.</p>",
-			colors: ["Black","Cappuccino","Ceil","Lagoon","Postman Blue","Sky Blue","Burgundy","Caribbean","Charcoal",
+			colors: ["Black","Cappuccino","Ceil","Lagoon","PostmanBlue","SkyBlue","Burgundy","Caribbean","Charcoal",
 								"NavyBlue","RoyalBlue","White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
@@ -255,9 +255,26 @@ def seed_shit
 		}
 	}
 
-	# clearance = {
-		
-	# }
+	clearance = {
+		"Unisex 8 Pocket Drawstring Elastic Scrub Set C1.jpeg" => {
+			sku: "P310/307C",
+			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>",
+			colors: ["Lagoon"],
+			sizes: ["XXS", "XS", "M", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Unisex 8 Pocket Drawstring Elastic Scrub Set C2.jpeg" => {
+			sku: "P310/307C",
+			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>",
+			colors: ["Lilac"],
+			sizes: ["XXS", "XS", "M", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Unisex 8 Pocket Drawstring Elastic Scrub Set C3.jpeg" => {
+			sku: "P310/307C",
+			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>",
+			colors: ["Red"],
+			sizes: ["XXS", "XS", "M", "XL", "2XL", "3XL", "4XL"]
+		}	
+	}
 
 	default_params = { 
 		:short_description => 'test', 
@@ -339,38 +356,38 @@ def seed_shit
 				print params[:sku] 
 			end
 
-		# elsif params = clearance[filename] 
+		elsif params = clearance[filename] 
 
-		# 		params[:colors].each do |color|
+				params[:colors].each do |color|
 
-		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-		# 		pro = Shoppe::Product.new(default_params.merge(sku: params[:sku], name: "#{name}-#{color}"))
-		# 		pro.product_category = cat3
-		# 		pro.default_image_file = get_file(filename)
-		# 		pro.save!
-		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat6
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
-		# 		p pro
+				p pro
 
-		# 		if params[:sizes]
+				if params[:sizes]
 
-		# 		params[:sizes].each do |size|
-		# 			v = pro.variants.create(
-		# 				:name => "#{pro.name}-#{size}", 
-		# 				:sku => "#{params[:sku]}-#{size}", 
-		# 				:price => pro.price, 
-		# 				:cost_price => pro.cost_price, 
-		# 				:tax_rate => tax_rate, 
-		# 				:weight => pro.weight, 
-		# 				:default => true
-		# 			)
-		# 			v.default_image_file = get_file(filename)
-		# 			v.save!
-		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
-		# 		end
-		# 	end
-		# 		print params[:sku] 
-		# 	end
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
 		end
   end
 end
