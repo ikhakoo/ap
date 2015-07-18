@@ -189,23 +189,23 @@ class ProductsController < ApplicationController
   end
 
   def nurse_sets
-    @products = Shoppe::Product.where(product_category_id: 2)
+    @products = Shoppe::Product.where(product_category_id: 2).page(params[:page]).per(8)
   end
 
   def stethoscopes
-    @products = Shoppe::Product.where(product_category_id: 3)
+    @products = Shoppe::Product.where(product_category_id: 3).page(params[:page]).per(8)
   end
 
   def chef
-    @products = Shoppe::Product.where(product_category_id: 4)
+    @products = Shoppe::Product.where(product_category_id: 4).page(params[:page]).per(8)
   end
 
   def work
-    @products = Shoppe::Product.where(product_category_id: 5)
+    @products = Shoppe::Product.where(product_category_id: 5).page(params[:page]).per(8)
   end
 
   def clearance
-    @products = Shoppe::Product.where(product_category_id: 6)
+    @products = Shoppe::Product.where(product_category_id: 6).page(params[:page]).per(8)
   end
 
 end
