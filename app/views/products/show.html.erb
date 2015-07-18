@@ -26,7 +26,7 @@
               <% products.sample(4).each do |product| %>
                 <div class="thubmnail-recent">
                   <img src="<%= product.default_image.path %>" class="recent-thumb" alt="">
-                  <h2><a href=""><%= product.name.split("-").first %></a></h2>
+                  <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
                   <div class="product-sidebar-price">
                     <ins><%= number_to_currency product.price %></ins> 
                     <del><%= number_to_currency (product.price*1.13).to_f %></del>
