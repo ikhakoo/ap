@@ -112,38 +112,30 @@
             </button>
         </div> 
         <div class="navbar-collapse collapse">
-            <!-- <ul class="nav navbar-nav">
-                <li class="active"><a href="<%= root_path %>">Home</a></li>
-                <li><a href="<%= nurse_tops_path %>">TOPS</a></li>
-                <li><a href="<%= nurse_sets_path %>">SETS</a></li>
-                <li><a href="<%= clearance_path %>">CLEARANCE</a></li>
-                <li><a href="<%= basket_path %>">CART</a></li>
-                <li><a href="<%= checkout_path %>">CHECKOUT</a></li> -->
-                <ul class="nav navbar-nav">
-                  <li class="<%= 'active' if current_page?(root_path) %>">
-                    <%= link_to "HOME", root_path %>
-                  </li>
-                  <li class="<%= 'active' if current_page?(nurse_tops_path) %>">
-                    <%= link_to "TOPS", nurse_tops_path %>
-                  </li>
-                  <li class="<%= 'active' if current_page?(nurse_sets_path) %>">
-                    <%= link_to "SETS", nurse_sets_path %>
-                  </li> 
-                  <li class="<%= 'active' if current_page?(clearance_path) %>">
-                    <%= link_to "CLEARANCE", clearance_path %>
-                  </li>
-                  <li class="<%= 'active' if current_page?(basket_path) %>">
-                    <%= link_to "CART", basket_path %>
-                  </li>
-                  <li class="<%= 'active' if current_page?(checkout_path) %>">
-                    <%= link_to "CHECKOUT", checkout_path %>
-                  </li>
-              </ul>
-<!--             </ul> -->
-          </div>  
-        </div>
-      </div>
-    </div> <!-- End mainmenu area -->
+          <ul class="nav navbar-nav">
+            <li class="<%= 'active' if current_page?(root_path) %>">
+              <%= link_to "HOME", root_path %>
+            </li>
+            <li class="<%= 'active' if current_page?(nurse_tops_path) %>">
+              <%= link_to "TOPS", nurse_tops_path %>
+            </li>
+            <li class="<%= 'active' if current_page?(nurse_sets_path) %>">
+              <%= link_to "SETS", nurse_sets_path %>
+            </li> 
+            <li class="<%= 'active' if current_page?(clearance_path) %>">
+              <%= link_to "CLEARANCE", clearance_path %>
+            </li>
+            <li class="<%= 'active' if current_page?(basket_path) %>">
+              <%= link_to "CART", basket_path %>
+            </li>
+            <li class="<%= 'active' if current_page?(checkout_path) %>">
+              <%= link_to "CHECKOUT", checkout_path %>
+            </li>
+        </ul>
+      </div>  
+    </div>
+  </div>
+</div> <!-- End mainmenu area -->
         
     <%= yield %>
 
