@@ -36,11 +36,20 @@
             <div class="user-menu">
               <ul>
                 <% if !current_client %>
-                  <li><a href="<%= new_client_session_path %>"><i class="fa fa-user"></i> Login</a></li>
+                  <li><a href="<%= new_client_session_path %>">
+                    <i class="fa fa-user"></i> Login</a>
+                  </li>
                 <% else %>
-                  <li><a href="<%= my_orders_path %>"><i class="fa fa-user"></i> Order History</a></li>
-                  <li><a href="<%= edit_client_registration_path %>"><i class="fa fa-user"></i> Account Settings</a></li>
-                  <li><a href="<%= new_client_session_path %>"><i class="fa fa-user"></i> Logout</a></li>
+                  <li><a href="<%= my_orders_path %>">
+                    <i class="fa fa-user"></i> Order History</a>
+                  </li>
+                  <li><a href="<%= edit_client_registration_path %>">
+                    <i class="fa fa-user"></i> Account Settings</a>
+                  </li>
+                  <!-- Need to change action call to sign out instead of sign in -->
+                  <li>
+                    <%= link_to "Log out", destroy_client_session_path('current'), :method => :delete %>
+                  </li>
                 <% end %>
               </ul>
             </div>
