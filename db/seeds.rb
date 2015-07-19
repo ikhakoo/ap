@@ -256,23 +256,143 @@ def seed_shit
 	}
 
 	clearance = {
-		"Unisex 8 Pocket Drawstring Elastic Scrub Set C1.jpeg" => {
+		"Petite Unisex 8 Pocket Drawstring Elastic Scrub Set Lagoon.jpeg" => {
 			sku: "P310/307C",
 			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>",
 			colors: ["Lagoon"],
 			sizes: ["XXS", "XS", "M", "XL", "2XL", "3XL", "4XL"]
 		},
-		"Unisex 8 Pocket Drawstring Elastic Scrub Set C2.jpeg" => {
+		"Petite Unisex 8 Pocket Drawstring Elastic Scrub Set Lilac.jpeg" => {
 			sku: "P310/307C",
 			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>",
 			colors: ["Lilac"],
 			sizes: ["XXS", "XS", "M", "XL", "2XL", "3XL", "4XL"]
 		},
-		"Unisex 8 Pocket Drawstring Elastic Scrub Set C3.jpeg" => {
+		"Petite Unisex 8 Pocket Drawstring Elastic Scrub Set Navy.jpeg" => {
 			sku: "P310/307C",
 			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>",
-			colors: ["Red"],
+			colors: ["Navy"],
 			sizes: ["XXS", "XS", "M", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Petite Unisex 8 Pocket Drawstring Elastic Scrub Set Royal Blue.jpeg" => {
+			sku: "P310/307C",
+			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>",
+			colors: ["RoyalBlue"],
+			sizes: ["XXS", "XS", "M", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Petite Unisex 8 Pocket Drawstring Elastic Scrub Set White.jpeg" => {
+			sku: "P310/307C",
+			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>",
+			colors: ["White"],
+			sizes: ["XXS", "XS", "M", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Criss Cross Flip Flap Aqua.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["Aqua"],
+			sizes: ["2XL"]
+		},
+		"Criss Cross Flip Flap Black With Dusty Rose Trim.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["Black/DustyRose"],
+			sizes: ["2XL"]
+		},
+		"Criss Cross Flip Flap Black and Aqua.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["Black/Aqua"],
+			sizes: ["2XL"]
+		},
+		"Criss Cross Flip Flap Brown.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["Brown"],
+			sizes: ["XXS", "XS", "L", "XL", "2XL"]
+		},
+		"Criss Cross Flip Flap Bubble Gum.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["BubbleGum"],
+			sizes: ["S", "M", "L", "XL", "2XL"]
+		},
+		"Criss Cross Flip Flap Dusty Rose.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["DustyRose"],
+			sizes: ["XXS", "L", "XL", "2XL"]
+		},
+		"Criss Cross Flip Flap Dusty Rose With Polka Dots.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["DustyRose/PolkaDots"],
+			sizes: ["XXS", "L", "XL", "2XL"]
+		},
+		"Criss Cross Flip Flap Khaki.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["Khaki"],
+			sizes: ["L", "XL", "2XL"]
+		},
+		"Criss Cross Flip Flap Lime Green.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["Lime Green"],
+			sizes: ["L", "XL", "2XL"]
+		},
+		"Criss Cross Flip Flap Nutmeg.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["Khaki"],
+			sizes: ["S", "XL", "2XL"]
+		},
+		"Criss Cross Flip Flap Olive Green.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["OliveGreen"],
+			sizes: ["L", "XL", "2XL"]
+		},
+		"Criss Cross Flip Flap Pink.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["Pink"],
+			sizes: ["XXS", "XS", "M", "L", "XL", "2XL"]
+		},
+		"Criss Cross Flip Flap Postman Blue.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["PostmanBlue"],
+			sizes: ["2XL"]
+		},
+		"Criss Cross Flip Flap Red.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["Red"],
+			sizes: ["XXS", "L", "XL", "2XL"]
+		},
+		"Criss Cross Flip Flap Sea Green.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["SeaGreen"],
+			sizes: ["L"]
+		},
+		"Criss Cross Flip Flap Sky Blue.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["SkyeBlue"],
+			sizes: ["XL", "2XL"]
+		},
+		"Criss Cross Flip Flap Tangerine.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["Tangerine"],
+			sizes: ["XXS", "L", "XL", "2XL"]
+		},
+		"Criss Cross Flip Flap White.jpeg" => {
+			sku: "323/312C",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: ["White"],
+			sizes: ["XL", "2XL"]
 		}	
 	}
 
@@ -361,7 +481,7 @@ def seed_shit
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}c-#{color}"))
 				pro.product_category = cat6
 				pro.default_image_file = get_file(filename)
 				pro.save!
