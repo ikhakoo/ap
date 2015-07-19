@@ -393,7 +393,79 @@ def seed_shit
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
 			colors: ["White"],
 			sizes: ["XL", "2XL"]
-		}	
+		},
+		"V Neck 3 Pocket Dolman Seeve Flip Fap Scrub Set Brick.jpeg" => {
+			sku: "308/312C",
+			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
+			colors: ["Brick"],
+			sizes: ["XXS", "L", "XL"]
+		},
+		"V Neck 3 Pocket Dolman Seeve Flip Fap Scrub Set Brown.jpeg" => {
+			sku: "308/312C",
+			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
+			colors: ["Brown"],
+			sizes: ["XXS", "XS", "L", "XL"]
+		},
+		"V Neck 3 Pocket Dolman Seeve Flip Fap Scrub Set Dusty Rose.jpeg" => {
+			sku: "308/312C",
+			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
+			colors: ["DustyRose"],
+			sizes: ["XS", "L", "XL"]
+		},
+		"V Neck 3 Pocket Dolman Seeve Flip Fap Scrub Set Lilac.jpeg" => {
+			sku: "308/312C",
+			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
+			colors: ["Lilac"],
+			sizes: ["XXS", "XS", "M", "L", "XL"]
+		},
+		"V Neck 3 Pocket Dolman Seeve Flip Fap Scrub Set Lime Green.jpeg" => {
+			sku: "308/312C",
+			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
+			colors: ["LimeGreen"],
+			sizes: ["XS", "M", "L", "XL"]
+		},
+		"V Neck 3 Pocket Dolman Seeve Flip Fap Scrub Set Pink.jpeg" => {
+			sku: "308/312C",
+			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
+			colors: ["Pink"],
+			sizes: ["XXS", "L", "XL"]
+		},
+		"V Neck 3 Pocket Dolman Seeve Flip Fap Scrub Set Red.jpeg" => {
+			sku: "308/312C",
+			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
+			colors: ["Red"],
+			sizes: ["XS", "S", "L", "XL"]
+		},
+		"V Neck 3 Pocket Dolman Seeve Flip Fap Scrub Set Tangerine.jpeg" => {
+			sku: "308/312C",
+			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
+			colors: ["Tangerine"],
+			sizes: ["XXS", "XS", "L", "XL"]
+		},
+		"Petite Unisex 8 Pocket Drawstring Elastic Scrub Set Burgundy.jpeg" => {
+			sku: "P310/307C",
+			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>",
+			colors: ["Burgundy"],
+			sizes: ["L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Petite Unisex 8 Pocket Drawstring Elastic Scrub Set Caribbean.jpeg" => {
+			sku: "P310/307C",
+			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>",
+			colors: ["Caribbean"],
+			sizes: ["S", "L", "2XL", "3XL", "4XL"]
+		},
+		"Petite Unisex 8 Pocket Drawstring Elastic Scrub Set Ceil.jpeg" => {
+			sku: "P310/307C",
+			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>",
+			colors: ["Ceil"],
+			sizes: ["XXS", "XS", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"Petite Unisex 8 Pocket Drawstring Elastic Scrub Set Khaki.jpeg" => {
+			sku: "P310/307C",
+			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>",
+			colors: ["Khaki"],
+			sizes: ["XXS", "XS", "S", "M", "L", "2XL", "3XL", "4XL"]
+		}
 	}
 
 	default_params = { 
