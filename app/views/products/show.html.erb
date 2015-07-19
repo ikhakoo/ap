@@ -59,7 +59,7 @@
                   <img src="<%= @product.default_image.path %>" alt="">
                 </div>
                           
-                <div class="container service1-items col-md-4 col-sm-6 col-xs-12 pull-left color_picker_container">         
+                <div class="container service1-items col-md-4 col-sm-6 col-xs-12 pull-left color_picker_container">
                   <% for i in 0..@background_details.length-1 %> 
                     <% background = @background_details[i] %>
                     <% html = select_background_type(background[0], background[1]) %>
