@@ -183,8 +183,8 @@ def seed_shit
 			sku: "323T",
 			description: "<p>Available in a large variety of prints and solid colors this scrub top will always be a top seller. Features a v-neck with a contrast color trim as well as two lower pockets and one shoulder pen pocket. This scrub top is also available as a set</p>",
 			colors: ["Aqua/Black", "BlueCheerios/NavyBlue", "Charcoal/PostmanBlue", "Eggplant/Black", "FloresentButterfly/Charcoal",
-								"Lagoon/Lagoon", "Postman Blue/Navy", "Sea Green/Navy", "SpringBlooming/Black" , "Techno/Aqua", 
-								"Black/Aqua", "Charcoal/Lilac", "Deep Orchid/Black", "Fireworks/SeaGreen", "FlowerPower/RoyalBlue", 
+								"Lagoon/Lagoon", "PostmanBlue/Navy", "SeaGreen/Navy", "SpringBlooming/Black" , "Techno/Aqua", 
+								"Black/Aqua", "Charcoal/Lilac", "DeepOrchid/Black", "Fireworks/SeaGreen", "FlowerPower/RoyalBlue", 
 								"Indigo/Charcoal", "NavyBlue/SkyBlue", "PrettyInPetals/Charcoal", "Sky Blue/Navy", 
 								"StringAlong/Eggplant", "White/White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
@@ -241,16 +241,16 @@ def seed_shit
 		"Criss Cross Flip Flap.jpeg" => {
 			sku: "323/312",
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
-			colors: ["Aqua/Black", "Charcoal/PostmanBlue", "Eggplant/Black", "Lagoon/Lagoon", "Postman Blue/Navy",
-								"Sky Blue/Navy", "Black/Aqua", "Deep Orchird/Black", "Indigo/Charcoal", "Navy Blue/Sky Blue",
-								"Sea Green/Navy", "White/White"],
+			colors: ["Aqua/Black", "Charcoal/PostmanBlue", "Eggplant/Black", "Lagoon/Lagoon", "PostmanBlue/Navy",
+								"SkyBlue/Navy", "Black/Aqua", "DeepOrchird/Black", "Indigo/Charcoal", "NavyBlue/SkyBlue",
+								"SeaGreen/Navy", "White/White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
 		"3 Pocket V Neck Scrub Top with Flip Flap Scrub Pants.jpeg" => {
 			sku: "308/312",
 			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
 			colors: ["Aqua", "Burgundy", "Ceil", "Eggplant", "Lagoon", "PostmanBlue", "RoyalBlue", "Spruce", "Black", 
-								"Caribbean", "Charcoal", "Khaki", "Navy Blue", "Raspberry", "SkyBlue", "White"],
+								"Caribbean", "Charcoal", "Khaki", "NavyBlue", "Raspberry", "SkyBlue", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL"]
 		}
 	}
