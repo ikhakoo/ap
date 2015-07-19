@@ -237,21 +237,6 @@ def seed_shit
 			description: "<p>Mobb's High Quality Children's Scrub Set</p>",
 			colors: ["Lagoon"],
 			sizes: ["2Y","4Y","6Y","8Y"]
-		},
-		"Criss Cross Flip Flap.jpeg" => {
-			sku: "323/312",
-			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
-			colors: ["Aqua/Black", "Charcoal/PostmanBlue", "Eggplant/Black", "Lagoon/Lagoon", "PostmanBlue/Navy",
-								"SkyBlue/Navy", "Black/Aqua", "DeepOrchird/Black", "Indigo/Charcoal", "NavyBlue/SkyBlue",
-								"SeaGreen/Navy", "White/White"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
-		},
-		"3 Pocket V Neck Scrub Top with Flip Flap Scrub Pants.jpeg" => {
-			sku: "308/312",
-			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
-			colors: ["Aqua", "Burgundy", "Ceil", "Eggplant", "Lagoon", "PostmanBlue", "RoyalBlue", "Spruce", "Black", 
-								"Caribbean", "Charcoal", "Khaki", "NavyBlue", "Raspberry", "SkyBlue", "White"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL"]
 		}
 	}
 
