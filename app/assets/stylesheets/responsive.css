@@ -205,3 +205,10 @@ div.coupon input[type="text"] {
   
     
 }
+
+.product_thumbnail_img {
+  float: left;
+  height: 140px;
+  margin-right: 15px;
+  width: 100px;
+}
