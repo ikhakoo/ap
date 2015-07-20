@@ -172,8 +172,8 @@
                     <% products.sample(4).each do |product| %>
                   
                 <div class="single-wid-product">
-                    <a href="<% product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" class="product-thumb"></a>
-                    <h2><a href="<% product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+                    <a href="<%= product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" class="product-thumb"></a>
+                    <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
                     <div class="product-wid-price">
                         <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
                     </div>                            
@@ -191,8 +191,8 @@
                 <% if category.name.downcase == 'sets' %>
                   <% products.sample(4).each do |product| %>
                 	<div class="single-wid-product">
-                    <a href="<% product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" class="product-thumb"></a>
-                   	<h2><a href="<% product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+                    <a href="<%= product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" class="product-thumb"></a>
+                   	<h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
                   <div class="product-wid-price">
                       <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
                    </div>                            
@@ -210,8 +210,8 @@
                 <% if category.name.downcase == 'clearance' %>
                   <% products.sample(4).each do |product| %>
                   <div class="single-wid-product">
-                    <a href="<% product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" class="product-thumb"></a>
-                    <h2><a href="<% product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+                    <a href="<%= product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" class="product-thumb"></a>
+                    <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
                   <div class="product-wid-price">
                       <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
                    </div>                            
