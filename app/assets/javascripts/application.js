@@ -20,7 +20,8 @@
 //= require jquery.sticky
 //= require main
 //= require social-share-button
-//= require_tree .
 //= require shoppe/stripe/form_handler
+//= require_tree .
+
 
  
