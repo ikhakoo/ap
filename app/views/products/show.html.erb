@@ -188,7 +188,7 @@
 <script>
 $(document).ready(function(){
 
-loadGallery(true, 'a.thumbnail');
+
 
 //This function disables buttons when needed
 function disableButtons(counter_max, counter_current){
@@ -240,7 +240,8 @@ function loadGallery(setIDs, setClickAttr){
     $(setClickAttr).on('click',function(){
         updateGallery($(this));
     });
-}
+  }
+  loadGallery(true, 'a.thumbnail');
 });
 
 </script>    
