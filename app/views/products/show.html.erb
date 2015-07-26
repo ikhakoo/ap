@@ -111,18 +111,14 @@
                         <%= @product.description.html_safe %>
                       </div>
                       <div role="tabpanel" class="tab-pane fade" id="profile">
-                        <h2>Selection</h2>
+                        <h2>Selections</h2>
                            
-              <% for i in 0..@background_details.length-1 %> 
-                <% background = @background_details[i] %>
-                <% html = select_background_type(background[0], background[1]) %>
-                
-                <div style='<%= html[0] %>' class="color_selections" name="<%= @colors_array.uniq[i] %>">
-                    <%= @colors_array.uniq[i] %>
-                    <div style='<%= html[1] %>' class="color_selections_optional" name="<%= @colors_array.uniq[i] %>">
-                    </div> 
-                </div>
-              <% end %> 
+                        <% for i in 0..@background_details.length-1 %> 
+                          <% background = @background_details[i] %>
+                          <% html = select_background_type(background[0], background[1]) %>   
+                          <div style='<%= html[0] %>' class="color_selections" title="<%= @colors_array.uniq[i] %>">
+                          </div>
+                        <% end %> 
 
                         </div>
                       </div>
