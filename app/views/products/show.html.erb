@@ -59,17 +59,7 @@
                   <img src="<%= @product.default_image.path %>" alt="">
                 </div>
                           
-                <div class="container service1-items col-md-4 col-sm-6 col-xs-12 pull-left color_picker_container">
-                  <% for i in 0..@background_details.length-1 %> 
-                    <% background = @background_details[i] %>
-                    <% html = select_background_type(background[0], background[1]) %>
-          
-                    <div style='<%= html[0] %>' class="color_picker_primary" name="<%= @colors_array.uniq[i] %>">
-                      <div style='<%= html[1] %>' class="color_picker_optional" name="<%= @colors_array.uniq[i] %>">
-                      </div> 
-                    </div>
-                  <% end %> 
-                </div>
+                
               </div>
             </div>
             <%= form_tag product_path(@product.permalink, :size => @size, :color => @color), :method => :post do %>
@@ -111,7 +101,7 @@
                       </li>
                       <li role="presentation">
                         <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
-                          Reviews
+                          Colors
                         </a>
                       </li>
                     </ul>
@@ -121,26 +111,19 @@
                         <%= @product.description.html_safe %>
                       </div>
                       <div role="tabpanel" class="tab-pane fade" id="profile">
-                        <h2>Reviews</h2>
-                          <div class="submit-review">
-                            <p><label for="name">Name</label> <input name="name" type="text"></p>
-                            <p><label for="email">Email</label> <input name="email" type="email"></p>
-                            <div class="rating-chooser">
-                              <p>Your rating</p>
-                              <div class="rating-wrap-post">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                              </div>
-                            </div>
-                            <p>
-                              <label for="review">Your review</label> 
-                              <textarea name="review" id="" cols="30" rows="10"></textarea>
-                            </p>
-                            <p><input type="submit" value="Submit"></p>
-                          </div>
+                        <h2>Selection</h2>
+                           
+              <% for i in 0..@background_details.length-1 %> 
+                <% background = @background_details[i] %>
+                <% html = select_background_type(background[0], background[1]) %>
+                
+                <div style='<%= html[0] %>' class="color_selections" name="<%= @colors_array.uniq[i] %>">
+                    <%= @colors_array.uniq[i] %>
+                    <div style='<%= html[1] %>' class="color_selections_optional" name="<%= @colors_array.uniq[i] %>">
+                    </div> 
+                </div>
+              <% end %> 
+
                         </div>
                       </div>
                     </div>
@@ -187,60 +170,36 @@
 
 <script>
 $(document).ready(function(){
+  var old_selection = document.body
+  $(function() {            
+      $('.color_picker_primary').on('click', function() {
+          console.log(old_selection)
 
-loadGallery(true, 'a.thumbnail');
+          //set the selector the name of this color square
+          $('#color_selector')[0].value = this.attributes[2].value
 
-//This function disables buttons when needed
-function disableButtons(counter_max, counter_current){
-    $('#show-previous-image, #show-next-image').show();
-    if(counter_max == counter_current){
-        $('#show-next-image').hide();
-    } else if (counter_current == 1){
-        $('#show-previous-image').hide();
-    }
-}
+          //give a border to emulate selection
+          $(this).css('border', '2px solid yellow')
 
-/**
- *
- * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
- * @param setClickAttr  Sets the attribute for the click handler.
- */
+          // reset the former square
+          old_selection.style.border = 'none',       
+          old_selection = this
+      })
 
-function loadGallery(setIDs, setClickAttr){
-    var current_image,
-        selector,
-        counter = 0;
+      $('#color_selector').on('change', function() { 
+          // cycle through all the possible colors_array
+          console.log(this)
+          console.log(this.value)
+          colors_box = $('.color_picker_primary')
+          for (var i = 0; i < colors_box.length; i++) {
+               name = colors_box[i].attributes[2].value 
+               selector_value = $('#color_selector')[0].value
+               name == this.value? colors_box[i].style.border = '2px solid yellow' : null 
 
-    $('#show-next-image, #show-previous-image').click(function(){
-        if($(this).attr('id') == 'show-previous-image'){
-            current_image--;
-        } else {
-            current_image++;
-        }
-
-        selector = $('[data-image-id="' + current_image + '"]');
-        updateGallery(selector);
-    });
-
-    function updateGallery(selector) {
-        var $sel = selector;
-        current_image = $sel.data('image-id');
-        $('#image-gallery-caption').text($sel.data('caption'));
-        $('#image-gallery-title').text($sel.data('title'));
-        $('#image-gallery-image').attr('src', $sel.data('image'));
-        disableButtons(counter, $sel.data('image-id'));
-    }
-
-    if(setIDs == true){
-        $('[data-image-id]').each(function(){
-            counter++;
-            $(this).attr('data-image-id',counter);
-        });
-    }
-    $(setClickAttr).on('click',function(){
-        updateGallery($(this));
-    });
-}
+              // old_selection.style.border = 'none',       
+              // old_selection = colors_box[i]
+           }; 
+      })
+  })
 });
-
-</script>    
+</script>  
