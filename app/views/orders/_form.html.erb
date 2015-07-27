@@ -9,7 +9,7 @@
       <%= f.text_field :billing_address2, placeholder: "Suite # (optional)", class: 'form-control' %>
       <%= f.text_field :billing_address3, placeholder: "City", class: 'form-control' %>        
       
-      <%= f.select(:billing_address4, options_for_select(['ON','BC']), class: 'form-control') %>
+      <%= f.select(:billing_address4, options_for_select(['AB', 'BC', 'MB', 'NB', 'NL', 'NS', 'NT', 'NU', 'ON', 'PE', 'QC', 'SK', 'YT']), class: 'form-control') %>
 
       <%= f.text_field :billing_postcode, placeholder: "Postal Code", class: 'form-control' %>
 </div>

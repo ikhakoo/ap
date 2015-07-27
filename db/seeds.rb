@@ -185,7 +185,7 @@ def seed_shit
 			colors: ["Aqua/Black", "BlueCheerios/NavyBlue", "Charcoal/PostmanBlue", "Eggplant/Black", "FloresentButterfly/Charcoal",
 								"Lagoon/Lagoon", "PostmanBlue/Navy", "SeaGreen/Navy", "SpringBlooming/Black" , "Techno/Aqua", 
 								"Black/Aqua", "Charcoal/Lilac", "DeepOrchid/Black", "Fireworks/SeaGreen", "FlowerPower/RoyalBlue", 
-								"Indigo/Charcoal", "NavyBlue/SkyBlue", "PrettyInPetals/Charcoal", "Sky Blue/Navy", 
+								"Indigo/Charcoal", "NavyBlue/SkyBlue", "PrettyInPetals/Charcoal", "SkyBlue/Navy", 
 								"StringAlong/Eggplant", "White/White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
@@ -569,4 +569,10 @@ def seed_shit
   end
 end
 
+def country
+	Shoppe::Country.destroy_all
+	Shoppe::Country.create(name: "Canada", code2: 'CA', code3: 'CAN', continent: 'NA', tld: 'ca')
+end
+
 seed_shit
+country
