@@ -83,7 +83,7 @@ def seed_shit
 		"Flexi V Neck Scrub Top.jpeg" => {
 			sku: "324T",
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
-			colors: ["2toneWhite/White", "Black", "Brown", "Charcoal", "DejaVu", "Eggplant", "HeartTies", "Khaki",
+			colors: ["2toneWhite", "Black", "Brown", "Charcoal", "DejaVu", "Eggplant", "HeartTies", "Khaki",
 							 "LimeGreen", "OliveGreen", "Papillon", "PostmanBlue", "Raspberry", "RoyalBlue", "StringAlong",
 							 "ZenStem", "Aqua", "BlueCheerios", "Cappuccino", "DeepOrchid", "DustyRose", "FireWorks", "Indigo",
 							 "Lagoon", "NavyBlue", "PaisleyPink", "PinkSorbet", "PrettyInPetals", "Red", "SeaGreen",

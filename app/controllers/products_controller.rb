@@ -7,12 +7,11 @@ class ProductsController < ApplicationController
     "2toneEggplant/Black" => "rgb()",
     "2toneIndigo/Black" => "rgb()",
     "2toneKhaki/Black" => "rgb()",
-    "2toneNavy Blue/Black" => "rgb()",
-    "2tonePostman Blue/Black" => "rgb()",
-    "2tonePostman Blue/Navy" => "rgb()",
+    "2toneNavyBlue/Black" => "rgb()",
+    "2tonePostmanBlue/Black" => "rgb()",
+    "2tonePostmanBlue/Navy" => "rgb()",
     "2toneRaspberry/Black" => "rgb()",
-    "2toneWhite/White" => "rgb()",
-    "2toneWhite/White" => "rgb()",
+    "2toneWhite" => "rgb()",
     "Aqua" => "rgb(33, 171, 232)",
     "Aqua/Black" => "rgb()",
     "Aubergine" => "rgb(104, 87, 105)",
@@ -133,24 +132,19 @@ class ProductsController < ApplicationController
   end
 
   def buy
-    if !current_client.nil?
-      @product = Shoppe::Product.find_by_permalink(params[:permalink])
-      @permalink = params[:permalink]
-      @permalink = @permalink.split("-")
-      @permalink = @permalink.first @permalink.size - 1
-      @permalink = @permalink.join("-")
-      @permalink = @permalink + "-" + params[:color] + "-" + params[:size].downcase
-      @permalink = @permalink.downcase
-      @product = Shoppe::Product.all
-      @product = @product.find_by!(permalink: @permalink)
+    @product = Shoppe::Product.find_by_permalink(params[:permalink])
+    @permalink = params[:permalink]
+    @permalink = @permalink.split("-")
+    @permalink = @permalink.first @permalink.size - 1
+    @permalink = @permalink.join("-")
+    @permalink = @permalink + "-" + params[:color] + "-" + params[:size].downcase
+    @permalink = @permalink.downcase
+    @product = Shoppe::Product.all
+    @product = @product.find_by!(permalink: @permalink)
 
-      current_order.order_items.add_item(@product, 1)
-      redirect_to product_path(params[:permalink]), 
-      :notice => "Product has been added successfuly!"
-    else
-      redirect_to new_client_session_path,
-      :alert => "You must be logged in to add products!"
-    end
+    current_order.order_items.add_item(@product, 1)
+    redirect_to product_path(params[:permalink]), 
+    :notice => "Product has been added successfuly!"
   end
 
   # def buy
