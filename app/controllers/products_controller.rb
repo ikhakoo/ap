@@ -179,23 +179,23 @@ class ProductsController < ApplicationController
   end
 
   def nurse_tops
-    @products = Shoppe::Product.where(product_category_id: 1).page(params[:page]).per(8) 
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 1).page(params[:page]).per(8) 
   end
 
   def nurse_sets
-    @products = Shoppe::Product.where(product_category_id: 2).page(params[:page]).per(8)
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 2).page(params[:page]).per(8) 
   end
 
   def stethoscopes
-    @products = Shoppe::Product.where(product_category_id: 3).page(params[:page]).per(8)
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 3).page(params[:page]).per(8) 
   end
 
   def chef
-    @products = Shoppe::Product.where(product_category_id: 4).page(params[:page]).per(8)
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 4).page(params[:page]).per(8) 
   end
 
   def work
-    @products = Shoppe::Product.where(product_category_id: 5).page(params[:page]).per(8)
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 5).page(params[:page]).per(8) 
   end
 
   def clearance
