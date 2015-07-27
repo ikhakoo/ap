@@ -116,10 +116,10 @@
               <%= link_to "HOME", root_path %>
             </li>
             <li class="<%= 'active' if current_page?(nurse_tops_path) %>">
-              <%= link_to "TOPS", nurse_tops_path %>
+              <%= link_to "MEDICAL TOPS", nurse_tops_path %>
             </li>
             <li class="<%= 'active' if current_page?(nurse_sets_path) %>">
-              <%= link_to "SETS", nurse_sets_path %>
+              <%= link_to "MEDICAL SETS", nurse_sets_path %>
             </li> 
             <li class="<%= 'active' if current_page?(clearance_path) %>">
               <%= link_to "CLEARANCE", clearance_path %>
@@ -172,7 +172,8 @@
             <div class="footer-menu">
               <h2 class="footer-wid-title">Categories</h2>
               <ul>
-                <li><a href="<%= nurse_path %>">Medical Wear</a></li>
+                <li><a href="<%= nurse_tops_path %>">Medical Tops</a></li>
+                <li><a href="<%= nurse_sets_path %>">Medical Sets</a></li>
                 <li><a href="<%= chef_path %>">Chef Wear (Coming Soon)</a></li>
                 <li><a href="<%= work_path %>">Work Wear (Coming Soon)</a></li>
                 <li><a href="<%= clearance_path %>">Clearance</a></li>
@@ -194,7 +195,7 @@
         <div class="row">
           <div class="col-md-8">
             <div class="copyright">
-              <p>&copy; 2015 APUniforms. All Rights Reserved. </p>
+              <p>&copy; 2015 AP Uniforms. All Rights Reserved. </p>
             </div>
           </div>
           

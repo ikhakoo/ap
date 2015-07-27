@@ -172,12 +172,6 @@ class ProductsController < ApplicationController
     item = current_order.order_items.find(@product)
   end
 
-  def nurse
-    @p1 = Shoppe::Product.where(product_category_id: 1)
-    @p2 = Shoppe::Product.where(product_category_id: 2)
-    @products = @p1, @p2
-  end
-
   def nurse_tops
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 1).page(params[:page]).per(8) 
   end
