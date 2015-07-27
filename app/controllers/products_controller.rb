@@ -141,35 +141,14 @@ class ProductsController < ApplicationController
     @permalink = @permalink.downcase
     @product = Shoppe::Product.all
     @product = @product.find_by!(permalink: @permalink)
-
-    current_order.order_items.add_item(@product, 1)
-    redirect_to product_path(params[:permalink]), 
-    :notice => "Product has been added successfuly!"
-  end
-
-  # def buy
-  #   @product = Shoppe::Product.find(params[:product].to_i)
-  #   if params[:variant]
-  #     order_product = @product.variants.find(params[:variant].to_i)
-  #     current_order.order_items.add_item(order_product, 1)
-  #     redirect_to product_path(@product.permalink), 
-  #     :notice => "Product has been added successfuly!"
-  #   else
-  #     order_product = @product
-  #       if @product.stock_control
-  #         current_order.order_items.add_item(order_product, 1)
-  #         redirect_to product_path(@product.permalink), 
-  #         :notice => "Product has been added successfuly!"
-  #       else
-  #         redirect_to product_path(@product.permalink), 
-  #         :alert => "Sorry we are out of stock!"
-  #       end
-  #   end
-  # end
-
-  def remove
-	@product = Shoppe::Product.find_by_permalink!(params[:permalink])
-    item = current_order.order_items.find(@product)
+      if @product.stock_control
+        current_order.order_items.add_item(@product, 1)
+        redirect_to product_path(params[:permalink]), 
+        :notice => "Product has been added successfuly!"
+      else
+        redirect_to product_path(@product.permalink), 
+        :alert => "Sorry we are out of stock!"
+      end
   end
 
   def nurse_tops

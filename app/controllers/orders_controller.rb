@@ -6,6 +6,28 @@ class OrdersController < ApplicationController
 	  redirect_to root_path, :notice => "Basket emptied successfully."
 	end
 
+	def remove_item
+   item = current_order.order_items.find(params[:id])
+    if current_order.order_items.count == 1
+      destroy
+    else
+      item.remove
+      redirect_to basket_path, :notice => "Item has been removed from your basket successfully"
+    end
+  end
+
+  def change_item_quantity
+    item = current_order.order_items.find(params[:order_item_id])
+		  if params[:increase]
+		  	item.increase!
+		  elsif params[:decrease]
+		  	item.decrease!
+		  end
+    redirect_to basket_path, :notice => "Quantity has been updated successfully."   
+  rescue Shoppe::Errors::NotEnoughStock => e
+    redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{e.available_stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
+  end
+
 	def checkout
 		if !current_client.nil?
 		  @order 		= Shoppe::Order.find(current_order.id)

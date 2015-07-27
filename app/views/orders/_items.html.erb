@@ -24,7 +24,7 @@
 
                 <tr class="cart_item">
                   <td class="product-remove">
-                    <a title="Remove this item" class="remove" href="#">×</a> 
+                  <%= link_to "x", { :controller => "orders", :action => "remove_item", :id => item.id}, :class => "remove" %>
                   </td>
 
                   <td class="product-thumbnail">
