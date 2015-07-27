@@ -7,13 +7,18 @@ class OrdersController < ApplicationController
 	end
 
 	def checkout
-  @order 		= Shoppe::Order.find(current_order.id)
-  
-	  if request.patch?
-	    if @order.proceed_to_confirm(params[:order].permit(:first_name, :last_name, :billing_address1, :billing_address2, :billing_address3, :billing_address4, :billing_country_id, :billing_postcode, :email_address, :phone_number))
-	      redirect_to checkout_payment_path
-	    end
-	  end
+		if !current_client.nil?
+		  @order 		= Shoppe::Order.find(current_order.id)
+		  
+			  if request.patch?
+			    if @order.proceed_to_confirm(params[:order].permit(:first_name, :last_name, :billing_address1, :billing_address2, :billing_address3, :billing_address4, :billing_country_id, :billing_postcode, :email_address, :phone_number))
+			      redirect_to checkout_payment_path
+			    end
+			  end
+		else
+			redirect_to new_client_session_path,
+			:alert => "You must be logged in to proceed!"
+		end
 	end
 
 	def payment
