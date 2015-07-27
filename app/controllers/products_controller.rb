@@ -125,9 +125,6 @@ class ProductsController < ApplicationController
 
         @background_details << temp_array
     end 
-
-    # binding.pry
-
     
   end
 

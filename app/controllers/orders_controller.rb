@@ -16,13 +16,17 @@ class OrdersController < ApplicationController
     end
   end
 
-  def change_item_quantity
-    item = current_order.order_items.find(params[:order_item_id])
-		  if params[:increase]
-		  	item.increase!
-		  elsif params[:decrease]
-		  	item.decrease!
-		  end
+  def increase_item_quantity
+    item = current_order.order_items.find(params[:id])
+		item.increase!
+    redirect_to basket_path, :notice => "Quantity has been updated successfully."   
+  rescue Shoppe::Errors::NotEnoughStock => e
+    redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{e.available_stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
+  end
+
+  def decrease_item_quantity
+    item = current_order.order_items.find(params[:id])
+		item.decrease!
     redirect_to basket_path, :notice => "Quantity has been updated successfully."   
   rescue Shoppe::Errors::NotEnoughStock => e
     redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{e.available_stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
