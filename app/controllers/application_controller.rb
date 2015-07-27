@@ -30,7 +30,9 @@ class ApplicationController < ActionController::Base
       html = [background1, background2]
 
       return html
-  end  
+  end 
+
+   
 
   private
 

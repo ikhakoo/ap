@@ -100,7 +100,7 @@ def seed_shit
 		"3 Pocket V Neck Scrub Top.jpeg" => {
 			sku: "308T",
 			description: "<p>A bold, basic 3 pocket v-neck scrub top featuring dolman sleeves. This scrub top is also available as a set</p>",
-			colors: ["Aqua", "Burgundy", "Ceil", "Eggplant", "Lagoon", "Postman Blue", 
+			colors: ["Aqua", "Burgundy", "Ceil", "Eggplant", "Lagoon", "PostmanBlue", 
 								"RoyalBlue", "Spruce", "Black", "Caribbean", "Charcoal", "Khaki", 
 								"NavyBlue", "Rasberry", "SkyBlue", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL"]
@@ -207,7 +207,7 @@ def seed_shit
 		"Unisex 8 Pocket Drawstring Elastic Scrub Set.jpeg" => {
 			sku: "310/307",
 			description: "<p>Amazing fit in every MOBB color imaginable. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>
-<p><strong>Size 5XL only available in Colors: Black, Charcoal, Burgundy, Caribbean, Lagoon, Navy, Postman Blue, Royal Blue</p></strong>
+<p><strong>Size 5XL only available in Colors: Black, Charcoal, Burgundy, Caribbean, Lagoon, Navy, PostmanBlue, Royal Blue</p></strong>
 <p><strong>Size 6XL only available in Navy</p></strong>",
 			colors: ["Aqua","Burgundy","Caribbean","Charcoal","Khaki","LimeGreen","OliveGreen","RoyalBlue","Spruce",
 								"White","Black","Cappuccino","Ceil","Eggplant","Lagoon","NavyBlue","PostmanBlue","SkyBlue","Teal"],
@@ -229,7 +229,7 @@ def seed_shit
 		"Mens Two Tone Scrub Set with 6 Pocket Scrub Pants.jpeg" => {
 			sku: "409/409",
 			description: "<p>Becoming one of MOBB's best sellers. This Men's two tone v-neck has one chest pocket and one shoulder pen pocket and is available in four color-ways. The six pocket cargo scrub pant has a built in belt buckle and is available in black and navy.</p>",
-			colors: ["Burgundy/Navy", "Khaki/Black", "Charcoal/Black", "Postman Blue/Navy"],
+			colors: ["Burgundy/Navy", "Khaki/Black", "Charcoal/Black", "PostmanBlue/Navy"],
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
 		"Childrens Scrub Set.jpeg" => {
