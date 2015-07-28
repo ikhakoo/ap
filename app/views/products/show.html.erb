@@ -102,9 +102,11 @@
                               <h4 class="modal-title" id="myModalLabel">Sizing Chart</h4>
                             </div>
                             <div class="modal-body">
-                              
-                              <img style="margin-left:80px;" src=""/>
-                              
+                              <% @stylecharts.each do |s| %>
+                              <% if s.product_id == @product.id %>
+                              <img style="margin-left:80px;" src="<% s.image_url.to_s %>"/>
+                              <% end %>
+                              <% end %>
                             </div>
                           </div>
                         </div>
