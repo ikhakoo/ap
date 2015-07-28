@@ -72,13 +72,15 @@ def seed_shit
 								"Burgundy", "Caribbean", "Charcoal", 
 								"NavyBlue", "RoyalBlue", "White"
 							],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+			chart: "606T-SC.png"
 		},
 		"Zipper Front Ladies Work Top.jpeg" => {
 			sku: "202T",
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
 			colors: ["Black", "White", "NavyBlue"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
+			chart: "202T-SC.png"
 		},
 		"Flexi V Neck Scrub Top.jpeg" => {
 			sku: "324T",
@@ -88,14 +90,16 @@ def seed_shit
 							 "ZenStem", "Aqua", "BlueCheerios", "Cappuccino", "DeepOrchid", "DustyRose", "FireWorks", "Indigo",
 							 "Lagoon", "NavyBlue", "PaisleyPink", "PinkSorbet", "PrettyInPetals", "Red", "SeaGreen",
 							 "Techno"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
+			chart: "324T-SC.png"
 		},
 		"Ultra Flexi Scrub Top.jpeg" => {
 			sku: "524T",
 			description: "<p>The Ultra Flexi scrub top has multiple black stretch panels for the most superb fit 
 			and ultimate movement.The Ultra Flexi v-neck top also has two lower pockets and one shoulder pen pocket.</p>",
 			colors: ["Aqua", "Charcoal", "NavyBlue", "Black", "DeepOrchid", "SkyBlue"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "524T-SC.png"
 		},
 		"3 Pocket V Neck Scrub Top.jpeg" => {
 			sku: "308T",
@@ -103,7 +107,8 @@ def seed_shit
 			colors: ["Aqua", "Burgundy", "Ceil", "Eggplant", "Lagoon", "PostmanBlue", 
 								"RoyalBlue", "Spruce", "Black", "Caribbean", "Charcoal", "Khaki", 
 								"NavyBlue", "Rasberry", "SkyBlue", "White"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL"]
+			sizes: ["XXS", "XS", "S", "M", "L", "XL"],
+			chart: "308T-SC.png"
 		},
 		"Unisex V Neck Scrub Top.jpeg" => {
 			sku: "310T",
@@ -113,7 +118,8 @@ def seed_shit
 			colors: ["Aqua", "Burgundy", "Caribbean", "Charcoal", "Khaki", "NavyBlue", "PostmanBlue", "RoyalBlue", 
 								"SkyBlue", "Teal", "Black", "Cappuccino", "Ceil", "Eggplant", "Lagoon", "OliveGreen", "Red",
 								"SeaGreen", "Spruce", "White"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			chart: "310T-SC.png"
 		},
 		"Ladies Sculpted Scrub Top.jpeg" => {
 			sku: "410T",
@@ -121,7 +127,8 @@ def seed_shit
 			with contrasting color. The top also has two lower pockets, one chest pocket and one shoulder pen pocket.</p>",
 			colors: ["Aqua/Black", "Charcoal/PostmanBlue", "Eggplant/Black", "White/White", 
 								"Black/White", "DeepOrchid/White", "NavyBlue/Sky Blue"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "410T-SC.png"
 		},
 		"Active Flexi V Neck Scrub Top.jpeg" => {
 			sku: "424T",
@@ -129,20 +136,23 @@ def seed_shit
 			and allow for great movement. The flexi v-neck has two lower pockets and one shoulder pen pocket</p>",
 			colors: ["Indigo/Black", "Eggplant/Black", "Rasberry/Black", "Aqua/Black", "Charcoal/Black", "NavyBlue/Black",
 								"White/White", "PostmanBlue/Black"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "424T-sc.png"
 		},
 		"Mens Two Tone Scrub Top.jpeg" => {
 			sku: "409T",
 			description: "<p>Available in four color-ways this scrub top is becoming a favorite among men in the medical field. 
 			This two-tone scrub top has one chest pocket and one shoulder pen pocket. Also available as a set with the 409P</p>",
 			colors: ["Burgundy/Navy", "Khaki/Black", "Charcoal/Black", "PostmanBlue/Navy"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
+			chart: "409T-SC.png"
 		},
 		"Empire Tie Back Scrub Top.jpeg" => {
 			sku: "420T",
 			description: "<p>This ultra feminine scrub top features an empire waist and ties at the back. Keeping with tradition this top has a v-neck collar and two front pockets</p>",
 			colors: ["Navy", "White"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "420T-SC.png"
 		},
 		"The Coco.jpeg" => {
 			sku: "T1018",
@@ -169,7 +179,8 @@ def seed_shit
 			sku: "530T",
 			description: "<p>Fun, funky and fitted. This sporty scrub top features reflective trim, asymmetrical zipper detail, two lower pockets, one chest pocket and one shoulder pen pocket</p>",
 			colors: ["NavyBlue"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
+			chart: "530T-SC.png"
 		},
 		"V Neck Print Scrub Top.jpeg" => {
 			sku: "320T",
@@ -177,7 +188,8 @@ def seed_shit
 			colors: ["BlueCheerios", "FireWorks", "FlowerPower", "HeartTies", "PinnedHeart", "SpringBlooming", 
 								"Techno", "DizzyVines", "FlorescentButterfly", "GroovyHoops", "Papillon", "PrettyInPetals",
 								"StringAlong"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
+			chart: "320T-SC.png"
 		},
 		"Criss Cross Scrub Top.jpeg" => {
 			sku: "323T",
@@ -187,19 +199,22 @@ def seed_shit
 								"Black/Aqua", "Charcoal/Lilac", "DeepOrchid/Black", "Fireworks/SeaGreen", "FlowerPower/RoyalBlue", 
 								"Indigo/Charcoal", "NavyBlue/SkyBlue", "PrettyInPetals/Charcoal", "SkyBlue/Navy", 
 								"StringAlong/Eggplant", "White/White"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "323T-SC.png"
 		},
 		"Button Front Ladies Work Top.jpeg" => {
 			sku: "201T",
 			description: "<p>Button up in this ladies work top featuring 3 patch pockets, button front closure and a collar</p>",
 			colors: ["Black", "White", "NavyBlue"],
-			sizes: ["S", "M", "L", "XL", "2XL"]
+			sizes: ["S", "M", "L", "XL", "2XL"],
+			chart: "201T-SC.png"
 		},
 		"Ladies Long Sleeve Tee.jpeg" => {
 			sku: "LT101",
 			description: "<p>100% cotton, 100% comfort. This ladies long sleeve tee is made with pre-shrunk cotton and is perfect worn on it's own or layered under a scrub top. The top stitched collar gives it the strength and durability MOBB is known for</p>",
 			colors: ["Black", "White", "NavyBlue"],
-			sizes: ["S", "M", "L", "XL", "2XL"]
+			sizes: ["S", "M", "L", "XL", "2XL"],
+			chart: "LT101-SC.png"
 		}
 	}
 
@@ -477,6 +492,12 @@ def seed_shit
 				pro.default_image_file = get_file(filename)
 				pro.save!
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				if params[:chart]
+					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
+					s = Stylechart.create!(image: f, product_id: pro.id)
+					p s 
+				end
 
 				p pro
 

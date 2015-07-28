@@ -35,6 +35,8 @@ gem 'devise'
 
 gem 'kaminari'
 
+gem 'carrierwave'
+
 # gem "shoppe-paypal"
 
 gem 'bootstrap-sass', '~> 3.3.4'

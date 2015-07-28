@@ -102,7 +102,11 @@
                               <h4 class="modal-title" id="myModalLabel">Sizing Chart</h4>
                             </div>
                             <div class="modal-body">
-                              <img style="margin-left:80px;" src="http://placehold.it/400x400"/>
+                              <% @stylecharts.each do |s| %>
+                              <% if s.product_id == @product.id %>
+                              <img style="margin-left:80px;" src="<% s.image_url.to_s %>"/>
+                              <% end %>
+                              <% end %>
                             </div>
                           </div>
                         </div>
@@ -117,14 +121,13 @@
                   <div role="tabpanel">
                     <ul class="product-tab" role="tablist">
                       <li role="presentation" class="active">
-                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab" style="align:left;">
-                          Colors
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                          Color Options
                         </a>
                       </li>
                     </ul>
                     <div class="tab-content">
                       <div role="tabpanel" class="tab-pane fade in active" id="home">
-                        <h2>Selections</h2>
                            
                         <% for i in 0..@background_details.length-1 %> 
                           <% background = @background_details[i] %>
