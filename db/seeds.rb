@@ -403,6 +403,167 @@ def seed_shit
 		},
 	}
 
+	stethoscopes = {
+		"LITTMANN CLASSIC II STETHOSCOPE.jpeg" => {
+			sku: "2201",
+			description: "<li>Shift from light to firm pressure and switch easily from low to high frequency sounds with 3M’s ‘Tunable Technology’.</li>
+										<li>Have the option of using the tunable diaphragm on the front or the traditional bell on the reverse of the double-sided chestpiece.</li>
+										<li>Experience reduced ambient noise from the acoustic seal created by comfortable Snap-Tight soft seal eartips.</li>
+										<li>Robust headset and latex free tubing that is durable enough to withstand one million flexes.</li>
+										<li>Littmann’s large range of chestpiece finishes and tubing colours allows you to express your own personal style.</li>
+										<li>Diagnostic aid used in the physical assessments of patients.</li>
+										<li>Free repair on any manufacturing or material defects is included in the 3 year warranty.</li>
+										<li>7 out of 10 Littmann performance rating</li>
+										<li>Color tubing (28”/71cm)</li>
+										<li>Stainless Steel Finishing</li>
+										<li>Brand name : Littmann Stethoscope</li>
+										<li>Users can use : General Practitioners, Medical Students, Nurses</li>",
+		colors: ["Black", "Burgundy", "Caribbean", "Ceil", "Grey", "Green", "NavyBlue", "Orange", "Pink", "Purple", "Raspberry", "OceanBlue", "RoyalBlue"],
+		sizes: ["NA"]
+		},
+		"LITTMANN LIGHTWEIGHT II STETHOSCOPE.jpeg" => {
+			sku: "2450",
+			description: "<li>The uniquely shaped chestpiece allows easy navigation around blood pressure cuffs and critical body contours.</li>
+										<li>Switch easily from low to high frequency sounds with 3M’s ‘Tunable Technology' by switching from light to firm pressure</li>
+										<li>Choose between a tunable diaphragm or a traditional bell thanks to a double-sided chestpiece.</li>
+										<li>Comfortably positioned headset is anatomically designed for optimal sound transmission.</li>
+										<li>Snap-Tight soft seal eartips form an excellent acoustic seal, reducing ambient noise.</li>
+										<li>Key diagnostic aid in the process of physical patient assessments.</li>
+										<li>Included in 2 year warranty.</li>
+										<li>6 out of 10 Littmann performance rating.</li>
+										<li>Color tubing (28”/71cm)</li>
+										<li>Stainless Steel Finishing</li>
+										<li>Brand name : Littmann Stethoscope</li>
+										<li>Physical Assessment, Diagnosis</li>
+						 	      <li>Users can use : General Practitioners, Medical Students, Nurses</li>",
+		colors: ["Black", "Burgundy", "Caribbean", "Ceil", "Lilac", "Green"],
+		sizes: ["NA"]
+		},
+		"LITTMANN CLASSIC III PEDIATRIC STETHOSCOPE.jpeg" => {
+			sku: "2113",
+			description: "<li>Miniature chestpiece uniquely designed for paediatric/petite patients and hard to reach areas.</li>
+										<li>Have the option of a 3.3cm standard diaphragm or a 2.5cm traditional open bell thanks to the double-sided chestpiece.</li>
+										<li>Improve patient comfort with a rubber non-chill rim and diaphragm.</li>
+										<li>Experience optimal sound transmission from the comfortably positioned, anatomically designed headset.</li>
+										<li>Comfortable Snap-Tight soft seal eartips reduce ambient noise.</li>
+										<li>Latex free tubing and durable headset reliably withstands one million flexes.</li>
+										<li>Choose from Littmann’s wide range of bright tubing colours and finishes to compliment your personal style.</li>
+										<li>Used as a key diagnostic aid during the physical assessments of young patients.</li>
+										<li>Free repair on any manufacturing or material defects included in the 3 year warranty.</li>
+										<li>7 out of 10 Littmann performance rating.</li>
+										<li>Colored tubing (28”/71cm) Stainless Steel finish.</li>
+										<li>Stainless Steel Finishing</li>
+										<li>Physical Assessment, Diagnosis</li>
+										<li>Users can use : General Practitioners, Child Specialists</li>
+										<li>Littmann Classic III Pediatric Stethoscope</li>",
+			colors: ["Black", "Caribbean", "NavyBlue", "Raspberry"],
+			sizes: ["NA"]
+		},
+		"LITTMANN INFANT STETHOSCOPE.jpeg" => {
+			sku: "2114",
+			description: "<li>Uniquely designed miniature chestpiece for neonatal/infant patients.</li>
+										<li>Double-sided chestpiece gives you the option of a 2.7cm standard diaphragm on the front or a 1.9cm traditional open bell on the reverse.</li>
+										<li>Rubber non-chill rim and diaphragm for patient comfort.</li>
+										<li>Anatomically designed headset comfortably positioned for optimal sound transmission.</li>
+										<li>Comfortable Snap-Tight soft seal eartips create an excellent acoustic seal to reduce ambient noise.</li>
+										<li>Durable latex free tubing and a robust headset that can be reliably flexed one million times.</li>
+										<li>Complement your personal style with Littmann’s wide range of bright tubing colours and finishes.</li>
+										<li>Used as a diagnostic aid as part of the physical assessment of an infant patient.</li>
+										<li>3 year warranty includes free repair on any manufacturing or material defects.</li>
+										<li>Littmann performance rating of 7 out of 10.</li>
+										<li>Tubing: Based on color choice (71cm/28).</li>
+										<li>Stainless Steel Finishing</li>
+										<li>Physical Assessment, Diagnosis</li>
+										<li>Users can use : General Practitioners, Child Specialists</li>
+										<li>Littmann Infant Stethoscope</li>",
+			colors: ["Black", "Caribbean", "Raspberry"],
+			sizes: ["NA"]
+		},
+		"LITTMANN CARDIOLOGY III STETHOSCOPE.jpeg" => {
+			sku: "3129",
+			description: "<li>Apply light to firm pressure, and switch easily between low and high frequency sounds with 3M’s ‘Tunable Technology’.</li>
+										<li>Assess both adult and paediatric patients with the double-sided large/small chestpiece.</li>
+										<li>Reverse side transforms easily into a traditional open bell with the supplied adapter for maximum versatility.</li>
+										<li>The superior transmission and insulation of sound from the double lumen tubing (two tubes in one) also eliminates “rubbing noise”.</li>
+										<li>Optimal sound transmission from the comfortably positioned, anatomically designed headset.</li>
+										<li>Reliably flex the durable latex free tubing up to one million times.</li>
+										<li>Use Littmann’s large range of chestpiece finishes and tubing colours to compliment your personal style.</li>
+										<li>Used as a key diagnostic aid during the physical assessment of a patient.</li>
+										<li>Free repair on any manufacturing or material defects included in the 3 year warranty.</li>
+										<li>9 out of 10 Littmann performance rating.</li>
+										<li>Colored Tubing (27”/68.5cm)</li>
+										<li>Brand: Littmann Cardiology III Stethoscope</li>
+										<li>User Group: Cardiologists, Child Specialists, General Practitioners, Medical Students, Respiratory Specialist, Critical Care Nurse</li>",
+			colors: ["Burgundy", "Plum", "Caribbean", "NavyBlue", "Red", "Raspberry", "Black"],
+			sizes: ["NA"]
+		},
+		"LITTMANN MASTER CARDIOLOGY STETHOSCOPE.jpeg" => {
+			sku: "2160",
+			description: "<li>Switch easily between low and high frequencies with 3M’s ‘Tunable Technology’ by shifting from light to firm pressure.</li>
+										<li>The single-sided ,solid stainless steel chestpiece is handcrafted and of the highest quality.</li>
+										<li>Includes special procedures adaptor for pediatric, neonatal or difficult to reach auscultation.</li>
+										<li>Double lumen tubing (two tubes in one) eliminates “rubbing noise” and allows for superior transmission and insulation of sound.</li>
+										<li>The excellent acoustic seal formed by comfortable Snap-Tight soft seal eartips reduces ambient noise.</li>
+										<li>Express your personal style by choosing from Littmann’s large range of chestpiece finishes and tubing colours.</li>
+										<li>Used as a diagnostic aid during thing physical assessments of heart, lung and bowel sounds.</li>
+										<li>Free repair on any manufacturing or material defects included in the 7 year warranty.</li>
+										<li>10 out of 10 Littmann performance rating.</li>
+										<li>Black tubing (27”/68.5cm)</li>
+										<li>Polished Stainless Steel, Single-sided</li>
+										<li>Brand: Littmann Master Cardiology Stethoscope</li>
+										<li>User Group: Cardiologists, General Practitioners, Medical Students, Respiratory Specialist, ER, Critical Care Nurse, EMTs, Critical Care Nurse</li>",
+			colors: ["Black"],
+			sizes: ["NA"]
+		},
+		"LITTMANN MASTER CLASSIC STETHOSCOPE.jpeg" => {
+			sku: "2144L",
+			description: "<li>3M’s ‘Tunable Technology’ lets you easily switch from low to high frequency sounds by switching from light to firm pressure.</li>
+										<li>Award-winning ergonomically designed chestpiece allows a comfortable grip for extended use.</li>
+										<li>Anatomically designed headset comfortably positioned for optimal sound transmission.</li>
+										<li>Comfortable Snap-Tight soft seal eartips create an excellent acoustic seal to reduce ambient noise.</li>
+										<li>Durable latex free tubing can be reliably flexed one million times.</li>
+										<li>Complement your personal style with a range of chestpiece finishes and tubing colours.</li>
+										<li>Used as a diagnostic aid as part of the physical assessment of cardiac, adult and paediatric patients.</li>
+										<li>3 year warranty includes free repair on any manufacturing or material defects.</li>
+										<li>Littmann performance rating of 8 out of 10.</li>
+										<li>Tubing: Black (65.5cm/27). Finish: Polished Steel</li>
+										<li>Chestpiece: Plated & Polished Alloy, Single-Sided</li>
+										<li>USer Group : GPs, Nurses</li>",
+		  colors: ["Black"],
+		  sizes: ["NA"]
+		},
+		"LITTMANN CLASSIC II SE28.jpeg" => {
+			sku: "2829RBW",
+			description: "<li>3M’s ‘Tunable Technology’ lets you easily switch from low to high frequency sounds by switching from light to firm pressure.</li>
+										<li>Double-sided chestpiece gives you the option of a tunable diaphragm on the front or a traditional bell on the reverse.</li>
+										<li>Anatomically designed headset comfortably positioned for optimal sound transmission.</li>
+										<li>Comfortable Snap-Tight soft seal eartips create an excellent acoustic seal to reduce ambient noise.</li>
+										<li>Durable latex free tubing and a robust headset which can be reliably flexed one million times.</li>
+										<li>Complement your personal style with Littmann’s largest range of chestpiece finishes and tubing colours.</li>
+										<li>Used as a diagnostic aid as part of the physical assessment of a patient.</li>
+										<li>3 year warranty includes free repair on any manufacturing or material defects.</li>
+										<li>Littmann performance rating of 7 out of 10.</li>
+										<li>Tubing: Raspberry (71cm/28'). Finish: Rainbow. Brass finish headset.</li>
+										<li>Chestpiece: Machined Stainless Steel, Two-sided</li>
+										<li>User Group : GPs, Medical Students, Nurses</li>",
+			colors: ["Raspberry", "Rose", "Caribbean", "Black", "Brown", "Green", "Yellow"],
+			sizes: ["NA"]
+		},
+		"MOBB KT107 BLACK.jpeg" => {
+			sku: "KT107",
+			description: "<li>Experience reduced ambient noise from the acoustic seal created by comfortable Snap-Tight soft seal eartips.</li>
+										<li>Robust headset and latex free tubing that is durable enough to withstand one million flexes.</li>
+										<li>Diagnostic aid used in the physical assessments of patients.</li>
+										<li>3 year warranty includes free repair on any manufacturing or material defects.</li>
+										<li>Tubing: Black  (71cm/28').</li>
+										<li>Finish: Stainless Steel Finishing</li>
+										<li>Brand name : MOBB MEDICAL</li>
+										<li>Users can use : General Practitioners, Medical Students, Nurses</li>",
+			colors: ["Black"],
+			sizes: ["NA"]
+		}
+	}
+
 	clearance = {
 		"Petite Unisex 8 Pocket Drawstring Elastic Scrub Set Lagoon.jpeg" => {
 			sku: "P310/307C",
