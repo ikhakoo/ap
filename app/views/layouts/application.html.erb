@@ -116,11 +116,17 @@
               <%= link_to "HOME", root_path %>
             </li>
             <li class="<%= 'active' if current_page?(nurse_tops_path) %>">
-              <%= link_to "MEDICAL TOPS", nurse_tops_path %>
+              <%= link_to "MEDICAL WEAR", nurse_tops_path %>
             </li>
             <li class="<%= 'active' if current_page?(nurse_sets_path) %>">
-              <%= link_to "MEDICAL SETS", nurse_sets_path %>
+              <%= link_to "STETHOSCOPES", nurse_sets_path %>
+            </li>
+            <li class="<%= 'active' if current_page?(nurse_sets_path) %>">
+              <%= link_to "CHEF WEAR", nurse_sets_path %>
             </li> 
+            <li class="<%= 'active' if current_page?(nurse_sets_path) %>">
+              <%= link_to "WORK WEAR", nurse_sets_path %>
+            </li>  
             <li class="<%= 'active' if current_page?(clearance_path) %>">
               <%= link_to "CLEARANCE", clearance_path %>
             </li>
