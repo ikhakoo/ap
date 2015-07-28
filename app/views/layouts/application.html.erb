@@ -115,9 +115,6 @@
             <li class="<%= 'active' if current_page?(root_path) %>">
               <%= link_to "HOME", root_path %>
             </li>
-            <li class="<%= 'active' if current_page?(nurse_tops_path) %>">
-              <%= link_to "MEDICAL WEAR", nurse_tops_path %>
-            </li>
             <li class="<%= 'active' if current_page?(nurse_sets_path) %>">
               <%= link_to "STETHOSCOPES", nurse_sets_path %>
             </li>
@@ -133,13 +130,27 @@
             <li class="<%= 'active' if current_page?(clearance_path) %>">
               <%= link_to "ABOUT US", clearance_path %>
             </li>
-            <li class="<%= 'active' if current_page?(basket_path) %>">
-              <%= link_to "CART", basket_path %>
-            </li>
             <li class="<%= 'active' if current_page?(checkout_path) %>">
               <%= link_to "CHECKOUT", checkout_path %>
             </li>
-        </ul>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Medical Wear <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="<%= 'active' if current_page?(nurse_tops_path) %>">
+                  <%= link_to "NURSE TOPS", nurse_tops_path %>
+                </li>
+                <li class="<%= 'active' if current_page?(nurse_sets_path) %>">
+                  <%= link_to "NURSE SETS", nurse_sets_path %>
+                </li>
+                <li class="<%= 'active' if current_page?(nurse_coats_path) %>">
+                  <%= link_to "NURSE COATS", nurse_coats_path %>
+                </li>
+                <li class="<%= 'active' if current_page?(nurse_pants_path) %>">
+                  <%= link_to "NURSE PANTS", nurse_pants_path %>
+                </li>
+              </ul>
+            </li>
+          </ul>
       </div>  
     </div>
   </div>
@@ -238,6 +249,8 @@
   <script>
 $(document).ready(function(){
 
+
+            $('.dropdown-toggle').dropdown();
 
 
 //This function disables buttons when needed
