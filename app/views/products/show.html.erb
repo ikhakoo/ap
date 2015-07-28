@@ -85,6 +85,26 @@
                         <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
                       </div>
                       <%= submit_tag 'Add to basket', class: "ui button", style: "background-color:#1abc9c;color:white;" %>
+
+                      <!-- Button trigger modal -->
+                      <button type="button" style="background-color:#1abc9c;color:white;" class="ui button" data-toggle="modal" data-target="#myModal">
+                        View Sizing Chart
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="myModalLabel">Sizing Chart</h4>
+                            </div>
+                            <div class="modal-body">
+                              <img style="margin-left:80px;" src="http://placehold.it/400x400"/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </form>
                     <br><br>
                     <%= social_share_button_tag(@product.name.split("-").first) %>
