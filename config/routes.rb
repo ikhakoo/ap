@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   match "increase_item_quantity", to: "orders#increase_item_quantity", as: "increase_item_quantity", via: [:get]
   match "decrease_item_quantity", to: "orders#decrease_item_quantity", as: "decrease_item_quantity", via: [:get]
 
+  match "nurse", to: "products#nurse", as: "nurse", via: [:get]
   match "nurse_tops", to: "products#nurse_tops", as: "nurse_tops", via: [:get]
   match "nurse_sets", to: "products#nurse_sets", as: "nurse_sets", via: [:get]
   match "stethoscopes", to: "products#stethoscopes", as: "stethoscopes", via: [:get]
