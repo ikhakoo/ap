@@ -65,7 +65,9 @@
             <%= form_tag product_path(@product.permalink, :size => @size, :color => @color), :method => :post do %>
               <div class="col-sm-6">
                 <div class="product-inner">
+                  <h2 class="product-name"><%= @product.sku %></h2>
                   <h2 class="product-name"><%= @product.name.split("-").first %></h2>
+                    <%= @product.description.html_safe %>
                     <div class="product-inner-price">
                       <ins><%= number_to_currency @product.price %></ins> 
                       <del><%= number_to_currency (@product.price*1.13).to_f %></del>
@@ -96,21 +98,12 @@
                     <ul class="product-tab" role="tablist">
                       <li role="presentation" class="active">
                         <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
-                          Description
-                        </a>
-                      </li>
-                      <li role="presentation">
-                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
                           Colors
                         </a>
                       </li>
                     </ul>
                     <div class="tab-content">
                       <div role="tabpanel" class="tab-pane fade in active" id="home">
-                        <h2>Product Description</h2>  
-                        <%= @product.description.html_safe %>
-                      </div>
-                      <div role="tabpanel" class="tab-pane fade" id="profile">
                         <h2>Selections</h2>
                            
                         <% for i in 0..@background_details.length-1 %> 
@@ -119,8 +112,7 @@
                           <div style='<%= html[0] %>' class="color_selections" title="<%= @colors_array.uniq[i] %>">
                           </div>
                         <% end %> 
-
-                        </div>
+                      </div>
                       </div>
                     </div>
                   </div>
