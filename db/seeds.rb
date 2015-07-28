@@ -217,7 +217,7 @@ def seed_shit
 								"NavyBlue","RoyalBlue","White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
-		"Reversible O.R. Drawstring Scrub Set.jpeg" => {
+		"Reversible O R Drawstring Scrub Set.jpeg" => {
 			sku: "306TA/306PA",
 			description: "<p>Available for special programs, this scrub set was designed to meet the needs of hospital O.R. staff. A unisex, reversible, drawstring scrub set featuring a color code size indicator on the chest pocket and a simple drawstring scrub pant with one back pocket.</p>",
 			colors: ["Lagoon"],
@@ -251,7 +251,7 @@ def seed_shit
 										<p><strong>Regular Length (31” inseam) Sizes XS - 2XL</p><br><p>Available in all colours shown below</p><p>Petite Length (28” inseam) Sizes XS - 2XL
 										Available in Black & Navy only</p><br><p>Tall Length (36” inseam) Sizes XS - 2XL
 										Available in Black, Navy & Charcoal only</p>",
-			colors: ["Eggplant", "Navy", "PostmanBlue", "Navy", "Charcoal"],
+			colors: ["Eggplant", "Navy", "PostmanBlue", "Charcoal"],
 			sizes: ["XS", "S", "M", "L", "XL"],
 			chart: "412P-SC.png"
 		},
