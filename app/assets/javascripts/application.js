@@ -12,12 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.sticky
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require semantic-ui
 //= require jquery.easing.1.3.min
 //= require owl.carousel.min
-//= require jquery.sticky
 //= require main
 //= require social-share-button
 //= require_tree .
