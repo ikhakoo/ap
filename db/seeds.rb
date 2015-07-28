@@ -40,44 +40,31 @@ def seed_shit
 	cat4 = Shoppe::ProductCategory.create!(:name => 'Coats')
 	cat5 = Shoppe::ProductCategory.create!(:name => 'Caps')
 	cat6 = Shoppe::ProductCategory.create!(:name => 'Accessories')
+
 	cat7 = Shoppe::ProductCategory.create!(:name => 'Stethoscopes')
+
 	cat8 = Shoppe::ProductCategory.create!(:name => 'Chef Coats')
 	cat9 = Shoppe::ProductCategory.create!(:name => 'Chef Hats')
 	cat10 = Shoppe::ProductCategory.create!(:name => 'Chef Pants')
 	cat11 = Shoppe::ProductCategory.create!(:name => 'Chef Tops')
 	cat12 = Shoppe::ProductCategory.create!(:name => 'Chef Aprons')
 	cat13 = Shoppe::ProductCategory.create!(:name => 'Waitress Vests')
+
 	cat14 = Shoppe::ProductCategory.create!(:name => 'Work Fire Retardent')
 	cat15 = Shoppe::ProductCategory.create!(:name => 'Work Shop Coat')
 	cat16 = Shoppe::ProductCategory.create!(:name => 'Work Coverall Overall')
 	cat17 = Shoppe::ProductCategory.create!(:name => 'Work Pants')
 	cat18 = Shoppe::ProductCategory.create!(:name => 'Work Shirts')
 	cat19 = Shoppe::ProductCategory.create!(:name => 'Work Vests')
+
 	cat20 = Shoppe::ProductCategory.create!(:name => 'Mentality Hyflex')
 	cat21 = Shoppe::ProductCategory.create!(:name => 'Mentality StretchFlex')
+
 	cat22 = Shoppe::ProductCategory.create!(:name => 'Clearance')
 
 	file_paths = Dir["db/seeds_data/*.jpeg"]
 
 	tops = {
-		"The Rosey.jpeg" => {
-			sku: "T3030",
-			description: "<p>Simplicity at its best, this classic v-neck top is designed with a double stitched 
-			detail line across the chest and two tailored lines down the back. Two lower patch pockets,
-			the right side is enclosed with inner sectional pockets.The top is finished off with two small side 
-			slits and a convenient shoulder pen pocket.</p><p>Stretch-Flex Blend: 65% Poly/32% Rayon/3% Spandex</p>",
-			colors: ["Black", "RoyalBlue", "Charcoal", "White"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
-		},
-		"The Pearl.jpeg" => {
-			sku: "T3020",
-			description: "<p>Tailored for fit, this v-neck top features two flex side panels, one shoulder pen 
-			pocket and two lower patch pockets. One of the patch pockets includes detailed stitching on the 
-			outside with a utility D-ring and an inner smart phone pocket.</p><p>*Stretch-Flex Blend: 
-			65% Poly/32% Rayon/3% Spandex</p>",
-		  colors: ["Black", "RoyalBlue", "Charcoal", "White"],
-		  sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
-		},
 		"Basic V Neck Scrub Top.jpeg" => {
 			sku: "606T",
 			description: "<p>The newest addition to the MOBB line, this unisex scrub top is all about classic 
@@ -169,27 +156,6 @@ def seed_shit
 			colors: ["Navy", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
 			chart: "420T-SC.png"
-		},
-		"The Coco.jpeg" => {
-			sku: "T1018",
-			description: "<p>A stunning v-neck top with an hourglass silhouette. Featuring flex sleeves and side panels with a gathered cap sleeve detail, 
-			two hidden pockets and custom tailoring for an exceptional fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex<p>",
-			colors: ["Aubergine", "White", "SoftMint"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
-		},
-		"The Mandy.jpeg" => {
-			sku: "T1010",
-			description: "<p>A unique style and ultra chic fit, this deep cut mandarin neckline features two lower pockets, flex side panels and has 
-			beautiful tailoring through the back for a custom fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
-			colors: ["Aubergine", "White", "SoftMint"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
-		},
-		"The Roxy.jpeg" => {
-			sku: "T1016",
-			description: "<p>A fit for fashion and function, this top features flex sleeves and side panels, a gathered cap sleeve detail, 
-			chest darts and two hidden pockets.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
-			colors: ["Aubergine", "White", "SoftMint"],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"]
 		},
 		"Ladies Zipper Detail Scrub Top.jpeg" => {
 			sku: "530T",
@@ -317,7 +283,7 @@ def seed_shit
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
 			chart: "302P-SC.png"
 		},
-		"UNISEX DRAWSTRING ELASTIC 5 POCKET SCRUB PAN.jpeg" => {
+		"UNISEX DRAWSTRING ELASTIC 5 POCKET SCRUB PANT.jpeg" => {
 			sku: "307P",
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.<p>",
 			colors: ["Black", "Aqua", "Eggplant", "Burgundy", "Caribbean", "Charcoal", "Khaki", "Lagoon", "Navy", "OliveGreen", "PostmanBlue", "RoyalBlue", "SkyBlue", "Teal", "White", "Ceil", "Cappuccino"],
@@ -331,7 +297,7 @@ def seed_shit
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
 			chart: "309PTALL-SC.png"
 		},
-		"LOW RISE LACE UP FLARE PAN.jpeg" => {
+		"LOW RISE LACE UP FLARE PANT.jpeg" => {
 			sku: "316P",
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.<p>",
 			colors: ["Charcoal/Black", "Navy/Red", "Black/DustyRose"],
@@ -366,6 +332,75 @@ def seed_shit
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
 			chart: "412PT28IN-SC.png"
 		}
+	}
+
+	mentalitysf = {
+		"The Rosey.jpeg" => {
+			sku: "T3030",
+			description: "<p>Simplicity at its best, this classic v-neck top is designed with a double stitched 
+			detail line across the chest and two tailored lines down the back. Two lower patch pockets,
+			the right side is enclosed with inner sectional pockets.The top is finished off with two small side 
+			slits and a convenient shoulder pen pocket.</p><p>Stretch-Flex Blend: 65% Poly/32% Rayon/3% Spandex</p>",
+			colors: ["Black", "RoyalBlue", "Charcoal", "White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
+		},
+		"The Pearl.jpeg" => {
+			sku: "T3020",
+			description: "<p>Tailored for fit, this v-neck top features two flex side panels, one shoulder pen 
+			pocket and two lower patch pockets. One of the patch pockets includes detailed stitching on the 
+			outside with a utility D-ring and an inner smart phone pocket.</p><p>*Stretch-Flex Blend: 
+			65% Poly/32% Rayon/3% Spandex</p>",
+		  colors: ["Black", "RoyalBlue", "Charcoal", "White"],
+		  sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
+		},
+		"THE CARMEN.jpeg" => {
+			sku: "P3011",
+			description: "<p>Made for comfort, this straight leg pant is equipped with two front pockets, one back pocket and a cargo pocket with a utility D-ring. The combination drawstring/ elastic waistband will ensure ultimate fit and comfort. The inner waistband features MOBB’s signature logo.</p>",
+			colors: ["Black", "Charcoal", "RoyalBlue", "White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "P3011-SC.png"
+		}
+	}
+
+	mentalityh = {
+		"THE SHANNEL.jpeg" => {
+			sku: "P1011",
+			description: "<p>A clean and classic straight leg pant featuring front-to-back, wrap-around cargo pockets, two slant pockets and a combination drawstring elastic waist.</p>",
+			colors: ["Aubergine", "SoftMint", "Black", "Charcoal", "DeepOrchid", "NavyBlue", "White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "P1011-SC.png"
+		},
+		"THE MESSENGER.jpeg" => {
+			sku: "P1011",
+			description: "<p>A clean and classic straight leg pant featuring front-to-back, wrap-around cargo pockets, two slant pockets and a combination drawstring elastic waist.</p>",
+			colors: ["Black", "Charcoal", "NavyBlue"],
+			sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+			chart: "P1011-SC.png"
+		},
+		"The Coco.jpeg" => {
+			sku: "T1018",
+			description: "<p>A stunning v-neck top with an hourglass silhouette. Featuring flex sleeves and side panels with a gathered cap sleeve detail, 
+			two hidden pockets and custom tailoring for an exceptional fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex<p>",
+			colors: ["Aubergine", "White", "SoftMint"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "T1018-SC.png"
+		},
+		"The Mandy.jpeg" => {
+			sku: "T1010",
+			description: "<p>A unique style and ultra chic fit, this deep cut mandarin neckline features two lower pockets, flex side panels and has 
+			beautiful tailoring through the back for a custom fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
+			colors: ["Aubergine", "White", "SoftMint"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "T1010-SC.png"
+		},
+		"The Roxy.jpeg" => {
+			sku: "T1016",
+			description: "<p>A fit for fashion and function, this top features flex sleeves and side panels, a gathered cap sleeve detail, 
+			chest darts and two hidden pockets.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
+			colors: ["Aubergine", "White", "SoftMint"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "T1016-SC.png"
+		},
 	}
 
 	clearance = {
@@ -707,6 +742,84 @@ def seed_shit
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat3
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				if params[:chart]
+					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
+					s = Stylechart.create!(image: f, product_id: pro.id)
+					p s 
+				end
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+		elsif params = mentalityh[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat20
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				if params[:chart]
+					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
+					s = Stylechart.create!(image: f, product_id: pro.id)
+					p s 
+				end
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+		elsif params = mentalitysf[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat21
 				pro.default_image_file = get_file(filename)
 				pro.save!
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
