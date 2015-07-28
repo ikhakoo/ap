@@ -271,6 +271,103 @@ def seed_shit
 		}
 	}
 
+	pants = {
+		"FLEXI WAIST SCRUB PANT.jpeg" => {
+			sku: "416P",
+			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.<p>",
+			colors: ["PostmanBlue", "SkyBlue", "Black", "Navy", "Charcoal"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "416P-SC.png"
+		},
+		"COMFORT RISE DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
+			sku: "412P",
+			description: "<p>This pant is the perfect combination of function and flow. The waistband is both elastic and drawstring making it comfortable at any rise. It has multiple pockets including a pocket for scissors and features multi-needle stitching for durability.<p>
+										<p><strong>Regular Length (31” inseam) Sizes XS - 2XL</p><br><p>Available in all colours shown below</p><p>Petite Length (28” inseam) Sizes XS - 2XL
+										Available in Black & Navy only</p><br><p>Tall Length (36” inseam) Sizes XS - 2XL
+										Available in Black, Navy & Charcoal only</p>",
+			colors: ["Eggplant", "Navy", "PostmanBlue", "Navy", "Charcoal"],
+			sizes: ["XS", "S", "M", "L", "XL"],
+			chart: "412P-SC.png"
+		},
+		"UNISEX DRAWSTRING SCRUB PANT WITH 5 POCKETS.jpeg" => {
+			sku: "608P",
+			description: "<p>The newest addition to the MOBB line, this pant is all about classic simplicity. Features a standard drawstring and five pockets. This pant mates perfectly with the 606T and is a favorite among school programs.<p>",
+			colors: ["Black", "SkyBlue", "Burgundy", "Caribbean", "Charcoal", "Ceil", "Lagoon", "Navy", "PostmanBlue", "RoyalBlue", "White", "Cappuccino"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			chart: "608P-SC.png"
+		},
+		"BOOT CUT FLIP FLAP SCRUB PANT.jpeg" => {
+			sku: "312P",
+			description: "<p>Fabulous fit and classic style. This five pocket boot cut pant features our signature MOBB logo waistband that can be flipped down for a lower rise. This is the pant that everyone's talking about.<p>",
+			colors: ["Aqua", "Black", "Burgundy", "Caribbean", "Charcoal", "Ceil", "DeepOrchid", "Eggplant", "Indigo", "Khaki", "Lagoon", "Navy", "PostmanBlue", "Raspberry", "RoyalBlue", "SkyBlue", "Spruce", "White", "Cappuccino", "LimeGreen", "PinkSorbet"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "312P-SC.png"
+		},
+		"SIX POCKET CARGO PANT.jpeg" => {
+			sku: "409P",
+			description: "<p>Strong and versatile this pant is all business. Six pockets including two expandable side cargo pockets and a built in belt buckle.<p>",
+			colors: ["Navy", "Black"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
+			chart: "409P-SC.png"
+		},
+		"BELL BOTTOM SCRUB PANT.jpeg" => {
+			sku: "302P",
+			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.<p>",
+			colors: ["Navy", "Black", "White"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "302P-SC.png"
+		},
+		"UNISEX DRAWSTRING ELASTIC 5 POCKET SCRUB PAN.jpeg" => {
+			sku: "307P",
+			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.<p>",
+			colors: ["Black", "Aqua", "Eggplant", "Burgundy", "Caribbean", "Charcoal", "Khaki", "Lagoon", "Navy", "OliveGreen", "PostmanBlue", "RoyalBlue", "SkyBlue", "Teal", "White", "Ceil", "Cappuccino"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+			chart: "307P-SC.png"
+		},
+		"TALL DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
+			sku: "309PTALL",
+			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.<p>",
+			colors: ["Black", "Caribbean", "Charcoal", "Navy", "PostmanBlue", "RoyalBlue", "Spruce"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+			chart: "309PTALL-SC.png"
+		},
+		"LOW RISE LACE UP FLARE PAN.jpeg" => {
+			sku: "316P",
+			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.<p>",
+			colors: ["Charcoal/Black", "Navy/Red", "Black/DustyRose"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "316P-SC.png"
+		},
+		"SCRUB SHORTS.jpeg" => {
+			sku: "304P",
+			description: "<p>THE MOBB SCRUB SHORT IS EASY AND COMFORTABLE. PERFECT FOR WARM WORK ENVIRONMENTS. FEATURES AN ELASTIC WAISTBAND, A CONSERVATIVE KNEE LENGTH AND TWO SIDE POCKETS.<p>",
+			colors: ["Black", "Navy", "White"],
+			sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+			chart: "304P-SC.png"
+		},
+		"FLEX WAIST SCRUB PANT TALL 36 INCH.jpeg" => {
+			sku: "416PT36IN",
+			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.<p>",
+			colors: ["Black", "NavyBlue", "Charcoal", "PostmanBlue", "SkyBlue"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "416PT36IN-SC.png"
+		},
+		"FLEXI WAIST PETITE SCRUB PANT.jpeg" => {
+			sku: "416PT28IN",
+			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.<p>",
+			colors: ["Black", "NavyBlue", "Charcoal"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "416PT28IN-SC.png"
+		},
+		"COMFORT RISE DRAWSTRING ELASTIC PETITE SCRUB PANT.jpeg" => {
+			sku: "412PT28IN",
+			description: "<p>This pant is the perfect combination of function and flow. The waistband is both elastic and drawstring making it comfortable at any rise. It has multiple pockets including a pocket for scissors and features multi-needle stitching for durability.<p>",
+			colors: ["Black", "NavyBlue"],
+			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			chart: "412PT28IN-SC.png"
+		}
+	}
+
 	clearance = {
 		"Petite Unisex 8 Pocket Drawstring Elastic Scrub Set Lagoon.jpeg" => {
 			sku: "P310/307C",
@@ -395,7 +492,7 @@ def seed_shit
 		"Criss Cross Flip Flap Sky Blue.jpeg" => {
 			sku: "323/312C",
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
-			colors: ["SkyeBlue"],
+			colors: ["SkyBlue"],
 			sizes: ["XL", "2XL"]
 		},
 		"Criss Cross Flip Flap Tangerine.jpeg" => {
@@ -580,6 +677,45 @@ def seed_shit
 				pro.default_image_file = get_file(filename)
 				pro.save!
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+		elsif params = pants[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat3
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				if params[:chart]
+					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
+					s = Stylechart.create!(image: f, product_id: pro.id)
+					p s 
+				end
 
 				p pro
 
