@@ -403,6 +403,66 @@ def seed_shit
 		},
 	}
 
+	chefcoats = {
+		"ZIPPER CLOSURE CHEF COAT.jpeg" => {
+			sku: "CC290",
+			description: "<p>Fresh and new, zip up in MOBB kitchen fashion with our 7.5oz poly/cotton twill chef coat. Features a full zip closure, stand collar, thermo pocket on left sleeve, with vented cuff and underarms.</p>",
+			colors: ["Black", "White"],
+			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			chart: "CC290-SC.png"
+		},
+		"CLASSIC CHEF COAT UNISEX.jpeg" => {
+			sku: "CC250",
+			description: "<p>MOBB kitchen classics. Professional and durable, our chef coats are made to last. Lightweight, breathable designs and a great selection of colors to choose from. 7.5oz poly cotton twill featuring a stand collar, vented cuff and underarms and a thermo pocket on left sleeve.</p>",
+			colors: ["Black", "White", "BlackWhite", "WhiteHoundsTooth", "RedBlack", "BurgundyBlack"],
+			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			chart: "CC250-SC.png"
+		},
+		"CHEF COAT.jpeg" => {
+			sku: "CC260",
+			description: "<p>100% spun-poly 7.5oz. Stand collar, vented cuff, vented underarms, thermo pocket on left sleeve</p>",
+			colors: ["Black", "White", "BlackWhite"],
+			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
+		},
+		"MANDARIN STYLE CHEF COAT.jpeg" => {
+			sku: "CC270",
+			description: "<p>MOBB kitchen classics. Professional and durable, our chef coats are made to last. Lightweight, breathable designs and a great selection of colors to choose from. 7.5oz poly cotton twill featuring a stand collar, vented cuff and underarms and a thermo pocket on left sleeve.</p>",
+			colors: ["BlackWhite", "WhiteBlack"],
+			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			chart: "CC270-SC.png"
+		}
+	}
+
+	chefpants = {
+		"FLAT FRONT CHEF PANT.jpeg" => {
+			sku: "34P",
+			description: "<p>Combine a classic dress pant with the comfort of our MOBB chef pant and you get this flat-front chef pant. Featuring a plain waistband with belt loops and a full brass zipper fly with button closure. Tailored for a modern, professional look. 2 front slant pockets and 2 back patch pockets. 7.5oz poly/cotton</p>",
+			colors: ["HoundsTooth", "Black", "White"],
+			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46"],
+			chart: "34P-SC.png"
+		},
+		"DRAWSTRING ELASTIC CHEF PANT.jpeg" => {
+			sku: "307P",
+			description: "<p>This chef pant is designed to be comfortable and functional while providing complete coverage when bending and reaching. 5oz poly/cotton blend pant featuring a combination drawstring/elastic waistband with 2 side pockets, 2 cargo pockets and 1 back pocket</p>",
+			colors: ["Black"],
+			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			chart: "307P-SC.png"
+		},
+		"WOVEN CHEF PANT.jpeg" => {
+			sku: "303P",
+			description: "<p>The MOBB Woven Chef Pant features a relaxed fit with ample room in the hip and thighs and a slightly tapered ankle. The 1” elastic waistband with built in elastisized drawstring falls just above your natural waistline and provides comfort and security for all body types.</p>",
+			colors: ["HoundsTooth"],
+			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"UNISEX BAGGY CHEF PANT.jpeg" => {
+			sku: "301P",
+			description: "<p>The MOBB Baggy Chef Pant is the ultimate in culinary coolness. With its unisex, elastic waist style our chef pants continue to be the choice for chefs today. Features a 2” elastisized drawstring waistband for maximum coverage and comfort. A slightly tapered ankle keeps the pants from dragging on the floor. 2 front slant pockets and 1 back patch pocket</p>",
+			colors: ["MrBOB", "HoundsTooth", "Gangster", "Black"],
+			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			chart: "301P-SC.png"
+		}
+	}
+
 	stethoscopes = {
 		"LITTMANN CLASSIC II STETHOSCOPE.jpeg" => {
 			sku: "2201",
@@ -936,6 +996,84 @@ def seed_shit
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat3
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				if params[:chart]
+					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
+					s = Stylechart.create!(image: f, product_id: pro.id)
+					p s 
+				end
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+		elsif params = chefpants[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat10
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				if params[:chart]
+					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
+					s = Stylechart.create!(image: f, product_id: pro.id)
+					p s 
+				end
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+		elsif params = chefcoats[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat8
 				pro.default_image_file = get_file(filename)
 				pro.save!
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
