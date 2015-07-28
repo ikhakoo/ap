@@ -41,9 +41,9 @@
 
                   <td class="product-quantity">
                     <div class="quantity buttons_added">
-                      <%= link_to "-", { :controller => "orders", :action => "decrease_item_quantity", :id => item.id}, class: "ui button", style: "background-color:#1abc9c;color:white;" %>
+                      <%= link_to "-", { :controller => "orders", :action => "decrease_item_quantity", :id => item.id}, class: "ui button", style: "background-color:#2B4B6F;color:white;" %>
                       <input type="number" size="4" class="input-text qty text" title="Qty" value="<%= item.quantity.to_i %>" min="0" step="1" style="text-align:center;">
-                      <%= link_to "+", { :controller => "orders", :action => "increase_item_quantity", :id => item.id}, class: "ui button", style: "background-color:#1abc9c;color:white;" %>
+                      <%= link_to "+", { :controller => "orders", :action => "increase_item_quantity", :id => item.id}, class: "ui button", style: "background-color:#2B4B6F;color:white;" %>
                     </div>
                   </td>
 
@@ -57,9 +57,9 @@
                   <tr>
                     <td class="actions" colspan="6">
 
-                      <%= link_to 'EMPTY BASKET', basket_path, :method => :delete, class: "ui button", style: "background-color:#1abc9c;color:white;" %>
+                      <%= link_to 'EMPTY BASKET', basket_path, :method => :delete, class: "ui button", style: "background-color:#2B4B6F;color:white;" %>
                       <% if !current_page?(action: 'checkout') && !current_page?(action: 'confirmation') %>
-                        <%= link_to 'CHECKOUT', checkout_path, class: "ui button", style: "background-color:#1abc9c;color:white;" %>
+                        <%= link_to 'CHECKOUT', checkout_path, class: "ui button", style: "background-color:#2B4B6F;color:white;" %>
                       <% end %>
                     </td>
                   </tr>
