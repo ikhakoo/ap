@@ -104,7 +104,7 @@
                             <div class="modal-body">
                               <% @stylecharts.each do |s| %>
                               <% if s.product_id == @product.id %>
-                              <img style="margin-left:80px;" src="<% s.image_url.to_s %>"/>
+                              <%= image_tag s.image_url.to_s, style: "margin-left:80px;width:auto;" if s.image_url.present? %>
                               <% end %>
                               <% end %>
                             </div>
