@@ -12,14 +12,15 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.turbolinks
 //= require jquery.sticky
 //= require jquery.easing.1.3.min
-//= require turbolinks
 //= require bootstrap-sprockets
 //= require semantic-ui
 //= require owl.carousel.min
 //= require main
 //= require social-share-button
+//= require turbolinks
 //= require_tree .
 //= require shoppe/stripe/form_handler
 
