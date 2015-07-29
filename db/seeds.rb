@@ -492,6 +492,108 @@ def seed_shit
 		}
 	}
 
+	chefhats = {
+		"TRADITIONAL CHEF HAT.jpeg" => {
+			sku: "CF451",
+			description: "<p>The MOBB Traditional Chef Hat is a symbol of authority and knowledge. It is made with soft, comfortable 65/35 poly-cotton. Its wide band and generous pleats make it a stand out headwear option. Adjustable velcro closure in the back offers a fully adjustable one size fit</p>",
+			colors: ["White", "Black"],
+			sizes: ["1SIZE"]
+		},
+		"PILLBOX CHEF HAT.jpeg" => {
+			sku: "CF460",
+			description: "<p>The clean, modern look of the MOBB Chef Hat has boosted it to the top of the best seller list. This version features a solid top pillbox style. Adjustable velcro sizing provides a perfect one size fit</p>",
+			colors: ["Black", "Red"],
+			sizes: ["1SIZE"]
+		},
+		"MESH TOP CHEF HAT.jpeg" => {
+			sku: "CF460M",
+			description: "<p>The clean, modern look of the MOBB Mesh Top Chef Hat has boosted it to the top of the best seller list. This version features a mesh top pillbox style. Adjustable velcro sizing provides a perfect one size fit</p>",
+			colors: ["Black", "Red"],
+			sizes: ["1SIZE"]
+		},
+		"CHEF HAT.jpeg" => {
+			sku: "CF450",
+			description: "<p>The clean, modern look of the MOBB Chef Hat has boosted it to the top of the best seller list. This version features a solid top pillbox style. Adjustable velcro sizing provides a perfect one size fit</p>",
+			colors: ["Black", "White"],
+			sizes: ["1SIZE"]
+		},
+		"NECKERCHIEF.jpeg" => {
+			sku: "N100",
+			description: "<p>The MOBB Neckerchief helps keep the sweat off of chefs' necks while in the kitchen, in turn keeping them cooler</p>",
+			colors: ["Black", "White"],
+			sizes: ["1SIZE"]
+		}
+	}
+
+	aprons = {
+		"BISTRO APRON.jpeg" => {
+			sku: "AP390",
+			description: "<p>The MOBB Bistro apron is made with durable polyester/cotton twill for stain and wrinkle resistance.
+										This apron has 3 pockets and falls just below the knees making it the perfect fit for front or back of the house.</p>",
+			colors: ["Bob", "Gangster"],
+			sizes: ["1SIZE"]
+		},
+		"GANGSTER STRIPE V NECK APRON.jpeg" => {
+			sku: "AP389",
+			description: "<p>The MOBB Three-Pocket v-neck apron is made with durable polyester/cotton twill for stain and wrinkle resistance. This apron falls above the knees and has an adjustable velcro neck closure.</p>",
+			colors: ["Gangster"],
+			sizes: ["1SIZE"]
+		},
+		"3 POCKET BLACK WAIST APRON.jpeg" => {
+			sku: "AP381",
+			description: "<p>The MOBB Waist Apron is made with durable polyester/cotton twill for stain and wrinkle resistance. It features 3 pockets for all of your front of the house tools. Perfect for servers.</p>",
+			colors: ["Black"],
+			sizes: ["1SIZE"]
+		},
+		"WAIST APRON NO POCKETS.jpeg" => {
+			sku: "AP387",
+			description: "<p>The MOBB basic apron is made with durable polyester/cotton twill for stain and wrinkle resistance. It features a plain front with no pockets</p>",
+			colors: ["Black", "White"],
+			sizes: ["1SIZE"]
+		},
+		"4 WAY CHEF APRON.jpeg" => {
+			sku: "AP388",
+			description: "<p>The MOBB 4-Way Chef Apron is the ultimate in utility. This amazing cooking apron offers a fresh start four times with its front-to-back and inside-to-out reversibility. The ties are securely tacked for comfort and durability. No pockets</p>",
+			colors: ["Black", "White"],
+			sizes: ["1SIZE"]
+		},
+		"COIN APRON.jpeg" => {
+			sku: "AP394",
+			description: "<p>The MOBB Coin apron is made with durable polyester/cotton twill for stain and wrinkle resistance. It features 4 large pockets, 2 pen slots and an adjustable plastic buckle on the waistbandand</p>",
+			colors: ["Black"],
+			sizes: ["1SIZE"]
+		},
+		"BIB APRON.jpeg" => {
+			sku: "AP385",
+			description: "<p>The MOBB Bib Apron is made to look and feel good, while still holding up to the rigors of the kitchen. 
+This cooking apron is generously cut for full coverage on the both bib and bottom and features 2 pockets and adjustable neck.</p>",
+			colors: ["Black", "Burgundy", "NavyBlue", "Red", "RoyalBlue", "Spruce"],
+			sizes: ["1SIZE"],
+			chart: "AP385-SC.png"
+		},
+		"FULL LENGTH APRON.jpeg" => {
+			sku: "AP380",
+			description: "<p>The MOBB Full-Length Apron features extra wide ties and adjustable neck loop designed for all day comfort. Its 7.5 oz 65/35 polyester/cotton is soft and breathable, but stills repels stains and wrinkles</p>",
+			colors: ["Black", "White"],
+			sizes: ["1SIZE"],
+			chart: "AP380-SC.png"
+		},
+		"LONG WAIST BISTRO APRON.jpeg" => {
+			sku: "AP383",
+			description: "<p>The MOBB Long-Waist Bistro apron is made with durable polyester/cotton twill for stain and wrinkle resistance. This apron falls just below the knees and has 2 pockets, making it the perfect for the front or the back of the house</p>",
+			colors: ["Black", "White"],
+			sizes: ["1SIZE"],
+			chart: "AP383-SC.png"
+		},
+		"COBBLER APRON.jpeg" => {
+			sku: "AP382",
+			description: "<p>The MOBB Cobbler Apron is durable, affordable, and totally professional looking. In addition to outfitting waitstaff and kitchen staff, a cobbler apron is also ideal for housekeeping, maintenance, and stadium personnel</p>",
+			colors: ["Black", "Burgundy", "NavyBlue", "Red", "RoyalBlue", "Spruce"],
+			sizes: ["1SIZE"],
+			chart: "AP383-SC.png"
+		}
+	}
+
 	stethoscopes = {
 		"LITTMANN CLASSIC II STETHOSCOPE.jpeg" => {
 			sku: "2201",
@@ -1142,6 +1244,45 @@ def seed_shit
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat11
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				if params[:chart]
+					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
+					s = Stylechart.create!(image: f, product_id: pro.id)
+					p s 
+				end
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+		elsif params = chefhats[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat9
 				pro.default_image_file = get_file(filename)
 				pro.save!
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
