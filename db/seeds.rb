@@ -476,7 +476,7 @@ def seed_shit
 			description: "<p>The MOBB Mandarin Collar Professional Kitchen Top offers a clean, polished look. Featuring a mid-weight cotton twill keeping you cool and comfortable, 1 left chest pocket and snap button closure</p>",
 			colors: ["White"],
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
-			chart: "2045T-SC.png"
+			chart: "205T-SC.png"
 		},
 		"LONG SLEEVE PROFESSIONAL KITCHEN TOP.jpeg" => {
 			sku: "S302",
@@ -1141,7 +1141,7 @@ def seed_shit
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = ca11
+				pro.product_category = cat11
 				pro.default_image_file = get_file(filename)
 				pro.save!
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
