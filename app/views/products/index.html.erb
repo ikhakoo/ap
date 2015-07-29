@@ -150,7 +150,7 @@
             <% @mprods.each do |product| %>
               <div class="single-product">
                 <div class="product-f-image">
-                  <img src="<%= product.default_image.path %>" alt="" style="height:345px;widht:220px;">
+                  <img src="<%= product.default_image.path %>" alt="" style="height:345px;margin-left:8px;">
                     <div class="product-hover">
                         <a href="<%= product_path(product.permalink) %>" class="view-details-link"><i class="fa fa-link"></i> See details</a>
                     </div>
