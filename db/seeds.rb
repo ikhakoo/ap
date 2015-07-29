@@ -476,7 +476,7 @@ def seed_shit
 			description: "<p>The MOBB Mandarin Collar Professional Kitchen Top offers a clean, polished look. Featuring a mid-weight cotton twill keeping you cool and comfortable, 1 left chest pocket and snap button closure</p>",
 			colors: ["White"],
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
-			chart: "2045T-SC.png"
+			chart: "205T-SC.png"
 		},
 		"LONG SLEEVE PROFESSIONAL KITCHEN TOP.jpeg" => {
 			sku: "S302",
