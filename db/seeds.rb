@@ -140,7 +140,7 @@ def seed_shit
 			colors: ["Indigo/Black", "Eggplant/Black", "Rasberry/Black", "Aqua/Black", "Charcoal/Black", "NavyBlue/Black",
 								"White/White", "PostmanBlue/Black"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
-			chart: "424T-sc.png"
+			chart: "424T-SC.png"
 		},
 		"Mens Two Tone Scrub Top.jpeg" => {
 			sku: "409T",
