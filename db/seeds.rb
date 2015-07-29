@@ -1159,6 +1159,45 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				print params[:sku] 
 			end
 
+		elsif params = aprons[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat12
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				if params[:chart]
+					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
+					s = Stylechart.create!(image: f, product_id: pro.id)
+					p s 
+				end
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
 		elsif params = chefpants[filename] 
 
 				params[:colors].each do |color|
