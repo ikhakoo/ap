@@ -92,6 +92,9 @@ class ProductsController < ApplicationController
     @product_image = Shoppe::Product.find_by_permalink(params[:permalink])
     @products      = Shoppe::Product.root.ordered.includes(:product_category, :variants)
     @products      = @products.group_by(&:product_category)
+    @m1            = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 20)
+    @m2            = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 21)
+    @mprods        = @m1 + @m2
   end
 
   def show

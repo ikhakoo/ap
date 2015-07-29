@@ -145,13 +145,24 @@
     <div class="row">
       <div class="col-md-12">
         <div class="brand-wrapper">
-          <h2 class="section-title">Mobb Brands</h2>
+          <h2 class="section-title">Mentality By Mobb</h2>
           <div class="brand-list">
-            <img src="https://s3-us-west-2.amazonaws.com/ap-uniforms-pictures/image-1.jpeg" alt="">
-            <img src="https://s3-us-west-2.amazonaws.com/ap-uniforms-pictures/image-2.jpeg" alt="">
-            <img src="https://s3-us-west-2.amazonaws.com/ap-uniforms-pictures/image-3.jpeg" alt="">
-            <img src="https://s3-us-west-2.amazonaws.com/ap-uniforms-pictures/image-4.jpeg" alt="">
-            <img src="https://s3-us-west-2.amazonaws.com/ap-uniforms-pictures/image-5.jpeg" alt="">
+            <% @mprods.each do |product| %>
+              <div class="single-product">
+                <div class="product-f-image">
+                  <img src="<%= product.default_image.path %>" alt="" style="height:345px;widht:220px;">
+                    <div class="product-hover">
+                        <a href="<%= product_path(product.permalink) %>" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                    </div>
+                </div>
+              
+                <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+              
+                <div class="product-carousel-price">
+                  <ins style="color:white;"><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                </div> 
+              </div>
+            <% end %>
           </div>
         </div>
       </div>
