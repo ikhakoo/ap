@@ -463,6 +463,35 @@ def seed_shit
 		}
 	}
 
+	cheftops = {
+		"BUTTON DOWN PROFESSIONAL KITCHEN TOP.jpeg" => {
+			sku: "204T",
+			description: "<p>The MOBB Button Down Professional Kitchen features short-sleeves, one breast patch pocket and a pointed collar to round out the look. The lightweight 5oz. 65/35 poly/cotton poplin is wrinkle-resistant</p>",
+			colors: ["White"],
+			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			chart: "204T-SC.png"
+		},
+		"MANDARIN COLLAR PROFESSIONAL KITCHEN TOP.jpeg" => {
+			sku: "205T",
+			description: "<p>The MOBB Mandarin Collar Professional Kitchen Top offers a clean, polished look. Featuring a mid-weight cotton twill keeping you cool and comfortable, 1 left chest pocket and snap button closure</p>",
+			colors: ["White"],
+			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			chart: "2045T-SC.png"
+		},
+		"LONG SLEEVE PROFESSIONAL KITCHEN TOP.jpeg" => {
+			sku: "S302",
+			description: "<p>The MOBB Long Sleeve Professional Kitchen Top offers classic no pocket styling. This durable yet lightweight 5oz. poly-cotton poplin blend retains its crisp professional look even after multiple uses. Featuring a snap front closure with a roomy, yet flattering fit</p>",
+			colors: ["White"],
+			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"SHORT SLEEVE PROFESSIONAL KITCHEN TOP.jpeg" => {
+			sku: "S303",
+			description: "<p>The MOBB Short Sleeve Professional Kitchen Top offers classic no pocket styling. This durable yet lightweight 5oz. poly-cotton poplin blend retains its crisp professional look even after multiple uses. Featuring a snap front closure with a roomy, yet flattering fit</p>",
+			colors: ["White"],
+			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		}
+	}
+
 	stethoscopes = {
 		"LITTMANN CLASSIC II STETHOSCOPE.jpeg" => {
 			sku: "2201",
