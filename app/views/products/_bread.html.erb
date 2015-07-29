@@ -1,0 +1,50 @@
+<% if @product.product_category_id == 1 %>
+ <%= link_to 'Medical Tops', nurse_tops_path %>
+	<% elsif @product.product_category_id == 2 %>
+  	<%= link_to 'Medical Sets', nurse_tops_path %>
+  <% elsif @product.product_category_id == 3 %>
+  	<%= link_to 'Medical Pants', nurse_pants_path %>
+  <% elsif @product.product_category_id == 4 %>
+  	<%= link_to 'Medical Coats', nurse_coats_path %>
+  <% elsif @product.product_category_id == 5 %>
+  	<%= link_to 'Medical Caps', nurse_caps_path %>
+  <% elsif @product.product_category_id == 6 %>
+  	<%= link_to 'Accessories', accessories_path %>
+
+  <% elsif @product.product_category_id == 7 %>
+  	<%= link_to 'Stethoscopes', stethoscopes_path %>
+
+ 	<% elsif @product.product_category_id == 8 %>
+  	<%= link_to 'Chef Coats', chef_coats_path %>
+  <% elsif @product.product_category_id == 9 %>
+  	<%= link_to 'Chef Hats', chef_hats_path %>
+  <% elsif @product.product_category_id == 10 %>
+  	<%= link_to 'Chef Pants', chef_pants_path %>
+  <% elsif @product.product_category_id == 11 %>
+  	<%= link_to 'Chef Tops', chef_tops_path %>
+  <% elsif @product.product_category_id == 12 %>
+  	<%= link_to 'Aprons', aprons_path %>
+  <% elsif @product.product_category_id == 13 %>
+  	<%= link_to 'Waitress Vests', waitress_vests_path %>
+
+  <% elsif @product.product_category_id == 14 %>
+  	<%= link_to 'Fire Retardent', work_fire_retardent_path %>
+  <% elsif @product.product_category_id == 15 %>
+  	<%= link_to 'Shop Coats', work_shop_coat_path %>
+  <% elsif @product.product_category_id == 16 %>
+  	<%= link_to 'Coveralls & Overalls', work_coverall_overall_path %>
+  <% elsif @product.product_category_id == 17 %>
+  	<%= link_to 'Work Pants', work_pants_path %>
+  <% elsif @product.product_category_id == 18 %>
+  	<%= link_to 'Work Shirts', work_shirts_path %>
+  <% elsif @product.product_category_id == 19 %>
+  	<%= link_to 'Safety Vests', work_vests_path %>
+
+  <% elsif @product.product_category_id == 20 %>
+  	<%= link_to 'mentality HyFlex', mentality_hyflex_path %>
+  <% elsif @product.product_category_id == 21 %>
+  	<%= link_to 'mentality StretchFlex', mentality_stretchflex_path %>
+	
+	<% else %>
+		<%= link_to 'Clearance', clearance_path %>
+<% end %>

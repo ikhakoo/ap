@@ -40,13 +40,7 @@
         <div class="product-content-right">
           <div class="product-breadcroumb">
             <%= link_to 'Home', root_path %>
-            <% if @product.product_category == 1 %>
-              <%= link_to 'Sets', nurse_sets_path %>
-            <% elsif @product.product_category == 2 %>
-              <%= link_to 'Tops', nurse_tops_path %>
-            <% else%>
-            <%= link_to 'Clearance', clearance_path %>
-            <% end %>
+            <%= render 'bread' %>
             <%= link_to @product.name.split("-").first, product_path(@product.permalink) %>
           </div>
               
