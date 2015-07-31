@@ -442,6 +442,84 @@ def seed_shit
 		}
 	}
 
+	workcoats = {
+		"SHOP COAT.jpeg" => {
+			sku: "SH200",
+			description: "<p>Stay protected and comfortable throughout the work day in the MOBB shop coat, made with a heavyweight 7.5 oz poly-cotton blend for strong, snag-resistant wear. Features 3 patch pockets as well as side access openings, centre back vent, dome closure and a handy penpocket on the left arm</p>",
+			colors: ["NavyBlue", "Spruce"],
+			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"SHOP COAT II.jpeg" => {
+			sku: "SH203",
+			description: "<p>Stay protected and comfortable throughout the work day in the MOBB shop coat, made with a heavyweight 8.5 oz poly-cotton blend for strong, snag-resistant wear. Features 3 patch pockets as well as side access openings, centre back vent, dome closure and a handy penpocket on the left arm</p>",
+			colors: ["PostmanBlue"],
+			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"SPUN POLY BLEND SHOP COAT.jpeg" => {
+			sku: "SH201S",
+			description: "<p>Made from a 7oz Spun Poly blend, each shop coat features 3 patch pockets as well as side access openings, centre back vent, dome button closure and left arm pen pocket</p>",
+			colors: ["White"],
+			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+		"3 POCKET COTTON SHOP COAT.jpeg" => {
+			sku: "SH200",
+			description: "<p>Made from comfortable 100% cotton, this traditional MOBB shop coat offers convenience and utility with one chest and two lower pockets. Comfort and durability make this shop coat ideal for everything from customer service to industrial work environments. Also features a concealed dome button closure, side access openings, centre back vent and left arm pen pocket</p>",
+			colors: ["NavyBlue"],
+			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
+		},
+	}
+
+	workco = {
+		"NOMEX IIIA FLAME RESISTANT COVERALL.jpeg" => {
+			sku: "FR500",
+			description: "<p>For hazards like firesand molten splashes, MOBB's Nomex® III A has you covered. A blend of 93% Nomex® with 5% Kevlar® and 2% antistatic fiber that expands to form a stable and inert barrier between fire and skin. Features 2-way Vislon Nomex® zipper, 2 snap clsoures at the neck, 1 snap waist closure, 2 upper and 2 lower patch pockets as well as 2 front slant pockets and 2 side access openings. Includes a tool pocket on the right leg, a pen pocket on the left arm and flame resistant velcro tabs on the sleeves and leg leg cuffs</p>",
+			colors: ["1STYLE"],
+			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
+		},
+		"INDURA ULTRA SOFT FLAME RESISTANT COVERALL.jpeg" => {
+			sku: "FR100",
+			description: "<p>The ultra-soft feel of these coveralls offer enhanced comfort while keeping you protected from electric arc and flash fire exposures. Double-shrunk technology ensures they will fit you for years to come. Features 2-way Vislon Nomex® zippers, 2 snap closures at neck, 1 snap closure at waist, 2 upper and 2 lower back patch pockets and 2 front slant pockets as well as 2 side sccess openings. Includes a pen pocket on the left arm and a tool pocket on the right side, FR velcro tabs on sleeve and leg cuffs</p>",
+			colors: ["1STYLE"],
+			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
+		},
+		"100 PERCENT COTTON TWILL COVERALL.jpeg" => {
+			sku: "C200",
+			description: "<p>Up and down. Back and forth. In and out of the truck. These coveralls will go wherever you go. Heavy-duty 8.5oz. 100% cotton twill. Features a concealed metal button closure, 2 chest pockets, 2 lower back patch pockets and 2 lower front slant pockets as well as a pen and tool pocket</p>",
+			colors: ["1STYLE"],
+			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
+		},
+		"CLASSIC POLY COTTON COVERALL.jpeg" => {
+			sku: "C100",
+			description: "<p>MOBB 65/35 Poly-Cotton blend zip-front coveralls have distinctive features of high durability, high tensile strength, good tear strength, colour fastness, pilling resistant, shrinkage control comfort wear and perfect fit. Features 2 top front pockets, 2 lower back patch pockets and 2 lower front slant pockets as well as a tool and pen pocket. Includes side access openings and action back</p>",
+			colors: ["1STYLE"],
+			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
+		}, 
+		"CLASSIC POLY COTTON COVERALL.jpeg" => {
+			sku: "C100R",
+			description: "<p>Stay visible on the work site with these MOBB 7.5oz 65/35 poly-cotton blend coveralls featuring reflective tape banding.The premium reflective tape ensures you are visible to coworkers and drivers. Same features as the C100</p>",
+			colors: ["1STYLE"],
+			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
+		}, 
+		"CLASSIC BIB OVERALL.jpeg" => {
+			sku: "B100",
+			description: "<p>Strap on the MOBB Classic Bib Overall when there's rain, wind, and hard work in the forecast. Features adjustable suspenders, 2 chest pockets, 2 lower back patch pockets, 2 lower front slant pockets and a zipper closure</p>",
+			colors: ["1STYLE"],
+			sizes: ["S", "M", "L", "XL", "2XL", "3XL"]
+		},
+		"REFLECTIVE BIB OVERALL.jpeg" => {
+			sku: "B100R",
+			description: "<p>Stay visible and safe on the worksite with the MOBB Reflective Bib Coveralls featuring high visibility reflective tape banding for extra protection in low-light conditions. These pants will ensure you are comfortably protected while working in grimy conditions. Includes 2 lower back patch pockets, 2 lower front slant pockets and side access openings</p>",
+			colors: ["Orange", "NavyBlue"],
+			sizes: ["S", "M", "L", "XL", "2XL", "3XL"]
+		},
+		"100 PERCENT COTTON TWILL COVERALL II.jpeg" => {
+			sku: "C201 COVERALL",
+			description: "<p>Up and down. Back and forth. In and out of the truck. These coveralls will go wherever you go. Heavy-duty 8.5oz. 100% cotton twill. Features a concealed metal button closure, 2 chest pockets, 2 lower back patch pockets and 2 lower front slant pockets as well as a pen and tool pocket</p>",
+			colors: ["PostmanBlue"],
+			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
+		}
+	}
+
 	chefcoats = {
 		"ZIPPER CLOSURE CHEF COAT.jpeg" => {
 			sku: "CC290",
@@ -1142,6 +1220,72 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat7
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+		elsif params = workcoats[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat15
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+		elsif params = workco[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat16
 				pro.default_image_file = get_file(filename)
 				pro.save!
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
