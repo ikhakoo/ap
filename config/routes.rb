@@ -18,12 +18,12 @@ Rails.application.routes.draw do
   match "decrease_item_quantity", to: "orders#decrease_item_quantity", as: "decrease_item_quantity", via: [:get]
 
   #Nurse Wear
-  match "nurse/tops", to: "products#nurse_tops", as: "nurse_tops", via: [:get]
-  match "nurse/sets", to: "products#nurse_sets", as: "nurse_sets", via: [:get]
-  match "nurse/coats", to: "products#nurse_sets", as: "nurse_coats", via: [:get]
-  match "nurse/pants", to: "products#nurse_sets", as: "nurse_pants", via: [:get]
+  match "nurse-wear/tops", to: "products#nurse_tops", as: "nurse_tops", via: [:get]
+  match "nurse-wear/sets", to: "products#nurse_sets", as: "nurse_sets", via: [:get]
+  match "nurse-wear/coats", to: "products#nurse_sets", as: "nurse_coats", via: [:get]
+  match "nurse-wear/pants", to: "products#nurse_sets", as: "nurse_pants", via: [:get]
   match "accessories", to: "products#accessories", as: "accessories", via: [:get]
-  match "nurse/caps", to: "products#nurse_caps", as: "nurse_caps", via: [:get]
+  match "nurse-wear/caps", to: "products#nurse_caps", as: "nurse_caps", via: [:get]
   
   #Mentality
   match "mentality/stretchflex", to: "products#mentality_stretchflex", as: "mentality_stretchflex", via: [:get]
@@ -33,10 +33,10 @@ Rails.application.routes.draw do
   match "stethoscopes", to: "products#stethoscopes", as: "stethoscopes", via: [:get]
 
   #Chef Wear
-  match "chef/coats", to: "products#chef_coats", as: "chef_coats", via: [:get]
-  match "chef/pants", to: "products#chef_pants", as: "chef_pants", via: [:get]
-  match "chef/hats", to: "products#chef_hats", as: "chef_hats", via: [:get]
-  match "chef/tops", to: "products#chef_tops", as: "chef_tops", via: [:get]
+  match "chef-wear/coats", to: "products#chef_coats", as: "chef_coats", via: [:get]
+  match "chef-wear/pants", to: "products#chef_pants", as: "chef_pants", via: [:get]
+  match "chef-wear/hats", to: "products#chef_hats", as: "chef_hats", via: [:get]
+  match "chef-wear/tops", to: "products#chef_tops", as: "chef_tops", via: [:get]
   match "aprons", to: "products#aprons", as: "aprons", via: [:get]
   match "waitress_vests", to: "products#waitress_vests", as: "waitress_vests", via: [:get]
 
