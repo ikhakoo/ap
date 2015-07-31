@@ -525,6 +525,15 @@ def seed_shit
 		}
 	}
 
+	wvest = {
+		"WAITER OR WAITRESS VEST.jpeg" => {
+			sku: "VE340",
+			description: "<p>100% polyester vest, black satin lined with button front closure. The Waiter/Waitress is manageable and easy to care for while always looking professional and sharp for all front of house positions</p>",
+			colors: ["Black"],
+			sizes: ["30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
+		}
+	}
+
 	aprons = {
 		"BISTRO APRON.jpeg" => {
 			sku: "AP390",
@@ -982,7 +991,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		name = File.basename(filename, File.extname(filename))
 		# fp.split("/").last.gsub(".jpeg", "").titleize
 
-		if params = tops[filename] 
+		if params = tops[filename]
 
 				params[:colors].each do |color|
 
