@@ -717,7 +717,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Used as a diagnostic aid as part of the physical assessment of cardiac, adult and paediatric patients.</li>
 										<li>3 year warranty includes free repair on any manufacturing or material defects.</li>
 										<li>Littmann performance rating of 8 out of 10.</li>
-										<li>Tubing: Black (65.5cm/27). Finish: Polished Steel</li>
+										<li>Tubing: Colored (65.5cm/27). Finish: Polished Steel</li>
 										<li>Chestpiece: Plated & Polished Alloy, Single-Sided</li>
 										<li>USer Group : GPs, Nurses</li>",
 		  colors: ["Black"],
@@ -734,7 +734,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Used as a diagnostic aid as part of the physical assessment of a patient.</li>
 										<li>3 year warranty includes free repair on any manufacturing or material defects.</li>
 										<li>Littmann performance rating of 7 out of 10.</li>
-										<li>Tubing: Raspberry (71cm/28'). Finish: Rainbow. Brass finish headset.</li>
+										<li>Tubing: Colored (71cm/28'). Finish: Rainbow. Brass finish headset.</li>
 										<li>Chestpiece: Machined Stainless Steel, Two-sided</li>
 										<li>User Group : GPs, Medical Students, Nurses</li>",
 			colors: ["Raspberry", "Rose", "Caribbean", "Black", "Brown", "Green", "Yellow"],

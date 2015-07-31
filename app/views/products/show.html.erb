@@ -68,7 +68,8 @@
                     <div class="product-inner-category">
                       <p>
                         Color: 
-                        <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]) %> 
+                        <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]) %>
+                        <br> 
                         Size: 
                         <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]) %>
                       </p>
