@@ -484,6 +484,97 @@ def seed_shit
 		}
 	}
 
+	caps = {
+		"MOBB UNISEX DELUXE SURGEONS CAP.jpeg" => {
+			sku: "SC500",
+			description: "<p>A beautiful surgeon cap built with comfort in mind. Traditional "tie back" style featuring a forehead moisture band. Available in assorted prints</p>",
+			colors: ["1STYLE"],
+			sizes: ["1SIZE"]
+		},
+		"BOUFFANT STYLE SURGEON CAP.JPEG" => {
+			sku: "SC445",
+			description: "<p>This hat is styled with a beautiful bouffant and is available is assorted prints and solid colors.
+										Elastic back ensures a perfect fit for every head</p>",
+			colors: ["Ceil", "FlowerPower"],
+			sizes: ["1SIZE"]
+		},
+		"MOBB UNISEX SURGEONS CAP.jpeg" => {
+			sku: "SC440",
+			description: "<p>This hat is the traditional "tie back" style surgeon's cap. Available in assorted prints and solid colours.</p>",
+			colors: ["Blue", "Pink", "Purple", "Red", "Grey", "HeartTies"],
+			sizes: ["1SIZE"]
+		},
+		"TRADITIONAL NURSE CAP.jpeg" => {
+			sku: "NC",
+			description: "<p>Classic white nurse cap, the perfect compliment to all traditional nurse uniforms</p>",
+			colors: ["White"],
+			sizes: ["1SIZE"] 
+		}
+	}
+
+	accessories = {
+		"STETHOSCOPE CLIP.jpeg" => {
+			sku: "STETHCLIP",
+			description: "<p>The MOBB Stethoscope Clip was created by medical professionals for medical professionals. Sturdy, durable construction, made to last</p>",
+			colors: ["1STYLE"],
+			sizes: ["1SIZE"]
+		},
+		"PENLIGHT.jpeg" => {
+			sku: "PL",
+			description: "<p>The MOBB Penlight provides a bright, quality light, a pupil gauge and is an indispensable tool for diagnosis</p>",
+			colors: ["1STYLE"],
+			sizes: ["1SIZE"]
+		},
+		"PILL CUTTER CRUSHER DUO.jpeg" => {
+			sku: "PL-CRUSHER",
+			description: "<p>The MOBB Pill Cutter-Crusher Duo is a self-contained compliance device that is used to cut or crush pills and tablets to half-size or into powder for medication administration</p>",
+			colors: ["1STYLE"],
+			sizes: ["1SIZE"]
+		},
+		"MOBB PLUSH LOGO SLIPPERS.jpeg" => {
+			sku: "A0002",
+			description: "<p>Soft and cozy. Featuring the MOBB logo and a non-slip tread</p>",
+			colors: ["1STYLE"],
+			sizes: ["1SIZE"]
+		},
+		"MOBB MEASURING TAPE WITH PEN.JPEG" => {
+			sku: "MMTWP",
+			description: "<p>MOBB MEASURING TAPE WITH PEN</p>",
+			colors: ["1STYLE"],
+			sizes: ["1SIZE"]
+		},
+		"MOBB KEY CHAIN.jpeg" => {
+			sku: "MKEYCHAIN",
+			description: "<p>MOBB KEY CHAIN</p>",
+			colors: ["1STYLE"],
+			sizes: ["1SIZE"]
+		},
+		"PLUSH ANIMAL STETHOSCOPE COVERS.JPEG" => {
+			sku: "PASC",
+			description: "<p>Soft, fuzzy and completely adorable. The MOBB Plush Animal Stethoscope covers are sure to make everyone smile, especially the little ones. Select the options as color options.</p>",
+			colors: ["Hippo", "Pig", "Ant", "Frog"],
+			sizes: ["1SIZE"]
+		},
+		"CLIP ON WATCHES.jpeg" => {
+			sku: "COW",
+			description: "<p>Key chains avilable in Smiley, Heart, Teddy Bear, and Health styles</p>",
+			colors: ["Smiley", "Heart", "TeddyBear", "Health"],
+			sizes: ["1SIZE"]
+		},
+		"BLOOD PRESSURE MONITOR.jpeg" => {
+			sku: "KT-A07",
+			description: "<p>Measure blood pressure with this lightweight and portable manual intalation monitor that offers both high quality and professional features. Features a large Aneroid gauge and durable inflation bulb.</p>",
+			colors: ["1STYLE"],
+			sizes: ["1SIZE"]
+		},
+		"MOBB SCISSORS.jpeg" => {
+			sku: "S150 SCISSORS150/190MM",
+			description: "<p>MOBB SCISSORS<p><br><p>Available in assorted colors</p><br><p>150/190mm</p>",
+			colors: ["Blue", "Red", "Ceil", "Black"],
+			sizes: ["150mm", "190mm"]
+		}
+	}
+
 	workvests = {
 		"WORK WEAR SAFETY VEST.jpeg" => {
 			sku: "WVEST",
