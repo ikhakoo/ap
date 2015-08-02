@@ -37,8 +37,8 @@ Rails.application.routes.draw do
   match "chef-wear/pants", to: "products#chef_pants", as: "chef_pants", via: [:get]
   match "chef-wear/hats", to: "products#chef_hats", as: "chef_hats", via: [:get]
   match "chef-wear/tops", to: "products#chef_tops", as: "chef_tops", via: [:get]
-  match "aprons", to: "products#aprons", as: "aprons", via: [:get]
-  match "waitress_vests", to: "products#waitress_vests", as: "waitress_vests", via: [:get]
+  match "chef-wear/aprons", to: "products#aprons", as: "aprons", via: [:get]
+  match "chef-wear/waitress-vests", to: "products#waitress_vests", as: "waitress_vests", via: [:get]
 
   #work wear
   match "work-wear/fire-retardent", to: "products#work_fire_retardent", as: "work_fire_retardent", via: [:get]
