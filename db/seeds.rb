@@ -544,19 +544,19 @@ def seed_shit
 			sizes: ["1SIZE"]
 		},
 		"MOBB KEY CHAIN.jpeg" => {
-			sku: "MKEYCHAIN",
+			sku: "MKC-100",
 			description: "<p>MOBB KEY CHAIN</p>",
 			colors: ["1STYLE"],
 			sizes: ["1SIZE"]
 		},
 		"PLUSH ANIMAL STETHOSCOPE COVERS.JPEG" => {
-			sku: "PASC",
+			sku: "PASC-100",
 			description: "<p>Soft, fuzzy and completely adorable. The MOBB Plush Animal Stethoscope covers are sure to make everyone smile, especially the little ones. Select the options as color options.</p>",
 			colors: ["Hippo", "Pig", "Ant", "Frog"],
 			sizes: ["1SIZE"]
 		},
 		"CLIP ON WATCHES.jpeg" => {
-			sku: "COW",
+			sku: "COW-100",
 			description: "<p>Key chains avilable in Smiley, Heart, Teddy Bear, and Health styles</p>",
 			colors: ["Smiley", "Heart", "TeddyBear", "Health"],
 			sizes: ["1SIZE"]
@@ -572,6 +572,30 @@ def seed_shit
 			description: "<p>MOBB SCISSORS<p><br><p>Available in assorted colors</p><br><p>150/190mm</p>",
 			colors: ["Blue", "Red", "Ceil", "Black"],
 			sizes: ["150mm", "190mm"]
+		},
+		"MOBB SCRUB LOGO SHOULDER BAG.jpeg" => {
+			sku: "MSLS-100",
+			description: "<p>Made with MOBB scrub material and available in assorted colors and prints featuring the MOBB logo</p>",
+			colors: ["Brown", "Green", "White", "Blue", "Red"],
+			sizes: ["1SIZE"]
+		},
+		"MOBB LOGO RETRACTABLE ID CLIP.jpeg" => {
+			sku: "MLRIC-100",
+			description: "<p>Features the MOBB logo</p>",
+			colors: ["1STYLE"],
+			sizes: ["1SIZE"]
+		},
+		"MOBB LOGO TRAVEL COFFEE MUG.jpeg" => {
+			sku: "MUG100",
+			description: "<p>The perfect travel coffee mug for those busy days!</p>",
+			colors: ["1STYLE"],
+			sizes: ["1SIZE"]
+		},
+		"MOBB STETHOSCOPE ID NAME TAG.jpeg" => {
+			sku: "STETHID-100",
+			description: "<p>Mobb Stethoscopes ID Name Tag</p>",
+			colors: ["1STYLE"],
+			sizes: ["1SIZE"]
 		}
 	}
 
@@ -1619,13 +1643,79 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				print params[:sku] 
 			end
 
-		elsif params = workpants[filename] 
+		elsif params = caps[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat5
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+			elsif params = accessories[filename] 
 
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat17
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+			elsif params = workpants[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat6
 				pro.default_image_file = get_file(filename)
 				pro.save!
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
