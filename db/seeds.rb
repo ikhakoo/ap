@@ -487,7 +487,7 @@ def seed_shit
 	caps = {
 		"MOBB UNISEX DELUXE SURGEONS CAP.jpeg" => {
 			sku: "SC500",
-			description: "<p>A beautiful surgeon cap built with comfort in mind. Traditional "tie back" style featuring a forehead moisture band. Available in assorted prints</p>",
+			description: "<p>A beautiful surgeon cap built with comfort in mind. Traditional 'tie back' style featuring a forehead moisture band. Available in assorted prints</p>",
 			colors: ["1STYLE"],
 			sizes: ["1SIZE"]
 		},
@@ -500,7 +500,7 @@ def seed_shit
 		},
 		"MOBB UNISEX SURGEONS CAP.jpeg" => {
 			sku: "SC440",
-			description: "<p>This hat is the traditional "tie back" style surgeon's cap. Available in assorted prints and solid colours.</p>",
+			description: "<p>This hat is the traditional 'tie back' style surgeon's cap. Available in assorted prints and solid colours.</p>",
 			colors: ["Blue", "Pink", "Purple", "Red", "Grey", "HeartTies"],
 			sizes: ["1SIZE"]
 		},
@@ -693,7 +693,7 @@ def seed_shit
 			colors: ["1STYLE"],
 			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
 		}, 
-		"CLASSIC POLY COTTON COVERALL.jpeg" => {
+		"REFLECTIVE BANDED COVERALL.jpeg" => {
 			sku: "C100R",
 			description: "<p>Stay visible on the work site with these MOBB 7.5oz 65/35 poly-cotton blend coveralls featuring reflective tape banding.The premium reflective tape ensures you are visible to coworkers and drivers. Same features as the C100</p>",
 			colors: ["1STYLE"],
@@ -1676,7 +1676,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				print params[:sku] 
 			end
 
-			elsif params = accessories[filename] 
+		elsif params = accessories[filename] 
 
 				params[:colors].each do |color|
 
