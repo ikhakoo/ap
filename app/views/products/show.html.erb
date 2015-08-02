@@ -67,13 +67,15 @@
 
                     <div class="product-inner-category">
                       <p>
-                        <% if @colors_array.uniq != "1STYLE" %>
+                        <% if @colors_array.uniq != ["1STYLE"] %>
                         Color: 
                         <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]) %>
                         <% end %>
-                        <br> 
+                        <br>
+                        <% if @sizes.uniq != ["1SIZE", "1STYLE"] %> 
                         Size: 
                         <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]) %>
+                        <% end %>
                       </p>
                     </div>
 
@@ -82,7 +84,9 @@
                         <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
                       </div>
                       <%= submit_tag 'Add to basket', class: "ui button", style: "background-color:#2B4B6F;color:white;" %>
-
+                      
+                      <% @stylecharts.each do |s| %>
+                      <% if s.product_id == @product.id %>
                       <!-- Button trigger modal -->
                       <button type="button" style="background-color:#2B4B6F;color:white;" class="ui button" data-toggle="modal" data-target="#myModal">
                         View Sizing Chart
@@ -97,15 +101,15 @@
                               <h4 class="modal-title" id="myModalLabel">Sizing Chart</h4>
                             </div>
                             <div class="modal-body">
-                              <% @stylecharts.each do |s| %>
-                              <% if s.product_id == @product.id %>
+                              
                               <%= image_tag s.image_url.to_s, style: "margin-left:80px;width:auto;" if s.image_url.present? %>
-                              <% end %>
-                              <% end %>
+                              
                             </div>
                           </div>
                         </div>
                       </div>
+                      <% end %>
+                      <% end %>
                     </form>
                     <br><br>
                     <%= social_share_button_tag(@product.name.split("-").first) %>
