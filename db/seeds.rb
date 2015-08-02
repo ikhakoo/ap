@@ -469,6 +469,45 @@ def seed_shit
 		},
 	}
 
+	workpants = {
+		"CARGO WORK PANT.jpeg" => {
+			sku: "PC500",
+			description: "<p>These MOBB Cargo Work Pants are well constructed with 7.5 oz 65/35 Poly-Cotton. They have a heavy-duty brass zipper with top button closure, pleated cargo pockets with flap and velcro closure with 2 front pockets and 2 back pockets. These pants are comfortable and easy to wash. A great value for the working man</p>",
+			colors: ["NavyBlue"],
+			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54"]
+		},
+		"FLAT FRONT WORK PANT.jpeg" => {
+			sku: "P400",
+			description: "<p>These MOBB Flat Front Work Pants  are a great choice for a busy day on the job. Made with 7.5 oz 65/35 poly-cotton they'll keep you comfortable all day long. They’re also easy to care for, just throw them into the machine when you get home for stress-free care. Features brass zipper and top button closure, 2 flat front slant pockets and 2 back pockets</p>",
+			colors: ["NavyBlue", "Spruce"],
+			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"]
+		},
+		"WORK PANT WITH REFLECTIVE TAPE.jpeg" => {
+			sku: "PS400",
+			description: "<p>High visibility MOBB Work Pant with Reflective Tape. Make sure you stay safe while being seen in these pants. 65/35 poly-cotton 7.5 oz pant with brass zipper and button top closure, 2 front slant pockets and 2 back pockets. Also available for women</p>",
+			colors: ["NavyBlue"],
+			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
+		},
+		"100 Percent Cotton Twill Work Pant.jpeg" => {
+			sku: "P401",
+			description: "<p>Look smart and stylish in these classic fit, 100% Cotton Twill Work Pants. Made from breathable cotton, they offer all the comfort with a touch of casual style. Features brass zipper, button closure, 2 front slant pockets and 2 back pockets. Versatile and low-maintenance, these pants are ready for an active day</p>",
+			colors: ["NavyBlue"],
+			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50"]
+		},
+		"LADIES FLAT FRONT WORK PANT.jpeg" => {
+			sku: "P400L",
+			description: "<p>Made especially for ladies, these pants fit well and have a tough material that stands up to any abuse you put them through. Same durable construction as the P400 these 7.5oz 65/35 poly-cotton work pants feature a brass zipper with button closure, 2 flat front slant pockets and 2 back pockets</p>",
+			colors: ["NavyBlue", "Spruce"],
+			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52"]
+		},
+		"LADIES WORK PANT WITH REFLECTIVE TAPE.jpeg" => {
+			sku: "PS400L",
+			description: "<p>Your safety comes first. Be seen in our Ladies Work Pant with Reflective Tape. With all the same features of the mens pant.7.5 oz 65/35 poly-cotton pant with brass zipper and top button closure, 2 front slant pockets and 2 back pockets</p>",
+			colors: ["NavyBlue"],
+			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52"]
+		}
+	}
+
 	workco = {
 		"NOMEX IIIA FLAME RESISTANT COVERALL.jpeg" => {
 			sku: "FR500",
@@ -1352,6 +1391,39 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat13
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+		elsif params = workpants[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat17
 				pro.default_image_file = get_file(filename)
 				pro.save!
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
