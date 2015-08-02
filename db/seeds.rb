@@ -502,8 +502,8 @@ def seed_shit
 			colors: ["Orange", "Spruce"],
 			sizes: ["M", "L", "XL", "2XL", "3XL"]
 		},
-		"T-VEST TRAFFIC VEST.JPEG" => {
-			sku: "T-VEST",
+		"T VEST TRAFFIC VEST.JPEG" => {
+			sku: "TVEST",
 			description: "<li>100% Polyester Hi-Vis Traffic Vest</li>
 			<li>5 point tear-away, Orange mesh with Hi-Vis reflective tape</li>
 			<li>One chest pocket</li>
