@@ -469,6 +469,51 @@ def seed_shit
 		},
 	}
 
+	workshirts = {
+		"LONG SLEEVE BUTTON FRONT WORK SHIRT.jpeg" => {
+			sku: "S300",
+			description: "<p>The MOBB Long Sleeve Button Front Work Shirt is made to last. Its heavyweight 65/35 poly/cotton 5 oz. fabric makes it both comfortable and durable. Features a button front closure with top snap and 2 patch pockets</p>",
+			colors: ["Ceil", "Lagoon", "NavyBlue"],
+			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "6XL"]
+		},
+		"SHORT SLEEVE BUTTON FRONT WORK SHIRT.jpeg" => {
+			sku: "S301",
+			description: "<p>The MOBB Short Sleeve Button Front Work Shirt is stylish and functional. Its heavyweight 65/35 poly/cotton 5 oz. fabric makes it both comfortable and durable. Features a button front closure with top snap and 2 patch pockets</p>",
+			colors: ["Ceil", "Lagoon", "NavyBlue"],
+			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "6XL"]
+		}
+	}
+
+	workvests = {
+		"WORK WEAR SAFETY VEST.jpeg" => {
+			sku: "WVEST",
+			description: "<p>This durable vest provides the high visibility and utility that a busy surveyor will need to get the job done right. Fluorescent polyester makes you visible on site, while 9 pockets, a large back zip pocket, and a surveyor tape dispenser pocket allow you to carry a wide range of tools.</p>
+						<br><br>
+						<li>Fluorescent polyester fabric</li>
+						<li>Fully compliant with CSA Z96-09 Class 2, Level 2</li>
+						<li>Becomes CSA Class 3 in combination with appropriate model arm and leg bands</li>
+						<li>Fully compliant with ANSI/ISEA 107-2004 Class 2, Level 2</li>
+						<li>Reflective Material in 4' WCB/Worksafe/DOT configuration</li>
+						<li>Safety D-ring slot access</li>
+						<li>Survey tape dispenser grommets on lower front pockets</li>
+						<li>Large pack zip pocket across entire back area</li>
+						<li>8 pockets and 1 cell/radio phone sealed pouch</li>
+						<li>Easy care, machine wash and dry</li>",
+			colors: ["Orange", "Spruce"],
+			sizes: ["M", "L", "XL", "2XL", "3XL"]
+		},
+		"T-VEST TRAFFIC VEST.JPEG" => {
+			sku: "T-VEST",
+			description: "<li>100% Polyester Hi-Vis Traffic Vest</li>
+			<li>5 point tear-away, Orange mesh with Hi-Vis reflective tape</li>
+			<li>One chest pocket</li>
+			<br><br>
+			<li>One Size Fits ALL</li>",
+			colors: ["Orange"],
+			sizes: ["1SIZE"]
+		}
+	}
+
 	workpants = {
 		"CARGO WORK PANT.jpeg" => {
 			sku: "PC500",
@@ -1358,6 +1403,72 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat14
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+		elsif params = workshirts[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat18
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+				p pro
+
+				if params[:sizes]
+
+				params[:sizes].each do |size|
+					v = pro.variants.create(
+						:name => "#{pro.name}-#{size}", 
+						:sku => "#{params[:sku]}-#{size}", 
+						:price => pro.price, 
+						:cost_price => pro.cost_price, 
+						:tax_rate => tax_rate, 
+						:weight => pro.weight, 
+						:default => true
+					)
+					v.default_image_file = get_file(filename)
+					v.save!
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+				end
+			end
+				print params[:sku] 
+			end
+
+		elsif params = workvests[filename] 
+
+				params[:colors].each do |color|
+
+				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro.product_category = cat19
 				pro.default_image_file = get_file(filename)
 				pro.save!
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
