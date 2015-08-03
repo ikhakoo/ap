@@ -21,8 +21,7 @@
             
         <div class="single-sidebar">
           <h2 style="color:#2B4B6F"class="sidebar-title">Products</h2>
-          <% @products.each do |category, products| %>
-              <% products.sample(1).each do |product| %>
+          <% @products.sample(6).each do |product| %>
                 <div class="thubmnail-recent">
                   <img src="<%= product.default_image.path %>" class="recent-thumb" alt="">
                   <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
@@ -32,7 +31,6 @@
                   </div>                             
                 </div>
               <% end %>
-          <% end %>
         </div>
       </div>
         
@@ -144,9 +142,7 @@
               <div class="related-products-wrapper">
                 <h2 style="color:#2B4B6F" class="related-products-title">Related Products</h2><br><br>
                 <div class="related-products-carousel col-lg-12">
-                  <% @products.each do |category, products| %>
-                    <% if category.id == @product.product_category_id %>
-                      <% products.sample(12).each do |product| %>
+                  <% @relatedproducts.sample(12).each do |product| %>
                         <div class="single-product">
                           <div class="product-f-image">
                             <img src="<%= product.default_image.path %>" style="height:335px;width:212px;" alt="">
@@ -166,8 +162,6 @@
                             <del><%= number_to_currency (product.price*1.13).to_f %></del>
                           </div> 
                         </div>  
-                      <% end %>
-                    <% end %>
                   <% end %>                                  
                 </div>
               </div>

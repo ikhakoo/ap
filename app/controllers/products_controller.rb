@@ -98,8 +98,10 @@ class ProductsController < ApplicationController
 
   def show
     @product  = Shoppe::Product.find_by_permalink(params[:permalink])
-    @products = Shoppe::Product.root.ordered.includes(:product_category, :variants)
-    @products = @products.group_by(&:product_category)
+    @p1 = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: rand(1...21))
+    @p2 = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: rand(1...21))
+    @products = @p1 + @p2
+    @relatedproducts = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: @product.product_category_id)
     @stylecharts = Stylechart.all
 
     @sameprods = Shoppe::Product.where("name like ?", "#{@product.name}%")
