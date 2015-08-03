@@ -99,8 +99,8 @@
                               <h4 class="modal-title" id="myModalLabel">Sizing Chart</h4>
                             </div>
                             <div class="modal-body">
-                              
-                              <%= image_tag s.image_url.to_s, style: "margin-left:80px;width:auto;" if s.image_url.present? %>
+
+                              <%= image_tag(s.image_url.to_s) %>
                               
                             </div>
                           </div>
