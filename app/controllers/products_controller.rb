@@ -105,8 +105,13 @@ class ProductsController < ApplicationController
     @stylecharts = Stylechart.all
 
     @sameprods = Shoppe::Product.where("name like ?", "#{@product.name}%")
+    @allowedsizes = ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "6XL"]
     @sizes = []
-    @sameprods.each do |a| @sizes << a.name.split("-").last end
+    @sameprods.each do |a| 
+      if @allowedsizes.include?(a.name.split("-").last) 
+        @sizes << a.name.split("-").last 
+      end 
+    end
 
     @attributes = @product.product_attributes.public.to_a
 

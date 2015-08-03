@@ -65,7 +65,7 @@
 
                     <div class="product-inner-category">
                       <p>
-                        <% if @colors_array.uniq != ["1STYLE"] %>
+                        <% if @colors_array.uniq != ["1STYLE"] || ["CLEARANCE"] %>
                         Color: 
                         <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]) %>
                         <% end %>
