@@ -77,6 +77,7 @@ def seed_shit
 			description: "<p>The newest addition to the MOBB line, this unisex scrub top is all about classic 
 			simplicity. Featuring a standard v-neck with one chest pocket and one shoulder pen pocket. This top 
 			mates perfectly with 608P and is a favorite among school programs.</p>",
+			price: "18.49",
 			colors: ["Black", "Cappuccino", "Ceil", 
 								"Lagoon", "PostmanBlue", "SkyBlue", 
 								"Burgundy", "Caribbean", "Charcoal", 
@@ -88,6 +89,7 @@ def seed_shit
 		"Zipper Front Ladies Work Top.jpeg" => {
 			sku: "202T",
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
+			price: "19.99",
 			colors: ["Black", "White", "NavyBlue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
 			chart: "202T-SC.png"
@@ -95,6 +97,7 @@ def seed_shit
 		"Flexi V Neck Scrub Top.jpeg" => {
 			sku: "324T",
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
+			price: "19.99",
 			colors: ["2toneWhite", "Black", "Brown", "Charcoal", "DejaVu", "Eggplant", "HeartTies", "Khaki",
 							 "LimeGreen", "OliveGreen", "Papillon", "PostmanBlue", "Raspberry", "RoyalBlue", "StringAlong",
 							 "ZenStem", "Aqua", "BlueCheerios", "Cappuccino", "DeepOrchid", "DustyRose", "FireWorks", "Indigo",
@@ -109,6 +112,7 @@ def seed_shit
 			and ultimate movement.The Ultra Flexi v-neck top also has two lower pockets and one shoulder pen pocket.</p>",
 			colors: ["Aqua", "Charcoal", "NavyBlue", "Black", "DeepOrchid", "SkyBlue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "22.50",
 			chart: "524T-SC.png"
 		},
 		"3 Pocket V Neck Scrub Top.jpeg" => {
@@ -118,6 +122,7 @@ def seed_shit
 								"RoyalBlue", "Spruce", "Black", "Caribbean", "Charcoal", "Khaki", 
 								"NavyBlue", "Rasberry", "SkyBlue", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL"],
+			price: "22.50",
 			chart: "308T-SC.png"
 		},
 		"Unisex V Neck Scrub Top.jpeg" => {
@@ -128,6 +133,7 @@ def seed_shit
 			colors: ["Aqua", "Burgundy", "Caribbean", "Charcoal", "Khaki", "NavyBlue", "PostmanBlue", "RoyalBlue", 
 								"SkyBlue", "Teal", "Black", "Cappuccino", "Ceil", "Eggplant", "Lagoon", "OliveGreen", "Red",
 								"SeaGreen", "Spruce", "White"],
+			price: "18.99",
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
 			chart: "310T-SC.png"
 		},
@@ -147,6 +153,7 @@ def seed_shit
 			colors: ["Indigo/Black", "Eggplant/Black", "Rasberry/Black", "Aqua/Black", "Charcoal/Black", "NavyBlue/Black",
 								"White/White", "PostmanBlue/Black"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "21.75",
 			chart: "424T-SC.png"
 		},
 		"Mens Two Tone Scrub Top.jpeg" => {
@@ -155,6 +162,7 @@ def seed_shit
 			This two-tone scrub top has one chest pocket and one shoulder pen pocket. Also available as a set with the 409P</p>",
 			colors: ["Burgundy/Navy", "Khaki/Black", "Charcoal/Black", "PostmanBlue/Navy"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
+			price: "21.49",
 			chart: "409T-SC.png"
 		},
 		"Empire Tie Back Scrub Top.jpeg" => {
@@ -162,6 +170,7 @@ def seed_shit
 			description: "<p>This ultra feminine scrub top features an empire waist and ties at the back. Keeping with tradition this top has a v-neck collar and two front pockets</p>",
 			colors: ["Navy", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "21.99",
 			chart: "420T-SC.png"
 		},
 		"Ladies Zipper Detail Scrub Top.jpeg" => {
@@ -169,6 +178,7 @@ def seed_shit
 			description: "<p>Fun, funky and fitted. This sporty scrub top features reflective trim, asymmetrical zipper detail, two lower pockets, one chest pocket and one shoulder pen pocket</p>",
 			colors: ["NavyBlue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
+			price: "18.99",
 			chart: "530T-SC.png"
 		},
 		"V Neck Print Scrub Top.jpeg" => {
@@ -178,6 +188,7 @@ def seed_shit
 								"Techno", "DizzyVines", "FlorescentButterfly", "GroovyHoops", "Papillon", "PrettyInPetals",
 								"StringAlong"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
+			price: "19.99",
 			chart: "320T-SC.png"
 		},
 		"Criss Cross Scrub Top.jpeg" => {
@@ -189,6 +200,7 @@ def seed_shit
 								"Indigo/Charcoal", "NavyBlue/SkyBlue", "PrettyInPetals/Charcoal", "SkyBlue/Navy", 
 								"StringAlong/Eggplant", "White/White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "17.95",
 			chart: "323T-SC.png"
 		},
 		"Button Front Ladies Work Top.jpeg" => {
@@ -196,6 +208,7 @@ def seed_shit
 			description: "<p>Button up in this ladies work top featuring 3 patch pockets, button front closure and a collar</p>",
 			colors: ["Black", "White", "NavyBlue"],
 			sizes: ["S", "M", "L", "XL", "2XL"],
+			price: "19.99",
 			chart: "201T-SC.png"
 		},
 		"Ladies Long Sleeve Tee.jpeg" => {
@@ -203,6 +216,7 @@ def seed_shit
 			description: "<p>100% cotton, 100% comfort. This ladies long sleeve tee is made with pre-shrunk cotton and is perfect worn on it's own or layered under a scrub top. The top stitched collar gives it the strength and durability MOBB is known for</p>",
 			colors: ["Black", "White", "NavyBlue"],
 			sizes: ["S", "M", "L", "XL", "2XL"],
+			price: "19.99",
 			chart: "LT101-SC.png"
 		}
 	}
@@ -215,6 +229,7 @@ def seed_shit
 <p><strong>Size 6XL only available in Navy</p></strong>",
 			colors: ["Aqua","Burgundy","Caribbean","Charcoal","Khaki","LimeGreen","OliveGreen","RoyalBlue","Spruce",
 								"White","Black","Cappuccino","Ceil","Eggplant","Lagoon","NavyBlue","PostmanBlue","SkyBlue","Teal"],
+			price: "35.75",
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
 		},
 		"Unisex 5 Pocket Drawstring Scrub Set.jpeg" => {
@@ -222,24 +237,28 @@ def seed_shit
 			description: "<p>MOBB's newest style, this scrub set replaces the 306/306. A classic v-neck scrub top with one chest pocket and one shoulder pen pocket and a simple five pocket drawstring pant. This set is ideal for school programs.</p>",
 			colors: ["Black","Cappuccino","Ceil","Lagoon","PostmanBlue","SkyBlue","Burgundy","Caribbean","Charcoal",
 								"NavyBlue","RoyalBlue","White"],
+			price: "34.99",
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
 		"Reversible O R Drawstring Scrub Set.jpeg" => {
 			sku: "306TA/306PA",
 			description: "<p>Available for special programs, this scrub set was designed to meet the needs of hospital O.R. staff. A unisex, reversible, drawstring scrub set featuring a color code size indicator on the chest pocket and a simple drawstring scrub pant with one back pocket.</p>",
 			colors: ["Lagoon"],
+			price: "34.99",
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"]
 		},
 		"Mens Two Tone Scrub Set with 6 Pocket Scrub Pants.jpeg" => {
 			sku: "409/409",
 			description: "<p>Becoming one of MOBB's best sellers. This Men's two tone v-neck has one chest pocket and one shoulder pen pocket and is available in four color-ways. The six pocket cargo scrub pant has a built in belt buckle and is available in black and navy.</p>",
 			colors: ["Burgundy/Navy", "Khaki/Black", "Charcoal/Black", "PostmanBlue/Navy"],
+			price: "48.99",
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
 		"Childrens Scrub Set.jpeg" => {
 			sku: "CH400",
 			description: "<p>Mobb's High Quality Children's Scrub Set</p>",
 			colors: ["Lagoon"],
+			price: "18.99",
 			sizes: ["2Y","4Y","6Y","8Y"]
 		}
 	}
@@ -250,6 +269,7 @@ def seed_shit
 			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.<p>",
 			colors: ["PostmanBlue", "SkyBlue", "Black", "Navy", "Charcoal"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "23.99",
 			chart: "416P-SC.png"
 		},
 		"COMFORT RISE DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
@@ -260,6 +280,7 @@ def seed_shit
 										Available in Black, Navy & Charcoal only</p>",
 			colors: ["Eggplant", "Navy", "PostmanBlue", "Charcoal"],
 			sizes: ["XS", "S", "M", "L", "XL"],
+			price: "24.99",
 			chart: "412P-SC.png"
 		},
 		"UNISEX DRAWSTRING SCRUB PANT WITH 5 POCKETS.jpeg" => {
@@ -267,6 +288,7 @@ def seed_shit
 			description: "<p>The newest addition to the MOBB line, this pant is all about classic simplicity. Features a standard drawstring and five pockets. This pant mates perfectly with the 606T and is a favorite among school programs.<p>",
 			colors: ["Black", "SkyBlue", "Burgundy", "Caribbean", "Charcoal", "Ceil", "Lagoon", "Navy", "PostmanBlue", "RoyalBlue", "White", "Cappuccino"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			price: "19.99",
 			chart: "608P-SC.png"
 		},
 		"BOOT CUT FLIP FLAP SCRUB PANT.jpeg" => {
@@ -274,6 +296,7 @@ def seed_shit
 			description: "<p>Fabulous fit and classic style. This five pocket boot cut pant features our signature MOBB logo waistband that can be flipped down for a lower rise. This is the pant that everyone's talking about.<p>",
 			colors: ["Aqua", "Black", "Burgundy", "Caribbean", "Charcoal", "Ceil", "DeepOrchid", "Eggplant", "Indigo", "Khaki", "Lagoon", "Navy", "PostmanBlue", "Raspberry", "RoyalBlue", "SkyBlue", "Spruce", "White", "Cappuccino", "LimeGreen", "PinkSorbet"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "21.99",
 			chart: "312P-SC.png"
 		},
 		"SIX POCKET CARGO PANT.jpeg" => {
@@ -281,6 +304,7 @@ def seed_shit
 			description: "<p>Strong and versatile this pant is all business. Six pockets including two expandable side cargo pockets and a built in belt buckle.<p>",
 			colors: ["Navy", "Black"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
+			price: "28.99",
 			chart: "409P-SC.png"
 		},
 		"BELL BOTTOM SCRUB PANT.jpeg" => {
@@ -288,6 +312,7 @@ def seed_shit
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.<p>",
 			colors: ["Navy", "Black", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "18.99",
 			chart: "302P-SC.png"
 		},
 		"UNISEX DRAWSTRING ELASTIC 5 POCKET SCRUB PANT.jpeg" => {
@@ -295,6 +320,7 @@ def seed_shit
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.<p>",
 			colors: ["Black", "Aqua", "Eggplant", "Burgundy", "Caribbean", "Charcoal", "Khaki", "Lagoon", "Navy", "OliveGreen", "PostmanBlue", "RoyalBlue", "SkyBlue", "Teal", "White", "Ceil", "Cappuccino"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+			price: "21.99",
 			chart: "307P-SC.png"
 		},
 		"TALL DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
@@ -302,6 +328,7 @@ def seed_shit
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.<p>",
 			colors: ["Black", "Caribbean", "Charcoal", "Navy", "PostmanBlue", "RoyalBlue", "Spruce"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+			price: "21.99",
 			chart: "309PTALL-SC.png"
 		},
 		"LOW RISE LACE UP FLARE PANT.jpeg" => {
@@ -309,6 +336,7 @@ def seed_shit
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.<p>",
 			colors: ["Charcoal/Black", "Navy/Red", "Black/DustyRose"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "22.99",
 			chart: "316P-SC.png"
 		},
 		"SCRUB SHORTS.jpeg" => {
@@ -316,6 +344,7 @@ def seed_shit
 			description: "<p>THE MOBB SCRUB SHORT IS EASY AND COMFORTABLE. PERFECT FOR WARM WORK ENVIRONMENTS. FEATURES AN ELASTIC WAISTBAND, A CONSERVATIVE KNEE LENGTH AND TWO SIDE POCKETS.<p>",
 			colors: ["Black", "Navy", "White"],
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+			price: "19.99",
 			chart: "304P-SC.png"
 		},
 		"FLEX WAIST SCRUB PANT TALL 36 INCH.jpeg" => {
@@ -323,6 +352,7 @@ def seed_shit
 			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.<p>",
 			colors: ["Black", "NavyBlue", "Charcoal", "PostmanBlue", "SkyBlue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "24.99",
 			chart: "416PT36IN-SC.png"
 		},
 		"FLEXI WAIST PETITE SCRUB PANT.jpeg" => {
@@ -330,6 +360,7 @@ def seed_shit
 			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.<p>",
 			colors: ["Black", "NavyBlue", "Charcoal"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "23.99",
 			chart: "416PT28IN-SC.png"
 		},
 		"COMFORT RISE DRAWSTRING ELASTIC PETITE SCRUB PANT.jpeg" => {
@@ -337,6 +368,7 @@ def seed_shit
 			description: "<p>This pant is the perfect combination of function and flow. The waistband is both elastic and drawstring making it comfortable at any rise. It has multiple pockets including a pocket for scissors and features multi-needle stitching for durability.<p>",
 			colors: ["Black", "NavyBlue"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "24.99",
 			chart: "412PT28IN-SC.png"
 		}
 	}
@@ -349,6 +381,7 @@ def seed_shit
 			the right side is enclosed with inner sectional pockets.The top is finished off with two small side 
 			slits and a convenient shoulder pen pocket.</p><p>Stretch-Flex Blend: 65% Poly/32% Rayon/3% Spandex</p>",
 			colors: ["Black", "RoyalBlue", "Charcoal", "White"],
+			price: "29.99",
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
 		"The Pearl.jpeg" => {
@@ -358,6 +391,7 @@ def seed_shit
 			outside with a utility D-ring and an inner smart phone pocket.</p><p>*Stretch-Flex Blend: 
 			65% Poly/32% Rayon/3% Spandex</p>",
 		  colors: ["Black", "RoyalBlue", "Charcoal", "White"],
+		  price: "29.99",
 		  sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
 		"THE CARMEN.jpeg" => {
@@ -365,6 +399,7 @@ def seed_shit
 			description: "<p>Made for comfort, this straight leg pant is equipped with two front pockets, one back pocket and a cargo pocket with a utility D-ring. The combination drawstring/ elastic waistband will ensure ultimate fit and comfort. The inner waistband features MOBB’s signature logo.</p>",
 			colors: ["Black", "Charcoal", "RoyalBlue", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "42.99",
 			chart: "P3011-SC.png"
 		}
 	}
@@ -375,13 +410,15 @@ def seed_shit
 			description: "<p>A clean and classic straight leg pant featuring front-to-back, wrap-around cargo pockets, two slant pockets and a combination drawstring elastic waist.</p>",
 			colors: ["Aubergine", "SoftMint", "Black", "Charcoal", "DeepOrchid", "NavyBlue", "White"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "28.99",
 			chart: "P1011-SC.png"
 		},
 		"THE MESSENGER.jpeg" => {
-			sku: "P1011",
+			sku: "P1013",
 			description: "<p>A clean and classic straight leg pant featuring front-to-back, wrap-around cargo pockets, two slant pockets and a combination drawstring elastic waist.</p>",
 			colors: ["Black", "Charcoal", "NavyBlue"],
 			sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+			price: "22.99",
 			chart: "P1011-SC.png"
 		},
 		"The Coco.jpeg" => {
@@ -390,6 +427,7 @@ def seed_shit
 			two hidden pockets and custom tailoring for an exceptional fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex<p>",
 			colors: ["Aubergine", "White", "SoftMint"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "18.99",
 			chart: "T1018-SC.png"
 		},
 		"The Mandy.jpeg" => {
@@ -398,6 +436,7 @@ def seed_shit
 			beautiful tailoring through the back for a custom fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
 			colors: ["Aubergine", "White", "SoftMint"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "18.99",
 			chart: "T1010-SC.png"
 		},
 		"The Roxy.jpeg" => {
@@ -406,6 +445,7 @@ def seed_shit
 			chest darts and two hidden pockets.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
 			colors: ["Aubergine", "White", "SoftMint"],
 			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL"],
+			price: "18.99",
 			chart: "T1016-SC.png"
 		},
 	}
@@ -1302,8 +1342,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 	default_params = { 
 		:short_description => 'test', 
-		:weight => 1.119, 
-		:price => 24.99, 
+		:weight => 1.119,  
 		:cost_price => 8.99, 
 		:tax_rate => tax_rate
 	}
@@ -1319,7 +1358,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price:, params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat1
 				pro.default_image_file = get_file(filename)
 				pro.save!
