@@ -536,6 +536,7 @@ def seed_shit
 			sku: "SC500",
 			description: "<p>A beautiful surgeon cap built with comfort in mind. Traditional 'tie back' style featuring a forehead moisture band. Available in assorted prints</p>",
 			colors: ["1STYLE"],
+			price: "10.99",
 			sizes: ["1SIZE"]
 		},
 		"BOUFFANT STYLE SURGEON CAP.JPEG" => {
@@ -543,18 +544,21 @@ def seed_shit
 			description: "<p>This hat is styled with a beautiful bouffant and is available is assorted prints and solid colors.
 										Elastic back ensures a perfect fit for every head</p>",
 			colors: ["Ceil", "FlowerPower"],
+			price: "12.99",
 			sizes: ["1SIZE"]
 		},
 		"MOBB UNISEX SURGEONS CAP.jpeg" => {
 			sku: "SC440",
 			description: "<p>This hat is the traditional 'tie back' style surgeon's cap. Available in assorted prints and solid colours.</p>",
 			colors: ["Blue", "Pink", "Purple", "Red", "Grey", "HeartTies"],
+			price: "6.99",
 			sizes: ["1SIZE"]
 		},
 		"TRADITIONAL NURSE CAP.jpeg" => {
 			sku: "NC",
 			description: "<p>Classic white nurse cap, the perfect compliment to all traditional nurse uniforms</p>",
 			colors: ["White"],
+			price: "12.99",
 			sizes: ["1SIZE"] 
 		}
 	}
@@ -570,6 +574,7 @@ def seed_shit
 			sku: "PL",
 			description: "<p>The MOBB Penlight provides a bright, quality light, a pupil gauge and is an indispensable tool for diagnosis</p>",
 			colors: ["1STYLE"],
+			price: "4.99",
 			sizes: ["1SIZE"]
 		},
 		"PILL CUTTER CRUSHER DUO.jpeg" => {
@@ -771,6 +776,7 @@ def seed_shit
 			sku: "CC290",
 			description: "<p>Fresh and new, zip up in MOBB kitchen fashion with our 7.5oz poly/cotton twill chef coat. Features a full zip closure, stand collar, thermo pocket on left sleeve, with vented cuff and underarms.</p>",
 			colors: ["Black", "White"],
+			price: "32.99",
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
 			chart: "CC290-SC.png"
 		},
@@ -779,12 +785,14 @@ def seed_shit
 			description: "<p>MOBB kitchen classics. Professional and durable, our chef coats are made to last. Lightweight, breathable designs and a great selection of colors to choose from. 7.5oz poly cotton twill featuring a stand collar, vented cuff and underarms and a thermo pocket on left sleeve.</p>",
 			colors: ["Black", "White", "BlackWhite", "WhiteHoundsTooth", "RedBlack", "BurgundyBlack"],
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			price: "26.99",
 			chart: "CC250-SC.png"
 		},
 		"CHEF COAT.jpeg" => {
 			sku: "CC260",
 			description: "<p>100% spun-poly 7.5oz. Stand collar, vented cuff, vented underarms, thermo pocket on left sleeve</p>",
 			colors: ["Black", "White", "BlackWhite"],
+			price: "26.99",
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"]
 		},
 		"MANDARIN STYLE CHEF COAT.jpeg" => {
@@ -792,6 +800,7 @@ def seed_shit
 			description: "<p>MOBB kitchen classics. Professional and durable, our chef coats are made to last. Lightweight, breathable designs and a great selection of colors to choose from. 7.5oz poly cotton twill featuring a stand collar, vented cuff and underarms and a thermo pocket on left sleeve.</p>",
 			colors: ["BlackWhite", "WhiteBlack"],
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			price: "28.99",
 			chart: "CC270-SC.png"
 		}
 	}
@@ -802,12 +811,14 @@ def seed_shit
 			description: "<p>Combine a classic dress pant with the comfort of our MOBB chef pant and you get this flat-front chef pant. Featuring a plain waistband with belt loops and a full brass zipper fly with button closure. Tailored for a modern, professional look. 2 front slant pockets and 2 back patch pockets. 7.5oz poly/cotton</p>",
 			colors: ["HoundsTooth", "Black", "White"],
 			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46"],
+			price: "24.99",
 			chart: "34P-SC.png"
 		},
 		"DRAWSTRING ELASTIC CHEF PANT.jpeg" => {
 			sku: "307P",
 			description: "<p>This chef pant is designed to be comfortable and functional while providing complete coverage when bending and reaching. 5oz poly/cotton blend pant featuring a combination drawstring/elastic waistband with 2 side pockets, 2 cargo pockets and 1 back pocket</p>",
 			colors: ["Black"],
+			price: "21.99",
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
 			chart: "307P-SC.png"
 		},
@@ -815,6 +826,7 @@ def seed_shit
 			sku: "303P",
 			description: "<p>The MOBB Woven Chef Pant features a relaxed fit with ample room in the hip and thighs and a slightly tapered ankle. The 1” elastic waistband with built in elastisized drawstring falls just above your natural waistline and provides comfort and security for all body types.</p>",
 			colors: ["HoundsTooth"],
+			price: "21.99",
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
 		"UNISEX BAGGY CHEF PANT.jpeg" => {
@@ -822,6 +834,7 @@ def seed_shit
 			description: "<p>The MOBB Baggy Chef Pant is the ultimate in culinary coolness. With its unisex, elastic waist style our chef pants continue to be the choice for chefs today. Features a 2” elastisized drawstring waistband for maximum coverage and comfort. A slightly tapered ankle keeps the pants from dragging on the floor. 2 front slant pockets and 1 back patch pocket</p>",
 			colors: ["MrBOB", "HoundsTooth", "Gangster", "Black"],
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			price: "28.99",
 			chart: "301P-SC.png"
 		}
 	}
@@ -832,6 +845,7 @@ def seed_shit
 			description: "<p>The MOBB Button Down Professional Kitchen features short-sleeves, one breast patch pocket and a pointed collar to round out the look. The lightweight 5oz. 65/35 poly/cotton poplin is wrinkle-resistant</p>",
 			colors: ["White"],
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			price: "12.99",
 			chart: "204T-SC.png"
 		},
 		"MANDARIN COLLAR PROFESSIONAL KITCHEN TOP.jpeg" => {
@@ -839,18 +853,21 @@ def seed_shit
 			description: "<p>The MOBB Mandarin Collar Professional Kitchen Top offers a clean, polished look. Featuring a mid-weight cotton twill keeping you cool and comfortable, 1 left chest pocket and snap button closure</p>",
 			colors: ["White"],
 			sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+			price: "12.99",
 			chart: "205T-SC.png"
 		},
 		"LONG SLEEVE PROFESSIONAL KITCHEN TOP.jpeg" => {
 			sku: "S302",
 			description: "<p>The MOBB Long Sleeve Professional Kitchen Top offers classic no pocket styling. This durable yet lightweight 5oz. poly-cotton poplin blend retains its crisp professional look even after multiple uses. Featuring a snap front closure with a roomy, yet flattering fit</p>",
 			colors: ["White"],
+			price: "24.99",
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
 		"SHORT SLEEVE PROFESSIONAL KITCHEN TOP.jpeg" => {
 			sku: "S303",
 			description: "<p>The MOBB Short Sleeve Professional Kitchen Top offers classic no pocket styling. This durable yet lightweight 5oz. poly-cotton poplin blend retains its crisp professional look even after multiple uses. Featuring a snap front closure with a roomy, yet flattering fit</p>",
 			colors: ["White"],
+			price: "24.99",
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		}
 	}
@@ -860,30 +877,35 @@ def seed_shit
 			sku: "CF451",
 			description: "<p>The MOBB Traditional Chef Hat is a symbol of authority and knowledge. It is made with soft, comfortable 65/35 poly-cotton. Its wide band and generous pleats make it a stand out headwear option. Adjustable velcro closure in the back offers a fully adjustable one size fit</p>",
 			colors: ["White", "Black"],
+			price: "9.99",
 			sizes: ["1SIZE"]
 		},
 		"PILLBOX CHEF HAT.jpeg" => {
 			sku: "CF460",
 			description: "<p>The clean, modern look of the MOBB Chef Hat has boosted it to the top of the best seller list. This version features a solid top pillbox style. Adjustable velcro sizing provides a perfect one size fit</p>",
 			colors: ["Black", "Red"],
+			price: "8.99",
 			sizes: ["1SIZE"]
 		},
 		"MESH TOP CHEF HAT.jpeg" => {
 			sku: "CF460M",
 			description: "<p>The clean, modern look of the MOBB Mesh Top Chef Hat has boosted it to the top of the best seller list. This version features a mesh top pillbox style. Adjustable velcro sizing provides a perfect one size fit</p>",
 			colors: ["Black", "Red"],
+			price: "8.99",
 			sizes: ["1SIZE"]
 		},
 		"CHEF HAT.jpeg" => {
 			sku: "CF450",
 			description: "<p>The clean, modern look of the MOBB Chef Hat has boosted it to the top of the best seller list. This version features a solid top pillbox style. Adjustable velcro sizing provides a perfect one size fit</p>",
 			colors: ["Black", "White"],
+			price: "8.99",
 			sizes: ["1SIZE"]
 		},
 		"NECKERCHIEF.jpeg" => {
 			sku: "N100",
 			description: "<p>The MOBB Neckerchief helps keep the sweat off of chefs' necks while in the kitchen, in turn keeping them cooler</p>",
 			colors: ["Black", "White"],
+			price: "7.99",
 			sizes: ["1SIZE"]
 		}
 	}
@@ -893,6 +915,7 @@ def seed_shit
 			sku: "VE340",
 			description: "<p>100% polyester vest, black satin lined with button front closure. The Waiter/Waitress is manageable and easy to care for while always looking professional and sharp for all front of house positions</p>",
 			colors: ["Black"],
+			price: "19.99",
 			sizes: ["30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
 		}
 	}
@@ -903,36 +926,42 @@ def seed_shit
 			description: "<p>The MOBB Bistro apron is made with durable polyester/cotton twill for stain and wrinkle resistance.
 										This apron has 3 pockets and falls just below the knees making it the perfect fit for front or back of the house.</p>",
 			colors: ["Bob", "Gangster"],
+			price: "24.99",
 			sizes: ["1SIZE"]
 		},
 		"GANGSTER STRIPE V NECK APRON.jpeg" => {
 			sku: "AP389",
 			description: "<p>The MOBB Three-Pocket v-neck apron is made with durable polyester/cotton twill for stain and wrinkle resistance. This apron falls above the knees and has an adjustable velcro neck closure.</p>",
 			colors: ["Gangster"],
+			price: "16.99",
 			sizes: ["1SIZE"]
 		},
 		"3 POCKET BLACK WAIST APRON.jpeg" => {
 			sku: "AP381",
 			description: "<p>The MOBB Waist Apron is made with durable polyester/cotton twill for stain and wrinkle resistance. It features 3 pockets for all of your front of the house tools. Perfect for servers.</p>",
 			colors: ["Black"],
+			price: "6.99",
 			sizes: ["1SIZE"]
 		},
 		"WAIST APRON NO POCKETS.jpeg" => {
 			sku: "AP387",
 			description: "<p>The MOBB basic apron is made with durable polyester/cotton twill for stain and wrinkle resistance. It features a plain front with no pockets</p>",
 			colors: ["Black", "White"],
+			price: "6.99",
 			sizes: ["1SIZE"]
 		},
 		"4 WAY CHEF APRON.jpeg" => {
 			sku: "AP388",
 			description: "<p>The MOBB 4-Way Chef Apron is the ultimate in utility. This amazing cooking apron offers a fresh start four times with its front-to-back and inside-to-out reversibility. The ties are securely tacked for comfort and durability. No pockets</p>",
 			colors: ["Black", "White"],
+			price: "9.99",
 			sizes: ["1SIZE"]
 		},
 		"COIN APRON.jpeg" => {
 			sku: "AP394",
 			description: "<p>The MOBB Coin apron is made with durable polyester/cotton twill for stain and wrinkle resistance. It features 4 large pockets, 2 pen slots and an adjustable plastic buckle on the waistbandand</p>",
 			colors: ["Black"],
+			price: "14.99",
 			sizes: ["1SIZE"]
 		},
 		"BIB APRON.jpeg" => {
@@ -941,6 +970,7 @@ def seed_shit
 This cooking apron is generously cut for full coverage on the both bib and bottom and features 2 pockets and adjustable neck.</p>",
 			colors: ["Black", "Burgundy", "NavyBlue", "Red", "RoyalBlue", "Spruce"],
 			sizes: ["1SIZE"],
+			price: "11.99",
 			chart: "AP385-SC.png"
 		},
 		"FULL LENGTH APRON.jpeg" => {
@@ -948,6 +978,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>The MOBB Full-Length Apron features extra wide ties and adjustable neck loop designed for all day comfort. Its 7.5 oz 65/35 polyester/cotton is soft and breathable, but stills repels stains and wrinkles</p>",
 			colors: ["Black", "White"],
 			sizes: ["1SIZE"],
+			price: "8.99",
 			chart: "AP380-SC.png"
 		},
 		"LONG WAIST BISTRO APRON.jpeg" => {
@@ -955,6 +986,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>The MOBB Long-Waist Bistro apron is made with durable polyester/cotton twill for stain and wrinkle resistance. This apron falls just below the knees and has 2 pockets, making it the perfect for the front or the back of the house</p>",
 			colors: ["Black", "White"],
 			sizes: ["1SIZE"],
+			price: "7.99",
 			chart: "AP383-SC.png"
 		},
 		"COBBLER APRON.jpeg" => {
@@ -962,6 +994,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>The MOBB Cobbler Apron is durable, affordable, and totally professional looking. In addition to outfitting waitstaff and kitchen staff, a cobbler apron is also ideal for housekeeping, maintenance, and stadium personnel</p>",
 			colors: ["Black", "Burgundy", "NavyBlue", "Red", "RoyalBlue", "Spruce"],
 			sizes: ["1SIZE"],
+			price: "9.99",
 			chart: "AP383-SC.png"
 		}
 	}
@@ -1358,7 +1391,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price:, params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat1
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1399,7 +1432,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat2
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1432,7 +1465,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-CLEARANCE-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-CLEARANCE-#{color}"))
 				pro.product_category = cat22
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1465,7 +1498,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat7
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1498,7 +1531,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat15
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1531,7 +1564,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat16
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1564,7 +1597,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat14
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1597,7 +1630,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat18
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1630,7 +1663,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat19
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1663,7 +1696,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat13
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1696,7 +1729,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat5
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1729,7 +1762,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat6
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1762,7 +1795,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat17
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1795,7 +1828,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat3
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1836,7 +1869,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat12
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1877,7 +1910,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat10
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1918,7 +1951,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat8
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1959,7 +1992,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat11
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -2000,7 +2033,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat9
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -2041,7 +2074,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat20
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -2082,7 +2115,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat21
 				pro.default_image_file = get_file(filename)
 				pro.save!
