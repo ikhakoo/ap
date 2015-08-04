@@ -33,9 +33,9 @@
 
     <div class="actions">
       <div class="ui buttons">
-        <%= f.submit "Log in", :class => "ui button", :style => "background-color:#1abc9c;color:white;" %>
+        <%= f.submit "Log in", :class => "ui button", :style => "background-color:#2B4B6F;color:white;" %>
         <div class="or" data-text="or"></div>
-        <button class="ui positive button"><a href="<%= new_client_registration_path %>" style="color:white;">Sign Up</a></button>
+        <%= link_to "Sign Up", new_client_registration_path, :class => "ui button", :style => "background-color:#719ac8;color:white;" %>     
       </div>
     </div>
   <% end %>
