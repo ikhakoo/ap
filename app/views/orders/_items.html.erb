@@ -100,7 +100,7 @@
 
                 <tr class="shipping">
                   <th>Tax (HST 13%)</th>
-                  <td><%= number_to_currency order.total * 1.13 - order.total %></td>
+                  <td><%= number_to_currency order.total-(order.total/1.13) %></td>
                 </tr>
 
                 <tr class="order-total">
