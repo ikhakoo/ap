@@ -9,37 +9,36 @@
     </div>
   </div>
 </div> <!-- End Page title area -->
-<div class="col-md-16" style="text-align:center;">
-  
-
+<div class="col-md-16" style="text-align:center;"> 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
-      
-      <%= f.email_field :email, autofocus: true, :class => "ui icon input", :placeholder => "E-mail" %>
-
+      <%= f.label :email, :style => "font-size: 20px;"%><br>
+      <%= f.email_field :email, autofocus: true, :class => "ui icon input", :placeholder => "Email goes here" %>
+      <br>
     </div>
 
     <div class="field">
-     
-      <%= f.password_field :password, autocomplete: "off", :placeholder => "Password" %>
+      <%= f.label :password, :style => "font-size: 20px;" %><br>
+      <%= f.password_field :password, autocomplete: "off", :placeholder => "Password goes here" %>
+      <br>
     </div>
 
     <% if devise_mapping.rememberable? -%>
       <div class="field">
         <%= f.check_box :remember_me %>
-        <%= f.label :remember_me %>
+        <%= f.label :remember_me , :style => "font-size: 20px;"%>
       </div>
-    <% end -%>
+    <% end %>
 
     <div class="actions">
       <div class="ui buttons">
-        <%= f.submit "Log in", :class => "ui button", :style => "background-color:#2B4B6F;color:white;" %>
-        <div class="or" data-text="or"></div>
-        <%= link_to "Sign Up", new_client_registration_path, :class => "ui button", :style => "background-color:#719ac8;color:white;" %>     
+        <%= f.submit "Log in", :class => "ui button button-hover", :style => "background-color:#2B4B6F;color:white;font-size:16px;" %>
+        <!-- <div class="or font-size" data-text="or"></div> -->
+        <%= link_to "Sign Up", new_client_registration_path, :class => "ui button button-hover", :style => "background-color:#719ac8;color:white;font-size:16px;" %>     
       </div>
     </div>
   <% end %>
-
+<br>
   <%= render "devise/shared/links" %>
 </div>
 
