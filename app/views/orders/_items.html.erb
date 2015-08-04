@@ -12,7 +12,7 @@
               <th class="product-name">Product</th>
               <th class="product-price">Price</th>
               <th class="product-quantity">Quantity</th>
-              <th class="product-subtotal">Total (w/Tax)</th>
+              <th class="product-subtotal">Total</th>
             </tr>
           </thead>
 
@@ -48,7 +48,7 @@
                   </td>
 
                   <td class="product-subtotal">
-                    <span class="amount"><%= number_to_currency (item.sub_total+item.tax_amount) %></span> 
+                    <span class="amount"><%= number_to_currency (item.sub_total*item.quantity) %></span> 
                   </td>
                 </tr>
 
@@ -90,12 +90,17 @@
               <tbody>
                 <tr class="cart-subtotal">
                   <th>Cart Subtotal</th>
-                  <td><span class="amount"><%= number_to_currency (order.total/1.13) %></span></td>
+                  <td><span class="amount"><%= number_to_currency (order.total/1.13)-current_order.delivery_price %></span></td>
                 </tr>
 
                 <tr class="shipping">
                   <th>Shipping and Handling</th>
                   <td><%= number_to_currency current_order.delivery_price %></td>
+                </tr>
+
+                <tr class="shipping">
+                  <th>Tax (HST 13%)</th>
+                  <td><%= number_to_currency order.total * 1.13 - order.total %></td>
                 </tr>
 
                 <tr class="order-total">
