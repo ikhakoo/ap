@@ -1391,7 +1391,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat1
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1432,7 +1432,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat2
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1465,7 +1465,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-CLEARANCE-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-CLEARANCE-#{color}"))
 				pro.product_category = cat22
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1498,7 +1498,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat7
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1531,7 +1531,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat15
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1564,7 +1564,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat16
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1597,7 +1597,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat14
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1630,7 +1630,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat18
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1663,7 +1663,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat19
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1696,7 +1696,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat13
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1729,7 +1729,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat5
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1762,7 +1762,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat6
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1795,7 +1795,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat17
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1828,7 +1828,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat3
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1869,7 +1869,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat12
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1910,7 +1910,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat10
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1951,7 +1951,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat8
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1992,7 +1992,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat11
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -2033,7 +2033,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat9
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -2074,7 +2074,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat20
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -2115,7 +2115,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price], sku: params[:sku], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], price: params[:price].to_i, sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat21
 				pro.default_image_file = get_file(filename)
 				pro.save!
