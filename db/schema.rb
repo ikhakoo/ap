@@ -279,7 +279,6 @@ ActiveRecord::Schema.define(version: 20150728030438) do
   add_index "shoppe_users", ["email_address"], name: "index_shoppe_users_on_email_address", using: :btree
 
   create_table "stylecharts", force: :cascade do |t|
-    t.string   "image"
     t.integer  "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

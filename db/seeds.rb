@@ -16,6 +16,13 @@ def get_file(name, content_type = 'image/jpeg')
   file
 end
 
+def get_style(stylename, content_type = 'image/png')
+  file = ActionDispatch::Http::UploadedFile.new(:tempfile => File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', stylename), 'rb'))
+  file.original_filename = File.basename(stylename, File.extname(stylename))
+  file.content_type = content_type
+  file
+end
+
 
 def seed_shit
 
@@ -1319,8 +1326,10 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
 				if params[:chart]
-					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
-					s = Stylechart.create!(image: f, product_id: pro.id)
+					stylename = File.basename(params[:chart])
+					s = Stylechart.create!(product_id: pro.id)
+					s.image_file = get_style(stylename)
+					s.save!
 					p s 
 				end
 
@@ -1754,8 +1763,10 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
 				if params[:chart]
-					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
-					s = Stylechart.create!(image: f, product_id: pro.id)
+					stylename = File.basename(params[:chart])
+					s = Stylechart.create!(product_id: pro.id)
+					s.image_file = get_style(stylename)
+					s.save!
 					p s 
 				end
 
@@ -1793,8 +1804,10 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
 				if params[:chart]
-					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
-					s = Stylechart.create!(image: f, product_id: pro.id)
+					stylename = File.basename(params[:chart])
+					s = Stylechart.create!(product_id: pro.id)
+					s.image_file = get_style(stylename)
+					s.save!
 					p s 
 				end
 
@@ -1832,8 +1845,10 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
 				if params[:chart]
-					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
-					s = Stylechart.create!(image: f, product_id: pro.id)
+					stylename = File.basename(params[:chart])
+					s = Stylechart.create!(product_id: pro.id)
+					s.image_file = get_style(stylename)
+					s.save!
 					p s 
 				end
 
@@ -1871,8 +1886,10 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
 				if params[:chart]
-					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
-					s = Stylechart.create!(image: f, product_id: pro.id)
+					stylename = File.basename(params[:chart])
+					s = Stylechart.create!(product_id: pro.id)
+					s.image_file = get_style(stylename)
+					s.save!
 					p s 
 				end
 
@@ -1910,8 +1927,10 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
 				if params[:chart]
-					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
-					s = Stylechart.create!(image: f, product_id: pro.id)
+					stylename = File.basename(params[:chart])
+					s = Stylechart.create!(product_id: pro.id)
+					s.image_file = get_style(stylename)
+					s.save!
 					p s 
 				end
 
@@ -1949,8 +1968,10 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
 				if params[:chart]
-					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
-					s = Stylechart.create!(image: f, product_id: pro.id)
+					stylename = File.basename(params[:chart])
+					s = Stylechart.create!(product_id: pro.id)
+					s.image_file = get_style(stylename)
+					s.save!
 					p s 
 				end
 
@@ -1988,8 +2009,10 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
 				if params[:chart]
-					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
-					s = Stylechart.create!(image: f, product_id: pro.id)
+					stylename = File.basename(params[:chart])
+					s = Stylechart.create!(product_id: pro.id)
+					s.image_file = get_style(stylename)
+					s.save!
 					p s 
 				end
 
@@ -2027,8 +2050,10 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
 				if params[:chart]
-					f = File.open(File.join(Rails.root, 'db', 'seeds_data', 'sc', params[:chart]))
-					s = Stylechart.create!(image: f, product_id: pro.id)
+					stylename = File.basename(params[:chart])
+					s = Stylechart.create!(product_id: pro.id)
+					s.image_file = get_style(stylename)
+					s.save!
 					p s 
 				end
 

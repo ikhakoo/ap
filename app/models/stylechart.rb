@@ -1,3 +1,3 @@
 class Stylechart < ActiveRecord::Base
-	mount_uploader :image, ImageUploader
+	attachment :image
 end
