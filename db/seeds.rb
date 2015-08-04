@@ -1421,7 +1421,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1454,7 +1454,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1487,7 +1487,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1520,7 +1520,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1553,7 +1553,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1586,7 +1586,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1619,7 +1619,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1652,7 +1652,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1685,7 +1685,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1718,7 +1718,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1751,7 +1751,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1784,7 +1784,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1817,7 +1817,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1858,7 +1858,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1899,7 +1899,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1940,7 +1940,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -1981,7 +1981,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -2022,7 +2022,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -2063,7 +2063,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -2104,7 +2104,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
@@ -2145,7 +2145,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 					)
 					v.default_image_file = get_file(filename)
 					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 10)
+					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
 				end
 			end
 				print params[:sku] 
