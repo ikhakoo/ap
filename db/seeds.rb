@@ -942,7 +942,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Brand name : Littmann Stethoscope</li>
 										<li>Users can use : General Practitioners, Medical Students, Nurses</li>",
 		colors: ["Black", "Burgundy", "Caribbean", "Ceil", "Grey", "Green", "NavyBlue", "Orange", "Pink", "Purple", "Raspberry", "OceanBlue", "RoyalBlue"],
-		sizes: ["NA"]
+		sizes: ["1SIZE"]
 		},
 		"LITTMANN LIGHTWEIGHT II STETHOSCOPE.jpeg" => {
 			sku: "2450",
@@ -960,7 +960,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Physical Assessment, Diagnosis</li>
 						 	      <li>Users can use : General Practitioners, Medical Students, Nurses</li>",
 		colors: ["Black", "Burgundy", "Caribbean", "Ceil", "Lilac", "Green"],
-		sizes: ["NA"]
+		sizes: ["1SIZE"]
 		},
 		"LITTMANN CLASSIC III PEDIATRIC STETHOSCOPE.jpeg" => {
 			sku: "2113",
@@ -980,7 +980,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Users can use : General Practitioners, Child Specialists</li>
 										<li>Littmann Classic III Pediatric Stethoscope</li>",
 			colors: ["Black", "Caribbean", "NavyBlue", "Raspberry"],
-			sizes: ["NA"]
+			sizes: ["1SIZE"]
 		},
 		"LITTMANN INFANT STETHOSCOPE.jpeg" => {
 			sku: "2114",
@@ -1000,7 +1000,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Users can use : General Practitioners, Child Specialists</li>
 										<li>Littmann Infant Stethoscope</li>",
 			colors: ["Black", "Caribbean", "Raspberry"],
-			sizes: ["NA"]
+			sizes: ["1SIZE"]
 		},
 		"LITTMANN CARDIOLOGY III STETHOSCOPE.jpeg" => {
 			sku: "3129",
@@ -1018,7 +1018,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Brand: Littmann Cardiology III Stethoscope</li>
 										<li>User Group: Cardiologists, Child Specialists, General Practitioners, Medical Students, Respiratory Specialist, Critical Care Nurse</li>",
 			colors: ["Burgundy", "Plum", "Caribbean", "NavyBlue", "Red", "Raspberry", "Black"],
-			sizes: ["NA"]
+			sizes: ["1SIZE"]
 		},
 		"LITTMANN MASTER CARDIOLOGY STETHOSCOPE.jpeg" => {
 			sku: "2160",
@@ -1036,7 +1036,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Brand: Littmann Master Cardiology Stethoscope</li>
 										<li>User Group: Cardiologists, General Practitioners, Medical Students, Respiratory Specialist, ER, Critical Care Nurse, EMTs, Critical Care Nurse</li>",
 			colors: ["Black"],
-			sizes: ["NA"]
+			sizes: ["1SIZE"]
 		},
 		"LITTMANN MASTER CLASSIC STETHOSCOPE.jpeg" => {
 			sku: "2144L",
@@ -1053,7 +1053,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Chestpiece: Plated & Polished Alloy, Single-Sided</li>
 										<li>USer Group : GPs, Nurses</li>",
 		  colors: ["Black"],
-		  sizes: ["NA"]
+		  sizes: ["1SIZE"]
 		},
 		"LITTMANN CLASSIC II SE28.jpeg" => {
 			sku: "2829RBW",
@@ -1070,7 +1070,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Chestpiece: Machined Stainless Steel, Two-sided</li>
 										<li>User Group : GPs, Medical Students, Nurses</li>",
 			colors: ["Raspberry", "Rose", "Caribbean", "Black", "Brown", "Green", "Yellow"],
-			sizes: ["NA"]
+			sizes: ["1SIZE"]
 		},
 		"MOBB KT107 BLACK.jpeg" => {
 			sku: "KT107",
@@ -1083,7 +1083,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Brand name : MOBB MEDICAL</li>
 										<li>Users can use : General Practitioners, Medical Students, Nurses</li>",
 			colors: ["Black"],
-			sizes: ["NA"]
+			sizes: ["1SIZE"]
 		}
 	}
 
