@@ -9,7 +9,7 @@
             <tr>
               <th class="product-remove">&nbsp;</th>
               <th class="product-thumbnail">&nbsp;</th>
-              <th class="product-name">Product</th>
+              <th class="product-name" style="width:716px;">Product</th>
               <th class="product-price">Price</th>
               <th class="product-quantity">Quantity</th>
               <th class="product-subtotal">Total</th>
@@ -42,7 +42,7 @@
                   <td class="product-quantity">
                     <div class="quantity buttons_added">
                       <%= link_to "-", { :controller => "orders", :action => "decrease_item_quantity", :id => item.id}, class: "ui button", style: "background-color:#2B4B6F;color:white;font-weight:bold;" %>
-                      <input type="number" size="4" class="input-text qty text" title="Qty" value="<%= item.quantity.to_i %>" min="0" step="1" style="width:40px;">
+                      <input type="number" size="4" class="input-text qty text" id="qty" value="<%= item.quantity.to_i %>" min="0" step="1" style="width:40px;">
                       <%= link_to "+", { :controller => "orders", :action => "increase_item_quantity", :id => item.id}, class: "ui button", style: "background-color:#2B4B6F;color:white;font-weight:bold;" %>
                     </div>
                   </td>
