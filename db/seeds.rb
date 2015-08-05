@@ -455,36 +455,42 @@ def seed_shit
 			sku: "FR60W",
 			description: "<p>Nomex® is the go-to fabric for MOBB when manufacturing products for industrial workers. Our insulated coverall worksuit has a detachable hood and 3M Scotchlite reflective tape to enhance visibility. Includes a 2-way Vislon Nomex® front zipper, 2 ankle zippers as well a handy pen pocket. Featuring 100% Meta-Aramid 15oz lining, quilted to 100% Aramid with 100% Polyester moisture barrier and 100% FR Polyurethane wind barrier film</p>",
 			colors: ["NavyBlue", "RoyalBlue"],
+			price: "199.99",
 			sizes: ["38","40","42","44","46","48","50","52","54","56"]
 		},
 		"NOMEX IIIA INSULATED FLAME RESISTANT BIB PANT.jpeg" => {
 			sku: "FR50W",
 			description: "<p>MOBB is proud to use Nomex® fiber in all of our FR clothing because we know it remains the first choice for workers who rely on  flame resistant properties to help keep them safe from the everyday hazards they face. The insulated bib pant features 2-way Vislon Nomex® front and leg zippers with snap down covers, adjustable FR elastic shoulder straps and 3M Scotchlite reflective tape for enhanced visibility</p>",
 			colors: ["NavyBlue", "RoyalBlue"],
+			price: "209.99",
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
 		"NOMEX IIIA INSULATED FLAME RESISTANT PARKA.jpeg" => {
 			sku: "FR40W",
 			description: "<p>MOBB chooses NOMEX® for all of our FR clothing because they offer the ultimate protection. A tough outer shell with cut and flame resistance, a moisture barrier preventing the penetration of liquid and a thermal liner providing sufficient insulation while not restricting mobility. The insulated parka features a detachable hood, 2 chest pockets, 2 lower front pockets, all with flaps and covered snap closures. Includes Vislon Nomex® zipper and 3M Scotchlite reflective tape</p>",
 			colors: ["NavyBlue", "RoyalBlue"],
+			price: "199.99",
 			sizes: ["S","M","L","XL","2XL","3XL","4XL"]
 		},
 		"INDURA ULTRA SOFT INSULATED FLAME RESISTANT COVERALL WORKSUIT.jpeg" => {
 			sku: "FR30W",
 			description: "<p>Lightweight comfort in a flame-resistant fabric. That's what you can expect with our Indura® Ultra-Soft® FR Insulated Coverall Worksuit. Features 100% FR treated cotton lining with a breathable vapour barrier, 3M Scotchlite reflective tape. Includes 2-way Vislon Nomex® front zipper, 2 ankle zippers and a handy pen pocket</p>",
 			colors: ["NavyBlue", "RoyalBlue"],
+			price: "199.99",
 			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56"]
 		},
 		"INDURA ULTRA SOFT INSULATED FLAME RESISTANT BIB PANT.jpeg" => {
 			sku: "FR20W",
 			description: "<p>The built-in flame resistance of NOMEX® provides outstanding protection as well as being a light weight comfortable garment. Our bib pant features 2-way Vislon Nomex® front zippers and leg zippers with snap down covers, adjustable FR elastic shoulder straps and 3M Scothchlite reflective tape</p>",
 			colors: ["NavyBlue"],
+			price: "179.99",
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
 		"INDURA ULTRA SOFT INSULATED FLAME RESISTANT PARKA.jpeg" => {
 			sku: "FR10W",
 			description: "<p>Indura® Ultra Soft® Parkas allow you to protect yourself and your crew from a number of potential injuries. These flame resistant jackets are proven to provide exceptional warmth and flame resistance. Features 2 chest pockets, 2 lower pockets, all with flaps and covered snap closures. Includes Vislon Nomex® zippers and 3M Scotchlite reflective tape</p>",
 			colors: ["NavyBlue", "RoyalBlue"],
+			price: "174.99",
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		}
 	}
@@ -494,24 +500,28 @@ def seed_shit
 			sku: "SH200",
 			description: "<p>Stay protected and comfortable throughout the work day in the MOBB shop coat, made with a heavyweight 7.5 oz poly-cotton blend for strong, snag-resistant wear. Features 3 patch pockets as well as side access openings, centre back vent, dome closure and a handy penpocket on the left arm</p>",
 			colors: ["NavyBlue", "Spruce"],
+			price: "34.49",
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
 		"SHOP COAT II.jpeg" => {
 			sku: "SH203",
 			description: "<p>Stay protected and comfortable throughout the work day in the MOBB shop coat, made with a heavyweight 8.5 oz poly-cotton blend for strong, snag-resistant wear. Features 3 patch pockets as well as side access openings, centre back vent, dome closure and a handy penpocket on the left arm</p>",
 			colors: ["PostmanBlue"],
+			price: "34.99",
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
 		"SPUN POLY BLEND SHOP COAT.jpeg" => {
 			sku: "SH201S",
 			description: "<p>Made from a 7oz Spun Poly blend, each shop coat features 3 patch pockets as well as side access openings, centre back vent, dome button closure and left arm pen pocket</p>",
 			colors: ["White"],
+			price: "39.49",
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
 		"3 POCKET COTTON SHOP COAT.jpeg" => {
 			sku: "SH200",
 			description: "<p>Made from comfortable 100% cotton, this traditional MOBB shop coat offers convenience and utility with one chest and two lower pockets. Comfort and durability make this shop coat ideal for everything from customer service to industrial work environments. Also features a concealed dome button closure, side access openings, centre back vent and left arm pen pocket</p>",
 			colors: ["NavyBlue"],
+			price: "34.49",
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"]
 		},
 	}
@@ -521,12 +531,14 @@ def seed_shit
 			sku: "S300",
 			description: "<p>The MOBB Long Sleeve Button Front Work Shirt is made to last. Its heavyweight 65/35 poly/cotton 5 oz. fabric makes it both comfortable and durable. Features a button front closure with top snap and 2 patch pockets</p>",
 			colors: ["Ceil", "Lagoon", "NavyBlue"],
+			price: "16.99",
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "6XL"]
 		},
 		"SHORT SLEEVE BUTTON FRONT WORK SHIRT.jpeg" => {
 			sku: "S301",
 			description: "<p>The MOBB Short Sleeve Button Front Work Shirt is stylish and functional. Its heavyweight 65/35 poly/cotton 5 oz. fabric makes it both comfortable and durable. Features a button front closure with top snap and 2 patch pockets</p>",
 			colors: ["Ceil", "Lagoon", "NavyBlue"],
+			price: "16.99",
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "6XL"]
 		}
 	}
@@ -686,34 +698,40 @@ def seed_shit
 			sku: "PC500",
 			description: "<p>These MOBB Cargo Work Pants are well constructed with 7.5 oz 65/35 Poly-Cotton. They have a heavy-duty brass zipper with top button closure, pleated cargo pockets with flap and velcro closure with 2 front pockets and 2 back pockets. These pants are comfortable and easy to wash. A great value for the working man</p>",
 			colors: ["NavyBlue"],
+			price: "29.99",
 			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54"]
 		},
 		"FLAT FRONT WORK PANT.jpeg" => {
 			sku: "P400",
+			price: "29.49",
 			description: "<p>These MOBB Flat Front Work Pants  are a great choice for a busy day on the job. Made with 7.5 oz 65/35 poly-cotton they'll keep you comfortable all day long. They’re also easy to care for, just throw them into the machine when you get home for stress-free care. Features brass zipper and top button closure, 2 flat front slant pockets and 2 back pockets</p>",
 			colors: ["NavyBlue", "Spruce"],
 			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"]
 		},
 		"WORK PANT WITH REFLECTIVE TAPE.jpeg" => {
 			sku: "PS400",
+			price: "34.49",
 			description: "<p>High visibility MOBB Work Pant with Reflective Tape. Make sure you stay safe while being seen in these pants. 65/35 poly-cotton 7.5 oz pant with brass zipper and button top closure, 2 front slant pockets and 2 back pockets. Also available for women</p>",
 			colors: ["NavyBlue"],
 			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
 		},
 		"100 Percent Cotton Twill Work Pant.jpeg" => {
 			sku: "P401",
+			price: "28.99",
 			description: "<p>Look smart and stylish in these classic fit, 100% Cotton Twill Work Pants. Made from breathable cotton, they offer all the comfort with a touch of casual style. Features brass zipper, button closure, 2 front slant pockets and 2 back pockets. Versatile and low-maintenance, these pants are ready for an active day</p>",
 			colors: ["NavyBlue"],
 			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50"]
 		},
 		"LADIES FLAT FRONT WORK PANT.jpeg" => {
 			sku: "P400L",
+			price: "28.99",
 			description: "<p>Made especially for ladies, these pants fit well and have a tough material that stands up to any abuse you put them through. Same durable construction as the P400 these 7.5oz 65/35 poly-cotton work pants feature a brass zipper with button closure, 2 flat front slant pockets and 2 back pockets</p>",
 			colors: ["NavyBlue", "Spruce"],
 			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52"]
 		},
 		"LADIES WORK PANT WITH REFLECTIVE TAPE.jpeg" => {
 			sku: "PS400L",
+			price: "34.49",
 			description: "<p>Your safety comes first. Be seen in our Ladies Work Pant with Reflective Tape. With all the same features of the mens pant.7.5 oz 65/35 poly-cotton pant with brass zipper and top button closure, 2 front slant pockets and 2 back pockets</p>",
 			colors: ["NavyBlue"],
 			sizes: ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52"]
@@ -725,16 +743,19 @@ def seed_shit
 			sku: "FR500",
 			description: "<p>For hazards like firesand molten splashes, MOBB's Nomex® III A has you covered. A blend of 93% Nomex® with 5% Kevlar® and 2% antistatic fiber that expands to form a stable and inert barrier between fire and skin. Features 2-way Vislon Nomex® zipper, 2 snap clsoures at the neck, 1 snap waist closure, 2 upper and 2 lower patch pockets as well as 2 front slant pockets and 2 side access openings. Includes a tool pocket on the right leg, a pen pocket on the left arm and flame resistant velcro tabs on the sleeves and leg leg cuffs</p>",
 			colors: ["1STYLE"],
+			price: "189.49",
 			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
 		},
 		"INDURA ULTRA SOFT FLAME RESISTANT COVERALL.jpeg" => {
 			sku: "FR100",
+			price: "189.49",
 			description: "<p>The ultra-soft feel of these coveralls offer enhanced comfort while keeping you protected from electric arc and flash fire exposures. Double-shrunk technology ensures they will fit you for years to come. Features 2-way Vislon Nomex® zippers, 2 snap closures at neck, 1 snap closure at waist, 2 upper and 2 lower back patch pockets and 2 front slant pockets as well as 2 side sccess openings. Includes a pen pocket on the left arm and a tool pocket on the right side, FR velcro tabs on sleeve and leg cuffs</p>",
 			colors: ["1STYLE"],
 			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
 		},
 		"100 PERCENT COTTON TWILL COVERALL.jpeg" => {
 			sku: "C200",
+			price: "31.99",
 			description: "<p>Up and down. Back and forth. In and out of the truck. These coveralls will go wherever you go. Heavy-duty 8.5oz. 100% cotton twill. Features a concealed metal button closure, 2 chest pockets, 2 lower back patch pockets and 2 lower front slant pockets as well as a pen and tool pocket</p>",
 			colors: ["1STYLE"],
 			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
@@ -743,30 +764,35 @@ def seed_shit
 			sku: "C100",
 			description: "<p>MOBB 65/35 Poly-Cotton blend zip-front coveralls have distinctive features of high durability, high tensile strength, good tear strength, colour fastness, pilling resistant, shrinkage control comfort wear and perfect fit. Features 2 top front pockets, 2 lower back patch pockets and 2 lower front slant pockets as well as a tool and pen pocket. Includes side access openings and action back</p>",
 			colors: ["1STYLE"],
+			price: "31.49",
 			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
 		}, 
 		"REFLECTIVE BANDED COVERALL.jpeg" => {
 			sku: "C100R",
 			description: "<p>Stay visible on the work site with these MOBB 7.5oz 65/35 poly-cotton blend coveralls featuring reflective tape banding.The premium reflective tape ensures you are visible to coworkers and drivers. Same features as the C100</p>",
 			colors: ["1STYLE"],
+			price: "54.99",
 			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
 		}, 
 		"CLASSIC BIB OVERALL.jpeg" => {
 			sku: "B100",
 			description: "<p>Strap on the MOBB Classic Bib Overall when there's rain, wind, and hard work in the forecast. Features adjustable suspenders, 2 chest pockets, 2 lower back patch pockets, 2 lower front slant pockets and a zipper closure</p>",
 			colors: ["1STYLE"],
+			price: "44.49",
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL"]
 		},
 		"REFLECTIVE BIB OVERALL.jpeg" => {
 			sku: "B100R",
 			description: "<p>Stay visible and safe on the worksite with the MOBB Reflective Bib Coveralls featuring high visibility reflective tape banding for extra protection in low-light conditions. These pants will ensure you are comfortably protected while working in grimy conditions. Includes 2 lower back patch pockets, 2 lower front slant pockets and side access openings</p>",
 			colors: ["Orange", "NavyBlue"],
+			price: "54.49",
 			sizes: ["S", "M", "L", "XL", "2XL", "3XL"]
 		},
 		"100 PERCENT COTTON TWILL COVERALL II.jpeg" => {
 			sku: "C201 COVERALL",
 			description: "<p>Up and down. Back and forth. In and out of the truck. These coveralls will go wherever you go. Heavy-duty 8.5oz. 100% cotton twill. Features a concealed metal button closure, 2 chest pockets, 2 lower back patch pockets and 2 lower front slant pockets as well as a pen and tool pocket</p>",
 			colors: ["PostmanBlue"],
+			price: "31.49",
 			sizes: ["38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58"]
 		}
 	}
@@ -1014,6 +1040,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Stainless Steel Finishing</li>
 										<li>Brand name : Littmann Stethoscope</li>
 										<li>Users can use : General Practitioners, Medical Students, Nurses</li>",
+		price: "109.49",
 		colors: ["Black", "Burgundy", "Caribbean", "Ceil", "Grey", "Green", "NavyBlue", "Orange", "Pink", "Purple", "Raspberry", "OceanBlue", "RoyalBlue"],
 		sizes: ["1SIZE"]
 		},
@@ -1033,6 +1060,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Physical Assessment, Diagnosis</li>
 						 	      <li>Users can use : General Practitioners, Medical Students, Nurses</li>",
 		colors: ["Black", "Burgundy", "Caribbean", "Ceil", "Lilac", "Green"],
+		price: "119.49",
 		sizes: ["1SIZE"]
 		},
 		"LITTMANN CLASSIC III PEDIATRIC STETHOSCOPE.jpeg" => {
@@ -1053,6 +1081,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Users can use : General Practitioners, Child Specialists</li>
 										<li>Littmann Classic III Pediatric Stethoscope</li>",
 			colors: ["Black", "Caribbean", "NavyBlue", "Raspberry"],
+			price: "139.49",
 			sizes: ["1SIZE"]
 		},
 		"LITTMANN INFANT STETHOSCOPE.jpeg" => {
@@ -1073,6 +1102,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Users can use : General Practitioners, Child Specialists</li>
 										<li>Littmann Infant Stethoscope</li>",
 			colors: ["Black", "Caribbean", "Raspberry"],
+			price: "129.49",
 			sizes: ["1SIZE"]
 		},
 		"LITTMANN CARDIOLOGY III STETHOSCOPE.jpeg" => {
@@ -1091,6 +1121,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Brand: Littmann Cardiology III Stethoscope</li>
 										<li>User Group: Cardiologists, Child Specialists, General Practitioners, Medical Students, Respiratory Specialist, Critical Care Nurse</li>",
 			colors: ["Burgundy", "Plum", "Caribbean", "NavyBlue", "Red", "Raspberry", "Black"],
+			price: "163.49",
 			sizes: ["1SIZE"]
 		},
 		"LITTMANN MASTER CARDIOLOGY STETHOSCOPE.jpeg" => {
@@ -1109,6 +1140,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Brand: Littmann Master Cardiology Stethoscope</li>
 										<li>User Group: Cardiologists, General Practitioners, Medical Students, Respiratory Specialist, ER, Critical Care Nurse, EMTs, Critical Care Nurse</li>",
 			colors: ["Black"],
+			price: "259.99",
 			sizes: ["1SIZE"]
 		},
 		"LITTMANN MASTER CLASSIC STETHOSCOPE.jpeg" => {
@@ -1126,6 +1158,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Chestpiece: Plated & Polished Alloy, Single-Sided</li>
 										<li>USer Group : GPs, Nurses</li>",
 		  colors: ["Black"],
+		  price: "89.49",
 		  sizes: ["1SIZE"]
 		},
 		"LITTMANN CLASSIC II SE28.jpeg" => {
@@ -1143,6 +1176,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Chestpiece: Machined Stainless Steel, Two-sided</li>
 										<li>User Group : GPs, Medical Students, Nurses</li>",
 			colors: ["Raspberry", "Rose", "Caribbean", "Black", "Brown", "Green", "Yellow"],
+			price: "89.49",
 			sizes: ["1SIZE"]
 		},
 		"MOBB KT107 BLACK.jpeg" => {
@@ -1156,6 +1190,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Brand name : MOBB MEDICAL</li>
 										<li>Users can use : General Practitioners, Medical Students, Nurses</li>",
 			colors: ["Black"],
+			price: "39.49",
 			sizes: ["1SIZE"]
 		}
 	}
