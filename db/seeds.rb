@@ -580,6 +580,7 @@ def seed_shit
 			sku: "STETHCLIP",
 			description: "<p>The MOBB Stethoscope Clip was created by medical professionals for medical professionals. Sturdy, durable construction, made to last</p>",
 			colors: ["1STYLE"],
+			price: "8.49",
 			sizes: ["1SIZE"]
 		},
 		"PENLIGHT.jpeg" => {
@@ -593,72 +594,84 @@ def seed_shit
 			sku: "PL-CRUSHER",
 			description: "<p>The MOBB Pill Cutter-Crusher Duo is a self-contained compliance device that is used to cut or crush pills and tablets to half-size or into powder for medication administration</p>",
 			colors: ["1STYLE"],
+			price: "9.99",
 			sizes: ["1SIZE"]
 		},
 		"MOBB PLUSH LOGO SLIPPERS.jpeg" => {
 			sku: "A0002",
 			description: "<p>Soft and cozy. Featuring the MOBB logo and a non-slip tread</p>",
 			colors: ["1STYLE"],
+			price: "9.99",
 			sizes: ["1SIZE"]
 		},
 		"MOBB MEASURING TAPE WITH PEN.JPEG" => {
 			sku: "MMTWP",
 			description: "<p>MOBB MEASURING TAPE WITH PEN</p>",
 			colors: ["1STYLE"],
+			price: "3.99",
 			sizes: ["1SIZE"]
 		},
 		"MOBB KEY CHAIN.jpeg" => {
 			sku: "MKC-100",
 			description: "<p>MOBB KEY CHAIN</p>",
 			colors: ["1STYLE"],
+			price: "3.99",
 			sizes: ["1SIZE"]
 		},
 		"PLUSH ANIMAL STETHOSCOPE COVERS.JPEG" => {
 			sku: "PASC-100",
 			description: "<p>Soft, fuzzy and completely adorable. The MOBB Plush Animal Stethoscope covers are sure to make everyone smile, especially the little ones. Select the options as color options.</p>",
 			colors: ["Hippo", "Pig", "Ant", "Frog"],
+			price: "14.99",
 			sizes: ["1SIZE"]
 		},
 		"CLIP ON WATCHES.jpeg" => {
 			sku: "COW-100",
 			description: "<p>Key chains avilable in Smiley, Heart, Teddy Bear, and Health styles</p>",
 			colors: ["Smiley", "Heart", "TeddyBear", "Health"],
+			price: "13.99",
 			sizes: ["1SIZE"]
 		},
 		"BLOOD PRESSURE MONITOR.jpeg" => {
 			sku: "KT-A07",
 			description: "<p>Measure blood pressure with this lightweight and portable manual intalation monitor that offers both high quality and professional features. Features a large Aneroid gauge and durable inflation bulb.</p>",
 			colors: ["1STYLE"],
+			price: "79.99",
 			sizes: ["1SIZE"]
 		},
 		"MOBB SCISSORS.jpeg" => {
 			sku: "S150 SCISSORS150/190MM",
 			description: "<p>MOBB SCISSORS<p><br><p>Available in assorted colors</p><br><p>150/190mm</p>",
 			colors: ["Blue", "Red", "Ceil", "Black"],
+			price: "12.99",
 			sizes: ["150mm", "190mm"]
 		},
 		"MOBB SCRUB LOGO SHOULDER BAG.jpeg" => {
 			sku: "MSLS-100",
 			description: "<p>Made with MOBB scrub material and available in assorted colors and prints featuring the MOBB logo</p>",
 			colors: ["Brown", "Green", "White", "Blue", "Red"],
+			price: "4.99",
 			sizes: ["1SIZE"]
 		},
 		"MOBB LOGO RETRACTABLE ID CLIP.jpeg" => {
 			sku: "MLRIC-100",
 			description: "<p>Features the MOBB logo</p>",
 			colors: ["1STYLE"],
+			price: "2.99",
 			sizes: ["1SIZE"]
 		},
 		"MOBB LOGO TRAVEL COFFEE MUG.jpeg" => {
 			sku: "MUG100",
 			description: "<p>The perfect travel coffee mug for those busy days!</p>",
 			colors: ["1STYLE"],
+			price: "24.99",
 			sizes: ["1SIZE"]
 		},
 		"MOBB STETHOSCOPE ID NAME TAG.jpeg" => {
 			sku: "STETHID-100",
 			description: "<p>Mobb Stethoscopes ID Name Tag</p>",
 			colors: ["1STYLE"],
+			price: "9.99",
 			sizes: ["1SIZE"]
 		}
 	}
