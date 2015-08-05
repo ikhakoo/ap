@@ -1027,6 +1027,10 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 }
 // 
 
+.color_selections:hover{
+   -webkit-transform: scale(1.5,1.5);
+}
+
 .single-shop-product h2 {
     font-size: 20px;
     margin: 10px 0;

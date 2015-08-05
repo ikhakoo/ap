@@ -6,7 +6,6 @@ Change logo
 Contact Us
 Policy
 
-Color Picker
 
 
 
