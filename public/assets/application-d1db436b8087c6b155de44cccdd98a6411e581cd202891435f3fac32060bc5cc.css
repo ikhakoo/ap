@@ -436,6 +436,13 @@ div.coupon input[type="text"] {
   margin-right: 15px;
   width: 100px;
 }
+.file-size {
+  font-size: 25px;
+}
+
+.button-hover:hover {
+  opacity: 0.5;
+}
 /*
 
         Creating a sprite from following images:
@@ -34933,22 +34940,27 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
 }
 
 /* line 1031, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
+.color_selections:hover {
+  -webkit-transform: scale(2.5, 2.5);
+}
+
+/* line 1035, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
 .single-shop-product h2 {
   font-size: 20px;
   margin: 10px 0;
 }
 
-/* line 1035, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
+/* line 1039, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
 .product-option-shop {
   margin-top: 15px;
 }
 
-/* line 1039, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
+/* line 1043, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
 .single-shop-product {
   margin-bottom: 50px;
 }
 
-/* line 1041, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
+/* line 1045, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
 .pagination > li > a, .pagination > li > span {
   color: #2B4B6F;
 }
