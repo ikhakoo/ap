@@ -58,6 +58,7 @@ class ProductsController < ApplicationController
     "Navy" => "rgb(26, 47, 96)",
     "NavyBlue" => "rgb(26, 47, 96)",
     "NavyBlue/SkyBlue" => "rgb()",
+    "Orange" => "rgb(255,69,0)",
     "OliveGreen" => "rgb(147, 155, 109)",
     "PaisleyPink" => "background Paisley Pink",
     "Papillon" => "background Papillon",
