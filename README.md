@@ -11,10 +11,6 @@ ALL Clearance Items Are Final (Add Notice)
 
 -----------
 
-Search - From fanzone
-
------------
-
 Color Picker
 
 -
