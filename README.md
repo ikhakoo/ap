@@ -6,9 +6,13 @@ Policy
 
 Add SKU # to category page
 
-ALL Clearance Items Are Final
+ALL Clearance Items Are Final (Add Notice)
 
-Search
+-----------
+
+Search - From fanzone
+
+-----------
 
 Color Picker
 
