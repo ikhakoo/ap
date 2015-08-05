@@ -8,9 +8,6 @@ Policy
 
 Color Picker
 
--
-
-add US To shipping list
 
 
 

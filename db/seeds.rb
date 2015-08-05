@@ -2157,6 +2157,7 @@ end
 def country
 	Shoppe::Country.destroy_all
 	Shoppe::Country.create(name: "Canada", code2: 'CA', code3: 'CAN', continent: 'NA', tld: 'ca')
+	Shoppe::Country.create(name: "United States", code2: 'US', code3: 'USA', continent: 'NA', tld: 'us')
 end
 
 seed_shit
