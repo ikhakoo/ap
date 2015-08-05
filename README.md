@@ -1,6 +1,7 @@
-Made clearance red
-Add SSL certificate
-Change logo
+
+Add SSL certificate (check with arturs about pricing)
+
+Change logo 
 
 Contact Us
 Policy
@@ -15,6 +16,10 @@ Search - From fanzone
 -----------
 
 Color Picker
+
+-
+
+add US To shipping list
 
 
 
