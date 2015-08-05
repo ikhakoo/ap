@@ -127,7 +127,7 @@
                         <% for i in 0..@background_details.length-1 %> 
                           <% background = @background_details[i] %>
                           <% html = select_background_type(background[0], background[1]) %>   
-                          <div style='<%= html[0] %>' class="color_selections" title="<%= @colors_array.uniq[i] %>">
+                          <div style='<%= html[0] %>' id="color-picker" class="color_selections" title="<%= @colors_array.uniq[i] %>">
                           </div>
                         <% end %> 
                       </div>
@@ -169,5 +169,12 @@
       </div>
     </div>
 
-
+<script>
+$('#color-picker').on('click', function(){
+  $('#color-picker').animate({
+    width: "50%",
+    height: "50%"
+  }, 2000);
+});
+</script>
  

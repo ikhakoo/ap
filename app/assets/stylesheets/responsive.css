@@ -212,3 +212,10 @@ div.coupon input[type="text"] {
   margin-right: 15px;
   width: 100px;
 }
+.file-size {
+  font-size: 25px;
+}
+
+.button-hover:hover {
+  opacity: 0.5;
+}
