@@ -127,7 +127,7 @@
                         <% for i in 0..@background_details.length-1 %> 
                           <% background = @background_details[i] %>
                           <% html = select_background_type(background[0], background[1]) %>   
-                          <div style='<%= html[0] %>' id="color-picker" class="color_selections" title="<%= @colors_array.uniq[i] %>">
+                          <div style='<%= html[0] %>' id="color-picker" data-toggle="tooltip" data-placement="top" title="Color Title" class="color_selections" title="<%= @colors_array.uniq[i] %>">
                           </div>
                         <% end %> 
                       </div>
@@ -169,4 +169,8 @@
       </div>
     </div>
 
- 
+ <script>
+ $(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+ })
+ </script>
