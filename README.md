@@ -6,11 +6,6 @@ Change logo
 Contact Us
 Policy
 
-
-ALL Clearance Items Are Final (Add Notice)
-
------------
-
 Color Picker
 
 -
