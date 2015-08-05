@@ -33425,7 +33425,7 @@ a.ui.card:hover,
 /* line 20, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
 .style_image {
   height: 100px;
-  width: 275px;
+  width: 285px;
 }
 
 /* line 25, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
@@ -34931,24 +34931,32 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button {
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.2);
 }
+/* line 1028, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
+.color_selections img:hover {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  transform: scale(1.4);
+}
 
-/* line 1031, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
+/* line 1038, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
 .single-shop-product h2 {
   font-size: 20px;
   margin: 10px 0;
 }
 
-/* line 1035, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
+/* line 1042, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
 .product-option-shop {
   margin-top: 15px;
 }
 
-/* line 1039, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
+/* line 1046, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
 .single-shop-product {
   margin-bottom: 50px;
 }
 
-/* line 1041, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
+/* line 1048, /Users/sump/Desktop/bitmakerlabs/ap/app/assets/stylesheets/application.scss */
 .pagination > li > a, .pagination > li > span {
   color: #2B4B6F;
 }

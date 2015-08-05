@@ -8,5 +8,9 @@ Add SKU # to category page
 
 ALL Clearance Items Are Final
 
+Search
+
+Color Picker
+
 
 
