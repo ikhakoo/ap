@@ -52,6 +52,12 @@ Rails.application.routes.draw do
   #clearance
   match "clearance", to: "products#clearance", as: "clearance", via: [:get]
   
+  #pages
+  match "terms", to: "pages#terms", as: "terms", via: [:get]
+  match "returns", to: "pages#returns", as: "returns", via: [:get]
+  match "about-us", to: "pages#about_us", as: "about_us", via: [:get]
+  match "privacy", to: "pages#privacy", as: "privacy", via: [:get]
+
 
   get "product/:permalink", to: "products#show", as: "product"
   post "product/:permalink", to: "products#buy", as: "buy"
