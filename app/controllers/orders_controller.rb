@@ -17,7 +17,7 @@ class OrdersController < ApplicationController
   end
 
   def increase_item_quantity
-    item = current_order.order_items.find(params[:id])
+  	item = current_order.order_items.find(params[:id])
 		item.increase!
     redirect_to basket_path, :notice => "Quantity has been updated successfully."   
   rescue Shoppe::Errors::NotEnoughStock => e
