@@ -130,12 +130,15 @@
             <li class="<%= 'active' if current_page?(clearance_path) %>" style="background-color:#d42525;">
               <%= link_to "CLEARANCE", clearance_path, style: "text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87" %>
             </li>
-            <li class="<%= 'active' if current_page?(clearance_path) %>">
-              <%= link_to "ABOUT US", clearance_path %>
-            </li>
             <li class="<%= 'active' if current_page?(checkout_path) %>">
               <%= link_to "CHECKOUT", checkout_path %>
             </li>
+            <li>
+            <%= form_tag search_path, {method: :get, authentication: false, id: 'search-form', class: 'navbar-form'} do %>
+              <%= text_field_tag :search, params[:search] %>
+              <%= submit_tag "Search" %>
+            <% end %>
+          </li>
         </ul>
       </div>  
     </div>
