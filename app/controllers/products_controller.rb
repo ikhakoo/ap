@@ -53,7 +53,7 @@ class ProductsController < ApplicationController
     "Khaki" => "rgb(233, 204, 165)",
     "Lagoon" => "rgb(113, 154, 161)",
     "Lagoon/Lagoon" => "rgb()",
-    "Lime Green" => "rgb(156, 202, 0)",
+    "LimeGreen" => "rgb(156, 202, 0)",
     "Lilac" => "rgb(123, 80, 166)",
     "Navy" => "rgb(26, 47, 96)",
     "NavyBlue" => "rgb(26, 47, 96)",
