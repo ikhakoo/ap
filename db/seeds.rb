@@ -1384,7 +1384,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		"Criss Cross Flip Flap Black With Dusty Rose Trim.jpeg" => {
 			sku: "323/312C",
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
-			colors: ["Black/DustyRose"],
+			colors: ["BlackDustyRose"],
 			price: "27.95",
 			weight: 0.7,
 			sizes: ["2XL"]
@@ -1392,7 +1392,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		"Criss Cross Flip Flap Black and Aqua.jpeg" => {
 			sku: "323/312C",
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
-			colors: ["Black/Aqua"],
+			colors: ["BlackAqua"],
 			price: "27.95",
 			weight: 0.7,
 			sizes: ["2XL"]
@@ -1424,7 +1424,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		"Criss Cross Flip Flap Dusty Rose With Polka Dots.jpeg" => {
 			sku: "323/312C",
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
-			colors: ["DustyRose/PolkaDots"],
+			colors: ["DustyRosePolkaDots"],
 			price: "27.95",
 			weight: 0.7,
 			sizes: ["XXS", "L", "XL", "2XL"]
@@ -1440,7 +1440,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		"Criss Cross Flip Flap Lime Green.jpeg" => {
 			sku: "323/312C",
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
-			colors: ["Lime Green"],
+			colors: ["LimeGreen"],
 			price: "27.95",
 			weight: 0.7,
 			sizes: ["L", "XL", "2XL"]
@@ -1705,7 +1705,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-CLEARANCE-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "CLEARANCE #{name}-#{color}"))
 				pro.product_category = cat22
 				pro.default_image_file = get_file(filename)
 				pro.save!
