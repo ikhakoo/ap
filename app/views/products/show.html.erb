@@ -82,7 +82,9 @@
                         <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
                       </div>
                       <%= submit_tag 'Add to basket', class: "ui button", style: "background-color:#2B4B6F;color:white;" %>
-                      
+                      <% if @product.product_category_id == 22 %>
+                        <p style="color:red;">All Items are FINAL SALE!!!</p>
+                      <% end %>
                       <% @stylecharts.each do |s| %>
                       <% if s.product_id == @product.id %>
                       <!-- Button trigger modal -->
