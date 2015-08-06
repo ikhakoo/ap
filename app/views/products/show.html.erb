@@ -69,18 +69,14 @@
                       <p>
                         Color: 
                         <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]) %>
-                        
                         <br>
                         Size: 
                         <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]) %>
-                 
                       </p>
+                      <p style="color: red;">Quantity can be updated in the basket page</p>
                     </div>
 
                     <form action="" class="cart">
-                      <div class="quantity">
-                        <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
-                      </div>
                       <%= submit_tag 'Add to basket', class: "ui button", style: "background-color:#2B4B6F;color:white;" %>
                       <% if @product.product_category_id == 22 %>
                         <p style="color:red;">All Items are FINAL SALE!!!</p>
