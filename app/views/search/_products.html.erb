@@ -8,6 +8,7 @@
       <div class="row">
         <% @products.each_slice(3) do |row| %>
           <% row.each do |product| %>
+          <% if product.name.split("-").last != "1SIZE" %>
             <div class="col-md-3 col-sm-6">
               <div class="single-product">
                 <div class="product-f-image">
@@ -25,6 +26,7 @@
               </div> 
               <!-- end prod -->
             </div>
+            <% end %>
             <% end %>
           <% end %>
 <!-- end col -->
