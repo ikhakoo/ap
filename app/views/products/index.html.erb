@@ -77,28 +77,36 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-6">
-        <div class="single-promo">
-          <i class="fa fa-gift"></i>
-          <p>New Products</p>
-        </div>
+        <a href="#newProd">
+          <div class="single-promo">
+            <i class="fa fa-gift"></i>
+            <p>New Products</p>
+          </div>
+        </a>
 		  </div>
 		  <div class="col-md-3 col-sm-6">
-	      <div class="single-promo">
-          <i class="fa fa-lock"></i>
-          <p>Secure Payments</p>
-        </div>
+        <a href="<%= terms_path %>">
+  	      <div class="single-promo">
+            <i class="fa fa-lock"></i>
+            <p>Secure Payments</p>
+          </div>
+        </a>
 		  </div>
 		  <div class="col-md-3 col-sm-6">
-      <div class="single-promo">
-          <i class="fa fa-usd"></i>
-          <p>Great Prices</p>
-        </div>
+        <a href="<%= clearance_path %>">
+          <div class="single-promo">
+            <i class="fa fa-usd"></i>
+            <p>Great Prices</p>
+          </div>
+        </a>
 		  </div>
 		  <div class="col-md-3 col-sm-6">
-      	<div class="single-promo">
-          <i class="fa fa-truck"></i>
-          <p>Fast Shipping</p>
-        </div>
+        <a href="<%= returns_path %>">
+        	<div class="single-promo">
+            <i class="fa fa-truck"></i>
+            <p>Fast Shipping</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -106,7 +114,7 @@
     
 <div class="maincontent-area">
   <div class="zigzag-bottom"></div>
-  <div class="container">
+  <div class="container" id="newProd">
     <div class="row">
       <div class="col-lg-12 col-md-12">
         <div class="latest-product">

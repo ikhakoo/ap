@@ -516,7 +516,7 @@ def seed_shit
 			weight: 0.6,
 			sizes: ["S","M","L","XL","2XL","3XL","4XL"]
 		},
-		"INDURA ULTRA SOFT INSULATED FLAME RESISTANT COVERALL WORKSUIT.jpeg" => {
+		"INDURA ULTRA SOFT INSULATED COVERALL WORKSUIT.jpeg" => {
 			sku: "FR30W",
 			description: "<p>Lightweight comfort in a flame-resistant fabric. That's what you can expect with our Indura® Ultra-Soft® FR Insulated Coverall Worksuit. Features 100% FR treated cotton lining with a breathable vapour barrier, 3M Scotchlite reflective tape. Includes 2-way Vislon Nomex® front zipper, 2 ankle zippers and a handy pen pocket</p>",
 			colors: ["NavyBlue", "RoyalBlue"],
