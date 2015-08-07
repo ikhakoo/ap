@@ -13,6 +13,12 @@ apuniforms@gmail.com
 
 take out the tax
 
+if color-size
+
+if size = size on table
+print table row
+
+
 
 
 

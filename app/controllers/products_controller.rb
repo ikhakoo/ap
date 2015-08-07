@@ -106,6 +106,7 @@ class ProductsController < ApplicationController
     @stylecharts = Stylechart.all
 
     @sameprods = Shoppe::Product.where("name like ?", "#{@product.name}%")
+
     @allowedsizes = ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "6XL", "1SIZE", "2Y", "4Y", "6Y", "8Y"]
     @sizes = []
     @sameprods.each do |a| 
@@ -120,6 +121,19 @@ class ProductsController < ApplicationController
     @color_products = @color_products.group_by(&:product_category)
 
     @colorprods = Shoppe::Product.where("name like ?", "#{@product.name.split("-").first}%")
+
+    # if (@product.product_category_id == 22)
+    #   @clearanceprods = []
+    #   @colorprods.each do |a|
+    #     @clearanceprods << a.name.split("-", 2).second
+    #   end
+    #   @clearcolors = []
+    #   @clearsizes = []
+    #   @clearanceprods.each do |b|
+    #     @clearcolors << b.split("-").first
+    #     @clearsizes << b.split("-").second
+    #   end
+    # end
 
     @colors_array = []
     @colorprods.each do |a| @colors_array << a.name.split("-").second end  

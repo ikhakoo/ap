@@ -1333,7 +1333,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 	}
 
 	clearance = {
-		"Petite Unisex 8 Pocket Drawstring Elastic Scrub Set Lagoon.jpeg" => {
+		"Clearance Petite Unisex 8 Pocket Drawstring Elastic Scrub Set.jpeg" => {
 			sku: "P310/307C",
 			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>
 										<table class=\"ui celled structured table\">
@@ -1824,7 +1824,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				params[:colors].each do |color|
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "CLEARANCE #{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
 				pro.product_category = cat22
 				pro.default_image_file = get_file(filename)
 				pro.save!
