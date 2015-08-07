@@ -57,9 +57,7 @@
                 <div class="product-inner">
                   <h2 class="product-name"><%= @product.sku %></h2>
                   <h2 class="product-name"><%= @product.name.split("-").first %></h2>
-                    <% if @product.description? %>
                       <%= @product.description.html_safe %>
-                    <% end %>
                     <div class="product-inner-price">
                       <ins><%= number_to_currency @product.price %></ins> 
                       <del><%= number_to_currency (@product.price*1.13).to_f %></del>
