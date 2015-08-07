@@ -1336,11 +1336,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		"Petite Unisex 8 Pocket Drawstring Elastic Scrub Set Lagoon.jpeg" => {
 			sku: "P310/307C",
 			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.<p>
-										<table class="ui celled structured table">
+										<table class=\"ui celled structured table\">
 										  <thead>
 										    <tr>
-										      <th rowspan="2">Color</th>
-										      <th colspan="9">Available Sizes</th>
+										      <th rowspan=\"2\">Color</th>
+										      <th colspan=\"9\">Available Sizes</th>
 										    </tr>
 										    <tr>
 										      <th>XXS</th>
@@ -1357,136 +1357,136 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										  <tbody>
 										    <tr>
 										      <td>Lagoon</td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
-										      </td>
-										      <td></td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
 										      <td></td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td></td>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
+										      </td>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
 										    </tr>
 										    <tr>
 										      <td>Lilac</td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
-										      </td>
-										      <td></td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
 										      <td></td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td></td>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
+										      </td>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
 										    </tr>
 										    <tr>
 										      <td>Navy Blue</td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
-										      </td>
-										      <td></td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
 										      <td></td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td></td>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
+										      </td>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
 										    </tr>
 										    <tr>
 										      <td>Royal Blue</td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
-										      </td>
-										      <td></td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
 										      <td></td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td></td>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
+										      </td>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
 										    </tr>
 										    <tr>
 										      <td>White</td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
-										      </td>
-										      <td></td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
 										      <td></td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td></td>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
-										      <td class="center aligned">
-										        <i class="large green checkmark icon"></i>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
+										      </td>
+										      <td class=\"center aligned\">
+										        <i class=\"small green checkmark icon\"></i>
 										      </td>
 										    </tr>
 										  </tbody>
-										</table>",
+										</table><br>",
 			colors: ["Lagoon", "Lilac", "NavyBlue", "RoyalBlue", "White"],
 			price: "33.95",
 			weight: 0.7,

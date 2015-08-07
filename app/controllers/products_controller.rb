@@ -260,7 +260,7 @@ class ProductsController < ApplicationController
   #clearance
 
   def clearance
-    @products = Shoppe::Product.where(product_category_id: 22).page(params[:page]).per(6)
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 22).page(params[:page]).per(6) 
   end
 
 end
