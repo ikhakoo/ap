@@ -21,8 +21,8 @@ Rails.application.routes.draw do
   #Nurse Wear
   match "nurse-wear/tops", to: "products#nurse_tops", as: "nurse_tops", via: [:get]
   match "nurse-wear/sets", to: "products#nurse_sets", as: "nurse_sets", via: [:get]
-  match "nurse-wear/coats", to: "products#nurse_sets", as: "nurse_coats", via: [:get]
-  match "nurse-wear/pants", to: "products#nurse_sets", as: "nurse_pants", via: [:get]
+  match "nurse-wear/coats", to: "products#nurse_coats", as: "nurse_coats", via: [:get]
+  match "nurse-wear/pants", to: "products#nurse_pants", as: "nurse_pants", via: [:get]
   match "accessories", to: "products#accessories", as: "accessories", via: [:get]
   match "nurse-wear/caps", to: "products#nurse_caps", as: "nurse_caps", via: [:get]
   
