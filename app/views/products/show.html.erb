@@ -60,6 +60,160 @@
                       
                       <%= @product.description.html_safe %>
 
+                      <% if @product.product_category_id == 22 %>
+                      <table class="ui celled structured table">
+                      <thead>
+                        <tr>
+                          <th rowspan="2">Color</th>
+                          <th colspan="9">Available Sizes</th>
+                        </tr>
+                        <tr>
+                          <th>XXS</th>
+                          <th>XS</th>
+                          <th>S</th>
+                          <th>M</th>
+                          <th>L</th>
+                          <th>XL</th>
+                          <th>2XL</th>
+                          <th>3XL</th>
+                          <th>4XL</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Lagoon</td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td></td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td></td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Lilac</td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td></td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td></td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Navy Blue</td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td></td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td></td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Royal Blue</td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td></td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td></td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>White</td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td></td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td></td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                          <td class="center aligned">
+                            <i class="small green checkmark icon"></i>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table><br>
+                    <% end %>
+
                     <div class="product-inner-price">
                       <ins><%= number_to_currency @product.price %></ins> 
                       <del><%= number_to_currency (@product.price*1.13).to_f %></del>
