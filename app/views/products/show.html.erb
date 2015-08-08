@@ -235,8 +235,8 @@
                       <% if @product.product_category_id == 22 %>
                         <p style="color:red;">All Items are FINAL SALE!!!</p>
                       <% end %>
-                      <% @stylecharts.each do |s| %>
-                      <% if s.product_id == @product.id %>
+                      
+                      <% if !@product.data_sheet.nil? %>
                       <!-- Button trigger modal -->
                       <button type="button" style="background-color:#2B4B6F;color:white;" class="ui button" data-toggle="modal" data-target="#myModal">
                         View Sizing Chart
@@ -251,15 +251,16 @@
                               <h4 class="modal-title" id="myModalLabel">Sizing Chart</h4>
                             </div>
                             <div class="modal-body">
-
-                              <%= image_tag(s.image.path + ".png") %>
+                              
+                              <img src="<%= @product.data_sheet.path %>" alt="">
+                              
                               
                             </div>
                           </div>
                         </div>
                       </div>
                       <% end %>
-                      <% end %>
+                    
                     </form>
                     <br><br>
                     <%= social_share_button_tag(@product.name.split("-").first) %>

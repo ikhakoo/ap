@@ -79,12 +79,8 @@ def seed_shit
 			mates perfectly with 608P and is a favorite among school programs.</p>",
 			price: "18.49",
 			weight: 0.3,
-			colors: ["Black", "Cappuccino", "Ceil", 
-								"Lagoon", "PostmanBlue", "SkyBlue", 
-								"Burgundy", "Caribbean", "Charcoal", 
-								"NavyBlue", "RoyalBlue", "White"
-							],
-			sizes: ["XXS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
+			colors: "Black,Cappuccino,Ceil,Lagoon,PostmanBlue,SkyBlue,Burgundy,Caribbean,Charcoal,NavyBlue,RoyalBlue,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL,5XL",
 			chart: "606T-SC.png"
 		},
 		"Zipper Front Ladies Work Top.jpeg" => {
@@ -1597,768 +1593,743 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		if params = tops[filename]
 
-				params[:colors].each do |color|
-
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, sku: params[:sku], weight: params[:weight], name: "#{name}-#{color}"))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat1
 				pro.default_image_file = get_file(filename)
 				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
-					s = Stylechart.create!(product_id: pro.id)
-					s.image_file = get_style(stylename)
-					s.save!
-					p s 
+					pro.data_sheet_file = get_style(stylename)
+					pro.save! 
 				end
 
 				p pro
 
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = sets[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, sku: params[:sku], weight: params[:weight], name: "#{name}-#{color}"))
-				pro.product_category = cat2
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = clearance[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat22
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = stethoscopes[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat7
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = workcoats[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat15
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = workco[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat16
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = fireretardent[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat14
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = workshirts[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat18
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = workvests[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat19
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = wvest[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat13
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = caps[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat5
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = accessories[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat6
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-			elsif params = workpants[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat17
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = pants[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat3
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				if params[:chart]
-					stylename = File.basename(params[:chart])
-					s = Stylechart.create!(product_id: pro.id)
-					s.image_file = get_style(stylename)
-					s.save!
-					p s 
-				end
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = aprons[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat12
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				if params[:chart]
-					stylename = File.basename(params[:chart])
-					s = Stylechart.create!(product_id: pro.id)
-					s.image_file = get_style(stylename)
-					s.save!
-					p s 
-				end
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = chefpants[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat10
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				if params[:chart]
-					stylename = File.basename(params[:chart])
-					s = Stylechart.create!(product_id: pro.id)
-					s.image_file = get_style(stylename)
-					s.save!
-					p s 
-				end
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = chefcoats[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat8
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				if params[:chart]
-					stylename = File.basename(params[:chart])
-					s = Stylechart.create!(product_id: pro.id)
-					s.image_file = get_style(stylename)
-					s.save!
-					p s 
-				end
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = cheftops[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat11
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				if params[:chart]
-					stylename = File.basename(params[:chart])
-					s = Stylechart.create!(product_id: pro.id)
-					s.image_file = get_style(stylename)
-					s.save!
-					p s 
-				end
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = chefhats[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat9
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				if params[:chart]
-					stylename = File.basename(params[:chart])
-					s = Stylechart.create!(product_id: pro.id)
-					s.image_file = get_style(stylename)
-					s.save!
-					p s 
-				end
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = mentalityh[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat20
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				if params[:chart]
-					stylename = File.basename(params[:chart])
-					s = Stylechart.create!(product_id: pro.id)
-					s.image_file = get_style(stylename)
-					s.save!
-					p s 
-				end
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
-
-		elsif params = mentalitysf[filename] 
-
-				params[:colors].each do |color|
-
-				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
-				pro.product_category = cat21
-				pro.default_image_file = get_file(filename)
-				pro.save!
-				pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
-
-				if params[:chart]
-					stylename = File.basename(params[:chart])
-					s = Stylechart.create!(product_id: pro.id)
-					s.image_file = get_style(stylename)
-					s.save!
-					p s 
-				end
-
-				p pro
-
-				if params[:sizes]
-
-				params[:sizes].each do |size|
-					v = pro.variants.create(
-						:name => "#{pro.name}-#{size}", 
-						:sku => "#{params[:sku]}-#{size}", 
-						:price => pro.price, 
-						:cost_price => pro.cost_price, 
-						:tax_rate => tax_rate, 
-						:weight => pro.weight, 
-						:default => true
-					)
-					v.default_image_file = get_file(filename)
-					v.save!
-					v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
-				end
-			end
-				print params[:sku] 
-			end
+		# elsif params = sets[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, sku: params[:sku], weight: params[:weight], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat2
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = clearance[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat22
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = stethoscopes[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat7
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = workcoats[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat15
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = workco[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat16
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = fireretardent[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat14
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = workshirts[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat18
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = workvests[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat19
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = wvest[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat13
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = caps[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat5
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = accessories[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat6
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# 	elsif params = workpants[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat17
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = pants[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat3
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		if params[:chart]
+		# 			stylename = File.basename(params[:chart])
+		# 			s = Stylechart.create!(product_id: pro.id)
+		# 			s.image_file = get_style(stylename)
+		# 			s.save!
+		# 			p s 
+		# 		end
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = aprons[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat12
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		if params[:chart]
+		# 			stylename = File.basename(params[:chart])
+		# 			s = Stylechart.create!(product_id: pro.id)
+		# 			s.image_file = get_style(stylename)
+		# 			s.save!
+		# 			p s 
+		# 		end
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = chefpants[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat10
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		if params[:chart]
+		# 			stylename = File.basename(params[:chart])
+		# 			s = Stylechart.create!(product_id: pro.id)
+		# 			s.image_file = get_style(stylename)
+		# 			s.save!
+		# 			p s 
+		# 		end
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = chefcoats[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat8
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		if params[:chart]
+		# 			stylename = File.basename(params[:chart])
+		# 			s = Stylechart.create!(product_id: pro.id)
+		# 			s.image_file = get_style(stylename)
+		# 			s.save!
+		# 			p s 
+		# 		end
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = cheftops[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat11
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		if params[:chart]
+		# 			stylename = File.basename(params[:chart])
+		# 			s = Stylechart.create!(product_id: pro.id)
+		# 			s.image_file = get_style(stylename)
+		# 			s.save!
+		# 			p s 
+		# 		end
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = chefhats[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat9
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		if params[:chart]
+		# 			stylename = File.basename(params[:chart])
+		# 			s = Stylechart.create!(product_id: pro.id)
+		# 			s.image_file = get_style(stylename)
+		# 			s.save!
+		# 			p s 
+		# 		end
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = mentalityh[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat20
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		if params[:chart]
+		# 			stylename = File.basename(params[:chart])
+		# 			s = Stylechart.create!(product_id: pro.id)
+		# 			s.image_file = get_style(stylename)
+		# 			s.save!
+		# 			p s 
+		# 		end
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
+
+		# elsif params = mentalitysf[filename] 
+
+		# 		params[:colors].each do |color|
+
+		# 		# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
+		# 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, weight: params[:weight], sku: params[:sku], name: "#{name}-#{color}"))
+		# 		pro.product_category = cat21
+		# 		pro.default_image_file = get_file(filename)
+		# 		pro.save!
+		# 		pro.product_attributes.create!(:key => 'Color', :value => color, :position => 1)
+
+		# 		if params[:chart]
+		# 			stylename = File.basename(params[:chart])
+		# 			s = Stylechart.create!(product_id: pro.id)
+		# 			s.image_file = get_style(stylename)
+		# 			s.save!
+		# 			p s 
+		# 		end
+
+		# 		p pro
+
+		# 		if params[:sizes]
+
+		# 		params[:sizes].each do |size|
+		# 			v = pro.variants.create(
+		# 				:name => "#{pro.name}-#{size}", 
+		# 				:sku => "#{params[:sku]}-#{size}", 
+		# 				:price => pro.price, 
+		# 				:cost_price => pro.cost_price, 
+		# 				:tax_rate => tax_rate, 
+		# 				:weight => pro.weight, 
+		# 				:default => true
+		# 			)
+		# 			v.default_image_file = get_file(filename)
+		# 			v.save!
+		# 			v.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 100)
+		# 		end
+		# 	end
+		# 		print params[:sku] 
+		# 	end
 		end
   end
 end
