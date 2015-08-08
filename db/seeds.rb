@@ -1594,7 +1594,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		if params = tops[filename]
 
 				# pro = Shoppe::Product.new(:name => name, :sku => sku, :description => 'test', :short_description => 'test', :weight => 1.119, :price => 24.99, :cost_price => 8.99, :tax_rate => tax_rate)
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], tax_rate: tax_rate, cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat1
 				pro.default_image_file = get_file(filename)
 				pro.save!
