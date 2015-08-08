@@ -105,32 +105,22 @@ class ProductsController < ApplicationController
     @relatedproducts = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: @product.product_category_id)
     @stylecharts = Stylechart.all
 
-    @sameprods = Shoppe::Product.where("name like ?", "#{@product.name}%")
-
     @allowedsizes = ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "6XL", "1SIZE", "2Y", "4Y", "6Y", "8Y"]
+    
+    @product_sizes = @product.sizes
     @sizes = []
-    @sameprods.each do |a| 
-      if @allowedsizes.include?(a.name.split("-").last) 
-        @sizes << a.name.split("-").last 
+    @product_sizes.split(",").each do |a| 
+      if @allowedsizes.include?(a) 
+        @sizes << a
       end 
     end
 
     @attributes = @product.product_attributes.public.to_a
 
-    @color_products = Shoppe::Product.root.ordered.includes(:product_category, :variants)
-    @color_products = @color_products.group_by(&:product_category)
-
-    @colorprods = Shoppe::Product.where("name like ?", "#{@product.name.split("-").first}%")
-
-    # if (@product.product_category_id == 22)
-    #   @clearanceprods = []
-    #   @colorprods.each do |a|
-    #     @clearanceprods << a.name.split("-", 2).second
-    #   end
-    # end
+    @colorprods = @product.colors
 
     @colors_array = []
-    @colorprods.each do |a| @colors_array << a.name.split("-").second end  
+    @colorprods.split(",").each do |a| @colors_array << a end  
 
     @background_details = []
 
@@ -145,27 +135,21 @@ class ProductsController < ApplicationController
         end
 
         @background_details << temp_array
-    end    
+    end   
   end
 
   def buy
     @product = Shoppe::Product.find_by_permalink(params[:permalink])
-    @permalink = params[:permalink]
-    @permalink = @permalink.split("-")
-    @permalink = @permalink.first @permalink.size - 1
-    @permalink = @permalink.join("-")
-    @permalink = @permalink + "-" + params[:color] + "-" + params[:size].downcase
-    @permalink = @permalink.downcase
-    @product = Shoppe::Product.all
-    @product = @product.find_by!(permalink: @permalink)
       if @product.stock_control
-        current_order.order_items.add_item(@product, 1)
+        @color = params[:color]
+        @size = params[:size]
+        current_order.order_items.add_item(@product, 1, @color, @size)
         redirect_to product_path(params[:permalink]), 
         :notice => "Product has been added successfuly!"
       else
         redirect_to product_path(@product.permalink), 
         :alert => "Sorry we are out of stock!"
-      end
+    end
   end
 
   # nurse wear

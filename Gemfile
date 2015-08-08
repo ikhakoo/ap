@@ -69,4 +69,4 @@ group :development, :test do
   gem 'binding_of_caller'
 end
 
-gem 'shoppe', '~> 1.0'
+gem 'shoppe', '1.0.5', :git => 'https://github.com/ikhakoo/shoppe-1.0.5-ap.git'

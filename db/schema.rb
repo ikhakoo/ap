@@ -11,18 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150808001433) do
+ActiveRecord::Schema.define(version: 20150728030438) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "clearances", force: :cascade do |t|
-    t.integer  "product_id"
-    t.text     "color"
-    t.text     "available_size"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-  end
 
   create_table "clients", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -115,18 +107,20 @@ ActiveRecord::Schema.define(version: 20150808001433) do
     t.integer  "order_id"
     t.integer  "ordered_item_id"
     t.string   "ordered_item_type"
-    t.integer  "quantity",                                  default: 1
-    t.decimal  "unit_price",        precision: 8, scale: 2
-    t.decimal  "unit_cost_price",   precision: 8, scale: 2
-    t.decimal  "tax_amount",        precision: 8, scale: 2
-    t.decimal  "tax_rate",          precision: 8, scale: 2
-    t.decimal  "weight",            precision: 8, scale: 3
+    t.string   "ordered_item_color"
+    t.string   "ordered_item_size"
+    t.integer  "quantity",                                   default: 1
+    t.decimal  "unit_price",         precision: 8, scale: 2
+    t.decimal  "unit_cost_price",    precision: 8, scale: 2
+    t.decimal  "tax_amount",         precision: 8, scale: 2
+    t.decimal  "tax_rate",           precision: 8, scale: 2
+    t.decimal  "weight",             precision: 8, scale: 3
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "shoppe_order_items", ["order_id"], name: "index_shoppe_order_items_on_order_id", using: :btree
-  add_index "shoppe_order_items", ["ordered_item_id", "ordered_item_type"], name: "index_shoppe_order_items_ordered_item", using: :btree
+  add_index "shoppe_order_items", ["ordered_item_id", "ordered_item_type", "ordered_item_color", "ordered_item_size"], name: "index_shoppe_order_items_ordered_item", using: :btree
 
   create_table "shoppe_orders", force: :cascade do |t|
     t.string   "token"
@@ -226,6 +220,8 @@ ActiveRecord::Schema.define(version: 20150808001433) do
     t.string   "permalink"
     t.text     "description"
     t.text     "short_description"
+    t.text     "colors"
+    t.text     "sizes"
     t.boolean  "active",                                      default: true
     t.decimal  "weight",              precision: 8, scale: 3, default: 0.0
     t.decimal  "price",               precision: 8, scale: 2, default: 0.0

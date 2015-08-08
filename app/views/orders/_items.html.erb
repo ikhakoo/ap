@@ -9,7 +9,9 @@
             <tr>
               <th class="product-remove">&nbsp;</th>
               <th class="product-thumbnail">&nbsp;</th>
-              <th class="product-name" style="width:716px;">Product</th>
+              <th class="product-name" style="width:556px;">Product</th>
+              <th class="product-price">Color</th>
+              <th class="product-price">Size</th>
               <th class="product-price">Price</th>
               <th class="product-quantity">Quantity</th>
               <th class="product-subtotal">Total</th>
@@ -33,6 +35,14 @@
 
                   <td class="product-name">
                     <a href="<%= product_path(item.ordered_item.permalink) %>"><%= item.ordered_item.full_name %></a> 
+                  </td>
+
+                  <td class="product-price">
+                    <%= item.ordered_item_color %> 
+                  </td>
+
+                  <td class="product-price">
+                    <%= item.ordered_item_size %>
                   </td>
 
                   <td class="product-price">
