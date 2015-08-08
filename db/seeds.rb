@@ -1598,6 +1598,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				pro.product_category = cat1
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1609,10 +1610,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = sets[filename] 
 				
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat2
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1625,10 +1627,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = clearance[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat22
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1640,10 +1643,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = stethoscopes[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat7
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1655,10 +1659,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = workcoats[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat15
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1670,10 +1675,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = workco[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat16
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1685,10 +1691,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = fireretardent[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat14
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1700,10 +1707,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = workshirts[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat18
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1715,10 +1723,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = workvests[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat19
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1730,10 +1739,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = wvest[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat13
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1745,10 +1755,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = caps[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat5
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1760,10 +1771,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = accessories[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat6
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1775,10 +1787,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = workpants[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat17
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1790,10 +1803,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = pants[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat3
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1805,10 +1819,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = aprons[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat12
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1820,10 +1835,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = chefpants[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat10
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1835,10 +1851,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = chefcoats[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat8
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1850,10 +1867,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = cheftops[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat11
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1865,10 +1883,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = chefhats[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat9
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1880,10 +1899,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = mentalityh[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat20
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
@@ -1895,10 +1915,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = mentalitysf[filename] 
 
-		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat21
 				pro.default_image_file = get_file(filename)
 				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
 
 				if params[:chart]
 					stylename = File.basename(params[:chart])
