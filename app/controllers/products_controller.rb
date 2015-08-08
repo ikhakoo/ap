@@ -127,12 +127,6 @@ class ProductsController < ApplicationController
     #   @colorprods.each do |a|
     #     @clearanceprods << a.name.split("-", 2).second
     #   end
-    #   @clearcolors = []
-    #   @clearsizes = []
-    #   @clearanceprods.each do |b|
-    #     @clearcolors << b.split("-").first
-    #     @clearsizes << b.split("-").second
-    #   end
     # end
 
     @colors_array = []
@@ -151,8 +145,7 @@ class ProductsController < ApplicationController
         end
 
         @background_details << temp_array
-    end 
-    
+    end    
   end
 
   def buy
