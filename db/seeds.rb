@@ -1346,7 +1346,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.7,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL"
 		},
-		"V Neck 3 Pocket Dolman Seeve Flip Fap Scrub Set Brick.jpeg" => {
+		"Clearance V Neck 3 Pocket Dolman Seeve Flip Fap Scrub Set.jpeg" => {
 			sku: "308/312C",
 			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
 			colors: "Brick,Brown,DustyRose,Lilac,LimeGreen,Pink,Red,Tangerine,Burgundy,Ceil,Caribbean,Khaki",
