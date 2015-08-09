@@ -108,6 +108,24 @@ class ProductsController < ApplicationController
     @product_sizes = @product.sizes
     @colorprods = @product.colors
 
+    @colors_array = []
+    @colorprods.split(",").each do |a| @colors_array << a end  
+
+    @background_details = []
+
+    @split_colors = []
+    @colors_array.each do |color| @split_colors << color.split('/') end
+    @split_colors = @split_colors.uniq
+
+        @split_colors.each do |combination|
+        temp_array = []
+        combination.each do |color| 
+          temp_array << COLORS[color]
+        end
+
+        @background_details << temp_array
+    end
+
     if @product.product_category_id == 22
 
       @all_sizes = []
@@ -115,6 +133,9 @@ class ProductsController < ApplicationController
 
       @clearance_sizes = @product_sizes.split("-")
       @clearance_sizes = @clearance_sizes.drop(1)
+
+      @clearance_hash = @colors_array.zip(@clearance_sizes).to_h
+
 
       @sizes = []
       @all_sizes.split(",").each do |a| 
@@ -133,26 +154,6 @@ class ProductsController < ApplicationController
         end 
       end
     end
-      
-
-      @colors_array = []
-      @colorprods.split(",").each do |a| @colors_array << a end  
-
-      @background_details = []
-
-      @split_colors = []
-      @colors_array.each do |color| @split_colors << color.split('/') end
-      @split_colors = @split_colors.uniq
-
-          @split_colors.each do |combination|
-          temp_array = []
-          combination.each do |color| 
-            temp_array << COLORS[color]
-          end
-
-          @background_details << temp_array
-      end
-
   end
 
   def buy
