@@ -847,14 +847,14 @@ def seed_shit
 			sku: "C200",
 			price: "31.99",
 			description: "<p>Up and down. Back and forth. In and out of the truck. These coveralls will go wherever you go. Heavy-duty 8.5oz. 100% cotton twill. Features a concealed metal button closure, 2 chest pockets, 2 lower back patch pockets and 2 lower front slant pockets as well as a pen and tool pocket</p>",
-			colors: "1STYLE",
+			colors: "NavyBlue,RoyalBlue",
 			weight: 1,
 			sizes: "38,40,42,44,46,48,50,52,54,56,58"
 		},
 		"CLASSIC POLY COTTON COVERALL.jpeg" => {
 			sku: "C100",
 			description: "<p>MOBB 65/35 Poly-Cotton blend zip-front coveralls have distinctive features of high durability, high tensile strength, good tear strength, colour fastness, pilling resistant, shrinkage control comfort wear and perfect fit. Features 2 top front pockets, 2 lower back patch pockets and 2 lower front slant pockets as well as a tool and pen pocket. Includes side access openings and action back</p>",
-			colors: "1STYLE",
+			colors: "Orange,NavyBlue,RoyalBlue,Spruce",
 			price: "31.49",
 			weight: 1,
 			sizes: "38,40,42,44,46,48,50,52,54,56,58"
@@ -862,7 +862,7 @@ def seed_shit
 		"REFLECTIVE BANDED COVERALL.jpeg" => {
 			sku: "C100R",
 			description: "<p>Stay visible on the work site with these MOBB 7.5oz 65/35 poly-cotton blend coveralls featuring reflective tape banding.The premium reflective tape ensures you are visible to coworkers and drivers. Same features as the C100</p>",
-			colors: "1STYLE",
+			colors: "Orange,NavyBlue,RoyalBlue",
 			price: "54.99",
 			weight: 1,
 			sizes: "38,40,42,44,46,48,50,52,54,56,58"
@@ -870,7 +870,7 @@ def seed_shit
 		"CLASSIC BIB OVERALL.jpeg" => {
 			sku: "B100",
 			description: "<p>Strap on the MOBB Classic Bib Overall when there's rain, wind, and hard work in the forecast. Features adjustable suspenders, 2 chest pockets, 2 lower back patch pockets, 2 lower front slant pockets and a zipper closure</p>",
-			colors: "1STYLE",
+			colors: "NavyBlue",
 			price: "44.49",
 			weight: 1,
 			sizes: "S,M,L,XL,2XL,3XL"
