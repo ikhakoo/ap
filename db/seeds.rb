@@ -1352,7 +1352,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			colors: "Brick,Brown,DustyRose,Lilac,LimeGreen,Pink,Red,Tangerine,Burgundy,Ceil,Caribbean,Khaki",
 			price: "32.95",
 			weight: 0.7,
-			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL"
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS,S,M,L,XL,2XL,3XL,4XL-XS,S,M,3XL,4XL"
 		}
 	}
 
