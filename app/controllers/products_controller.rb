@@ -103,39 +103,56 @@ class ProductsController < ApplicationController
     @p2 = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: rand(1...21))
     @products = @p1 + @p2
     @relatedproducts = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: @product.product_category_id)
-    @stylecharts = Stylechart.all
 
     @allowedsizes = ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "6XL", "1SIZE", "2Y", "4Y", "6Y", "8Y"]
-    
     @product_sizes = @product.sizes
-    @sizes = []
-    @product_sizes.split(",").each do |a| 
-      if @allowedsizes.include?(a) 
-        @sizes << a
-      end 
-    end
-
-    @attributes = @product.product_attributes.public.to_a
-
     @colorprods = @product.colors
 
-    @colors_array = []
-    @colorprods.split(",").each do |a| @colors_array << a end  
+    if @product.product_category_id == 22
 
-    @background_details = []
+      @all_sizes = []
+      @all_sizes = @product_sizes.split("-").first
 
-    @split_colors = []
-    @colors_array.each do |color| @split_colors << color.split('/') end
-    @split_colors = @split_colors.uniq
+      @clearance_sizes = @product_sizes.split("-")
+      @clearance_sizes = @clearance_sizes.drop(1)
 
-        @split_colors.each do |combination|
-        temp_array = []
-        combination.each do |color| 
-          temp_array << COLORS[color]
-        end
+      @sizes = []
+      @all_sizes.split(",").each do |a| 
+        if @allowedsizes.include?(a) 
+          @sizes << a
+        end 
+      end
+      @sizes.join(",")
 
-        @background_details << temp_array
-    end   
+    else
+
+      @sizes = []
+      @product_sizes.split(",").each do |a| 
+        if @allowedsizes.include?(a) 
+          @sizes << a
+        end 
+      end
+    end
+      
+
+      @colors_array = []
+      @colorprods.split(",").each do |a| @colors_array << a end  
+
+      @background_details = []
+
+      @split_colors = []
+      @colors_array.each do |color| @split_colors << color.split('/') end
+      @split_colors = @split_colors.uniq
+
+          @split_colors.each do |combination|
+          temp_array = []
+          combination.each do |color| 
+            temp_array << COLORS[color]
+          end
+
+          @background_details << temp_array
+      end
+
   end
 
   def buy
