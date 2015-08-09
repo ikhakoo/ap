@@ -134,7 +134,10 @@
               	<h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
               
               	<div class="product-carousel-price">
-                  <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                  <ins><%= number_to_currency product.price %></ins>
+                  <% if product.product_category_id == 22 %> 
+                  <del><%= number_to_currency (product.price*1.35).to_f %></del>
+                  <% end %>
                 </div> 
             	</div>
               <% end %>
@@ -167,7 +170,10 @@
                 <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
               
                 <div class="product-carousel-price">
-                  <ins style="color:white;"><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                  <ins style="color:white;"><%= number_to_currency product.price %></ins> 
+                  <% if product.product_category_id == 22 %>
+                  <del><%= number_to_currency (product.price*1.35).to_f %></del>
+                  <% end %>
                 </div> 
               </div>
             <% end %>
@@ -194,7 +200,7 @@
                     <a href="<%= product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" style="height:auto;width:70px;float:left;"></a>
                     <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
                     <div class="product-wid-price">
-                        <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                        <ins><%= number_to_currency product.price %></ins> 
                     </div>                            
                 	</div>
                 <% end %>
@@ -213,7 +219,7 @@
                     <a href="<%= product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" style="height:auto;width:70px;float:left;"></a>
                    	<h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
                   <div class="product-wid-price">
-                      <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                      <ins><%= number_to_currency product.price %></ins> 
                    </div>                            
                  </div>
               <% end %>
@@ -232,7 +238,7 @@
                     <a href="<%= product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" style="height:auto;width:70px;float:left;"></a>
                     <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
                   <div class="product-wid-price">
-                      <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                      <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.35).to_f %></del>
                    </div>                            
                  </div>
               <% end %>

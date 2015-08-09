@@ -26,8 +26,10 @@
                   <img src="<%= product.default_image.path %>" class="recent-thumb" alt="">
                   <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
                   <div class="product-sidebar-price">
-                    <ins><%= number_to_currency product.price %></ins> 
+                    <ins><%= number_to_currency product.price %></ins>
+                    <% if @product.product_category_id == 22 %> 
                     <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                    <% end %>
                   </div>                             
                 </div>
               <% end %>
@@ -81,8 +83,10 @@
                       <% end %>
 
                     <div class="product-inner-price">
-                      <ins><%= number_to_currency @product.price %></ins> 
-                      <del><%= number_to_currency (@product.price*1.13).to_f %></del>
+                      <ins><%= number_to_currency @product.price %></ins>
+                      <% if @product.product_category_id == 22 %> 
+                      <del><%= number_to_currency (@product.price*1.35).to_f %></del>
+                      <% end %>
                     </div> 
 
                     <div class="product-inner-category">
@@ -177,8 +181,10 @@
                           </h2>
 
                           <div class="product-carousel-price">
-                            <ins><%= number_to_currency product.price %></ins> 
-                            <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                            <ins><%= number_to_currency product.price %></ins>
+                            <% if @product.product_category_id == 22 %> 
+                            <del><%= number_to_currency (product.price*1.35).to_f %></del>
+                            <% end %>
                           </div> 
                         </div>  
                   <% end %>                                  

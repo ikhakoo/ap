@@ -63,11 +63,7 @@
                   </td>
 
                   <td class="product-quantity">
-                    <div class="quantity buttons_added">
-                      
                       <input type="number" size="4" class="input-text qty text" id="qty" value="<%= item.quantity.to_i %>" min="0" step="1" style="width:40px;" readonly>
-                     
-                    </div>
                   </td>
 
                   <td class="product-subtotal">
@@ -80,30 +76,30 @@
               </tbody>
             </table>
 
-												<div class="cart_totals ">
+							<div class="cart_totals ">
               <h2>Cart Totals</h2>
 
               <table cellspacing="0">
               <tbody>
                 <tr class="cart-subtotal">
-                        <th>Cart Subtotal</th>
-                        <td><span class="amount"><%= number_to_currency (order.total/1.13)-order.delivery_price %></span></td>
-                      </tr>
+                  <th>Cart Subtotal</th>
+                  <td><span class="amount"><%= number_to_currency (order.total/1.13)-order.delivery_price %></span></td>
+                </tr>
 
-                      <tr class="shipping">
-                        <th>Shipping and Handling</th>
-                        <td><%= number_to_currency order.delivery_price %></td>
-                      </tr>
+                <tr class="shipping">
+                  <th>Shipping and Handling</th>
+                  <td><%= number_to_currency order.delivery_price %></td>
+                </tr>
 
-                      <tr class="shipping">
-                        <th>Tax (HST 13%)</th>
-                        <td><%= number_to_currency order.total-(order.total/1.13) %></td>
-                      </tr>
+                <tr class="shipping">
+                  <th>Tax (HST 13%)</th>
+                  <td><%= number_to_currency order.total-(order.total/1.13) %></td>
+                </tr>
 
-                      <tr class="order-total">
-                        <th>Order Total</th>
-                        <td><strong><span class="amount"><%= number_to_currency order.total %></span></strong> </td>
-                      </tr>
+                <tr class="order-total">
+                  <th>Order Total</th>
+                  <td><strong><span class="amount"><%= number_to_currency order.total %></span></strong> </td>
+                </tr>
               </tbody>
             </table>
             </div>

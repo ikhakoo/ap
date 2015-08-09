@@ -23,7 +23,10 @@
                 <h6>Style # - <%= product.sku %> - <a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></h6></a>
               
                 <div class="product-carousel-price">
-                  <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                  <ins><%= number_to_currency product.price %></ins> 
+                  <% if product.product_category_id == 22 %>
+                  <del><%= number_to_currency (product.price*1.35).to_f %></del>
+                  <% end %>
                 </div> 
                 <hr>
               </div> 
