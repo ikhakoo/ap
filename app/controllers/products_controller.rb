@@ -173,7 +173,8 @@ class ProductsController < ApplicationController
   # nurse wear
 
   def nurse_tops
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 1).page(params[:page]).per(6) 
+    @per_page = params[:per_page] || 6
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 1).page(params[:page]).per(@per_page) 
   end
 
   def nurse_sets
