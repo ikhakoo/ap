@@ -7,16 +7,11 @@ Work Coveralls/Overalss fix the colors
 
 Clearance - Try to group them, put reduced price only on clearance remove from everywhere else
 
-Fix the search results
 
 apuniforms@gmail.com
 
 take out the tax
 
-if color-size
-
-if size = size on table
-print table row
 
 
 
