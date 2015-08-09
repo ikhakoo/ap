@@ -27,12 +27,13 @@
           <table cellspacing="0" class="shop_table cart">
           <thead>
             <tr>
-              <th class="product-remove">&nbsp;</th>
               <th class="product-thumbnail">&nbsp;</th>
-              <th class="product-name">Product</th>
+              <th class="product-name" style="width:556px;">Product</th>
+              <th class="product-price">Color</th>
+              <th class="product-price">Size</th>
               <th class="product-price">Price</th>
               <th class="product-quantity">Quantity</th>
-              <th class="product-subtotal">Total (w/Tax)</th>
+              <th class="product-subtotal">Total</th>
             </tr>
           </thead>
                 
@@ -41,10 +42,6 @@
               <% order.order_items.each do |item| %>
 
                 <tr class="cart_item">
-                  <td class="product-remove">
-                    <a title="Remove this item" class="remove" href="#">×</a> 
-                  </td>
-
                   <td class="product-thumbnail">
                     <a href="<%= product_path(item.ordered_item.permalink) %>"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="<%= item.ordered_item.default_image.path %>"></a>
                   </td>
@@ -54,17 +51,27 @@
                   </td>
 
                   <td class="product-price">
+                    <%= item.ordered_item_color %> 
+                  </td>
+
+                  <td class="product-price">
+                    <%= item.ordered_item_size %>
+                  </td>
+
+                  <td class="product-price">
                     <span class="amount"><%= number_to_currency (item.sub_total/item.quantity) %></span> 
                   </td>
 
                   <td class="product-quantity">
                     <div class="quantity buttons_added">
-                      <input type="number" size="4" class="input-text qty text" title="Qty" value="<%= item.quantity.to_i %>" min="0" step="1" style="text-align:center;">
+                      
+                      <input type="number" size="4" class="input-text qty text" id="qty" value="<%= item.quantity.to_i %>" min="0" step="1" style="width:40px;" readonly>
+                     
                     </div>
                   </td>
 
                   <td class="product-subtotal">
-                    <span class="amount"><%= number_to_currency (item.sub_total+item.tax_amount) %></span> 
+                    <span class="amount"><%= number_to_currency (item.sub_total) %></span> 
                   </td>
                 </tr>
 
@@ -79,19 +86,24 @@
               <table cellspacing="0">
               <tbody>
                 <tr class="cart-subtotal">
-                  <th>Cart Subtotal</th>
-                  <td><span class="amount"><%= number_to_currency (order.total/1.13) %></span></td>
-                </tr>
+                        <th>Cart Subtotal</th>
+                        <td><span class="amount"><%= number_to_currency (order.total/1.13)-order.delivery_price %></span></td>
+                      </tr>
 
-                <tr class="shipping">
-                  <th>Shipping and Handling</th>
-                  <td>Free Shipping</td>
-                </tr>
+                      <tr class="shipping">
+                        <th>Shipping and Handling</th>
+                        <td><%= number_to_currency order.delivery_price %></td>
+                      </tr>
 
-                <tr class="order-total">
-                  <th>Order Total</th>
-                  <td><strong><span class="amount"><%= number_to_currency order.total %></span></strong> </td>
-                </tr>
+                      <tr class="shipping">
+                        <th>Tax (HST 13%)</th>
+                        <td><%= number_to_currency order.total-(order.total/1.13) %></td>
+                      </tr>
+
+                      <tr class="order-total">
+                        <th>Order Total</th>
+                        <td><strong><span class="amount"><%= number_to_currency order.total %></span></strong> </td>
+                      </tr>
               </tbody>
             </table>
             </div>
