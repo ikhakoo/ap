@@ -62,6 +62,14 @@ ActiveRecord::Schema.define(version: 20150728030438) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "shoppe_clearances", force: :cascade do |t|
+    t.string  "available_color"
+    t.text    "available_sizes"
+    t.integer "shoppe_product_id"
+    t.string  "name"
+    t.string  "value"
+  end
+
   create_table "shoppe_countries", force: :cascade do |t|
     t.string  "name"
     t.string  "code2"
