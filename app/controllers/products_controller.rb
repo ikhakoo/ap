@@ -154,6 +154,7 @@ class ProductsController < ApplicationController
         end 
       end
     end
+    binding.pry
   end
 
   def buy
