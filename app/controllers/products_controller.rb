@@ -173,32 +173,32 @@ class ProductsController < ApplicationController
   # nurse wear
 
   def nurse_tops
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 1).page(params[:page]).per(@per_page) 
   end
 
   def nurse_sets
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 2).page(params[:page]).per(@per_page) 
   end
 
   def nurse_pants
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 3).page(params[:page]).per(@per_page) 
   end
 
   def nurse_coats
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 4).page(params[:page]).per(@per_page) 
   end
 
   def nurse_caps
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 5).page(params[:page]).per(@per_page) 
   end
 
   def accessories
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 6).page(params[:page]).per(@per_page) 
   end
 
@@ -206,7 +206,7 @@ class ProductsController < ApplicationController
 
 
   def stethoscopes
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 7).page(params[:page]).per(@per_page) 
   end
 
@@ -214,32 +214,32 @@ class ProductsController < ApplicationController
   #chefwear
 
   def chef_coats
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 8).page(params[:page]).per(@per_page) 
   end
 
   def chef_hats
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 9).page(params[:page]).per(@per_page) 
   end
 
   def chef_pants
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 10).page(params[:page]).per(@per_page) 
   end
 
   def chef_tops
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 11).page(params[:page]).per(@per_page) 
   end
 
   def aprons
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 12).page(params[:page]).per(@per_page) 
   end
 
   def waitress_vests
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 13).page(params[:page]).per(@per_page) 
   end
 
@@ -247,50 +247,50 @@ class ProductsController < ApplicationController
   #work wear
 
   def work_fire_retardent
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 14).page(params[:page]).per(@per_page) 
   end
 
   def work_shop_coat
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 15).page(params[:page]).per(@per_page) 
   end
 
   def work_coverall_overall
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 16).page(params[:page]).per(@per_page) 
   end
 
   def work_pants
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 17).page(params[:page]).per(@per_page) 
   end
 
   def work_shirts
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 18).page(params[:page]).per(@per_page) 
   end
 
   def work_vests
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 19).page(params[:page]).per(@per_page) 
   end
 
   #mentality
 
   def mentality_hyflex
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 20).page(params[:page]).per(@per_page) 
   end
 
   def mentality_stretchflex
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 21).page(params[:page]).per(@per_page) 
   end
   #clearance
 
   def clearance
-    @per_page = params[:per_page] || 6
+    @per_page = params[:per_page] || 8
     @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 22).page(params[:page]).per(@per_page) 
   end
 

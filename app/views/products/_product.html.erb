@@ -2,7 +2,7 @@
   <%= paginate @products %>
   <br>
   <strong>Items Per Page:</strong>
-  <%= select_tag :per_page, options_for_select([6,12,18,24], params[:per_page].to_i),
+  <%= select_tag :per_page, options_for_select([8,16,24], params[:per_page].to_i),
  { :onchange => "if(this.value){window.location='?per_page='+this.value;}" } %>
 </div>
 
@@ -13,9 +13,10 @@
         <div class="col-lg-3">
           <%= render 'sidebar' %>
         </div>
+        <div class="col-lg-9">
         <% @products.each_slice(3) do |row| %>
           <% row.each do |product| %>
-            <div class="col-md-3 col-sm-6" style="height: 495px;">
+            <div class="col-md-3 col-sm-6">
               <div class="single-product">
                 <div class="product-f-image">
                   <img src="<%= product.default_image.path %>" alt="" style="height:335px;width:280px;">
@@ -38,6 +39,7 @@
             </div>
             <% end %>
           <% end %>
+          </div>
 <!-- end col -->
     </div>
 <!-- end row -->
