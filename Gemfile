@@ -35,6 +35,8 @@ gem 'devise'
 
 gem 'kaminari'
 
+gem 'mail_form'
+
 gem 'carrierwave'
 
 # gem "shoppe-paypal"

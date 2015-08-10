@@ -25,6 +25,8 @@ Rails.application.routes.draw do
   match "nurse-wear/pants", to: "products#nurse_pants", as: "nurse_pants", via: [:get]
   match "accessories", to: "products#accessories", as: "accessories", via: [:get]
   match "nurse-wear/caps", to: "products#nurse_caps", as: "nurse_caps", via: [:get]
+
+  resources :contact_forms
   
   #Mentality
   match "mentality/stretchflex", to: "products#mentality_stretchflex", as: "mentality_stretchflex", via: [:get]
