@@ -99,7 +99,7 @@
           <% if current_order %> 
           <div class="col-sm-2">
             <div class="shopping-item">
-                <a href="<%= basket_path %>">Cart - <span class="cart-amunt"><%= "#{(current_order.total/1.13)-current_order.delivery_price}" %></span> <i class="fa fa-shopping-cart"></i> <span class="product-count"><%= "#{current_order.total_items}" %></span></a>
+                <a href="<%= basket_path %>">Cart - <span class="cart-amunt"><%= "#{number_to_currency (current_order.total/1.13)-current_order.delivery_price}" %></span> <i class="fa fa-shopping-cart"></i> <span class="product-count"><%= "#{current_order.total_items}" %></span></a>
             </div>
           </div>
           <% end %>
