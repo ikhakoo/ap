@@ -141,7 +141,7 @@
             <li class="<%= 'active' if current_page?(checkout_path) %>">
               <%= link_to "CHECKOUT", checkout_path %>
             </li>
-            <li class="<%= 'active' if current_page?(checkout_path) %>">
+            <li class="<%= 'active' if current_page?(new_contact_form_path) %>">
               <%= link_to "CONTACT US", new_contact_form_path %>
             </li>
             
@@ -204,7 +204,7 @@
                 <li><a href="<%= privacy_path %>">Privacy Policy</a></li>
                 <li><a href="<%= terms_path %>">Terms & Conditions</a></li>
                 <li><a href="<%= returns_path %>">Shipping & Return Policy</a></li>
-                <li><a target="_blank" href="http://www.stripe.com">Stripe Information</a></li>
+                <li><a target="_blank" href="http://www.stripe.com">Stripe</a></li>
               </ul>                        
             </div>
           </div>
