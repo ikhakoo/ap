@@ -34,7 +34,7 @@ class ApplicationController < ActionController::Base
 
    
 
-  private
+ private
 
   def current_order
     @current_order ||= begin
