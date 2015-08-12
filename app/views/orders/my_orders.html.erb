@@ -11,6 +11,9 @@
 </div> <!-- End Page title area -->
 <br>
 <div class="col-md-16">
+<% if @orders == [] %>
+<h2 style="text-align:center; font-size:3em;">You have not placed any orders yet...</h2>
+<% else %>
   <% @orders.each do |order| %>
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
@@ -115,6 +118,7 @@
   </div>
 </div>
 </div>
+<% end %>
 <script>
   $('#myTab a').click(function(e){
     e.preventDefault();
