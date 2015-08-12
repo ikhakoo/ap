@@ -90,11 +90,15 @@ class ProductsController < ApplicationController
   }
 
   def index
-    @products      = Shoppe::Product.root.ordered.includes(:product_category, :variants)
-    @products      = @products.group_by(&:product_category)
+    @tops          = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 1)
+    @sets          = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 2)
+    @clearance     = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 22)
     @m1            = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 20)
     @m2            = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 21)
     @mprods        = @m1 + @m2
+    @l1            = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: rand(1...19))
+    @l2            = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: rand(1...19))
+    @latest        = @l1 + @l2
   end
 
   def show
@@ -104,7 +108,7 @@ class ProductsController < ApplicationController
     @products = @p1 + @p2
     @relatedproducts = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: @product.product_category_id)
 
-    @allowedsizes = ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "6XL", "1SIZE", "2Y", "4Y", "6Y", "8Y"]
+    @allowedsizes = ["28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60", "S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL", "6XL", "1SIZE", "2Y", "4Y", "6Y", "8Y", "150MM", "190MM"]
     @product_sizes = @product.sizes
     @colorprods = @product.colors
 
