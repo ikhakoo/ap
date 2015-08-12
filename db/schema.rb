@@ -223,8 +223,8 @@ ActiveRecord::Schema.define(version: 20150728030438) do
     t.text     "colors"
     t.text     "sizes"
     t.boolean  "mens"
-    t.boolean  "womens"
-    t.boolean  "unisex",                                      default: true
+    t.boolean  "unisex"
+    t.boolean  "womens",                                      default: true
     t.boolean  "sell_item",                                   default: true
     t.boolean  "active",                                      default: true
     t.decimal  "weight",              precision: 8, scale: 3, default: 0.0
