@@ -191,27 +191,87 @@ class ProductsController < ApplicationController
 
   def nurse_sets
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 2).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 2).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 2, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 2, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 2, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 2).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
   def nurse_pants
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 3).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 3).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 3, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 3, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 3, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 3).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
   def nurse_coats
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 4).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 4).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 4, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 4, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 4, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 4).page(params[:page]).per(@per_page)
+      end
+    end
   end
 
   def nurse_caps
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 5).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 5).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 5, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 5, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 5, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 5).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
   def accessories
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 6).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 6).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 6, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 6, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 6, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 6).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
   #steth
@@ -219,7 +279,19 @@ class ProductsController < ApplicationController
 
   def stethoscopes
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 7).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 7).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 7, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 7, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 7, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 7).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
 
@@ -227,32 +299,104 @@ class ProductsController < ApplicationController
 
   def chef_coats
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 8).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 8).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 8, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 8, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 8, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 8).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
   def chef_hats
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 9).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 9).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 9, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 9, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 9, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 9).page(params[:page]).per(@per_page)
+      end
+    end
   end
 
   def chef_pants
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 10).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 10).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 10, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 10, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 10, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 10).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
   def chef_tops
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 11).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 11).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 11, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 11, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 11, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 11).page(params[:page]).per(@per_page)
+      end
+    end
   end
 
   def aprons
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 12).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 12).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 12, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 12, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 12, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 12).page(params[:page]).per(@per_page)
+      end
+    end
   end
 
   def waitress_vests
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 13).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 13).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 13, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 13, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 13, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 13).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
 
@@ -260,50 +404,158 @@ class ProductsController < ApplicationController
 
   def work_fire_retardent
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 14).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 14).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 14, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 14, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 14, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 14).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
   def work_shop_coat
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 15).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 15).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 15, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 15, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 15, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 15).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
   def work_coverall_overall
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 16).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 16).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 16, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 16, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 16, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 16).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
   def work_pants
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 17).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 17).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 17, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 17, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 17, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 17).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
   def work_shirts
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 18).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 18).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 18, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 18, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 18, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 18).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
   def work_vests
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 19).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 19).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 19, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 19, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 19, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 19).page(params[:page]).per(@per_page)
+      end
+    end
   end
 
   #mentality
 
   def mentality_hyflex
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 20).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 20).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 20, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 20, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 20, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 20).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
   def mentality_stretchflex
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 21).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 21).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 21, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 21, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 21, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 21).page(params[:page]).per(@per_page)
+      end
+    end
   end
   #clearance
 
   def clearance
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 22).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 22).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 22, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 22, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 22, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 22).page(params[:page]).per(@per_page)
+      end
+    end 
   end
 
 end
