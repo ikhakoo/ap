@@ -126,6 +126,9 @@
             <li class="<%= 'active' if current_page?(nurse_tops_path) %>">
               <%= link_to "NURSE WEAR", nurse_tops_path %>
             </li>
+            <li class="<%= 'active' if current_page?(mentality_hyflex_path) %>" style="background-color:#8c001a;">
+              <%= link_to "MENTALITY", clearance_path, style: "text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87" %>
+            </li>
             <li class="<%= 'active' if current_page?(stethoscopes_path) %>">
               <%= link_to "STETHOSCOPES", stethoscopes_path %>
             </li>
@@ -135,7 +138,7 @@
             <li class="<%= 'active' if current_page?(work_fire_retardent_path) %>">
               <%= link_to "WORK WEAR", work_fire_retardent_path %>
             </li>  
-            <li class="<%= 'active' if current_page?(clearance_path) %>" style="background-color:#d42525;">
+            <li class="<%= 'active' if current_page?(clearance_path) %>" style="background-color:#8c001a;">
               <%= link_to "CLEARANCE", clearance_path, style: "text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87" %>
             </li>
             <li class="<%= 'active' if current_page?(checkout_path) %>">
