@@ -174,7 +174,19 @@ class ProductsController < ApplicationController
 
   def nurse_tops
     @per_page = params[:per_page] || 8
-    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 1).page(params[:page]).per(@per_page) 
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 1).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 1, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 1, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 1, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 1).page(params[:page]).per(@per_page)
+      end
+    end
   end
 
   def nurse_sets
