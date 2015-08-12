@@ -22,7 +22,7 @@
                     </div>
                 </div>
               
-                <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+                <h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
               
                 <div class="product-carousel-price">
                   <ins><%= number_to_currency product.price %></ins> 
