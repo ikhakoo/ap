@@ -34,6 +34,15 @@
 	      <li><a href="<%= waitress_vests_path %>">WAITRESS VESTS</a></li><br>
 	  </ul>
 	</div>
+	<% elsif 	current_page?(mentality_hyflex_path) || 
+					current_page?(mentality_stretchflex_path) %>
+	<div class="single-sidebar">
+	  <h2 class="sidebar-title" style="color:#2B4B6F;">MENTALITY</h2>
+	  <ul>
+	      <li><a href="<%= mentality_hyflex_path %>">HY-FLEX</a></li><br>
+	      <li><a href="<%= mentality_stretchflex_path %>">STRETCH-FLEX</a></li><br>
+	  </ul>
+	</div>
 <% elsif 	current_page?(work_fire_retardent_path) || 
 					current_page?(work_shop_coat_path) || 
 					current_page?(work_coverall_overall_path)||
