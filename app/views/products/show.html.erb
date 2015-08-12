@@ -24,7 +24,7 @@
           <% @products.sample(8).each do |product| %>
                 <div class="thubmnail-recent">
                   <img src="<%= product.default_image.path %>" class="recent-thumb" alt="">
-                  <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+                  <h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
                   <div class="product-sidebar-price">
                     <ins><%= number_to_currency product.price %></ins>
                     <% if @product.product_category_id == 22 %> 
@@ -176,9 +176,7 @@
                             </div>
                           </div>
 
-                          <h2><a href="<%= product_path(product.permalink) %>">
-                            <%= product.name.split("-").first %></a>
-                          </h2>
+                          <h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
 
                           <div class="product-carousel-price">
                             <ins><%= number_to_currency product.price %></ins>

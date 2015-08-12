@@ -129,7 +129,7 @@
 	                  </div>
              		</div>
               
-              	<h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+              	<h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
               
               	<div class="product-carousel-price">
                   <ins><%= number_to_currency product.price %></ins>
@@ -163,7 +163,7 @@
                     </div>
                 </div>
               
-                <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+                <h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
               
                 <div class="product-carousel-price">
                   <ins style="color:white;"><%= number_to_currency product.price %></ins> 
@@ -191,7 +191,7 @@
                 <% @tops.sample(4).each do |product| %>
                 <div class="single-wid-product">
                     <a href="<%= product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" style="height:auto;width:70px;float:left;"></a>
-                    <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+                    <h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
                     <div class="product-wid-price">
                         <ins><%= number_to_currency product.price %></ins> 
                     </div>                            
@@ -206,7 +206,7 @@
               <% @sets.sample(4).each do |product| %>
                 	<div class="single-wid-product">
                     <a href="<%= product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" style="height:auto;width:70px;float:left;"></a>
-                   	<h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+                   	<h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
                   <div class="product-wid-price">
                       <ins><%= number_to_currency product.price %></ins> 
                    </div>                            
@@ -221,7 +221,7 @@
               <% @clearance.sample(4).each do |product| %>
                   <div class="single-wid-product">
                     <a href="<%= product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" style="height:auto;width:70px;float:left;"></a>
-                    <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+                    <h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
                   <div class="product-wid-price">
                       <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.35).to_f %></del>
                    </div>                            
