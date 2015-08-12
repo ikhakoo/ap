@@ -233,6 +233,25 @@ def seed_shit
 		}
 	}
 
+	labjackets = {
+		"MENS FLEECE WARM UP ZIPPER JACKET.jpeg" => {
+			sku: "WJF365",
+			description: "<p>Zip-up in MOBB's fleece warm-up jacket. This fitted jacket looks amazing on. Available in solid white or navy with a full zip front and two pockets.</p>",
+			colors: "NavyBlue,White",
+			price: "33.95",
+			weight: 0.4,
+			sizes: "XS,S,M,L,XL,2XL"
+		},
+		"FLEECE ZIPPER WARM UP JACKET.jpeg" => {
+			sku: "WJF360",
+			description: "<p>Zip-up in MOBB's fleece warm-up jacket. Tailored for women, with 2 side pockets, full zip front and a subtle MOBB logo embroidery detail.</p>",
+			colors: "NavyBlue,White",
+			price: "33.95",
+			weight: 0.4,
+			sizes: "XS,S,M,L,XL,2XL"
+		}
+	},
+
 	sets = {
 		"Unisex 8 Pocket Drawstring Elastic Scrub Set.jpeg" => {
 			sku: "310/307",
