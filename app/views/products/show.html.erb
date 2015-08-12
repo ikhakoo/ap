@@ -24,7 +24,7 @@
           <% @products.sample(8).each do |product| %>
                 <div class="thubmnail-recent">
                   <img src="<%= product.default_image.path %>" class="recent-thumb" alt="">
-                  <h2><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></a></h2>
+                  <h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
                   <div class="product-sidebar-price">
                     <ins><%= number_to_currency product.price %></ins>
                     <% if @product.product_category_id == 22 %> 
@@ -63,6 +63,9 @@
                       <%= @product.description.html_safe %>
 
                       <% if @product.product_category_id == 22 %>
+
+                        <p style="color:red;">Clearance: All Sales are FINAL!</p>
+                        <p style="color:red;">Due to size constraints we try to keep the size list as updated as possible. If the item is <em>unavailable</em> you will receive a full refund no questions asked!</p>
                       <table class="ui celled structured table">
                       <thead>
                       <tr>
@@ -102,9 +105,6 @@
 
                     <form action="" class="cart">
                       <%= submit_tag 'Add to basket', class: "ui button", style: "background-color:#2B4B6F;color:white;" %>
-                      <% if @product.product_category_id == 22 %>
-                        <p style="color:red;">All Items are FINAL SALE!!!</p>
-                      <% end %>
                       
                       <% if !@product.data_sheet.nil? %>
                       <!-- Button trigger modal -->
@@ -166,27 +166,25 @@
                 <h2 style="color:#2B4B6F" class="related-products-title">Related Products</h2><br><br>
                 <div class="related-products-carousel col-lg-12">
                   <% @relatedproducts.sample(12).each do |product| %>
-                        <div class="single-product">
-                          <div class="product-f-image">
-                            <img src="<%= product.default_image.path %>" style="height:335px;width:212px;" alt="">
-                            <div class="product-hover">
-                              <a href="<%= product_path(product.permalink) %>" class=" view-details-link">
-                                <i class="fa fa-link"></i> See details
-                              </a>
-                            </div>
-                          </div>
+                    <div class="single-product">
+                      <div class="product-f-image">
+                        <img src="<%= product.default_image.path %>" style="height:335px;width:212px;" alt="">
+                        <div class="product-hover">
+                          <a href="<%= product_path(product.permalink) %>" class=" view-details-link">
+                            <i class="fa fa-link"></i> See details
+                          </a>
+                        </div>
+                      </div>
 
-                          <h2><a href="<%= product_path(product.permalink) %>">
-                            <%= product.name.split("-").first %></a>
-                          </h2>
+                      <h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
 
-                          <div class="product-carousel-price">
-                            <ins><%= number_to_currency product.price %></ins>
-                            <% if @product.product_category_id == 22 %> 
-                            <del><%= number_to_currency (product.price*1.35).to_f %></del>
-                            <% end %>
-                          </div> 
-                        </div>  
+                      <div class="product-carousel-price">
+                        <ins><%= number_to_currency product.price %></ins>
+                        <% if @product.product_category_id == 22 %> 
+                        <del><%= number_to_currency (product.price*1.35).to_f %></del>
+                        <% end %>
+                      </div> 
+                    </div>  
                   <% end %>                                  
                 </div>
               </div>
