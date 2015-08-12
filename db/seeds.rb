@@ -67,7 +67,7 @@ def seed_shit
 	cat20 = Shoppe::ProductCategory.create!(:name => 'Mentality Hyflex')
 	cat21 = Shoppe::ProductCategory.create!(:name => 'Mentality StretchFlex')
 
-	cat22 = Shoppe::ProductCategory.create!(:name => 'Clearance')
+	cat22 = Shoppe::ProductCategory.create!(:name => 'Dresses and Gowns')
 
 	file_paths = Dir["db/seeds_data/*.jpeg"]
 

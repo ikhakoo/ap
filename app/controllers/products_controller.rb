@@ -261,6 +261,23 @@ class ProductsController < ApplicationController
     end 
   end
 
+  def nurse_gowns
+    @per_page = params[:per_page] || 8
+    @sex = params[:sex]
+    @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 23).page(params[:page]).per(@per_page)
+    if params[:sex]
+       if @sex == "Men"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 23, mens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Women"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 23, womens: true).page(params[:page]).per(@per_page)
+       elsif @sex == "Unisex"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 23, unisex: true).page(params[:page]).per(@per_page)
+      elsif @sex == "All"
+        @products = Shoppe::Product.select("DISTINCT ON (shoppe_products.sku) shoppe_products.*").where(product_category_id: 23).page(params[:page]).per(@per_page)
+      end
+    end 
+  end
+
   def accessories
     @per_page = params[:per_page] || 8
     @sex = params[:sex]
