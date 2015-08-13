@@ -1,3 +1,12 @@
+<style>
+@media screen and (max-width:600px){
+  .product-thumnail {
+    display:none;
+    visibility:hidden;
+  }
+}
+</style>
+
 <br>
 <br>
 <div class="col-md-16">
@@ -65,7 +74,7 @@
               <% end %>
         
                   <tr>
-                    <td class="actions" colspan="6">
+                    <td class="actions" colspan="8">
 
                       <%= link_to 'EMPTY BASKET', basket_path, :method => :delete, class: "ui button", style: "background-color:#2B4B6F;color:white;" %>
                       <% if !current_page?(action: 'checkout') && !current_page?(action: 'confirmation') %>
@@ -132,7 +141,5 @@
   </div>
 </div>
 </div>
-
-
           
         
