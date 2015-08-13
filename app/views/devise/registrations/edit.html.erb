@@ -36,8 +36,11 @@
   <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
   <% end %><br />
+  <%= f.label :password, "New Password" %> <i>(Leave blank if you do not wish to update your password)</i><br />
   <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: 'form-control'  %>
   <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirm Password", class: 'form-control' %>
+  <%= f.label :current_password %> <i>(We need your current password to confirm your changes)</i><br />
+  <%= f.password_field :current_password, autocomplete: "off", placeholder: "Confirm Password", class: 'form-control' %>
   <%= f.submit 'Update', class: 'form-control'  %>
 
 <% end %>
