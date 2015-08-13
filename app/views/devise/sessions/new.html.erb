@@ -9,7 +9,7 @@
     </div>
   </div>
 </div> <!-- End Page title area -->
-<div class="container">
+<div class="container" style="text-align:center;">
 <br><br> 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
@@ -32,9 +32,12 @@
     <% end %>
 
     <div class="actions">
-      <div class="ui buttons">
-        <%= link_to "Sign Up", new_client_registration_path, :class => "ui button button-hover", :style => "background-color:#719ac8;color:white;font-size:16px;" %>     
-      </div>
+    <div class="ui buttons">
+     <%= f.submit "Log In", :class => "ui button button-hover", :style => "background-color:#719ac8;color:white;font-size:16px;" %>
+    </div>
+    <div class="ui buttons">
+     <%= link_to "Sign Up", new_client_registration_path, :class => "ui button button-hover", :style => "background-color:#719ac8;color:white;font-size:16px;" %>     
+    </div>
     </div>
   <% end %>
 <br>
