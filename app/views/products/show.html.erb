@@ -31,7 +31,9 @@
           <h2 style="color:#2B4B6F"class="sidebar-title">Products</h2>
           <% @products.sample(8).each do |product| %>
                 <div class="thubmnail-recent">
+                <div class="big-thumb">
                   <img src="<%= product.default_image.path %>" class="recent-thumb" alt="">
+                </div>
                   <h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
                   <div class="product-sidebar-price">
                     <ins><%= number_to_currency product.price %></ins>
