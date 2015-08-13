@@ -314,7 +314,7 @@ def seed_shit
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL"
 		}
-	},
+	}
 
 	dresses ={
 		"PATIENTS NIGHT GOWN.jpeg" => {
@@ -351,7 +351,7 @@ def seed_shit
 			weight: 0.4,
 			sizes: "S,M,L,XL"
 		}
-	},
+	}
 
 	sets = {
 		"Unisex 8 Pocket Drawstring Elastic Scrub Set.jpeg" => {
