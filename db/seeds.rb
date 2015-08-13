@@ -67,7 +67,9 @@ def seed_shit
 	cat20 = Shoppe::ProductCategory.create!(:name => 'Mentality Hyflex')
 	cat21 = Shoppe::ProductCategory.create!(:name => 'Mentality StretchFlex')
 
-	cat22 = Shoppe::ProductCategory.create!(:name => 'Dresses and Gowns')
+	cat22 = Shoppe::ProductCategory.create!(:name => 'Clearance')
+
+	cat23 = Shoppe::ProductCategory.create!(:name => 'Dresses and Gowns')
 
 	file_paths = Dir["db/seeds_data/*.jpeg"]
 
@@ -1563,7 +1565,38 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				end
 
 				p pro
-		
+
+		elsif params = labjackets[filename] 
+				
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro.product_category = cat4
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
+
+				if params[:chart]
+					stylename = File.basename(params[:chart])
+					pro.data_sheet_file = get_style(stylename)
+					pro.save! 
+				end
+
+				p pro
+
+		elsif params = dresses[filename] 
+
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_i, tax_rate: tax_rate, price: params[:price].to_i, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro.product_category = cat23
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
+
+				if params[:chart]
+					stylename = File.basename(params[:chart])
+					pro.data_sheet_file = get_style(stylename)
+					pro.save! 
+				end
+
+				p pro
 
 		elsif params = clearance[filename] 
 
