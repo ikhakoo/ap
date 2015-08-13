@@ -234,21 +234,120 @@ def seed_shit
 	}
 
 	labjackets = {
-		"MENS FLEECE WARM UP ZIPPER JACKET.jpeg" => {
-			sku: "WJF365",
-			description: "<p>Zip-up in MOBB's fleece warm-up jacket. This fitted jacket looks amazing on. Available in solid white or navy with a full zip front and two pockets.</p>",
-			colors: "NavyBlue,White",
-			price: "33.95",
-			weight: 0.4,
-			sizes: "XS,S,M,L,XL,2XL"
-		},
 		"FLEECE ZIPPER WARM UP JACKET.jpeg" => {
 			sku: "WJF360",
-			description: "<p>Zip-up in MOBB's fleece warm-up jacket. Tailored for women, with 2 side pockets, full zip front and a subtle MOBB logo embroidery detail.</p>",
+			description: "<p>Fleece cardigan style jacket with button front closure, two pockets and cuffed sleeves. Perfect for layering over your favorite MOBB scrubs.</p>",
 			colors: "NavyBlue,White",
 			price: "33.95",
 			weight: 0.4,
+			sizes: "XS,S,M,L,XL,2XL",
+			chart: "WJF360-SC.png"
+		},
+		"BUTTON FRONT FLEECE JACKET.jpeg" => {
+			sku: "WJF350",
+			description: "<p>Zip-up in MOBB's fleece warm-up jacket. Tailored for women, with 2 side pockets, full zip front and a subtle MOBB logo embroidery detail.</p>",
+			colors: "Black,NavyBlue,White",
+			price: "21.95",
+			weight: 0.4,
+			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
+			chart: "WJF350-SC.png"
+		},
+		"WARM UP JACKET.jpeg" => {
+			sku: "WJ350",
+			description: "<p>Lightweight, cardigan style, warm-up jacket with button front closure and two patch pockets and cuffed sleeves. Availble in solid white and navy.</p>",
+			colors: "NavyBlue,White",
+			price: "21.95",
+			weight: 0.4,
+			sizes: "XS,S,M,L,XL,2XL,3XL,4XL"
+		},
+		"FRESH AND SNAPPY WARM UP JACKET.jpeg" => {
+			sku: "WJ370",
+			description: "<p>Fresh and snappy. This warm-up jacket has a round neck, two patch pockets, cuffed sleeve and snap-up front closure. Available in solid white and navy.</p>",
+			colors: "NavyBlue,White",
+			price: "23.95",
+			weight: 0.4,
+			sizes: "XS,S,M,L,XL,2XL,3XL,4XL"
+		},
+		"FULL LENGTH UNISEX LAB COAT.jpeg" => {
+			sku: "L406",
+			description: "<p>From doctors to dentists, pharmacists and vets, everyone knows a lab coat is essential for any medical professional. This unisex, full length lab coat will get the job done. Standard button front coat with two patch pockets, one chest pocket and side access slits. This lab coat is also available with a snap front closure.</p>",
+			colors: "White",
+			price: "19.95",
+			weight: 0.4,
+			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
+			chart: "L406-SC.png"
+		},
+		"FULL LENGTH UNISEX SNAP LAB COAT.jpeg" => {
+			sku: "L407",
+			description: "<p>From doctors to dentists, pharmacists and vets, everyone knows a lab coat is essential for any medical professional. This unisex, full length lab coat will get the job done. Snap button front closure with two patch pockets, one chest pocket and side access slits. This lab coat is also available with a standard button front closure</p>",
+			colors: "White",
+			price: "20.95",
+			weight: 0.4,
+			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
+			chart: "L407-SC.png"
+		},
+		"UNISEX HALF LENGHT LAB COAT.jpeg" => {
+			sku: "L203",
+			description: "<p>Half the coat, all the comfort. The perfect half length lab coat. Standard 3 button closure, two large patch pockets and one chest pocket. This lab coat is perfect for both men and women.</p>",
+			colors: "White",
+			price: "18.95",
+			weight: 0.4,
+			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
+			chart: "L203-SC.png"
+		},
+		"LADIES FITTED FASHION LAB COAT.jpeg" => {
+			sku: "L390",
+			description: "<p>Fabulous tailoring and embroidery make this lab coat the fashionable fit ladies are looking for. 5oz lightweight coat with two lower pockets and embroidered belt detail in the back. This coat is also available in a heavy weight poly/cotton. Please see L395</p>",
+			colors: "White",
+			price: "25.95",
+			weight: 0.4,
+			sizes: "XS,S,M,L,XL,2XL",
+			chart: "L390-SC.png"
+		},
+		"UNISEX ZIPER CONSULTATION JACKET.jpeg" => {
+			sku: "CJ007",
+			description: "<p>The look of lab coat and the feel of a scrub top. The unisex zip-up consultation jacket is the perfect choice for medical professionals. Featuring short sleevs, a full zipper front closure and 3 patch pockets.</p>",
+			colors: "Black,NavyBlue,White,PostmanBlue",
+			price: "22.95",
+			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL"
+		}
+	},
+
+	dresses ={
+		"PATIENTS NIGHT GOWN.jpeg" => {
+			sku: "PG550",
+			description: "<p>Hospital basics. Patient night gown is plain and simple. Ties at the back with two closures.</p>",
+			colors: "Ceil",
+			price: "17.95",
+			weight: 0.4,
+			sizes: "1SIZE",
+			chart: "PG550-SC.png"
+		},
+		"ZIP FRONT SCRUB DRESS.jpeg" => {
+			sku: "PD570",
+			description: "<p>Naturally, the zip front scrub dress is a first choice among nurses everywhere. Cinched at the back and full front zipper closure, two patch pockets and standard collar.</p>",
+			colors: "White",
+			price: "23.95",
+			weight: 0.4,
+			sizes: "XS,S,M,L,XL,2XL",
+			chart: "PD570-SC.png"
+		},
+		"MEN'S NIGHT GOWN.jpeg" => {
+			sku: "MG 455",
+			description: "<p>Just for him. A men's night gown with sailboat detail. Featuring a full overlap across the back and snap closures at each shoulder for easy aid or self dressing.</p>",
+			colors: "1STYLE",
+			price: "26.95",
+			weight: 0.4,
+			sizes: "S,M,L,XL,2XL"
+		},
+		"FLANNEL NIGHT GOWN.jpeg" => {
+			sku: "NG450",
+			description: "<p>Sweet dreams. Soft and cozy, ladies flannel night gown with floral detail. This night gown allows for patient discretion with the full overlap across the back. Velcro closures at each shoulder for easy aid or self dressing.</p>",
+			colors: "1STYLE",
+			price: "24.95",
+			weight: 0.4,
+			sizes: "S,M,L,XL"
 		}
 	},
 
