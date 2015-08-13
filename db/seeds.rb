@@ -330,10 +330,10 @@ def seed_shit
 			sizes: "XS,S,M,L,XL,2XL",
 			chart: "PD570-SC.png"
 		},
-		"MEN'S NIGHT GOWN.jpeg" => {
+		"MENS NIGHT GOWN.jpeg" => {
 			sku: "MG 455",
 			description: "<p>Just for him. A men's night gown with sailboat detail. Featuring a full overlap across the back and snap closures at each shoulder for easy aid or self dressing.</p>",
-			colors: "1STYLE",
+			colors: "SailBoat",
 			price: 26.95,
 			weight: 0.4,
 			sizes: "S,M,L,XL,2XL"
@@ -341,7 +341,7 @@ def seed_shit
 		"FLANNEL NIGHT GOWN.jpeg" => {
 			sku: "NG450",
 			description: "<p>Sweet dreams. Soft and cozy, ladies flannel night gown with floral detail. This night gown allows for patient discretion with the full overlap across the back. Velcro closures at each shoulder for easy aid or self dressing.</p>",
-			colors: "1STYLE",
+			colors: "FlowerPower",
 			price: 24.95,
 			weight: 0.4,
 			sizes: "S,M,L,XL"
