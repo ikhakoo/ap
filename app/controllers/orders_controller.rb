@@ -41,7 +41,7 @@ class OrdersController < ApplicationController
 			    		@order.delivery_price = 0
 			    		@order.save!
 			    	else
-			    		@price = 0.50
+			    		@price = 2.0
 			    		@distance = Geocoder::Calculations.distance_between([current_client.latitude,current_client.longitude], [43.719101, -79.302261])
 			    		@order.delivery_price = @distance * @price
 			    		@order.save!
