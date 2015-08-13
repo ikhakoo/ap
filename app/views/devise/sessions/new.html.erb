@@ -9,7 +9,8 @@
     </div>
   </div>
 </div> <!-- End Page title area -->
-<div class="col-md-16" style="text-align:center;"> 
+<div class="container">
+<br><br> 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
       <%= f.label :email, :style => "font-size: 20px;"%><br>
@@ -40,6 +41,7 @@
   <% end %>
 <br>
   <%= render "devise/shared/links" %>
+  <br><br>
 </div>
 
 
