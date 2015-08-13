@@ -45,6 +45,9 @@
   <% elsif @product.product_category_id == 21 %>
   	<%= link_to 'mentality StretchFlex', mentality_stretchflex_path %>
 	
+  <% elsif @product.product_category_id == 23 %>
+    <%= link_to 'Gowns & Dresses', nurse_gowns_path %>
+
 	<% else %>
 		<%= link_to 'Clearance', clearance_path %>
 <% end %>
