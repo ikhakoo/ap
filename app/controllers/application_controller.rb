@@ -60,5 +60,13 @@ class ApplicationController < ActionController::Base
     @order.total_before_tax - @order.delivery_price > 100
   end
 
+  def update_shipping?(order)
+    @order = order
+    @price = 2.0
+    @distance = Geocoder::Calculations.distance_between([current_client.latitude,current_client.longitude], [43.719101, -79.302261])
+    @order.delivery_price = @distance * @price
+    @order.save!
+  end
+
 end
 	
