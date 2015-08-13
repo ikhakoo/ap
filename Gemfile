@@ -40,6 +40,8 @@ gem 'mail_form'
 
 gem 'carrierwave'
 
+gem 'geocoder'
+
 # gem "shoppe-paypal"
 
 gem 'bootstrap-sass', '~> 3.3.4'

@@ -9,7 +9,7 @@ class Clients::RegistrationsController < Devise::RegistrationsController
 
   # POST /resource
    def create
-    devise_parameter_sanitizer.for(:sign_up) << [:first_name, :last_name, :address1, :address2, :suite, :city, :state, :country_id, :postcode, :phone_number]
+    devise_parameter_sanitizer.for(:sign_up) << [:first_name, :last_name, :address1, :address2, :suite, :city, :state, :country_id, :postcode, :phone_number, :latitude, :longitude]
     super
    end
 
@@ -41,14 +41,14 @@ protected
   # You can put the params you want to permit in the empty array.
    def configure_sign_up_params
       devise_parameter_sanitizer.for(:sign_up) do |u|
-        u.permit(:first_name, :last_name, :address1, :address2, :suite, :city, :state, :country_id, :postcode, :phone_number, :email, :password)
+        u.permit(:first_name, :last_name, :address1, :address2, :suite, :city, :state, :country_id, :postcode, :phone_number, :email, :latitude, :longitude, :password)
       end
    end
 
   # You can put the params you want to permit in the empty array.
     def configure_account_update_params
       devise_parameter_sanitizer.for(:account_update) do |u|
-        u.permit(:first_name, :last_name, :address1, :address2, :suite, :city, :state, :country_id, :postcode, :phone_number, :email, :password, :current_password)
+        u.permit(:first_name, :last_name, :address1, :address2, :suite, :city, :state, :country_id, :postcode, :phone_number, :email, :latitude, :longitude, :password, :current_password)
       end
     end
 

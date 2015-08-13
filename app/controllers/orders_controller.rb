@@ -40,6 +40,12 @@ class OrdersController < ApplicationController
 			    	if free_shipping?(@order)
 			    		@order.delivery_price = 0
 			    		@order.save!
+			    	else
+			    		@price = 0.10
+			    		@distance = Geocoder::Calculations.distance_between([current_client.latitude,current_client.longitude], [43.719101, -79.302261])
+			    		@order.delivery_price = @distance * @price
+			    		@order.save!
+			    		binding.pry
 			    	end
 			      redirect_to checkout_payment_path
 			    end
