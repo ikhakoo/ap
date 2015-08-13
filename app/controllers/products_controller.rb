@@ -46,7 +46,7 @@ class ProductsController < ApplicationController
     "FloresentButterfly/Charcoal" => "rgb()",
     "FlowerPower" => "background Flower Power",
     "FlowerPower/RoyalBlue" => "rgb()",
-    "Gray" => "rgb(190, 190, 190)",
+    "Grey" => "rgb(190, 190, 190)",
     "Gangster" => "background Gangster",
     "GroovyHoops" => "background Groovy Hoops",
     "HeartTies" => "background Heart Ties",
