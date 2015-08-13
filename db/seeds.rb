@@ -79,7 +79,7 @@ def seed_shit
 			description: "<p>The newest addition to the MOBB line, this unisex scrub top is all about classic 
 			simplicity. Featuring a standard v-neck with one chest pocket and one shoulder pen pocket. This top 
 			mates perfectly with 608P and is a favorite among school programs.</p>",
-			price: "18.95",
+			price: 18.95,
 			weight: 0.3,
 			colors: "Black,Cappuccino,Ceil,Lagoon,PostmanBlue,SkyBlue,Burgundy,Caribbean,Charcoal,NavyBlue,RoyalBlue,White",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL,5XL",
@@ -88,7 +88,7 @@ def seed_shit
 		"Zipper Front Ladies Work Top.jpeg" => {
 			sku: "202T",
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
-			price: "22.95",
+			price: 22.95,
 			weight: 0.3,
 			colors: "Black,White,NavyBlue",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL",
@@ -97,7 +97,7 @@ def seed_shit
 		"Flexi V Neck Scrub Top.jpeg" => {
 			sku: "324T",
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
-			price: "20.95",
+			price: 20.95,
 			weight: 0.3,
 			colors: "2toneWhite,Black,Brown,Charcoal,DejaVu,Eggplant,HeartTies,Khaki,
 							 LimeGreen,OliveGreen,Papillon,PostmanBlue,Raspberry,RoyalBlue,StringAlong,
@@ -113,7 +113,7 @@ def seed_shit
 			and ultimate movement.The Ultra Flexi v-neck top also has two lower pockets and one shoulder pen pocket.</p>",
 			colors: "Aqua,Charcoal,NavyBlue,Black,DeepOrchid,SkyBlue",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "22.95",
+			price: 22.95,
 			weight: 0.3,
 			chart: "524T-SC.png"
 		},
@@ -124,7 +124,7 @@ def seed_shit
 								RoyalBlue,Spruce,Black,Caribbean,Charcoal,Khaki, 
 								NavyBlue,Rasberry,SkyBlue,White",
 			sizes: "XXS,XS,S,M,L,XL",
-			price: "18.95",
+			price: 18.95,
 			weight: 0.3,
 			chart: "308T-SC.png"
 		},
@@ -136,7 +136,7 @@ def seed_shit
 			colors: "Aqua,Burgundy,Caribbean,Charcoal,Khaki,NavyBlue,PostmanBlue,RoyalBlue, 
 								SkyBlue,Teal,Black,Cappuccino,Ceil,Eggplant,Lagoon,OliveGreen,Red,
 								SeaGreen,Spruce,White",
-			price: "18.95",
+			price: 18.95,
 			weight: 0.3,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL",
 			chart: "310T-SC.png"
@@ -149,7 +149,7 @@ def seed_shit
 								Black/White,DeepOrchid/White,NavyBlue/SkyBlue",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
 			weight: 0.3,
-			price: "20.95",
+			price: 20.95,
 			chart: "410T-SC.png"
 		},
 		"Active Flexi V Neck Scrub Top.jpeg" => {
@@ -159,7 +159,7 @@ def seed_shit
 			colors: "Indigo/Black,Eggplant/Black,Rasberry/Black,Aqua/Black,Charcoal/Black,NavyBlue/Black,
 								White/White,PostmanBlue/Black",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "21.95",
+			price: 21.95,
 			weight: 0.3,
 			chart: "424T-SC.png"
 		},
@@ -169,7 +169,7 @@ def seed_shit
 			This two-tone scrub top has one chest pocket and one shoulder pen pocket. Also available as a set with the 409P</p>",
 			colors: "Burgundy/Navy,Khaki/Black,Charcoal/Black,PostmanBlue/Navy",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL",
-			price: "21.95",
+			price: 21.95,
 			weight: 0.3,
 			chart: "409T-SC.png"
 		},
@@ -178,7 +178,7 @@ def seed_shit
 			description: "<p>This ultra feminine scrub top features an empire waist and ties at the back. Keeping with tradition this top has a v-neck collar and two front pockets</p>",
 			colors: "Navy,White",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "23.95",
+			price: 23.95,
 			weight: 0.3,
 			chart: "420T-SC.png"
 		},
@@ -187,7 +187,7 @@ def seed_shit
 			description: "<p>Fun, funky and fitted. This sporty scrub top features reflective trim, asymmetrical zipper detail, two lower pockets, one chest pocket and one shoulder pen pocket</p>",
 			colors: "NavyBlue",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL",
-			price: "",
+			price: 23.95,
 			weight: 0.3,
 			chart: "530T-SC.png"
 		},
@@ -198,7 +198,7 @@ def seed_shit
 								Techno,DizzyVines,FlorescentButterfly,GroovyHoops,Papillon,PrettyInPetals,
 								StringAlong",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL",
-			price: "19.99",
+			price: 19.99,
 			weight: 0.3,
 			chart: "320T-SC.png"
 		},
@@ -211,7 +211,7 @@ def seed_shit
 								Indigo/Charcoal,NavyBlue/SkyBlue,PrettyInPetals/Charcoal,SkyBlue/Navy, 
 								StringAlong/Eggplant,White/White",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "19.95",
+			price: 19.95,
 			weight: 0.3,
 			chart: "323T-SC.png"
 		},
@@ -220,7 +220,7 @@ def seed_shit
 			description: "<p>Button up in this ladies work top featuring 3 patch pockets, button front closure and a collar</p>",
 			colors: "Black,White,NavyBlue",
 			sizes: "S,M,L,XL,2XL",
-			price: "22.95",
+			price: 22.95,
 			weight: 0.3,
 			chart: "201T-SC.png"
 		},
@@ -229,7 +229,7 @@ def seed_shit
 			description: "<p>100% cotton, 100% comfort. This ladies long sleeve tee is made with pre-shrunk cotton and is perfect worn on it's own or layered under a scrub top. The top stitched collar gives it the strength and durability MOBB is known for</p>",
 			colors: "Black,White,NavyBlue",
 			sizes: "S,M,L,XL,2XL",
-			price: "18.95",
+			price: 18.95,
 			weight: 0.3,
 			chart: "LT101-SC.png"
 		}
@@ -240,7 +240,7 @@ def seed_shit
 			sku: "WJF360",
 			description: "<p>Fleece cardigan style jacket with button front closure, two pockets and cuffed sleeves. Perfect for layering over your favorite MOBB scrubs.</p>",
 			colors: "NavyBlue,White",
-			price: "33.95",
+			price: 33.95,
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL",
 			chart: "WJF360-SC.png"
@@ -249,7 +249,7 @@ def seed_shit
 			sku: "WJF350",
 			description: "<p>Zip-up in MOBB's fleece warm-up jacket. Tailored for women, with 2 side pockets, full zip front and a subtle MOBB logo embroidery detail.</p>",
 			colors: "Black,NavyBlue,White",
-			price: "21.95",
+			price: 21.95,
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
 			chart: "WJF350-SC.png"
@@ -258,7 +258,7 @@ def seed_shit
 			sku: "WJ350",
 			description: "<p>Lightweight, cardigan style, warm-up jacket with button front closure and two patch pockets and cuffed sleeves. Availble in solid white and navy.</p>",
 			colors: "NavyBlue,White",
-			price: "21.95",
+			price: 21.95,
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -266,7 +266,7 @@ def seed_shit
 			sku: "WJ370",
 			description: "<p>Fresh and snappy. This warm-up jacket has a round neck, two patch pockets, cuffed sleeve and snap-up front closure. Available in solid white and navy.</p>",
 			colors: "NavyBlue,White",
-			price: "23.95",
+			price: 23.95,
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -274,7 +274,7 @@ def seed_shit
 			sku: "L406",
 			description: "<p>From doctors to dentists, pharmacists and vets, everyone knows a lab coat is essential for any medical professional. This unisex, full length lab coat will get the job done. Standard button front coat with two patch pockets, one chest pocket and side access slits. This lab coat is also available with a snap front closure.</p>",
 			colors: "White",
-			price: "19.95",
+			price: 19.95,
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
 			chart: "L406-SC.png"
@@ -283,7 +283,7 @@ def seed_shit
 			sku: "L407",
 			description: "<p>From doctors to dentists, pharmacists and vets, everyone knows a lab coat is essential for any medical professional. This unisex, full length lab coat will get the job done. Snap button front closure with two patch pockets, one chest pocket and side access slits. This lab coat is also available with a standard button front closure</p>",
 			colors: "White",
-			price: "20.95",
+			price: 20.95,
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
 			chart: "L407-SC.png"
@@ -292,7 +292,7 @@ def seed_shit
 			sku: "L203",
 			description: "<p>Half the coat, all the comfort. The perfect half length lab coat. Standard 3 button closure, two large patch pockets and one chest pocket. This lab coat is perfect for both men and women.</p>",
 			colors: "White",
-			price: "18.95",
+			price: 18.95,
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
 			chart: "L203-SC.png"
@@ -301,7 +301,7 @@ def seed_shit
 			sku: "L390",
 			description: "<p>Fabulous tailoring and embroidery make this lab coat the fashionable fit ladies are looking for. 5oz lightweight coat with two lower pockets and embroidered belt detail in the back. This coat is also available in a heavy weight poly/cotton. Please see L395</p>",
 			colors: "White",
-			price: "25.95",
+			price: 25.95,
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL",
 			chart: "L390-SC.png"
@@ -310,7 +310,7 @@ def seed_shit
 			sku: "CJ007",
 			description: "<p>The look of lab coat and the feel of a scrub top. The unisex zip-up consultation jacket is the perfect choice for medical professionals. Featuring short sleevs, a full zipper front closure and 3 patch pockets.</p>",
 			colors: "Black,NavyBlue,White,PostmanBlue",
-			price: "22.95",
+			price: 22.95,
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL"
 		}
@@ -321,7 +321,7 @@ def seed_shit
 			sku: "PG550",
 			description: "<p>Hospital basics. Patient night gown is plain and simple. Ties at the back with two closures.</p>",
 			colors: "Ceil",
-			price: "17.95",
+			price: 17.95,
 			weight: 0.4,
 			sizes: "1SIZE",
 			chart: "PG550-SC.png"
@@ -330,7 +330,7 @@ def seed_shit
 			sku: "PD570",
 			description: "<p>Naturally, the zip front scrub dress is a first choice among nurses everywhere. Cinched at the back and full front zipper closure, two patch pockets and standard collar.</p>",
 			colors: "White",
-			price: "23.95",
+			price: 23.95,
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL",
 			chart: "PD570-SC.png"
@@ -339,7 +339,7 @@ def seed_shit
 			sku: "MG 455",
 			description: "<p>Just for him. A men's night gown with sailboat detail. Featuring a full overlap across the back and snap closures at each shoulder for easy aid or self dressing.</p>",
 			colors: "1STYLE",
-			price: "26.95",
+			price: 26.95,
 			weight: 0.4,
 			sizes: "S,M,L,XL,2XL"
 		},
@@ -347,7 +347,7 @@ def seed_shit
 			sku: "NG450",
 			description: "<p>Sweet dreams. Soft and cozy, ladies flannel night gown with floral detail. This night gown allows for patient discretion with the full overlap across the back. Velcro closures at each shoulder for easy aid or self dressing.</p>",
 			colors: "1STYLE",
-			price: "24.95",
+			price: 24.95,
 			weight: 0.4,
 			sizes: "S,M,L,XL"
 		}
@@ -361,7 +361,7 @@ def seed_shit
 <p><strong>Size 6XL only available in Navy</p></strong>",
 			colors: "Aqua,Burgundy,Caribbean,Charcoal,Khaki,LimeGreen,OliveGreen,RoyalBlue,Spruce,
 								White,Black,Cappuccino,Ceil,Eggplant,Lagoon,NavyBlue,PostmanBlue,SkyBlue,Teal",
-			price: "33.95",
+			price: 33.95,
 			weight: 0.7,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL,5XL"
 		},
@@ -370,7 +370,7 @@ def seed_shit
 			description: "<p>MOBB's newest style, this scrub set replaces the 306/306. A classic v-neck scrub top with one chest pocket and one shoulder pen pocket and a simple five pocket drawstring pant. This set is ideal for school programs.</p>",
 			colors: "Black,Cappuccino,Ceil,Lagoon,PostmanBlue,SkyBlue,Burgundy,Caribbean,Charcoal,
 								NavyBlue,RoyalBlue,White",
-			price: "32.95",
+			price: 32.95,
 			weight: 0.7,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -378,7 +378,7 @@ def seed_shit
 			sku: "306TA/306PA",
 			description: "<p>Available for special programs, this scrub set was designed to meet the needs of hospital O.R. staff. A unisex, reversible, drawstring scrub set featuring a color code size indicator on the chest pocket and a simple drawstring scrub pant with one back pocket.</p>",
 			colors: "Lagoon",
-			price: "19.95",
+			price: 19.95,
 			weight: 0.7,
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL,5XL"
 		},
@@ -386,7 +386,7 @@ def seed_shit
 			sku: "409/409",
 			description: "<p>Becoming one of MOBB's best sellers. This Men's two tone v-neck has one chest pocket and one shoulder pen pocket and is available in four color-ways. The six pocket cargo scrub pant has a built in belt buckle and is available in black and navy.</p>",
 			colors: "Burgundy/Navy,Khaki/Black,Charcoal/Black,PostmanBlue/Navy",
-			price: "48.95",
+			price: 48.95,
 			weight: 0.7,
 			sizes: "XS,S,M,L,XL,2XL,3XL"
 		},
@@ -394,7 +394,7 @@ def seed_shit
 			sku: "CH400",
 			description: "<p>Mobb's High Quality Children's Scrub Set</p>",
 			colors: "Lagoon",
-			price: "19.95",
+			price: 19.95,
 			weight: 0.7,
 			sizes: "2Y,4Y,6Y,8Y"
 		}
@@ -406,7 +406,7 @@ def seed_shit
 			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.</p>",
 			colors: "PostmanBlue,SkyBlue,Black,Navy,Charcoal",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "26.95",
+			price: 26.95,
 			weight: 0.4,
 			chart: "416P-SC.png"
 		},
@@ -418,7 +418,7 @@ def seed_shit
 										Available in Black, Navy & Charcoal only</p>",
 			colors: ["Eggplant,Navy,PostmanBlue,Charcoal"],
 			sizes: ["XS,S,M,L,XL"],
-			price: "27.95",
+			price: 27.95,
 			weight: 0.4,
 			chart: "412P-SC.png"
 		},
@@ -427,7 +427,7 @@ def seed_shit
 			description: "<p>The newest addition to the MOBB line, this pant is all about classic simplicity. Features a standard drawstring and five pockets. This pant mates perfectly with the 606T and is a favorite among school programs.</p>",
 			colors: "Black,SkyBlue,Burgundy,Caribbean,Charcoal,Ceil,Lagoon,Navy,PostmanBlue,RoyalBlue,White,Cappuccino",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL",
-			price: "19.95",
+			price: 19.95,
 			weight: 0.4,
 			chart: "608P-SC.png"
 		},
@@ -436,7 +436,7 @@ def seed_shit
 			description: "<p>Fabulous fit and classic style. This five pocket boot cut pant features our signature MOBB logo waistband that can be flipped down for a lower rise. This is the pant that everyone's talking about.</p>",
 			colors: "Aqua,Black,Burgundy,Caribbean,Charcoal,Ceil,DeepOrchid,Eggplant,Indigo,Khaki,Lagoon,Navy,PostmanBlue,Raspberry,RoyalBlue,SkyBlue,Spruce,White,Cappuccino,LimeGreen,PinkSorbet",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "22.95",
+			price: 22.95,
 			weight: 0.4,
 			chart: "312P-SC.png"
 		},
@@ -445,7 +445,7 @@ def seed_shit
 			description: "<p>Fabulous fit and classic style. This five pocket boot cut pant features our signature MOBB logo waistband that can be flipped down for a lower rise. This is the pant that everyone's talking about.</p>",
 			colors: "Aqua,Black,Burgundy,Caribbean,Charcoal,Ceil,DeepOrchid,Eggplant,Indigo,Khaki,Lagoon,Navy,PostmanBlue,Raspberry,RoyalBlue,SkyBlue,Spruce,White,Cappuccino,LimeGreen,PinkSorbet",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "24.95",
+			price: 24.95,
 			weight: 0.4,
 			chart: "312P-SC.png"
 		},
@@ -454,7 +454,7 @@ def seed_shit
 			description: "<p>Strong and versatile this pant is all business. Six pockets including two expandable side cargo pockets and a built in belt buckle.</p>",
 			colors: "Navy,Black",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL",
-			price: "29.95",
+			price: 29.95,
 			weight: 0.4,
 			chart: "409P-SC.png"
 		},
@@ -463,7 +463,7 @@ def seed_shit
 			description: "<p>Strong and versatile this pant is all business. Six pockets including two expandable side cargo pockets and a built in belt buckle.</p>",
 			colors: "Navy,Black",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL",
-			price: "31.95",
+			price: 31.95,
 			weight: 0.4,
 			chart: "409P-SC.png"
 		},
@@ -472,7 +472,7 @@ def seed_shit
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
 			colors: "Navy,Black,White",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "20.95",
+			price: 20.95,
 			weight: 0.4,
 			chart: "302P-SC.png"
 		},
@@ -481,7 +481,7 @@ def seed_shit
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
 			colors: "Black,Aqua,Eggplant,Burgundy,Caribbean,Charcoal,Khaki,Lagoon,Navy,OliveGreen,PostmanBlue,RoyalBlue,SkyBlue,Teal,White,Ceil,Cappuccino",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL,5XL",
-			price: "21.95",
+			price: 21.95,
 			weight: 0.4,
 			chart: "307P-SC.png"
 		},
@@ -490,7 +490,7 @@ def seed_shit
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
 			colors: "Black,Caribbean,Charcoal,Navy,PostmanBlue,RoyalBlue,Spruce",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL,5XL",
-			price: "23.95",
+			price: 23.95,
 			weight: 0.4,
 			chart: "309PTALL-SC.png"
 		},
@@ -499,7 +499,7 @@ def seed_shit
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
 			colors: "Charcoal/Black,Navy/Red,Black/DustyRose",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "22.95",
+			price: 22.95,
 			weight: 0.4,
 			chart: "316P-SC.png"
 		},
@@ -508,7 +508,7 @@ def seed_shit
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
 			colors: "Charcoal/Black,Navy/Red,Black/DustyRose",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "24.95",
+			price: 24.95,
 			weight: 0.4,
 			chart: "316P-SC.png"
 		},
@@ -517,7 +517,7 @@ def seed_shit
 			description: "<p>THE MOBB SCRUB SHORT IS EASY AND COMFORTABLE. PERFECT FOR WARM WORK ENVIRONMENTS. FEATURES AN ELASTIC WAISTBAND, A CONSERVATIVE KNEE LENGTH AND TWO SIDE POCKETS.</p>",
 			colors: "Black,Navy,White",
 			sizes: "S,M,L,XL,2XL,3XL",
-			price: "17.95",
+			price: 17.95,
 			weight: 0.4,
 			chart: "304P-SC.png"
 		},
@@ -526,7 +526,7 @@ def seed_shit
 			description: "<p>The Flip Flap Capri Pant fits and feels just like the 312P but makes a perfect addition to summer wardrobes or warmer work environments. Features our signature MOBB logo waistband that can be flipped down for a low rise fit.</p>",
 			colors: "Black,Navy,White",
 			sizes: "XS,S,M,L,XL,2XL,3XL",
-			price: "19.95",
+			price: 19.95,
 			weight: 0.4,
 			chart: "314P-SC.png"
 		},
@@ -535,7 +535,7 @@ def seed_shit
 			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.</p>",
 			colors: "Black,NavyBlue,Charcoal,PostmanBlue,SkyBlue",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "28.95",
+			price: 28.95,
 			weight: 0.4,
 			chart: "416PT36IN-SC.png"
 		},
@@ -544,7 +544,7 @@ def seed_shit
 			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.</p>",
 			colors: "Black,NavyBlue,Charcoal",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "26.95",
+			price: 26.95,
 			weight: 0.4,
 			chart: "416PT28IN-SC.png"
 		},
@@ -553,7 +553,7 @@ def seed_shit
 			description: "<p>This pant is the perfect combination of function and flow. The waistband is both elastic and drawstring making it comfortable at any rise. It has multiple pockets including a pocket for scissors and features multi-needle stitching for durability.</p>",
 			colors: "Black,NavyBlue",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "25.95",
+			price: 25.95,
 			weight: 0.4,
 			chart: "412PT28IN-SC.png"
 		}
@@ -567,7 +567,7 @@ def seed_shit
 			the right side is enclosed with inner sectional pockets.The top is finished off with two small side 
 			slits and a convenient shoulder pen pocket.</p><p>Stretch-Flex Blend: 65% Poly/32% Rayon/3% Spandex</p>",
 			colors: "Black,RoyalBlue,Charcoal,White",
-			price: "28.95",
+			price: 28.95,
 			weight: 0.3,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL"
 		},
@@ -578,7 +578,7 @@ def seed_shit
 			outside with a utility D-ring and an inner smart phone pocket.</p><p>*Stretch-Flex Blend: 
 			65% Poly/32% Rayon/3% Spandex</p>",
 		  colors: "Black,RoyalBlue,Charcoal,White",
-		  price: "28.95",
+		  price: 28.95,
 		  weight: 0.3,
 		  sizes: "XXS,XS,S,M,L,XL,2XL,3XL"
 		},
@@ -587,7 +587,7 @@ def seed_shit
 			description: "<p>Made for comfort, this straight leg pant is equipped with two front pockets, one back pocket and a cargo pocket with a utility D-ring. The combination drawstring/ elastic waistband will ensure ultimate fit and comfort. The inner waistband features MOBB’s signature logo.</p>",
 			colors: "Black,Charcoal,RoyalBlue,White",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "34.95",
+			price: 34.95,
 			weight: 0.3,
 			chart: "P3011-SC.png"
 		},
@@ -596,7 +596,7 @@ def seed_shit
 			description: "<p>Made for comfort, this straight leg pant is equipped with two front pockets, one back pocket and a cargo pocket with a utility D-ring. The combination drawstring/ elastic waistband will ensure ultimate fit and comfort. The inner waistband features MOBB’s signature logo.</p>",
 			colors: "Black,Charcoal,RoyalBlue,White",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "36.95",
+			price: 36.95,
 			weight: 0.3,
 			chart: "P3011-SC.png"
 		}
@@ -608,7 +608,7 @@ def seed_shit
 			description: "<p>A clean and classic straight leg pant featuring front-to-back, wrap-around cargo pockets, two slant pockets and a combination drawstring elastic waist.</p>",
 			colors: "Aubergine,SoftMint,Black,Charcoal,DeepOrchid,NavyBlue,White",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "28.99",
+			price: 28.99,
 			weight: 0.3,
 			chart: "P1011-SC.png"
 		},
@@ -617,7 +617,7 @@ def seed_shit
 			description: "<p>A clean and classic straight leg pant featuring front-to-back, wrap-around cargo pockets, two slant pockets and a combination drawstring elastic waist.</p>",
 			colors: "Black,Charcoal,NavyBlue",
 			sizes: "XS,S,M,L,XL,2XL",
-			price: "22.99",
+			price: 22.99,
 			weight: 0.3,
 			chart: "P1011-SC.png"
 		},
@@ -627,7 +627,7 @@ def seed_shit
 			two hidden pockets and custom tailoring for an exceptional fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex<p>",
 			colors: "Aubergine,White,SoftMint",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "18.99",
+			price: 18.99,
 			weight: 0.3,
 			chart: "T1018-SC.png"
 		},
@@ -637,7 +637,7 @@ def seed_shit
 			beautiful tailoring through the back for a custom fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
 			colors: "Aubergine,White,SoftMint",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "18.99",
+			price: 18.99,
 			weight: 0.3,
 			chart: "T1010-SC.png"
 		},
@@ -647,7 +647,7 @@ def seed_shit
 			chest darts and two hidden pockets.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
 			colors: "Aubergine,White,SoftMint",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: "18.99",
+			price: 18.99,
 			weight: 0.3,
 			chart: "T1016-SC.png"
 		},
@@ -658,7 +658,7 @@ def seed_shit
 			sku: "FR60W",
 			description: "<p>Nomex® is the go-to fabric for MOBB when manufacturing products for industrial workers. Our insulated coverall worksuit has a detachable hood and 3M Scotchlite reflective tape to enhance visibility. Includes a 2-way Vislon Nomex® front zipper, 2 ankle zippers as well a handy pen pocket. Featuring 100% Meta-Aramid 15oz lining, quilted to 100% Aramid with 100% Polyester moisture barrier and 100% FR Polyurethane wind barrier film</p>",
 			colors: "NavyBlue,RoyalBlue",
-			price: "199.99",
+			price: 199.99,
 			weight: 0.6,
 			sizes: "38,40,42,44,46,48,50,52,54,56"
 		},
@@ -666,7 +666,7 @@ def seed_shit
 			sku: "FR50W",
 			description: "<p>MOBB is proud to use Nomex® fiber in all of our FR clothing because we know it remains the first choice for workers who rely on  flame resistant properties to help keep them safe from the everyday hazards they face. The insulated bib pant features 2-way Vislon Nomex® front and leg zippers with snap down covers, adjustable FR elastic shoulder straps and 3M Scotchlite reflective tape for enhanced visibility</p>",
 			colors: "NavyBlue,RoyalBlue",
-			price: "209.99",
+			price: 209.99,
 			weight: 0.6,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -674,7 +674,7 @@ def seed_shit
 			sku: "FR40W",
 			description: "<p>MOBB chooses NOMEX® for all of our FR clothing because they offer the ultimate protection. A tough outer shell with cut and flame resistance, a moisture barrier preventing the penetration of liquid and a thermal liner providing sufficient insulation while not restricting mobility. The insulated parka features a detachable hood, 2 chest pockets, 2 lower front pockets, all with flaps and covered snap closures. Includes Vislon Nomex® zipper and 3M Scotchlite reflective tape</p>",
 			colors: "NavyBlue,RoyalBlue",
-			price: "199.99",
+			price: 199.99,
 			weight: 0.6,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -682,7 +682,7 @@ def seed_shit
 			sku: "FR30W",
 			description: "<p>Lightweight comfort in a flame-resistant fabric. That's what you can expect with our Indura® Ultra-Soft® FR Insulated Coverall Worksuit. Features 100% FR treated cotton lining with a breathable vapour barrier, 3M Scotchlite reflective tape. Includes 2-way Vislon Nomex® front zipper, 2 ankle zippers and a handy pen pocket</p>",
 			colors: "NavyBlue,RoyalBlue",
-			price: "199.99",
+			price: 199.99,
 			weight: 0.6,
 			sizes: "38,40,42,44,46,48,50,52,54,56"
 		},
@@ -690,7 +690,7 @@ def seed_shit
 			sku: "FR20W",
 			description: "<p>The built-in flame resistance of NOMEX® provides outstanding protection as well as being a light weight comfortable garment. Our bib pant features 2-way Vislon Nomex® front zippers and leg zippers with snap down covers, adjustable FR elastic shoulder straps and 3M Scothchlite reflective tape</p>",
 			colors: "NavyBlue",
-			price: "179.99",
+			price: 179.99,
 			weight: 0.6,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -698,7 +698,7 @@ def seed_shit
 			sku: "FR10W",
 			description: "<p>Indura® Ultra Soft® Parkas allow you to protect yourself and your crew from a number of potential injuries. These flame resistant jackets are proven to provide exceptional warmth and flame resistance. Features 2 chest pockets, 2 lower pockets, all with flaps and covered snap closures. Includes Vislon Nomex® zippers and 3M Scotchlite reflective tape</p>",
 			colors: "NavyBlue,RoyalBlue",
-			price: "174.99",
+			price: 174.99,
 			weight: 0.6,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		}
@@ -709,7 +709,7 @@ def seed_shit
 			sku: "SH200",
 			description: "<p>Stay protected and comfortable throughout the work day in the MOBB shop coat, made with a heavyweight 7.5 oz poly-cotton blend for strong, snag-resistant wear. Features 3 patch pockets as well as side access openings, centre back vent, dome closure and a handy penpocket on the left arm</p>",
 			colors: "NavyBlue,Spruce",
-			price: "34.49",
+			price: 34.49,
 			weight: 0.6,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -717,7 +717,7 @@ def seed_shit
 			sku: "SH203",
 			description: "<p>Stay protected and comfortable throughout the work day in the MOBB shop coat, made with a heavyweight 8.5 oz poly-cotton blend for strong, snag-resistant wear. Features 3 patch pockets as well as side access openings, centre back vent, dome closure and a handy penpocket on the left arm</p>",
 			colors: "PostmanBlue",
-			price: "34.99",
+			price: 34.99,
 			weight: 0.6,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -725,7 +725,7 @@ def seed_shit
 			sku: "SH201S",
 			description: "<p>Made from a 7oz Spun Poly blend, each shop coat features 3 patch pockets as well as side access openings, centre back vent, dome button closure and left arm pen pocket</p>",
 			colors: "White",
-			price: "39.49",
+			price: 39.49,
 			weight: 0.6,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -733,7 +733,7 @@ def seed_shit
 			sku: "SH200",
 			description: "<p>Made from comfortable 100% cotton, this traditional MOBB shop coat offers convenience and utility with one chest and two lower pockets. Comfort and durability make this shop coat ideal for everything from customer service to industrial work environments. Also features a concealed dome button closure, side access openings, centre back vent and left arm pen pocket</p>",
 			colors: "NavyBlue",
-			price: "34.49",
+			price: 34.49,
 			weight: 0.6,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -744,7 +744,7 @@ def seed_shit
 			sku: "S300",
 			description: "<p>The MOBB Long Sleeve Button Front Work Shirt is made to last. Its heavyweight 65/35 poly/cotton 5 oz. fabric makes it both comfortable and durable. Features a button front closure with top snap and 2 patch pockets</p>",
 			colors: "Ceil,Lagoon,NavyBlue",
-			price: "16.99",
+			price: 16.99,
 			weight: 0.3,
 			sizes: "S,M,L,XL,2XL,3XL,4XL,5XL,6XL"
 		},
@@ -752,7 +752,7 @@ def seed_shit
 			sku: "S301",
 			description: "<p>The MOBB Short Sleeve Button Front Work Shirt is stylish and functional. Its heavyweight 65/35 poly/cotton 5 oz. fabric makes it both comfortable and durable. Features a button front closure with top snap and 2 patch pockets</p>",
 			colors: "Ceil,Lagoon,NavyBlue",
-			price: "16.99",
+			price: 16.99,
 			weight: 0.3,
 			sizes: "S,M,L,XL,2XL,3XL,4XL,5XL,6XL"
 		}
@@ -763,7 +763,7 @@ def seed_shit
 			sku: "SC500",
 			description: "<p>A beautiful surgeon cap built with comfort in mind. Traditional 'tie back' style featuring a forehead moisture band. Available in assorted prints</p>",
 			colors: "1STYLE",
-			price: "12.95",
+			price: 12.95,
 			weight: 0.1,
 			sizes: "1SIZE"
 		},
@@ -772,7 +772,7 @@ def seed_shit
 			description: "<p>This hat is styled with a beautiful bouffant and is available is assorted prints and solid colors.
 										Elastic back ensures a perfect fit for every head</p>",
 			colors: "Ceil,FlowerPower",
-			price: "8.95",
+			price: 8.95,
 			weight: 0.1,
 			sizes: "1SIZE"
 		},
@@ -780,7 +780,7 @@ def seed_shit
 			sku: "SC440",
 			description: "<p>This hat is the traditional 'tie back' style surgeon's cap. Available in assorted prints and solid colours.</p>",
 			colors: "Blue,Pink,Purple,Red,Grey,HeartTies",
-			price: "6.95",
+			price: 6.95,
 			weight: 0.1,
 			sizes: "1SIZE"
 		},
@@ -788,7 +788,7 @@ def seed_shit
 			sku: "NC",
 			description: "<p>Classic white nurse cap, the perfect compliment to all traditional nurse uniforms</p>",
 			colors: "White",
-			price: "10.95",
+			price: 10.95,
 			weight: 0.1,
 			sizes: "1SIZE" 
 		}
@@ -799,7 +799,7 @@ def seed_shit
 			sku: "STETHCLIP",
 			description: "<p>The MOBB Stethoscope Clip was created by medical professionals for medical professionals. Sturdy, durable construction, made to last</p>",
 			colors: "1STYLE",
-			price: "8.49",
+			price: 8.49,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -807,7 +807,7 @@ def seed_shit
 			sku: "PL",
 			description: "<p>The MOBB Penlight provides a bright, quality light, a pupil gauge and is an indispensable tool for diagnosis</p>",
 			colors: "1STYLE",
-			price: "5.95",
+			price: 5.95,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -815,7 +815,7 @@ def seed_shit
 			sku: "PL-CRUSHER",
 			description: "<p>The MOBB Pill Cutter-Crusher Duo is a self-contained compliance device that is used to cut or crush pills and tablets to half-size or into powder for medication administration</p>",
 			colors: "1STYLE",
-			price: "9.95",
+			price: 9.95,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -823,7 +823,7 @@ def seed_shit
 			sku: "A0002",
 			description: "<p>Soft and cozy. Featuring the MOBB logo and a non-slip tread</p>",
 			colors: "1STYLE",
-			price: "9.99",
+			price: 9.99,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -831,7 +831,7 @@ def seed_shit
 			sku: "MMTWP",
 			description: "<p>MOBB MEASURING TAPE WITH PEN</p>",
 			colors: "1STYLE",
-			price: "1.95",
+			price: 1.95,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -839,7 +839,7 @@ def seed_shit
 			sku: "MKC-100",
 			description: "<p>MOBB KEY CHAIN</p>",
 			colors: "1STYLE",
-			price: "1.95",
+			price: 1.95,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -847,7 +847,7 @@ def seed_shit
 			sku: "PASC-100",
 			description: "<p>Soft, fuzzy and completely adorable. The MOBB Plush Animal Stethoscope covers are sure to make everyone smile, especially the little ones. Select the options as color options.</p>",
 			colors: "Hippo,Pig,Ant,Frog",
-			price: "14.99",
+			price: 14.99,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -855,7 +855,7 @@ def seed_shit
 			sku: "COW-100",
 			description: "<p>Key chains avilable in Smiley, Heart, Teddy Bear, and Health styles</p>",
 			colors: "Smiley,Heart,TeddyBear,Health",
-			price: "9.95",
+			price: 9.95,
 			weight: 0.4,
 			sizes: "1SIZE"
 		},
@@ -863,7 +863,7 @@ def seed_shit
 			sku: "KT-A07",
 			description: "<p>Measure blood pressure with this lightweight and portable manual intalation monitor that offers both high quality and professional features. Features a large Aneroid gauge and durable inflation bulb.</p>",
 			colors: "1STYLE",
-			price: "79.99",
+			price: 79.99,
 			weight: 1,
 			sizes: "1SIZE"
 		},
@@ -871,7 +871,7 @@ def seed_shit
 			sku: "S150 SCISSORS150/190MM",
 			description: "<p>MOBB SCISSORS<p><br><p>Available in assorted colors</p><br><p>150/190mm</p>",
 			colors: "Blue,Red,Ceil,Black",
-			price: "5.95",
+			price: 5.95,
 			weight: 0.3,
 			sizes: "150mm,190mm"
 		},
@@ -879,7 +879,7 @@ def seed_shit
 			sku: "MSLS-100",
 			description: "<p>Made with MOBB scrub material and available in assorted colors and prints featuring the MOBB logo</p>",
 			colors: "Brown,Green,White,Blue,Red",
-			price: "4.99",
+			price: 4.99,
 			weight: 0.1,
 			sizes: "1SIZE"
 		},
@@ -887,7 +887,7 @@ def seed_shit
 			sku: "MLRIC-100",
 			description: "<p>Features the MOBB logo</p>",
 			colors: "1STYLE",
-			price: "0.99",
+			price: 0.99,
 			weight: 0.1,
 			sizes: "1SIZE"
 		},
@@ -895,7 +895,7 @@ def seed_shit
 			sku: "MUG100",
 			description: "<p>The perfect travel coffee mug for those busy days!</p>",
 			colors: "1STYLE",
-			price: "15.00",
+			price: 15.00,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -903,7 +903,7 @@ def seed_shit
 			sku: "STETHID-100",
 			description: "<p>Mobb Stethoscopes ID Name Tag</p>",
 			colors: "1STYLE",
-			price: "9.95",
+			price: 9.95,
 			weight: 0.1,
 			sizes: "1SIZE"
 		}
@@ -946,13 +946,13 @@ def seed_shit
 			sku: "PC500",
 			description: "<p>These MOBB Cargo Work Pants are well constructed with 7.5 oz 65/35 Poly-Cotton. They have a heavy-duty brass zipper with top button closure, pleated cargo pockets with flap and velcro closure with 2 front pockets and 2 back pockets. These pants are comfortable and easy to wash. A great value for the working man</p>",
 			colors: "NavyBlue",
-			price: "29.99",
+			price: 29.99,
 			weight: 0.4,
 			sizes: "28,30,32,34,36,38,40,42,44,46,48,50,52,54"
 		},
 		"FLAT FRONT WORK PANT.jpeg" => {
 			sku: "P400",
-			price: "29.49",
+			price: 29.49,
 			description: "<p>These MOBB Flat Front Work Pants  are a great choice for a busy day on the job. Made with 7.5 oz 65/35 poly-cotton they'll keep you comfortable all day long. They’re also easy to care for, just throw them into the machine when you get home for stress-free care. Features brass zipper and top button closure, 2 flat front slant pockets and 2 back pockets</p>",
 			colors: "NavyBlue,Spruce",
 			weight: 0.4,
@@ -960,7 +960,7 @@ def seed_shit
 		},
 		"WORK PANT WITH REFLECTIVE TAPE.jpeg" => {
 			sku: "PS400",
-			price: "34.49",
+			price: 34.49,
 			description: "<p>High visibility MOBB Work Pant with Reflective Tape. Make sure you stay safe while being seen in these pants. 65/35 poly-cotton 7.5 oz pant with brass zipper and button top closure, 2 front slant pockets and 2 back pockets. Also available for women</p>",
 			colors: "NavyBlue",
 			weight: 0.4,
@@ -968,7 +968,7 @@ def seed_shit
 		},
 		"100 Percent Cotton Twill Work Pant.jpeg" => {
 			sku: "P401",
-			price: "28.99",
+			price: 28.99,
 			description: "<p>Look smart and stylish in these classic fit, 100% Cotton Twill Work Pants. Made from breathable cotton, they offer all the comfort with a touch of casual style. Features brass zipper, button closure, 2 front slant pockets and 2 back pockets. Versatile and low-maintenance, these pants are ready for an active day</p>",
 			colors: "NavyBlue",
 			weight: 0.4,
@@ -976,7 +976,7 @@ def seed_shit
 		},
 		"LADIES FLAT FRONT WORK PANT.jpeg" => {
 			sku: "P400L",
-			price: "28.99",
+			price: 28.99,
 			description: "<p>Made especially for ladies, these pants fit well and have a tough material that stands up to any abuse you put them through. Same durable construction as the P400 these 7.5oz 65/35 poly-cotton work pants feature a brass zipper with button closure, 2 flat front slant pockets and 2 back pockets</p>",
 			colors: "NavyBlue,Spruce",
 			weight: 0.4,
@@ -984,7 +984,7 @@ def seed_shit
 		},
 		"LADIES WORK PANT WITH REFLECTIVE TAPE.jpeg" => {
 			sku: "PS400L",
-			price: "34.49",
+			price: 34.49,
 			description: "<p>Your safety comes first. Be seen in our Ladies Work Pant with Reflective Tape. With all the same features of the mens pant.7.5 oz 65/35 poly-cotton pant with brass zipper and top button closure, 2 front slant pockets and 2 back pockets</p>",
 			colors: "NavyBlue",
 			weight: 0.4,
@@ -997,13 +997,13 @@ def seed_shit
 			sku: "FR500",
 			description: "<p>For hazards like firesand molten splashes, MOBB's Nomex® III A has you covered. A blend of 93% Nomex® with 5% Kevlar® and 2% antistatic fiber that expands to form a stable and inert barrier between fire and skin. Features 2-way Vislon Nomex® zipper, 2 snap clsoures at the neck, 1 snap waist closure, 2 upper and 2 lower patch pockets as well as 2 front slant pockets and 2 side access openings. Includes a tool pocket on the right leg, a pen pocket on the left arm and flame resistant velcro tabs on the sleeves and leg leg cuffs</p>",
 			colors: "1STYLE",
-			price: "189.49",
+			price: 189.49,
 			weight: 1,
 			sizes: "38,40,42,44,46,48,50,52,54,56,58"
 		},
 		"INDURA ULTRA SOFT FLAME RESISTANT COVERALL.jpeg" => {
 			sku: "FR100",
-			price: "189.49",
+			price: 189.49,
 			description: "<p>The ultra-soft feel of these coveralls offer enhanced comfort while keeping you protected from electric arc and flash fire exposures. Double-shrunk technology ensures they will fit you for years to come. Features 2-way Vislon Nomex® zippers, 2 snap closures at neck, 1 snap closure at waist, 2 upper and 2 lower back patch pockets and 2 front slant pockets as well as 2 side sccess openings. Includes a pen pocket on the left arm and a tool pocket on the right side, FR velcro tabs on sleeve and leg cuffs</p>",
 			colors: "1STYLE",
 			weight: 1,
@@ -1011,7 +1011,7 @@ def seed_shit
 		},
 		"100 PERCENT COTTON TWILL COVERALL.jpeg" => {
 			sku: "C200",
-			price: "31.99",
+			price: 31.99,
 			description: "<p>Up and down. Back and forth. In and out of the truck. These coveralls will go wherever you go. Heavy-duty 8.5oz. 100% cotton twill. Features a concealed metal button closure, 2 chest pockets, 2 lower back patch pockets and 2 lower front slant pockets as well as a pen and tool pocket</p>",
 			colors: "NavyBlue,RoyalBlue",
 			weight: 1,
@@ -1021,7 +1021,7 @@ def seed_shit
 			sku: "C100",
 			description: "<p>MOBB 65/35 Poly-Cotton blend zip-front coveralls have distinctive features of high durability, high tensile strength, good tear strength, colour fastness, pilling resistant, shrinkage control comfort wear and perfect fit. Features 2 top front pockets, 2 lower back patch pockets and 2 lower front slant pockets as well as a tool and pen pocket. Includes side access openings and action back</p>",
 			colors: "Orange,NavyBlue,RoyalBlue,Spruce",
-			price: "31.49",
+			price: 31.49,
 			weight: 1,
 			sizes: "38,40,42,44,46,48,50,52,54,56,58"
 		}, 
@@ -1029,7 +1029,7 @@ def seed_shit
 			sku: "C100R",
 			description: "<p>Stay visible on the work site with these MOBB 7.5oz 65/35 poly-cotton blend coveralls featuring reflective tape banding.The premium reflective tape ensures you are visible to coworkers and drivers. Same features as the C100</p>",
 			colors: "Orange,NavyBlue,RoyalBlue",
-			price: "54.99",
+			price: 54.99,
 			weight: 1,
 			sizes: "38,40,42,44,46,48,50,52,54,56,58"
 		}, 
@@ -1037,7 +1037,7 @@ def seed_shit
 			sku: "B100",
 			description: "<p>Strap on the MOBB Classic Bib Overall when there's rain, wind, and hard work in the forecast. Features adjustable suspenders, 2 chest pockets, 2 lower back patch pockets, 2 lower front slant pockets and a zipper closure</p>",
 			colors: "NavyBlue",
-			price: "44.49",
+			price: 44.49,
 			weight: 1,
 			sizes: "S,M,L,XL,2XL,3XL"
 		},
@@ -1045,7 +1045,7 @@ def seed_shit
 			sku: "B100R",
 			description: "<p>Stay visible and safe on the worksite with the MOBB Reflective Bib Coveralls featuring high visibility reflective tape banding for extra protection in low-light conditions. These pants will ensure you are comfortably protected while working in grimy conditions. Includes 2 lower back patch pockets, 2 lower front slant pockets and side access openings</p>",
 			colors: "Orange,NavyBlue",
-			price: "54.49",
+			price: 54.49,
 			weight: 1,
 			sizes: "S,M,L,XL,2XL,3XL"
 		},
@@ -1053,7 +1053,7 @@ def seed_shit
 			sku: "C201 COVERALL",
 			description: "<p>Up and down. Back and forth. In and out of the truck. These coveralls will go wherever you go. Heavy-duty 8.5oz. 100% cotton twill. Features a concealed metal button closure, 2 chest pockets, 2 lower back patch pockets and 2 lower front slant pockets as well as a pen and tool pocket</p>",
 			colors: "PostmanBlue",
-			price: "31.49",
+			price: 31.49,
 			weight: 1,
 			sizes: "38,40,42,44,46,48,50,52,54,56,58"
 		}
@@ -1064,7 +1064,7 @@ def seed_shit
 			sku: "CC290",
 			description: "<p>Fresh and new, zip up in MOBB kitchen fashion with our 7.5oz poly/cotton twill chef coat. Features a full zip closure, stand collar, thermo pocket on left sleeve, with vented cuff and underarms.</p>",
 			colors: "Black,White",
-			price: "32.99",
+			price: 32.99,
 			weight: 0.6,
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
 			chart: "CC290-SC.png"
@@ -1074,7 +1074,7 @@ def seed_shit
 			description: "<p>MOBB kitchen classics. Professional and durable, our chef coats are made to last. Lightweight, breathable designs and a great selection of colors to choose from. 7.5oz poly cotton twill featuring a stand collar, vented cuff and underarms and a thermo pocket on left sleeve.</p>",
 			colors: "Black,White,BlackWhite,WhiteHoundsTooth,RedBlack,BurgundyBlack",
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
-			price: "26.99",
+			price: 26.99,
 			weight: 0.6,
 			chart: "CC250-SC.png"
 		},
@@ -1082,7 +1082,7 @@ def seed_shit
 			sku: "CC260",
 			description: "<p>100% spun-poly 7.5oz. Stand collar, vented cuff, vented underarms, thermo pocket on left sleeve</p>",
 			colors: "Black,White,BlackWhite",
-			price: "26.99",
+			price: 26.99,
 			weight: 0.6,
 			sizes: "XS,S,M,L,XL,2XL,3XL"
 		},
@@ -1091,7 +1091,7 @@ def seed_shit
 			description: "<p>MOBB kitchen classics. Professional and durable, our chef coats are made to last. Lightweight, breathable designs and a great selection of colors to choose from. 7.5oz poly cotton twill featuring a stand collar, vented cuff and underarms and a thermo pocket on left sleeve.</p>",
 			colors: "BlackWhite,WhiteBlack",
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
-			price: "28.99",
+			price: 28.99,
 			weight: 0.6,
 			chart: "CC270-SC.png"
 		}
@@ -1103,7 +1103,7 @@ def seed_shit
 			description: "<p>Combine a classic dress pant with the comfort of our MOBB chef pant and you get this flat-front chef pant. Featuring a plain waistband with belt loops and a full brass zipper fly with button closure. Tailored for a modern, professional look. 2 front slant pockets and 2 back patch pockets. 7.5oz poly/cotton</p>",
 			colors: "HoundsTooth,Black,White",
 			sizes: "28,30,32,34,36,38,40,42,44,46",
-			price: "24.99",
+			price: 24.99,
 			weight: 0.4,
 			chart: "34P-SC.png"
 		},
@@ -1111,7 +1111,7 @@ def seed_shit
 			sku: "307P",
 			description: "<p>This chef pant is designed to be comfortable and functional while providing complete coverage when bending and reaching. 5oz poly/cotton blend pant featuring a combination drawstring/elastic waistband with 2 side pockets, 2 cargo pockets and 1 back pocket</p>",
 			colors: "Black",
-			price: "21.99",
+			price: 21.99,
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
 			chart: "307P-SC.png"
@@ -1120,7 +1120,7 @@ def seed_shit
 			sku: "303P",
 			description: "<p>The MOBB Woven Chef Pant features a relaxed fit with ample room in the hip and thighs and a slightly tapered ankle. The 1” elastic waistband with built in elastisized drawstring falls just above your natural waistline and provides comfort and security for all body types.</p>",
 			colors: "HoundsTooth",
-			price: "21.99",
+			price: 21.99,
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -1129,7 +1129,7 @@ def seed_shit
 			description: "<p>The MOBB Baggy Chef Pant is the ultimate in culinary coolness. With its unisex, elastic waist style our chef pants continue to be the choice for chefs today. Features a 2” elastisized drawstring waistband for maximum coverage and comfort. A slightly tapered ankle keeps the pants from dragging on the floor. 2 front slant pockets and 1 back patch pocket</p>",
 			colors: "MrBOB,HoundsTooth,Gangster,Black",
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
-			price: "28.99",
+			price: 28.99,
 			weight: 0.4,
 			chart: "301P-SC.png"
 		}
@@ -1141,7 +1141,7 @@ def seed_shit
 			description: "<p>The MOBB Button Down Professional Kitchen features short-sleeves, one breast patch pocket and a pointed collar to round out the look. The lightweight 5oz. 65/35 poly/cotton poplin is wrinkle-resistant</p>",
 			colors: "White",
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
-			price: "12.99",
+			price: 12.99,
 			weight: 0.3,
 			chart: "204T-SC.png"
 		},
@@ -1150,7 +1150,7 @@ def seed_shit
 			description: "<p>The MOBB Mandarin Collar Professional Kitchen Top offers a clean, polished look. Featuring a mid-weight cotton twill keeping you cool and comfortable, 1 left chest pocket and snap button closure</p>",
 			colors: "White",
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
-			price: "12.99",
+			price: 12.99,
 			weight: 0.3,
 			chart: "205T-SC.png"
 		},
@@ -1158,7 +1158,7 @@ def seed_shit
 			sku: "S302",
 			description: "<p>The MOBB Long Sleeve Professional Kitchen Top offers classic no pocket styling. This durable yet lightweight 5oz. poly-cotton poplin blend retains its crisp professional look even after multiple uses. Featuring a snap front closure with a roomy, yet flattering fit</p>",
 			colors: "White",
-			price: "24.99",
+			price: 24.99,
 			weight: 0.3,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -1166,7 +1166,7 @@ def seed_shit
 			sku: "S303",
 			description: "<p>The MOBB Short Sleeve Professional Kitchen Top offers classic no pocket styling. This durable yet lightweight 5oz. poly-cotton poplin blend retains its crisp professional look even after multiple uses. Featuring a snap front closure with a roomy, yet flattering fit</p>",
 			colors: "White",
-			price: "24.99",
+			price: 24.99,
 			weight: 0.3,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		}
@@ -1177,7 +1177,7 @@ def seed_shit
 			sku: "CF451",
 			description: "<p>The MOBB Traditional Chef Hat is a symbol of authority and knowledge. It is made with soft, comfortable 65/35 poly-cotton. Its wide band and generous pleats make it a stand out headwear option. Adjustable velcro closure in the back offers a fully adjustable one size fit</p>",
 			colors: "White,Black",
-			price: "9.99",
+			price: 9.99,
 			weight: 0.1,
 			sizes: "1SIZE"
 		},
@@ -1185,7 +1185,7 @@ def seed_shit
 			sku: "CF460",
 			description: "<p>The clean, modern look of the MOBB Chef Hat has boosted it to the top of the best seller list. This version features a solid top pillbox style. Adjustable velcro sizing provides a perfect one size fit</p>",
 			colors: "Black,Red",
-			price: "8.99",
+			price: 8.99,
 			weight: 0.1,
 			sizes: "1SIZE"
 		},
@@ -1193,7 +1193,7 @@ def seed_shit
 			sku: "CF460M",
 			description: "<p>The clean, modern look of the MOBB Mesh Top Chef Hat has boosted it to the top of the best seller list. This version features a mesh top pillbox style. Adjustable velcro sizing provides a perfect one size fit</p>",
 			colors: "Black,Red",
-			price: "8.99",
+			price: 8.99,
 			weight: 0.1,
 			sizes: "1SIZE"
 		},
@@ -1201,7 +1201,7 @@ def seed_shit
 			sku: "CF450",
 			description: "<p>The clean, modern look of the MOBB Chef Hat has boosted it to the top of the best seller list. This version features a solid top pillbox style. Adjustable velcro sizing provides a perfect one size fit</p>",
 			colors: "Black,White",
-			price: "8.99",
+			price: 8.99,
 			weight: 0.1,
 			sizes: "1SIZE"
 		},
@@ -1209,7 +1209,7 @@ def seed_shit
 			sku: "N100",
 			description: "<p>The MOBB Neckerchief helps keep the sweat off of chefs' necks while in the kitchen, in turn keeping them cooler</p>",
 			colors: "Black,White",
-			price: "7.99",
+			price: 7.99,
 			weight: 0.1,
 			sizes: "1SIZE"
 		}
@@ -1220,7 +1220,7 @@ def seed_shit
 			sku: "VE340",
 			description: "<p>100% polyester vest, black satin lined with button front closure. The Waiter/Waitress is manageable and easy to care for while always looking professional and sharp for all front of house positions</p>",
 			colors: "Black",
-			price: "19.99",
+			price: 19.99,
 			weight: 0.3,
 			sizes: "30,32,34,36,38,40,42,44,46,48,50,52,54,56,58"
 		}
@@ -1232,7 +1232,7 @@ def seed_shit
 			description: "<p>The MOBB Bistro apron is made with durable polyester/cotton twill for stain and wrinkle resistance.
 										This apron has 3 pockets and falls just below the knees making it the perfect fit for front or back of the house.</p>",
 			colors: "Bob,Gangster",
-			price: "24.99",
+			price: 24.99,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -1240,7 +1240,7 @@ def seed_shit
 			sku: "AP389",
 			description: "<p>The MOBB Three-Pocket v-neck apron is made with durable polyester/cotton twill for stain and wrinkle resistance. This apron falls above the knees and has an adjustable velcro neck closure.</p>",
 			colors: "Gangster",
-			price: "16.99",
+			price: 16.99,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -1248,7 +1248,7 @@ def seed_shit
 			sku: "AP381",
 			description: "<p>The MOBB Waist Apron is made with durable polyester/cotton twill for stain and wrinkle resistance. It features 3 pockets for all of your front of the house tools. Perfect for servers.</p>",
 			colors: "Black",
-			price: "6.99",
+			price: 6.99,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -1256,7 +1256,7 @@ def seed_shit
 			sku: "AP387",
 			description: "<p>The MOBB basic apron is made with durable polyester/cotton twill for stain and wrinkle resistance. It features a plain front with no pockets</p>",
 			colors: "Black,White",
-			price: "6.99",
+			price: 6.99,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -1264,7 +1264,7 @@ def seed_shit
 			sku: "AP388",
 			description: "<p>The MOBB 4-Way Chef Apron is the ultimate in utility. This amazing cooking apron offers a fresh start four times with its front-to-back and inside-to-out reversibility. The ties are securely tacked for comfort and durability. No pockets</p>",
 			colors: "Black,White",
-			price: "9.99",
+			price: 9.99,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -1272,7 +1272,7 @@ def seed_shit
 			sku: "AP394",
 			description: "<p>The MOBB Coin apron is made with durable polyester/cotton twill for stain and wrinkle resistance. It features 4 large pockets, 2 pen slots and an adjustable plastic buckle on the waistbandand</p>",
 			colors: "Black",
-			price: "14.99",
+			price: 14.99,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -1282,7 +1282,7 @@ def seed_shit
 This cooking apron is generously cut for full coverage on the both bib and bottom and features 2 pockets and adjustable neck.</p>",
 			colors: "Black,Burgundy,NavyBlue,Red,RoyalBlue,Spruce",
 			sizes: "1SIZE",
-			price: "11.99",
+			price: 11.99,
 			weight: 0.3,
 			chart: "AP385-SC.png"
 		},
@@ -1291,7 +1291,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>The MOBB Full-Length Apron features extra wide ties and adjustable neck loop designed for all day comfort. Its 7.5 oz 65/35 polyester/cotton is soft and breathable, but stills repels stains and wrinkles</p>",
 			colors: "Black,White",
 			sizes: "1SIZE",
-			price: "8.99",
+			price: 8.99,
 			weight: 0.3,
 			chart: "AP380-SC.png"
 		},
@@ -1300,7 +1300,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>The MOBB Long-Waist Bistro apron is made with durable polyester/cotton twill for stain and wrinkle resistance. This apron falls just below the knees and has 2 pockets, making it the perfect for the front or the back of the house</p>",
 			colors: "Black,White",
 			sizes: "1SIZE",
-			price: "7.99",
+			price: 7.99,
 			weight: 0.3,
 			chart: "AP383-SC.png"
 		},
@@ -1309,7 +1309,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>The MOBB Cobbler Apron is durable, affordable, and totally professional looking. In addition to outfitting waitstaff and kitchen staff, a cobbler apron is also ideal for housekeeping, maintenance, and stadium personnel</p>",
 			colors: "Black,Burgundy,NavyBlue,Red,RoyalBlue,Spruce",
 			sizes: "1SIZE",
-			price: "9.99",
+			price: 9.99,
 			weight: 0.3,
 			chart: "AP383-SC.png"
 		}
@@ -1330,7 +1330,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Stainless Steel Finishing</li>
 										<li>Brand name : Littmann Stethoscope</li>
 										<li>Users can use : General Practitioners, Medical Students, Nurses</li>",
-		price: "109.49",
+		price: 109.49,
 		weight: 0.3,
 		colors: "Black,Burgundy,Caribbean,Ceil,Grey,Green,NavyBlue,Orange,Pink,Purple,Raspberry,OceanBlue,RoyalBlue",
 		sizes: "1SIZE"
@@ -1351,7 +1351,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Physical Assessment, Diagnosis</li>
 						 	      <li>Users can use : General Practitioners, Medical Students, Nurses</li>",
 		colors: "Black,Burgundy,Caribbean,Ceil,Lilac,Green",
-		price: "119.49",
+		price: 119.49,
 		weight: 0.3,
 		sizes: "1SIZE"
 		},
@@ -1373,7 +1373,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Users can use : General Practitioners, Child Specialists</li>
 										<li>Littmann Classic III Pediatric Stethoscope</li>",
 			colors: "Black,Caribbean,NavyBlue,Raspberry",
-			price: "139.49",
+			price: 139.49,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -1395,7 +1395,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Users can use : General Practitioners, Child Specialists</li>
 										<li>Littmann Infant Stethoscope</li>",
 			colors: "Black,Caribbean,Raspberry",
-			price: "129.49",
+			price: 129.49,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -1415,7 +1415,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Brand: Littmann Cardiology III Stethoscope</li>
 										<li>User Group: Cardiologists, Child Specialists, General Practitioners, Medical Students, Respiratory Specialist, Critical Care Nurse</li>",
 			colors: "Burgundy,Plum,Caribbean,NavyBlue,Red,Raspberry,Black",
-			price: "163.49",
+			price: 163.49,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -1435,7 +1435,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Brand: Littmann Master Cardiology Stethoscope</li>
 										<li>User Group: Cardiologists, General Practitioners, Medical Students, Respiratory Specialist, ER, Critical Care Nurse, EMTs, Critical Care Nurse</li>",
 			colors: "Black",
-			price: "259.99",
+			price: 259.99,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -1454,7 +1454,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Chestpiece: Plated & Polished Alloy, Single-Sided</li>
 										<li>USer Group : GPs, Nurses</li>",
 		  colors: "Black",
-		  price: "89.49",
+		  price: 89.49,
 		  weight: 0.3,
 		  sizes: "1SIZE"
 		},
@@ -1473,7 +1473,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Chestpiece: Machined Stainless Steel, Two-sided</li>
 										<li>User Group : GPs, Medical Students, Nurses</li>",
 			colors: "Raspberry,Rose,Caribbean,Black,Brown,Green,Yellow",
-			price: "89.49",
+			price: 89.49,
 			weight: 0.3,
 			sizes: "1SIZE"
 		},
@@ -1488,7 +1488,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<li>Brand name : MOBB MEDICAL</li>
 										<li>Users can use : General Practitioners, Medical Students, Nurses</li>",
 			colors: "Black",
-			price: "24.95",
+			price: 24.95,
 			weight: 0.3,
 			sizes: "1SIZE"
 		}
@@ -1500,7 +1500,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.</p>
 										",
 			colors: "Lagoon,Lilac,NavyBlue,RoyalBlue,White",
-			price: "33.95",
+			price: 33.95,
 			weight: 0.7,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -1508,7 +1508,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sku: "323/312C",
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
 			colors: "Aqua,Black/DustyRose,Black/Aqua,Brown,BubbleGum,DustyRose,DustyRosePolkaDots,Khaki,LimeGreen,Nutmeg,OliveGreen,Pink,PostmanBlue,Red,SeaGreen,SkyBlue,Tangerine,White",
-			price: "32.95",
+			price: 32.95,
 			weight: 0.7,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -1516,7 +1516,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sku: "308/312C",
 			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
 			colors: "Brick,Brown,DustyRose,Lilac,LimeGreen,Pink,Red,Tangerine,Burgundy,Ceil,Caribbean,Khaki",
-			price: "32.95",
+			price: 32.95,
 			weight: 0.7,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS,S,M,L,XL,2XL,3XL,4XL-XS,S,M,3XL,4XL"
 		}
