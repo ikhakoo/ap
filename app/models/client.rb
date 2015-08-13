@@ -5,5 +5,6 @@ class Client < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :purchases
+  belongs_to :country, class_name: "Shoppe::Country", foreign_key: "country_id"
   
 end

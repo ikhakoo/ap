@@ -55,9 +55,10 @@ class ApplicationController < ActionController::Base
     )
   end
 
-
-
-  
+  def free_shipping?(order)
+    @order = order
+    @order.total_before_tax - @order.delivery_price > 100
+  end
 
 end
 	

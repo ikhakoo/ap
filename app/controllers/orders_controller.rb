@@ -38,6 +38,10 @@ class OrdersController < ApplicationController
 		  
 			  if request.patch?
 			    if @order.proceed_to_confirm(params[:order].permit(:first_name, :last_name, :billing_address1, :billing_address2, :billing_address3, :billing_address4, :billing_country_id, :billing_postcode, :email_address, :phone_number))
+			    	# if free_shipping?(@order)
+			    	# 	@order.delivery_price = 0
+			    	# 	@order.save
+			    	# end
 			      redirect_to checkout_payment_path
 			    end
 			  end
@@ -46,6 +50,8 @@ class OrdersController < ApplicationController
 			:alert => "You must be logged in to proceed!"
 		end
 	end
+
+
 
 	def payment
   @order = current_order

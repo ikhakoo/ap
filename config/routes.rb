@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :clients
+  devise_for :clients, :controllers => { registrations: 'clients/registrations', sessions: 'clients/sessions' }
   
   mount Shoppe::Engine => "/shoppe"
   # The priority is based upon order of creation: first created -> highest priority.

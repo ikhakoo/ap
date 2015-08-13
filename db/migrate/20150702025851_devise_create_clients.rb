@@ -19,6 +19,16 @@ class DeviseCreateClients < ActiveRecord::Migration
       t.inet     :current_sign_in_ip
       t.inet     :last_sign_in_ip
 
+      t.string   :first_name
+      t.string   :last_name
+      t.string   :address1
+      t.string   :address2
+      t.string   :city
+      t.string   :state
+      t.integer  :country_id 
+      t.string   :postcode
+      t.string   :phone_number
+
       ## Confirmable
       # t.string   :confirmation_token
       # t.datetime :confirmed_at

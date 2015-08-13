@@ -2,8 +2,7 @@ Add SSL certificate (check with arturs about pricing)
 -
 Have Arturs add his email info into secrets.yml file so we can map the mailers.
 -
-add style numbers everywhere
-
+add free shipping over $100
 
 
 
