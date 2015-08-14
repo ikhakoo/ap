@@ -76,23 +76,34 @@
 
                         <p style="color:red;">Clearance: All Sales are FINAL!</p>
                         <p style="color:red;">Due to size constraints we try to keep the size list as updated as possible. If the item is <em>unavailable</em> you will receive a full refund no questions asked!</p>
-                      <table class="ui celled structured table">
-                      <thead>
-                      <tr>
-                        <th rowspan="2">Color</th>
-                        <th colspan="9">Available Sizes</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <% @clearance_hash.each do |color, size| %>
-                      <tr>
-                        <td><%= color %></td>
-                        <td colspan="1"><%= size.to_s %></td>
-                      </tr>
 
-                      <% end %>
-                      </tbody>
-                      </table><br>
+                        <div class="ui styled accordion">
+                          <div class="title">
+                            <i class="dropdown icon"></i>
+                            Click Here for Available Colors and Sizes
+                          </div>
+                          <div class="content">
+                            <p class="transition hidden">
+                          
+                            <table class="ui celled structured table">
+                            <thead>
+                            <tr>
+                              <th rowspan="2">Color</th>
+                              <th colspan="9">Available Sizes</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <% @clearance_hash.each do |color, size| %>
+                            <tr>
+                              <td><%= color %></td>
+                              <td colspan="1"><%= size.to_s %></td>
+                            </tr>
+
+                            <% end %>
+                            </tbody>
+                            </table></p><br>
+                            </div>
+                        </div>
                       <% end %>
 
                     <div class="product-inner-price">
@@ -208,4 +219,7 @@
  $(function(){
   $('[data-toggle="tooltip"]').tooltip();
  })
+ </script>
+<script>
+ $('.ui.accordion').accordion('behavior', 'open', 'close');
  </script>
