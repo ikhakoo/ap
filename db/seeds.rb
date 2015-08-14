@@ -1540,8 +1540,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										<p><strong>Regular Length (31” inseam) Sizes XS - 2XL</p><br><p>Available in all colours shown below</p><p>Petite Length (28” inseam) Sizes XS - 2XL
 										Available in Black & Navy only</p><br><p>Tall Length (36” inseam) Sizes XS - 2XL
 										Available in Black, Navy & Charcoal only</p>",
-			colors: ["DustyRose"],
-			sizes: ["XS,S,M,L,XL,2XL-XS,S,M,L,XL,2XL"],
+			colors: "DustyRose",
+			sizes: "XS,S,M,L,XL,2XL-XS,S,M,L,XL,2XL",
 			price: 26.95,
 			weight: 0.4,
 			chart: "412P-SC.png"
