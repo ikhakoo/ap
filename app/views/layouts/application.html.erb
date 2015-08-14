@@ -34,6 +34,13 @@
           <div class="col-md-16" style="text-align:right;">
             <div class="user-menu">
               <ul>
+                <li>
+                <FORM NAME="marquee1"> 
+                <INPUT NAME="text" SIZE=75
+                VALUE=" Welcome to AP Uniforms! Check out our Clearance section for the great sale we are having!! Up to 50% off on select items! If you require any help please contact apuniforms@gmail.com"
+                style="border:none;background:inherit;"> 
+                </FORM> 
+                </li>
                 <% if !current_client %>
                   <li><a href="<%= new_client_session_path %>">
                     <i class="fa fa-sign-in"></i> Login</a>
@@ -67,6 +74,7 @@
           <div class="col-sm-6">
             <div class="logo">
               <h1><a href="<%= root_path %>"><%= image_tag("LOGO.png", class: "style_image") %></a></h1>
+              
 	          </div>
 	         </div>
           <div class="col-sm-4">
@@ -305,4 +313,22 @@ function loadGallery(setIDs, setClickAttr){
 
 </script> 
    
+<SCRIPT> 
+<!-- 
+/*Text box marquee by Dave Methvin,
+Windows Magazine
+May be used/modified if credit line is
+retained*/
+ScrollSpeed = 150
+ScrollChars = 1
+function ScrollMarquee() {
+window.setTimeout('ScrollMarquee()',ScrollSpeed);
 
+var msg = document.marquee1.text.value; 
+document.marquee1.text.value =
+msg.substring(ScrollChars) +
+msg.substring(0,ScrollChars); 
+} 
+ScrollMarquee()
+//-->
+</SCRIPT>
