@@ -1523,35 +1523,6 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			-XXS,XS,L,XL,3XL,4XL-XXS,S,M,L,XL,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS,M,L,XL,2XL,3XL
 			-XXS,XS,4XL-XXS,L,XL,3XL,4XL"
 		},
-		"CLEARANCE LOW RISE LACE UP FLARE PANT.jpeg" => {
-			sku: "316PC",
-			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
-			colors: "SkyBlue,White",
-			price: 23.95,
-			wieght: 0.4,
-			chart: "316P-SC.png",
-			sizes: "XXS,XS,S,M,L,XL,2XL
-			-XXS,M,L,XL,2XL
-			-XXS,XS,S,L,XL,2XL"
-		},
-		"CLEARANCE LOW RISE LACE UP FLARE PANT PETITE.jpeg" => {
-			sku: "316PPC",
-			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
-			colors: "Brown,BubbleGum,DeepOrchid,Khaki,Lagoon,OliveGreen,PostmanBlue,Red,White",
-			price: 23.95,
-			weight: 0.4,
-			chart: "316P-SC.png",
-			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
-			-XS,M,L,XL,2XL
-			-XXS,XS,S,M,L,XL,2XL
-			-XXS,S,M,L,XL,2XL
-			-M,L,XL,2XL
-			-M,L,XL,2XL
-			-XS,M,L,XL,2XL
-			-M,L,XL,2XL
-			-XXS,M,L,XL,2XL
-			-S,L,XL,2XL"
-		},
 		"CLEARANCE LOW RISE LACE UP FLARE PANT TALL.jpeg" => {
 			sku: "316PTC",
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
@@ -1562,11 +1533,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
 			-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL
 			-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,M,L,XL,2XL"
-		}
-	}
-
-	clearance2 = {
-		"COMFORT RISE DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
+		},
+		"CLEARANCE COMFORT RISE DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
 			sku: "412PC",
 			description: "<p>This pant is the perfect combination of function and flow. The waistband is both elastic and drawstring making it comfortable at any rise. It has multiple pockets including a pocket for scissors and features multi-needle stitching for durability.</p>
 										<p><strong>Regular Length (31” inseam) Sizes XS - 2XL</p><br><p>Available in all colours shown below</p><p>Petite Length (28” inseam) Sizes XS - 2XL
@@ -1578,7 +1546,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.4,
 			chart: "412P-SC.png"
 		},
-		"FLEXI WAIST SCRUB PANT.jpeg" => {
+		"CLEARANCE FLEXI WAIST SCRUB PANT.jpeg" => {
 			sku: "416PC",
 			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.</p>",
 			colors: "DustyRose",
@@ -1587,7 +1555,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.4,
 			chart: "416P-SC.png"
 		},
-		"BOOT CUT FLIP FLAP SCRUB PANT PETITE.jpeg" => {
+		"CLEARANCE BOOT CUT FLIP FLAP SCRUB PANT PETITE.jpeg" => {
 			sku: "312PPC",
 			description: "<p>Fabulous fit and classic style. This five pocket boot cut pant features our signature MOBB logo waistband that can be flipped down for a lower rise. This is the pant that everyone's talking about.</p>",
 			colors: "Brick,Brown,BubbleGum,Caribbean,Ceil,DeepOrchid,DustyRose,Eggplant,Khaki,Lagoon,OliveGreen,Red,SkyBlue,White",
@@ -1596,7 +1564,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.4,
 			chart: "312P-SC.png"
 		},
-		"BOOT CUT FLIP FLAP SCRUB PANT TALL.jpeg" => {
+		"CLEARANCE BOOT CUT FLIP FLAP SCRUB PANT TALL.jpeg" => {
 			sku: "312PTC",
 			description: "<p>Fabulous fit and classic style. This five pocket boot cut pant features our signature MOBB logo waistband that can be flipped down for a lower rise. This is the pant that everyone's talking about.</p>",
 			colors: "Brown,BubbleGum,Caribbean,Ceil,DeepOrchid,DustyRose,Eggplant,Khaki,Lagoon,OliveGreen,SkyBlue,White",
@@ -1605,7 +1573,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.4,
 			chart: "312P-SC.png"
 		},
-		"FLIP FLAP CAPRI PANT.jpeg" => {
+		"CLEARANCE FLIP FLAP CAPRI PANT.jpeg" => {
 			sku: "314PC",
 			description: "<p>The Flip Flap Capri Pant fits and feels just like the 312P but makes a perfect addition to summer wardrobes or warmer work environments. Features our signature MOBB logo waistband that can be flipped down for a low rise fit.</p>",
 			colors: "Aqua,Khaki,LimeGreen,SkyBlue,",
@@ -1614,7 +1582,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.4,
 			chart: "314P-SC.png"
 		},
-		"LOW RISE LACE UP FLARE PANT PETITE.jpeg" => {
+		"CLEARANCE LOW RISE LACE UP FLARE PANT PETITE.jpeg" => {
 			sku: "316PC",
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
 			colors: "Brown,BubbleGum,DeepOrchid,DustyRose,Khaki,Lagoon,OliveGreen,PostmanBlue,Red",
@@ -1622,7 +1590,10 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			price: 22.95,
 			weight: 0.4,
 			chart: "316P-SC.png"
-		},
+		}
+	}
+
+	clearance2 = {
 		"TALL DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
 			sku: "309PTALL-C",
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
@@ -1755,7 +1726,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = clearance2[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: "Clearance " + name))
+				name = "Clearance " + name
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat22
 				pro.default_image_file = get_file(filename)
 				pro.save!
