@@ -1479,19 +1479,6 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 	}
 
 	clearance = {
-		"Clearance Petite Unisex 8 Pocket Drawstring Elastic Scrub Set.jpeg" => {
-			sku: "P310/307C",
-			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.</p>
-										",
-			colors: "Burgundy,Caribbean,Ceil,Khaki",
-			price: 33.95,
-			weight: 0.7,
-			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
-							-L,XL,2XL,3XL,4XL
-							-S,XL,2XL,3XL,4XL
-							-XXS,XS,L,XL,3XL,4XL
-							-XXS,XS,S,M,L,XL,2XL,3XL,4XL"
-		},
 		"Clearance Criss Cross Flip Flap.jpeg" => {
 			sku: "323/312C",
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
@@ -1520,7 +1507,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			-XXS,XSL,XL"
 		},
 		"Clearance Unisex 8 Pocket Drawstring Elastic Scrub Set.jpeg" => {
-			sku: "310/307",
+			sku: "310/307C",
 			description: "<p>Amazing fit in every MOBB color imaginable. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.</p>
 				<p><strong>Size 5XL only available in Colors: Black, Charcoal, Burgundy, Caribbean, Lagoon, Navy, PostmanBlue, Royal Blue</p></strong>
 				<p><strong>Size 6XL only available in Navy</p></strong>",
@@ -1569,15 +1556,13 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sku: "316PTC",
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
 			colors: "Brown,BubbleGum,DeepOrchid,Khaki,Lagoon,OliveGreen,PostmanBlue,Red,White",
-			sizes: "XXS,XS,S,M,L,XL,2XL",
 			price: 26.95,
 			weight: 0.4,
 			chart: "316PTC-SC.png",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
 			-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL
 			-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,M,L,XL,2XL"
-		},
-
+		}
 	}
 
 	default_params = { 
