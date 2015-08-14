@@ -1629,6 +1629,76 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			price: 20.95,
 			weight: 0.4,
 			chart: "302P-SC.png"
+		},
+		"Criss Cross Scrub Top.jpeg" => {
+			sku: "323T-C",
+			description: "<p>Available in a large variety of prints and solid colors this scrub top will always be a top seller. Features a v-neck with a contrast color trim as well as two lower pockets and one shoulder pen pocket. This scrub top is also available as a set</p>",
+			colors: "OvalCottage,Papillon,Pink,Red,RingAround,SmittenKitten,SpringFling,Tangerine,Twinkle,TwistTwirl,VintageVine,Whimsical",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,S,L,XL,2XL-L,XL,2XL-L,XL,2XL-XL,2XL-2XL-L-XL-XL,2XL-2XL-2XL-XL-XS,S,M,L,XL,2XL",
+			price: 19.95,
+			weight: 0.3,
+			chart: "323T-SC.png"
+		},
+		"Flexi V Neck Scrub Top.jpeg" => {
+			sku: "324T-C",
+			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
+			price: 20.95,
+			weight: 0.3,
+			colors: "FlowerPower,FlorescentButterfly,GroovyHoops,SpringBlooming",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL-XXS,XS,S,M-XXS,XS,S,M,L,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL",
+			chart: "324T-SC.png"
+		},
+		"Ladies Sculpted Scrub Top.jpeg" => {
+			sku: "410T-C",
+			description: "<p>A simple twist on our classic neckline. This scrub top features a beautifully sculpted wave neckline 
+			with contrasting color. The top also has two lower pockets, one chest pocket and one shoulder pen pocket.</p>",
+			colors: "DustyRose,LimeGreen",
+			sizes: "XXS,XS,S,M,L,XL,2XL-2XL-L,XL,2XL",
+			weight: 0.3,
+			price: 20.95,
+			chart: "410T-SC.png"
+		},
+		"Empire Tie Back Scrub Top.jpeg" => {
+			sku: "420T-C",
+			description: "<p>This ultra feminine scrub top features an empire waist and ties at the back. Keeping with tradition this top has a v-neck collar and two front pockets</p>",
+			colors: "Aqua,DeepOrchid,DustyRose,FireWorks,LoveLeaves,ParadisePunch,PaisleyPink,SkyBlue,Twinkle",
+			sizes: "XXS,XS,S,M,L,XL,2XL-L,XL,2XL-L,XL,2XL-M,L,XL,2XL-XL-XS,L,XL,2XL-L,XL,2XL-XXS,S,M,L,XL,2XL-XXS,L,XL,2XL-L,XL,2XL",
+			price: 23.95,
+			weight: 0.3,
+			chart: "420T-SC.png"
+		}, ## update these below with colors and sizes
+		"V Neck Print Scrub Top.jpeg" => {
+			sku: "320T-C",
+			description: "<p>This classic printed v-neck scrub top is great for those who need to carry as many accessories as possible. A total of 5 front pockets offer a home for everything you need to carry throughout the day</p>",
+			colors: "BlueCheerios,FireWorks,FlowerPower,HeartTies,PinnedHeart,SpringBlooming, 
+								Techno,DizzyVines,FlorescentButterfly,GroovyHoops,Papillon,PrettyInPetals,
+								StringAlong",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL",
+			price: 19.99,
+			weight: 0.3,
+			chart: "320T-SC.png"
+		},
+		"Criss Cross Scrub Top.jpeg" => {
+			sku: "323T-C",
+			description: "<p>Available in a large variety of prints and solid colors this scrub top will always be a top seller. Features a v-neck with a contrast color trim as well as two lower pockets and one shoulder pen pocket. This scrub top is also available as a set</p>",
+			colors: "Aqua/Black,BlueCheerios/NavyBlue,Charcoal/PostmanBlue,Eggplant/Black,FloresentButterfly/Charcoal,
+								Lagoon/Lagoon,PostmanBlue/Navy,SeaGreen/Navy,SpringBlooming/Black,Techno/Aqua, 
+								Black/Aqua,Charcoal/Lilac,DeepOrchid/Black,Fireworks/SeaGreen,FlowerPower/RoyalBlue, 
+								Indigo/Charcoal,NavyBlue/SkyBlue,PrettyInPetals/Charcoal,SkyBlue/Navy, 
+								StringAlong/Eggplant,White/White",
+			sizes: "XXS,XS,S,M,L,XL,2XL",
+			price: 19.95,
+			weight: 0.3,
+			chart: "323T-SC.png"
+		},
+		"Zipper Front Ladies Work Top.jpeg" => {
+			sku: "202T-C",
+			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
+			price: 22.95,
+			weight: 0.3,
+			colors: "Black,White,NavyBlue",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL",
+			chart: "202T-SC.png"
 		}
 	}
 
