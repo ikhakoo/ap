@@ -1506,7 +1506,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			-XS,S,L,XL
 			-XXS,XSL,XL"
 		},
-		"Clearance Unisex 8 Pocket Drawstring Elastic Scrub Set.jpeg" => {
+		"Clearance Petite Unisex 8 Pocket Drawstring Elastic Scrub Set.jpeg" => {
 			sku: "310/307C",
 			description: "<p>Amazing fit in every MOBB color imaginable. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.</p>
 				<p><strong>Size 5XL only available in Colors: Black, Charcoal, Burgundy, Caribbean, Lagoon, Navy, PostmanBlue, Royal Blue</p></strong>
