@@ -1565,6 +1565,102 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		}
 	}
 
+	clearance2 = {
+		"COMFORT RISE DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
+			sku: "412PC",
+			description: "<p>This pant is the perfect combination of function and flow. The waistband is both elastic and drawstring making it comfortable at any rise. It has multiple pockets including a pocket for scissors and features multi-needle stitching for durability.</p>
+										<p><strong>Regular Length (31” inseam) Sizes XS - 2XL</p><br><p>Available in all colours shown below</p><p>Petite Length (28” inseam) Sizes XS - 2XL
+										Available in Black & Navy only</p><br><p>Tall Length (36” inseam) Sizes XS - 2XL
+										Available in Black, Navy & Charcoal only</p>",
+			colors: ["DustyRose"],
+			sizes: ["XS,S,M,L,XL,2XL-XS,S,M,L,XL,2XL"],
+			price: 26.95,
+			weight: 0.4,
+			chart: "412P-SC.png"
+		},
+		"FLEXI WAIST SCRUB PANT.jpeg" => {
+			sku: "416PC",
+			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.</p>",
+			colors: "DustyRose",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
+			price: 26.95,
+			weight: 0.4,
+			chart: "416P-SC.png"
+		},
+		"BOOT CUT FLIP FLAP SCRUB PANT PETITE.jpeg" => {
+			sku: "312PPC",
+			description: "<p>Fabulous fit and classic style. This five pocket boot cut pant features our signature MOBB logo waistband that can be flipped down for a lower rise. This is the pant that everyone's talking about.</p>",
+			colors: "Brick,Brown,BubbleGum,Caribbean,Ceil,DeepOrchid,DustyRose,Eggplant,Khaki,Lagoon,OliveGreen,Red,SkyBlue,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,L,XL,2XL-XXS,XS,L,XL,2XL-XXS,XS,L,XL,2XL-XS,L,XL,2XL-XXS,XS,M,L,XL,2XL-XXS,M,L,XL,2XL-XXS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,L,XL,2XL-XXS,M,L,XL,2XL-XXS,M,L,XL,2XL-L,XL,2XL-S,M,L,XL,2XL",
+			price: 21.95,
+			weight: 0.4,
+			chart: "312P-SC.png"
+		},
+		"BOOT CUT FLIP FLAP SCRUB PANT TALL.jpeg" => {
+			sku: "312PTC",
+			description: "<p>Fabulous fit and classic style. This five pocket boot cut pant features our signature MOBB logo waistband that can be flipped down for a lower rise. This is the pant that everyone's talking about.</p>",
+			colors: "Brown,BubbleGum,Caribbean,Ceil,DeepOrchid,DustyRose,Eggplant,Khaki,Lagoon,OliveGreen,SkyBlue,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,M,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,XL,2XL",
+			price: 24.95,
+			weight: 0.4,
+			chart: "312P-SC.png"
+		},
+		"FLIP FLAP CAPRI PANT.jpeg" => {
+			sku: "314PC",
+			description: "<p>The Flip Flap Capri Pant fits and feels just like the 312P but makes a perfect addition to summer wardrobes or warmer work environments. Features our signature MOBB logo waistband that can be flipped down for a low rise fit.</p>",
+			colors: "Aqua,Khaki,LimeGreen,SkyBlue,",
+			sizes: "XS,S,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL",
+			price: 19.95,
+			weight: 0.4,
+			chart: "314P-SC.png"
+		},
+		"LOW RISE LACE UP FLARE PANT PETITE.jpeg" => {
+			sku: "316PC",
+			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
+			colors: "Brown,BubbleGum,DeepOrchid,DustyRose,Khaki,Lagoon,OliveGreen,PostmanBlue,Red",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,L,2XL",
+			price: 22.95,
+			weight: 0.4,
+			chart: "316P-SC.png"
+		},
+		"TALL DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
+			sku: "309PTALL-C",
+			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
+			colors: "Eggplant,HunterGreen,Khaki,Lagoon,LightGreen,Lilac,LimeGreen,Nutmeg,OliveGreen,Pink,PowderBlue,Purple,Raspberry,Red,Sand,SkyBlue,Tangerine,Teal,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,2XL,3XL,4XL-XXS,XS,L,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,S,XL,2XL,3XL,4XL-XXS,XS,2XL,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-2XL-2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,XL,2XL,3XL,4XL-XXS,XS,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,2XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,S,XL,2XL,3XL",
+			price: 23.95,
+			weight: 0.4,
+			chart: "309PTALL-SC.png"
+		},
+		"UNISEX DRAWSTRING ELASTIC 5 POCKET SCRUB PANT.jpeg" => {
+			sku: "307P-C",
+			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
+			colors: "Pink,Purple,Raspberry,Red,SkyBlue,SeaGreen,Spruce,Tangerine,White,Yellow",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,XL,2XL,3XL-XXS,4XL-XXS,XS,S,L,XL,2XL,3XL-XXS,XS,S,L,XL,2XL,3XL-XXS,XS,S,L,XL,2XL,3XL-S,XL-XXS,XS,L,XL,2XL,3XL,4XL-4XL-XXS,XS,XL,2XL,4XL-XXS,S,M-XXS,XS",
+			price: 21.95,
+			weight: 0.4,
+			chart: "307P-SC.png"
+		},
+		"Ladies Zipper Detail Scrub Top.jpeg" => {
+			sku: "530T-C",
+			description: "<p>Fun, funky and fitted. This sporty scrub top features reflective trim, asymmetrical zipper detail, two lower pockets, one chest pocket and one shoulder pen pocket</p>",
+			colors: "Black,Charcoal",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL-XXS,M,L,XL,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL",
+			price: 22.95,
+			weight: 0.3,
+			chart: "530T-SC.png"
+		},
+		"BELL BOTTOM SCRUB PANT.jpeg" => {
+			sku: "302P-C",
+			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
+			colors: "Aqua,Brown,Burgundy,Ceil,Denim,DustyRose,Eggplant,Khaki,Lagoon,Lilac,LimeGreen,Pink,Purple,Raspberry,Red,RoyalBlue,SkyBlue,Spruce,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XL,2XL-XL,2XL-XL,2XL-XXS,XS,S,L,XL,2XL-XXS,XS,M,2XL-XXS,XS,S,L,XL,2XL-XXS,XS,M,2XL-XL,2XL-2XL-XL,2XL-XL,2XL-S,XL,2XL-XXS,XS,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS-XXS,XL,2XL-XXS,M,L,XL,2XL-XXS,XL,2XL-XXS,2XL-XXS,2XL-XXS,XS,S,M,L,2XL",
+			price: 20.95,
+			weight: 0.4,
+			chart: "302P-SC.png"
+		}
+	}
+
 	default_params = { 
 		:short_description => 'Not Applicable but must validate',  
 		:tax_rate => tax_rate
@@ -1644,6 +1740,22 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		elsif params = clearance[filename] 
 
 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro.product_category = cat22
+				pro.default_image_file = get_file(filename)
+				pro.save!
+				pro.stock_level_adjustments.create(:description => 'Initial Stock', :adjustment => 1000)
+
+				if params[:chart]
+					stylename = File.basename(params[:chart])
+					pro.data_sheet_file = get_style(stylename)
+					pro.save! 
+				end
+
+				p pro
+
+		elsif params = clearance2[filename] 
+
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: "Clearance " + name))
 				pro.product_category = cat22
 				pro.default_image_file = get_file(filename)
 				pro.save!
