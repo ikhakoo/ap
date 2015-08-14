@@ -349,17 +349,6 @@ def seed_shit
 	}
 
 	sets = {
-		"Unisex 8 Pocket Drawstring Elastic Scrub Set.jpeg" => {
-			sku: "310/307",
-			description: "<p>Amazing fit in every MOBB color imaginable. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.</p>
-<p><strong>Size 5XL only available in Colors: Black, Charcoal, Burgundy, Caribbean, Lagoon, Navy, PostmanBlue, Royal Blue</p></strong>
-<p><strong>Size 6XL only available in Navy</p></strong>",
-			colors: "Aqua,Burgundy,Caribbean,Charcoal,Khaki,LimeGreen,OliveGreen,RoyalBlue,Spruce,
-								White,Black,Cappuccino,Ceil,Eggplant,Lagoon,NavyBlue,PostmanBlue,SkyBlue,Teal",
-			price: 33.95,
-			weight: 0.7,
-			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL,5XL"
-		},
 		"Unisex 5 Pocket Drawstring Scrub Set.jpeg" => {
 			sku: "606/608",
 			description: "<p>MOBB's newest style, this scrub set replaces the 306/306. A classic v-neck scrub top with one chest pocket and one shoulder pen pocket and a simple five pocket drawstring pant. This set is ideal for school programs.</p>",
@@ -489,24 +478,6 @@ def seed_shit
 			weight: 0.4,
 			chart: "309PTALL-SC.png"
 		},
-		"LOW RISE LACE UP FLARE PANT PETITE.jpeg" => {
-			sku: "316P",
-			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
-			colors: "Charcoal/Black,Navy/Red,Black/DustyRose",
-			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: 22.95,
-			weight: 0.4,
-			chart: "316P-SC.png"
-		},
-		"LOW RISE LACE UP FLARE PANT TALL.jpeg" => {
-			sku: "316P",
-			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
-			colors: "Charcoal/Black,Navy/Red,Black/DustyRose",
-			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: 24.95,
-			weight: 0.4,
-			chart: "316P-SC.png"
-		},
 		"SCRUB SHORTS.jpeg" => {
 			sku: "304P",
 			description: "<p>THE MOBB SCRUB SHORT IS EASY AND COMFORTABLE. PERFECT FOR WARM WORK ENVIRONMENTS. FEATURES AN ELASTIC WAISTBAND, A CONSERVATIVE KNEE LENGTH AND TWO SIDE POCKETS.</p>",
@@ -551,7 +522,25 @@ def seed_shit
 			price: 25.95,
 			weight: 0.4,
 			chart: "412PT28IN-SC.png"
-		}
+		},
+		"LOW RISE LACE UP FLARE PANT PETITE.jpeg" => {
+			sku: "316P",
+			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
+			colors: "Charcoal/Black,Navy/Red,Black/DustyRose",
+			price: 22.95,
+			weight: 0.4,
+			chart: "316P-SC.png",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL"
+		},
+		"LOW RISE LACE UP FLARE PANT TALL.jpeg" => {
+			sku: "316PT",
+			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
+			colors: "Charcoal/Black,Navy/Red,Black/DustyRose",
+			sizes: "XXS,XS,S,M,L,XL,2XL",
+			price: 24.95,
+			weight: 0.4,
+			chart: "316P-SC.png"
+		},
 	}
 
 	mentalitysf = {
@@ -1494,18 +1483,26 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sku: "P310/307C",
 			description: "<p>Amazing fit in select MOBB colors. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.</p>
 										",
-			colors: "Lagoon,Lilac,NavyBlue,RoyalBlue,White",
+			colors: "Burgundy,Caribbean,Ceil,Khaki",
 			price: 33.95,
 			weight: 0.7,
-			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL"
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
+							-L,XL,2XL,3XL,4XL
+							-S,XL,2XL,3XL,4XL
+							-XXS,XS,L,XL,3XL,4XL
+							-XXS,XS,S,M,L,XL,2XL,3XL,4XL"
 		},
 		"Clearance Criss Cross Flip Flap.jpeg" => {
 			sku: "323/312C",
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
 			colors: "Aqua,Black/DustyRose,Black/Aqua,Brown,BubbleGum,DustyRose,DustyRosePolkaDots,Khaki,LimeGreen,Nutmeg,OliveGreen,Pink,PostmanBlue,Red,SeaGreen,SkyBlue,Tangerine,White",
-			price: 32.95,
+			price: 27.95,
 			weight: 0.7,
-			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL"
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
+			-2XL-2XL-2XL-XXS,XS,L,XL,2XL
+			-S,M,L,XL,2XL-XXS,L,XL,2XL-XXS,XL,2XL
+			-L,XL,2XL-L,XL,2XL-XL,2XL-L,XL,2XL-XXS,XS,L,XL,2XL
+			-L-XL,2XL-XXS,L,XL,2XL-XL,2XL"
 		},
 		"Clearance V Neck 3 Pocket Dolman Seeve Flip Fap Scrub Set.jpeg" => {
 			sku: "308/312C",
@@ -1513,8 +1510,74 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			colors: "Brick,Brown,DustyRose,Lilac,LimeGreen,Pink,Red,Tangerine,Burgundy,Ceil,Caribbean,Khaki",
 			price: 32.95,
 			weight: 0.7,
-			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS,S,M,L,XL,2XL,3XL,4XL-XS,S,M,3XL,4XL"
-		}
+			sizes: "XXS,XS,S,M,L,XL
+			-XXS,L,XL
+			-XXS,XS,L,XL
+			-XXS,XS,M,L,XL
+			-XS,L,XL,2XL
+			-XXS,L,XL
+			-XS,S,L,XL
+			-XXS,XSL,XL"
+		},
+		"Clearance Unisex 8 Pocket Drawstring Elastic Scrub Set.jpeg" => {
+			sku: "310/307",
+			description: "<p>Amazing fit in every MOBB color imaginable. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.</p>
+				<p><strong>Size 5XL only available in Colors: Black, Charcoal, Burgundy, Caribbean, Lagoon, Navy, PostmanBlue, Royal Blue</p></strong>
+				<p><strong>Size 6XL only available in Navy</p></strong>",
+			colors: "Aqua,Burgundy,Caribbean,Charcoal,Khaki,LimeGreen,OliveGreen,RoyalBlue,Spruce,
+								White,Black,Cappuccino,Ceil,Eggplant,Lagoon,NavyBlue,PostmanBlue,SkyBlue,Teal",
+			price: 33.95,
+			weight: 0.7,
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL,5XL
+			-2XL-XXS,XL,2XL,3XL,4XL-XXS,2XL,3XL,4XL-XXS,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL
+			-XXS,XS,S,M,L,XL,2XL,3XL,4XL-3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL
+			-XXS,-XXS,XL,2XL,3XL,4XL-XXS,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,-XXS,XS,2XL,4XL
+			-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,2XL,4XL-XXS,XS,XL,2XL,3XL,4XL-4XL-XXS,2XL,3XL,4XL-4XL
+			-XXS,XS,L,XL,3XL,4XL-XXS,S,M,L,XL,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS,M,L,XL,2XL,3XL
+			-XXS,XS,4XL-XXS,L,XL,3XL,4XL"
+		},
+		"CLEARANCE LOW RISE LACE UP FLARE PANT.jpeg" => {
+			sku: "316PC",
+			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>"
+			colors: "SkyBlue,White",
+			price: 23.95,
+			wieght: 0.4,
+			chart: "316P-SC",
+			sizes: "XXS,XS,S,M,L,XL,2XL
+			-XXS,M,L,XL,2XL
+			-XXS,XS,S,L,XL,2XL"
+		},
+		"CLEARANCE LOW RISE LACE UP FLARE PANT PETITE.jpeg" => {
+			sku: "316PPC",
+			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
+			colors: "Brown,BubbleGum,DeepOrchid,Khaki,Lagoon,OliveGreen,PostmanBlue,Red,White",
+			price: 23.95,
+			weight: 0.4,
+			chart: "316PPC-SC.png",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
+			-XS,M,L,XL,2XL
+			-XXS,XS,S,M,L,XL,2XL
+			-XXS,S,M,L,XL,2XL
+			-M,L,XL,2XL
+			-M,L,XL,2XL
+			-XS,M,L,XL,2XL
+			-M,L,XL,2XL
+			-XXS,M,L,XL,2XL
+			-S,L,XL,2XL"
+		},
+		"CLEARANCE LOW RISE LACE UP FLARE PANT TALL.jpeg" => {
+			sku: "316PTC",
+			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
+			colors: "Brown,BubbleGum,DeepOrchid,Khaki,Lagoon,OliveGreen,PostmanBlue,Red,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL",
+			price: 26.95,
+			weight: 0.4,
+			chart: "316PTC-SC.png",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
+			-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL
+			-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,M,L,XL,2XL"
+		},
+
 	}
 
 	default_params = { 
