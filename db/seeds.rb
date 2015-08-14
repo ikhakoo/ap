@@ -1678,19 +1678,6 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.3,
 			chart: "320T-SC.png"
 		},
-		"Criss Cross Scrub Top.jpeg" => {
-			sku: "323T-C",
-			description: "<p>Available in a large variety of prints and solid colors this scrub top will always be a top seller. Features a v-neck with a contrast color trim as well as two lower pockets and one shoulder pen pocket. This scrub top is also available as a set</p>",
-			colors: "Aqua/Black,BlueCheerios/NavyBlue,Charcoal/PostmanBlue,Eggplant/Black,FloresentButterfly/Charcoal,
-								Lagoon/Lagoon,PostmanBlue/Navy,SeaGreen/Navy,SpringBlooming/Black,Techno/Aqua, 
-								Black/Aqua,Charcoal/Lilac,DeepOrchid/Black,Fireworks/SeaGreen,FlowerPower/RoyalBlue, 
-								Indigo/Charcoal,NavyBlue/SkyBlue,PrettyInPetals/Charcoal,SkyBlue/Navy, 
-								StringAlong/Eggplant,White/White",
-			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: 19.95,
-			weight: 0.3,
-			chart: "323T-SC.png"
-		},
 		"Zipper Front Ladies Work Top.jpeg" => {
 			sku: "202T-C",
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
