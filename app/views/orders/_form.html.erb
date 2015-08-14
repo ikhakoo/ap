@@ -1,6 +1,6 @@
 <% if @order.order_items.count > 0 %>
+<%= form_for @order, :url => checkout_path do |f| %> 
 <div class="col-md-4">
-  <%= form_for @order, :url => checkout_path do |f| %> 
       
       <%= f.text_field :first_name, value: current_client.first_name, class: 'form-control' %> 
       <%= f.text_field :last_name, value: current_client.last_name, class: 'form-control' %>
