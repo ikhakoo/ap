@@ -30,19 +30,18 @@
         </div>
         </div>
         <div class="col-lg-9">
-        <% @products.each_slice(4) do |row| %>
+        <% @products.each_slice(3) do |row| %>
           <% row.each do |product| %>
-          <% if product.name.split("-").last != "1SIZE" %>
             <div class="col-md-3 col-sm-6">
               <div class="single-product">
                 <div class="product-f-image">
                   <img src="<%= product.default_image.path %>" alt="" style="height:305px;width:300px;">
                     <div class="product-hover">
-                        <a href="<%= product_path(product.permalink) %>" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                        <a href="<%= product_path(product.permalink) %>" class="view-details-link" style="font-size:14px;"><i class="fa fa-link"></i> See details</a>
                     </div>
                 </div>
               
-                <h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
+                <h6>Style # - <%= product.sku %> - <a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></h6></a>
               
                 <div class="product-carousel-price">
                   <ins><%= number_to_currency product.price %></ins> 
@@ -50,10 +49,10 @@
                   <del><%= number_to_currency (product.price*1.35).to_f %></del>
                   <% end %>
                 </div> 
+                <hr>
               </div> 
               <!-- end prod -->
             </div>
-            <% end %>
             <% end %>
           <% end %>
           </div>
