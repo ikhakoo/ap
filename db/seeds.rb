@@ -1540,7 +1540,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			colors: "Brown,BubbleGum,DeepOrchid,Khaki,Lagoon,OliveGreen,PostmanBlue,Red,White",
 			price: 23.95,
 			weight: 0.4,
-			chart: "316PPC-SC.png",
+			chart: "316P-SC.png",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
 			-XS,M,L,XL,2XL
 			-XXS,XS,S,M,L,XL,2XL
@@ -1558,7 +1558,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			colors: "Brown,BubbleGum,DeepOrchid,Khaki,Lagoon,OliveGreen,PostmanBlue,Red,White",
 			price: 26.95,
 			weight: 0.4,
-			chart: "316PTC-SC.png",
+			chart: "316P-SC.png",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
 			-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL
 			-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,M,L,XL,2XL"
