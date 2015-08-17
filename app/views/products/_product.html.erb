@@ -21,7 +21,7 @@
         <% @products.each_slice(3) do |row| %>
           <% row.each do |product| %>
             <div class="col-md-3 col-sm-6">
-              <div class="single-product">
+              <div class="single-product"  style="height:440px;">
                 <div class="product-f-image">
                   <img src="<%= product.default_image.path %>" alt="" style="height:305px;width:300px;">
                     <div class="product-hover">
@@ -29,16 +29,16 @@
                     </div>
                 </div>
               
-                <h6>Style # - <%= product.sku %> - <a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></h6></a>
+                <h6>Style # - <%= product.sku %><br><a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></h6></a>
               
                 <div class="product-carousel-price">
                   <ins><%= number_to_currency product.price %></ins> 
                   <% if product.product_category_id == 22 %>
                   <del><%= number_to_currency (product.price*1.35).to_f %></del>
                   <% end %>
-                </div> 
+                </div>
                 <hr>
-              </div> 
+              </div>
               <!-- end prod -->
             </div>
             <% end %>
