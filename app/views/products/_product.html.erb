@@ -6,7 +6,7 @@
  { :onchange => "if(this.value){window.location='?per_page='+this.value;}" } %>
  <br>
  <strong>Category:</strong>
-  <%= select_tag :sex, options_for_select(["All","Men","Women","Unisex"], params[:sex]),
+  <%= select_tag :sex, options_for_select(["All","Men","Women","Unisex","Children"], params[:sex]),
  { :onchange => "if(this.value){window.location='?sex='+this.value;}" } %>
 </div>
 
