@@ -1575,15 +1575,6 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.4,
 			chart: "312P-SC.png"
 		},
-		"CLEARANCE FLIP FLAP CAPRI PANT.jpeg" => {
-			sku: "314PC",
-			description: "<p>The Flip Flap Capri Pant fits and feels just like the 312P but makes a perfect addition to summer wardrobes or warmer work environments. Features our signature MOBB logo waistband that can be flipped down for a low rise fit.</p>",
-			colors: "Aqua,Khaki,LimeGreen,SkyBlue,",
-			sizes: "XS,S,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL",
-			price: 14.99,
-			weight: 0.4,
-			chart: "314P-SC.png"
-		},
 		"CLEARANCE LOW RISE LACE UP FLARE PANT PETITE.jpeg" => {
 			sku: "316PC",
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
@@ -1604,6 +1595,15 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			price: 15.99,
 			weight: 0.4,
 			chart: "309PTALL-SC.png"
+		},
+		"FLIP FLAP CAPRI PANT.jpeg" => {
+			sku: "314PC",
+			description: "<p>The Flip Flap Capri Pant fits and feels just like the 312P but makes a perfect addition to summer wardrobes or warmer work environments. Features our signature MOBB logo waistband that can be flipped down for a low rise fit.</p>",
+			colors: "Aqua,Khaki,LimeGreen,SkyBlue,",
+			sizes: "XS,S,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL",
+			price: 14.99,
+			weight: 0.4,
+			chart: "314P-SC.png"
 		},
 		"UNISEX DRAWSTRING ELASTIC 5 POCKET SCRUB PANT.jpeg" => {
 			sku: "307P-C",
