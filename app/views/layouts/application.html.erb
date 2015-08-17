@@ -33,15 +33,15 @@
     <div class="header-area">
       <div class="container">
         <div class="row">
-          <div class="col-md-16" style="text-align:right;">
+          <div class="col-md-12" style="text-align:right;">
             <div class="user-menu">
               <ul>
                 <li>
-                <FORM NAME="marquee1"> 
-                <INPUT NAME="text" SIZE=75
-                VALUE=" Welcome to AP Uniforms! Check out our Clearance section for the great sale we are having!! Up to 50% off on select items! If you require any help please contact apuniforms@gmail.com"
-                style="border:none;background:inherit;"> 
-                </FORM> 
+                <form name="marquee1"> 
+                <input name="text" size=75
+                  value=" Welcome to AP Uniforms! Check out our Clearance section for the great sale we are having!! Up to 50% off on select items! If you require any help please contact apuniforms@gmail.com"
+                  style="border:none;background:inherit;"> 
+                </form> 
                 </li>
                 <% if !current_client %>
                   <li><a href="<%= new_client_session_path %>">
@@ -321,7 +321,7 @@ function loadGallery(setIDs, setClickAttr){
 Windows Magazine
 May be used/modified if credit line is
 retained*/
-ScrollSpeed = 150
+ScrollSpeed = 70
 ScrollChars = 1
 function ScrollMarquee() {
 window.setTimeout('ScrollMarquee()',ScrollSpeed);

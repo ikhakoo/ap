@@ -642,7 +642,7 @@ def seed_shit
 			sku: "FR60W",
 			description: "<p>Nomex® is the go-to fabric for MOBB when manufacturing products for industrial workers. Our insulated coverall worksuit has a detachable hood and 3M Scotchlite reflective tape to enhance visibility. Includes a 2-way Vislon Nomex® front zipper, 2 ankle zippers as well a handy pen pocket. Featuring 100% Meta-Aramid 15oz lining, quilted to 100% Aramid with 100% Polyester moisture barrier and 100% FR Polyurethane wind barrier film</p>",
 			colors: "NavyBlue,RoyalBlue",
-			price: 199.99,
+			price: 469.95,
 			weight: 0.6,
 			sizes: "38,40,42,44,46,48,50,52,54,56"
 		},
@@ -650,7 +650,7 @@ def seed_shit
 			sku: "FR50W",
 			description: "<p>MOBB is proud to use Nomex® fiber in all of our FR clothing because we know it remains the first choice for workers who rely on  flame resistant properties to help keep them safe from the everyday hazards they face. The insulated bib pant features 2-way Vislon Nomex® front and leg zippers with snap down covers, adjustable FR elastic shoulder straps and 3M Scotchlite reflective tape for enhanced visibility</p>",
 			colors: "NavyBlue,RoyalBlue",
-			price: 209.99,
+			price: 307.95,
 			weight: 0.6,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -658,7 +658,7 @@ def seed_shit
 			sku: "FR40W",
 			description: "<p>MOBB chooses NOMEX® for all of our FR clothing because they offer the ultimate protection. A tough outer shell with cut and flame resistance, a moisture barrier preventing the penetration of liquid and a thermal liner providing sufficient insulation while not restricting mobility. The insulated parka features a detachable hood, 2 chest pockets, 2 lower front pockets, all with flaps and covered snap closures. Includes Vislon Nomex® zipper and 3M Scotchlite reflective tape</p>",
 			colors: "NavyBlue,RoyalBlue",
-			price: 199.99,
+			price: 374.95,
 			weight: 0.6,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -666,7 +666,7 @@ def seed_shit
 			sku: "FR30W",
 			description: "<p>Lightweight comfort in a flame-resistant fabric. That's what you can expect with our Indura® Ultra-Soft® FR Insulated Coverall Worksuit. Features 100% FR treated cotton lining with a breathable vapour barrier, 3M Scotchlite reflective tape. Includes 2-way Vislon Nomex® front zipper, 2 ankle zippers and a handy pen pocket</p>",
 			colors: "NavyBlue,RoyalBlue",
-			price: 199.99,
+			price: 388.95,
 			weight: 0.6,
 			sizes: "38,40,42,44,46,48,50,52,54,56"
 		},
@@ -674,7 +674,7 @@ def seed_shit
 			sku: "FR20W",
 			description: "<p>The built-in flame resistance of NOMEX® provides outstanding protection as well as being a light weight comfortable garment. Our bib pant features 2-way Vislon Nomex® front zippers and leg zippers with snap down covers, adjustable FR elastic shoulder straps and 3M Scothchlite reflective tape</p>",
 			colors: "NavyBlue",
-			price: 179.99,
+			price: 259.95,
 			weight: 0.6,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		},
@@ -682,7 +682,7 @@ def seed_shit
 			sku: "FR10W",
 			description: "<p>Indura® Ultra Soft® Parkas allow you to protect yourself and your crew from a number of potential injuries. These flame resistant jackets are proven to provide exceptional warmth and flame resistance. Features 2 chest pockets, 2 lower pockets, all with flaps and covered snap closures. Includes Vislon Nomex® zippers and 3M Scotchlite reflective tape</p>",
 			colors: "NavyBlue,RoyalBlue",
-			price: 174.99,
+			price: 299.95,
 			weight: 0.6,
 			sizes: "S,M,L,XL,2XL,3XL,4XL"
 		}
@@ -910,7 +910,8 @@ def seed_shit
 						<li>Easy care, machine wash and dry</li>",
 			colors: "Orange,Spruce",
 			weight: 0.2,
-			sizes: "M,L,XL,2XL,3XL"
+			sizes: "M,L,XL,2XL,3XL",
+			price: 34.95
 		},
 		"T VEST TRAFFIC VEST.JPEG" => {
 			sku: "TVEST",
@@ -921,7 +922,8 @@ def seed_shit
 			<li>One Size Fits ALL</li>",
 			colors: "Orange",
 			weight: 0.2,
-			sizes: "1SIZE"
+			sizes: "1SIZE",
+			price: 26.95
 		}
 	}
 
