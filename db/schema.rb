@@ -233,6 +233,7 @@ ActiveRecord::Schema.define(version: 20150813054653) do
     t.text     "short_description"
     t.text     "colors"
     t.text     "sizes"
+    t.boolean  "childrens"
     t.boolean  "mens"
     t.boolean  "unisex"
     t.boolean  "womens",                                      default: true
