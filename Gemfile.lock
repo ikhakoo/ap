@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/ikhakoo/shoppe-1.0.5-ap.git
-  revision: ba3951a3c283c5c7a291259ce43a58b4fd765955
+  revision: a141bbfa60d0c567bbfc5152dbae2f78208e0f47
   specs:
     shoppe (1.0.5)
       bcrypt (>= 3.1.2, < 3.2)
