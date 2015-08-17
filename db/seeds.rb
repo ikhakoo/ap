@@ -1587,7 +1587,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 	}
 
 	clearance2 = {
-		"TALL DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
+		"CLEARANCE TALL DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
 			sku: "309PTALL-C",
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
 			colors: "Eggplant,HunterGreen,Khaki,Lagoon,LightGreen,Lilac,LimeGreen,Nutmeg,OliveGreen,Pink,PowderBlue,Purple,Raspberry,Red,Sand,SkyBlue,Tangerine,Teal,White",
@@ -1596,7 +1596,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.4,
 			chart: "309PTALL-SC.png"
 		},
-		"FLIP FLAP CAPRI PANT.jpeg" => {
+		"CLEARANCE FLIP FLAP CAPRI PANT.jpeg" => {
 			sku: "314PC",
 			description: "<p>The Flip Flap Capri Pant fits and feels just like the 312P but makes a perfect addition to summer wardrobes or warmer work environments. Features our signature MOBB logo waistband that can be flipped down for a low rise fit.</p>",
 			colors: "Aqua,Khaki,LimeGreen,SkyBlue,",
@@ -1605,7 +1605,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.4,
 			chart: "314P-SC.png"
 		},
-		"UNISEX DRAWSTRING ELASTIC 5 POCKET SCRUB PANT.jpeg" => {
+		"CLEARANCE UNISEX DRAWSTRING ELASTIC 5 POCKET SCRUB PANT.jpeg" => {
 			sku: "307P-C",
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
 			colors: "Pink,Purple,Raspberry,Red,SkyBlue,SeaGreen,Spruce,Tangerine,White,Yellow",
@@ -1614,7 +1614,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.4,
 			chart: "307P-SC.png"
 		},
-		"Ladies Zipper Detail Scrub Top.jpeg" => {
+		"CLEARANCE Ladies Zipper Detail Scrub Top.jpeg" => {
 			sku: "530T-C",
 			description: "<p>Fun, funky and fitted. This sporty scrub top features reflective trim, asymmetrical zipper detail, two lower pockets, one chest pocket and one shoulder pen pocket</p>",
 			colors: "Black,Charcoal",
@@ -1623,7 +1623,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.3,
 			chart: "530T-SC.png"
 		},
-		"BELL BOTTOM SCRUB PANT.jpeg" => {
+		"CLEARANCE BELL BOTTOM SCRUB PANT.jpeg" => {
 			sku: "302P-C",
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
 			colors: "Aqua,Brown,Burgundy,Ceil,Denim,DustyRose,Eggplant,Khaki,Lagoon,Lilac,LimeGreen,Pink,Purple,Raspberry,Red,RoyalBlue,SkyBlue,Spruce,White",
@@ -1632,7 +1632,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.4,
 			chart: "302P-SC.png"
 		},
-		"Criss Cross Scrub Top.jpeg" => {
+		"CLEARANCE Criss Cross Scrub Top.jpeg" => {
 			sku: "323T-C",
 			description: "<p>Available in a large variety of prints and solid colors this scrub top will always be a top seller. Features a v-neck with a contrast color trim as well as two lower pockets and one shoulder pen pocket. This scrub top is also available as a set</p>",
 			colors: "OvalCottage,Papillon,Pink,Red,RingAround,SmittenKitten,SpringFling,Tangerine,Twinkle,TwistTwirl,VintageVine,Whimsical",
@@ -1641,7 +1641,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.3,
 			chart: "323T-SC.png"
 		},
-		"Flexi V Neck Scrub Top.jpeg" => {
+		"CLEARANCE Flexi V Neck Scrub Top.jpeg" => {
 			sku: "324T-C",
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
 			price: 15.99,
@@ -1650,7 +1650,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL-XXS,XS,S,M-XXS,XS,S,M,L,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL",
 			chart: "324T-SC.png"
 		},
-		"Ladies Sculpted Scrub Top.jpeg" => {
+		"CLEARANCE Ladies Sculpted Scrub Top.jpeg" => {
 			sku: "410T-C",
 			description: "<p>A simple twist on our classic neckline. This scrub top features a beautifully sculpted wave neckline 
 			with contrasting color. The top also has two lower pockets, one chest pocket and one shoulder pen pocket.</p>",
@@ -1660,7 +1660,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			price: 20.95,
 			chart: "410T-SC.png"
 		},
-		"Empire Tie Back Scrub Top.jpeg" => {
+		"CLEARANCE Empire Tie Back Scrub Top.jpeg" => {
 			sku: "420T-C",
 			description: "<p>This ultra feminine scrub top features an empire waist and ties at the back. Keeping with tradition this top has a v-neck collar and two front pockets</p>",
 			colors: "Aqua,DeepOrchid,DustyRose,FireWorks,LoveLeaves,ParadisePunch,PaisleyPink,SkyBlue,Twinkle",
@@ -1669,7 +1669,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.3,
 			chart: "420T-SC.png"
 		},
-		"V Neck Print Scrub Top.jpeg" => {
+		"CLEARANCE V Neck Print Scrub Top.jpeg" => {
 			sku: "320T-C",
 			description: "<p>This classic printed v-neck scrub top is great for those who need to carry as many accessories as possible. A total of 5 front pockets offer a home for everything you need to carry throughout the day</p>",
 			colors: "AquaPolkaDots,BrownPolkaDot,ChemistryWiz,DentalBrigade,DizzyVines,DustyRosePolkaDots,FairyLand,FlowerPower,FireWorks,GreatEight,Kaleidascope,Labyrinth,LoopDLoop,LoveLeaves,MiniFlower,MrFrosty,OvalCottage,PinnedHeart,SmittenKitten,SonicBoom,SpringFling,TwistTwirl",
@@ -1678,7 +1678,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.3,
 			chart: "320T-SC.png"
 		},
-		"Zipper Front Ladies Work Top.jpeg" => {
+		"CLEARANCE Zipper Front Ladies Work Top.jpeg" => {
 			sku: "202T-C",
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
 			price: 11.99,
@@ -1783,7 +1783,6 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = clearance2[filename] 
 
-				name = "Clearance " + name
 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat22
 				pro.default_image_file = get_file(filename)
