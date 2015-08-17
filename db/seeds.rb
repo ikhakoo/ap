@@ -1668,14 +1668,12 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			price: 14.99,
 			weight: 0.3,
 			chart: "420T-SC.png"
-		}, ## update these below with colors and sizes
+		},
 		"V Neck Print Scrub Top.jpeg" => {
 			sku: "320T-C",
 			description: "<p>This classic printed v-neck scrub top is great for those who need to carry as many accessories as possible. A total of 5 front pockets offer a home for everything you need to carry throughout the day</p>",
-			colors: "BlueCheerios,FireWorks,FlowerPower,HeartTies,PinnedHeart,SpringBlooming, 
-								Techno,DizzyVines,FlorescentButterfly,GroovyHoops,Papillon,PrettyInPetals,
-								StringAlong",
-			sizes: "XXS,XS,S,M,L,XL,2XL,3XL",
+			colors: "AquaPolkaDots,BrownPolkaDot,ChemistryWiz,DentalBrigade,DizzyVines,DustyRosePolkaDots,FairyLand,FlowerPower,FireWorks,GreatEight,Kaleidascope,Labyrinth,LoopDLoop,LoveLeaves,MiniFlower,MrFrosty,OvalCottage,PinnedHeart,SmittenKitten,SonicBoom,SpringFling,TwistTwirl",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-2XL,4XL-L,XL,2XL,3XL,4XL-2XL,4XL-L,XL,2XL,3XL,4XL-S,L,XL,2XL,3XL,4XL-XL,2XL,3XL,4XL-XL,2XL,3XL-XL,2XL,3XL,4XL-M,L,XL,3XL,4XL-XL,2XL,3XL,4XL-4XL-XL,2XL,3XL,4XL-S,XL-XL,3XL,4XL-4XL-XS,L,XL,4XL-XL,4XL-S,M,L,XL,2XL,3XL,4XL-XL-XL-4XL-L",
 			price: 11.99,
 			weight: 0.3,
 			chart: "320T-SC.png"
@@ -1685,8 +1683,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
 			price: 11.99,
 			weight: 0.3,
-			colors: "Black,White,NavyBlue",
-			sizes: "XXS,XS,S,M,L,XL,2XL,3XL",
+			colors: "Aqua,Brick,Brown,Ceil,DustyRose,Khaki,Lagoon,Lilac,LimeGreen,PostmanBlue,Raspberry,Red,SkyBlue",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL-XS,L-XS,S,L-XS,S,M,L-XS,S,L-XS,L-XS,S,M,L-L-XS,S-XS,M,L-S,M,L,XL-XS-M,L-XS,M,L",
 			chart: "202T-SC.png"
 		}
 	}
