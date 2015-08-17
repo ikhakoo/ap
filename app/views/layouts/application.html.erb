@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -19,7 +19,23 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    
+    <style>
+      @media screen and (max-width:450px){
+        #banner {
+          width: 300px;
+        }
+      }
+      @media screen and (min-width: 550px){
+        #banner {
+          width: 500px;
+        }
+      }
+      @media screen and (min-width: 750px){
+        #banner {
+          width: 900px;
+        }
+      }
+    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,11 +53,11 @@
             <div class="user-menu">
               <ul>
                 <li>
-                <form name="marquee1"> 
-                <input name="text" size=50
-                  value=" Welcome to AP Uniforms! Check out our Clearance section for the great sale we are having!! Up to 50% off on select items! If you require any help please contact apuniforms@gmail.com"
+                  <form name="marquee1"> 
+                    <input id="banner" name="text" size=60
+                      value=" Welcome to AP Uniforms! Check out our Clearance section for the great sale we are having!! Up to 50% off on select items! If you require any help please contact apuniforms@gmail.com"
                   style="border:none;background:inherit;"> 
-                </form> 
+                  </form>
                 </li>
                 <% if !current_client %>
                   <li><a href="<%= new_client_session_path %>">
@@ -324,7 +340,7 @@ function loadGallery(setIDs, setClickAttr){
 Windows Magazine
 May be used/modified if credit line is
 retained*/
-ScrollSpeed = 120
+ScrollSpeed = 150
 ScrollChars = 1
 function ScrollMarquee() {
 window.setTimeout('ScrollMarquee()',ScrollSpeed);
