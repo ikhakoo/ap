@@ -77,33 +77,35 @@
                         <p style="color:red;">Clearance: All Sales are FINAL!</p>
                         <p style="color:red;">Due to size constraints we try to keep the size list as updated as possible. If the item is <em>unavailable</em> you will receive a full refund no questions asked!</p>
 
-                        <div class="ui styled accordion">
-                          <div class="title">
-                            <i class="dropdown icon"></i>
-                            Click Here for Available Colors and Sizes
-                          </div>
-                          <div class="content">
-                            <p class="transition hidden">
-                          
-                            <table class="ui celled structured table">
-                            <thead>
-                            <tr>
-                              <th rowspan="2">Color</th>
-                              <th colspan="9">Available Sizes</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <% @clearance_hash.each do |color, size| %>
-                            <tr>
-                              <td><%= color %></td>
-                              <td colspan="1"><%= size.to_s %></td>
-                            </tr>
+                        
+<ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header">
+        <i class="dropdown icon"></i>
+        Click Here: Colors & Sizes
+      </div>
+      <div class="collapsible-body">
+        <table class="bordered hoverable">
+        <thead>
+          <tr>
+            <th data-field="id">Colors</th>
+            <th data-field="name">Available Sizes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @clearance_hash.each do |color, size| %>
+            <tr>
+              <td><%= color %></td>
+              <td colspan="1"><%= size.to_s %></td>
+            </tr>
+          <% end %>
+        </tbody>
+        </table>
+      </div>
+    </li>
+  </ul>
 
-                            <% end %>
-                            </tbody>
-                            </table></p><br>
-                            </div>
-                        </div>
+
                       <% end %>
 
                     <div class="product-inner-price">
@@ -215,10 +217,17 @@
       </div>
     </div>
 
+
  <script>
- $(function(){
-  $('[data-toggle="tooltip"]').tooltip();
- })
+ $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+    $(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+  });
+ 
  </script>
 
  <script>
