@@ -98,6 +98,17 @@
               <% elsif current_page?(action: 'checkout') && order.order_items.count > 0 %>
                 <h2>Checkout Form</h2>
                   <%= render 'form' %>
+              <% else %>
+                  <h2 style="text-align:center; font-size:3em;">CALCULATE SHIPPING</h2>
+                  <div style="text-align:center;">
+                    Please enter the country you wish to ship to:
+                    <input type="text" value="">
+                    <br>
+                    <p id="shipValue"></p>
+
+                  </div>
+                     
+                    
               <% end %>
             </div>
 
@@ -116,7 +127,11 @@
 
                       <tr class="shipping">
                         <th>Shipping and Handling</th>
-                        <td><%= number_to_currency current_order.delivery_price %></td>
+                        <% if current_page?(basket_path) %>
+                          <td>Calculated at Checkout</td>
+                        <% else %>
+                         <td><%= number_to_currency current_order.delivery_price %></td>
+                        <% end %>
                       </tr>
 
                       <tr class="shipping">
@@ -141,5 +156,26 @@
   </div>
 </div>
 </div>
-          
+
+<script>
+$(document).ready(function(){
+$( "input" )
+  .keyup(function() {
+    var x = $( this ).val();
+    var value = x.toLowerCase();
+    var shipping = "";
+    if (value === "canada") {
+      shipping = "$15.00";
+      $( "#shipValue" ).text( "Your estimated shipping cost is " + shipping );
+    } else if (value === "") {
+      shipping = "";
+      $( "#shipValue" ).text( shipping );
+    } else {
+      shipping = "$35.00";
+      $( "#shipValue" ).text( "Your estimated shipping cost is " + shipping );
+    } 
+  })
+  .keyup();
+});
+</script>  
         
