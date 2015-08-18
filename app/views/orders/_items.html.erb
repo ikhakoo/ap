@@ -101,8 +101,8 @@
               <% else %>
                   <h2 style="text-align:center; font-size:3em;">CALCULATE SHIPPING</h2>
                   <div style="text-align:center;">
-                    Please enter the country you wish to ship to:
-                    <input type="text" value="">
+                    <strong>Please enter the Country you wish to ship to: </strong>
+                    <input type="text" id="shipInput" value="">
                     <br>
                     <p id="shipValue"></p>
 
@@ -157,22 +157,26 @@
 </div>
 </div>
 
+<% @shipping = Shoppe::DeliveryServicePrice.all %>
+
 <script>
 $(document).ready(function(){
-$( "input" )
+$( "#shipInput" )
   .keyup(function() {
     var x = $( this ).val();
     var value = x.toLowerCase();
+    var shippingA = <%= @shipping.first.price %>;
+    var shippingB = <%= @shipping.last.price %>;
     var shipping = "";
     if (value === "canada") {
-      shipping = "$15.00";
-      $( "#shipValue" ).text( "Your estimated shipping cost is " + shipping );
+      shipping = shippingA;
+      $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping );
     } else if (value === "") {
       shipping = "";
       $( "#shipValue" ).text( shipping );
     } else {
-      shipping = "$35.00";
-      $( "#shipValue" ).text( "Your estimated shipping cost is " + shipping );
+      shipping = shippingB;
+      $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping );
     } 
   })
   .keyup();
