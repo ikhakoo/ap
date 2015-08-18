@@ -68,12 +68,12 @@ class ApplicationController < ActionController::Base
 
   def free_canada_shipping?(order)
     @order = order
-    canada?(@order) && @order.total_before_tax - @order.delivery_price >= 100
+    canada?(@order) && (@order.total_before_tax.to_f - @order.delivery_price.to_f >= 100)
   end
 
   def free_international_shipping?(order)
     @order = order
-    international?(@order) && @order.total_before_tax - @order.delivery_price >= 175
+    international?(@order) && (@order.total_before_tax.to_f - @order.delivery_price.to_f >= 175)
   end
 
 end

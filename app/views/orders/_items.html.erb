@@ -167,14 +167,19 @@ $( "#shipInput" )
     var value = x.toLowerCase();
     var shippingA = <%= @shipping.first.price %>;
     var shippingB = <%= @shipping.last.price %>;
+    var orderValue = <%= (current_order.total_before_tax.to_f - current_order.delivery_price.to_f) %>
     var shipping = "";
-    if (value === "canada") {
-      shipping = shippingA;
-      $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping + " + taxes" );
-    } else if (value === "") {
+    if (value === "") {
       shipping = "";
       $( "#shipValue" ).text( shipping );
-    } else {
+    } else if (value === "canada" && orderValue < 100) {
+      shipping = shippingA;
+      $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping + " + taxes" );
+    } else if (value === "canada" && orderValue >= 100){ 
+      $( "#shipValue" ).text( "You are eligible for free shipping" );
+    } else if (value !== "canada" && orderValue >= 175) {
+      $( "#shipValue" ).text( "You are eligible for free shipping" );
+    } else if (value !== "canada" && orderValue < 175) {
       shipping = shippingB;
       $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping + " + taxes" );
     } 
