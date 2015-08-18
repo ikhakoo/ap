@@ -170,13 +170,13 @@ $( "#shipInput" )
     var shipping = "";
     if (value === "canada") {
       shipping = shippingA;
-      $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping );
+      $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping + " + taxes" );
     } else if (value === "") {
       shipping = "";
       $( "#shipValue" ).text( shipping );
     } else {
       shipping = shippingB;
-      $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping );
+      $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping + " + taxes" );
     } 
   })
   .keyup();

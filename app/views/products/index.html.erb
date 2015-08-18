@@ -146,7 +146,7 @@
               	<div class="product-carousel-price">
                   <ins><%= number_to_currency product.price %></ins>
                   <% if product.product_category_id == 22 %> 
-                  <del><%= number_to_currency (product.price*1.35).to_f %></del>
+                  <del><%= number_to_currency product.cost_price %></del>
                   <% end %>
                 </div> 
             	</div>
@@ -180,7 +180,7 @@
                 <div class="product-carousel-price">
                   <ins style="color:white;"><%= number_to_currency product.price %></ins> 
                   <% if product.product_category_id == 22 %>
-                  <del><%= number_to_currency (product.price*1.35).to_f %></del>
+                  <del><%= number_to_currency product.cost_price %></del>
                   <% end %>
                 </div> 
               </div>
@@ -235,7 +235,7 @@
                     <a href="<%= product_path(product.permalink) %>"><img src="<%= product.default_image.path %>" alt="" style="height:auto;width:70px;float:left;"></a>
                     <h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
                   <div class="product-wid-price">
-                      <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency (product.price*1.35).to_f %></del>
+                      <ins><%= number_to_currency product.price %></ins> <del><%= number_to_currency product.cost_price %></del>
                    </div>                            
                  </div>
             <% end %>  
