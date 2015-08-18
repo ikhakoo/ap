@@ -509,7 +509,7 @@ def seed_shit
 			sku: "314P",
 			description: "<p>The Flip Flap Capri Pant fits and feels just like the 312P but makes a perfect addition to summer wardrobes or warmer work environments. Features our signature MOBB logo waistband that can be flipped down for a low rise fit.</p>",
 			colors: "Black,Navy,White",
-			sizes: "XS,S,M,L,XL,2XL,3XL",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL",
 			price: 19.95,
 			weight: 0.4,
 			chart: "314P-SC.png"
