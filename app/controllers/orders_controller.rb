@@ -37,8 +37,13 @@ class OrdersController < ApplicationController
 		  @order = Shoppe::Order.find(current_order.id)  
 			  if request.patch?
 			    if @order.proceed_to_confirm(params[:order].permit(:first_name, :last_name, :billing_address1, :billing_address2, :billing_address3, :billing_address4, :billing_country_id, :billing_postcode, :email_address, :phone_number))
-			    	if free_canada_shipping?(@order)
-			    		@order.delivery_price = 0
+			    	if canada?(@order)
+			    		@order.delivery_service_id = 1
+			    	else
+			    		@order.delivery_service_id = 2
+			    	end
+				    if free_canada_shipping?(@order)
+				    	@order.delivery_price = 0
 			    	elsif free_international_shipping?(@order)
 			    		@order.delivery_price = 0
 			    	else 
