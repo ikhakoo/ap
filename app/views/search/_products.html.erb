@@ -10,16 +10,16 @@
   <div class="zigzag-bottom"></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-9 col-xs-12">
         <% @products.each_slice(3) do |row| %>
           <% row.each do |product| %>
             <div class="col-md-3 col-sm-6">
               <div class="single-product" style="height: 400px;">
                 <div class="product-f-image">
                   <img src="<%= product.default_image.path %>" alt="" style="height:305px;width:300px;">
-                    <div class="product-hover">
-                        <a href="<%= product_path(product.permalink) %>" class="view-details-link" style="font-size:14px;"><i class="fa fa-link"></i> See details</a>
-                    </div>
+                  <div class="product-hover">
+                    <a href="<%= product_path(product.permalink) %>" class="view-details-link" style="font-size:14px;"><i class="fa fa-link"></i> See details</a>
+                  </div>
                 </div>
               
                 <h6>Style # - <%= product.sku %> - <a href="<%= product_path(product.permalink) %>"><%= product.name.split("-").first %></h6></a>
@@ -27,42 +27,42 @@
                 <div class="product-carousel-price">
                   <ins><%= number_to_currency product.price %></ins> 
                   <% if product.product_category_id == 22 %>
-                  <del><%= number_to_currency (product.price*1.35).to_f %></del>
+                    <del><%= number_to_currency (product.price*1.35).to_f %></del>
                   <% end %>
                 </div> 
                 <hr>
               </div> 
               <!-- end prod -->
             </div>
-            <% end %>
+          <% end %>
           <% end %>
           </div>
-          <div class="col-lg-3">
-          <div class="single-sidebar">
-          <h2 style="color:#2B4B6F"class="sidebar-title">YOU MAY ALSO LIKE...</h2>
-          <% @prods.sample(6).each do |product| %>
-            <div class="thubmnail-recent">
-              <div class="big-thumb">
-                <img src="<%= product.default_image.path %>" class="recent-thumb" alt="">
-              </div>
-              <h6><a href="<%= product_path(product.permalink) %>"><%= product.sku %> - <%= product.name.split("-").first %></a></h6>
-              <div class="product-sidebar-price">
-                <ins><%= number_to_currency product.price %></ins>
-                <% if product.product_category_id == 22 %> 
-                  <del><%= number_to_currency (product.price*1.13).to_f %></del>
-                <% end %>
-              </div>                             
+          <div class="col-lg-3" class="full-screen-sidebar">
+            <div class="single-sidebar">
+              <h2 style="color:#2B4B6F"class="sidebar-title">YOU MAY ALSO LIKE...</h2>
+              <% @prods.sample(6).each do |product| %>
+                <div class="thubmnail-recent">
+                  <div class="big-thumb">
+                    <img src="<%= product.default_image.path %>" class="recent-thumb" alt="">
+                  </div>
+                  <h6>
+                    <a href="<%= product_path(product.permalink) %>">
+                      <%= product.sku %> - <%= product.name.split("-").first %>
+                    </a>
+                  </h6>
+                  <div class="product-sidebar-price">
+                    <ins><%= number_to_currency product.price %></ins>
+                    <% if product.product_category_id == 22 %> 
+                      <del><%= number_to_currency (product.price*1.13).to_f %></del>
+                    <% end %>
+                  </div>                             
+                </div>
+              <% end %>
             </div>
-          <% end %>
           </div>
         </div>
-
-
-<!-- end col -->
+      </div>
+      <div style="text-align:center;">
+        <%= paginate @products %>
+      </div>
     </div>
-<!-- end row -->
-  </div>
-  <div style="text-align:center;">
-  <%= paginate @products %>
-</div>
-</div>
