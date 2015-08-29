@@ -28,7 +28,6 @@ gem "shoppe-stripe", require: "shoppe/stripe"
 gem 'stripe_event'
 
 gem 'unicorn'
-gem 'rack-timeout'
 
 gem 'social-share-button'
 
