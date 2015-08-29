@@ -1687,7 +1687,27 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			colors: "Aqua,Brick,Brown,Ceil,DustyRose,Khaki,Lagoon,Lilac,LimeGreen,PostmanBlue,Raspberry,Red,SkyBlue",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL-XS,L-XS,S,L-XS,S,M,L-XS,S,L-XS,L-XS,S,M,L-L-XS,S-XS,M,L-S,M,L,XL-XS-M,L-XS,M,L",
 			chart: "202T-SC.png"
-		}
+		},## check these
+		"CLEARANCE Unisex 3 Pocket V Neck Scrub Top.jpeg" => {
+			sku: "308T",
+			description: "<p>A bold, basic 3 pocket v-neck scrub top featuring dolman sleeves. This scrub top is also available as a set</p>",
+			colors: "Brick,DustyRose,Lilac,LimeGreen,OliveGreen,Red",
+			sizes: "XXS,XS,S,M,L,XL-XS,S,M,L,XL-M,L,XL-XS,S,M,L,XL-XXS,L-XXS,S,XL-S,M,XL",
+			price: 18.95,
+			weight: 0.3,
+			chart: "308T-SC.png"
+		},
+		"CLEARANCE Unisex V Neck Scrub Top.jpeg" => {
+			sku: "310T",
+			description: "<p>A classic v-neck scrub top popular among men and women. This top has a slightly longer hem 
+			line making it an excellent choice for anyone with a taller stature. This top has three front pockets, one shoulder 
+			pen pocket and is available in every MOBB color</p>",
+			colors: "Brick,BubbleGum,DustyRosePolkaDots,DustyRose,HunterGreen,Indigo,Lilac,Raspberry",
+			price: 18.95,
+			weight: 0.3,
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-S,M,L,XL,2XL,3XL-S,L-XS,S,M,L,XL,2XL,3XL,4XL-XS,M,L-M,L-XXS,XS,S,M,L,XL,2XL,3XL,4XL-M,L,XL,2XL,3XL,4XL-S,M,L,2XL,3XL,4XL",
+			chart: "310T-SC.png"
+		},
 	}
 
 	default_params = { 
