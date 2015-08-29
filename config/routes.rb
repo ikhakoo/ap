@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   match "remove_item", to: "orders#remove_item", as: "remove_item", via: [:get]
   match "increase_item_quantity", to: "orders#increase_item_quantity", as: "increase_item_quantity", via: [:get]
   match "decrease_item_quantity", to: "orders#decrease_item_quantity", as: "decrease_item_quantity", via: [:get]
+  match "bulk_update_quantiy", to: "orders#bulk_update_quantiy", as: "bulk_update_quantiy", via: [:get]
 
   #Nurse Wear
   match "nurse-wear/tops", to: "products#nurse_tops", as: "nurse_tops", via: [:get]

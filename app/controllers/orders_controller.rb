@@ -32,6 +32,19 @@ class OrdersController < ApplicationController
     redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{e.available_stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
   end
 
+  def bulk_update_quanity
+  	bulk = params[:bulk]
+  	item = current_order.order_items.find(params[:id])
+  	if bulk.to_i > item.available_stock.to_i
+	  	bulk.to_i.times do 
+	  		item.increase!
+	  	end
+  		redirect_to basket_path, :notice => "Quantity has been updated successfully." 
+  	else
+    	redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{e.available_stock} items available at the moment. Please get in touch though, we're always receiving new stock."
+    end
+  end
+
 	def checkout
 		if !current_client.nil?
 		  @order = Shoppe::Order.find(current_order.id)  
