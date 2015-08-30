@@ -1095,13 +1095,13 @@ def seed_shit
 			chart: "34P-SC.png"
 		},
 		"DRAWSTRING ELASTIC CHEF PANT.jpeg" => {
-			sku: "37P",
+			sku: "307P-CHEF",
 			description: "<p>This chef pant is designed to be comfortable and functional while providing complete coverage when bending and reaching. 5oz poly/cotton blend pant featuring a combination drawstring/elastic waistband with 2 side pockets, 2 cargo pockets and 1 back pocket</p>",
 			colors: "Black",
 			price: 21.99,
 			weight: 0.4,
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
-			chart: "37P-SC.png"
+			chart: "307P-SC.png"
 		},
 		"WOVEN CHEF PANT.jpeg" => {
 			sku: "303P",
@@ -1621,7 +1621,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sizes: "XS,S,M,L,XL,2XL,3XL-XXS,XS,S,L-XL-S,M,L,XL-M,L,XL-XL-XS,S,M,L,XL-S,M,L,XL-XS,S,M,L,XL-XXS,M,L,XL-XL-XXS,L,XL-M,L,XL-L,XL-M,L,XL-XS,M,L,XL-L,XL-XXS,S,M,L,XL-L,XL-XXS,L,XL",
 			price: 24.99,
 			weight: 0.7,
-			chart: "308308C-SC.png"
+			chart: "308308-SC.png"
 		},
 		"CLEARANCE UNISEX DRAWSTRING ELASTIC 5 POCKET SCRUB PANT.jpeg" => {
 			sku: "307P-C",
