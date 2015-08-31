@@ -1059,7 +1059,7 @@ def seed_shit
 		"CLASSIC CHEF COAT UNISEX.jpeg" => {
 			sku: "CC250",
 			description: "<p>MOBB kitchen classics. Professional and durable, our chef coats are made to last. Lightweight, breathable designs and a great selection of colors to choose from. 7.5oz poly cotton twill featuring a stand collar, vented cuff and underarms and a thermo pocket on left sleeve.</p>",
-			colors: "Black,White,BlackWhite,WhiteHoundsTooth,RedBlack,BurgundyBlack",
+			colors: "Black,White,Black/White,WhiteHoundsTooth,Red/Black,Burgundy/Black",
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
 			price: 26.99,
 			weight: 0.6,
@@ -1068,7 +1068,7 @@ def seed_shit
 		"CHEF COAT.jpeg" => {
 			sku: "CC260",
 			description: "<p>100% spun-poly 7.5oz. Stand collar, vented cuff, vented underarms, thermo pocket on left sleeve</p>",
-			colors: "Black,White,BlackWhite",
+			colors: "Black,White,Black/White",
 			price: 26.99,
 			weight: 0.6,
 			sizes: "XS,S,M,L,XL,2XL,3XL"
@@ -1076,7 +1076,7 @@ def seed_shit
 		"MANDARIN STYLE CHEF COAT.jpeg" => {
 			sku: "CC270",
 			description: "<p>MOBB kitchen classics. Professional and durable, our chef coats are made to last. Lightweight, breathable designs and a great selection of colors to choose from. 7.5oz poly cotton twill featuring a stand collar, vented cuff and underarms and a thermo pocket on left sleeve.</p>",
-			colors: "BlackWhite,WhiteBlack",
+			colors: "Black/White,White/Black",
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
 			price: 28.99,
 			weight: 0.6,
