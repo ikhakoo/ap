@@ -1694,7 +1694,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sku: "VE370-C",
 			description: "<p></p>",
 			colors: "White",
-			sizes: "XS,L,XL-XS,L,XL"
+			sizes: "XS,L,XL-XS,L,XL",
 			price: 6.99,
 			weight: 0.3
 		},
@@ -1745,7 +1745,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		"CLEARANCE Solid Contrast Scrub Top with Flip Flap Pants.jpeg" => {
 			sku: "425/312-C",
 			description: "<p></p>",
-			colors: "Burgundy,Charcoal,Navy,SpringBlooming"
+			colors: "Burgundy,Charcoal,Navy,SpringBlooming",
 			sizes: "XS,S,L,XL,2XL-XS,S,M,L,XL-XS,S,M,L,XL-XS,S-M,L,2XL",
 			price: 15.99,
 			weight: 0.7
