@@ -408,7 +408,16 @@ def seed_shit
 			price: 32.95,
 			weight: 0.7,
 			chart: "308312-SC.png"
-		}
+		},
+		"MOBB UNISEX DRAWSTRING SCRUB SET.jpeg" => {
+			sku: "306/306 SET",
+			description: "<p>Classic fit and style this v-neck scrub top has one chest pocket and one shoulder pen pocket.The scrub pant has 5 pockets and a drawstring waist. This set has been replaced by the NEW 606/608 but is still available for a limited time.</p>",
+			colors: "Aqua,Black,Burgundy,Caribbean,Ceil,Charcoal,Dusty Rose,Grey,HunterGreen,Khaki,Lagoon,Lilac,LimeGreen,NavyBlue,OliveGreen,PostmanBlue,Raspberry,Red,RoyalBlue,SkyBlue,Spruce,Teal,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL",
+			price: 16.99,
+			weight: 0.7,
+			chart: "306306-SC.png"
+		},
 	}
 
 	pants = {
