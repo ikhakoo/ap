@@ -416,8 +416,8 @@ def seed_shit
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL",
 			price: 16.99,
 			weight: 0.7,
-			chart: "306306-SC.png"
-		},
+			chart: "306306-SC copy.png"
+		}
 	}
 
 	pants = {
