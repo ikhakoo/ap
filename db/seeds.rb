@@ -1623,6 +1623,14 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.7,
 			chart: "308308-SC.png"
 		},
+		"CLEARANCE Flexi Zipper Scrub Top.jpeg" => {
+			sku: "224T-C",
+			description: "<p></p>",
+			colors: "Aqua,Brick,DustyRose,Khaki,Lilac",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL-XXS,M,L,2XL,3XL-XXS,XS,2XL,3XL-XXS,XS,3XL-XXS,XS,2XL,3XL-XXS,3XL",
+			price: 12.99,
+			weight: 0.3
+		},
 		"CLEARANCE UNISEX DRAWSTRING ELASTIC 5 POCKET SCRUB PANT.jpeg" => {
 			sku: "307P-C",
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
@@ -1631,6 +1639,23 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			price: 14.99,
 			weight: 0.4,
 			chart: "307P-SC.png"
+		},
+		"Clearance Unisex V Neck Scrub Top with 2 Pockets.jpeg" => {
+			sku: "306T-C",
+			description: "<p></p>",
+			colors: "Black,Burgundy,Caribbean,Charcoal,Ceil,DustyRose,Grey,GoldenYellow,Khaki,Lagoon,Lilac,Navy,OliveGreen,Pink,PostmanBlue,Red,RoyalBlue,SkyBlue,Sand,Tangerine,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL-XL,2XL,4XL-S,L,XL,2XL-XS,S,M,L,XL,2XL,3XL-XS,3XL-XXS,XS,S,XL-XXS,XS,2XL,3XL-S,L,2XL,3XL-XS,S,M,XL,2XL,3XL,4XL-XXS,XS,S,M-XS,2XL-XXS,XS,S,M,XL,2XL,3XL-XXS,S,XL-XXS,XS,S,L,XL,2XL,3XL-XS,S,XL,3XL-XXS,XS,S,XL,2XL-XXS,4XL-XXS,XS,S,2XL,4XL",
+			price: 5.99,
+			weight: 0.4,
+			chart: "306T-SC.png"
+		},
+		"Clearance Scrub Top with Hidden Side Pockets.jpeg" => {
+			sku: "318T-C",
+			description: "<p></p>",
+			colors: "Black,Brick,Brown,DustyRose,Khaki,Navy,RoyalBlue,SkyBlue,White",
+			sizes: "XS,S,M,L,XL-XS,S,M,L,XL-L,-XS,S,M,L,XL-XS,S,M,L,XL-XS,S,M,L,XL-XS,S,M,L,XL-S,M,L,XL-S,M,L,XL-XS,S,M,L,XL",
+			price: 5.99,
+			weight: 0.3,
 		},
 		"CLEARANCE UNISEX DRAWSTRING SCRUB SET.jpeg" => {
 			sku: "306/306C",
