@@ -399,6 +399,15 @@ def seed_shit
 			weight: 0.7,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL",
 			chart: "323T312P-SC.png"
+		},
+		"MOBB V NECK THREE POCKET DOLMAN SLEEVE FLIP FLAP SCRUB SET.jpeg" => {
+			sku: "308/312 SET",
+			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
+			colors: "Raspberry,Black,Aqua,Sky Blue,Lagoon,Navy,Caribbean,Postman Blue,Charcoal,Spruce,White,Eggplant,Royal Blue,Burgundy,Ceil,Khaki",
+			sizes: "XXS,XS,S,M,L,XL,2XL",
+			price: 32.95,
+			weight: 0.7,
+			chart: "308312-SC.png"
 		}
 	}
 
