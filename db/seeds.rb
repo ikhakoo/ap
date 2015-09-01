@@ -382,6 +382,23 @@ def seed_shit
 			price: 19.95,
 			weight: 0.7,
 			sizes: "2Y,4Y,6Y,8Y"
+		},
+		"MOBB UNISEX 8 POCKET DRAWSTRING ELASTIC SCRUB SET.jpeg" => {
+			sku: "310/307 SET",
+			description: "<p>Amazing fit in every MOBB color imaginable. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.</p><br><strong><p>Size 5XL only available in  Colors : Black, Charcoal, Burgundy, Caribbean, Lagoon, Navy, Postman Blue, Royal Blue</p><br><p>Size 6XL only available in Navy</strong></p>",
+			colors: "Lagoon,Cappuccino,Khaki,Aqua,Spruce,Black,Burgundy,Navy,LimeGreen,White,Eggplant,PostmanBlue,Ceil,Caribbean,Charcoal,SkyBlue,OliveGreen,RoyalBlue,Teal",
+			price: 34.95,
+			weight: 0.7,
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL"
+		},
+		"MOBB CRISS CROSS FLIP FLAP SCRUB SET.jpeg" => {
+			sku: "323/312 SET",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: "SkyBlue/DustyRose,Navy/SkyBlue,Lagoon/Black,DeepOrchid/Black,Charcoal/Postman,Black/Aqua,Aqua/Black",
+			price: 34.95,
+			weight: 0.7,
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL",
+			chart: "323T312P-SC.png"
 		}
 	}
 
