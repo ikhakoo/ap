@@ -1657,6 +1657,22 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			price: 5.99,
 			weight: 0.3,
 		},
+		"CLEARANCE BASEBALL STYLE SCRUP TOP.jpeg" => {
+			sku: "380T-C",
+			description: "<p></p>",
+			colors: "Burgundy,Caribbean,Ceil,Khaki,RoyalBlue,Teal",
+			sizes: "XS,S,M,L,XL,2XL,3XL-XS,S-XS,M,XL-XS,M,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,S,M,2XL,3XL-M",
+			price: 6.99,
+			weight: 0.3,
+		},
+		"CLEARANCE LADIES TWO TONE SCRUB TOP.jpeg" => {
+			sku: "510T-C",
+			description: "<p></p>",
+			colors: "Khaki,PostmanBlue,White",
+			sizes: "XS,S,M,L,XL,2XL,3XL-L,XL-XL-XL,2XL",
+			price: 11.99,
+			weight: 0.3,
+		},
 		"CLEARANCE UNISEX DRAWSTRING SCRUB SET.jpeg" => {
 			sku: "306/306C",
 			description: "<p>Classic fit and style this v-neck scrub top has one chest pocket and one shoulder pen pocket.The scrub pant has 5 pockets and a drawstring waist.</p><p>This set has been replaced by the NEW 606/608 but is still available for a limited time.</p>",
@@ -1665,6 +1681,82 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			price: 24.99,
 			weight: 0.7,
 			chart: "306306-SC.png"
+		},
+		"CLEARANCE V NECK VEST SCRUB TOP.jpeg" => {
+			sku: "VE330-C",
+			description: "<p></p>",
+			colors: "White",
+			sizes: "XS,XL,2XL-XS,XL,2XL",
+			price: 6.99,
+			weight: 0.3
+		},
+		"CLEARANCE BUTTON DOWN VEST TOP.jpeg" => {
+			sku: "VE370-C",
+			description: "<p></p>",
+			colors: "White",
+			sizes: "XS,L,XL-XS,L,XL"
+			price: 6.99,
+			weight: 0.3
+		},
+		"CLEARANCE Scrub Pants.jpeg" => {
+			sku: "33P-C",
+			description: "<p></p>",
+			colors: "Black,Khaki,Navy",
+			sizes: "XS,S,M,L,XL-XL,2XL-XS,S,M,L,XL-XS,S,M",
+			price: 7.99,
+			weight: 0.4
+		},
+		"CLEARANCE BASIC DRAWSTRING SCRUB PANT.jpeg" => {
+			sku: "306P-C",
+			description: "<p></p>",
+			colors: "Aqua,Brick,Black,Burgundy,Caribbean,Charcoal,Ceil,
+			HunterGreen,Khaki,Lagoon,Lilac,LimeGreen,Navy,OliveGreen,Pink,PostmanBlue,
+			Raspberry,Red,RoyalBlue,SkyBlue,Spruce,Tangerine,Teal,White,Yellow",
+			sizes: "XXS,XS,S,L,XL,2XL,3XL,4X-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L—XL,2XL,3SL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL",
+			price: 6.99,
+			weight: 0.4
+		},
+		"CLEARANCE Mens Basic Drawstring Scrub Pant.jpeg" => {
+			sku: "308P-C",
+			description: "<p></p>",
+			colors: "Aqua,Brick,Black,Burgundy,Caribbean,Charcoal,Ceil,
+			HunterGreen,Khaki,Lagoon,Lilac,LimeGreen,Navy,OliveGreen,Pink,PostmanBlue,
+			Raspberry,Red,RoyalBlue,SkyBlue,Spruce,Tangerine,Teal,White,Yellow",
+			sizes: "XXS,XS,S,L,XL,2XL,3XL,4X-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L—XL,2XL,3SL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL",
+			price: 6.99,
+			weight: 0.4
+		},
+		"CLEARANCE Baseball Scrub Set.jpeg" => {
+			sku: "380/307-C",
+			description: "<p></p>",
+			colors: "Caribbean,Ceil,Khaki,RoyalBlue,Teal,White",
+			sizes: "XS,S,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,L,XL,2XL,3XL-S,L,2XL,3XL-XS,S,M,L,2XL,3XL",
+			price: 15.99,
+			weight: 0.7
+		},
+		"CLEARANCE FLEECE LOW RISE LACE UP PANT.jpeg" => {
+			sku: "316P-C",
+			description: "<p></p>",
+			colors: "Black,Navy,White",
+			sizes: "XXS,XS,S,L,XL-XXS,M,L,XL-XXS,XS,S,M,L,XL-XXS,XS,S,M,L,XL",
+			price: 15.99,
+			weight: 0.4
+		},
+		"CLEARANCE Solid Contrast Scrub Top with Flip Flap Pants.jpeg" => {
+			sku: "425/312-C",
+			description: "<p></p>",
+			colors: "Burgundy,Charcoal,Navy,SpringBlooming"
+			sizes: "XS,S,L,XL,2XL-XS,S,M,L,XL-XS,S,M,L,XL-XS,S-M,L,2XL",
+			price: 15.99,
+			weight: 0.7
+		},
+		"CLEARANCE PRINCESS SCRUB DRESS.jpeg" => {
+			sku: "PD560-C",
+			description: "<p></p>",
+			colors: "Ceil,Lagoon,Navy,Pink,Raspberry,Spruce,White",	
+			sizes: "XS,S,M,L,XL,2XL,3XL-XS,S,M,L,XL-XS,S,L,2XL,3XL-XS,S,L,XL,2XL,3XL-XS,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,S-XL",
+			price: 14.99,
+			weight: 0.5
 		},
 		"CLEARANCE Ladies Zipper Detail Scrub Top.jpeg" => {
 			sku: "530T-C",
