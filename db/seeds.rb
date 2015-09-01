@@ -417,6 +417,15 @@ def seed_shit
 			price: 16.99,
 			weight: 0.7,
 			chart: "306306-SC copy.png"
+		},
+		"MOBB WIDE LEG DRAWSTRING SCRUB SET.jpeg" => {
+			sku: "308/308 SET",
+			description: "<p></p>",
+			colors: "Black,Burgundy,Caribbean,Ceil,Charcoal,Eggplant,Lagoon,NavyBlue,PostmanBlue,Raspberry,RoyalBlue,SkyBlue",
+			sizes: "XXS,XS,S,M,L,XL",
+			price: 32.95,
+			weight: 0.7,
+			chart: "308308-SC copy.png"
 		}
 	}
 
