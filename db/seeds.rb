@@ -1900,7 +1900,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>The MOBB Baggy Chef Pant is the ultimate in culinary coolness. With its unisex, elastic waist style our chef pants continue to be the choice for chefs today. Features a 2” elastisized drawstring waistband for maximum coverage and comfort. A slightly tapered ankle keeps the pants from dragging on the floor. 2 front slant pockets and 1 back patch pocket</p>",
 			colors: "MrBOB",
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL-XS,S,M,L,XL,2XL,3XL,4XL",
-			price: 28.99,
+			price: 16.99,
 			weight: 0.4,
 			chart: "301P-SC.png"
 		},
@@ -1909,7 +1909,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>MOBB kitchen classics. Professional and durable, our chef coats are made to last. Lightweight, breathable designs and a great selection of colors to choose from. 7.5oz poly cotton twill featuring a stand collar, vented cuff and underarms and a thermo pocket on left sleeve.</p>",
 			colors: "BL/MB",
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL-XS,S,M,L,XL,2XL,3XL,4XL",
-			price: 26.99,
+			price: 18.99,
 			weight: 0.6,
 			chart: "CC250-SC.png"
 		},
@@ -1917,8 +1917,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sku: "AP390C",
 			description: "<p>The MOBB Bistro apron is made with durable polyester/cotton twill for stain and wrinkle resistance.
 										This apron has 3 pockets and falls just below the knees making it the perfect fit for front or back of the house.</p>",
-			colors: "Bob",
-			price: 24.99,
+			colors: "MrBob",
+			price: 7.99,
 			weight: 0.3,
 			sizes: "1SIZE-1SIZE"
 		}
