@@ -435,7 +435,7 @@ def seed_shit
 			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.</p>",
 			colors: "PostmanBlue,SkyBlue,Black,Navy,Charcoal",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: 26.95,
+			price: 16.99,
 			weight: 0.4,
 			chart: "416P-SC.png"
 		},
@@ -510,7 +510,7 @@ def seed_shit
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
 			colors: "Black,Aqua,Eggplant,Burgundy,Caribbean,Charcoal,Khaki,Lagoon,Navy,OliveGreen,PostmanBlue,RoyalBlue,SkyBlue,Teal,White,Ceil,Cappuccino",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL,5XL",
-			price: 21.95,
+			price: 13.99,
 			weight: 0.4,
 			chart: "307P-SC.png"
 		},
@@ -1530,7 +1530,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sku: "323/312C",
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
 			colors: "Aqua,Black/DustyRose,Black/Aqua,Brown,BubbleGum,DustyRose,DustyRosePolkaDots,Khaki,LimeGreen,Nutmeg,OliveGreen,Pink,PostmanBlue,Red,SeaGreen,SkyBlue,Tangerine,White",
-			price: 24.99,
+			price: 25.99,
 			weight: 0.7,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
 			-2XL-2XL-2XL-XXS,XS,L,XL,2XL
@@ -1568,7 +1568,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				<p><strong>Size 6XL only available in Navy</p></strong>",
 			colors: "Aqua,Burgundy,Caribbean,Charcoal,Khaki,LimeGreen,OliveGreen,RoyalBlue,Spruce,
 								White,Black,Cappuccino,Ceil,Eggplant,Lagoon,NavyBlue,PostmanBlue,SkyBlue,Teal",
-			price: 24.99,
+			price: 26.95,
 			weight: 0.7,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL,5XL
 			-2XL-XXS,XL,2XL,3XL,4XL-XXS,2XL,3XL,4XL-XXS,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL
@@ -1582,7 +1582,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sku: "316PTC",
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
 			colors: "Brown,BubbleGum,DeepOrchid,Khaki,Lagoon,OliveGreen,PostmanBlue,Red,White",
-			price: 14.99,
+			price: 12.99,
 			weight: 0.4,
 			chart: "316P-SC.png",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
@@ -1597,7 +1597,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										Available in Black, Navy & Charcoal only</p>",
 			colors: "DustyRose",
 			sizes: "XS,S,M,L,XL,2XL-XS,S,M,L,XL,2XL",
-			price: 14.99,
+			price: 17.99,
 			weight: 0.4,
 			chart: "412P-SC.png"
 		},
@@ -1606,7 +1606,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.</p>",
 			colors: "DustyRose",
 			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
-			price: 14.99,
+			price: 16.99,
 			weight: 0.4,
 			chart: "416P-SC.png"
 		},
@@ -1633,7 +1633,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
 			colors: "Brown,BubbleGum,DeepOrchid,DustyRose,Khaki,Lagoon,OliveGreen,PostmanBlue,Red",
 			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,L,2XL",
-			price: 14.99,
+			price: 15.99,
 			weight: 0.4,
 			chart: "316P-SC.png"
 		}
@@ -1663,7 +1663,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>The Flip Flap Capri Pant fits and feels just like the 312P but makes a perfect addition to summer wardrobes or warmer work environments. Features our signature MOBB logo waistband that can be flipped down for a low rise fit.</p>",
 			colors: "Black,Brick,Burgundy,Caribbean,Ceil,Charcoal,Eggplant,Khaki,Lagoon,Lilac,LimeGreen,NavyBlue,Pink,PostmanBlue,Raspberry,RingAround,Red,RoyalBlue,Spruce,Tangerine,White",
 			sizes: "XS,S,M,L,XL,2XL,3XL-XXS,XS,S,L-XL-S,M,L,XL-M,L,XL-XL-XS,S,M,L,XL-S,M,L,XL-XS,S,M,L,XL-XXS,M,L,XL-XL-XXS,L,XL-M,L,XL-L,XL-M,L,XL-XS,M,L,XL-L,XL-XXS,S,M,L,XL-L,XL-XXS,L,XL",
-			price: 24.99,
+			price: 19.99,
 			weight: 0.7,
 			chart: "308308-SC.png"
 		},
@@ -1689,7 +1689,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p></p>",
 			colors: "Black,Burgundy,Caribbean,Charcoal,Ceil,DustyRose,Grey,GoldenYellow,Khaki,Lagoon,Lilac,Navy,OliveGreen,Pink,PostmanBlue,Red,RoyalBlue,SkyBlue,Sand,Tangerine,White",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL-XL,2XL,4XL-S,L,XL,2XL-XS,S,M,L,XL,2XL,3XL-XS,3XL-XXS,XS,S,XL-XXS,XS,2XL,3XL-S,L,2XL,3XL-XS,S,M,XL,2XL,3XL,4XL-XXS,XS,S,M-XS,2XL-XXS,XS,S,M,XL,2XL,3XL-XXS,S,XL-XXS,XS,S,L,XL,2XL,3XL-XS,S,XL,3XL-XXS,XS,S,XL,2XL-XXS,4XL-XXS,XS,S,2XL,4XL",
-			price: 5.99,
+			price: 8.99,
 			weight: 0.4,
 			chart: "306T-SC.png"
 		},
@@ -1698,7 +1698,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p></p>",
 			colors: "Black,Brick,Brown,DustyRose,Khaki,Navy,RoyalBlue,SkyBlue,White",
 			sizes: "XS,S,M,L,XL-XS,S,M,L,XL-L,-XS,S,M,L,XL-XS,S,M,L,XL-XS,S,M,L,XL-XS,S,M,L,XL-S,M,L,XL-S,M,L,XL-XS,S,M,L,XL",
-			price: 5.99,
+			price: 8.99,
 			weight: 0.3,
 		},
 		"CLEARANCE BASEBALL STYLE SCRUP TOP.jpeg" => {
@@ -1706,7 +1706,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p></p>",
 			colors: "Burgundy,Caribbean,Ceil,Khaki,RoyalBlue,Teal",
 			sizes: "XS,S,M,L,XL,2XL,3XL-XS,S-XS,M,XL-XS,M,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,S,M,2XL,3XL-M",
-			price: 6.99,
+			price: 9.99,
 			weight: 0.3,
 		},
 		"CLEARANCE LADIES TWO TONE SCRUB TOP.jpeg" => {
@@ -1722,7 +1722,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>Classic fit and style this v-neck scrub top has one chest pocket and one shoulder pen pocket.The scrub pant has 5 pockets and a drawstring waist.</p><p>This set has been replaced by the NEW 606/608 but is still available for a limited time.</p>",
 			colors: "Aqua,black,Brick,Burgundy,Caribbean,Ceil,DustyRose,GoldenYellow,HunterGreen,Khaki,Lagoon,Lilac,LimeGreen,NavyBlue,OliveGreen,Pink,PostmanBlue,Raspberry,Red,RoyalBlue,SkyBlue,Spruce,Tangerine,Teal,White,Yellow",
 			sizes: "XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,L,2XL,3XL,4XL-XXS,XS,S,M,L,2XL-XXS,XS,S,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,2XL,3XL,4XL-XXS,XS,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,M,2XL,3XL,4XL-L,XL,2XL,3XL,4XL-XS,XL,2XL,3XL-XXS,XS,S,XL,2XL,3XL,4XL-XS,XL,2XL,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,L,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XL,3XL,4XL-XXS,XS,L,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,L,XL,2XL,3XL,4XL-XXS,L,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL",
-			price: 24.99,
+			price: 16.99,
 			weight: 0.7,
 			chart: "306306-SC.png"
 		},
@@ -1731,7 +1731,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p></p>",
 			colors: "White",
 			sizes: "XS,XL,2XL-XS,XL,2XL",
-			price: 6.99,
+			price: 9.99,
 			weight: 0.3
 		},
 		"CLEARANCE BUTTON DOWN VEST TOP.jpeg" => {
@@ -1739,7 +1739,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p></p>",
 			colors: "White",
 			sizes: "XS,L,XL-XS,L,XL",
-			price: 6.99,
+			price: 9.99,
 			weight: 0.3
 		},
 		"CLEARANCE Scrub Pants.jpeg" => {
@@ -1747,7 +1747,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p></p>",
 			colors: "Black,Khaki,Navy",
 			sizes: "XS,S,M,L,XL-XL,2XL-XS,S,M,L,XL-XS,S,M",
-			price: 7.99,
+			price: 9.99,
 			weight: 0.4
 		},
 		"CLEARANCE BASIC DRAWSTRING SCRUB PANT.jpeg" => {
@@ -1757,7 +1757,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			HunterGreen,Khaki,Lagoon,Lilac,LimeGreen,Navy,OliveGreen,Pink,PostmanBlue,
 			Raspberry,Red,RoyalBlue,SkyBlue,Spruce,Tangerine,Teal,White,Yellow",
 			sizes: "XXS,XS,S,L,XL,2XL,3XL,4X-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L—XL,2XL,3SL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL",
-			price: 6.99,
+			price: 8.99,
 			weight: 0.4
 		},
 		"CLEARANCE Mens Basic Drawstring Scrub Pant.jpeg" => {
@@ -1767,7 +1767,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			HunterGreen,Khaki,Lagoon,Lilac,LimeGreen,Navy,OliveGreen,Pink,PostmanBlue,
 			Raspberry,Red,RoyalBlue,SkyBlue,Spruce,Tangerine,Teal,White,Yellow",
 			sizes: "XXS,XS,S,L,XL,2XL,3XL,4X-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L—XL,2XL,3SL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL",
-			price: 6.99,
+			price: 8.99,
 			weight: 0.4
 		},
 		"CLEARANCE Baseball Scrub Set.jpeg" => {
@@ -1775,7 +1775,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p></p>",
 			colors: "Caribbean,Ceil,Khaki,RoyalBlue,Teal,White",
 			sizes: "XS,S,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,L,XL,2XL,3XL-S,L,2XL,3XL-XS,S,M,L,2XL,3XL",
-			price: 15.99,
+			price: 21.99,
 			weight: 0.7
 		},
 		"CLEARANCE FLEECE LOW RISE LACE UP PANT.jpeg" => {
@@ -1791,7 +1791,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p></p>",
 			colors: "Burgundy,Charcoal,Navy,SpringBlooming",
 			sizes: "XS,S,L,XL,2XL-XS,S,M,L,XL-XS,S,M,L,XL-XS,S-M,L,2XL",
-			price: 15.99,
+			price: 22.99,
 			weight: 0.7
 		},
 		"CLEARANCE PRINCESS SCRUB DRESS.jpeg" => {
@@ -1799,7 +1799,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p></p>",
 			colors: "Ceil,Lagoon,Navy,Pink,Raspberry,Spruce,White",	
 			sizes: "XS,S,M,L,XL,2XL,3XL-XS,S,M,L,XL-XS,S,L,2XL,3XL-XS,S,L,XL,2XL,3XL-XS,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,S-XL",
-			price: 14.99,
+			price: 16.99,
 			weight: 0.5
 		},
 		"CLEARANCE Ladies Zipper Detail Scrub Top.jpeg" => {
@@ -1807,7 +1807,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>Fun, funky and fitted. This sporty scrub top features reflective trim, asymmetrical zipper detail, two lower pockets, one chest pocket and one shoulder pen pocket</p>",
 			colors: "Black,Charcoal",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL-XXS,M,L,XL,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL",
-			price: 13.99,
+			price: 16.99,
 			weight: 0.3,
 			chart: "530T-SC.png"
 		},
@@ -1816,7 +1816,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
 			colors: "Aqua,Brown,Burgundy,Ceil,Denim,DustyRose,Eggplant,Khaki,Lagoon,Lilac,LimeGreen,Pink,Purple,Raspberry,Red,RoyalBlue,SkyBlue,Spruce,White",
 			sizes: "XXS,XS,S,M,L,XL,2XL-XL,2XL-XL,2XL-XL,2XL-XXS,XS,S,L,XL,2XL-XXS,XS,M,2XL-XXS,XS,S,L,XL,2XL-XXS,XS,M,2XL-XL,2XL-2XL-XL,2XL-XL,2XL-S,XL,2XL-XXS,XS,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS-XXS,XL,2XL-XXS,M,L,XL,2XL-XXS,XL,2XL-XXS,2XL-XXS,2XL-XXS,XS,S,M,L,2XL",
-			price: 10.99,
+			price: 11.99,
 			weight: 0.4,
 			chart: "302P-SC.png"
 		},
@@ -1825,14 +1825,14 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>Available in a large variety of prints and solid colors this scrub top will always be a top seller. Features a v-neck with a contrast color trim as well as two lower pockets and one shoulder pen pocket. This scrub top is also available as a set</p>",
 			colors: "Black/DustyRose,Black/Aqua,Brown,BubbleGum,Charcoal,DustyRose,FlowerPower,HeartTies,HeartToHeart,Khaki,LimeGreen,NavyPolkaDots,Pink,Red,RingAround,SmittenKitten,SpringFling,Tangerine,Twinkle,TwistTwirl,VintageVine,Whimsical",
 			sizes: "XXS,XS,S,M,L,XL,2XL-M,L,XL,2XL-XS,S,M,L,XL-XS,M,L,XL-S,M,L,XL,2XL-XXS-XL,2XL-2XL-L,XL,2XL-M,L,XL-XL-L,2XL-2XL-XS,S,L,2XL-L,XL,2XL-L,2XL-2XL-L-XL-XL,2XL-2XL-2XL-XL-XS,S,M,L,XL,2XL",
-			price: 11.99,
+			price: 13.99,
 			weight: 0.3,
 			chart: "323T-SC.png"
 		},
 		"CLEARANCE Flexi V Neck Scrub Top.jpeg" => {
 			sku: "324T-C",
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
-			price: 15.99,
+			price: 14.99,
 			weight: 0.3,
 			colors: "FlowerPower,FlorescentButterfly,GroovyHoops,SpringBlooming",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL-XXS,XS,S,M-XXS,XS,S,M,L,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL",
@@ -1845,7 +1845,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			colors: "Black/DustyRose,LimeGreen/Navy",
 			sizes: "XXS,XS,S,M,L,XL,2XL-2XL-L,XL,2XL",
 			weight: 0.3,
-			price: 20.95,
+			price: 16.99,
 			chart: "410T-SC.png"
 		},
 		"CLEARANCE Empire Tie Back Scrub Top.jpeg" => {
@@ -1853,7 +1853,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>This ultra feminine scrub top features an empire waist and ties at the back. Keeping with tradition this top has a v-neck collar and two front pockets</p>",
 			colors: "Aqua,DeepOrchid,DustyRose,FireWorks,LoveLeaves,ParadisePunch,PaisleyPink,SkyBlue,Twinkle",
 			sizes: "XXS,XS,S,M,L,XL,2XL-L,XL,2XL-L,XL,2XL-M,L,XL,2XL-XL-XS,L,XL,2XL-L,XL,2XL-XXS,S,M,L,XL,2XL-XXS,L,XL,2XL-L,XL,2XL",
-			price: 14.99,
+			price: 13.99,
 			weight: 0.3,
 			chart: "420T-SC.png"
 		},
@@ -1869,7 +1869,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		"CLEARANCE Zipper Front Ladies Work Top.jpeg" => {
 			sku: "202T-C",
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
-			price: 11.99,
+			price: 9.99,
 			weight: 0.3,
 			colors: "Aqua,Brick,Brown,Ceil,DustyRose,Khaki,Lagoon,Lilac,LimeGreen,PostmanBlue,Raspberry,Red,SkyBlue",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL-XS,L-XS,S,L-XS,S,M,L-XS,S,L-XS,L-XS,S,M,L-L-XS,S-XS,M,L-S,M,L,XL-XS-M,L-XS,M,L",
@@ -1880,7 +1880,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>A bold, basic 3 pocket v-neck scrub top featuring dolman sleeves. This scrub top is also available as a set</p>",
 			colors: "Brick,DustyRose,Lilac,LimeGreen,OliveGreen,Red",
 			sizes: "XXS,XS,S,M,L,XL-XS,S,M,L,XL-M,L,XL-XS,S,M,L,XL-XXS,L-XXS,S,XL-S,M,XL",
-			price: 18.95,
+			price: 11.99,
 			weight: 0.3,
 			chart: "308T-SC.png"
 		},
@@ -1890,7 +1890,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			line making it an excellent choice for anyone with a taller stature. This top has three front pockets, one shoulder 
 			pen pocket and is available in every MOBB color</p>",
 			colors: "Brick,BubbleGum,DustyRosePolkaDots,DustyRose,HunterGreen,Indigo,Lilac,Raspberry",
-			price: 18.95,
+			price: 11.99,
 			weight: 0.3,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-S,M,L,XL,2XL,3XL-S,L-XS,S,M,L,XL,2XL,3XL,4XL-XS,M,L-M,L-XXS,XS,S,M,L,XL,2XL,3XL,4XL-M,L,XL,2XL,3XL,4XL-S,M,L,2XL,3XL,4XL",
 			chart: "310T-SC.png"
