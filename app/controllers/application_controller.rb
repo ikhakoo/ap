@@ -65,7 +65,6 @@ class ApplicationController < ActionController::Base
     @order.delivery_country.name.downcase != "canada"
   end
 
-
   def free_canada_shipping?(order)
     @order = order
     canada?(@order) && (@order.total_before_tax.to_f - @order.delivery_price.to_f >= 100)

@@ -50,10 +50,14 @@ class OrdersController < ApplicationController
 		  @order = Shoppe::Order.find(current_order.id)  
 			  if request.patch?
 			    if @order.proceed_to_confirm(params[:order].permit(:first_name, :last_name, :billing_address1, :billing_address2, :billing_address3, :billing_address4, :billing_country_id, :billing_postcode, :email_address, :phone_number))
+			    	if !params[:pick_up].nil?
+			    		@order.delivery_service_id = 3
+			    	end
 			    	if canada?(@order)
 			    		@order.delivery_service_id = 1
-			    	else
+			    	elsif international?(@order)
 			    		@order.delivery_service_id = 2
+			    	else
 			    	end
 				    if free_canada_shipping?(@order)
 				    	@order.delivery_price = 0
@@ -86,10 +90,10 @@ class OrdersController < ApplicationController
 
 	def confirmation
 	  if request.post?
-		    current_order.confirm!
-		    Purchase.create!(order_id: current_order.id, client_id: current_client.id)
-		    session[:order_id] = nil
-		    redirect_to root_path, :notice => "Order has been placed successfully!"
+	    current_order.confirm!
+	    Purchase.create!(order_id: current_order.id, client_id: current_client.id)
+	    session[:order_id] = nil
+	    redirect_to root_path, :notice => "Order has been placed successfully!"
 	  end
 	end
 

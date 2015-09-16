@@ -36,6 +36,9 @@ def seed_shit
 	ds = Shoppe::DeliveryService.create!(:name => "International Delivery", :code => 'ND16', :courier => 'AnyCourier', :tracking_url => 'http://trackingurl.com/track/{{consignment_number}}')
 	ds.delivery_service_prices.create!(:code => 'Parcel', :min_weight => 0, :max_weight => 100000, :price => 35.0, :cost_price => 35.0, :tax_rate => tax_rate)
 
+	ds = Shoppe::DeliveryService.create!(:name => "Pick Up", :code => 'ND16', :courier => 'AnyCourier', :tracking_url => 'http://trackingurl.com/track/{{consignment_number}}')
+	ds.delivery_service_prices.create!(:code => 'Parcel', :min_weight => 0, :max_weight => 100000, :price => 0.0, :cost_price => 0.0, :tax_rate => tax_rate)
+
 	# categories
 	cat1 = Shoppe::ProductCategory.create!(:name => 'Tops')
 	cat2 = Shoppe::ProductCategory.create!(:name => 'Sets')
