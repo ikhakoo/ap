@@ -40,9 +40,9 @@ class OrdersController < ApplicationController
 	  		item.increase!
 	  	end
   		redirect_to basket_path, :notice => "Quantity has been updated successfully." 
-  	else
+  	end
+  	rescue Shoppe::Errors::NotEnoughStock => e
     	redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{e.available_stock} items available at the moment. Please get in touch though, we're always receiving new stock."
-    end
   end
 
 	def checkout
