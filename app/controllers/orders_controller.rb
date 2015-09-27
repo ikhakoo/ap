@@ -18,7 +18,7 @@ class OrdersController < ApplicationController
 
   def increase_item_quantity
   	item = current_order.order_items.find(params[:id])
-  	amount = params[:amount]
+  	amount = params[:amount].to_i
   	if amount > item.quantity
   		amount.times do
 				item.increase!

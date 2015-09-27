@@ -62,7 +62,7 @@
                     <div class="quantity buttons_added">
                       <%= link_to "-", { :controller => "orders", :action => "decrease_item_quantity", :id => item.id}, class: "ui button", style: "background-color:#2B4B6F;color:white;font-weight:bold;" %>
                       <input type="number" size="4" class="input-text qty text" id="qty" value="<%= item.quantity.to_i %>" min="0" step="1" style="width:50px;">
-                      <%= link_to "+", { :controller => "orders", :action => "increase_item_quantity", :id => item.id, :amount => '$('qty').value' }, class: "ui button", style: "background-color:#2B4B6F;color:white;font-weight:bold;" %>
+                      <%= link_to "+", { :controller => "orders", :action => "increase_item_quantity", :id => item.id }, id: "my-plus-link", class: "ui button", style: "background-color:#2B4B6F;color:white;font-weight:bold;" %>
                     </div>
                   </td>
 
@@ -185,6 +185,17 @@ $( "#shipInput" )
     } 
   })
   .keyup();
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $('#my-plus-link').click(function(evt) {
+    evt.preventDefault();
+    var url = $(this).attr('href')
+    var qty = $('#qty').val()
+    window.location = url + '&amount=' + qty
+  });
 });
 </script>
         
