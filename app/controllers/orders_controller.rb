@@ -22,6 +22,9 @@ class OrdersController < ApplicationController
   	if amount > item.quantity
   		if item.quantity = 1
   			amount = amount - 1
+	  			amount.times do
+						item.increase!
+				end
   		else
 	  		amount.times do
 					item.increase!
