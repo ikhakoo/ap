@@ -190,8 +190,9 @@ $( "#shipInput" )
 
 <script>
 $(document).ready(function(){
-  $('#qty').click(function(evt){
-    evt.preventDefault();
+  $('#qty').keypress(function(evt){
+    if (evt.keyCode == 10 || evt.keyCode == 13) 
+      evt.preventDefault();
   });
   $('#my-plus-link').click(function(evt) {
     evt.preventDefault();
