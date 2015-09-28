@@ -19,23 +19,27 @@ class OrdersController < ApplicationController
   def increase_item_quantity
   	item = current_order.order_items.find(params[:id])
   	amount = params[:amount].to_i
-  	if amount > item.quantity
+  	if amount > item.quantity && amount <= item.ordered_item.stock
   		if item.quantity == 1
   			amount = amount - 1
 	  			amount.times do
 						item.increase!
 				end
+				redirect_to basket_path, :notice => "Quantity has been updated successfully."
   		else
 	  		amount.times do
 					item.increase!
 				end
+				redirect_to basket_path, :notice => "Quantity has been updated successfully."
 			end
+		elsif amount > item.ordered_item.stock
+			redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{item.ordered_item.stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
 		else
 			item.increase!
-		end
-    redirect_to basket_path, :notice => "Quantity has been updated successfully."   
+			redirect_to basket_path, :notice => "Quantity has been updated successfully."
+		end   
   rescue Shoppe::Errors::NotEnoughStock => e
-    redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{e.available_stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
+    redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{item.ordered_item.stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
   end
 
   def decrease_item_quantity
