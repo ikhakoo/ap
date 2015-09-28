@@ -20,7 +20,7 @@ class OrdersController < ApplicationController
   	item = current_order.order_items.find(params[:id])
   	amount = params[:amount].to_i
   	if amount > item.quantity
-  		if item.quantity = 1
+  		if item.quantity == 1
   			amount = amount - 1
 	  			amount.times do
 						item.increase!
