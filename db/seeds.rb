@@ -30,10 +30,14 @@ def seed_shit
 
 	# delivery services
 
-	ds = Shoppe::DeliveryService.create!(:name => "AP Uniforms Delivery", :code => 'ND16', :courier => 'AnyCourier', :tracking_url => 'http://trackingurl.com/track/{{consignment_number}}')
-	ds.delivery_service_prices.create!(:code => 'Parcel', :min_weight => 0, :max_weight => 1, :price => 5.0, :cost_price => 4.50, :tax_rate => tax_rate)
-	ds.delivery_service_prices.create!(:code => 'Parcel', :min_weight => 1, :max_weight => 5, :price => 8.0, :cost_price => 7.5, :tax_rate => tax_rate)
-	ds.delivery_service_prices.create!(:code => 'Parcel', :min_weight => 5, :max_weight => 20, :price => 10.0, :cost_price => 9.50, :tax_rate => tax_rate)
+	ds = Shoppe::DeliveryService.create!(:name => "Canada Delivery", :code => 'ND16', :courier => 'AnyCourier', :tracking_url => 'http://trackingurl.com/track/{{consignment_number}}')
+	ds.delivery_service_prices.create!(:code => 'Parcel', :min_weight => 0, :max_weight => 100000, :price => 15.0, :cost_price => 15.0, :tax_rate => tax_rate)
+
+	ds = Shoppe::DeliveryService.create!(:name => "International Delivery", :code => 'ND16', :courier => 'AnyCourier', :tracking_url => 'http://trackingurl.com/track/{{consignment_number}}')
+	ds.delivery_service_prices.create!(:code => 'Parcel', :min_weight => 0, :max_weight => 100000, :price => 35.0, :cost_price => 35.0, :tax_rate => tax_rate)
+
+	ds = Shoppe::DeliveryService.create!(:name => "Pick Up", :code => 'ND16', :courier => 'AnyCourier', :tracking_url => 'http://trackingurl.com/track/{{consignment_number}}')
+	ds.delivery_service_prices.create!(:code => 'Parcel', :min_weight => 0, :max_weight => 100000, :price => 0.0, :cost_price => 0.0, :tax_rate => tax_rate)
 
 	# categories
 	cat1 = Shoppe::ProductCategory.create!(:name => 'Tops')
@@ -381,6 +385,50 @@ def seed_shit
 			price: 19.95,
 			weight: 0.7,
 			sizes: "2Y,4Y,6Y,8Y"
+		},
+		"MOBB UNISEX 8 POCKET DRAWSTRING ELASTIC SCRUB SET.jpeg" => {
+			sku: "310/307 SET",
+			description: "<p>Amazing fit in every MOBB color imaginable. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.</p><br><strong><p>Size 5XL only available in  Colors : Black, Charcoal, Burgundy, Caribbean, Lagoon, Navy, Postman Blue, Royal Blue</p><br><p>Size 6XL only available in Navy</strong></p>",
+			colors: "Lagoon,Cappuccino,Khaki,Aqua,Spruce,Black,Burgundy,Navy,LimeGreen,White,Eggplant,PostmanBlue,Ceil,Caribbean,Charcoal,SkyBlue,OliveGreen,RoyalBlue,Teal",
+			price: 34.95,
+			weight: 0.7,
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL"
+		},
+		"MOBB CRISS CROSS FLIP FLAP SCRUB SET.jpeg" => {
+			sku: "323/312 SET",
+			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
+			colors: "SkyBlue/DustyRose,Navy/SkyBlue,Lagoon/Black,DeepOrchid/Black,Charcoal/Postman,Black/Aqua,Aqua/Black",
+			price: 34.95,
+			weight: 0.7,
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL",
+			chart: "323T312P-SC.png"
+		},
+		"MOBB V NECK THREE POCKET DOLMAN SLEEVE FLIP FLAP SCRUB SET.jpeg" => {
+			sku: "308/312 SET",
+			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
+			colors: "Raspberry,Black,Aqua,Sky Blue,Lagoon,Navy,Caribbean,Postman Blue,Charcoal,Spruce,White,Eggplant,Royal Blue,Burgundy,Ceil,Khaki",
+			sizes: "XXS,XS,S,M,L,XL,2XL",
+			price: 32.95,
+			weight: 0.7,
+			chart: "308312-SC.png"
+		},
+		"MOBB UNISEX DRAWSTRING SCRUB SET.jpeg" => {
+			sku: "306/306 SET",
+			description: "<p>Classic fit and style this v-neck scrub top has one chest pocket and one shoulder pen pocket.The scrub pant has 5 pockets and a drawstring waist. This set has been replaced by the NEW 606/608 but is still available for a limited time.</p>",
+			colors: "Aqua,Black,Burgundy,Caribbean,Ceil,Charcoal,Dusty Rose,Grey,HunterGreen,Khaki,Lagoon,Lilac,LimeGreen,NavyBlue,OliveGreen,PostmanBlue,Raspberry,Red,RoyalBlue,SkyBlue,Spruce,Teal,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL",
+			price: 16.99,
+			weight: 0.7,
+			chart: "306306-SC copy.png"
+		},
+		"MOBB WIDE LEG DRAWSTRING SCRUB SET.jpeg" => {
+			sku: "308/308 SET",
+			description: "<p></p>",
+			colors: "Black,Burgundy,Caribbean,Ceil,Charcoal,Eggplant,Lagoon,NavyBlue,PostmanBlue,Raspberry,RoyalBlue,SkyBlue",
+			sizes: "XXS,XS,S,M,L,XL",
+			price: 32.95,
+			weight: 0.7,
+			chart: "308308-SC copy.png"
 		}
 	}
 
@@ -390,7 +438,7 @@ def seed_shit
 			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.</p>",
 			colors: "PostmanBlue,SkyBlue,Black,Navy,Charcoal",
 			sizes: "XXS,XS,S,M,L,XL,2XL",
-			price: 26.95,
+			price: 16.99,
 			weight: 0.4,
 			chart: "416P-SC.png"
 		},
@@ -465,7 +513,7 @@ def seed_shit
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
 			colors: "Black,Aqua,Eggplant,Burgundy,Caribbean,Charcoal,Khaki,Lagoon,Navy,OliveGreen,PostmanBlue,RoyalBlue,SkyBlue,Teal,White,Ceil,Cappuccino",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL,5XL",
-			price: 21.95,
+			price: 13.99,
 			weight: 0.4,
 			chart: "307P-SC.png"
 		},
@@ -1058,7 +1106,7 @@ def seed_shit
 		"CLASSIC CHEF COAT UNISEX.jpeg" => {
 			sku: "CC250",
 			description: "<p>MOBB kitchen classics. Professional and durable, our chef coats are made to last. Lightweight, breathable designs and a great selection of colors to choose from. 7.5oz poly cotton twill featuring a stand collar, vented cuff and underarms and a thermo pocket on left sleeve.</p>",
-			colors: "Black,White,BlackWhite,WhiteHoundsTooth,RedBlack,BurgundyBlack",
+			colors: "Black,White,Black/White,WhiteHoundsTooth,Red/Black,Burgundy/Black",
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
 			price: 26.99,
 			weight: 0.6,
@@ -1067,7 +1115,7 @@ def seed_shit
 		"CHEF COAT.jpeg" => {
 			sku: "CC260",
 			description: "<p>100% spun-poly 7.5oz. Stand collar, vented cuff, vented underarms, thermo pocket on left sleeve</p>",
-			colors: "Black,White,BlackWhite",
+			colors: "Black,White,Black/White",
 			price: 26.99,
 			weight: 0.6,
 			sizes: "XS,S,M,L,XL,2XL,3XL"
@@ -1075,7 +1123,7 @@ def seed_shit
 		"MANDARIN STYLE CHEF COAT.jpeg" => {
 			sku: "CC270",
 			description: "<p>MOBB kitchen classics. Professional and durable, our chef coats are made to last. Lightweight, breathable designs and a great selection of colors to choose from. 7.5oz poly cotton twill featuring a stand collar, vented cuff and underarms and a thermo pocket on left sleeve.</p>",
-			colors: "BlackWhite,WhiteBlack",
+			colors: "Black/White,White/Black",
 			sizes: "XS,S,M,L,XL,2XL,3XL,4XL",
 			price: 28.99,
 			weight: 0.6,
@@ -1094,7 +1142,7 @@ def seed_shit
 			chart: "34P-SC.png"
 		},
 		"DRAWSTRING ELASTIC CHEF PANT.jpeg" => {
-			sku: "307P",
+			sku: "307P-CHEF",
 			description: "<p>This chef pant is designed to be comfortable and functional while providing complete coverage when bending and reaching. 5oz poly/cotton blend pant featuring a combination drawstring/elastic waistband with 2 side pockets, 2 cargo pockets and 1 back pocket</p>",
 			colors: "Black",
 			price: 21.99,
@@ -1485,7 +1533,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sku: "323/312C",
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
 			colors: "Aqua,Black/DustyRose,Black/Aqua,Brown,BubbleGum,DustyRose,DustyRosePolkaDots,Khaki,LimeGreen,Nutmeg,OliveGreen,Pink,PostmanBlue,Red,SeaGreen,SkyBlue,Tangerine,White",
-			price: 24.99,
+			price: 25.99,
+			cost_price: 34.99,
 			weight: 0.7,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
 			-2XL-2XL-2XL-XXS,XS,L,XL,2XL
@@ -1498,6 +1547,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>Bright, Bold and Basic. 3 pocket v-neck scrub top with dolman sleeves paired with our 5 pocket bootcut scrub pant featuring our signature MOBB logo waistband that can be flipped for a lower rise.</p>",
 			colors: "Brick,Brown,DustyRose,Lilac,LimeGreen,Pink,Red,Tangerine,Burgundy,Ceil,Caribbean,Khaki",
 			price: 24.99,
+			cost_price: 34.99,
 			weight: 0.7,
 			sizes: "XXS,XS,S,M,L,XL
 			-XXS,L,XL
@@ -1508,6 +1558,15 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			-XS,S,L,XL
 			-XXS,XSL,XL"
 		},
+		"CLEARANCE MENS FLEECE WARM UP ZIPPER JACKET.jpeg" => {
+			sku: "WJF365",
+			description: "<p>Zip-up in MOBB's fleece warm-up jacket. This fitted jacket looks amazing on. Available in solid white or navy with a full zip front and two pockets</p>",
+			colors: "NavyBlue,White",
+			sizes: "S,M,L,XL,2XL-M,L,XL-S,M,L,XL,2XL",
+			price: 39.99,
+			cost_price: 64.99,
+			weight: 0.5
+		},
 		"Clearance Petite Unisex 8 Pocket Drawstring Elastic Scrub Set.jpeg" => {
 			sku: "310/307C",
 			description: "<p>Amazing fit in every MOBB color imaginable. Unisex v-neck scrub top with 3 front pockets and one shoulder pen pocket and a 5 pocket scrub pant with a combination drawstring and elastic waist for maximum comfort.</p>
@@ -1515,7 +1574,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 				<p><strong>Size 6XL only available in Navy</p></strong>",
 			colors: "Aqua,Burgundy,Caribbean,Charcoal,Khaki,LimeGreen,OliveGreen,RoyalBlue,Spruce,
 								White,Black,Cappuccino,Ceil,Eggplant,Lagoon,NavyBlue,PostmanBlue,SkyBlue,Teal",
-			price: 24.99,
+			price: 26.95,
+			cost_price: 34.99,
 			weight: 0.7,
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL,5XL
 			-2XL-XXS,XL,2XL,3XL,4XL-XXS,2XL,3XL,4XL-XXS,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL
@@ -1529,7 +1589,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sku: "316PTC",
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
 			colors: "Brown,BubbleGum,DeepOrchid,Khaki,Lagoon,OliveGreen,PostmanBlue,Red,White",
-			price: 14.99,
+			price: 12.99,
+			cost_price: 22.99,
 			weight: 0.4,
 			chart: "316P-SC.png",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
@@ -1544,7 +1605,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 										Available in Black, Navy & Charcoal only</p>",
 			colors: "DustyRose",
 			sizes: "XS,S,M,L,XL,2XL-XS,S,M,L,XL,2XL",
-			price: 14.99,
+			price: 17.99,
+			cost_price: 25.99,
 			weight: 0.4,
 			chart: "412P-SC.png"
 		},
@@ -1553,7 +1615,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>The flexible waist provides comfort and style even for expectant mothers. This pant features side, back and cargo pockets.</p>",
 			colors: "DustyRose",
 			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
-			price: 14.99,
+			price: 16.99,
+			cost_price: 26.99,
 			weight: 0.4,
 			chart: "416P-SC.png"
 		},
@@ -1572,6 +1635,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			colors: "Brown,BubbleGum,Caribbean,Ceil,DeepOrchid,DustyRose,Eggplant,Khaki,Lagoon,OliveGreen,SkyBlue,White",
 			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,M,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,XL,2XL",
 			price: 14.99,
+			cost_price: 22.99,
 			weight: 0.4,
 			chart: "312P-SC.png"
 		},
@@ -1580,7 +1644,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
 			colors: "Brown,BubbleGum,DeepOrchid,DustyRose,Khaki,Lagoon,OliveGreen,PostmanBlue,Red",
 			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,L,2XL",
-			price: 14.99,
+			price: 15.99,
+			cost_price: 23.99,
 			weight: 0.4,
 			chart: "316P-SC.png"
 		}
@@ -1590,36 +1655,190 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		"CLEARANCE TALL DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
 			sku: "309PTALL-C",
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
-			colors: "Eggplant,HunterGreen,Khaki,Lagoon,LightGreen,Lilac,LimeGreen,Nutmeg,OliveGreen,Pink,PowderBlue,Purple,Raspberry,Red,Sand,SkyBlue,Tangerine,Teal,White",
-			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,2XL,3XL,4XL-XXS,XS,L,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,S,XL,2XL,3XL,4XL-XXS,XS,2XL,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-2XL-2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,XL,2XL,3XL,4XL-XXS,XS,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,2XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,S,XL,2XL,3XL",
+			colors: "Aqua,Brick,BubbleGum,Ceil,DeepOrchid,DustyRose,Eggplant,HunterGreen,Khaki,Lagoon,Lilac,LimeGreen,OliveGreen,Pink,Raspberry,Red,SkyBlue,Tangerine,Teal,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,2XL,3XL,4XL-XXS,XS,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS,L,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,4XL-XXS,XS,L,3XL,4XL-XXS,XS,S,XL,2XL,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,XL,2XL,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,S,M,L,2XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,S,XL,2XL,3XL",
 			price: 15.99,
+			cost_price: 23.99,
 			weight: 0.4,
 			chart: "309PTALL-SC.png"
 		},
 		"CLEARANCE FLIP FLAP CAPRI PANT.jpeg" => {
 			sku: "314PC",
 			description: "<p>The Flip Flap Capri Pant fits and feels just like the 312P but makes a perfect addition to summer wardrobes or warmer work environments. Features our signature MOBB logo waistband that can be flipped down for a low rise fit.</p>",
-			colors: "Aqua,Khaki,LimeGreen,SkyBlue,",
+			colors: "Aqua,Khaki,LimeGreen,SkyBlue",
 			sizes: "XS,S,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL-XS,M,L,XL,2XL,3XL",
 			price: 14.99,
+			cost_price: 21.99,
 			weight: 0.4,
 			chart: "314P-SC.png"
+		},
+		"CLEARANCE WIDE LEG DRAWSTRING SCRUB SET.jpeg" => {
+			sku: "308/308C",
+			description: "<p>The Flip Flap Capri Pant fits and feels just like the 312P but makes a perfect addition to summer wardrobes or warmer work environments. Features our signature MOBB logo waistband that can be flipped down for a low rise fit.</p>",
+			colors: "Black,Brick,Burgundy,Caribbean,Ceil,Charcoal,Eggplant,Khaki,Lagoon,Lilac,LimeGreen,NavyBlue,Pink,PostmanBlue,Raspberry,RingAround,Red,RoyalBlue,Spruce,Tangerine,White",
+			sizes: "XS,S,M,L,XL,2XL,3XL-XXS,XS,S,L-XL-S,M,L,XL-M,L,XL-XL-XS,S,M,L,XL-S,M,L,XL-XS,S,M,L,XL-XXS,M,L,XL-XL-XXS,L,XL-M,L,XL-L,XL-M,L,XL-XS,M,L,XL-L,XL-XXS,S,M,L,XL-L,XL-XXS,L,XL",
+			price: 19.99,
+			cost_price: 33.99,
+			weight: 0.7,
+			chart: "308308-SC.png"
+		},
+		"CLEARANCE Flexi Zipper Scrub Top.jpeg" => {
+			sku: "224T-C",
+			description: "<p></p>",
+			colors: "Aqua,Brick,DustyRose,Khaki,Lilac",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL-XXS,M,L,2XL,3XL-XXS,XS,2XL,3XL-XXS,XS,3XL-XXS,XS,2XL,3XL-XXS,3XL",
+			price: 12.99,
+			cost_price: 23.99,
+			weight: 0.3
 		},
 		"CLEARANCE UNISEX DRAWSTRING ELASTIC 5 POCKET SCRUB PANT.jpeg" => {
 			sku: "307P-C",
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
-			colors: "Pink,Purple,Raspberry,Red,SkyBlue,SeaGreen,Spruce,Tangerine,White,Yellow",
-			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,XL,2XL,3XL-XXS,4XL-XXS,XS,S,L,XL,2XL,3XL-XXS,XS,S,L,XL,2XL,3XL-XXS,XS,S,L,XL,2XL,3XL-S,XL-XXS,XS,L,XL,2XL,3XL,4XL-4XL-XXS,XS,XL,2XL,4XL-XXS,S,M-XXS,XS",
+			colors: "Aqua,Brick,Brown,BubbleGum,DeepOrchid,DustyRose,Eggplant,GoldenYellow,HunterGreen,Indigo,Khaki,Lilac,LimeGreen,Pink,Raspberry,Red,SkyBlue,Spruce,Tangerine,White,Yellow",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,XL-XXS,XS,XL-XXS,XS,XL,2XL,3XL,4XL-XXS,S,M,L,XL,2XL,3XL,4XL-,L,2XL,3XL,4XL-XXS,XS,XL,4XL-XXS,S,M,L,XL,4XL-XXS,XS,4XL-XXS,M,L,2XL,4XL-XXS,2XL,3XL,4XL-XXS-XXS,XS,M,L,XL,2XL,3XL,4XL-XS,XL-XXS,XS,XL,2XL,3XL-XXS,XS,S,L,XL,2XL,3XL-XXS,XS,S,L,XL,2XL,3XL-XL-4XL-XXS,XS,2XL,4XL-XXS-XXS,XS",
 			price: 14.99,
+			cost_price: 21.99,
 			weight: 0.4,
 			chart: "307P-SC.png"
+		},
+		"Clearance Unisex V Neck Scrub Top with 2 Pockets.jpeg" => {
+			sku: "306T-C",
+			description: "<p></p>",
+			colors: "Black,Burgundy,Caribbean,Charcoal,Ceil,DustyRose,Grey,GoldenYellow,Khaki,Lagoon,Lilac,Navy,OliveGreen,Pink,PostmanBlue,Red,RoyalBlue,SkyBlue,Sand,Tangerine,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL-XL,2XL,4XL-S,L,XL,2XL-XS,S,M,L,XL,2XL,3XL-XS,3XL-XXS,XS,S,XL-XXS,XS,2XL,3XL-S,L,2XL,3XL-XS,S,M,XL,2XL,3XL,4XL-XXS,XS,S,M-XS,2XL-XXS,XS,S,M,XL,2XL,3XL-XXS,S,XL-XXS,XS,S,L,XL,2XL,3XL-XS,S,XL,3XL-XXS,XS,S,XL,2XL-XXS,4XL-XXS,XS,S,2XL,4XL",
+			price: 8.99,
+			cost_price: 18.99,
+			weight: 0.4,
+			chart: "306T-SC.png"
+		},
+		"Clearance Scrub Top with Hidden Side Pockets.jpeg" => {
+			sku: "318T-C",
+			description: "<p></p>",
+			colors: "Black,Brick,Brown,DustyRose,Khaki,Navy,RoyalBlue,SkyBlue,White",
+			sizes: "XS,S,M,L,XL-XS,S,M,L,XL-L,-XS,S,M,L,XL-XS,S,M,L,XL-XS,S,M,L,XL-XS,S,M,L,XL-S,M,L,XL-S,M,L,XL-XS,S,M,L,XL",
+			price: 8.99,
+			cost_price: 18.99,
+			weight: 0.3,
+		},
+		"CLEARANCE BASEBALL STYLE SCRUP TOP.jpeg" => {
+			sku: "380T-C",
+			description: "<p></p>",
+			colors: "Burgundy,Caribbean,Ceil,Khaki,RoyalBlue,Teal",
+			sizes: "XS,S,M,L,XL,2XL,3XL-XS,S-XS,M,XL-XS,M,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,S,M,2XL,3XL-M",
+			price: 9.99,
+			cost_price: 22.99,
+			weight: 0.3,
+		},
+		"CLEARANCE LADIES TWO TONE SCRUB TOP.jpeg" => {
+			sku: "510T-C",
+			description: "<p></p>",
+			colors: "Khaki,PostmanBlue,White",
+			sizes: "XS,S,M,L,XL,2XL,3XL-L,XL-XL-XL,2XL",
+			price: 11.99,
+			cost_price: 19.99,
+			weight: 0.3,
+		},
+		"CLEARANCE UNISEX DRAWSTRING SCRUB SET.jpeg" => {
+			sku: "306/306C",
+			description: "<p>Classic fit and style this v-neck scrub top has one chest pocket and one shoulder pen pocket.The scrub pant has 5 pockets and a drawstring waist.</p><p>This set has been replaced by the NEW 606/608 but is still available for a limited time.</p>",
+			colors: "Aqua,black,Brick,Burgundy,Caribbean,Ceil,DustyRose,GoldenYellow,HunterGreen,Khaki,Lagoon,Lilac,LimeGreen,NavyBlue,OliveGreen,Pink,PostmanBlue,Raspberry,Red,RoyalBlue,SkyBlue,Spruce,Tangerine,Teal,White,Yellow",
+			sizes: "XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,L,2XL,3XL,4XL-XXS,XS,S,M,L,2XL-XXS,XS,S,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,2XL,3XL,4XL-XXS,XS,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,M,2XL,3XL,4XL-L,XL,2XL,3XL,4XL-XS,XL,2XL,3XL-XXS,XS,S,XL,2XL,3XL,4XL-XS,XL,2XL,3XL,4XL-XXS,XS,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,L,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XL,3XL,4XL-XXS,XS,L,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,L,XL,2XL,3XL,4XL-XXS,L,XL,2XL,3XL,4XL-XXS,XS,L,XL,2XL,3XL,4XL",
+			price: 16.99,
+			cost_price: 30.99,
+			weight: 0.7,
+			chart: "306306-SC.png"
+		},
+		"CLEARANCE V NECK VEST SCRUB TOP.jpeg" => {
+			sku: "VE330-C",
+			description: "<p></p>",
+			colors: "White",
+			sizes: "XS,XL,2XL-XS,XL,2XL",
+			price: 9.99,
+			cost_price: 22.99,
+			weight: 0.3
+		},
+		"CLEARANCE BUTTON DOWN VEST TOP.jpeg" => {
+			sku: "VE370-C",
+			description: "<p></p>",
+			colors: "White",
+			sizes: "XS,L,XL-XS,L,XL",
+			price: 9.99,
+			cost_price: 21.99,
+			weight: 0.3
+		},
+		"CLEARANCE Scrub Pants.jpeg" => {
+			sku: "33P-C",
+			description: "<p></p>",
+			colors: "Black,Khaki,Navy",
+			sizes: "XS,S,M,L,XL-XL,2XL-XS,S,M,L,XL-XS,S,M",
+			price: 9.99,
+			cost_price: 19.99,
+			weight: 0.4
+		},
+		"CLEARANCE BASIC DRAWSTRING SCRUB PANT.jpeg" => {
+			sku: "306P-C",
+			description: "<p></p>",
+			colors: "Aqua,Brick,Black,Burgundy,Caribbean,Charcoal,Ceil,
+			HunterGreen,Khaki,Lagoon,Lilac,LimeGreen,Navy,OliveGreen,Pink,PostmanBlue,
+			Raspberry,Red,RoyalBlue,SkyBlue,Spruce,Tangerine,Teal,White,Yellow",
+			sizes: "XXS,XS,S,L,XL,2XL,3XL,4X-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L—XL,2XL,3SL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL",
+			price: 8.99,
+			cost_price: 19.99,
+			weight: 0.4
+		},
+		"CLEARANCE Mens Basic Drawstring Scrub Pant.jpeg" => {
+			sku: "308P-C",
+			description: "<p></p>",
+			colors: "Aqua,Brick,Black,Burgundy,Caribbean,Charcoal,Ceil,
+			HunterGreen,Khaki,Lagoon,Lilac,LimeGreen,Navy,OliveGreen,Pink,PostmanBlue,
+			Raspberry,Red,RoyalBlue,SkyBlue,Spruce,Tangerine,Teal,White,Yellow",
+			sizes: "XXS,XS,S,L,XL,2XL,3XL,4X-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L—XL,2XL,3SL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XXS,XS,S,L,XL,2XL,3XL,4XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL",
+			price: 8.99,
+			cost_price: 21.99,
+			weight: 0.4
+		},
+		"CLEARANCE Baseball Scrub Set.jpeg" => {
+			sku: "380/307-C",
+			description: "<p></p>",
+			colors: "Caribbean,Ceil,Khaki,RoyalBlue,Teal,White",
+			sizes: "XS,S,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,L,XL,2XL,3XL-S,L,2XL,3XL-XS,S,M,L,2XL,3XL",
+			price: 21.99,
+			weight: 0.7
+		},
+		"CLEARANCE FLEECE LOW RISE LACE UP PANT.jpeg" => {
+			sku: "316P-C",
+			description: "<p></p>",
+			colors: "Black,Navy,White",
+			sizes: "XXS,XS,S,L,XL-XXS,M,L,XL-XXS,XS,S,M,L,XL-XXS,XS,S,M,L,XL",
+			price: 15.99,
+			cost_price: 37.99,
+			weight: 0.4
+		},
+		"CLEARANCE Solid Contrast Scrub Top with Flip Flap Pants.jpeg" => {
+			sku: "425/312-C",
+			description: "<p></p>",
+			colors: "Burgundy,Charcoal,Navy,SpringBlooming",
+			sizes: "XS,S,L,XL,2XL-XS,S,M,L,XL-XS,S,M,L,XL-XS,S-M,L,2XL",
+			price: 22.99,
+			cost_price: 42.99,
+			weight: 0.7
+		},
+		"CLEARANCE PRINCESS SCRUB DRESS.jpeg" => {
+			sku: "PD560-C",
+			description: "<p></p>",
+			colors: "Ceil,Lagoon,Navy,Pink,Raspberry,Spruce,White",	
+			sizes: "XS,S,M,L,XL,2XL,3XL-XS,S,M,L,XL-XS,S,L,2XL,3XL-XS,S,L,XL,2XL,3XL-XS,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,S-XL",
+			price: 16.99,
+			cost_price: 23.99,
+			weight: 0.5
 		},
 		"CLEARANCE Ladies Zipper Detail Scrub Top.jpeg" => {
 			sku: "530T-C",
 			description: "<p>Fun, funky and fitted. This sporty scrub top features reflective trim, asymmetrical zipper detail, two lower pockets, one chest pocket and one shoulder pen pocket</p>",
 			colors: "Black,Charcoal",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL-XXS,M,L,XL,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL",
-			price: 13.99,
+			price: 16.99,
+			cost_price: 24.99,
 			weight: 0.3,
 			chart: "530T-SC.png"
 		},
@@ -1628,23 +1847,26 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>This scrub pant is simple with a twist. Two front pockets and one back pocket. Drawstring closure at the front with an elastic cinch at the back and a bell bottom flare at the bottom.</p>",
 			colors: "Aqua,Brown,Burgundy,Ceil,Denim,DustyRose,Eggplant,Khaki,Lagoon,Lilac,LimeGreen,Pink,Purple,Raspberry,Red,RoyalBlue,SkyBlue,Spruce,White",
 			sizes: "XXS,XS,S,M,L,XL,2XL-XL,2XL-XL,2XL-XL,2XL-XXS,XS,S,L,XL,2XL-XXS,XS,M,2XL-XXS,XS,S,L,XL,2XL-XXS,XS,M,2XL-XL,2XL-2XL-XL,2XL-XL,2XL-S,XL,2XL-XXS,XS,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS-XXS,XL,2XL-XXS,M,L,XL,2XL-XXS,XL,2XL-XXS,2XL-XXS,2XL-XXS,XS,S,M,L,2XL",
-			price: 10.99,
+			price: 11.99,
+			cost_price: 21.99,
 			weight: 0.4,
 			chart: "302P-SC.png"
 		},
 		"CLEARANCE Criss Cross Scrub Top.jpeg" => {
 			sku: "323T-C",
 			description: "<p>Available in a large variety of prints and solid colors this scrub top will always be a top seller. Features a v-neck with a contrast color trim as well as two lower pockets and one shoulder pen pocket. This scrub top is also available as a set</p>",
-			colors: "OvalCottage,Papillon,Pink,Red,RingAround,SmittenKitten,SpringFling,Tangerine,Twinkle,TwistTwirl,VintageVine,Whimsical",
-			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,S,L,XL,2XL-L,XL,2XL-L,XL,2XL-XL,2XL-2XL-L-XL-XL,2XL-2XL-2XL-XL-XS,S,M,L,XL,2XL",
-			price: 11.99,
+			colors: "Black/DustyRose,Black/Aqua,Brown,BubbleGum,Charcoal,DustyRose,FlowerPower,HeartTies,HeartToHeart,Khaki,LimeGreen,NavyPolkaDots,Pink,Red,RingAround,SmittenKitten,SpringFling,Tangerine,Twinkle,TwistTwirl,VintageVine,Whimsical",
+			sizes: "XXS,XS,S,M,L,XL,2XL-M,L,XL,2XL-XS,S,M,L,XL-XS,M,L,XL-S,M,L,XL,2XL-XXS-XL,2XL-2XL-L,XL,2XL-M,L,XL-XL-L,2XL-2XL-XS,S,L,2XL-L,XL,2XL-L,2XL-2XL-L-XL-XL,2XL-2XL-2XL-XL-XS,S,M,L,XL,2XL",
+			price: 13.99,
+			cost_price: 34.99,
 			weight: 0.3,
 			chart: "323T-SC.png"
 		},
 		"CLEARANCE Flexi V Neck Scrub Top.jpeg" => {
 			sku: "324T-C",
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
-			price: 15.99,
+			price: 14.99,
+			cost_price: 34.99,
 			weight: 0.3,
 			colors: "FlowerPower,FlorescentButterfly,GroovyHoops,SpringBlooming",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL-XXS,XS,S,M-XXS,XS,S,M,L,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL-XS,S,M,L,XL,2XL,3XL",
@@ -1654,10 +1876,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			sku: "410T-C",
 			description: "<p>A simple twist on our classic neckline. This scrub top features a beautifully sculpted wave neckline 
 			with contrasting color. The top also has two lower pockets, one chest pocket and one shoulder pen pocket.</p>",
-			colors: "DustyRose,LimeGreen",
+			colors: "Black/DustyRose,LimeGreen/Navy",
 			sizes: "XXS,XS,S,M,L,XL,2XL-2XL-L,XL,2XL",
 			weight: 0.3,
-			price: 20.95,
+			price: 16.99,
+			cost_price: 22.99,
 			chart: "410T-SC.png"
 		},
 		"CLEARANCE Empire Tie Back Scrub Top.jpeg" => {
@@ -1665,7 +1888,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			description: "<p>This ultra feminine scrub top features an empire waist and ties at the back. Keeping with tradition this top has a v-neck collar and two front pockets</p>",
 			colors: "Aqua,DeepOrchid,DustyRose,FireWorks,LoveLeaves,ParadisePunch,PaisleyPink,SkyBlue,Twinkle",
 			sizes: "XXS,XS,S,M,L,XL,2XL-L,XL,2XL-L,XL,2XL-M,L,XL,2XL-XL-XS,L,XL,2XL-L,XL,2XL-XXS,S,M,L,XL,2XL-XXS,L,XL,2XL-L,XL,2XL",
-			price: 14.99,
+			price: 13.99,
+			cost_price: 24.99,
 			weight: 0.3,
 			chart: "420T-SC.png"
 		},
@@ -1675,17 +1899,70 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			colors: "AquaPolkaDots,BrownPolkaDot,ChemistryWiz,DentalBrigade,DizzyVines,DustyRosePolkaDots,FairyLand,FlowerPower,FireWorks,GreatEight,Kaleidascope,Labyrinth,LoopDLoop,LoveLeaves,MiniFlower,MrFrosty,OvalCottage,PinnedHeart,SmittenKitten,SonicBoom,SpringFling,TwistTwirl",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-2XL,4XL-L,XL,2XL,3XL,4XL-2XL,4XL-L,XL,2XL,3XL,4XL-S,L,XL,2XL,3XL,4XL-XL,2XL,3XL,4XL-XL,2XL,3XL-XL,2XL,3XL,4XL-M,L,XL,3XL,4XL-XL,2XL,3XL,4XL-4XL-XL,2XL,3XL,4XL-S,XL-XL,3XL,4XL-4XL-XS,L,XL,4XL-XL,4XL-S,M,L,XL,2XL,3XL,4XL-XL-XL-4XL-L",
 			price: 11.99,
+			cost_price: 19.99,
 			weight: 0.3,
 			chart: "320T-SC.png"
 		},
 		"CLEARANCE Zipper Front Ladies Work Top.jpeg" => {
 			sku: "202T-C",
 			description: "<p>Zip up in this ladies work top featuring 2 patch pockets, a zip front closure and a collar</p>",
-			price: 11.99,
+			price: 9.99,
 			weight: 0.3,
 			colors: "Aqua,Brick,Brown,Ceil,DustyRose,Khaki,Lagoon,Lilac,LimeGreen,PostmanBlue,Raspberry,Red,SkyBlue",
 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL-XS,L-XS,S,L-XS,S,M,L-XS,S,L-XS,L-XS,S,M,L-L-XS,S-XS,M,L-S,M,L,XL-XS-M,L-XS,M,L",
 			chart: "202T-SC.png"
+		},
+		"CLEARANCE 3 Pocket V Neck Scrub Top.jpeg" => {
+			sku: "308TC",
+			description: "<p>A bold, basic 3 pocket v-neck scrub top featuring dolman sleeves. This scrub top is also available as a set</p>",
+			colors: "Brick,DustyRose,Lilac,LimeGreen,OliveGreen,Red",
+			sizes: "XXS,XS,S,M,L,XL-XS,S,M,L,XL-M,L,XL-XS,S,M,L,XL-XXS,L-XXS,S,XL-S,M,XL",
+			price: 11.99,
+			cost_price: 21.99,
+			weight: 0.3,
+			chart: "308T-SC.png"
+		},
+		"CLEARANCE Unisex V Neck Scrub Top.jpeg" => {
+			sku: "310TC",
+			description: "<p>A classic v-neck scrub top popular among men and women. This top has a slightly longer hem 
+			line making it an excellent choice for anyone with a taller stature. This top has three front pockets, one shoulder 
+			pen pocket and is available in every MOBB color</p>",
+			colors: "Brick,BubbleGum,DustyRosePolkaDots,DustyRose,HunterGreen,Indigo,Lilac,Raspberry",
+			price: 11.99,
+			cost_price: 18.99,
+			weight: 0.3,
+			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL-S,M,L,XL,2XL,3XL-S,L-XS,S,M,L,XL,2XL,3XL,4XL-XS,M,L-M,L-XXS,XS,S,M,L,XL,2XL,3XL,4XL-M,L,XL,2XL,3XL,4XL-S,M,L,2XL,3XL,4XL",
+			chart: "310T-SC.png"
+		},
+		"CLEARANCE UNISEX BAGGY CHEF PANT.jpeg" => {
+			sku: "301PC",
+			description: "<p>The MOBB Baggy Chef Pant is the ultimate in culinary coolness. With its unisex, elastic waist style our chef pants continue to be the choice for chefs today. Features a 2” elastisized drawstring waistband for maximum coverage and comfort. A slightly tapered ankle keeps the pants from dragging on the floor. 2 front slant pockets and 1 back patch pocket</p>",
+			colors: "MrBOB",
+			sizes: "XS,S,M,L,XL,2XL,3XL,4XL-XS,S,M,L,XL,2XL,3XL,4XL",
+			price: 16.99,
+			cost_price: 22.99,
+			weight: 0.4,
+			chart: "301P-SC.png"
+		},
+		"CLEARANCE CLASSIC CHEF COAT UNISEX.jpeg" => {
+			sku: "CC250C",
+			description: "<p>MOBB kitchen classics. Professional and durable, our chef coats are made to last. Lightweight, breathable designs and a great selection of colors to choose from. 7.5oz poly cotton twill featuring a stand collar, vented cuff and underarms and a thermo pocket on left sleeve.</p>",
+			colors: "BL/MB",
+			sizes: "XS,S,M,L,XL,2XL,3XL,4XL-XS,S,M,L,XL,2XL,3XL,4XL",
+			price: 18.99,
+			cost_price: 22.99,
+			weight: 0.6,
+			chart: "CC250-SC.png"
+		},
+		"CLEARANCE BISTRO APRON.jpeg" => {
+			sku: "AP390C",
+			description: "<p>The MOBB Bistro apron is made with durable polyester/cotton twill for stain and wrinkle resistance.
+										This apron has 3 pockets and falls just below the knees making it the perfect fit for front or back of the house.</p>",
+			colors: "MrBob",
+			price: 7.99,
+			cost_price: 17.99,
+			weight: 0.3,
+			sizes: "1SIZE-1SIZE"
 		}
 	}
 
@@ -1767,7 +2044,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = clearance[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:cost_price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat22
 				pro.default_image_file = get_file(filename)
 				pro.save!
@@ -1783,7 +2060,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 
 		elsif params = clearance2[filename] 
 
-				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
+				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:cost_price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 				pro.product_category = cat22
 				pro.default_image_file = get_file(filename)
 				pro.save!

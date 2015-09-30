@@ -18,10 +18,28 @@ class OrdersController < ApplicationController
 
   def increase_item_quantity
   	item = current_order.order_items.find(params[:id])
-		item.increase!
-    redirect_to basket_path, :notice => "Quantity has been updated successfully."   
+  	amount = params[:amount].to_i
+  	if amount > item.quantity && amount <= item.ordered_item.stock
+  		if item.quantity == 1
+  			amount = amount - 1
+	  			amount.times do
+						item.increase!
+				end
+				redirect_to basket_path, :notice => "Quantity has been updated successfully."
+  		else
+	  		amount.times do
+					item.increase!
+				end
+				redirect_to basket_path, :notice => "Quantity has been updated successfully."
+			end
+		elsif amount > item.ordered_item.stock
+			redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{item.ordered_item.stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
+		else
+			item.increase!
+			redirect_to basket_path, :notice => "Quantity has been updated successfully."
+		end   
   rescue Shoppe::Errors::NotEnoughStock => e
-    redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{e.available_stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
+    redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{item.ordered_item.stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
   end
 
   def decrease_item_quantity
@@ -29,7 +47,20 @@ class OrdersController < ApplicationController
 		item.decrease!
     redirect_to basket_path, :notice => "Quantity has been updated successfully."   
   rescue Shoppe::Errors::NotEnoughStock => e
-    redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{e.available_stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
+    redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{item.ordered_item.stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
+  end
+
+  def bulk_update_quanity
+  	bulk = params[:bulk]
+  	item = current_order.order_items.find(params[:id])
+  	if bulk.to_i > item.available_stock.to_i
+	  	bulk.to_i.times do 
+	  		item.increase!
+	  	end
+  		redirect_to basket_path, :notice => "Quantity has been updated successfully." 
+  	end
+  	rescue Shoppe::Errors::NotEnoughStock => e
+    	redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{item.ordered_item.stock} items available at the moment. Please get in touch though, we're always receiving new stock."
   end
 
 	def checkout
@@ -37,8 +68,17 @@ class OrdersController < ApplicationController
 		  @order = Shoppe::Order.find(current_order.id)  
 			  if request.patch?
 			    if @order.proceed_to_confirm(params[:order].permit(:first_name, :last_name, :billing_address1, :billing_address2, :billing_address3, :billing_address4, :billing_country_id, :billing_postcode, :email_address, :phone_number))
-			    	if free_canada_shipping?(@order)
-			    		@order.delivery_price = 0
+			    	if !params[:pick_up].nil?
+			    		@order.delivery_service_id = 3
+			    	end
+			    	if canada?(@order)
+			    		@order.delivery_service_id = 1
+			    	elsif international?(@order)
+			    		@order.delivery_service_id = 2
+			    	else
+			    	end
+				    if free_canada_shipping?(@order)
+				    	@order.delivery_price = 0
 			    	elsif free_international_shipping?(@order)
 			    		@order.delivery_price = 0
 			    	else 
@@ -68,10 +108,10 @@ class OrdersController < ApplicationController
 
 	def confirmation
 	  if request.post?
-		    current_order.confirm!
-		    Purchase.create!(order_id: current_order.id, client_id: current_client.id)
-		    session[:order_id] = nil
-		    redirect_to root_path, :notice => "Order has been placed successfully!"
+	    current_order.confirm!
+	    Purchase.create!(order_id: current_order.id, client_id: current_client.id)
+	    session[:order_id] = nil
+	    redirect_to root_path, :notice => "Order has been placed successfully!"
 	  end
 	end
 

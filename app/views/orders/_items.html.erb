@@ -61,8 +61,8 @@
                   <td class="product-quantity">
                     <div class="quantity buttons_added">
                       <%= link_to "-", { :controller => "orders", :action => "decrease_item_quantity", :id => item.id}, class: "ui button", style: "background-color:#2B4B6F;color:white;font-weight:bold;" %>
-                      <input type="number" size="4" class="input-text qty text" id="qty" value="<%= item.quantity.to_i %>" min="0" step="1" style="width:40px;">
-                      <%= link_to "+", { :controller => "orders", :action => "increase_item_quantity", :id => item.id}, class: "ui button", style: "background-color:#2B4B6F;color:white;font-weight:bold;" %>
+                      <%= text_field_tag "", item.quantity.to_i, id: "qty", class: "input-text qty text", style: "width:50px;" %>
+                      <%= link_to "+", { :controller => "orders", :action => "increase_item_quantity", :id => item.id }, id: "my-plus-link", class: "ui button", style: "background-color:#2B4B6F;color:white;font-weight:bold;" %>
                     </div>
                   </td>
 
@@ -98,6 +98,17 @@
               <% elsif current_page?(action: 'checkout') && order.order_items.count > 0 %>
                 <h2>Checkout Form</h2>
                   <%= render 'form' %>
+              <% else %>
+                  <h2 style="text-align:center; font-size:3em;">CALCULATE SHIPPING</h2>
+                  <div style="text-align:center;">
+                    <strong>Please enter the Country you wish to ship to: </strong>
+                    <input type="text" id="shipInput" value="">
+                    <br><br>
+                    <p id="shipValue"></p>
+
+                  </div>
+                     
+                    
               <% end %>
             </div>
 
@@ -116,7 +127,11 @@
 
                       <tr class="shipping">
                         <th>Shipping and Handling</th>
-                        <td><%= number_to_currency current_order.delivery_price %></td>
+                        <% if current_page?(basket_path) %>
+                          <td>Calculated at Checkout</td>
+                        <% else %>
+                         <td><%= number_to_currency current_order.delivery_price %></td>
+                        <% end %>
                       </tr>
 
                       <tr class="shipping">
@@ -141,5 +156,50 @@
   </div>
 </div>
 </div>
-          
+
+<% @shipping = Shoppe::DeliveryServicePrice.all %>
+
+<script>
+$(document).ready(function(){
+$( "#shipInput" )
+  .keyup(function() {
+    var x = $( this ).val();
+    var value = x.toLowerCase();
+    var shippingA = <%= @shipping.first.price %>;
+    var shippingB = <%= @shipping.last.price %>;
+    var orderValue = <%= (current_order.total_before_tax.to_f - current_order.delivery_price.to_f) %>
+    var shipping = "";
+    if (value === "") {
+      shipping = "";
+      $( "#shipValue" ).text( shipping );
+    } else if (value === "canada" && orderValue < 100) {
+      shipping = shippingA;
+      $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping + " + taxes" );
+    } else if (value === "canada" && orderValue >= 100){ 
+      $( "#shipValue" ).text( "You are eligible for free shipping" );
+    } else if (value !== "canada" && orderValue >= 175) {
+      $( "#shipValue" ).text( "You are eligible for free shipping" );
+    } else if (value !== "canada" && orderValue < 175) {
+      shipping = shippingB;
+      $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping + " + taxes" );
+    } 
+  })
+  .keyup();
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $('#qty').keypress(function(evt){
+    if (evt.keyCode == 10 || evt.keyCode == 13) 
+      evt.preventDefault();
+  });
+  $('#my-plus-link').click(function(evt) {
+    evt.preventDefault();
+    var url = $(this).attr('href')
+    var qty = $('#qty').val()
+    window.location = url + '&amount=' + qty
+  });
+});
+</script>
         

@@ -26,8 +26,7 @@
       <%= f.text_field :email_address, value: current_client.email, class: 'form-control'  %>
       <%= f.label :phone_number %>
       <%= f.text_field :phone_number, value: current_client.phone_number, class: 'form-control'  %>
-      <%= f.label :delivery_name %>
-      <%= f.select :delivery_name, options_for_select(['UPS']), class: 'form-control' %>
+      <%= check_box_tag 'pick_up' %>* Check off if you wish to do a warehouse pickup - <%= link_to "More Info", pick_up_path %>
       <%= f.submit 'Continue', class: 'form-control'  %>
   <% end %>
   </div>

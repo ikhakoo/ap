@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   match "remove_item", to: "orders#remove_item", as: "remove_item", via: [:get]
   match "increase_item_quantity", to: "orders#increase_item_quantity", as: "increase_item_quantity", via: [:get]
   match "decrease_item_quantity", to: "orders#decrease_item_quantity", as: "decrease_item_quantity", via: [:get]
+  match "bulk_update_quantity", to: "orders#bulk_update_quantity", as: "bulk_update_quantity", via: [:get]
 
   #Nurse Wear
   match "nurse-wear/tops", to: "products#nurse_tops", as: "nurse_tops", via: [:get]
@@ -60,6 +61,7 @@ Rails.application.routes.draw do
   match "returns", to: "pages#returns", as: "returns", via: [:get]
   match "about-us", to: "pages#about_us", as: "about_us", via: [:get]
   match "privacy", to: "pages#privacy", as: "privacy", via: [:get]
+  match "pick-up", to: "pages#pick_up", as: "pick_up", via: [:get]
 
 
   get "product/:permalink", to: "products#show", as: "product"
