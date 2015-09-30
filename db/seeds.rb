@@ -1648,7 +1648,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			cost_price: 23.99,
 			weight: 0.4,
 			chart: "316P-SC.png"
-		}
+		},
 		"CLEARANCE LOW RISE LACE UP FLARE PANT REGULAR.jpeg" => {
 			sku: "316P-C",
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
