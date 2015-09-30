@@ -1640,7 +1640,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			chart: "312P-SC.png"
 		},
 		"CLEARANCE LOW RISE LACE UP FLARE PANT PETITE.jpeg" => {
-			sku: "316PC",
+			sku: "316PPC",
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
 			colors: "Brown,BubbleGum,DeepOrchid,DustyRose,Khaki,Lagoon,OliveGreen,PostmanBlue,Red",
 			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,L,2XL",
@@ -1649,7 +1649,18 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.4,
 			chart: "316P-SC.png"
 		}
+		"CLEARANCE LOW RISE LACE UP FLARE PANT REGULAR.jpeg" => {
+			sku: "316P-C",
+			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
+			colors: "Brown,BubbleGum,DeepOrchid,DustyRose,Khaki,Lagoon,OliveGreen,PostmanBlue,Red,SkyBlue,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,L,2XL-XXS,M,L,XL,2XL-XXS,XS,S,L,XL,2XL",
+			price: 15.99,
+			cost_price: 23.99,
+			weight: 0.4,
+			chart: "316P-SC.png"
+		} 
 	}
+
 
 	clearance2 = {
 		"CLEARANCE TALL DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
