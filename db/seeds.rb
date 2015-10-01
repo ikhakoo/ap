@@ -1714,8 +1714,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		"CLEARANCE WIDE LEG DRAWSTRING SCRUB SET.jpeg" => {
 			sku: "308/308C",
 			description: "<p>The Flip Flap Capri Pant fits and feels just like the 312P but makes a perfect addition to summer wardrobes or warmer work environments. Features our signature MOBB logo waistband that can be flipped down for a low rise fit.</p>",
-			colors: "Black,Brick,Burgundy,Caribbean,Ceil,Charcoal,Eggplant,Khaki,Lagoon,Lilac,LimeGreen,NavyBlue,Pink,PostmanBlue,Raspberry,RingAround,Red,RoyalBlue,Spruce,Tangerine,White",
-			sizes: "XS,S,M,L,XL,2XL,3XL-XXS,XS,S,L-XL-S,M,L,XL-M,L,XL-XL-XS,S,M,L,XL-S,M,L,XL-XS,S,M,L,XL-XXS,M,L,XL-XL-XXS,L,XL-M,L,XL-L,XL-M,L,XL-XS,M,L,XL-L,XL-XXS,S,M,L,XL-L,XL-XXS,L,XL",
+			colors: "Black,Brick,Burgundy,Caribbean,Ceil,Charcoal,Eggplant,Khaki,Lagoon,Lilac,LimeGreen,NavyBlue,Pink,PostmanBlue,Raspberry,RingAround,Spruce,RoyalBlue,Tangerine,White",
+			sizes: "XS,S,M,L,XL,2XL,3XL-XXS,XS,S,L-XL-S,M,L,XL-M,L,XL-XL-XS,S,M,L,XL-S,M,L,XL-XS,S,M,L,XL-XXS,M,L,XL-XL-XXS,L,XL-M,L,XL-L,XL-M,L,XL-XS,M,L,XL-L,XL-XXS,S,M,L,XL-L,XL-L,XL-XXS,L,XL",
 			price: 19.99,
 			cost_price: 33.99,
 			weight: 0.7,
