@@ -166,7 +166,7 @@ $( "#shipInput" )
     var x = $( this ).val();
     var value = x.toLowerCase();
     var shippingA = <%= @shipping.first.price %>;
-    var shippingB = <%= @shipping.last.price %>;
+    var shippingB = <%= @shipping.second.price %>;
     var orderValue = <%= (current_order.total_before_tax.to_f - current_order.delivery_price.to_f) %>
     var shipping = "";
     if (value === "") {
@@ -202,4 +202,5 @@ $(document).ready(function(){
   });
 });
 </script>
+
         

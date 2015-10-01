@@ -279,7 +279,7 @@ def seed_shit
 			chart: "L406-SC.png"
 		},
 		"FULL LENGTH UNISEX SNAP LAB COAT.jpeg" => {
-			sku: "L407",
+			sku: "L407",	
 			description: "<p>From doctors to dentists, pharmacists and vets, everyone knows a lab coat is essential for any medical professional. This unisex, full length lab coat will get the job done. Snap button front closure with two patch pockets, one chest pocket and side access slits. This lab coat is also available with a standard button front closure</p>",
 			colors: "White",
 			price: 20.95,
@@ -682,7 +682,7 @@ def seed_shit
 			price: 18.99,
 			weight: 0.3,
 			chart: "T1016-SC.png"
-		},
+		}
 	}
 
 	fireretardent = {
@@ -1532,15 +1532,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		"Clearance Criss Cross Flip Flap.jpeg" => {
 			sku: "323/312C",
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
-			colors: "Aqua,Black/DustyRose,Black/Aqua,Brown,BubbleGum,DustyRose,DustyRosePolkaDots,Khaki,LimeGreen,Nutmeg,OliveGreen,Pink,PostmanBlue,Red,SeaGreen,SkyBlue,Tangerine,White",
+			colors: "Aqua,Black/DustyRose,Black/Aqua,Brown,BubbleGum,DustyRose,Khaki,LimeGreen,OliveGreen,Pink,PostmanBlue,Red,SeaGreen,SkyBlue,Tangerine,White",
 			price: 25.99,
 			cost_price: 34.99,
 			weight: 0.7,
-			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
-			-2XL-2XL-2XL-XXS,XS,L,XL,2XL
-			-S,M,L,XL,2XL-XXS,L,XL,2XL-XXS,XL,2XL
-			-L,XL,2XL-L,XL,2XL-XL,2XL-L,XL,2XL-XXS,XS,L,XL,2XL
-			-L-XL,2XL-XXS,L,XL,2XL-XL,2XL"
+			sizes: "XXS,XS,S,M,L,XL,2XL-2XL-2XL-2XL-XXS,XS,L,XL,2XL-S,M,L,XL,2XL-XXS,L,XL,2XL-L,XL,2XL-L,XL,2XL-L,XL,2XL-XXS,XS,M,L,XL,2XL-2XL-XXS,L,XL,2XL-L-XL,2XL-XXS,L,XL,2XL-XL,2XL"
 		},
 		"Clearance V Neck 3 Pocket Dolman Seeve Flip Fap Scrub Set.jpeg" => {
 			sku: "308/312C",
@@ -1549,14 +1545,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			price: 24.99,
 			cost_price: 34.99,
 			weight: 0.7,
-			sizes: "XXS,XS,S,M,L,XL
-			-XXS,L,XL
-			-XXS,XS,L,XL
-			-XXS,XS,M,L,XL
-			-XS,L,XL,2XL
-			-XXS,L,XL
-			-XS,S,L,XL
-			-XXS,XSL,XL"
+			sizes: "XXS,XS,S,M,L,XL-XXS,L-XXS,XS,L-XS,L-XXS,XS,M,L-XS,M,L-XXS,L-XS,S,L-XXS,XS,L,XL"
 		},
 		"CLEARANCE MENS FLEECE WARM UP ZIPPER JACKET.jpeg" => {
 			sku: "WJF365",
@@ -1584,6 +1573,45 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,2XL,4XL-XXS,XS,XL,2XL,3XL,4XL-4XL-XXS,2XL,3XL,4XL-4XL
 			-XXS,XS,L,XL,3XL,4XL-XXS,S,M,L,XL,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS,M,L,XL,2XL,3XL
 			-XXS,XS,4XL-XXS,L,XL,3XL,4XL"
+		},
+		"THE SHANNEL.jpeg" => {
+			sku: "P1011",
+			description: "<p>A clean and classic straight leg pant featuring front-to-back, wrap-around cargo pockets, two slant pockets and a combination drawstring elastic waist.</p>",
+			colors: "Aubergine,SoftMint,Black,Charcoal,DeepOrchid,NavyBlue,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
+			price: 28.99,
+			weight: 0.3,
+			chart: "P1011-SC.png"
+		},
+		"The Coco.jpeg" => {
+			sku: "T1018",
+			description: "<p>A stunning v-neck top with an hourglass silhouette. Featuring flex sleeves and side panels with a gathered cap sleeve detail, 
+			two hidden pockets and custom tailoring for an exceptional fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex<p>",
+			colors: "Aubergine,White,SoftMint",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
+			price: 18.99,
+			weight: 0.3,
+			chart: "T1018-SC.png"
+		},
+		"The Mandy.jpeg" => {
+			sku: "T1010",
+			description: "<p>A unique style and ultra chic fit, this deep cut mandarin neckline features two lower pockets, flex side panels and has 
+			beautiful tailoring through the back for a custom fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
+			colors: "Aubergine,White,SoftMint",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
+			price: 18.99,
+			weight: 0.3,
+			chart: "T1010-SC.png"
+		},
+		"The Roxy.jpeg" => {
+			sku: "T1016",
+			description: "<p>A fit for fashion and function, this top features flex sleeves and side panels, a gathered cap sleeve detail, 
+			chest darts and two hidden pockets.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
+			colors: "Aubergine,White,SoftMint",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
+			price: 18.99,
+			weight: 0.3,
+			chart: "T1016-SC.png"
 		},
 		"CLEARANCE LOW RISE LACE UP FLARE PANT TALL.jpeg" => {
 			sku: "316PTC",
@@ -1640,7 +1668,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			chart: "312P-SC.png"
 		},
 		"CLEARANCE LOW RISE LACE UP FLARE PANT PETITE.jpeg" => {
-			sku: "316PC",
+			sku: "316PPC",
 			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
 			colors: "Brown,BubbleGum,DeepOrchid,DustyRose,Khaki,Lagoon,OliveGreen,PostmanBlue,Red",
 			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,L,2XL",
@@ -1648,8 +1676,19 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			cost_price: 23.99,
 			weight: 0.4,
 			chart: "316P-SC.png"
-		}
+		},
+		"CLEARANCE LOW RISE LACE UP FLARE PANT REGULAR.jpeg" => {
+			sku: "316P-C",
+			description: "<p>THIS SCRUB PANT IS GREAT FOR THOSE LOOKING FOR SOMETHING A LITTLE MORE FASHION FORWARD THAN THE TRADITIONAL SCRUB PANT. NO ELASTIC OR DRAWSTRING THIS PANT FEATURES A DECORATIVE LACE UP, LOW RISE WAIST AND FLARED BOTTOM.</p>",
+			colors: "Brown,BubbleGum,DeepOrchid,DustyRose,Khaki,Lagoon,OliveGreen,PostmanBlue,Red,SkyBlue,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,L,2XL-XXS,M,L,XL,2XL-XXS,XS,S,L,XL,2XL",
+			price: 15.99,
+			cost_price: 23.99,
+			weight: 0.4,
+			chart: "316P-SC.png"
+		} 
 	}
+
 
 	clearance2 = {
 		"CLEARANCE TALL DRAWSTRING ELASTIC SCRUB PANT.jpeg" => {
@@ -1675,8 +1714,8 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		"CLEARANCE WIDE LEG DRAWSTRING SCRUB SET.jpeg" => {
 			sku: "308/308C",
 			description: "<p>The Flip Flap Capri Pant fits and feels just like the 312P but makes a perfect addition to summer wardrobes or warmer work environments. Features our signature MOBB logo waistband that can be flipped down for a low rise fit.</p>",
-			colors: "Black,Brick,Burgundy,Caribbean,Ceil,Charcoal,Eggplant,Khaki,Lagoon,Lilac,LimeGreen,NavyBlue,Pink,PostmanBlue,Raspberry,RingAround,Red,RoyalBlue,Spruce,Tangerine,White",
-			sizes: "XS,S,M,L,XL,2XL,3XL-XXS,XS,S,L-XL-S,M,L,XL-M,L,XL-XL-XS,S,M,L,XL-S,M,L,XL-XS,S,M,L,XL-XXS,M,L,XL-XL-XXS,L,XL-M,L,XL-L,XL-M,L,XL-XS,M,L,XL-L,XL-XXS,S,M,L,XL-L,XL-XXS,L,XL",
+			colors: "Black,Brick,Burgundy,Caribbean,Ceil,Charcoal,Eggplant,Khaki,Lagoon,Lilac,LimeGreen,NavyBlue,Pink,PostmanBlue,Raspberry,RingAround,Spruce,RoyalBlue,Tangerine,White",
+			sizes: "XS,S,M,L,XL,2XL,3XL-XXS,XS,S,L-XL-S,M,L,XL-M,L,XL-XL-XS,S,M,L,XL-S,M,L,XL-XS,S,M,L,XL-XXS,M,L,XL-XL-XXS,L,XL-M,L,XL-L,XL-M,L,XL-XS,M,L,XL-L,XL-XXS,S,M,L,XL-L,XL-L,XL-XXS,L,XL",
 			price: 19.99,
 			cost_price: 33.99,
 			weight: 0.7,
