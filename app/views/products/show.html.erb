@@ -109,13 +109,18 @@
                     </div> 
 
                     <div class="product-inner-category">
-                      <p>
-                        Color: 
-                        <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]) %>
-                        <br>
-                        Size: 
-                        <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]) %>
-                      </p>
+                      <div>
+                        <p>
+                          <span style="min-width:50px;">Color:</span>
+                          <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]) %>
+                        </p>
+                      </div>
+                      <div>
+                        <p>
+                          <span style="min-width:50px;">Size:</span>
+                          <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]) %>
+                        </p>
+                      </div>
                       <p style="color: red;">Quantity can be updated on the basket page</p>
                     </div>
 
