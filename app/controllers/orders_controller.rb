@@ -82,11 +82,11 @@ class OrdersController < ApplicationController
 			    	elsif free_international_shipping?(@order)
 			    		@order.delivery_price = 0
 			    	else 
-			    	end
-			    	@order.save!
-			      redirect_to checkout_payment_path
-			    end
-			  end
+		    	end
+		    	@order.save!
+		      redirect_to checkout_payment_path
+		    end
+		  end
 		else
 			redirect_to new_client_session_path,
 			:alert => "You must be logged in to proceed!"

@@ -1806,7 +1806,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			weight: 0.7
 		},
 		"CLEARANCE FLEECE LOW RISE LACE UP PANT.jpeg" => {
-			sku: "316P-C",
+			sku: "316PF-C",
 			description: "<p></p>",
 			colors: "Black,Navy,White",
 			sizes: "XXS,XS,S,L,XL-XXS,M,L,XL-XXS,XS,S,M,L,XL-XXS,XS,S,M,L,XL",
