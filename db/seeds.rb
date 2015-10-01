@@ -1532,15 +1532,11 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 		"Clearance Criss Cross Flip Flap.jpeg" => {
 			sku: "323/312C",
 			description: "<p>The Criss Cross Flip Flap scrub set is what happens when we combine two scrub favorites to make a set. The v-neck scrub top with contrast color trim has two lower pockets and one shoulder pen pocket. The pant is our classic boot cut pant with signature MOBB logo waistband that can be flipped down for a lower rise.</p>",
-			colors: "Aqua,Black/DustyRose,Black/Aqua,Brown,BubbleGum,DustyRose,DustyRosePolkaDots,Khaki,LimeGreen,Nutmeg,OliveGreen,Pink,PostmanBlue,Red,SeaGreen,SkyBlue,Tangerine,White",
+			colors: "Aqua,Black/DustyRose,Black/Aqua,Brown,BubbleGum,DustyRose,Khaki,LimeGreen,OliveGreen,Pink,PostmanBlue,Red,SeaGreen,SkyBlue,Tangerine,White",
 			price: 25.99,
 			cost_price: 34.99,
 			weight: 0.7,
-			sizes: "XXS,XS,S,M,L,XL,2XL,3XL,4XL
-			-2XL-2XL-2XL-XXS,XS,L,XL,2XL
-			-S,M,L,XL,2XL-XXS,L,XL,2XL-XXS,XL,2XL
-			-L,XL,2XL-L,XL,2XL-XL,2XL-L,XL,2XL-XXS,XS,L,XL,2XL
-			-L-XL,2XL-XXS,L,XL,2XL-XL,2XL"
+			sizes: "XXS,XS,S,M,L,XL,2XL-2XL-2XL-2XL-XXS,XS,L,XL,2XL-S,M,L,XL,2XL-XXS,L,XL,2XL-L,XL,2XL-L,XL,2XL-L,XL,2XL-XXS,XS,M,L,XL,2XL-2XL-XXS,L,XL,2XL-L-XL,2XL-XXS,L,XL,2XL-XL,2XL"
 		},
 		"Clearance V Neck 3 Pocket Dolman Seeve Flip Fap Scrub Set.jpeg" => {
 			sku: "308/312C",
