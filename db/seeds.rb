@@ -1549,14 +1549,7 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			price: 24.99,
 			cost_price: 34.99,
 			weight: 0.7,
-			sizes: "XXS,XS,S,M,L,XL
-			-XXS,L,XL
-			-XXS,XS,L,XL
-			-XXS,XS,M,L,XL
-			-XS,L,XL,2XL
-			-XXS,L,XL
-			-XS,S,L,XL
-			-XXS,XSL,XL"
+			sizes: "XXS,XS,S,M,L,XL-XXS,L-XXS,XS,L-XS,L-XXS,XS,M,L-XS,M,L-XXS,L-XS,S,L-XXS,XS,L,XL"
 		},
 		"CLEARANCE MENS FLEECE WARM UP ZIPPER JACKET.jpeg" => {
 			sku: "WJF365",
