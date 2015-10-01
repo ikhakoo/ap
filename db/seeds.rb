@@ -279,7 +279,7 @@ def seed_shit
 			chart: "L406-SC.png"
 		},
 		"FULL LENGTH UNISEX SNAP LAB COAT.jpeg" => {
-			sku: "L407",
+			sku: "L407",	
 			description: "<p>From doctors to dentists, pharmacists and vets, everyone knows a lab coat is essential for any medical professional. This unisex, full length lab coat will get the job done. Snap button front closure with two patch pockets, one chest pocket and side access slits. This lab coat is also available with a standard button front closure</p>",
 			colors: "White",
 			price: 20.95,
@@ -682,7 +682,7 @@ def seed_shit
 			price: 18.99,
 			weight: 0.3,
 			chart: "T1016-SC.png"
-		},
+		}
 	}
 
 	fireretardent = {
@@ -1584,6 +1584,45 @@ This cooking apron is generously cut for full coverage on the both bib and botto
 			-XXS,XS,L,XL,2XL,3XL,4XL-XXS,XS,2XL,4XL-XXS,XS,XL,2XL,3XL,4XL-4XL-XXS,2XL,3XL,4XL-4XL
 			-XXS,XS,L,XL,3XL,4XL-XXS,S,M,L,XL,2XL,3XL-XXS,XS,S,M,L,XL,2XL,3XL,4XL-XS,M,L,XL,2XL,3XL
 			-XXS,XS,4XL-XXS,L,XL,3XL,4XL"
+		},
+		"THE SHANNEL.jpeg" => {
+			sku: "P1011",
+			description: "<p>A clean and classic straight leg pant featuring front-to-back, wrap-around cargo pockets, two slant pockets and a combination drawstring elastic waist.</p>",
+			colors: "Aubergine,SoftMint,Black,Charcoal,DeepOrchid,NavyBlue,White",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
+			price: 28.99,
+			weight: 0.3,
+			chart: "P1011-SC.png"
+		},
+		"The Coco.jpeg" => {
+			sku: "T1018",
+			description: "<p>A stunning v-neck top with an hourglass silhouette. Featuring flex sleeves and side panels with a gathered cap sleeve detail, 
+			two hidden pockets and custom tailoring for an exceptional fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex<p>",
+			colors: "Aubergine,White,SoftMint",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
+			price: 18.99,
+			weight: 0.3,
+			chart: "T1018-SC.png"
+		},
+		"The Mandy.jpeg" => {
+			sku: "T1010",
+			description: "<p>A unique style and ultra chic fit, this deep cut mandarin neckline features two lower pockets, flex side panels and has 
+			beautiful tailoring through the back for a custom fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
+			colors: "Aubergine,White,SoftMint",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
+			price: 18.99,
+			weight: 0.3,
+			chart: "T1010-SC.png"
+		},
+		"The Roxy.jpeg" => {
+			sku: "T1016",
+			description: "<p>A fit for fashion and function, this top features flex sleeves and side panels, a gathered cap sleeve detail, 
+			chest darts and two hidden pockets.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
+			colors: "Aubergine,White,SoftMint",
+			sizes: "XXS,XS,S,M,L,XL,2XL-XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
+			price: 18.99,
+			weight: 0.3,
+			chart: "T1016-SC.png"
 		},
 		"CLEARANCE LOW RISE LACE UP FLARE PANT TALL.jpeg" => {
 			sku: "316PTC",
