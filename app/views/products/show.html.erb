@@ -77,13 +77,12 @@
                         <p style="color:red;">Clearance: All Sales are FINAL!</p>
                         <p style="color:red;">Due to size constraints we try to keep the size list as updated as possible. If the item is <em>unavailable</em> you will receive a full refund no questions asked!</p>
 
-
                       <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="background-color:#2B4B6F;color:white;">
                         Click Here for Colors & Sizes
                       </button>
                       <div class="collapse" id="collapseExample">
                         <div class="well">
-                          <table class="bordered hoverable">
+                          <table id="mytable" class="bordered hoverable">
                               <thead>
                                 <tr>
                                   <th data-field="id">Colors</th>
@@ -93,18 +92,16 @@
                               <tbody>
                                 <% @clearance_hash.each do |color, size| %>
                                   <tr>
-                                    <td><%= color %></td>
-                                    <td colspan="1"><%= size.to_s %></td>
+                                    <td id="item_color"><%= color %></td>
+                                    <td id="item_size" colspan="1"><%= size.to_s %></td>
                                   </tr>
                                   
                                 <% end %>
                               </tbody>
-                              </table>
+                            </table> 
+                          </div>
                         </div>
-                      </div>
-
                       <% end %>
-
                     <div class="product-inner-price">
                       <ins><%= number_to_currency @product.price %></ins>
                       <% if @product.product_category_id == 22 %> 
@@ -113,13 +110,18 @@
                     </div> 
 
                     <div class="product-inner-category">
-                      <p>
-                        Color: 
-                        <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]) %>
-                        <br>
-                        Size: 
-                        <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]) %>
-                      </p>
+                      <div>
+                        <p>
+                          <span style="min-width:50px;">Color:</span>
+                          <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]), :class => "color-drop" %>
+                        </p>
+                      </div>
+                      <div>
+                        <p>
+                          <span style="min-width:50px;">Size:</span>
+                          <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]), :class => "size-drop" %>
+                        </p>
+                      </div>
                       <p style="color: red;">Quantity can be updated on the basket page</p>
                     </div>
 
@@ -214,11 +216,71 @@
       </div>
     </div>
 
-
 <script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
- 
-</script>
+ $(function(){
+    // Created vars to hold the initial values coming in from the DOM
+    var item_colors = [];
+    var item_sizes = [];
+    var dropDownSizes = [];
+    
+    // iterating through the table tr td's to retrieve each color and size
+    $('#mytable tr').each(function() {
+       //pushing the found values into an array
+      item_colors.push($(this).find("#item_color").html());
+      item_sizes.push($(this).find("#item_size").html());
 
+
+      console.log("item colors:", item_colors);
+      console.log("item sizes:", item_sizes);
+    });
+
+    console.log(item_colors[0], item_colors[0]);
+
+    // deleting the first null index in both arrays
+    item_colors.shift();
+    item_sizes.shift();
+
+    console.log("item colors:", item_colors);
+    console.log("item sizes:", item_sizes);
+
+    // iterating through the item_colors array
+    for(var i = 0; i < item_colors.length; i++){
+      
+      // splitting the 1 string index into seperate index's
+      var res = item_sizes[i].split(",");
+
+      // creating the object key value pairs for each
+      dropDownSizes[i] = {
+        item_color: item_colors[i], //first index in object array will be each color and ....
+        item_sizes: res             //the corresponding sizes array as the second index
+      };  
+    }
+    
+    console.log(dropDownSizes);
+    
+    //This is where we place the cooresponding sizes when a selection is made in the color dropdown on change event
+    $(".color-drop").change(function(e) {
+
+      var chosenCol = $(this).val(); //selected value instance
+      var count = 0; //loop count tracker
+      
+      console.log("Chosen Color: ", chosenCol);
+
+      // iterate through the object array
+      dropDownSizes.forEach(function (item){
+
+        //if chosenColor matches any color in the object array, then proceed
+        if(chosenCol === item.item_color){
+          console.log("Object Color: ", item.item_color);
+          console.log("Object Size: ", item.item_sizes);
+
+          // replace the values in the dropdown for sizes that correspond with the chosen color
+          $('.size_drop').html(item.item_sizes);
+        }
+      });
+    });
+
+    $('[data-toggle="tooltip"]').tooltip();
+    $('.ui.accordion').accordion('behavior', 'open', 'close');
+  });
+</script>

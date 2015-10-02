@@ -1,30 +1,108 @@
+<style>
+  #well {
+    width: 40%;
+    margin-left: 35%;
+    margin-top: 50px;
+    background-color: #2b4b6f;
+  }
+  #label, label, #contact-us-header {
+    color:white;
+    min-width:100%;
+  }
+  .send {
+    border: 1px solid white;
+  }
+  input {
+    width:300px;height:30px;top:00px;min-width:100%;
+  } 
+  #fix {
+    height:12px;
+  }
+  .send {
+    width:100% !important;height: 100% !important; top: 0px !important;
+  }
+  .form-group {
+    text-align:left !important;
+  }
+  button:hover {
+    background-color:green;
+  }
+</style>
+
 <%= form_for @contact_form do |f| %>
-<div style="text-align:center;">
-<form>
-  <div class="form-group">
-   <%= f.label :name, "Name (required):" %><br>
-  <%= f.text_field :name, :required => true %><br>
- </div>
- <div class="form-group">
-  <%= f.label :email, "E-Mail (required):" %><br>
-  <%= f.email_field :email, :required => true %><br>
- </div>
-  <div class="form-group">
-  <%= f.label :phone, "Phone Number:" %><br>
-  <%= f.phone_field :phone %><br>
- </div>
-  <div class="form-group">
-  <strong>How did you hear about us?:</strong><br> <%= f.text_field :referral
-  %><br>
- </div> 
-  <div class="form-group">
-  <strong>Comments:</strong><br><%= f.text_area :message %><br>
-
-</div>
- <div class="form-group">
-  <%= f.submit "Send" %>
-</div>
-</form>
-</div>
-
+  <div style="text-align:center;">
+    <form class="form-horizontal">
+      <div class="well" id="well">
+        <h1 id="contact-us-header"><u>Contact Us Below</u></h1>
+        <div class="row" id="row">
+          <div class="col-lg-4 col-md-2 col-xs-12">
+            <div class="form-group">
+              <%= f.label :name, "Name (required):" %>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="form-group">
+              <%= f.text_field :name, :required => true %>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="row">
+          <div class="col-lg-4 col-md- col-xs-12">
+            <div class="form-group">
+              <%= f.label :email, "E-Mail (required):" %>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="form-group">
+              <%= f.email_field :email, :required => true %>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="row">
+          <div class="col-lg-4 col-md-2 col-xs-12">
+            <div class="form-group">
+              <%= f.label :phone, "Phone Number:" %>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="form-group" id="fix">
+              <%= f.phone_field :phone %>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="row" style="margin-top:6px;">
+          <div class="col-lg-4 col-md-2 col-xs-12">
+            <div class="form-group" id="label">
+              <strong>How did you hear about us?:</strong>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="form-group">
+              <%= f.text_field :referral %>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="row">
+          <div class="col-lg-4 col-md-2 col-xs-12">
+            <div class="form-group" id="label">
+              <strong>Comments:</strong>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="form-group">
+              <%= f.text_area :message, cols: "38", rows: "5" %>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= f.submit "Send", class: "send" %>
+        </div>
+      </div>
+    </form>
+  </div>
 <% end %>
+<script>
+$(function(){
+  $(".send").css('background-color', 'darkorange');
+});
+</script>
