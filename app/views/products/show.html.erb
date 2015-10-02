@@ -112,13 +112,13 @@
                       <div>
                         <p>
                           <span style="min-width:50px;">Color:</span>
-                          <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]), :class => "color-drop" %>
+                          <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]), :id => "color-drop" %>
                         </p>
                       </div>
                       <div>
                         <p>
                           <span style="min-width:50px;">Size:</span>
-                          <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]), :class => "size-drop" %>
+                          <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]), :id => "size-drop" %>
                         </p>
                       </div>
                       <p style="color: red;">Quantity can be updated on the basket page</p>
@@ -257,7 +257,7 @@
     console.log(dropDownSizes);
     
     //This is where we place the cooresponding sizes when a selection is made in the color dropdown on change event
-    $(".color-drop").change(function(e) {
+    $("#color-drop").change(function(e) {
 
       var chosenCol = $(this).val(); //selected value instance
       var count = 0; //loop count tracker
@@ -273,7 +273,7 @@
           console.log("Object Size: ", item.item_sizes);
 
           // replace the values in the dropdown for sizes that correspond with the chosen color
-          $('.size_drop').html(item.item_sizes);
+          $('#size_drop').empty().append(item.item_sizes);
         }
       });
     });
