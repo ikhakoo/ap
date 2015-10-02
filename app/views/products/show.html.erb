@@ -82,7 +82,7 @@
                       </button>
                       <div class="collapse" id="collapseExample">
                         <div class="well">
-                          <table class="bordered hoverable">
+                          <table id="mytable" class="bordered hoverable">
                               <thead>
                                 <tr>
                                   <th data-field="id">Colors</th>
@@ -92,8 +92,8 @@
                               <tbody>
                                 <% @clearance_hash.each do |color, size| %>
                                   <tr>
-                                    <td><%= color %></td>
-                                    <td colspan="1"><%= size.to_s %></td>
+                                    <td id="item_color"><%= color %></td>
+                                    <td id="item_size" colspan="1"><%= size.to_s %></td>
                                   </tr>
                                 <% end %>
                               </tbody>
@@ -112,13 +112,13 @@
                       <div>
                         <p>
                           <span style="min-width:50px;">Color:</span>
-                          <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]) %>
+                          <%= select_tag :color, options_for_select(@colors_array.uniq, :selected => params[:color]), :class => "color-drop" %>
                         </p>
                       </div>
                       <div>
                         <p>
                           <span style="min-width:50px;">Size:</span>
-                          <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]) %>
+                          <%= select_tag :size, options_for_select(@sizes, :selected => params[:size]), :class => "size-drop" %>
                         </p>
                       </div>
                       <p style="color: red;">Quantity can be updated on the basket page</p>
@@ -216,9 +216,37 @@
     </div>
 
 <script>
- $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
+ $(function(){
+    var item_colors = [];
+    var item_sizes = [];
+    var dropDownSizes = [];
+    
+    $('#mytable tr').each(function() {
+      item_colors.push($(this).find("#item_color").html());
+      item_sizes.push($(this).find("#item_size").html());
+      console.log("item colors:", item_colors);
+      console.log("item sizes:", item_sizes);
+    });
+
+    console.log(item_colors[0], item_colors[0]);
+    item_colors.shift();
+    item_sizes.shift();
+
+    console.log("item colors:", item_colors);
+    console.log("item sizes:", item_sizes);
+
+
+    //I feel like im onto something here but i cant seem to get it
+    // var sizes = item_sizes.split(",");
+    // for(var i = 0; i < item_colors.length(); i++){
+      
+    // }
+    
+    $(".color-drop").change(function(e) {
+      //This is where we place the cooresponding sizes when a selection is made in the color dropdown
+    });
+
     $('.ui.accordion').accordion('behavior', 'open', 'close');
+    $('[data-toggle="tooltip"]').tooltip();
   });
 </script>
-
