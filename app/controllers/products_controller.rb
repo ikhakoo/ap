@@ -159,7 +159,7 @@ class ProductsController < ApplicationController
       @all_sizes = @product_sizes.split("-").first
 
       @clearance_sizes = @product_sizes.split("-")
-      @clearance_sizes = @clearance_sizes.drop(1)
+      @clearance_sizes = @clearance_sizes
 
       @clearance_hash = @colors_array.zip(@clearance_sizes).to_h
 
@@ -172,7 +172,6 @@ class ProductsController < ApplicationController
       end
       @sizes.join(",")
 
-      binding.pry
 
     else
 
