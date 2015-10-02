@@ -273,7 +273,7 @@
           console.log("Object Size: ", item.item_sizes);
 
           // replace the values in the dropdown for sizes that correspond with the chosen color
-          $('#size-drop').empty().html(item.item_sizes);
+          $('#size-drop').empty().html("<option value=" + item.item_sizes + ">" + item.item_sizes + "</option>");
         }
       });
     });
