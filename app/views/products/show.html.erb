@@ -274,8 +274,16 @@
           console.log("Object Color: ", item.item_color);
           console.log("Object Size: ", item.item_sizes);
 
-          // replace the values in the dropdown for sizes that correspond with the chosen color
-          $('#size_drop').empty().append(item.item_sizes);
+          // Empty out the size-drop options
+          $('#size-drop').empty();
+
+          // iterate through the sizes array
+          for(var i = 0; i < item.item_sizes.length; i++){
+            console.log("Sizes: ", item.item_sizes[i]);
+
+            // Append each array index as an option into the size-drop dropdown
+            $('#size-drop').append("<option value=" + item.item_sizes[i] + ">" + item.item_sizes[i] + "</option>");
+          }
         }
       });
     });
