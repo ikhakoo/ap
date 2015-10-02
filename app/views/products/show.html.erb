@@ -235,12 +235,15 @@
     console.log("item colors:", item_colors);
     console.log("item sizes:", item_sizes);
 
-
-    //I feel like im onto something here but i cant seem to get it
-    // var sizes = item_sizes.split(",");
-    // for(var i = 0; i < item_colors.length(); i++){
-      
-    // }
+    for(var i = 0; i < item_colors.length; i++){
+      var res = item_sizes[i].split(",");
+      dropDownSizes[i] = {
+        item_color: item_colors[0],
+        item_sizes: res
+      };  
+    }
+    
+    console.log(dropDownSizes);
     
     $(".color-drop").change(function(e) {
       //This is where we place the cooresponding sizes when a selection is made in the color dropdown
