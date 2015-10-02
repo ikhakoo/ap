@@ -238,7 +238,7 @@
     for(var i = 0; i < item_colors.length; i++){
       var res = item_sizes[i].split(",");
       dropDownSizes[i] = {
-        item_color: item_colors[0],
+        item_color: item_colors[i],
         item_sizes: res
       };  
     }
@@ -247,6 +247,19 @@
     
     $(".color-drop").change(function(e) {
       //This is where we place the cooresponding sizes when a selection is made in the color dropdown
+      var chosenCol = $(this).val();
+      var count = 0;
+      
+      console.log("Chosen Color: ", chosenCol);
+
+      dropDownSizes.forEach(function (item){
+        if(chosenCol === item.item_color){
+          console.log("Object Color: ", item.item_color);
+          console.log("Object Size: ", item.item_sizes);
+          $(".size_drop").empty().append(item.item_sizes);
+        }
+      });
+      console.log()
     });
 
     $('.ui.accordion').accordion('behavior', 'open', 'close');
