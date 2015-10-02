@@ -172,6 +172,8 @@ class ProductsController < ApplicationController
       end
       @sizes.join(",")
 
+      binding.pry
+
     else
 
       @sizes = []
