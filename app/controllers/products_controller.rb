@@ -76,6 +76,7 @@ class ProductsController < ApplicationController
     "PostmanBlue" => "rgb(110, 129, 162)",
     "PostmanBlue/Navy" => "background postmanblue",
     "PrettyInPetals" => "background pretty",
+    "PrettyinPetals" => "background pretty",
     "PrettyInPetals/Charcoal" => "background pretty coal",
     "Purple" => "rgb(160, 32, 240)",
     "Raspberry" => "rgb(182, 34, 98)",
