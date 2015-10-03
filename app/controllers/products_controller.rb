@@ -35,6 +35,7 @@ class ProductsController < ApplicationController
     "Eggplant" => "rgb(81, 45, 141)",
     "Eggplant/Black" => "background Eggplant Black",
     "Fireworks" => "background Fireworks",
+    "FireWorks" => "background Fireworks",
     "FlorescentButterfly" => "background Floresent Butterfly",
     "FlorescentButterfly/Charcoal" => "rgb()",
     "FluoresentButterfly" => "background Floresent Butterfly",
