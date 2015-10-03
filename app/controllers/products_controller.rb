@@ -99,7 +99,7 @@ class ProductsController < ApplicationController
     "Teal" => "rgb(16, 136, 149)",
     "Techno" => "background Techno",
     "Techno/Aqua" => "background Techno",
-    "TwistTwirl" => "background twisttwirl",
+    "TwistandTwirl" => "background twisttwirl",
     "VintageVines" => "background vintagevines",
     "Whimsical" => "background whimsical",
     "White" => "rgb(255, 255, 255)",
