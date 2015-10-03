@@ -53,6 +53,7 @@ class ProductsController < ApplicationController
     "HoundsTooth" => "background Hounds Tooth",
     "HunterGreen" => "background huntergreen",
     "Indigo" => "rgb(113, 94, 126)",
+    "Indigo/Black" => "background indigo",
     "Khaki" => "rgb(233, 204, 165)",
     "Lagoon" => "rgb(113, 154, 161)",
     "Lagoon/Lagoon" => "background ",
