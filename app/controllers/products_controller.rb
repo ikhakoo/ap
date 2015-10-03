@@ -13,7 +13,7 @@ class ProductsController < ApplicationController
     "2toneRaspberry/Black" => "rgb()",
     "2toneWhite" => "rgb()",
     "Aqua" => "rgb(33, 171, 232)",
-    "Aqua/Black" => "background aquablack",
+    "Aqua/Black" => "background Aqua Black",
     "Aubergine" => "rgb(104, 87, 105)",
     "Black" => "rgb(0, 0, 0)",
     "Black/Aqua" => "background blackaqua",
@@ -37,7 +37,7 @@ class ProductsController < ApplicationController
     "DeepOrchid" => "rgb(145, 32, 96)",
     "DeepOrchid/Black" => "rgb()",
     "DeepOrchid/White" => "rgb()",
-    "DeepOrchird/Black" => "background deeporchidblack",
+    "DeepOrchid/Black" => "background deeporchidblack",
     "DejaVu" => "background Deja Vu",
     "DizzyVines" => "background Dizzy Vines",
     "DustyRose" => "rgb(233, 110, 153)",
@@ -58,6 +58,7 @@ class ProductsController < ApplicationController
     "GroovyHoops" => "background Groovy Hoops",
     "HeartTies" => "background Heart Ties",
     "HeartToHeart" => "background heartotheart",
+    "HoundsTooth" => "background Hounds Tooth",
     "HunterGreen" => "background huntergreen",
     "Indigo" => "rgb(113, 94, 126)",
     "Indigo/Charcoal" => "rgb()",
@@ -101,6 +102,7 @@ class ProductsController < ApplicationController
     "Spruce" => "rgb(45, 94, 64)",
     "StringAlong" => "background String Along",
     "StringAlong/Eggplant" => "rgb()",
+    "Tangerine" => 'background tangerine',
     "Teal" => "rgb(16, 136, 149)",
     "Techno" => "background Techno",
     "Techno/Aqua" => "rgb()",
@@ -109,6 +111,7 @@ class ProductsController < ApplicationController
     "Whimsical" => "background whimsical",
     "White" => "rgb(255, 255, 255)",
     "White/White" => "rgb()",
+    "Yellow" => "background yellow",
     "ZenStem" => "background Zen Stem"
   }
 
@@ -141,7 +144,7 @@ class ProductsController < ApplicationController
     @background_details = []
 
     @split_colors = []
-    @colors_array.each do |color| @split_colors << color.split('/') end
+    @colors_array.each do |color| @split_colors << color.split(',') end
     @split_colors = @split_colors.uniq
 
         @split_colors.each do |combination|
