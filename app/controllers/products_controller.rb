@@ -37,6 +37,8 @@ class ProductsController < ApplicationController
     "Fireworks" => "background Fireworks",
     "FlorescentButterfly" => "background Floresent Butterfly",
     "FlorescentButterfly/Charcoal" => "rgb()",
+    "FluoresentButterfly" => "background Floresent Butterfly",
+    "FluoresentButterfly/Charcoal" => "rgb()",
     "FlowerPower" => "background Flower Power",
     "FlowerPower/RoyalBlue" => "background Flower Power",
     "FlowerShower" => "background flowershower",
