@@ -187,7 +187,14 @@
               <div class="related-products-wrapper">
                 <h2 style="color:#2B4B6F" class="related-products-title">Related Products</h2><br><br>
                 <div class="related-products-carousel col-lg-12">
-                  <% @relatedproducts.sample(12).each do |product| %>
+                <% if @relatedproducts.count < 12 %>
+                  <%  @less_count = @relatedproducts.count.to_i %>  
+                <% else %>
+                  <% @less_count = 12 %>
+                <% end %>
+                <% @relatedproducts.sample(@less_count).each do |product| %>
+                <% if product.default_image.nil? %>
+                <% end %>
                     <div class="single-product">
                       <div class="product-f-image">
                         <img src="<%= product.default_image.path %>" style="height:335px;width:212px;" alt="">
