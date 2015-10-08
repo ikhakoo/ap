@@ -194,7 +194,7 @@
                 <% end %>
                 <% @relatedproducts.sample(@less_count).each do |product| %>
                 <% if product.default_image.nil? %>
-                <% end %>
+                <% else %>
                     <div class="single-product">
                       <div class="product-f-image">
                         <img src="<%= product.default_image.path %>" style="height:335px;width:212px;" alt="">
@@ -213,7 +213,8 @@
                         <del><%= number_to_currency product.cost_price %></del>
                         <% end %>
                       </div> 
-                    </div>  
+                    </div>
+                    <% end %>  
                   <% end %>                                  
                 </div>
               </div>
