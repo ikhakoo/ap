@@ -624,6 +624,7 @@ class ProductsController < ApplicationController
         @products = @m1 + @m2
       end
     end 
+  end
 
 
   def mentality_hyflex
