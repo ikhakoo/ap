@@ -171,8 +171,7 @@ $(document).ready(function(){
     var qty = $('#qty').val()
     window.location = url + '&amount=' + qty
   });
-  $( "#shipInput" )
-    .keyup(function() {
+  $('#shipInput').keyup(function() {
       var x = $( this ).val();
       var value = x.toLowerCase();
       var shippingA = <%= @shipping.first.price %>;
