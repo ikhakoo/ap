@@ -15,6 +15,7 @@
 //= require jquery.turbolinks
 //= require jquery.sticky
 //= require jquery.easing.1.3.min
+//= require shoppe/stripe/form_handler
 //= require bootstrap-sprockets
 //= require semantic-ui
 //= require owl.carousel.min
@@ -22,7 +23,7 @@
 //= require social-share-button
 //= require turbolinks
 //= require_tree .
-//= require shoppe/stripe/form_handler
+
 
 
 
