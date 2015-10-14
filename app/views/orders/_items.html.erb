@@ -161,35 +161,6 @@
 
 <script>
 $(document).ready(function(){
-$( "#shipInput" )
-  .keyup(function() {
-    var x = $( this ).val();
-    var value = x.toLowerCase();
-    var shippingA = <%= @shipping.first.price %>;
-    var shippingB = <%= @shipping.second.price %>;
-    var orderValue = <%= (current_order.total_before_tax.to_f - current_order.delivery_price.to_f) %>
-    var shipping = "";
-    if (value === "") {
-      shipping = "";
-      $( "#shipValue" ).text( shipping );
-    } else if (value === "canada" && orderValue < 100) {
-      shipping = shippingA;
-      $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping + " + taxes" );
-    } else if (value === "canada" && orderValue >= 100){ 
-      $( "#shipValue" ).text( "You are eligible for free shipping" );
-    } else if (value !== "canada" && orderValue >= 175) {
-      $( "#shipValue" ).text( "You are eligible for free shipping" );
-    } else if (value !== "canada" && orderValue < 175) {
-      shipping = shippingB;
-      $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping + " + taxes" );
-    } 
-  })
-  .keyup();
-});
-</script>
-
-<script>
-$(document).ready(function(){
   $('#qty').keypress(function(evt){
     if (evt.keyCode === 10 || evt.keyCode === 13) 
       evt.preventDefault();
@@ -200,7 +171,32 @@ $(document).ready(function(){
     var qty = $('#qty').val()
     window.location = url + '&amount=' + qty
   });
+  $( "#shipInput" )
+    .keyup(function() {
+      var x = $( this ).val();
+      var value = x.toLowerCase();
+      var shippingA = <%= @shipping.first.price %>;
+      var shippingB = <%= @shipping.second.price %>;
+      var orderValue = <%= (current_order.total_before_tax.to_f - current_order.delivery_price.to_f) %>
+      var shipping = "";
+      if (value === "") {
+        shipping = "";
+        $( "#shipValue" ).text( shipping );
+      } else if (value === "canada" && orderValue < 100) {
+        shipping = shippingA;
+        $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping + " + taxes" );
+      } else if (value === "canada" && orderValue >= 100){ 
+        $( "#shipValue" ).text( "You are eligible for free shipping" );
+      } else if (value !== "canada" && orderValue >= 175) {
+        $( "#shipValue" ).text( "You are eligible for free shipping" );
+      } else if (value !== "canada" && orderValue < 175) {
+        shipping = shippingB;
+        $( "#shipValue" ).text( "Your estimated shipping cost is $" + shipping + " + taxes" );
+      } 
+    })
+    .keyup();
 });
 </script>
+
 
         
