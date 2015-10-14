@@ -595,6 +595,37 @@ class ProductsController < ApplicationController
 
   #mentality
 
+  def mentality
+    @per_page = params[:per_page] || 8
+    @sex = params[:sex]
+    @m1 = Shoppe::Product.where(product_category_id: 20, sell_item: true).page(params[:page]).per(@per_page)
+    @m2 = Shoppe::Product.where(product_category_id: 21, sell_item: true).page(params[:page]).per(@per_page)
+    @products = @m1 + @m2
+    if params[:sex]
+       if @sex == "Men"
+        @m1 = Shoppe::Product.where(product_category_id: 20, mens: true, sell_item: true).page(params[:page]).per(@per_page)
+        @m2 = Shoppe::Product.where(product_category_id: 21, mens: true, sell_item: true).page(params[:page]).per(@per_page)
+        @products = @m1 + @m2
+       elsif @sex == "Women"
+        @m1 = Shoppe::Product.where(product_category_id: 20, womens: true, sell_item: true).page(params[:page]).per(@per_page)
+        @m2 = Shoppe::Product.where(product_category_id: 21, womens: true, sell_item: true).page(params[:page]).per(@per_page)
+        @products = @m1 + @m2
+       elsif @sex == "Unisex"
+        @m1 = Shoppe::Product.where(product_category_id: 20, unisex: true, sell_item: true).page(params[:page]).per(@per_page)
+        @m2 = Shoppe::Product.where(product_category_id: 21, unisex: true, sell_item: true).page(params[:page]).per(@per_page)
+        @products = @m1 + @m2
+       elsif @sex == "Children"
+        @m1 = Shoppe::Product.where(product_category_id: 20, childrens: true, sell_item: true).page(params[:page]).per(@per_page)
+        @m2 = Shoppe::Product.where(product_category_id: 21, childrens: true, sell_item: true).page(params[:page]).per(@per_page)
+        @products = @m1 + @m2
+      elsif @sex == "All"
+        @m1 = Shoppe::Product.where(product_category_id: 20, sell_item: true).page(params[:page]).per(@per_page)
+        @m2 = Shoppe::Product.where(product_category_id: 21, sell_item: true).page(params[:page]).per(@per_page)
+        @products = @m1 + @m2
+      end
+    end 
+
+
   def mentality_hyflex
     @per_page = params[:per_page] || 8
     @sex = params[:sex]

@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   resources :contact_forms
   
   #Mentality
+  match "mentality", to: "products#mentality", as: "mentality", via: [:get]
   match "mentality/stretchflex", to: "products#mentality_stretchflex", as: "mentality_stretchflex", via: [:get]
   match "mentality/hyflex", to: "products#mentality_hyflex", as: "mentality_hyflex", via: [:get]
 
