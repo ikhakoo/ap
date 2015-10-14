@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
     "Aubergine/Grey" => "background auberginegrey",
     "Black" => "rgb(0, 0, 0)",
     "Black/Aqua" => "background blackaqua",
-    "Black/White" => "background backwhite",
+    "Black/White" => "background blackwhite",
     "Black/DustyRose" => "background blackdustyrose",
     "BlueCheerios" => "background Blue Cheerios",
     "Blue" => "rgb(0, 0, 255)",
