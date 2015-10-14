@@ -191,7 +191,7 @@ $( "#shipInput" )
 <script>
 $(document).ready(function(){
   $('#qty').keypress(function(evt){
-    if (evt.keyCode == 10 || evt.keyCode == 13) 
+    if (evt.keyCode === 10 || evt.keyCode === 13) 
       evt.preventDefault();
   });
   $('#my-plus-link').click(function(evt) {
