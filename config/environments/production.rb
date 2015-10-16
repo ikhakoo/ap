@@ -66,7 +66,7 @@ Rails.application.configure do
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  config.action_mailer.default_url_options = { :host => 'apuniforms.herokuapp.com' }
+  config.action_mailer.default_url_options :host => 'apuniforms.herokuapp.com'
 ​
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
