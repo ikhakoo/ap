@@ -65,19 +65,22 @@ class OrdersController < ApplicationController
   end
 
 	def checkout
+		puts "Params: #{params[:pick_up]}"
 		if !current_client.nil?
 		  @order = Shoppe::Order.find(current_order.id)  
 			  if request.patch?
 			    if @order.proceed_to_confirm(params[:order].permit(:first_name, :last_name, :billing_address1, :billing_address2, :billing_address3, :billing_address4, :billing_country_id, :billing_postcode, :email_address, :phone_number))
-			    	if !params[:pick_up].nil?
-			    		@order.delivery_service_id = 3
-			    	end
 			    	if canada?(@order)
-			    		@order.delivery_service_id = 1
+			    		if !params[:pick_up].blank?
+			    			@order.delivery_service_id = 3
+			    		else
+			    			puts 3
+			    			@order.delivery_service_id = 1
+			    		end
 			    	elsif international?(@order)
 			    		@order.delivery_service_id = 2
-			    	else
 			    	end
+			    	puts "Order Delivery Service: #{@order.delivery_service_id}"
 				    if free_canada_shipping?(@order)
 				    	@order.delivery_price = 0
 			    	elsif free_international_shipping?(@order)
