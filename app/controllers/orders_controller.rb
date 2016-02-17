@@ -104,6 +104,7 @@ class OrdersController < ApplicationController
   @order = current_order
 	  if request.post?
 	    if @order.accept_stripe_token(params[:stripe_token])
+	    	NotificationMailer.order_confirmation(@order)
 	      redirect_to checkout_confirmation_path
 	    else
 	      flash.now[:notice] = "Could not exchange Stripe token. Please try again."
