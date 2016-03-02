@@ -48,6 +48,7 @@ gem 'sass-rails', '>= 3.2'
 gem 'semantic-ui-sass'
 
 gem 'rails_12factor'
+gem 'whenever', '0.7.0', :require => false
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
