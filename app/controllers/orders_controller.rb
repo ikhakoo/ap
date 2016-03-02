@@ -108,6 +108,7 @@ class OrdersController < ApplicationController
 	      flash.now[:notice] = "Could not exchange Stripe token. Please try again."
 	    end
 	  end
+	  destroy_bad_orders
 	end
 
 	def confirmation

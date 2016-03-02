@@ -5,7 +5,7 @@
 
 # Example:
 #
-# set :output, "/path/to/my/cron_log.log"
+set :output, "cron_log.log"
 #
 # every 2.hours do
 #   command "/usr/bin/some_great_command"
@@ -13,9 +13,8 @@
 #   rake "some:great:rake:task"
 # end
 #
-every 10.seconds do
-  runner "session_task:rake:delete_empty_orders"
-  puts "Bad Orders Deleted"
+every 1.minute do
+  rake "session_tasks:delete_empty_orders"
 end
 
 # Learn more: http://github.com/javan/whenever

@@ -48,6 +48,11 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def destroy_bad_orders
+    orders = Shoppe::Order.where("first_name is null")
+    orders.destroy_all
+  end
+
   def has_order?
     !!(
       session[:order_id] &&
