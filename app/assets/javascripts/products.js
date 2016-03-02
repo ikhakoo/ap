@@ -1,4 +1,5 @@
 $(function(){
+  $('[data-toggle="tooltip"]').tooltip();
   // Created vars to hold the initial values coming in from the DOM
   var item_colors = [];
   var item_sizes = [];
@@ -51,6 +52,6 @@ $(function(){
     });
   });
 
-  $('[data-toggle="tooltip"]').tooltip();
+  
   $('.ui.accordion').accordion('behavior', 'open', 'close');
 });
