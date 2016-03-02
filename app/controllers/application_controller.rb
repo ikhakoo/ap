@@ -50,8 +50,7 @@ class ApplicationController < ActionController::Base
 
   def destroy_bad_orders
     puts "Total To Start: #{Shoppe::Order.where("first_name is null").count}"
-    orders = Shoppe::Order.where("first_name is null")
-    orders.destroy_all
+    Shoppe::Order.where("first_name is null").destroy_all
     puts "Total Left: #{Shoppe::Order.where("first_name is null").count}"
   end
 
