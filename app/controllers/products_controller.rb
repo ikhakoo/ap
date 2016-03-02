@@ -126,6 +126,7 @@ class ProductsController < ApplicationController
     @l1            = Shoppe::Product.where(product_category_id: rand(1...19))
     @l2            = Shoppe::Product.where(product_category_id: rand(1...19))
     @latest        = @l1 + @l2
+    destroy_bad_orders
   end
 
   def show

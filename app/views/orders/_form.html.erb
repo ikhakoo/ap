@@ -2,7 +2,7 @@
 <%= form_for @order, :url => checkout_path do |f| %> 
 <div class="col-md-4">
       
-      <%= f.text_field :first_name, value: current_client.first_name, class: 'form-control' %> 
+      <%= f.text_field :first_name, required: true, value: current_client.first_name, class: 'form-control' %> 
       <%= f.text_field :last_name, value: current_client.last_name, class: 'form-control' %>
       <%= f.label :billing_address1, 'Address' %>
       <%= f.text_field :billing_address1, value: current_client.address1, class: 'form-control'%>
