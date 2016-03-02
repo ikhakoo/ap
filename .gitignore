@@ -15,7 +15,7 @@
 /log/*
 !/log/.keep
 /tmp
-cron_log.log
+
 */.DS_Store
 *.DS_Store
 /config/local_env.yml
@@ -24,3 +24,6 @@ cron_log.log
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+
+cron_log.log
