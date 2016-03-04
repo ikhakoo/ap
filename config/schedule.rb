@@ -13,7 +13,7 @@ set :output, "cron_log.log"
 #   rake "some:great:rake:task"
 # end
 #
-every 1.minute do
+every :thursday, :at => '12:05pm' do
   rake "session_tasks:delete_empty_orders"
 end
 

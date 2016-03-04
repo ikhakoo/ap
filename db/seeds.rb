@@ -75,8 +75,8 @@
 # 	tops = {
 # 		"Basic V Neck Scrub Top.jpeg" => {
 # 			sku: "606T",
-# 			description: "<p>The newest addition to the MOBB line, this unisex scrub top is all about classic 
-# 			simplicity. Featuring a standard v-neck with one chest pocket and one shoulder pen pocket. This top 
+# 			description: "<p>The newest addition to the MOBB line, this unisex scrub top is all about classic
+# 			simplicity. Featuring a standard v-neck with one chest pocket and one shoulder pen pocket. This top
 # 			mates perfectly with 608P and is a favorite among school programs.</p>",
 # 			price: 18.95,
 # 			weight: 0.3,
@@ -108,7 +108,7 @@
 # 		},
 # 		"Ultra Flexi Scrub Top.jpeg" => {
 # 			sku: "524T",
-# 			description: "<p>The Ultra Flexi scrub top has multiple black stretch panels for the most superb fit 
+# 			description: "<p>The Ultra Flexi scrub top has multiple black stretch panels for the most superb fit
 # 			and ultimate movement.The Ultra Flexi v-neck top also has two lower pockets and one shoulder pen pocket.</p>",
 # 			colors: "Aqua,Charcoal,NavyBlue,Black,DeepOrchid,SkyBlue",
 # 			sizes: "XXS,XS,S,M,L,XL,2XL",
@@ -119,8 +119,8 @@
 # 		"3 Pocket V Neck Scrub Top.jpeg" => {
 # 			sku: "308T",
 # 			description: "<p>A bold, basic 3 pocket v-neck scrub top featuring dolman sleeves. This scrub top is also available as a set</p>",
-# 			colors: "Aqua,Burgundy,Ceil,Eggplant,Lagoon,PostmanBlue, 
-# 								RoyalBlue,Spruce,Black,Caribbean,Charcoal,Khaki, 
+# 			colors: "Aqua,Burgundy,Ceil,Eggplant,Lagoon,PostmanBlue,
+# 								RoyalBlue,Spruce,Black,Caribbean,Charcoal,Khaki,
 # 								NavyBlue,Rasberry,SkyBlue,White",
 # 			sizes: "XXS,XS,S,M,L,XL",
 # 			price: 18.95,
@@ -129,10 +129,10 @@
 # 		},
 # 		"Unisex V Neck Scrub Top.jpeg" => {
 # 			sku: "310T",
-# 			description: "<p>A classic v-neck scrub top popular among men and women. This top has a slightly longer hem 
-# 			line making it an excellent choice for anyone with a taller stature. This top has three front pockets, one shoulder 
+# 			description: "<p>A classic v-neck scrub top popular among men and women. This top has a slightly longer hem
+# 			line making it an excellent choice for anyone with a taller stature. This top has three front pockets, one shoulder
 # 			pen pocket and is available in every MOBB color</p>",
-# 			colors: "Aqua,Burgundy,Caribbean,Charcoal,Khaki,NavyBlue,PostmanBlue,RoyalBlue, 
+# 			colors: "Aqua,Burgundy,Caribbean,Charcoal,Khaki,NavyBlue,PostmanBlue,RoyalBlue,
 # 								SkyBlue,Teal,Black,Cappuccino,Ceil,Eggplant,Lagoon,OliveGreen,Red,
 # 								SeaGreen,Spruce,White",
 # 			price: 18.95,
@@ -142,9 +142,9 @@
 # 		},
 # 		"Ladies Sculpted Scrub Top.jpeg" => {
 # 			sku: "410T",
-# 			description: "<p>A simple twist on our classic neckline. This scrub top features a beautifully sculpted wave neckline 
+# 			description: "<p>A simple twist on our classic neckline. This scrub top features a beautifully sculpted wave neckline
 # 			with contrasting color. The top also has two lower pockets, one chest pocket and one shoulder pen pocket.</p>",
-# 			colors: "Aqua/Black,Charcoal/PostmanBlue,Eggplant/Black,White/White, 
+# 			colors: "Aqua/Black,Charcoal/PostmanBlue,Eggplant/Black,White/White,
 # 								Black/White,DeepOrchid/White,NavyBlue/SkyBlue",
 # 			sizes: "XXS,XS,S,M,L,XL,2XL",
 # 			weight: 0.3,
@@ -153,7 +153,7 @@
 # 		},
 # 		"Active Flexi V Neck Scrub Top.jpeg" => {
 # 			sku: "424T",
-# 			description: "<p>Comfortable and stylish this scrub top feels and looks amazing. The stretch panels create a fantastic fit 
+# 			description: "<p>Comfortable and stylish this scrub top feels and looks amazing. The stretch panels create a fantastic fit
 # 			and allow for great movement. The flexi v-neck has two lower pockets and one shoulder pen pocket</p>",
 # 			colors: "Indigo/Black,Eggplant/Black,Rasberry/Black,Aqua/Black,Charcoal/Black,NavyBlue/Black,
 # 								White/White,PostmanBlue/Black",
@@ -164,7 +164,7 @@
 # 		},
 # 		"Mens Two Tone Scrub Top.jpeg" => {
 # 			sku: "409T",
-# 			description: "<p>Available in four color-ways this scrub top is becoming a favorite among men in the medical field. 
+# 			description: "<p>Available in four color-ways this scrub top is becoming a favorite among men in the medical field.
 # 			This two-tone scrub top has one chest pocket and one shoulder pen pocket. Also available as a set with the 409P</p>",
 # 			colors: "Burgundy/Navy,Khaki/Black,Charcoal/Black,PostmanBlue/Navy",
 # 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL",
@@ -193,7 +193,7 @@
 # 		"V Neck Print Scrub Top.jpeg" => {
 # 			sku: "320T",
 # 			description: "<p>This classic printed v-neck scrub top is great for those who need to carry as many accessories as possible. A total of 5 front pockets offer a home for everything you need to carry throughout the day</p>",
-# 			colors: "BlueCheerios,FireWorks,FlowerPower,HeartTies,PinnedHeart,SpringBlooming, 
+# 			colors: "BlueCheerios,FireWorks,FlowerPower,HeartTies,PinnedHeart,SpringBlooming,
 # 								Techno,DizzyVines,FlorescentButterfly,GroovyHoops,Papillon,PrettyInPetals,
 # 								StringAlong",
 # 			sizes: "XXS,XS,S,M,L,XL,2XL,3XL",
@@ -205,9 +205,9 @@
 # 			sku: "323T",
 # 			description: "<p>Available in a large variety of prints and solid colors this scrub top will always be a top seller. Features a v-neck with a contrast color trim as well as two lower pockets and one shoulder pen pocket. This scrub top is also available as a set</p>",
 # 			colors: "Aqua/Black,BlueCheerios/NavyBlue,Charcoal/PostmanBlue,Eggplant/Black,FloresentButterfly/Charcoal,
-# 								Lagoon/Lagoon,PostmanBlue/Navy,SeaGreen/Navy,SpringBlooming/Black,Techno/Aqua, 
-# 								Black/Aqua,Charcoal/Lilac,DeepOrchid/Black,Fireworks/SeaGreen,FlowerPower/RoyalBlue, 
-# 								Indigo/Charcoal,NavyBlue/SkyBlue,PrettyInPetals/Charcoal,SkyBlue/Navy, 
+# 								Lagoon/Lagoon,PostmanBlue/Navy,SeaGreen/Navy,SpringBlooming/Black,Techno/Aqua,
+# 								Black/Aqua,Charcoal/Lilac,DeepOrchid/Black,Fireworks/SeaGreen,FlowerPower/RoyalBlue,
+# 								Indigo/Charcoal,NavyBlue/SkyBlue,PrettyInPetals/Charcoal,SkyBlue/Navy,
 # 								StringAlong/Eggplant,White/White",
 # 			sizes: "XXS,XS,S,M,L,XL,2XL",
 # 			price: 19.95,
@@ -279,7 +279,7 @@
 # 			chart: "L406-SC.png"
 # 		},
 # 		"FULL LENGTH UNISEX SNAP LAB COAT.jpeg" => {
-# 			sku: "L407",	
+# 			sku: "L407",
 # 			description: "<p>From doctors to dentists, pharmacists and vets, everyone knows a lab coat is essential for any medical professional. This unisex, full length lab coat will get the job done. Snap button front closure with two patch pockets, one chest pocket and side access slits. This lab coat is also available with a standard button front closure</p>",
 # 			colors: "White",
 # 			price: 20.95,
@@ -594,9 +594,9 @@
 # 	mentalitysf = {
 # 		"The Rosey.jpeg" => {
 # 			sku: "T3030",
-# 			description: "<p>Simplicity at its best, this classic v-neck top is designed with a double stitched 
+# 			description: "<p>Simplicity at its best, this classic v-neck top is designed with a double stitched
 # 			detail line across the chest and two tailored lines down the back. Two lower patch pockets,
-# 			the right side is enclosed with inner sectional pockets.The top is finished off with two small side 
+# 			the right side is enclosed with inner sectional pockets.The top is finished off with two small side
 # 			slits and a convenient shoulder pen pocket.</p><p>Stretch-Flex Blend: 65% Poly/32% Rayon/3% Spandex</p>",
 # 			colors: "Black,RoyalBlue,Charcoal,White",
 # 			price: 28.95,
@@ -605,9 +605,9 @@
 # 		},
 # 		"The Pearl.jpeg" => {
 # 			sku: "T3020",
-# 			description: "<p>Tailored for fit, this v-neck top features two flex side panels, one shoulder pen 
-# 			pocket and two lower patch pockets. One of the patch pockets includes detailed stitching on the 
-# 			outside with a utility D-ring and an inner smart phone pocket.</p><p>*Stretch-Flex Blend: 
+# 			description: "<p>Tailored for fit, this v-neck top features two flex side panels, one shoulder pen
+# 			pocket and two lower patch pockets. One of the patch pockets includes detailed stitching on the
+# 			outside with a utility D-ring and an inner smart phone pocket.</p><p>*Stretch-Flex Blend:
 # 			65% Poly/32% Rayon/3% Spandex</p>",
 # 		  colors: "Black,RoyalBlue,Charcoal,White",
 # 		  price: 28.95,
@@ -655,7 +655,7 @@
 # 		},
 # 		"The Coco.jpeg" => {
 # 			sku: "T1018",
-# 			description: "<p>A stunning v-neck top with an hourglass silhouette. Featuring flex sleeves and side panels with a gathered cap sleeve detail, 
+# 			description: "<p>A stunning v-neck top with an hourglass silhouette. Featuring flex sleeves and side panels with a gathered cap sleeve detail,
 # 			two hidden pockets and custom tailoring for an exceptional fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex<p>",
 # 			colors: "Aubergine,White,SoftMint",
 # 			sizes: "XXS,XS,S,M,L,XL,2XL",
@@ -665,7 +665,7 @@
 # 		},
 # 		"The Mandy.jpeg" => {
 # 			sku: "T1010",
-# 			description: "<p>A unique style and ultra chic fit, this deep cut mandarin neckline features two lower pockets, flex side panels and has 
+# 			description: "<p>A unique style and ultra chic fit, this deep cut mandarin neckline features two lower pockets, flex side panels and has
 # 			beautiful tailoring through the back for a custom fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
 # 			colors: "Aubergine,White,SoftMint",
 # 			sizes: "XXS,XS,S,M,L,XL,2XL",
@@ -675,7 +675,7 @@
 # 		},
 # 		"The Roxy.jpeg" => {
 # 			sku: "T1016",
-# 			description: "<p>A fit for fashion and function, this top features flex sleeves and side panels, a gathered cap sleeve detail, 
+# 			description: "<p>A fit for fashion and function, this top features flex sleeves and side panels, a gathered cap sleeve detail,
 # 			chest darts and two hidden pockets.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
 # 			colors: "Aubergine,White,SoftMint",
 # 			sizes: "XXS,XS,S,M,L,XL,2XL",
@@ -822,7 +822,7 @@
 # 			colors: "White",
 # 			price: 10.95,
 # 			weight: 0.1,
-# 			sizes: "1SIZE" 
+# 			sizes: "1SIZE"
 # 		}
 # 	}
 
@@ -1058,7 +1058,7 @@
 # 			price: 31.49,
 # 			weight: 1,
 # 			sizes: "38,40,42,44,46,48,50,52,54,56,58"
-# 		}, 
+# 		},
 # 		"REFLECTIVE BANDED COVERALL.jpeg" => {
 # 			sku: "C100R",
 # 			description: "<p>Stay visible on the work site with these MOBB 7.5oz 65/35 poly-cotton blend coveralls featuring reflective tape banding.The premium reflective tape ensures you are visible to coworkers and drivers. Same features as the C100</p>",
@@ -1066,7 +1066,7 @@
 # 			price: 54.99,
 # 			weight: 1,
 # 			sizes: "38,40,42,44,46,48,50,52,54,56,58"
-# 		}, 
+# 		},
 # 		"CLASSIC BIB OVERALL.jpeg" => {
 # 			sku: "B100",
 # 			description: "<p>Strap on the MOBB Classic Bib Overall when there's rain, wind, and hard work in the forecast. Features adjustable suspenders, 2 chest pockets, 2 lower back patch pockets, 2 lower front slant pockets and a zipper closure</p>",
@@ -1312,7 +1312,7 @@
 # 		},
 # 		"BIB APRON.jpeg" => {
 # 			sku: "AP385",
-# 			description: "<p>The MOBB Bib Apron is made to look and feel good, while still holding up to the rigors of the kitchen. 
+# 			description: "<p>The MOBB Bib Apron is made to look and feel good, while still holding up to the rigors of the kitchen.
 # This cooking apron is generously cut for full coverage on the both bib and bottom and features 2 pockets and adjustable neck.</p>",
 # 			colors: "Black,Burgundy,NavyBlue,Red,RoyalBlue,Spruce",
 # 			sizes: "1SIZE",
@@ -1584,7 +1584,7 @@
 # 		},
 # 		"The Coco.jpeg" => {
 # 			sku: "T1018",
-# 			description: "<p>A stunning v-neck top with an hourglass silhouette. Featuring flex sleeves and side panels with a gathered cap sleeve detail, 
+# 			description: "<p>A stunning v-neck top with an hourglass silhouette. Featuring flex sleeves and side panels with a gathered cap sleeve detail,
 # 			two hidden pockets and custom tailoring for an exceptional fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex<p>",
 # 			colors: "Aubergine,White,SoftMint",
 # 			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
@@ -1594,7 +1594,7 @@
 # 		},
 # 		"The Mandy.jpeg" => {
 # 			sku: "T1010",
-# 			description: "<p>A unique style and ultra chic fit, this deep cut mandarin neckline features two lower pockets, flex side panels and has 
+# 			description: "<p>A unique style and ultra chic fit, this deep cut mandarin neckline features two lower pockets, flex side panels and has
 # 			beautiful tailoring through the back for a custom fit.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
 # 			colors: "Aubergine,White,SoftMint",
 # 			sizes: "XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
@@ -1604,7 +1604,7 @@
 # 		},
 # 		"The Roxy.jpeg" => {
 # 			sku: "T1016",
-# 			description: "<p>A fit for fashion and function, this top features flex sleeves and side panels, a gathered cap sleeve detail, 
+# 			description: "<p>A fit for fashion and function, this top features flex sleeves and side panels, a gathered cap sleeve detail,
 # 			chest darts and two hidden pockets.</p><p>*Hy-Stretch Blend: 65% Poly/32% Cotton/3% Spandex</p>",
 # 			colors: "Aubergine,White,SoftMint",
 # 			sizes: "XL,2XL-XXS,XS,S,M,L,XL,2XL-XXS,XS,S,M,L,XL,2XL",
@@ -1684,7 +1684,7 @@
 # 			cost_price: 23.99,
 # 			weight: 0.4,
 # 			chart: "316P-SC.png"
-# 		} 
+# 		}
 # 	}
 
 
@@ -1863,7 +1863,7 @@
 # 		"CLEARANCE PRINCESS SCRUB DRESS.jpeg" => {
 # 			sku: "PD560-C",
 # 			description: "<p></p>",
-# 			colors: "Ceil,Lagoon,Navy,Pink,Raspberry,Spruce,White",	
+# 			colors: "Ceil,Lagoon,Navy,Pink,Raspberry,Spruce,White",
 # 			sizes: "XS,S,M,L,XL-XS,S,L,2XL,3XL-XS,S,L,XL,2XL,3XL-XS,2XL,3XL-XS,S,M,L,XL,2XL,3XL-XS,S-XL",
 # 			price: 16.99,
 # 			cost_price: 23.99,
@@ -1911,7 +1911,7 @@
 # 		},
 # 		"CLEARANCE Ladies Sculpted Scrub Top.jpeg" => {
 # 			sku: "410T-C",
-# 			description: "<p>A simple twist on our classic neckline. This scrub top features a beautifully sculpted wave neckline 
+# 			description: "<p>A simple twist on our classic neckline. This scrub top features a beautifully sculpted wave neckline
 # 			with contrasting color. The top also has two lower pockets, one chest pocket and one shoulder pen pocket.</p>",
 # 			colors: "Black/DustyRose,LimeGreen/Navy",
 # 			sizes: "2XL-L,XL,2XL",
@@ -1961,8 +1961,8 @@
 # 		},
 # 		"CLEARANCE Unisex V Neck Scrub Top.jpeg" => {
 # 			sku: "310TC",
-# 			description: "<p>A classic v-neck scrub top popular among men and women. This top has a slightly longer hem 
-# 			line making it an excellent choice for anyone with a taller stature. This top has three front pockets, one shoulder 
+# 			description: "<p>A classic v-neck scrub top popular among men and women. This top has a slightly longer hem
+# 			line making it an excellent choice for anyone with a taller stature. This top has three front pockets, one shoulder
 # 			pen pocket and is available in every MOBB color</p>",
 # 			colors: "Brick,BubbleGum,DustyRosePolkaDots,DustyRose,HunterGreen,Indigo,Lilac,Raspberry",
 # 			price: 11.99,
@@ -2003,8 +2003,8 @@
 # 		}
 # 	}
 
-# 	default_params = { 
-# 		:short_description => 'Not Applicable but must validate',  
+# 	default_params = {
+# 		:short_description => 'Not Applicable but must validate',
 # 		:tax_rate => tax_rate
 # 	}
 
@@ -2026,13 +2026,13 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = sets[filename] 
-				
+# 		elsif params = sets[filename]
+
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat2
 # 				pro.default_image_file = get_file(filename)
@@ -2042,13 +2042,13 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = labjackets[filename] 
-				
+# 		elsif params = labjackets[filename]
+
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat4
 # 				pro.default_image_file = get_file(filename)
@@ -2058,12 +2058,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = dresses[filename] 
+# 		elsif params = dresses[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat23
@@ -2074,12 +2074,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = clearance[filename] 
+# 		elsif params = clearance[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:cost_price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat22
@@ -2090,12 +2090,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = clearance2[filename] 
+# 		elsif params = clearance2[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:cost_price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat22
@@ -2106,12 +2106,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = stethoscopes[filename] 
+# 		elsif params = stethoscopes[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat7
@@ -2122,12 +2122,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = workcoats[filename] 
+# 		elsif params = workcoats[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat15
@@ -2138,12 +2138,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = workco[filename] 
+# 		elsif params = workco[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat16
@@ -2154,12 +2154,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = fireretardent[filename] 
+# 		elsif params = fireretardent[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat14
@@ -2170,12 +2170,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = workshirts[filename] 
+# 		elsif params = workshirts[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat18
@@ -2186,12 +2186,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = workvests[filename] 
+# 		elsif params = workvests[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat19
@@ -2202,12 +2202,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = wvest[filename] 
+# 		elsif params = wvest[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat13
@@ -2218,12 +2218,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = caps[filename] 
+# 		elsif params = caps[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat5
@@ -2234,12 +2234,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = accessories[filename] 
+# 		elsif params = accessories[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat6
@@ -2250,12 +2250,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = workpants[filename] 
+# 		elsif params = workpants[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat17
@@ -2266,12 +2266,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = pants[filename] 
+# 		elsif params = pants[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat3
@@ -2282,12 +2282,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = aprons[filename] 
+# 		elsif params = aprons[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat12
@@ -2298,12 +2298,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = chefpants[filename] 
+# 		elsif params = chefpants[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat10
@@ -2314,12 +2314,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = chefcoats[filename] 
+# 		elsif params = chefcoats[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat8
@@ -2330,12 +2330,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = cheftops[filename] 
+# 		elsif params = cheftops[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat11
@@ -2346,12 +2346,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = chefhats[filename] 
+# 		elsif params = chefhats[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat9
@@ -2362,12 +2362,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = mentalityh[filename] 
+# 		elsif params = mentalityh[filename]
 
 # 				pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat20
@@ -2378,12 +2378,12 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
 
-# 		elsif params = mentalitysf[filename] 
+# 		elsif params = mentalitysf[filename]
 
 # 		pro = Shoppe::Product.new(default_params.merge(description: params[:description], cost_price: params[:price].to_f, tax_rate: tax_rate, price: params[:price].to_f, colors: params[:colors], sizes: params[:sizes], sku: params[:sku], weight: params[:weight], name: name))
 # 				pro.product_category = cat21
@@ -2394,11 +2394,11 @@
 # 				if params[:chart]
 # 					stylename = File.basename(params[:chart])
 # 					pro.data_sheet_file = get_style(stylename)
-# 					pro.save! 
+# 					pro.save!
 # 				end
 
 # 				p pro
-		 	
+
 # 		end
 #   end
 # end
