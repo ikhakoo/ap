@@ -34,31 +34,31 @@ class OrdersController < ApplicationController
 				redirect_to basket_path, :notice => "Quantity has been updated successfully."
 			end
 		elsif amount > item.ordered_item.stock
-			redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{item.ordered_item.stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
+			redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{item.ordered_item.stock} items available at the moment. Please get in touch though, we're always receiving new stock."
 		else
 			item.increase!
 			redirect_to basket_path, :notice => "Quantity has been updated successfully."
-		end 
+		end
   rescue Shoppe::Errors::NotEnoughStock => e
-    redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{item.ordered_item.stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
+    redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{item.ordered_item.stock} items available at the moment. Please get in touch though, we're always receiving new stock."
   end
 
   def decrease_item_quantity
     item = current_order.order_items.find(params[:id])
 		item.decrease!
-    redirect_to basket_path, :notice => "Quantity has been updated successfully."   
+    redirect_to basket_path, :notice => "Quantity has been updated successfully."
   rescue Shoppe::Errors::NotEnoughStock => e
-    redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{item.ordered_item.stock} items available at the moment. Please get in touch though, we're always receiving new stock." 
+    redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{item.ordered_item.stock} items available at the moment. Please get in touch though, we're always receiving new stock."
   end
 
   def bulk_update_quanity
   	bulk = params[:bulk]
   	item = current_order.order_items.find(params[:id])
   	if bulk.to_i > item.available_stock.to_i
-	  	bulk.to_i.times do 
+	  	bulk.to_i.times do
 	  		item.increase!
 	  	end
-  		redirect_to basket_path, :notice => "Quantity has been updated successfully." 
+  		redirect_to basket_path, :notice => "Quantity has been updated successfully."
   	end
   	rescue Shoppe::Errors::NotEnoughStock => e
     	redirect_to basket_path, :alert => "Unfortunately, we don't have enough stock. We only have #{item.ordered_item.stock} items available at the moment. Please get in touch though, we're always receiving new stock."
@@ -67,7 +67,7 @@ class OrdersController < ApplicationController
 	def checkout
 		puts "Params: #{params[:pick_up]}"
 		if !current_client.nil?
-		  @order = Shoppe::Order.find(current_order.id)  
+		  @order = Shoppe::Order.find(current_order.id)
 			if request.patch?
 			  if @order.proceed_to_confirm(params[:order].permit(:first_name, :last_name, :billing_address1, :billing_address2, :billing_address3, :billing_address4, :billing_country_id, :billing_postcode, :email_address, :phone_number))
 			   	puts "Order Params: #{params[:pick_up].blank?}"
@@ -109,7 +109,7 @@ class OrdersController < ApplicationController
 	      flash.now[:notice] = "Could not exchange Stripe token. Please try again."
 	    end
 	  end
-	  destroy_bad_orders
+	  # destroy_bad_orders
 	end
 
 	def confirmation

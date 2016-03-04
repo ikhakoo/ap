@@ -126,7 +126,7 @@ class ProductsController < ApplicationController
     @l1            = Shoppe::Product.where(product_category_id: rand(1...19))
     @l2            = Shoppe::Product.where(product_category_id: rand(1...19))
     @latest        = @l1 + @l2
-    destroy_bad_orders
+    # destroy_bad_orders
   end
 
   def show
@@ -141,7 +141,7 @@ class ProductsController < ApplicationController
     @colorprods = @product.colors
 
     @colors_array = []
-    @colorprods.split(",").each do |a| @colors_array << a end  
+    @colorprods.split(",").each do |a| @colors_array << a end
 
     @background_details = []
 
@@ -151,7 +151,7 @@ class ProductsController < ApplicationController
 
         @split_colors.each do |combination|
         temp_array = []
-        combination.each do |color| 
+        combination.each do |color|
           temp_array << COLORS[color]
         end
 
@@ -170,10 +170,10 @@ class ProductsController < ApplicationController
 
 
       @sizes = []
-      @all_sizes.split(",").each do |a| 
-        if @allowedsizes.include?(a) 
+      @all_sizes.split(",").each do |a|
+        if @allowedsizes.include?(a)
           @sizes << a
-        end 
+        end
       end
       @sizes.join(",")
 
@@ -181,10 +181,10 @@ class ProductsController < ApplicationController
     else
 
       @sizes = []
-      @product_sizes.split(",").each do |a| 
-        if @allowedsizes.include?(a) 
+      @product_sizes.split(",").each do |a|
+        if @allowedsizes.include?(a)
           @sizes << a
-        end 
+        end
       end
     end
   end
@@ -195,10 +195,10 @@ class ProductsController < ApplicationController
         @color = params[:color]
         @size = params[:size]
         current_order.order_items.add_item(@product, 1, @color, @size)
-        redirect_to product_path(params[:permalink]), 
+        redirect_to product_path(params[:permalink]),
         :notice => "Product has been added successfuly!"
       else
-        redirect_to product_path(@product.permalink), 
+        redirect_to product_path(@product.permalink),
         :alert => "Sorry we are out of stock!"
     end
   end
@@ -240,7 +240,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 2).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
   def nurse_pants
@@ -259,7 +259,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 3).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
   def nurse_coats
@@ -297,7 +297,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 5).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
   def nurse_gowns
@@ -316,7 +316,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 23).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
   def accessories
@@ -335,7 +335,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 6).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
   #steth
@@ -357,7 +357,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 7).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
 
@@ -379,7 +379,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 8).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
   def chef_hats
@@ -417,7 +417,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 10).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
   def chef_tops
@@ -474,7 +474,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 13).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
 
@@ -496,7 +496,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 14).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
   def work_shop_coat
@@ -515,7 +515,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 15).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
   def work_coverall_overall
@@ -534,7 +534,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 16).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
   def work_pants
@@ -553,7 +553,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 17).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
   def work_shirts
@@ -572,7 +572,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 18).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
   def work_vests
@@ -611,7 +611,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 20).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
   def mentality_stretchflex
@@ -632,7 +632,7 @@ class ProductsController < ApplicationController
       end
     end
   end
-  
+
   #clearance
 
   def clearance
@@ -651,7 +651,7 @@ class ProductsController < ApplicationController
       elsif @sex == "All"
         @products = Shoppe::Product.where(product_category_id: 22).page(params[:page]).per(@per_page)
       end
-    end 
+    end
   end
 
 end
