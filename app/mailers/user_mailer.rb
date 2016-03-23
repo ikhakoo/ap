@@ -1,4 +1,4 @@
-class UserMailer < NotificationMailer
+class UserMailer < ApplicationMailer
 	def send_order_confirmation(order, client)
   	@order = order
   	@client = client
