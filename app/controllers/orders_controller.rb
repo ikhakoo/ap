@@ -103,6 +103,7 @@ class OrdersController < ApplicationController
 	def payment
   @order = current_order
 	  if request.post?
+	  	puts "Params: #{params}"
 	    if @order.accept_stripe_token(params[:stripe_token])
 	      redirect_to checkout_confirmation_path
 	    else
@@ -118,6 +119,7 @@ class OrdersController < ApplicationController
 	    Purchase.create!(order_id: current_order.id, client_id: current_client.id)
 	    session[:order_id] = nil
 	    UserMailer.delay.send_order_confirmation(current_order, current_client)
+	    UserMailer.delay.send_admin_notification(current_order, current_client)
 	    redirect_to root_path, :notice => "Order has been placed successfully!"
 	  end
 	end
