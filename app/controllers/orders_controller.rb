@@ -103,7 +103,6 @@ class OrdersController < ApplicationController
 	def payment
   @order = current_order
 	  if request.post?
-	  	puts "Params: #{params}"
 	    if @order.accept_stripe_token(params[:stripe_token])
 	      redirect_to checkout_confirmation_path
 	    else
