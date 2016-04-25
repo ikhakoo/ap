@@ -295,6 +295,3 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   unicorn
   whenever (= 0.7.0)
-
-BUNDLED WITH
-   1.11.2
