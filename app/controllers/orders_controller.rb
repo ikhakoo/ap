@@ -117,8 +117,8 @@ class OrdersController < ApplicationController
 	    current_order.confirm!
 	    Purchase.create!(order_id: current_order.id, client_id: current_client.id)
 	    session[:order_id] = nil
-	    UserMailer.delay.send_order_confirmation(current_order, current_client)
-	    UserMailer.delay.send_admin_notification(current_order, current_client)
+	    UserMailer.send_order_confirmation(current_order, current_client)
+	    UserMailer.send_admin_notification(current_order, current_client)
 	    redirect_to root_path, :notice => "Order has been placed successfully!"
 	  end
 	end
