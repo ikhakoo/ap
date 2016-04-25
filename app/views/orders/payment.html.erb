@@ -4,75 +4,75 @@
   <%= hidden_field_tag "stripe_token", nil, "data-stripe" => "token" %>
 
 <div class="container">
-    <div class="row">
-        <!-- You can make it whatever width you want. I'm making it full width
-             on <= small devices and 4/12 page width on >= medium devices -->
-        <div class="col-md-4"></div>
-        <div class="col-xs-12 col-md-4">
-        
-        
-            <!-- CREDIT CARD FORM STARTS HERE -->
-            <div class="panel panel-default credit-card-box">
-                <div class="panel-heading display-table" >
-                    <div class="row display-tr" >
-                        <h3 class="panel-title display-td" >Payment Details</h3>
-                        <div class="display-td" >                            
-                            <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
-                        </div>
-                    </div>                    
-                </div>
-                <div class="panel-body">
-                    <form role="form" id="payment-form">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="form-group">
-                                    <label for="cardNumber">CARD NUMBER</label>
-                                    <div class="input-group">
-                                        <%= text_field_tag 'card_number', nil, name: nil, "data-stripe" => "number", class: "form-control", placeholder: "Valid Card Number" %>
-                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
-                                    </div>
-                                </div>                            
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-7 col-md-7">
-                                <div class="form-group">
-                                    <label for="cardExpiry">
-                                      <span class="hidden-xs">EXPIRATION</span>
-                                      <span class="visible-xs-inline">EXP</span> 
-                                      DATE
-                                    </label>
-                                    <div class="col-xs-6 col-md-6">
-                                      <%= text_field_tag 'expiry_month', nil, name: nil, "data-stripe" => "exp_month", class: "form-control", placeholder: "MM" %>
-                                    </div>
-                                    <div class="col-xs-6 col-md-6">
-                                      <%= text_field_tag 'expiry_year', nil, name: nil, "data-stripe" => "exp_year", class: "form-control", placeholder: "YY" %>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-5 col-md-5 pull-right">
-                                <div class="form-group">
-                                    <label for="cardCVC">CV CODE</label>
-                                    <%= text_field_tag 'security_code', nil, name: nil, "data-stripe" => "cvc", class: "form-control", placeholder: "CVC" %>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <%= submit_tag "Finalize Payment", class: "btn btn-success btn-lg btn-block" %>
-                            </div>
-                        </div>
-                        <div class="row" style="display:none;">
-                            <div class="col-xs-12">
-                                <p class="payment-errors"></p>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>            
-            <!-- CREDIT CARD FORM ENDS HERE -->
-            <% end %>
-            
-        </div>           
-    </div>
+  <div class="row">
+      <!-- You can make it whatever width you want. I'm making it full width
+           on <= small devices and 4/12 page width on >= medium devices -->
+      <div class="col-md-4"></div>
+      <div class="col-xs-12 col-md-4">
+      
+      
+          <!-- CREDIT CARD FORM STARTS HERE -->
+          <div class="panel panel-default credit-card-box">
+              <div class="panel-heading display-table" >
+                  <div class="row display-tr" >
+                      <h3 class="panel-title display-td" >Payment Details</h3>
+                      <div class="display-td" >                            
+                          <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                      </div>
+                  </div>                    
+              </div>
+              <div class="panel-body">
+                  <form role="form" id="payment-form">
+                      <div class="row">
+                          <div class="col-xs-12">
+                              <div class="form-group">
+                                  <label for="cardNumber">CARD NUMBER</label>
+                                  <div class="input-group">
+                                      <%= text_field_tag 'card_number', nil, name: nil, "data-stripe" => "number", class: "form-control", placeholder: "Valid Card Number" %>
+                                      <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                  </div>
+                              </div>                            
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-7 col-md-7">
+                              <div class="form-group">
+                                  <label for="cardExpiry">
+                                    <span class="hidden-xs">EXPIRATION</span>
+                                    <span class="visible-xs-inline">EXP</span> 
+                                    DATE
+                                  </label>
+                                  <div class="col-xs-6 col-md-6">
+                                  <%= text_field_tag 'expiry_month', nil, name: nil, "data-stripe" => "exp-month", class: "form-control", placeholder: "MM" %>
+                                  </div>
+                                  <div class="col-xs-6 col-md-6">
+                                  <%= text_field_tag 'expiry_year', nil, name: nil, "data-stripe" => "exp-year", class: "form-control", placeholder: "YY" %>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-xs-5 col-md-5 pull-right">
+                              <div class="form-group">
+                                  <label for="cardCVC">CV CODE</label>
+                                  <%= text_field_tag 'security_code', nil, name: nil, "data-stripe" => "cvc", class: "form-control", placeholder: "CVC" %>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-12">
+                              <%= submit_tag "Finalize Payment", class: "btn btn-success btn-lg btn-block" %>
+                          </div>
+                      </div>
+                      <div class="row" style="display:none;">
+                          <div class="col-xs-12">
+                              <p class="payment-errors"></p>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>            
+          <!-- CREDIT CARD FORM ENDS HERE -->
+          <% end %>
+          
+      </div>           
+  </div>
 </div>
