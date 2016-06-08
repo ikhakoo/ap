@@ -2,7 +2,7 @@ class UserMailer < ActionMailer::Base
 	def send_order_confirmation(order, client)
   	@order = order
   	@client = client
-  	mail from: Shoppe.settings.outbound_email_address, to: @client.email, subject: "AP Uniforms Order Confirmation"
+  	mail from: "AP Uniforms :: #{Shoppe.settings.outbound_email_address}", to: @client.email, subject: "AP Uniforms Order Confirmation"
   end
 
   def send_admin_notification(order, client)
