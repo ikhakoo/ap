@@ -61,7 +61,7 @@ Rails.application.routes.draw do
   match "returns", to: "pages#returns", as: "returns", via: [:get]
   match "about-us", to: "pages#about_us", as: "about_us", via: [:get]
   match "privacy", to: "pages#privacy", as: "privacy", via: [:get]
-  match "pick-up", to: "pages#pick_up", as: "pick_up", via: [:get]
+  # match "pick-up", to: "pages#pick_up", as: "pick_up", via: [:get]
 
 
   get "product/:permalink", to: "products#show", as: "product"
