@@ -76,7 +76,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address: ‘smtpout.secureserver.net’,
     port: 80,
-    domain: "apuniforms.com",
+    domain: "www.apuniforms.com",
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: ENV["GMAIL_USERNAME"],
