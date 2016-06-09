@@ -74,7 +74,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => 'apuniforms.herokuapp.com' }
 
   config.action_mailer.smtp_settings = {
-    address: ‘smtpout.secureserver.net’,
+    address: "smtpout.secureserver.net",
     port: 80,
     domain: "www.apuniforms.com",
     authentication: "plain",
