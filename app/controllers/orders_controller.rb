@@ -87,7 +87,6 @@ class OrdersController < ApplicationController
 		    	end
 		    	puts "Price: #{@order.delivery_price}"
 		    	puts "Cost: #{@order.delivery_cost_price}"
-		    	@order.delivery_price = @order.delivery_cost_price
 		    	@order.save!
 		      redirect_to checkout_payment_path
 		    end
@@ -113,6 +112,7 @@ class OrdersController < ApplicationController
 	end
 
 	def confirmation
+		binding.pry
 	  if request.post?
 	    current_order.confirm!
 	    Purchase.create!(order_id: current_order.id, client_id: current_client.id)
