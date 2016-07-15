@@ -112,7 +112,6 @@ class OrdersController < ApplicationController
 	end
 
 	def confirmation
-		binding.pry
 	  if request.post?
 	    current_order.confirm!
 	    Purchase.create!(order_id: current_order.id, client_id: current_client.id)
