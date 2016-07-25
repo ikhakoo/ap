@@ -18,5 +18,6 @@ namespace :session_tasks do
     bad_orders.each(&:destroy)
     puts "| Complete"
     puts "==========================="
+    UserMailer.bad_orders_deleted
   end
 end
